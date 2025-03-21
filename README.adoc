@@ -30,11 +30,8 @@ Profile for Enterprise Session Controller] (html)
 
 === Contributing
 
-If you are interested in contributing directly to future versions the
-this Protection Profile, please consider joining the NIAP technical
-community. *
-https://www.niap-ccevs.org/NIAP_Evolution/tech_communities.cfm[How to
-join the NIAP Technical Community (Mailing list and updates)]
+If you are interested in contributing directly to future versions the this Protection Profile, please consider joining the NIAP technical community.
+https://www.niap-ccevs.org/technical-communities[How to join the NIAP Technical Community (Mailing list and updates)]
 
 === Feedback
 
@@ -76,10 +73,8 @@ You shouldn’t need to modify it.
 
 === Links
 
-* https://www.niap-ccevs.org/[National Information Assurance Partnership
-(NIAP)]
+* https://www.niap-ccevs.org/[National Information Assurance Partnership (NIAP)]
 * https://www.commoncriteriaportal.org/[Common Criteria Portal]
-
 === License
 
 See link:./LICENSE[License]
