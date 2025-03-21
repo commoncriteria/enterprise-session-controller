@@ -1,0 +1,1 @@
+/home/runner/work/enterprise-session-controller/enterprise-session-controller/input/enterprise-session-controller.xml:25:2: error: element "PP" not allowed here; expected element "Module"
