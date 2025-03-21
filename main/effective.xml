@@ -1,4 +1,4 @@
-<PP xmlns="https://niap-ccevs.org/cc/v1" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:sec="https://niap-ccevs.org/cc/v1/section" target-product="Widget" target-products="Widgets" boilerplate="yes" short="Wid">
+<Module xmlns="https://niap-ccevs.org/cc/v1" xmlns:sec="https://niap-ccevs.org/cc/v1/section" xmlns:h="http://www.w3.org/1999/xhtml" boilerplate="yes" target-product="Enterprise Session Controller" name="Enterprise Session Controller">
 
 <!--    <cPP/>    -->                                 <!-- This empty element must be included here if this is a cPP. It must not be here if it is not.  -->
 
@@ -25,8 +25,7 @@
   <!-- PPReference (all documents) -->
   <PPReference>
     <ReferenceTable>
-      <PPTitle>Protection Profile for QQQQ</PPTitle>
-      <PPVersion>2.0</PPVersion>
+      <PPVersion>1.0</PPVersion>
       <PPAuthor>National Information Assurance Partnership</PPAuthor>
       <PPPubDate>2024-03-28</PPPubDate>
       <Keywords>QQQQ</Keywords>               <!-- This field is unused and optional -->
@@ -2047,6 +2046,4 @@
       </entry>
 	</bibliography>
 
-<!-- </Module> -->
-<!-- </Package>  -->
-</PP>
+</Module>
