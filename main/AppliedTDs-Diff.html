@@ -54,13 +54,15 @@
         <h1 class="indexable" data-level="1" id="sec-intro">1 Introduction</h1>
         <h2 class="indexable" data-level="2" id="sec-ppoverview">1.1 PP Overview</h2>
         <p>
-            The scope of this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is to describe the security functionality of an Enterprise Session Controller (ESC) in terms of [<abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>] and to define functional and assurance requirements for such products. This PPModule is intended for use with the following <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PPs</a></abbr>: 
+            The scope of this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is to describe the security functionality of an Enterprise Session Controller (<abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>) in terms of [<abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>] and to define functional and assurance requirements for such products. This PPModule is intended for use with the following <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PPs</a></abbr>: 
         </p>
         <ul>
-            <li>collaborative Protection Profile for Network Devices (NDcPP), Version 2.2e </li>
+            <li>
+                collaborative Protection Profile for Network Devices (<abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr>), Version 2.2e 
+            </li>
         </ul>
         <p>
-            This <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> is valid because a device that implements an ESC is a specific type of network device, and there is nothing about the implementation of an ESC that would prevent any of the security capabilities defined by the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> from being satisfied. This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not mandate a particular architecture; the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> may be either standalone or distributed as permitted by the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>.
+            This <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> is valid because a device that implements an <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> is a specific type of network device, and there is nothing about the implementation of an <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> that would prevent any of the security capabilities defined by the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> from being satisfied. This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not mandate a particular architecture; the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> may be either standalone or distributed as permitted by the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>.
         </p>
         <div class="no-link">
             <h2 id="glossary" class="indexable" data-level="2">1.2 Terms</h2>
@@ -162,8 +164,53 @@
             <table style="width: 100%">
                 <tr>
                     <td>
-                        <div id="Address_Space_Layout_Randomization">Address Space Layout Randomization (ASLR)</div>
-                    </td><td> An anti-exploitation feature which loads memory mappings into unpredictable locations. ASLR makes it more difficult for an attacker to redirect control to code that they have introduced into the address space of a process. </td>
+                        <div id="Audit_Log">Audit Log</div>
+                    </td><td> A persistent record of security-relevant events such as administrative access, administrative actions performed, system failures, and the establishment and termination of remote communications. </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="Call_Detail_Record">Call Detail Record</div>
+                    </td><td>A log of call metadata that can be used to determine characteristics of a call, such as its length and involved parties, without recording any of its content.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="Call_Processing">Call Processing</div>
+                    </td><td>The act of translating a dialed phone number into an attempt to establish a connection with the appropriate party; this is in contrast to the actual transmission of voice/video media over a call.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="Enterprise_Session_Controller">Enterprise Session Controller</div>
+                    </td><td>A type of network device that is responsible for establishment, processing, and termination of Voice/Video over IP (VVoIP) calls.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="Service_Provider">Service Provider</div>
+                    </td><td>A third-party telecommunications company that is responsible for providing commercial service and connectivity to the worldwide telephone network. </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="Session_Border_Controller">Session Border Controller</div>
+                    </td><td>A type of network device that resides on the edge of a VVoIP network that is responsible for filtering corrupted or potentially malicious traffic and preventing it from entering or leaving the network.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="System_Log">System Log</div>
+                    </td><td>A live display of system characteristics that can be viewed on demand to diagnose system performance in real-time. This data is typically only stored for a short period of time if at all.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="Telecommunications_Device">Telecommunications Device</div>
+                    </td><td>In this PP-Module, used to refer generally to any piece of infrastructure equipment that the ESC may connect to other than a VVoIP Endpoint, which could include equipment such as a call conferencing server or Session Border Controller. </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="Trunking">Trunking</div>
+                    </td><td>The concept of connecting multiple networks together; analogous to the use of a T1 line in a legacy telephone network.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="VVoIP_Endpoint">VVoIP Endpoint</div>
+                    </td><td>A VVoIP-capable phone or software application that a human user can use to make or receive a voice or video call.</td>
                 </tr>
             </table>
         </div>
@@ -295,7 +342,7 @@
                         <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> for Host Agent, Version 1.0
                     </li>
                     <li>
-                        <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> for Voice and Video over IP (VVoIP), Version 1.0
+                        <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> for Voice and Video over IP (<abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr>), Version 1.0
                     </li>
                     <li>
                         <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> for Email Clients, Version 1.0
@@ -427,7 +474,7 @@
                 <span class="ctr" data-myid="t-sec-obj-rat" data-counter-type="ct-Table" id="t-sec-obj-rat">Table <span class="counter">1</span></span>: Security Objectives Rationale
             </caption>
             <tr class="header">
-                <td>Threat, Assumption, or OSP</td><td>Security Objectives</td><td>Rationale</td>
+                <td>Threat, Assumption, or <abbr class="dyn-abbr"><a href="#abbr_OSP">OSP</a></abbr></td><td>Security Objectives</td><td>Rationale</td>
             </tr>
             <tr class="major-row">
                 <td rowspan="2"><a href="#T.NETWORK_ATTACK">T.NETWORK_​ATTACK</a></td><td>O.PROTECTED_​COMMS</td><td>The threat <a href="#T.NETWORK_ATTACK">T.NETWORK_ATTACK</a> is countered by O.PROTECTED_COMMS as this provides for integrity of transmitted data.</td>
@@ -494,7 +541,7 @@
                     </td><td>FPT_SBOP_EXT.1</td><td>For reasons </td>
                 </tr>
                 <tr>
-                    <td>FPT_ASLR_EXT.1</td><td><abbr class="dyn-abbr"><a href="#abbr_ASLR">ASLR</a></abbr> For reasons </td>
+                    <td>FPT_ASLR_EXT.1</td><td>ASLR For reasons </td>
                 </tr>
                 <tr>
                     <td>FPT_TUD_EXT.1</td><td>For reasons </td>
@@ -765,16 +812,13 @@
                 <th>Acronym</th><th>Meaning</th>
             </tr>
             <tr>
-                <td><span class="term" id="abbr_ASLR"><abbr class="dyn-abbr"><a href="#abbr_ASLR">ASLR</a></abbr></span></td><td><span id="long_abbr_ASLR">Address Space Layout Randomization</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_ASLR"><abbr class="dyn-abbr"><a href="#abbr_ASLR">ASLR</a></abbr></span></td><td><span id="long_abbr_ASLR">Address Space Layout Randomization</span></td>
-            </tr>
-            <tr>
                 <td><span class="term" id="abbr_Base-PP" data-plural="Base-PPs"><abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr></span></td><td><span id="long_abbr_Base-PP">Base Protection Profile</span></td>
             </tr>
             <tr>
                 <td><span class="term" id="abbr_CC"><abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr></span></td><td><span id="long_abbr_CC">Common Criteria</span></td>
+            </tr>
+            <tr>
+                <td><span class="term" id="abbr_CDR"><abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr></span></td><td><span id="long_abbr_CDR">Call Detail Record</span></td>
             </tr>
             <tr>
                 <td><span class="term" id="abbr_CEM"><abbr class="dyn-abbr"><a href="#abbr_CEM">CEM</a></abbr></span></td><td><span id="long_abbr_CEM">Common Evaluation Methodology</span></td>
@@ -786,10 +830,28 @@
                 <td><span class="term" id="abbr_EP"><abbr class="dyn-abbr"><a href="#abbr_EP">EP</a></abbr></span></td><td><span id="long_abbr_EP">Extended Package</span></td>
             </tr>
             <tr>
+                <td><span class="term" id="abbr_ESC"><abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr></span></td><td><span id="long_abbr_ESC">Enterprise Session Controller</span></td>
+            </tr>
+            <tr>
                 <td><span class="term" id="abbr_FP"><abbr class="dyn-abbr"><a href="#abbr_FP">FP</a></abbr></span></td><td><span id="long_abbr_FP">Functional Package</span></td>
             </tr>
             <tr>
+                <td><span class="term" id="abbr_IP-PBX"><abbr class="dyn-abbr"><a href="#abbr_IP-PBX">IP-PBX</a></abbr></span></td><td><span id="long_abbr_IP-PBX">Internet Protocol Private Branch Exchange</span></td>
+            </tr>
+            <tr>
+                <td><span class="term" id="abbr_MGCP"><abbr class="dyn-abbr"><a href="#abbr_MGCP">MGCP</a></abbr></span></td><td><span id="long_abbr_MGCP">Media Gateway Control Protocol</span></td>
+            </tr>
+            <tr>
+                <td><span class="term" id="abbr_NDcPP"><abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr></span></td><td><span id="long_abbr_NDcPP">Collaborative Protection Profile for Network Devices</span></td>
+            </tr>
+            <tr>
+                <td><span class="term" id="abbr_OA&amp;M">OA&amp;M</span></td><td><span id="long_abbr_OA&amp;M">Operations, Administration, and Management</span></td>
+            </tr>
+            <tr>
                 <td><span class="term" id="abbr_OE"><abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr></span></td><td><span id="long_abbr_OE">Operational Environment</span></td>
+            </tr>
+            <tr>
+                <td><span class="term" id="abbr_OSP"><abbr class="dyn-abbr"><a href="#abbr_OSP">OSP</a></abbr></span></td><td><span id="long_abbr_OSP">Organizational Security Policies</span></td>
             </tr>
             <tr>
                 <td><span class="term" id="abbr_PP" data-plural="PPs"><abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr></span></td><td><span id="long_abbr_PP">Protection Profile</span></td>
@@ -804,7 +866,13 @@
                 <td><span class="term" id="abbr_SAR" data-plural="SARs"><abbr class="dyn-abbr"><a href="#abbr_SAR">SAR</a></abbr></span></td><td><span id="long_abbr_SAR">Security Assurance Requirement</span></td>
             </tr>
             <tr>
+                <td><span class="term" id="abbr_SBC"><abbr class="dyn-abbr"><a href="#abbr_SBC">SBC</a></abbr></span></td><td><span id="long_abbr_SBC">Session Border Controller</span></td>
+            </tr>
+            <tr>
                 <td><span class="term" id="abbr_SFR" data-plural="SFRs"><abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr></span></td><td><span id="long_abbr_SFR">Security Functional Requirement</span></td>
+            </tr>
+            <tr>
+                <td><span class="term" id="abbr_SIP"><abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr></span></td><td><span id="long_abbr_SIP">Session Initiation Protocol</span></td>
             </tr>
             <tr>
                 <td><span class="term" id="abbr_ST" data-plural="STs"><abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr></span></td><td><span id="long_abbr_ST">Security Target</span></td>
@@ -820,6 +888,9 @@
             </tr>
             <tr>
                 <td><span class="term" id="abbr_TSS"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></span></td><td><span id="long_abbr_TSS"><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Summary Specification</span></td>
+            </tr>
+            <tr>
+                <td><span class="term" id="abbr_VVoIP"><abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr></span></td><td><span id="long_abbr_VVoIP">Voice/Video over IP</span></td>
             </tr>
         </table>
         <h1 id="appendix-bibliography" class="indexable" data-level="A">Appendix F - Bibliography</h1>

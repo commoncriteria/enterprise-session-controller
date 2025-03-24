@@ -142,13 +142,42 @@
       <suppress>Distributed TOE</suppress>   
 
 
-      <term full="Address Space Layout Randomization" abbr="ASLR">
-		An anti-exploitation feature which loads memory mappings into unpredictable
-		locations. ASLR makes it more difficult for an attacker to redirect control to code
-		that they have introduced into the address space of a process.
+      <term full="Audit Log">
+		A persistent record of security-relevant events such as administrative access,
+		administrative actions performed, system failures, and the establishment and
+		termination of remote communications.
       </term>
-	  <term full="Address Space Layout Randomization" abbr="ASLR"/>
-      
+	  <term full="Call Detail Record">A log of call metadata that can be used to determine characteristics of a call, such as
+		its length and involved parties, without recording any of its content.</term>
+      <term full="Call Processing">The act of translating a dialed phone number into an attempt to establish a
+connection with the appropriate party; this is in contrast to the actual transmission of
+voice/video media over a call.</term>
+	  <term full="Enterprise Session Controller">A type of network device that is responsible for establishment, processing, and termination of Voice/Video over IP (VVoIP) calls.</term>
+	  <term full="Service Provider">A third-party telecommunications company that is responsible for providing
+commercial service and connectivity to the worldwide telephone network.
+</term>
+	  <term full="Session Border Controller">A type of network device that resides on the edge of a VVoIP network that is
+		responsible for filtering corrupted or potentially malicious traffic and preventing it
+		from entering or leaving the network.</term>
+	  <term full="System Log">A live display of system characteristics that can be viewed on demand to diagnose
+system performance in real-time. This data is typically only stored for a short period
+of time if at all.</term>
+	  <term full="Telecommunications Device">In this PP-Module, used to refer generally to any piece of infrastructure equipment
+		that the ESC may connect to other than a VVoIP Endpoint, which could include
+		equipment such as a call conferencing server or Session Border Controller.
+		</term>
+		<term full="Trunking">The concept of connecting multiple networks together; analogous to the use of a T1 line in a legacy telephone network.</term>
+		<term full="VVoIP Endpoint">A VVoIP-capable phone or software application that a human user can use to make or receive a voice or video call.</term>
+	  <term full="Call Detail Record" abbr="CDR"/>
+	  <term full="Enterprise Session Controller" abbr="ESC"/>
+	  <term full="Internet Protocol Private Branch Exchange" abbr="IP-PBX"/>
+	  <term full="Media Gateway Control Protocol" abbr="MGCP"/>
+	  <term full="Collaborative Protection Profile for Network Devices" abbr="NDcPP"/>
+	  <term full="Operations, Administration, and Management" abbr="OA&amp;M"/>
+	  <term full="Organizational Security Policies" abbr="OSP"/>
+	  <term full="Session Border Controller" abbr="SBC"/>
+	  <term full="Session Initiation Protocol" abbr="SIP"/>
+	  <term full="Voice/Video over IP" abbr="VVoIP"/>
 
     </tech-terms>    
 

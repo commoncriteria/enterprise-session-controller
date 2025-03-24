@@ -349,11 +349,32 @@ The following sections list Common Criteria and technology terms used in this do
 <tr><td><div id="Target_of_Evaluation">Target of Evaluation (TOE)</div></td><td>The product under evaluation. </td></tr>
 <tr><td><div id="TOE_Security_Functionality">TOE Security Functionality (TSF)</div></td><td>The security functionality of the product under evaluation.</td></tr>
 <tr><td><div id="TOE_Summary_Specification">TOE Summary Specification (TSS)</div></td><td>A description of how a TOE satisfies the SFRs in an ST.</td></tr>
-</table><h3 id="tech-terms" class="indexable" data-level="2">1.3.2 Technical Terms</h3><table style="width: 100%"><tr><td><div id="Address_Space_Layout_Randomization">Address Space Layout Randomization (ASLR)</div></td><td>
-		An anti-exploitation feature which loads memory mappings into unpredictable
-		locations. ASLR makes it more difficult for an attacker to redirect control to code
-		that they have introduced into the address space of a process.
+</table><h3 id="tech-terms" class="indexable" data-level="2">1.3.2 Technical Terms</h3><table style="width: 100%"><tr><td><div id="Audit_Log">Audit Log</div></td><td>
+		A persistent record of security-relevant events such as administrative access,
+		administrative actions performed, system failures, and the establishment and
+		termination of remote communications.
       </td></tr>
+<tr><td><div id="Call_Detail_Record">Call Detail Record</div></td><td>A log of call metadata that can be used to determine characteristics of a call, such as
+		its length and involved parties, without recording any of its content.</td></tr>
+<tr><td><div id="Call_Processing">Call Processing</div></td><td>The act of translating a dialed phone number into an attempt to establish a
+connection with the appropriate party; this is in contrast to the actual transmission of
+voice/video media over a call.</td></tr>
+<tr><td><div id="Enterprise_Session_Controller">Enterprise Session Controller</div></td><td>A type of network device that is responsible for establishment, processing, and termination of Voice/Video over IP (VVoIP) calls.</td></tr>
+<tr><td><div id="Service_Provider">Service Provider</div></td><td>A third-party telecommunications company that is responsible for providing
+commercial service and connectivity to the worldwide telephone network.
+</td></tr>
+<tr><td><div id="Session_Border_Controller">Session Border Controller</div></td><td>A type of network device that resides on the edge of a VVoIP network that is
+		responsible for filtering corrupted or potentially malicious traffic and preventing it
+		from entering or leaving the network.</td></tr>
+<tr><td><div id="System_Log">System Log</div></td><td>A live display of system characteristics that can be viewed on demand to diagnose
+system performance in real-time. This data is typically only stored for a short period
+of time if at all.</td></tr>
+<tr><td><div id="Telecommunications_Device">Telecommunications Device</div></td><td>In this PP-Module, used to refer generally to any piece of infrastructure equipment
+		that the ESC may connect to other than a VVoIP Endpoint, which could include
+		equipment such as a call conferencing server or Session Border Controller.
+		</td></tr>
+<tr><td><div id="Trunking">Trunking</div></td><td>The concept of connecting multiple networks together; analogous to the use of a T1 line in a legacy telephone network.</td></tr>
+<tr><td><div id="VVoIP_Endpoint">VVoIP Endpoint</div></td><td>A VVoIP-capable phone or software application that a human user can use to make or receive a voice or video call.</td></tr>
 </table></div><h1 id="sfr" class="indexable" data-level="0">2 Evaluation Activities for SFRs</h1><p>The EAs presented in this section capture the actions the evaluator performs 
     to address technology specific aspects covering specific SARs (e.g. ASE_TSS.1, 
     ADV_FSP.1, AGD_OPE.1, and ATE_IND.1) – this is in addition to the CEM workunits 
