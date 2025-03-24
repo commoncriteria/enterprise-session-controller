@@ -157,12 +157,12 @@
       <suppress>Distributed TOE</suppress>   
 
 
-      <term full="Audit Log " abbr="ASLR">
+      <term full="Audit Log">
 		A persistent record of security-relevant events such as administrative access,
 		administrative actions performed, system failures, and the establishment and
 		termination of remote communications.
       </term>
-	  <term full="Call Detail Record" abbr="">A log of call metadata that can be used to determine characteristics of a call, such as
+	  <term full="Call Detail Record" >A log of call metadata that can be used to determine characteristics of a call, such as
 		its length and involved parties, without recording any of its content.</term>
       <term full="Call Processing">The act of translating a dialed phone number into an attempt to establish a
 connection with the appropriate party; this is in contrast to the actual transmission of
@@ -177,7 +177,7 @@ commercial service and connectivity to the worldwide telephone network.
 	  <term full="System Log">A live display of system characteristics that can be viewed on demand to diagnose
 system performance in real-time. This data is typically only stored for a short period
 of time if at all.</term>
-	  <term full="Telecommunications Device" abbr="">In this PP-Module, used to refer generally to any piece of infrastructure equipment
+	  <term full="Telecommunications Device" >In this PP-Module, used to refer generally to any piece of infrastructure equipment
 		that the ESC may connect to other than a VVoIP Endpoint, which could include
 		equipment such as a call conferencing server or Session Border Controller.
 		</term>
