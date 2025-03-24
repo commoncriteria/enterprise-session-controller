@@ -165,81 +165,6 @@
                         <div id="Address_Space_Layout_Randomization">Address Space Layout Randomization (ASLR)</div>
                     </td><td> An anti-exploitation feature which loads memory mappings into unpredictable locations. ASLR makes it more difficult for an attacker to redirect control to code that they have introduced into the address space of a process. </td>
                 </tr>
-                <tr>
-                    <td>
-                        <div id="Administrator">Administrator</div>
-                    </td><td> An administrator is responsible for management activities, including setting policies that are applied by the enterprise on the operating system. This administrator could be acting remotely through a management server, from which the system receives configuration policies. An administrator can enforce settings on the system which cannot be overridden by non-administrator users. </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div id="Application">Application (app)</div>
-                    </td><td> Software that runs on a platform and performs tasks on behalf of the user or owner of the platform, as well as its supporting documentation. </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div id="Application_Programming_Interface">Application Programming Interface (API)</div>
-                    </td><td> A specification of routines, data structures, object classes, and variables that allows an application to make use of services provided by another software component, such as a library. APIs are often provided for a set of libraries included with the platform. </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div id="Credential">Credential</div>
-                    </td><td> Data that establishes the identity of a user, e.g. a cryptographic key or password. </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div id="Critical_Security_Parameters">Critical Security Parameters (CSP)</div>
-                    </td><td> Information that is either user or system defined and is used to operate a cryptographic module in processing encryption functions including cryptographic keys and authentication data, such as passwords, the disclosure or modification of which can compromise the security of a cryptographic module or the security of the information protected by the module. </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div id="DAR_Protection">DAR Protection</div>
-                    </td><td> Countermeasures that prevent attackers, even those with physical access, from extracting data from non-volatile storage. Common techniques include data encryption and wiping. </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div id="Data_Execution_Prevention">Data Execution Prevention (DEP)</div>
-                    </td><td> An anti-exploitation feature of modern operating systems executing on modern computer hardware, which enforces a non-execute permission on pages of memory. DEP prevents pages of memory from containing both data and instructions, which makes it more difficult for an attacker to introduce and execute code. </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div id="Developer">Developer</div>
-                    </td><td> An entity that writes OS software. For the purposes of this document, vendors and developers are the same. </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div id="General_Purpose_Operating_System">General Purpose Operating System</div>
-                    </td><td> A class of OSes designed to support a wide-variety of workloads consisting of many concurrent applications or services. Typical characteristics for OSes in this class include support for third-party applications, support for multiple users, and security separation between users and their respective resources. General Purpose Operating Systems also lack the real-time constraint that defines Real Time Operating Systems (RTOS). RTOSes typically power routers, switches, and embedded devices. </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div id="Host-based_Firewall">Host-based Firewall</div>
-                    </td><td> A software-based firewall implementation running on the OS for filtering inbound and outbound network traffic to and from processes running on the OS. </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div id="Operating_System">Operating System (OS)</div>
-                    </td><td> Software that manages physical and logical resources and provides services for applications. The terms <i>TOE</i> and <i>OS</i> are interchangeable in this document. </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div id="Personally_Identifiable_Information">Personally Identifiable Information (PII)</div>
-                    </td><td> Any information about an individual maintained by an agency, including, but not limited to, education, financial transactions, medical history, and criminal or employment history and information which can be used to distinguish or trace an individual's identity, such as their name, social security number, date and place of birth, mother's maiden name, biometric records, etc., including any other personal information which is linked or linkable to an individual.<a href="#bibOMB">[OMB]</a> </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div id="Sensitive_Data">Sensitive Data</div>
-                    </td><td> Sensitive data may include all user or enterprise data or may be specific application data such as PII, emails, messaging, documents, calendar items, and contacts. Sensitive data must minimally include credentials and keys. Sensitive data shall be identified in the OS's TSS by the ST author. </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div id="User">User</div>
-                    </td><td> A user is subject to configuration policies applied to the operating system by administrators. On some systems under certain configurations, a normal user can temporarily elevate privileges to that of an administrator. At that time, such a user should be considered an administrator. </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div id="Virtual_Machine">Virtual Machine (VM)</div>
-                    </td><td>Blah Blah Blah</td>
-                </tr>
             </table>
         </div>
         <h2 class="indexable" data-level="2" id="sec-TOEdescription">1.3 Compliant Targets of Evaluation</h2>
@@ -263,7 +188,7 @@
         </dl>
          
         <h2 class="indexable" data-level="2" id="sec-platforms">1.5 Platforms with Specific EAs</h2>
-         This <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> includes platform-specific EAs for the below-listed operating system platforms. For "bare-metal" applications, applications that run on other <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> platforms, and applications that run in software-based execution environments contact the Technical Community for guidance.
+         This <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> includes platform-specific EAs for the below-listed operating system platforms. For "bare-metal" applications, applications that run on other OS platforms, and applications that run in software-based execution environments contact the Technical Community for guidance.
         <p></p>
         <ul>
             <li>
@@ -309,9 +234,7 @@
         <p>
              A Vendor can make a claim of equivalence if the Vendor believes that a particular instance of their Product implements <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality in a way equivalent to the implementation of the same functionality on another instance of their Product on which the functionality was tested. The Product instances can differ in version number or feature level (model), or the instances may run on different platforms. Equivalency can be used to reduce the testing required across claimed evaluated configurations. It can also be used during Assurance Maintenance to reduce testing needed to add more evaluated configurations to a certification. 
         </p>
-        <p>
-             These equivalency guidelines do not replace Assurance Maintenance requirements or <abbr class="dyn-abbr"><a href="#abbr_NIAP">NIAP</a></abbr> Policy #5 requirements for CAVP certificates. Nor may equivalency be used to leverage evaluations with expired certifications. 
-        </p>
+        <p> These equivalency guidelines do not replace Assurance Maintenance requirements or NIAP Policy #5 requirements for CAVP certificates. Nor may equivalency be used to leverage evaluations with expired certifications. </p>
         <p> These Equivalency Guidelines represent a shift from complete testing of all product instances to more of a risk-based approach. Rather than require that every combination of product and platform be tested, these guidelines support an approach that recognizes that products are being used in a variety of environments&mdash;and often in cloud environments over where the vendor (and sometimes the customer) have little or no control over the underlying hardware. Developers should be responsible for the security functionality of their applications on the platforms they are developed for&mdash;whether that is an operating system, a virtual machine, or a software-based execution environment such as a container. But those platforms may themselves run within other environments&mdash;virtual machines or operating systems&mdash;that completely abstract away the underlying hardware from the application. The developer should not be held accountable for security functionality that is implemented by platform layers that are abstracted away. The implication is that not all security functionality will necessarily be tested for all platform layers down to the hardware for all evaluated configurations&mdash;especially for applications developed for software-based execution environments such as containers. For these cases, the balancing of evaluation rigor and commercial practicability tips in favor of practicability. Note that this does not affect the requirement that at least one product instance be fully tested on at least one platform with cryptography mapped to a CAVP certificate. </p>
         <p> Equivalency has two aspects: </p>
         <ol>
@@ -372,7 +295,7 @@
                         <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> for Host Agent, Version 1.0
                     </li>
                     <li>
-                        <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> for Voice and Video over <abbr class="dyn-abbr"><a href="#abbr_IP">IP</a></abbr> (VVoIP), Version 1.0
+                        <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> for Voice and Video over IP (VVoIP), Version 1.0
                     </li>
                     <li>
                         <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> for Email Clients, Version 1.0
@@ -390,10 +313,10 @@
             <dd>
                 <ul>
                     <li>
-                        This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is Functional Package for <abbr class="dyn-abbr"><a href="#abbr_TLS">TLS</a></abbr> Version 1.1 conformant.
+                        This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is Functional Package for TLS Version 1.1 conformant.
                     </li>
                     <li>
-                        This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is Functional Package for <abbr class="dyn-abbr"><a href="#abbr_TLS">TLS</a></abbr> Version 2.0 conformant.
+                        This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is Functional Package for TLS Version 2.0 conformant.
                     </li>
                     <li>
                         This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is Functional Package for SSH Version 1.0 conformant.
@@ -423,17 +346,17 @@
         </dl>
          
         <h1 class="indexable" data-level="1" id="sec-spd">3 Security Problem Definition</h1>
-         The security problem is described in terms of the threats that the <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> is expected to address, assumptions about the operational environment, and any organizational security policies that the <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> is expected to enforce. 
+         The security problem is described in terms of the threats that the OS is expected to address, assumptions about the operational environment, and any organizational security policies that the OS is expected to enforce. 
         <h2 class="indexable" data-level="2" id="sec-threats">3.1 Threats</h2>
          
         <dl>
             <dt class="threat defined" id="T.NETWORK_ATTACK">T.NETWORK_ATTACK</dt>
             <dd>
-                <span class="description"> An attacker is positioned on a communications channel or elsewhere on the network infrastructure. Attackers may engage in communications with applications and services running on or part of the <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> with the intent of compromise. Engagement may consist of altering existing legitimate communications.</span>
+                <span class="description"> An attacker is positioned on a communications channel or elsewhere on the network infrastructure. Attackers may engage in communications with applications and services running on or part of the OS with the intent of compromise. Engagement may consist of altering existing legitimate communications.</span>
             </dd>
             <dt class="threat defined" id="T.NETWORK_EAVESDROP">T.NETWORK_EAVESDROP</dt>
             <dd>
-                <span class="description"> An attacker is positioned on a communications channel or elsewhere on the network infrastructure. Attackers may monitor and gain access to data exchanged between applications and services that are running on or part of the <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr>. </span>
+                <span class="description"> An attacker is positioned on a communications channel or elsewhere on the network infrastructure. Attackers may monitor and gain access to data exchanged between applications and services that are running on or part of the OS. </span>
             </dd>
         </dl>
          
@@ -442,11 +365,11 @@
         <dl>
             <dt class="assumption defined" id="A.PLATFORM">A.PLATFORM</dt>
             <dd>
-                <span class="description"> The <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> relies upon a trustworthy computing platform for its execution. This underlying platform is out of scope of this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>. </span>
+                <span class="description"> The OS relies upon a trustworthy computing platform for its execution. This underlying platform is out of scope of this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>. </span>
             </dd>
             <dt class="assumption defined" id="A.PROPER_USER">A.PROPER_USER</dt>
             <dd>
-                <span class="description"> The user of the <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> is not willfully negligent or hostile, and uses the software in compliance with the applied enterprise security policy. At the same time, malicious software could act <i>as</i> the user, so requirements which confine malicious subjects are still in scope.</span>
+                <span class="description"> The user of the OS is not willfully negligent or hostile, and uses the software in compliance with the applied enterprise security policy. At the same time, malicious software could act <i>as</i> the user, so requirements which confine malicious subjects are still in scope.</span>
             </dd>
         </dl>
          
@@ -458,7 +381,7 @@
         <dl>
             <dt class="OSP defined" id="P.ENTERPRISE">P.ENTERPRISE</dt>
             <dd>
-                <span class="description">If the <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> is bound to a directory or management server, the configuration of the <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> software must be capable of adhering to the enterprise security policies distributed by them.</span>
+                <span class="description">If the OS is bound to a directory or management server, the configuration of the OS software must be capable of adhering to the enterprise security policies distributed by them.</span>
             </dd>
         </dl>
          
@@ -468,32 +391,32 @@
         <dl>
             <dt class="SO defined" id="O.ACCOUNTABILITY">O.ACCOUNTABILITY</dt>
             <dd>
-                <span class="description"> Conformant <abbr class="dyn-abbr"><a href="#abbr_OS">OSes</a></abbr> ensure that information exists that allows administrators to discover unintentional issues with the configuration and operation of the operating system and discover its cause. Gathering event information and immediately transmitting it to another system can also enable incident response in the event of system compromise.</span>
+                <span class="description"> Conformant OSes ensure that information exists that allows administrators to discover unintentional issues with the configuration and operation of the operating system and discover its cause. Gathering event information and immediately transmitting it to another system can also enable incident response in the event of system compromise.</span>
             </dd>
             <dt class="SO defined" id="O.INTEGRITY">O.INTEGRITY</dt>
             <dd>
-                <span class="description">Conformant <abbr class="dyn-abbr"><a href="#abbr_OS">OSes</a></abbr> ensure the integrity of their update packages. <abbr class="dyn-abbr"><a href="#abbr_OS">OSes</a></abbr> are seldom if ever shipped without errors, and the ability to deploy patches and updates with integrity is critical to enterprise network security. Conformant <abbr class="dyn-abbr"><a href="#abbr_OS">OSes</a></abbr> provide execution environment-based mitigations that increase the cost to attackers by adding complexity to the task of compromising systems. </span>
+                <span class="description">Conformant OSes ensure the integrity of their update packages. OSes are seldom if ever shipped without errors, and the ability to deploy patches and updates with integrity is critical to enterprise network security. Conformant OSes provide execution environment-based mitigations that increase the cost to attackers by adding complexity to the task of compromising systems. </span>
             </dd>
             <dt class="SO defined" id="O.MANAGEMENT">O.MANAGEMENT</dt>
             <dd>
-                <span class="description"> To facilitate management by users and the enterprise, conformant <abbr class="dyn-abbr"><a href="#abbr_OS">OSes</a></abbr> provide consistent and supported interfaces for their security-relevant configuration and maintenance. This includes the deployment of applications and application updates through the use of platform-supported deployment mechanisms and formats, as well as providing mechanisms for configuration and application execution control. </span>
+                <span class="description"> To facilitate management by users and the enterprise, conformant OSes provide consistent and supported interfaces for their security-relevant configuration and maintenance. This includes the deployment of applications and application updates through the use of platform-supported deployment mechanisms and formats, as well as providing mechanisms for configuration and application execution control. </span>
             </dd>
         </dl>
          
         <h2 class="indexable" data-level="2" id="sec-OEObjectives">4.2 Security Objectives for the Operational Environment</h2>
-         The <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> implements technical and procedural measures to assist the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> in correctly providing its security functionality (which is defined by the security objectives for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>). The security objectives for the <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> consist of a set of statements describing the goals that the <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> should achieve. This section defines the security objectives that are to be addressed by the <abbr class="dyn-abbr"><a href="#abbr_IT">IT</a></abbr> domain or by non-technical or procedural means. The assumptions identified in Section 3 are incorporated as security objectives for the environment. 
+         The <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> implements technical and procedural measures to assist the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> in correctly providing its security functionality (which is defined by the security objectives for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>). The security objectives for the <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> consist of a set of statements describing the goals that the <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> should achieve. This section defines the security objectives that are to be addressed by the IT domain or by non-technical or procedural means. The assumptions identified in Section 3 are incorporated as security objectives for the environment. 
         <dl>
             <dt class="SOE defined" id="OE.PLATFORM">OE.PLATFORM</dt>
             <dd>
-                <span class="description">The <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> relies on being installed on trusted hardware.</span>
+                <span class="description">The OS relies on being installed on trusted hardware.</span>
             </dd>
             <dt class="SOE defined" id="OE.PROPER_USER">OE.PROPER_USER</dt>
             <dd>
-                <span class="description"> The user of the <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> is not willfully negligent or hostile, and uses the software within compliance of the applied enterprise security policy. Standard user accounts are provisioned in accordance with the least privilege model. Users requiring higher levels of access should have a separate account dedicated for that use. </span>
+                <span class="description"> The user of the OS is not willfully negligent or hostile, and uses the software within compliance of the applied enterprise security policy. Standard user accounts are provisioned in accordance with the least privilege model. Users requiring higher levels of access should have a separate account dedicated for that use. </span>
             </dd>
             <dt class="SOE defined" id="OE.PROPER_ADMIN">OE.PROPER_ADMIN</dt>
             <dd>
-                <span class="description"> The administrator of the <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> is not careless, willfully negligent or hostile, and administers the <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> within compliance of the applied enterprise security policy. </span>
+                <span class="description"> The administrator of the OS is not careless, willfully negligent or hostile, and administers the OS within compliance of the applied enterprise security policy. </span>
             </dd>
         </dl>
          
@@ -516,7 +439,7 @@
                 <td rowspan="2"><a href="#T.NETWORK_EAVESDROP">T.NETWORK_​EAVESDROP</a></td><td>O.PROTECTED_​COMMS</td><td>The threat <a href="#T.NETWORK_EAVESDROP">T.NETWORK_EAVESDROP</a> is countered by O.PROTECTED_COMMS as this provides for confidentiality of transmitted data.</td>
             </tr>
             <tr>
-                <td><a href="#O.MANAGEMENT">O.MANAGEMENT</a></td><td>The threat <a href="#T.NETWORK_EAVESDROP">T.NETWORK_EAVESDROP</a> is countered by <a href="#O.MANAGEMENT">O.MANAGEMENT</a> as this provides for the ability to configure the <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> to protect the confidentiality of its transmitted data.</td>
+                <td><a href="#O.MANAGEMENT">O.MANAGEMENT</a></td><td>The threat <a href="#T.NETWORK_EAVESDROP">T.NETWORK_EAVESDROP</a> is countered by <a href="#O.MANAGEMENT">O.MANAGEMENT</a> as this provides for the ability to configure the OS to protect the confidentiality of its transmitted data.</td>
             </tr>
             <tr class="major-row">
                 <td rowspan="1"><a href="#A.PLATFORM">A.PLATFORM</a></td><td><a href="#OE.PLATFORM">OE.PLATFORM</a></td><td> The operational environment objective <a href="#OE.PLATFORM">OE.PLATFORM</a> is realized through <a href="#A.PLATFORM">A.PLATFORM</a>. </td>
@@ -525,7 +448,7 @@
                 <td rowspan="1"><a href="#A.PROPER_USER">A.PROPER_​USER</a></td><td><a href="#OE.PROPER_USER">OE.PROPER_​USER</a></td><td>The operational environment objective <a href="#OE.PROPER_USER">OE.PROPER_USER</a> is realized through <a href="#A.PROPER_USER">A.PROPER_USER</a>.</td>
             </tr>
             <tr class="major-row">
-                <td rowspan="1"><a href="#P.ENTERPRISE">P.ENTERPRISE</a></td><td><a href="#O.MANAGEMENT">O.MANAGEMENT</a></td><td>The organizational security policy <a href="#P.ENTERPRISE">P.ENTERPRISE</a> is enforced through the objective <a href="#O.MANAGEMENT">O.MANAGEMENT</a> as this objective represents how the enterprise and user assert management over the <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr>.</td>
+                <td rowspan="1"><a href="#P.ENTERPRISE">P.ENTERPRISE</a></td><td><a href="#O.MANAGEMENT">O.MANAGEMENT</a></td><td>The organizational security policy <a href="#P.ENTERPRISE">P.ENTERPRISE</a> is enforced through the objective <a href="#O.MANAGEMENT">O.MANAGEMENT</a> as this objective represents how the enterprise and user assert management over the OS.</td>
             </tr>
         </table>
         <h1 id="sec-reqs" class="indexable" data-level="1">5 Security Requirements</h1>
@@ -603,16 +526,16 @@
                 <td>Requirement</td><td>Rationale for Satisfaction</td>
             </tr>
             <tr>
-                <td>FIA_UAU.1 - Timing of authentication</td><td> FIA_AFL.1 implicitly requires that the <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> perform all necessary actions, including those on behalf of the user who has not been authenticated, in order to authenticate; therefore it is duplicative to include these actions as a separate assignment and test. </td>
+                <td>FIA_UAU.1 - Timing of authentication</td><td> FIA_AFL.1 implicitly requires that the OS perform all necessary actions, including those on behalf of the user who has not been authenticated, in order to authenticate; therefore it is duplicative to include these actions as a separate assignment and test. </td>
             </tr>
             <tr>
-                <td>FIA_UID.1 - Timing of identification</td><td> FIA_AFL.1 implicitly requires that the <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> perform all necessary actions, including those on behalf of the user who has not been identified, in order to authenticate; therefore it is duplicative to include these actions as a separate assignment and test. </td>
+                <td>FIA_UID.1 - Timing of identification</td><td> FIA_AFL.1 implicitly requires that the OS perform all necessary actions, including those on behalf of the user who has not been identified, in order to authenticate; therefore it is duplicative to include these actions as a separate assignment and test. </td>
             </tr>
             <tr>
                 <td>FMT_SMR.1 - Security roles</td><td> FMT_MOF_EXT.1 specifies role-based management functions that implicitly defines user and privileged accounts; therefore, it is duplicative to include separate role requirements. </td>
             </tr>
             <tr>
-                <td>FPT_STM.1 - Reliable time stamps</td><td> FAU_GEN.1.2 explicitly requires that the <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> associate timestamps with audit records; therefore it is duplicative to include a separate timestamp requirement. </td>
+                <td>FPT_STM.1 - Reliable time stamps</td><td> FAU_GEN.1.2 explicitly requires that the OS associate timestamps with audit records; therefore it is duplicative to include a separate timestamp requirement. </td>
             </tr>
             <tr>
                 <td>FTA_SSL.1 - <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>-initiated session locking</td><td> FMT_MOF_EXT.1 defines requirements for managing session locking; therefore, it is duplicative to include a separate session locking requirement. </td>
@@ -624,7 +547,7 @@
                 <td>FAU_STG.1 - Protected audit trail storage</td><td> FPT_ACF_EXT.1 defines a requirement to protect audit logs; therefore, it is duplicative to include a separate protection of audit trail requirements. </td>
             </tr>
             <tr>
-                <td>FAU_GEN.2 - User identity association</td><td> FAU_GEN.1.2 explicitly requires that the <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> record any user account associated with each event; therefore, it is duplicative to include a separate requirement to associate a user account with each event. </td>
+                <td>FAU_GEN.2 - User identity association</td><td> FAU_GEN.1.2 explicitly requires that the OS record any user account associated with each event; therefore, it is duplicative to include a separate requirement to associate a user account with each event. </td>
             </tr>
             <tr>
                 <td>FAU_SAR.1 - Audit review</td><td> FPT_ACF_EXT.1.2 requires that audit logs (and other objects) are protected from reading by unprivileged users; therefore, it is duplicative to include a separate requirement to protect only the audit information. </td>
@@ -639,16 +562,12 @@
         </p>
         <h2 class="indexable" data-level="2" id="entropydesign">C.1 Design Description</h2>
         <p> Documentation shall include the design of the entropy source as a whole, including the interaction of all entropy source components. Any information that can be shared regarding the design should also be included for any third-party entropy sources that are included in the product. </p>
-        <p>
-             The documentation will describe the operation of the entropy source to include, how entropy is produced, and how unprocessed (raw) data can be obtained from within the entropy source for testing purposes. The documentation should walk through the entropy source design indicating where the entropy comes from, where the entropy output is passed next, any post-processing of the raw outputs (hash, <abbr class="dyn-abbr"><a href="#abbr_XOR">XOR</a></abbr>, etc.), if/where it is stored, and finally, how it is output from the entropy source. Any conditions placed on the process (e.g., blocking) should also be described in the entropy source design. Diagrams and examples are encouraged. 
-        </p>
+        <p> The documentation will describe the operation of the entropy source to include, how entropy is produced, and how unprocessed (raw) data can be obtained from within the entropy source for testing purposes. The documentation should walk through the entropy source design indicating where the entropy comes from, where the entropy output is passed next, any post-processing of the raw outputs (hash, XOR, etc.), if/where it is stored, and finally, how it is output from the entropy source. Any conditions placed on the process (e.g., blocking) should also be described in the entropy source design. Diagrams and examples are encouraged. </p>
         <p> This design must also include a description of the content of the security boundary of the entropy source and a description of how the security boundary ensures that an adversary outside the boundary cannot affect the entropy rate. </p>
-        <p>
-             If implemented, the design description shall include a description of how third-party applications can add entropy to the <abbr class="dyn-abbr"><a href="#abbr_RBG">RBG</a></abbr>. A description of any <abbr class="dyn-abbr"><a href="#abbr_RBG">RBG</a></abbr> state saving between power-off and power-on shall be included. 
-        </p>
+        <p> If implemented, the design description shall include a description of how third-party applications can add entropy to the RBG. A description of any RBG state saving between power-off and power-on shall be included. </p>
         <h2 class="indexable" data-level="2" id="entropyjustification">C.2 Entropy Justification</h2>
         <p>
-             There should be a technical argument for where the unpredictability in the source comes from and why there is confidence in the entropy source delivering sufficient entropy for the uses made of the <abbr class="dyn-abbr"><a href="#abbr_RBG">RBG</a></abbr> output (by this particular <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>). This argument will include a description of the expected min-entropy rate (i.e. the minimum entropy (in bits) per bit or byte of source data) and explain that sufficient entropy is going into the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> randomizer seeding process. This discussion will be part of a justification for why the entropy source can be relied upon to produce bits with entropy. 
+             There should be a technical argument for where the unpredictability in the source comes from and why there is confidence in the entropy source delivering sufficient entropy for the uses made of the RBG output (by this particular <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>). This argument will include a description of the expected min-entropy rate (i.e. the minimum entropy (in bits) per bit or byte of source data) and explain that sufficient entropy is going into the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> randomizer seeding process. This discussion will be part of a justification for why the entropy source can be relied upon to produce bits with entropy. 
         </p>
         <p> The amount of information necessary to justify the expected min-entropy rate depends on the type of entropy source included in the product. </p>
         <p> For developer provided entropy sources, in order to justify the min-entropy rate, it is expected that a large number of raw source bits will be collected, statistical tests will be performed, and the min-entropy rate determined from the statistical tests. While no particular statistical tests are required at this time, it is expected that some testing is necessary in order to determine the amount of min-entropy in each output. </p>
@@ -656,7 +575,7 @@
              For third party provided entropy sources, in which the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> vendor has limited access to the design and raw entropy data of the source, the documentation will indicate an estimate of the amount of min-entropy obtained from this third-party source. It is acceptable for the vendor to &ldquo;assume&rdquo; an amount of min-entropy, however, this assumption must be clearly stated in the documentation provided. In particular, the min-entropy estimate must be specified and the assumption included in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>. 
         </p>
         <p>
-             Regardless of type of entropy source, the justification will also include how the <abbr class="dyn-abbr"><a href="#abbr_DRBG">DRBG</a></abbr> is initialized with the entropy stated in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>, for example by verifying that the min-entropy rate is multiplied by the amount of source data used to seed the <abbr class="dyn-abbr"><a href="#abbr_DRBG">DRBG</a></abbr> or that the rate of entropy expected based on the amount of source data is explicitly stated and compared to the statistical rate. If the amount of source data used to seed the <abbr class="dyn-abbr"><a href="#abbr_DRBG">DRBG</a></abbr> is not clear or the calculated rate is not explicitly related to the seed, the documentation will not be considered complete. 
+             Regardless of type of entropy source, the justification will also include how the DRBG is initialized with the entropy stated in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>, for example by verifying that the min-entropy rate is multiplied by the amount of source data used to seed the DRBG or that the rate of entropy expected based on the amount of source data is explicitly stated and compared to the statistical rate. If the amount of source data used to seed the DRBG is not clear or the calculated rate is not explicitly related to the seed, the documentation will not be considered complete. 
         </p>
         <p> The entropy justification shall not include any data added from any third-party application or from any state saving between restarts. </p>
         <h2 class="indexable" data-level="2" id="entropyoperatingconditions">C.3 Operating Conditions</h2>
@@ -671,9 +590,7 @@
         <p>
              A Vendor can make a claim of equivalence if the Vendor believes that a particular instance of their Product implements <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality in a way equivalent to the implementation of the same functionality on another instance of their Product on which the functionality was tested. The Product instances can differ in version number or feature level (model), or the instances may run on different platforms. Equivalency can be used to reduce the testing required across claimed evaluated configurations. It can also be used during Assurance Maintenance to reduce testing needed to add more evaluated configurations to a certification. 
         </p>
-        <p>
-             These equivalency guidelines do not replace Assurance Maintenance requirements or <abbr class="dyn-abbr"><a href="#abbr_NIAP">NIAP</a></abbr> Policy #5 requirements for CAVP certificates. Nor may equivalency be used to leverage evaluations with expired certifications. 
-        </p>
+        <p> These equivalency guidelines do not replace Assurance Maintenance requirements or NIAP Policy #5 requirements for CAVP certificates. Nor may equivalency be used to leverage evaluations with expired certifications. </p>
         <p> These Equivalency Guidelines represent a shift from complete testing of all product instances to more of a risk-based approach. Rather than require that every combination of product and platform be tested, these guidelines support an approach that recognizes that products are being used in a variety of environments&mdash;and often in cloud environments over where the vendor (and sometimes the customer) have little or no control over the underlying hardware. Developers should be responsible for the security functionality of their applications on the platforms they are developed for&mdash;whether that is an operating system, a virtual machine, or a software-based execution environment such as a container. But those platforms may themselves run within other environments&mdash;virtual machines or operating systems&mdash;that completely abstract away the underlying hardware from the application. The developer should not be held accountable for security functionality that is implemented by platform layers that are abstracted away. The implication is that not all security functionality will necessarily be tested for all platform layers down to the hardware for all evaluated configurations&mdash;especially for applications developed for software-based execution environments such as containers. For these cases, the balancing of evaluation rigor and commercial practicability tips in favor of practicability. Note that this does not affect the requirement that at least one product instance be fully tested on at least one platform with cryptography mapped to a CAVP certificate. </p>
         <p> Equivalency has two aspects: </p>
         <ol>
@@ -752,7 +669,7 @@
         <h3 class="indexable" data-level="3" id="hardware-equiv">D.5.1 Platform Equivalence&mdash;Hardware/Virtual Hardware Platforms</h3>
         <p> If an application runs directly on hardware without an operating system&mdash;or directly on virtualized hardware without an operating system&mdash;then platform equivalence is based on processor architecture and instruction sets. In the case of virtualized hardware, it is the virtualized processor and architecture that are presented to the application that matters&mdash;not the physical hardware. </p>
         <p>
-             Platforms with different processor architectures and instruction sets are not equivalent. This is not likely to be an issue for equivalency analysis for applications since there is likely to be a different version of the application for different hardware environments. Equivalency analysis becomes important when comparing processors with the same architecture. Processors with the same architecture that have instruction sets that are subsets or supersets of each other are not disqualified from being equivalent for purposes of an App evaluation. If the application takes the same code paths when executing <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality on different processors of the same family, then the processors can be considered equivalent with respect to that application. For example, if an application follows one code path on platforms that support the <abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>-NI instruction and another on platforms that do not, then those two platforms are not equivalent with respect to that application functionality. But if the application follows the same code path whether or not the platform supports <abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>-NI, then the platforms are equivalent with respect to that functionality. 
+             Platforms with different processor architectures and instruction sets are not equivalent. This is not likely to be an issue for equivalency analysis for applications since there is likely to be a different version of the application for different hardware environments. Equivalency analysis becomes important when comparing processors with the same architecture. Processors with the same architecture that have instruction sets that are subsets or supersets of each other are not disqualified from being equivalent for purposes of an App evaluation. If the application takes the same code paths when executing <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality on different processors of the same family, then the processors can be considered equivalent with respect to that application. For example, if an application follows one code path on platforms that support the AES-NI instruction and another on platforms that do not, then those two platforms are not equivalent with respect to that application functionality. But if the application follows the same code path whether or not the platform supports AES-NI, then the platforms are equivalent with respect to that functionality. 
         </p>
         <p>
              The platforms are equivalent with respect to the application if the platforms are equivalent with respect to all <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality. 
@@ -771,7 +688,7 @@
         </p>
         <h3 class="indexable" data-level="3" id="os-equiv">D.5.2 Platform Equivalence&mdash;OS Platforms</h3>
         <p>
-             For traditional applications that are built for and run on operating systems, platform equivalence is determined by the interfaces between the application and the operating system that are relevant to <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality. Generally, these are the processor interface, device interfaces, and <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> APIs. The following factors applied in order: 
+             For traditional applications that are built for and run on operating systems, platform equivalence is determined by the interfaces between the application and the operating system that are relevant to <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality. Generally, these are the processor interface, device interfaces, and OS APIs. The following factors applied in order: 
             <table border="1">
                 <tr class="header" bgcolor="#cccccc">
                     <td valign="top">Factor</td><td valign="top">Same/Different/None</td><td valign="top">Guidance</td>
@@ -786,17 +703,17 @@
                     <td valign="top">Platform Versions</td><td valign="top">Different</td><td valign="top">Platforms from the same vendor with different major version numbers are not equivalent.</td>
                 </tr>
                 <tr valign="top">
-                    <td valign="top">Platform Interfaces</td><td valign="top">Different</td><td valign="top">Platforms from the same vendor and major version are not equivalent if there are differences in device interfaces and <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> APIs that are relevant to the way the platform provides <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality to the application. </td>
+                    <td valign="top">Platform Interfaces</td><td valign="top">Different</td><td valign="top">Platforms from the same vendor and major version are not equivalent if there are differences in device interfaces and OS APIs that are relevant to the way the platform provides <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality to the application. </td>
                 </tr>
                 <tr valign="top">
-                    <td valign="top">Platform Interfaces</td><td valign="top">Same</td><td valign="top">Platforms from the same vendor and major version are equivalent if there are no differences in device interfaces and <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> APIs that are relevant to the way the platform provides <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality to the application, or if the Platform does not provide such functionality to the application.</td>
+                    <td valign="top">Platform Interfaces</td><td valign="top">Same</td><td valign="top">Platforms from the same vendor and major version are equivalent if there are no differences in device interfaces and OS APIs that are relevant to the way the platform provides <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality to the application, or if the Platform does not provide such functionality to the application.</td>
                 </tr>
             </table>
-             <b>Table 4. Factors for Determining <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr>/VS Platform Equivalence</b> 
+             <b>Table 4. Factors for Determining OS/VS Platform Equivalence</b> 
         </p>
         <h3 class="indexable" data-level="3" id="software-equiv">D.5.3 Software-based Execution Environment Platform Equivalence</h3>
         <p>
-             If an Application is built for and runs in a non-OS software-based execution environment, such as a Container or Java Runtime, then the below criteria must be used to determine platform equivalence. The key point is that the underlying hardware (virtual or physical) and <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> is not relevant to platform equivalence. This allows applications to be tested and run on software-based execution environments on any hardware&mdash;as in cloud deployments. 
+             If an Application is built for and runs in a non-OS software-based execution environment, such as a Container or Java Runtime, then the below criteria must be used to determine platform equivalence. The key point is that the underlying hardware (virtual or physical) and OS is not relevant to platform equivalence. This allows applications to be tested and run on software-based execution environments on any hardware&mdash;as in cloud deployments. 
             <table border="1">
                 <tr class="header" bgcolor="#cccccc">
                     <td valign="top">Factor</td><td valign="top">Same/Different/None</td><td valign="top">Guidance</td>
@@ -831,7 +748,7 @@
              <b>Traditional Applications</b> 
         </p>
         <p>
-             For applications that run with an operating system as their immediate platform, the claimed configuration must describe the platform down to the specific operating system version. If the platform is a virtualization system, then the claimed configuration must describe the platform down to the specific virtualization system version. The Vendor must describe the differences in the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> with respect to <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality and how the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> functions differently to leverage platform differences in the tested configuration versus the claimed equivalent configuration. Relevant platform differences could include instruction sets, device interfaces, and <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> APIs invoked by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to implement <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality. 
+             For applications that run with an operating system as their immediate platform, the claimed configuration must describe the platform down to the specific operating system version. If the platform is a virtualization system, then the claimed configuration must describe the platform down to the specific virtualization system version. The Vendor must describe the differences in the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> with respect to <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality and how the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> functions differently to leverage platform differences in the tested configuration versus the claimed equivalent configuration. Relevant platform differences could include instruction sets, device interfaces, and OS APIs invoked by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to implement <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality. 
         </p>
         <p>
              <b>Software-Based Execution Environments</b> 
@@ -848,16 +765,7 @@
                 <th>Acronym</th><th>Meaning</th>
             </tr>
             <tr>
-                <td><span class="term" id="abbr_AES"><abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr></span></td><td><span id="long_abbr_AES">Advanced Encryption Standard</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_API"><abbr class="dyn-abbr"><a href="#abbr_API">API</a></abbr></span></td><td><span id="long_abbr_API">Application Programming Interface</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_API"><abbr class="dyn-abbr"><a href="#abbr_API">API</a></abbr></span></td><td><span id="long_abbr_API">Application Programming Interface</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_app"><abbr class="dyn-abbr"><a href="#abbr_app">app</a></abbr></span></td><td><span id="long_abbr_app">Application</span></td>
+                <td><span class="term" id="abbr_ASLR"><abbr class="dyn-abbr"><a href="#abbr_ASLR">ASLR</a></abbr></span></td><td><span id="long_abbr_ASLR">Address Space Layout Randomization</span></td>
             </tr>
             <tr>
                 <td><span class="term" id="abbr_ASLR"><abbr class="dyn-abbr"><a href="#abbr_ASLR">ASLR</a></abbr></span></td><td><span id="long_abbr_ASLR">Address Space Layout Randomization</span></td>
@@ -872,133 +780,16 @@
                 <td><span class="term" id="abbr_CEM"><abbr class="dyn-abbr"><a href="#abbr_CEM">CEM</a></abbr></span></td><td><span id="long_abbr_CEM">Common Evaluation Methodology</span></td>
             </tr>
             <tr>
-                <td><span class="term" id="abbr_CESG"><abbr class="dyn-abbr"><a href="#abbr_CESG">CESG</a></abbr></span></td><td><span id="long_abbr_CESG">Communications-Electronics Security Group</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_CMC"><abbr class="dyn-abbr"><a href="#abbr_CMC">CMC</a></abbr></span></td><td><span id="long_abbr_CMC">Certificate Management over <abbr class="dyn-abbr"><a href="#abbr_CMS">CMS</a></abbr></span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_CMS"><abbr class="dyn-abbr"><a href="#abbr_CMS">CMS</a></abbr></span></td><td><span id="long_abbr_CMS">Cryptographic Message Syntax</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_CN"><abbr class="dyn-abbr"><a href="#abbr_CN">CN</a></abbr></span></td><td><span id="long_abbr_CN">Common Names</span></td>
-            </tr>
-            <tr>
                 <td><span class="term" id="abbr_cPP" data-plural="cPPs"><abbr class="dyn-abbr"><a href="#abbr_cPP">cPP</a></abbr></span></td><td><span id="long_abbr_cPP">Collaborative Protection Profile</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_CRL"><abbr class="dyn-abbr"><a href="#abbr_CRL">CRL</a></abbr></span></td><td><span id="long_abbr_CRL">Certificate Revocation List</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_CSA"><abbr class="dyn-abbr"><a href="#abbr_CSA">CSA</a></abbr></span></td><td><span id="long_abbr_CSA">Computer Security Act</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_CSP"><abbr class="dyn-abbr"><a href="#abbr_CSP">CSP</a></abbr></span></td><td><span id="long_abbr_CSP">Critical Security Parameters</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_DAR"><abbr class="dyn-abbr"><a href="#abbr_DAR">DAR</a></abbr></span></td><td><span id="long_abbr_DAR">Data At Rest</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_DEP"><abbr class="dyn-abbr"><a href="#abbr_DEP">DEP</a></abbr></span></td><td><span id="long_abbr_DEP">Data Execution Prevention</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_DES"><abbr class="dyn-abbr"><a href="#abbr_DES">DES</a></abbr></span></td><td><span id="long_abbr_DES">Data Encryption Standard</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_DHE"><abbr class="dyn-abbr"><a href="#abbr_DHE">DHE</a></abbr></span></td><td><span id="long_abbr_DHE">Diffie-Hellman Ephemeral</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_DNS"><abbr class="dyn-abbr"><a href="#abbr_DNS">DNS</a></abbr></span></td><td><span id="long_abbr_DNS">Domain Name System</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_DRBG"><abbr class="dyn-abbr"><a href="#abbr_DRBG">DRBG</a></abbr></span></td><td><span id="long_abbr_DRBG">Deterministic Random Bit Generator</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_DSS"><abbr class="dyn-abbr"><a href="#abbr_DSS">DSS</a></abbr></span></td><td><span id="long_abbr_DSS">Digital Signature Standard</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_DSS"><abbr class="dyn-abbr"><a href="#abbr_DSS">DSS</a></abbr></span></td><td><span id="long_abbr_DSS">Digital Signature Standard</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_DT"><abbr class="dyn-abbr"><a href="#abbr_DT">DT</a></abbr></span></td><td><span id="long_abbr_DT">Date/Time Vector</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_DTLS"><abbr class="dyn-abbr"><a href="#abbr_DTLS">DTLS</a></abbr></span></td><td><span id="long_abbr_DTLS">Datagram Transport Layer Security</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_EAP"><abbr class="dyn-abbr"><a href="#abbr_EAP">EAP</a></abbr></span></td><td><span id="long_abbr_EAP">Extensible Authentication Protocol</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_ECDHE"><abbr class="dyn-abbr"><a href="#abbr_ECDHE">ECDHE</a></abbr></span></td><td><span id="long_abbr_ECDHE">Elliptic Curve Diffie-Hellman Ephemeral</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_ECDSA"><abbr class="dyn-abbr"><a href="#abbr_ECDSA">ECDSA</a></abbr></span></td><td><span id="long_abbr_ECDSA">Elliptic Curve Digital Signature Algorithm</span></td>
             </tr>
             <tr>
                 <td><span class="term" id="abbr_EP"><abbr class="dyn-abbr"><a href="#abbr_EP">EP</a></abbr></span></td><td><span id="long_abbr_EP">Extended Package</span></td>
             </tr>
             <tr>
-                <td><span class="term" id="abbr_EST"><abbr class="dyn-abbr"><a href="#abbr_EST">EST</a></abbr></span></td><td><span id="long_abbr_EST">Enrollment over Secure Transport</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_FIPS"><abbr class="dyn-abbr"><a href="#abbr_FIPS">FIPS</a></abbr></span></td><td><span id="long_abbr_FIPS">Federal Information Processing Standards</span></td>
-            </tr>
-            <tr>
                 <td><span class="term" id="abbr_FP"><abbr class="dyn-abbr"><a href="#abbr_FP">FP</a></abbr></span></td><td><span id="long_abbr_FP">Functional Package</span></td>
             </tr>
             <tr>
-                <td><span class="term" id="abbr_HMAC"><abbr class="dyn-abbr"><a href="#abbr_HMAC">HMAC</a></abbr></span></td><td><span id="long_abbr_HMAC">Hash-based Message Authentication Code</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_HTTP"><abbr class="dyn-abbr"><a href="#abbr_HTTP">HTTP</a></abbr></span></td><td><span id="long_abbr_HTTP">Hypertext Transfer Protocol</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_HTTPS"><abbr class="dyn-abbr"><a href="#abbr_HTTPS">HTTPS</a></abbr></span></td><td><span id="long_abbr_HTTPS">Hypertext Transfer Protocol Secure</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_IETF"><abbr class="dyn-abbr"><a href="#abbr_IETF">IETF</a></abbr></span></td><td><span id="long_abbr_IETF">Internet Engineering Task Force</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_IP"><abbr class="dyn-abbr"><a href="#abbr_IP">IP</a></abbr></span></td><td><span id="long_abbr_IP">Internet Protocol</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_ISO"><abbr class="dyn-abbr"><a href="#abbr_ISO">ISO</a></abbr></span></td><td><span id="long_abbr_ISO">International Organization for Standardization</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_IT"><abbr class="dyn-abbr"><a href="#abbr_IT">IT</a></abbr></span></td><td><span id="long_abbr_IT">Information Technology</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_ITSEF"><abbr class="dyn-abbr"><a href="#abbr_ITSEF">ITSEF</a></abbr></span></td><td><span id="long_abbr_ITSEF">Information Technology Security Evaluation Facility</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_NIAP"><abbr class="dyn-abbr"><a href="#abbr_NIAP">NIAP</a></abbr></span></td><td><span id="long_abbr_NIAP">National Information Assurance Partnership</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_NIST"><abbr class="dyn-abbr"><a href="#abbr_NIST">NIST</a></abbr></span></td><td><span id="long_abbr_NIST">National Institute of Standards and Technology</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_OCSP"><abbr class="dyn-abbr"><a href="#abbr_OCSP">OCSP</a></abbr></span></td><td><span id="long_abbr_OCSP">Online Certificate Status Protocol</span></td>
-            </tr>
-            <tr>
                 <td><span class="term" id="abbr_OE"><abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr></span></td><td><span id="long_abbr_OE">Operational Environment</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_OID"><abbr class="dyn-abbr"><a href="#abbr_OID">OID</a></abbr></span></td><td><span id="long_abbr_OID">Object Identifier</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_OMB"><abbr class="dyn-abbr"><a href="#abbr_OMB">OMB</a></abbr></span></td><td><span id="long_abbr_OMB">Office of Management and Budget</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_OS" data-plural="OSes"><abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr></span></td><td><span id="long_abbr_OS">Operating System</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_PII"><abbr class="dyn-abbr"><a href="#abbr_PII">PII</a></abbr></span></td><td><span id="long_abbr_PII">Personally Identifiable Information</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_PKI"><abbr class="dyn-abbr"><a href="#abbr_PKI">PKI</a></abbr></span></td><td><span id="long_abbr_PKI">Public Key Infrastructure</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_PP"><abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr></span></td><td><span id="long_abbr_PP">Protection Profile</span></td>
             </tr>
             <tr>
                 <td><span class="term" id="abbr_PP" data-plural="PPs"><abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr></span></td><td><span id="long_abbr_PP">Protection Profile</span></td>
@@ -1010,43 +801,13 @@
                 <td><span class="term" id="abbr_PP-Module"><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr></span></td><td><span id="long_abbr_PP-Module">Protection Profile Module</span></td>
             </tr>
             <tr>
-                <td><span class="term" id="abbr_RBG"><abbr class="dyn-abbr"><a href="#abbr_RBG">RBG</a></abbr></span></td><td><span id="long_abbr_RBG">Random Bit Generator</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_RFC"><abbr class="dyn-abbr"><a href="#abbr_RFC">RFC</a></abbr></span></td><td><span id="long_abbr_RFC">Request for Comment</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_RNG"><abbr class="dyn-abbr"><a href="#abbr_RNG">RNG</a></abbr></span></td><td><span id="long_abbr_RNG">Random Number Generator</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_RNGVS"><abbr class="dyn-abbr"><a href="#abbr_RNGVS">RNGVS</a></abbr></span></td><td><span id="long_abbr_RNGVS">Random Number Generator Validation System</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_S/MIME"><abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr></span></td><td><span id="long_abbr_S/MIME">Secure/Multi-purpose Internet Mail Extensions</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_SAN"><abbr class="dyn-abbr"><a href="#abbr_SAN">SAN</a></abbr></span></td><td><span id="long_abbr_SAN">Subject Alternative Name</span></td>
-            </tr>
-            <tr>
                 <td><span class="term" id="abbr_SAR" data-plural="SARs"><abbr class="dyn-abbr"><a href="#abbr_SAR">SAR</a></abbr></span></td><td><span id="long_abbr_SAR">Security Assurance Requirement</span></td>
             </tr>
             <tr>
                 <td><span class="term" id="abbr_SFR" data-plural="SFRs"><abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr></span></td><td><span id="long_abbr_SFR">Security Functional Requirement</span></td>
             </tr>
             <tr>
-                <td><span class="term" id="abbr_SHA"><abbr class="dyn-abbr"><a href="#abbr_SHA">SHA</a></abbr></span></td><td><span id="long_abbr_SHA">Secure Hash Algorithm</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_SIP"><abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr></span></td><td><span id="long_abbr_SIP">Session Initiation Protocol</span></td>
-            </tr>
-            <tr>
                 <td><span class="term" id="abbr_ST" data-plural="STs"><abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr></span></td><td><span id="long_abbr_ST">Security Target</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_SWID"><abbr class="dyn-abbr"><a href="#abbr_SWID">SWID</a></abbr></span></td><td><span id="long_abbr_SWID">Software Identification</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_TLS"><abbr class="dyn-abbr"><a href="#abbr_TLS">TLS</a></abbr></span></td><td><span id="long_abbr_TLS">Transport Layer Security</span></td>
             </tr>
             <tr>
                 <td><span class="term" id="abbr_TOE" data-plural="TOEs"><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span></td><td><span id="long_abbr_TOE">Target of Evaluation</span></td>
@@ -1059,24 +820,6 @@
             </tr>
             <tr>
                 <td><span class="term" id="abbr_TSS"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></span></td><td><span id="long_abbr_TSS"><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Summary Specification</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_URI"><abbr class="dyn-abbr"><a href="#abbr_URI">URI</a></abbr></span></td><td><span id="long_abbr_URI">Uniform Resource Identifier</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_URL"><abbr class="dyn-abbr"><a href="#abbr_URL">URL</a></abbr></span></td><td><span id="long_abbr_URL">Uniform Resource Locator</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_USB"><abbr class="dyn-abbr"><a href="#abbr_USB">USB</a></abbr></span></td><td><span id="long_abbr_USB">Universal Serial Bus</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_VM"><abbr class="dyn-abbr"><a href="#abbr_VM">VM</a></abbr></span></td><td><span id="long_abbr_VM">Virtual Machine</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_XCCDF"><abbr class="dyn-abbr"><a href="#abbr_XCCDF">XCCDF</a></abbr></span></td><td><span id="long_abbr_XCCDF">eXtensible Configuration Checklist Description Format</span></td>
-            </tr>
-            <tr>
-                <td><span class="term" id="abbr_XOR"><abbr class="dyn-abbr"><a href="#abbr_XOR">XOR</a></abbr></span></td><td><span id="long_abbr_XOR">Exclusive Or</span></td>
             </tr>
         </table>
         <h1 id="appendix-bibliography" class="indexable" data-level="A">Appendix F - Bibliography</h1>
@@ -1118,13 +861,13 @@
                     </span></td>
             </tr>
             <tr>
-                <td><span id="bibCESG">[<abbr class="dyn-abbr"><a href="#abbr_CESG">CESG</a></abbr>]</span></td><td><span class="description"><abbr class="dyn-abbr"><a href="#abbr_CESG">CESG</a></abbr> - <a href="https://www.gov.uk/government/collections/end-user-devices-security-guidance"> End User Devices Security and Configuration Guidance</a></span></td>
+                <td><span id="bibCESG">[CESG]</span></td><td><span class="description">CESG - <a href="https://www.gov.uk/government/collections/end-user-devices-security-guidance"> End User Devices Security and Configuration Guidance</a></span></td>
             </tr>
             <tr>
-                <td><span id="bibCSA">[<abbr class="dyn-abbr"><a href="#abbr_CSA">CSA</a></abbr>]</span></td><td><span class="description"> <a href="http://csrc.nist.gov/groups/SMA/ispab/documents/csa_87.txt">Computer Security Act of 1987</a>, H.R. 145, June 11, 1987. </span></td>
+                <td><span id="bibCSA">[CSA]</span></td><td><span class="description"> <a href="http://csrc.nist.gov/groups/SMA/ispab/documents/csa_87.txt">Computer Security Act of 1987</a>, H.R. 145, June 11, 1987. </span></td>
             </tr>
             <tr>
-                <td><span id="bibOMB">[<abbr class="dyn-abbr"><a href="#abbr_OMB">OMB</a></abbr>]</span></td><td><span class="description"> <a href="http://www.whitehouse.gov/sites/default/files/omb/memoranda/fy2006/m06-19.pdf">Reporting Incidents Involving Personally Identifiable Information and Incorporating the Cost for Security in Agency Information Technology Investments</a>, <abbr class="dyn-abbr"><a href="#abbr_OMB">OMB</a></abbr> M-06-19, July 12, 2006. </span></td>
+                <td><span id="bibOMB">[OMB]</span></td><td><span class="description"> <a href="http://www.whitehouse.gov/sites/default/files/omb/memoranda/fy2006/m06-19.pdf">Reporting Incidents Involving Personally Identifiable Information and Incorporating the Cost for Security in Agency Information Technology Investments</a>, OMB M-06-19, July 12, 2006. </span></td>
             </tr>
         </table>
     </body>

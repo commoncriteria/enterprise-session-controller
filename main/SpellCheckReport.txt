@@ -13,8 +13,6 @@ output/enterprise-session-controller-release-linkable.html: MACs
 output/enterprise-session-controller-release-linkable.html: MOF
 output/enterprise-session-controller-release-linkable.html: NDcPP
 output/enterprise-session-controller-release-linkable.html: PPModule
-output/enterprise-session-controller-release-linkable.html: RTOS
-output/enterprise-session-controller-release-linkable.html: RTOSes
 output/enterprise-session-controller-release-linkable.html: SBOP
 output/enterprise-session-controller-release-linkable.html: SMR
 output/enterprise-session-controller-release-linkable.html: STM
@@ -47,8 +45,6 @@ output/enterprise-session-controller-release.html: MACs
 output/enterprise-session-controller-release.html: MOF
 output/enterprise-session-controller-release.html: NDcPP
 output/enterprise-session-controller-release.html: PPModule
-output/enterprise-session-controller-release.html: RTOS
-output/enterprise-session-controller-release.html: RTOSes
 output/enterprise-session-controller-release.html: SBOP
 output/enterprise-session-controller-release.html: SMR
 output/enterprise-session-controller-release.html: STM
@@ -67,8 +63,6 @@ output/enterprise-session-controller-release.html: microarchitecture
 output/enterprise-session-controller-release.html: supersets
 output/enterprise-session-controller-release.html: virtualized
 output/enterprise-session-controller-sd.html: CEM
-output/enterprise-session-controller-sd.html: RTOS
-output/enterprise-session-controller-sd.html: RTOSes
 output/enterprise-session-controller-sd.html: evaluator’s
 output/enterprise-session-controller-sd.html: fail’
 output/enterprise-session-controller-sd.html: pass’
@@ -87,8 +81,6 @@ output/enterprise-session-controller.html: MACs
 output/enterprise-session-controller.html: MOF
 output/enterprise-session-controller.html: NDcPP
 output/enterprise-session-controller.html: PPModule
-output/enterprise-session-controller.html: RTOS
-output/enterprise-session-controller.html: RTOSes
 output/enterprise-session-controller.html: SBOP
 output/enterprise-session-controller.html: SMR
 output/enterprise-session-controller.html: STM
