@@ -188,7 +188,7 @@ of time if at all.</term>
 	  <term full="Internet Protocol Private Branch Exchange" abbr="IP-PBX"/>
 	  <term full="Media Gateway Control Protocol" abbr="MGCP"/>
 	  <term full="Collaborative Protection Profile for Network Devices" abbr="NDcPP"/>
-	  <term full="Operations, Administration, and Management" abbr="OA&M"/>
+	  <term full="Operations, Administration, and Management" abbr="OA&amp;M"/>
 	  <term full="Organizational Security Policies" abbr="OSP"/>
 	  <term full="Session Border Controller" abbr="SBC"/>
 	  <term full="Session Initiation Protocol" abbr="SIP"/>
