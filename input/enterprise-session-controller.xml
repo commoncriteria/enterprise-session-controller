@@ -304,6 +304,31 @@ the functionality required by this PP-Module.
 
     <!-- Platform definitions (optional) -->
 	<!-- Currently only the App PP uses this. And that's probably the only one that will. -->
+	   <section title="Conformance Claims" id="ConformanceClaims">
+	<CClaimsInfo 
+		cc-version="cc-2022r1"         
+		cc-approach="standard"         
+		display="yes">                 
+
+		<!-- Conformance for STs: exact, strict, or demonstrable -->
+		<cc-st-conf>exact</cc-st-conf>                  
+		
+		<!-- Part 2 & 3 conformance (extended or conformant) -->
+		<cc-pt2-conf>extended</cc-pt2-conf>           
+		<cc-pt3-conf>conformant</cc-pt3-conf>           
+
+		<!-- Claims conformance to these other PPs (none)-->
+		<cc-pp-conf/>              		  
+		
+		<!-- Can be in a configuration with these PPs and Modules -->
+		<cc-pp-config-with/>
+
+		<!-- Package claims -->
+		<cc-pkg-claim/>
+
+	</CClaimsInfo>
+	</section>
+	
 	<section title="Platforms with Specific EAs" id="sec-platforms">
 		<choice prefix="Platforms:" >
 			This PP includes platform-specific EAs for the below-listed operating system platforms. For "bare-metal" applications, 
@@ -347,30 +372,7 @@ the functionality required by this PP-Module.
   <!-- New conformance claims section for CC:2022. -->
   <!-- If boilerplate is "yes" something that is probably incorrect is generated -->
   
-   <section title="Conformance Claims" id="ConformanceClaims">
-	<CClaimsInfo 
-		cc-version="cc-2022r1"         
-		cc-approach="standard"         
-		display="yes">                 
 
-		<!-- Conformance for STs: exact, strict, or demonstrable -->
-		<cc-st-conf>exact</cc-st-conf>                  
-		
-		<!-- Part 2 & 3 conformance (extended or conformant) -->
-		<cc-pt2-conf>extended</cc-pt2-conf>           
-		<cc-pt3-conf>conformant</cc-pt3-conf>           
-
-		<!-- Claims conformance to these other PPs (none)-->
-		<cc-pp-conf/>              		  
-		
-		<!-- Can be in a configuration with these PPs and Modules -->
-		<cc-pp-config-with/>
-
-		<!-- Package claims -->
-		<cc-pkg-claim/>
-
-	</CClaimsInfo>
-	</section>
   
   <section title="Security Problem Definition" id="sec-spd">
   
@@ -1237,7 +1239,7 @@ the functionality required by this PP-Module.
     </section>   <!-- SARs -->
 
   </section> <!-- Security Requirements  -->
-
+</Module>
 <?modules
 	<!-- Security Reuirements Section for Modules -->
 	<section title="Security Requirements" id="sec-reqs">
