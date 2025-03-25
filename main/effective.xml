@@ -288,28 +288,7 @@ the functionality required by this PP-Module.
 	<!-- cc-approach: standard or direct-rationale  -->
 	<!-- display: Should this info be displayed in the Conformance -->
 	<!-- Claims section? If no, you have to write a free-form section -->
-	<CClaimsInfo cc-version="cc-2022r1" cc-approach="standard" display="yes">                 
 
-		<!-- Conformance for STs: exact, strict, or demonstrable -->
-		<cc-st-conf>exact</cc-st-conf>                  
-
-		<!-- Part 2 & 3 conformance (extended or conformant) -->
-		<cc-pt2-conf>extended</cc-pt2-conf>           
-		<cc-pt3-conf>conformant</cc-pt3-conf>           
-
-		<!-- Claims conformance to these other PPs (none)-->
-		<cc-pp-conf/>              		  
-		
-		<!-- Can be in a configuration with these PPs and Modules -->
-		<cc-pp-config-with/>
-
-		<!-- Package claims -->
-		<cc-pkg-claim/>
-			
-
-
-
-	</CClaimsInfo>
   </section>  <!-- Conformance Claims -->
 
 	<!-- Use Cases (optional) -->
@@ -378,7 +357,28 @@ the functionality required by this PP-Module.
   <!-- If boilerplate is "yes" something that is probably incorrect is generated -->
   
   
+	<CClaimsInfo cc-version="cc-2022r1" cc-approach="standard" display="yes">                 
 
+		<!-- Conformance for STs: exact, strict, or demonstrable -->
+		<cc-st-conf>exact</cc-st-conf>                  
+		
+		<!-- Part 2 & 3 conformance (extended or conformant) -->
+		<cc-pt2-conf>extended</cc-pt2-conf>           
+		<cc-pt3-conf>conformant</cc-pt3-conf>           
+
+		<!-- Claims conformance to these other PPs (none)-->
+		<cc-pp-conf/>              		  
+		
+		<!-- Can be in a configuration with these PPs and Modules -->
+		<cc-pp-config-with/>
+
+		<!-- Package claims -->
+		<cc-pkg-claim/>
+			
+
+
+
+	</CClaimsInfo>
   
   <section title="Security Problem Definition" id="sec-spd">
   
