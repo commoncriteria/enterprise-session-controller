@@ -515,13 +515,32 @@ Base-PP.
 	      <h:br/><h:b><ctr ctr-type="Table" pre="Table " id="atref-mandatory">: Audit Log Events</ctr></h:b>
 	    </audit-table>
 		<note role="application"><h:i><h:p>The Base-PP version of the SFR requires “all administrative actions” to be audited.
-When the TOE includes this PP-Module, it is expected that this will also include the
-administrative actions that support the PP-Module defined in FMT_SMF.1/ESC.</h:p><h:p>FAU_VVR_EXT.2 is a selection-based requirement. Auditing for this requirement
-must be performed if and only if the TOE claims it</h:p>
-</h:i></note>
+		When the TOE includes this PP-Module, it is expected that this will also include the
+		administrative actions that support the PP-Module defined in FMT_SMF.1/ESC.</h:p><h:p>FAU_VVR_EXT.2 is a selection-based requirement. Auditing for this requirement
+		must be performed if and only if the TOE claims it</h:p>
+		</h:i></note>
 
 			</f-component>
 	</section>
+	<section title="Cryptographic Support" id="m-fcs">
+			<f-component name="DTLS Server Support for Mutual Authentication" cc-id="fcs_dtlss_ext.2" iteration="ESC" id="fcs-dtlss-ext-2">This SFR is optional in the NDcPP but is selection-based in this PP-Module because any ESC use of DTLS
+	requires mutually-authenticated DTLS to be implemented. Therefore, this SFR must be claimed if ‘DTLS’ is
+	selected in FTP_ITC.1.1/ESC.
+			</f-component>
+			<f-component name="NTP Protocol" cc-id="fcs_ntp_ext" iteration="ESC" id="fcs-ntp-ext-">
+			<f-element id="fcs-ntp-ext-1e1">
+			<title>The TSF shall use only the following NTP version: [<h:i>NTP v4 (RFC 5905)</h:i>].</title>
+
+			<note role="application"><h:i><h:p>te: This SFR is selection-based in the Base-PP but is mandatory for a TOE that
+			conforms to this PP-Module because the refinement to FPT_STM_EXT.1 requires
+			this SFR to be claimed in all cases.</h:p><h:p/>This SFR has been refined from the NDcPP to permit the NTP v4 selection only. No
+			other parts of the SFR are modified.</h:i></note>
+			<aactivity><no-tests/></aactivity>
+			</f-element></f-component>
+			
+			
+			</section>
+		
 	</man-sfrs>  <!-- SFRs -->
     
     <opt-sfrs>
