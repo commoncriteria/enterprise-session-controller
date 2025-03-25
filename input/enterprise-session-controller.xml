@@ -262,7 +262,7 @@ the functionality required by this PP-Module.
         <usecase id="usecase1" title="Dedicated Appliance">
           <description>The ESC is sold and packaged as a standalone network appliance that does not have a direct interface to the underlying platform operating system, customized application, or commercialoff-the-shelf database.</description>
         </usecase>
-		<usecase id="usecase2" title="Call Processing (Connect VVoIP Calls Together)">
+		<usecase id="usecase1" title="Call Processing (Connect VVoIP Calls Together)">
           <description>The ESC serves as a call control system that employs multiple technologies for processing and
 			managing voice/video calls between end-point devices. The ESC receives a call-request message
 			from the source IP-phone (endpoint-A) and then locates and connects the call-originator to the
@@ -277,7 +277,7 @@ the functionality required by this PP-Module.
 			an array of ESCs, and can use encryption schemes that secure the ESC’s call control functions.
 					</description>
         </usecase>
-		<usecase id="usecase3" title="Trunk Calls to/from Telecommunications Service Provider">
+		<usecase id="usecase1" title="Trunk Calls to/from Telecommunications Service Provider">
           <description>The ESC may support the ability to bundle numerous calls that originate from locally-registered
 			VVoIP devices onto an ESC’s communication trunk for connectivity through a telecommunications
 			service provider (e.g. Verizon) to remote endpoints. In this case, the ESC supports the aggregation
@@ -287,7 +287,7 @@ the functionality required by this PP-Module.
 			than requiring each individual device to connect to the service provider separately.
           </description>
         </usecase>
-		<usecase id="usecase4" title="Trunk Calls in/out to Remote ESCs">
+		<usecase id="usecase1" title="Trunk Calls in/out to Remote ESCs">
           <description>Similar to trunking calls to telecommunications service providers, the ESC can trunk a large volume
 			of calls to other remote ESCs. An example of this deployment is a meshed configuration of trunkconnected ESCs that are deployed to support a metropolitan-sized enterprise-wide VVoIP callprocessing network. This particular type of use case may not require any of the meshed ESCs to
 			be connected to a service provider.
@@ -369,9 +369,8 @@ the functionality required by this PP-Module.
   <!-- Conformance Claims Section -->
   <!-- New conformance claims section for CC:2022. -->
   <!-- If boilerplate is "yes" something that is probably incorrect is generated -->
-       <!-- Compliant TOEs -->
-
-   <section title="Conformance Claims" id="ConformanceClaims" boilerplate="no">
+  
+   <section title="Conformance Claims" id="ConformanceClaims">
 	<CClaimsInfo 
 		cc-version="cc-2022r1"         
 		cc-approach="standard"         
