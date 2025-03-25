@@ -224,7 +224,8 @@ manager, call-signaling protocols (e.g. H.323, Session Initiation Protocol (SIP)
 to be negatively impacted. The intention of this PP-Module is to provide a list of security requirements
 needed by an ESC for protection of its functionality and protection of the VVoIP communications it is
 responsible for facilitating.</h:p>
-      <section title="TOE Boundary" id="TOEboundary">
+		</section>
+      <sec:TOE_Boundary>
 	  <h:p>An ESC is a logical component of a physical hardware appliance that is responsible for establishing
 connectivity between VVoIP endpoints. The ESC is an advanced version of a legacy IP-PBX system. As a
 specific type of network device, an ESC TOE will be evaluated against both the NDcPP and this PP-Module.
@@ -251,7 +252,7 @@ baseline of capabilities that all conformant ESCs must provide.
       </section>
       <section title="TOE Platform" id="sec-TOEplatform">
       </section>
-    </section>  <!-- Compliant TOEs -->
+     <!-- Compliant TOEs -->
 
 
 	<!-- Use Cases (optional) -->
