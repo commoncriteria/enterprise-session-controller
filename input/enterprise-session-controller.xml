@@ -296,7 +296,8 @@ the functionality required by this PP-Module.
 		
 		</usecases>
 		</sec:Use_Cases>
-
+     <!-- Compliant TOEs -->
+<section title="Conformance Claims" id="sec-cclaims" boilerplate="no">
 
 	<!-- cc-version: cc-2022r1 or cc-31r5   -->
 	<!-- cc-approach: standard or direct-rationale  -->
@@ -393,7 +394,8 @@ the functionality required by this PP-Module.
 		<cc-pkg-claim/>
 
 	</CClaimsInfo>
-  </section>
+	</section>
+  
   <section title="Security Problem Definition" id="sec-spd">
   
     <!-- Arbitrary introductory text -->
