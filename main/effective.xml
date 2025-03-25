@@ -521,6 +521,12 @@ Base-PP.
 		</h:i></note>
 
 			</f-component>
+			<f-component name="Protected Audit Trail Storage" cc-id="fau_stg.1" iteration="ESC" id="fau-stg-1-esc">This SFR is optional in the NDcPP but is mandated by this PP-Module because the ESC is expected to
+	maintain audit data internal to the TOE which must be protected from unauthorized access. 
+	<note role="application"><h:i>Both the “audit data” (FAU_GEN.1) and “system log” data (FAU_GEN.1/Log) are
+	expected to be protected from unauthorized access. This SFR applies to all data
+	related to the behavior of the TOE regardless of how it is categorized or where it
+	is stored.</h:i> </note></f-component>
 	</section>
 	<section title="Cryptographic Support" id="m-fcs">
 			<f-component name="DTLS Server Support for Mutual Authentication" cc-id="fcs_dtlss_ext.2" iteration="ESC" id="fcs-dtlss-ext-2">This SFR is optional in the NDcPP but is selection-based in this PP-Module because any ESC use of DTLS

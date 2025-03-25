@@ -989,6 +989,14 @@ xxxxx
 		</i></span></div>
 
 			</div>
+			<div class="comp" id="FAU_STG.1/ESC"><h4>FAU_STG.1/ESC Protected Audit Trail Storage</h4>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is optional in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is mandated by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because the <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> is expected to
+	maintain audit data internal to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> which must be protected from unauthorized access. 
+	<div class="appnote"><span class="note-header">Application
+      Note:
+    </span><span class="note"><i>Both the “audit data” (FAU_GEN.1) and “system log” data (FAU_GEN.1/Log) are
+	expected to be protected from unauthorized access. This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> applies to all data
+	related to the behavior of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> regardless of how it is categorized or where it
+	is stored.</i> </span></div></div>
 	
 	<h3 id="m-fcs" class="indexable" data-level="3">5.2.2 Cryptographic Support</h3>
 			<div class="comp" id="FCS_DTLSS_EXT.2/ESC"><h4>FCS_DTLSS_EXT.2/ESC DTLS Server Support for Mutual Authentication</h4>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is optional in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is selection-based in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because any <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> use of DTLS
@@ -1051,7 +1059,7 @@ xxxxx
 		  </td></tr><tr><th colspan="2"> Additional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th></tr><tr><td colspan="2" style="text-align:center">
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not add any requirements when the
 	      <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> is the base.
-	    </td></tr><tr><th colspan="2"> Mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_GEN.1/ESC">FAU_GEN.1/ESC</a></td><td></td></tr><tr><td><a href="#FCS_DTLSS_EXT.2/ESC">FCS_DTLSS_EXT.2/ESC</a></td><td></td></tr><tr><td><a href="#FCS_NTP_EXT/ESC">FCS_NTP_EXT/ESC</a></td><td></td></tr></tr><tr><th colspan="2"> Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
+	    </td></tr><tr><th colspan="2"> Mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_GEN.1/ESC">FAU_GEN.1/ESC</a></td><td></td></tr><tr><td><a href="#FAU_STG.1/ESC">FAU_STG.1/ESC</a></td><td></td></tr><tr><td><a href="#FCS_DTLSS_EXT.2/ESC">FCS_DTLSS_EXT.2/ESC</a></td><td></td></tr><tr><td><a href="#FCS_NTP_EXT/ESC">FCS_NTP_EXT/ESC</a></td><td></td></tr></tr><tr><th colspan="2"> Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any Optional requirements.
 	    </td></tr></tr><tr><th colspan="2"> Objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any Objective requirements.
