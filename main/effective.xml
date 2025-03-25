@@ -673,7 +673,7 @@ between VVoIP endpoints that are established by the TOE.</h:b></title>
 		<aactivity><no-tests/></aactivity>
 		</f-element>
 		</f-component>
-		<f-component name="g Audit Data Generation (System Log)" cc-id="fau_gen.1-log" id="fpt-gen-ext-1-log" iteration="Log">
+		<f-component name="Audit Data Generation (System Log)" cc-id="fau_gen.1-log" id="fpt-gen-ext-1-log" iteration="Log">
 		<f-element id="fau-gen-1e1-log">
 		<title>The TSF shall be able to generate a <h:b>system log</h:b> record for <h:b>current IP connections,
 			NTP status, CPU usage, memory usage, disk and file storage capacity, audit
@@ -685,7 +685,7 @@ between VVoIP endpoints that are established by the TOE.</h:b></title>
 		The TSF shall record within each system log record at least the following information: <h:ol type="a">
 			<h:li>Date and time of the event, type of event, subject identity (if applicable), and the outcome (success or failure of the event); and </h:li>
 			<h:li>For each audit event type, based on the auditable event definitions of the functional components included in the PP/ST, [<h:i>event details described in System Log Events table</h:i>].</h:li></h:ol>
-    <h:head><title>Event Table</title></h:head>
+    <h:head><title><h:b><ctr ctr-type="Table" pre="Table " id="atref-mandatory">: Event Table</ctr></h:b></title></h:head>
 <h:table border="1">
 		<h:tr>
 			<h:th>Event</h:th>

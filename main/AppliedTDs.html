@@ -1113,7 +1113,7 @@ between <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints 
 		attribution of individual CDRs in environments where multiple ESCs are feeding
 		CDRs to a centralized server.</i></span></div></div></div>
 		</div>
-		<div class="comp" id="FAU_GEN.1-LOG/Log"><h4>FAU_GEN.1-LOG/Log g Audit Data Generation (System Log)</h4>
+		<div class="comp" id="FAU_GEN.1-LOG/Log"><h4>FAU_GEN.1-LOG/Log Audit Data Generation (System Log)</h4>
 		<div class="element"><div class="reqid" id="FAU_GEN.1-LOG.1/Log"><a href="#FAU_GEN.1-LOG.1/Log" class="abbr">FAU_GEN.1-LOG.1/Log</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to generate a <b>system log</b> record for <b>current IP connections,
 			NTP status, CPU usage, memory usage, disk and file storage capacity, audit
 			storage capacity, [<b>selection</b>: <span class="selectable-content" id="_s_15">power status</span>, <span class="selectable-content" id="_s_16">fan status</span>, <span class="selectable-content" id="_s_17">no other activities</span>].</b> </div></div>
@@ -1121,7 +1121,7 @@ between <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints 
 		The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall record within each system log record at least the following information: <ol type="a">
 			<li>Date and time of the event, type of event, subject identity (if applicable), and the outcome (success or failure of the event); and </li>
 			<li>For each audit event type, based on the auditable event definitions of the functional components included in the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>/<abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>, [<i>event details described in System Log Events table</i>].</li></ol>
-    <head>Event Table</head>
+    <head><b><span class="ctr" data-myid="atref-mandatory" data-counter-type="ct-Table" id="atref-mandatory">Table  <span class="counter">3</span>: Event Table</span></b></head>
 <table border="1">
 		<tr>
 			<th>Event</th>
@@ -1160,7 +1160,7 @@ between <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints 
 	
 		
 	<h2 id="obj-req-map" class="indexable" data-level="2">5.3 TOE Security Functional Requirements Rationale</h2><p>The following rationale provides justification for each security objective for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, 
-    showing that the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> are suitable to meet and achieve the security objectives:<br/><table><caption><span class="ctr" data-myid="t-obj_map" data-counter-type="ct-Table" id="t-obj_map">Table <span class="counter">3</span></span>: <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> Rationale</caption><tr><th>Objective</th><th>Addressed by</th><th>Rationale</th></tr><tr class="major-row"><td rowspan="2"><a href="#O.ACCOUNTABILITY">O.ACCOUNTABILITY</a><br/></td><td><a href="#FAU_GEN.1">FAU_GEN.1</a></td><td>'cause <a href="#FAU_GEN.1">FAU_GEN.1</a> is awesome</td></tr>
+    showing that the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> are suitable to meet and achieve the security objectives:<br/><table><caption><span class="ctr" data-myid="t-obj_map" data-counter-type="ct-Table" id="t-obj_map">Table <span class="counter">4</span></span>: <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> Rationale</caption><tr><th>Objective</th><th>Addressed by</th><th>Rationale</th></tr><tr class="major-row"><td rowspan="2"><a href="#O.ACCOUNTABILITY">O.ACCOUNTABILITY</a><br/></td><td><a href="#FAU_GEN.1">FAU_GEN.1</a></td><td>'cause <a href="#FAU_GEN.1">FAU_GEN.1</a> is awesome</td></tr>
 <tr><td>FTP_ITC_EXT.1</td><td>Cause FTP reasons </td></tr>
 <tr class="major-row"><td rowspan="3"><a href="#O.INTEGRITY">O.INTEGRITY</a><br/></td><td>FPT_SBOP_EXT.1</td><td>For reasons </td></tr>
 <tr><td>FPT_ASLR_EXT.1</td><td>ASLR For reasons </td></tr>
@@ -1178,13 +1178,13 @@ between <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints 
 	Consistency of Security Problem Definition
       </h3>
 	 xxxx
-	  <table><caption><span class="ctr" data-myid="t-con-sec-prob-def" data-counter-type="ct-Table" id="t-con-sec-prob-def">Table <span class="counter">4</span></span>: Consistency of Security Problem Definition (<abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> base)
+	  <table><caption><span class="ctr" data-myid="t-con-sec-prob-def" data-counter-type="ct-Table" id="t-con-sec-prob-def">Table <span class="counter">5</span></span>: Consistency of Security Problem Definition (<abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> base)
 		</caption><tr><th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> Threat, Assumption, <abbr class="dyn-abbr"><a href="#abbr_OSP">OSP</a></abbr></th><th>Consistency Rationale</th></tr><tr><td><a href="#T.MALICIOUS_TRAFFIC">T.MALICIOUS_TRAFFIC</a></td><td></td></tr><tr><td><a href="#T.NETWORK_DISCLOSURE">T.NETWORK_DISCLOSURE</a></td><td>
 
 	  </td></tr><tr><td><a href="#T.UNAUTHORIZED_CLIENT">T.UNAUTHORIZED_CLIENT</a></td><td></td></tr><tr><td><a href="#P.SECURED_PLATFORM">P.SECURED_PLATFORM</a></td><td></td></tr></table><h3 id="conobj-ND" class="indexable" data-level="3">6.1.3 
 			Consistency of Objectives
-		</h3><p><table><caption><span class="ctr" data-myid="t-con-objs" data-counter-type="ct-Table" id="t-con-objs">Table <span class="counter">5</span></span>: Consistency of Objectives (<abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> base)
-				</caption><tr><th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Objective</th><th>Consistency Rationale</th></tr><tr><td><a href="#O.ACCOUNTABILITY">O.ACCOUNTABILITY</a></td><td></td></tr><tr><td><a href="#O.INTEGRITY">O.INTEGRITY</a></td><td></td></tr><tr><td><a href="#O.MANAGEMENT">O.MANAGEMENT</a></td><td></td></tr></table></p><p>xxxx <table><caption><span class="ctr" data-myid="t-con-oe-objs" data-counter-type="ct-Table" id="t-con-oe-objs">Table <span class="counter">6</span></span>: Consistency of <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> Objectives (<abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> base)
+		</h3><p><table><caption><span class="ctr" data-myid="t-con-objs" data-counter-type="ct-Table" id="t-con-objs">Table <span class="counter">6</span></span>: Consistency of Objectives (<abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> base)
+				</caption><tr><th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Objective</th><th>Consistency Rationale</th></tr><tr><td><a href="#O.ACCOUNTABILITY">O.ACCOUNTABILITY</a></td><td></td></tr><tr><td><a href="#O.INTEGRITY">O.INTEGRITY</a></td><td></td></tr><tr><td><a href="#O.MANAGEMENT">O.MANAGEMENT</a></td><td></td></tr></table></p><p>xxxx <table><caption><span class="ctr" data-myid="t-con-oe-objs" data-counter-type="ct-Table" id="t-con-oe-objs">Table <span class="counter">7</span></span>: Consistency of <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> Objectives (<abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> base)
 		</caption><tr><th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> Objective</th><th>Consistency Rationale</th></tr><tr><td><a href="#OE.PLATFORM">OE.PLATFORM</a></td><td></td></tr><tr><td><a href="#OE.PROPER_USER">OE.PROPER_USER</a></td><td></td></tr><tr><td><a href="#OE.PROPER_ADMIN">OE.PROPER_ADMIN</a></td><td></td></tr></table></p><h3 id="conreq-ND" class="indexable" data-level="3">6.1.4 
 	Consistency of Requirements
       </h3>
@@ -1202,7 +1202,7 @@ between <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints 
           The rationale for why this does not conflict with the claims
       defined by the
       <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> are as follows:
-      <table><caption><span class="ctr" data-myid="t-con-reqs" data-counter-type="ct-Table" id="t-con-reqs">Table <span class="counter">7</span></span>: Consistency of Requirements (<abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> base)
+      <table><caption><span class="ctr" data-myid="t-con-reqs" data-counter-type="ct-Table" id="t-con-reqs">Table <span class="counter">8</span></span>: Consistency of Requirements (<abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> base)
 		</caption><tr><th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> Requirement</th><th>Consistency Rationale</th></tr><tr><th colspan="2"> Modified <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th></tr><tr><td><a href="#FAU_GEN.1">FAU_GEN.1</a></td><td></td></tr><tr><td><a href="#FAU_STG.1">FAU_STG.1</a></td><td></td></tr><tr><td><a href="#FCS_DTLSS_EXT.1">FCS_DTLSS_EXT.1</a></td><td></td></tr><tr><td><a href="#FCS_DTLSS_EXT.2">FCS_DTLSS_EXT.2</a></td><td></td></tr><tr><td><a href="#FCS_NTP_EXT.1">FCS_NTP_EXT.1</a></td><td></td></tr><tr><td><a href="#FCS_TLSC_EXT.1">FCS_TLSC_EXT.1</a></td><td></td></tr><tr><td><a href="#FCS_TLSC_EXT.2">FCS_TLSC_EXT.2</a></td><td></td></tr><tr><td><a href="#FCS_TLSS_EXT.1">FCS_TLSS_EXT.1</a></td><td></td></tr><tr><td><a href="#FCS_TLSS_EXT.2">FCS_TLSS_EXT.2</a></td><td></td></tr><tr><td><a href="#FIA_X509_EXT.1/Rev">FIA_X509_EXT.1/Rev</a></td><td></td></tr><tr><td><a href="#FIA_X509_EXT.2">FIA_X509_EXT.2</a></td><td></td></tr><tr><td><a href="#FIA_X509_EXT.3">FIA_X509_EXT.3</a></td><td></td></tr><tr><td><a href="#FPT_STM_EXT.1">FPT_STM_EXT.1</a></td><td></td></tr><tr><th colspan="2"> Additional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th></tr><tr><td colspan="2" style="text-align:center">
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not add any requirements when the
 	      <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> is the base.
@@ -1720,7 +1720,7 @@ between <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints 
 		  configuration.
 			</p>
 		
-	<h1 id="acronyms" class="indexable" data-level="A">Appendix F -  Acronyms</h1><table><caption><span class="ctr" data-myid="t-acronyms" data-counter-type="ct-Table" id="t-acronyms">Table <span class="counter">8</span></span>: Acronyms
+	<h1 id="acronyms" class="indexable" data-level="A">Appendix F -  Acronyms</h1><table><caption><span class="ctr" data-myid="t-acronyms" data-counter-type="ct-Table" id="t-acronyms">Table <span class="counter">9</span></span>: Acronyms
 		</caption><tr class="header"><th>Acronym</th><th>Meaning</th></tr><tr><td><span class="term" id="abbr_Base-PP" data-plural="Base-PPs"><abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr></span></td><td><span id="long_abbr_Base-PP">Base Protection Profile</span></td></tr>
 <tr><td><span class="term" id="abbr_CC"><abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr></span></td><td><span id="long_abbr_CC">Common Criteria</span></td></tr>
 <tr><td><span class="term" id="abbr_CDR"><abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr></span></td><td><span id="long_abbr_CDR">Call Detail Record</span></td></tr>
@@ -1748,7 +1748,7 @@ between <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints 
 <tr><td><span class="term" id="abbr_TSFI" data-plural="TSFIs"><abbr class="dyn-abbr"><a href="#abbr_TSFI">TSFI</a></abbr></span></td><td><span id="long_abbr_TSFI"><abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> Interface</span></td></tr>
 <tr><td><span class="term" id="abbr_TSS"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></span></td><td><span id="long_abbr_TSS"><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Summary Specification</span></td></tr>
 <tr><td><span class="term" id="abbr_VVoIP"><abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr></span></td><td><span id="long_abbr_VVoIP">Voice/Video over IP</span></td></tr>
-</table><h1 id="appendix-bibliography" class="indexable" data-level="A">Appendix G -  Bibliography</h1><table><caption><span class="ctr" data-myid="t-biblio" data-counter-type="ct-Table" id="t-biblio">Table <span class="counter">9</span></span>: Bibliography</caption><tr class="header"><th>Identifier</th><th>Title</th></tr><tr><td><span id="bibCC">[<abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>]</span></td><td><span class="description">Common Criteria for Information Technology Security Evaluation - <ul>
+</table><h1 id="appendix-bibliography" class="indexable" data-level="A">Appendix G -  Bibliography</h1><table><caption><span class="ctr" data-myid="t-biblio" data-counter-type="ct-Table" id="t-biblio">Table <span class="counter">10</span></span>: Bibliography</caption><tr class="header"><th>Identifier</th><th>Title</th></tr><tr><td><span id="bibCC">[<abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>]</span></td><td><span class="description">Common Criteria for Information Technology Security Evaluation - <ul>
             <li><a href="https://www.commoncriteriaportal.org/files/ccfiles/CC2022PART1R1.pdf">Part 1: 
 				Introduction and general model</a>, CCMB-2022-11-001, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022.</li>
             <li><a href="http://www.commoncriteriaportal.org/files/ccfiles/CC2022PART2R1.pdf">Part 2: 

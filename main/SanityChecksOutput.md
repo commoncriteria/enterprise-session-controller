@@ -2,8 +2,10 @@
         /Module[1]""/sec:Security_Requirements[1]""/base-pp[1]""/modified-sfrs[2]""/section[4]""/f-component[1]""/f-element[1]""
 * Error: Detected dangling id-reference to pizza from attribute
         on/Module[1]""/include-pkg[1]""/depends[1]""/on[1]""
+* Error: Detected multiple elements with an id of 'atref-mandatory'.
 * Error: Detected multiple elements with an id of 'fcs-tlsc-ext-1e1'.
 * Error: Detected multiple elements with an id of 'fcs-tlsc-ext-1e1'.
+* Error: Detected multiple elements with an id of 'atref-mandatory'.
 * Error: Detected dangling ref to 'T.NETWORK_ACCESS'
         for a ref.
 	/Module[1]""/sec:Security_Requirements[1]""/base-pp[1]""/con-mod[1]"xxxx"/ref[1]""
