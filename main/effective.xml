@@ -238,9 +238,10 @@ baseline of capabilities that all conformant ESCs must provide.
       </section>
     </section>  <!-- Compliant TOEs -->
 
+
 	<!-- Use Cases (optional) -->
     <section title="Use Cases" id="sec-usecases">
-	
+
       <usecases>
 		<!-- Each use case followed by an optional set of selections or restrictions --> 
 		<usecase title="Elephant-own device" id="elephant">
