@@ -701,11 +701,8 @@ between VVoIP endpoints that are established by the TOE.</h:b></title>
 		<f-element id='fau-gen-1e2-log'>
 		<title>
 		The TSF shall record within each system log record at least the following information: <h:ol type='a'>
-		<h:li>Date and time of the event, type of event, subject identity (if applicable),
-and the outcome (success or failure of the event); and </h:li>
-<h:li>For each audit event type, based on the auditable event definitions of the
-functional components included in the PP/ST, [<h:i>event details described in
-System Log Events table</h:i>].</h:li></l:ol>
+			<h:li>Date and time of the event, type of event, subject identity (if applicable), and the outcome (success or failure of the event); and </h:li>
+			<h:li>For each audit event type, based on the auditable event definitions of the functional components included in the PP/ST, [<h:i>event details described in System Log Events table</h:i>].</h:li></h:ol>
     <h:head><title>Event Table</title></h:head>
 <h:table border='1'>
 		<h:tr>
