@@ -220,7 +220,7 @@ ESC, a Session Border Controller (SBC) is installed on the outer edge of the VVo
 the ESC from external network attacks. Also note that a fairly robust ESC system includes many major
 components such as its own database, operating system (O/S), conferencing system, dialplan, network
 manager, call-signaling protocols (e.g. H.323, Session Initiation Protocol (SIP), SS7), and its own
-‘Operations, Administration, and Management (OA&M)’ application system.</h:p><h:p>If any one of these major components is successfully attacked, then one can expect the entire ESC system
+‘Operations, Administration, and Management (OA&amp;M)’ application system.</h:p><h:p>If any one of these major components is successfully attacked, then one can expect the entire ESC system
 to be negatively impacted. The intention of this PP-Module is to provide a list of security requirements
 needed by an ESC for protection of its functionality and protection of the VVoIP communications it is
 responsible for facilitating.</h:p>
