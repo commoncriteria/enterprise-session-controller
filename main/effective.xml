@@ -313,35 +313,8 @@ the functionality required by this PP-Module.
 		<cc-claims-addnl-info/>
 
 	</CClaimsInfo>
-  </section>  <!-- Conformance Claims -->
+  </section>  
 
-	<!-- Use Cases (optional) -->
-   
-
-    <!-- Platform definitions (optional) -->
-	<!-- Currently only the App PP uses this. And that's probably the only one that will. -->
-	
-	
-
-	<!-- Product Features. Required if there are implementation-dependent requirements. -->
-	<!-- These are the product features that are defined in order to support implementation-dependent requirements. -->
-	<section title="Product Features Mapped to Implementation-dependent Requirements" id="sec-features">
-		The feature(s) enumerated below, if implemented by the TOE, require that additional SFRs be claimed in the ST.<h:br/>
-		<implements>
-			<feature id="feat-test1" title="Test Feature 1">
-				<description>Description of test feature one.</description>
-			</feature>
-			<feature id="feat-test2" title="Test Feature 2">
-				<description>Description of test feature two.</description>
-			</feature>
-		</implements>			
-	</section>   <!-- Features -->
-	
-	<!-- Other sections can be added here. -->
-<!--
-    <section title="Yet Another Section" id="sec-yetanother">
-    </section>
--->	
   </section>   <!-- Introduction  -->
 
 
