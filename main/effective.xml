@@ -281,6 +281,7 @@ the functionality required by this PP-Module.
 		
 		</usecases>
 		</sec:Use_Cases>
+		</section>
      <!-- Compliant TOEs -->
 <section title="Conformance Claims" id="sec-cclaims">
 
@@ -310,7 +311,6 @@ the functionality required by this PP-Module.
 	</CClaimsInfo>
   </section>  
 
-  </section>   <!-- Introduction  -->
 
 
   <!-- Conformance Claims Section -->
