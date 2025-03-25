@@ -531,7 +531,7 @@ suggesting the purpose of the iteration, e.g. ‘/CDR’ for an SFR relating to 
 		<!-- Security Requirements Rationale section -->
 		<!-- This is auto-genertaed and appears here. -->
 		
-	</section>  <!-- SFRs -->
+
 	</man-sfrs>
 	<!-- Security Assurance Requirements -->
 	<!-- Eventually this will be boilerplate that can be copied directly from here. -->
