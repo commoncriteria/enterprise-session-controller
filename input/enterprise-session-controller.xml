@@ -293,11 +293,11 @@ the functionality required by this PP-Module.
 			be connected to a service provider.
           </description>
         </usecase>
-		
 		</usecases>
 		</sec:Use_Cases>
      <!-- Compliant TOEs -->
 
+  </section>  <!-- Conformance Claims -->
 
 	<!-- Use Cases (optional) -->
     
