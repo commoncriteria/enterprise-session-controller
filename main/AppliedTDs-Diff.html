@@ -475,6 +475,17 @@
             </div>
         </div>
         <h3 id="m-fcs" class="indexable" data-level="3">5.2.2 Cryptographic Support</h3>
+        <div class="comp" id="FCS_DTLSS_EXT.1/ESC">
+            <h4>FCS_DTLSS_EXT.1/ESC DTLS Server Support for Mutual Authentication</h4>
+            <div class="element">
+                <div class="reqid" id="FCS_DTLSS_EXT.1.1/ESC">
+                    <a href="#FCS_DTLSS_EXT.1.1/ESC" class="abbr">FCS_DTLSS_EXT.1.1/ESC</a>
+                </div>
+                <div class="reqdesc">
+                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement [<i>DTLS 1.2 (RFC 6347))</i>] supporting the following ciphersuites: [<b>selection</b>: <span class="selectable-content" id="_s_1">select supported ciphersuites from List 1<b> in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr></b></span>]and no other ciphersuites. 
+                </div>
+            </div>
+        </div>
         <div class="comp" id="FCS_DTLSS_EXT.2/ESC">
             <h4>FCS_DTLSS_EXT.2/ESC DTLS Server Support for Mutual Authentication</h4>
             This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is optional in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is selection-based in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because any <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> use of DTLS requires mutually-authenticated DTLS to be implemented. Therefore, this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> must be claimed if &lsquo;DTLS&rsquo; is selected in FTP_ITC.1.1/<abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>. 
@@ -639,6 +650,9 @@
             </tr>
             <tr>
                 <td><a href="#FAU_STG.1/ESC">FAU_STG.1/ESC</a></td><td></td>
+            </tr>
+            <tr>
+                <td><a href="#FCS_DTLSS_EXT.1/ESC">FCS_DTLSS_EXT.1/ESC</a></td><td></td>
             </tr>
             <tr>
                 <td><a href="#FCS_DTLSS_EXT.2/ESC">FCS_DTLSS_EXT.2/ESC</a></td><td></td>
