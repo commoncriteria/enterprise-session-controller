@@ -321,10 +321,7 @@ the functionality required by this PP-Module.
 		<!-- Can be in a configuration with these PPs and Modules -->
 		<cc-pp-config-with/>
 
-		<!-- Package claims -->
-		<cc-pkg-claim/>		
-		<!-- Additional information to be added to the end of the Conformance Claims section (optional) -->
-		<cc-claims-addnl-info/>
+
 
 	</CClaimsInfo>
   </section>  
