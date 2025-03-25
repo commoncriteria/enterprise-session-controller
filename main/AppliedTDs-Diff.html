@@ -353,10 +353,25 @@
             <dd>
                 <span class="description"> A malformed packet is a protocol packet containing modified data not recognizable by the receiving device (e.g. <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>), or contains modified protocol packets intended to crash or cause the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to act in ways unintended. An attacker may attempt to use a <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint to send these malformed packets or malicious traffic towards the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> in an attempt to control or crash the call control system and connected network devices. To mitigate <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint devices from being used to successfully launch malicious traffic, the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must provide encryption remedies to prevent modification of protocol packets. The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must also provide authentication mechanisms to prevent unauthorized <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints from improperly registering to the <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> for the purpose of launching malicious attacks.</span>
             </dd>
+            <dt class="threat defined" id="T.NETWORK_DISCLOSURE">T.NETWORK_DISCLOSURE</dt>
+            <dd>
+                <span class="description"> An attacker may attempt to &ldquo;map&rdquo; IP addresses of <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint/devices and other telecommunications equipment for the purpose of determining the organizational structure of the enterprise, providing reconnaissance for future targeted attacks.</span>
+            </dd>
+            <dt class="threat defined" id="T.UNAUTHORIZED_CLIENT">T.UNAUTHORIZED_CLIENT</dt>
+            <dd>
+                <span class="description">An attacker may attempt to register an unauthorized <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> for the purpose of impersonating a legitimate end user device in order to gain unauthorized connectivity to other clients or active calls.</span>
+            </dd>
         </dl>
          
         <h2 class="indexable" data-level="2" id="sec-assumptions">3.2 Assumptions</h2>
-         All assumptions for the operational environment of the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> also apply to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>. A.NO_THRU_TRAFFIC_PROTECTION is still operative, but only for the interfaces in the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that are defined by the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> and not the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>. 
+         These assumptions are made on the Operational Environment (<abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr>) in order to be able to ensure that the security functionality specified in the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> can be provided by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. If the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is placed in an <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> that does not meet these assumptions, the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> may no longer be able to provide all of its security functionality. All assumptions for the operational environment of the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> also apply to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>. A.NO_THRU_TRAFFIC_PROTECTION is still operative, but only for the interfaces in the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that are defined by the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> and not the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>. 
+        <dl>
+            <dt class="assumption defined" id="A.PROPER_USER">A.PROPER_USER</dt>
+            <dd>
+                <span class="description"> The user of the OS is not willfully negligent or hostile, and uses the software in compliance with the applied enterprise security policy. At the same time, malicious software could act <i>as</i> the user, so requirements which confine malicious subjects are still in scope.</span>
+            </dd>
+        </dl>
+         
         <h2 class="indexable" data-level="2" id="sec-OSPs">3.3 Organizational Security Policies</h2>
         <p>
             An organization deploying the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is expected to satisfy the organizational security policy listed below in addition to all organizational security policies defined by the claimed <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>. 
@@ -414,10 +429,7 @@
                 <td>Threat, Assumption, or <abbr class="dyn-abbr"><a href="#abbr_OSP">OSP</a></abbr></td><td>Security Objectives</td><td>Rationale</td>
             </tr>
             <tr class="major-row">
-                <td rowspan="2"><a href="#T.MALICIOUS_TRAFFIC">T.MALICIOUS_​TRAFFIC</a></td><td>T.NETWORK_​DISCLOSURE</td><td>An attacker may attempt to &ldquo;map&rdquo; IP addresses of <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint/devices and other telecommunications equipment for the purpose of determining the organizational structure of the enterprise, providing reconnaissance for future targeted attacks.</td>
-            </tr>
-            <tr>
-                <td>T.UNAUTHORIZED_​CLIENT</td><td>An attacker may attempt to register an unauthorized <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> for the purpose of impersonating a legitimate end user device in order to gain unauthorized connectivity to other clients or active calls.</td>
+                <td rowspan="1"><a href="#A.PROPER_USER">A.PROPER_​USER</a></td><td><a href="#OE.PROPER_USER">OE.PROPER_​USER</a></td><td>The operational environment objective <a href="#OE.PROPER_USER">OE.PROPER_USER</a> is realized through <a href="#A.PROPER_USER">A.PROPER_USER</a>.</td>
             </tr>
             <tr class="major-row">
                 <td rowspan="1"><a href="#P.ENTERPRISE">P.ENTERPRISE</a></td><td><a href="#O.MANAGEMENT">O.MANAGEMENT</a></td><td>The organizational security policy <a href="#P.ENTERPRISE">P.ENTERPRISE</a> is enforced through the objective <a href="#O.MANAGEMENT">O.MANAGEMENT</a> as this objective represents how the enterprise and user assert management over the OS.</td>
