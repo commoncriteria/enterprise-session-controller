@@ -283,15 +283,15 @@
             <dd>
                 <span class="description">The <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> is sold and packaged as a standalone network appliance that does not have a direct interface to the underlying platform operating system, customized application, or commercialoff-the-shelf database.</span>
             </dd>
-            <dt id="usecase1"> [USE CASE 2] Call Processing (Connect VVoIP Calls Together)</dt>
+            <dt id="usecase2"> [USE CASE 2] Call Processing (Connect VVoIP Calls Together)</dt>
             <dd>
                 <span class="description">The <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> serves as a call control system that employs multiple technologies for processing and managing voice/video calls between end-point devices. The <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> receives a call-request message from the source IP-phone (endpoint-A) and then locates and connects the call-originator to the destination device (endpoint-B). The <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> is used as a centralized system to process, manage, and connect calls between registered IP-phones. It should be noted that H.323 and <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> are the <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>&rsquo;s most commonly used call-processing (i.e. call control) protocols. Both H.323 and <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> are used to set up, process, and terminate voice/video calls between endpoints. Supplemental call control protocols such as Media Gateway Control Protocol (<abbr class="dyn-abbr"><a href="#abbr_MGCP">MGCP</a></abbr>) and SS7 do not limit <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> capabilities, but instead enhances its functionality. Both H.323 and <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> provide an <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> with the capabilities required for execution of all use cases. Both H.323 and <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> provide the <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> with call control capabilities, support trunking between the <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> and Service Providers, support trunking between an array of ESCs, and can use encryption schemes that secure the <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>&rsquo;s call control functions. </span>
             </dd>
-            <dt id="usecase1"> [USE CASE 3] Trunk Calls to/from Telecommunications Service Provider</dt>
+            <dt id="usecase3"> [USE CASE 3] Trunk Calls to/from Telecommunications Service Provider</dt>
             <dd>
                 <span class="description">The <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> may support the ability to bundle numerous calls that originate from locally-registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> devices onto an <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>&rsquo;s communication trunk for connectivity through a telecommunications service provider (e.g. Verizon) to remote endpoints. In this case, the <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> supports the aggregation of traffic for all registered IP devices for the purpose of passing local calls over a single trunk to an external service provider. This allows for a simplified network deployment where a single connection from the <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> to the service provider can support a large number of devices, rather than requiring each individual device to connect to the service provider separately. </span>
             </dd>
-            <dt id="usecase1"> [USE CASE 4] Trunk Calls in/out to Remote ESCs</dt>
+            <dt id="usecase4"> [USE CASE 4] Trunk Calls in/out to Remote ESCs</dt>
             <dd>
                 <span class="description">Similar to trunking calls to telecommunications service providers, the <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> can trunk a large volume of calls to other remote ESCs. An example of this deployment is a meshed configuration of trunkconnected ESCs that are deployed to support a metropolitan-sized enterprise-wide <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> callprocessing network. This particular type of use case may not require any of the meshed ESCs to be connected to a service provider. </span>
             </dd>
@@ -331,33 +331,32 @@
         </dl>
          
         <h1 class="indexable" data-level="1" id="sec-spd">3 Security Problem Definition</h1>
-         The security problem is described in terms of the threats that the OS is expected to address, assumptions about the operational environment, and any organizational security policies that the OS is expected to enforce. 
+        <p>
+            The security problem is described in terms of the threats that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is expected to address, assumptions about its operational environment, and any organizational security policies that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is expected to enforce.
+        </p>
+        <p>
+            The <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> is a network appliance that incorporates multiple components and protocols, and is designed with the purpose of connecting and managing calls that emanate from registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints. The <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> is also designed to provide centralized control of an enterprise-wide <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> communication network. As the central control system that manages and processes <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> calls from as many as 50,000 endpoints per node, it is critically important for the <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> to be protected because it is a single point of failure for tens of thousands of end-users.
+        </p>
+        <p>
+            As a centralized system the <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> is subject to attacks from the <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints that are registered to the <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>. Any <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint could be a threat to launch a malicious attack against the <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>. Therefore the <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> shall possess the security requirements needed for mitigating such a threat type. 
+        </p>
+        <p>
+            Note that as <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> of the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr>, all threats, assumptions, and Organizational Security Policies (OSPs) defined there will also apply to an <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> unless otherwise specified. 
+        </p>
+        <p>
+            The Security Functional Requirements (<abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr>) defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> will mitigate the threats that are defined in the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> but will also mitigate some <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> threats in more comprehensive detail due to the specific capabilities provided by an <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>.
+        </p>
         <h2 class="indexable" data-level="2" id="sec-threats">3.1 Threats</h2>
-         
+         The following threats defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> extend the threats defined by the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>. 
         <dl>
-            <dt class="threat defined" id="T.NETWORK_ATTACK">T.NETWORK_ATTACK</dt>
+            <dt class="threat defined" id="T.MALICIOUS_TRAFFIC">T.MALICIOUS_TRAFFIC</dt>
             <dd>
-                <span class="description"> An attacker is positioned on a communications channel or elsewhere on the network infrastructure. Attackers may engage in communications with applications and services running on or part of the OS with the intent of compromise. Engagement may consist of altering existing legitimate communications.</span>
-            </dd>
-            <dt class="threat defined" id="T.NETWORK_EAVESDROP">T.NETWORK_EAVESDROP</dt>
-            <dd>
-                <span class="description"> An attacker is positioned on a communications channel or elsewhere on the network infrastructure. Attackers may monitor and gain access to data exchanged between applications and services that are running on or part of the OS. </span>
+                <span class="description"> A malformed packet is a protocol packet containing modified data not recognizable by the receiving device (e.g. <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>), or contains modified protocol packets intended to crash or cause the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to act in ways unintended. An attacker may attempt to use a <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint to send these malformed packets or malicious traffic towards the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> in an attempt to control or crash the call control system and connected network devices. To mitigate <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint devices from being used to successfully launch malicious traffic, the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must provide encryption remedies to prevent modification of protocol packets. The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must also provide authentication mechanisms to prevent unauthorized <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints from improperly registering to the <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> for the purpose of launching malicious attacks.</span>
             </dd>
         </dl>
          
         <h2 class="indexable" data-level="2" id="sec-assumptions">3.2 Assumptions</h2>
-         These assumptions are made on the Operational Environment (<abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr>) in order to be able to ensure that the security functionality specified in the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> can be provided by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. If the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is placed in an <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> that does not meet these assumptions, the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> may no longer be able to provide all of its security functionality. 
-        <dl>
-            <dt class="assumption defined" id="A.PLATFORM">A.PLATFORM</dt>
-            <dd>
-                <span class="description"> The OS relies upon a trustworthy computing platform for its execution. This underlying platform is out of scope of this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>. </span>
-            </dd>
-            <dt class="assumption defined" id="A.PROPER_USER">A.PROPER_USER</dt>
-            <dd>
-                <span class="description"> The user of the OS is not willfully negligent or hostile, and uses the software in compliance with the applied enterprise security policy. At the same time, malicious software could act <i>as</i> the user, so requirements which confine malicious subjects are still in scope.</span>
-            </dd>
-        </dl>
-         
+         All assumptions for the operational environment of the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> also apply to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>. A.NO_THRU_TRAFFIC_PROTECTION is still operative, but only for the interfaces in the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that are defined by the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> and not the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>. 
         <h2 class="indexable" data-level="2" id="sec-OSPs">3.3 Organizational Security Policies</h2>
         <p>
             An organization deploying the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is expected to satisfy the organizational security policy listed below in addition to all organizational security policies defined by the claimed <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>. 
@@ -415,22 +414,10 @@
                 <td>Threat, Assumption, or <abbr class="dyn-abbr"><a href="#abbr_OSP">OSP</a></abbr></td><td>Security Objectives</td><td>Rationale</td>
             </tr>
             <tr class="major-row">
-                <td rowspan="2"><a href="#T.NETWORK_ATTACK">T.NETWORK_​ATTACK</a></td><td>O.PROTECTED_​COMMS</td><td>The threat <a href="#T.NETWORK_ATTACK">T.NETWORK_ATTACK</a> is countered by O.PROTECTED_COMMS as this provides for integrity of transmitted data.</td>
+                <td rowspan="2"><a href="#T.MALICIOUS_TRAFFIC">T.MALICIOUS_​TRAFFIC</a></td><td>T.NETWORK_​DISCLOSURE</td><td>An attacker may attempt to &ldquo;map&rdquo; IP addresses of <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint/devices and other telecommunications equipment for the purpose of determining the organizational structure of the enterprise, providing reconnaissance for future targeted attacks.</td>
             </tr>
             <tr>
-                <td><a href="#O.INTEGRITY">O.INTEGRITY</a></td><td>The threat <a href="#T.NETWORK_ATTACK">T.NETWORK_ATTACK</a> is countered by <a href="#O.INTEGRITY">O.INTEGRITY</a> as this provides for integrity of software that is installed onto the system from the network.</td>
-            </tr>
-            <tr class="major-row">
-                <td rowspan="2"><a href="#T.NETWORK_EAVESDROP">T.NETWORK_​EAVESDROP</a></td><td>O.PROTECTED_​COMMS</td><td>The threat <a href="#T.NETWORK_EAVESDROP">T.NETWORK_EAVESDROP</a> is countered by O.PROTECTED_COMMS as this provides for confidentiality of transmitted data.</td>
-            </tr>
-            <tr>
-                <td><a href="#O.MANAGEMENT">O.MANAGEMENT</a></td><td>The threat <a href="#T.NETWORK_EAVESDROP">T.NETWORK_EAVESDROP</a> is countered by <a href="#O.MANAGEMENT">O.MANAGEMENT</a> as this provides for the ability to configure the OS to protect the confidentiality of its transmitted data.</td>
-            </tr>
-            <tr class="major-row">
-                <td rowspan="1"><a href="#A.PLATFORM">A.PLATFORM</a></td><td><a href="#OE.PLATFORM">OE.PLATFORM</a></td><td> The operational environment objective <a href="#OE.PLATFORM">OE.PLATFORM</a> is realized through <a href="#A.PLATFORM">A.PLATFORM</a>. </td>
-            </tr>
-            <tr class="major-row">
-                <td rowspan="1"><a href="#A.PROPER_USER">A.PROPER_​USER</a></td><td><a href="#OE.PROPER_USER">OE.PROPER_​USER</a></td><td>The operational environment objective <a href="#OE.PROPER_USER">OE.PROPER_USER</a> is realized through <a href="#A.PROPER_USER">A.PROPER_USER</a>.</td>
+                <td>T.UNAUTHORIZED_​CLIENT</td><td>An attacker may attempt to register an unauthorized <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> for the purpose of impersonating a legitimate end user device in order to gain unauthorized connectivity to other clients or active calls.</td>
             </tr>
             <tr class="major-row">
                 <td rowspan="1"><a href="#P.ENTERPRISE">P.ENTERPRISE</a></td><td><a href="#O.MANAGEMENT">O.MANAGEMENT</a></td><td>The organizational security policy <a href="#P.ENTERPRISE">P.ENTERPRISE</a> is enforced through the objective <a href="#O.MANAGEMENT">O.MANAGEMENT</a> as this objective represents how the enterprise and user assert management over the OS.</td>
