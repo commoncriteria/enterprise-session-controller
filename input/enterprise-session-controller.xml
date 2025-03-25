@@ -550,9 +550,9 @@ Base-PP.
 			<f-component name="DTLS Server Support for Mutual Authentication" cc-id="fcs_dtlss_ext.1" iteration="ESC" id="fcs-dtlss-ext-">
 			<f-element id='fcs-dtlss-ext-1e1'>
 			<title>
-			The TSF shall implement [<h:i>DTLS 1.2 (RFC 6347))</h:i>] supporting the following
-			ciphersuites: <selectables><selectable>select supported ciphersuites from List 1<h:b> in the NDcPP</h:b></selectable></selectables></selections> and no other ciphersuites.</title>
-			
+			The TSF shall implement [<h:i>DTLS 1.2 (RFC 6347))</h:i>] supporting the following ciphersuites: <selectables><selectable>select supported ciphersuites from List 1<h:b> in the NDcPP</h:b></selectable></selectables>and no other ciphersuites.
+			</title>
+
 			<aactivity><no-tests/></aactivity>
 			
 			</f-element>
