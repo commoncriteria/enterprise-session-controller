@@ -713,6 +713,29 @@ of time if at all.</td></tr>
 	
 	
     <h2 class="indexable" data-level="2" id="sec-TOEdescription">1.3 Compliant Targets of Evaluation</h2>
+	<p>The Target of Evaluation (<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>) that is defined by the combination of the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> and this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is a
+network device, either a dedicated appliance with a non-modifiable operating system, or a generalpurpose server running an independent commercially-available operating system that provides <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>
+functionality. Regardless of whether the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is a standalone appliance or a general-purpose server that is
+configured to function as an <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>, the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must be capable of satisfying all of the mandatory requirements
+of the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr>.</p><p>An <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> is a privately-owned telecommunication switch where its primary function is to set up, process,
+and terminate voice and video calls over an enterprise-wide Internet Protocol (IP) network. <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> operation
+is analogous to the tasks of 1930’stelephone switchboard-operators, which is to patch (connect) together
+callers to callees. But today’s <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> executes switchboard operations automatically, while providing
+simultaneous connectivity to hundreds of callers virtually instantaneously. In addition to establishing,
+processing, and managing thousands of connected calls, most ESCs support auxiliary services such as
+<abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> Conferencing, Voicemail, Chat, Telepresence, Encrypted Communications, and Protocol Translation
+for end-to-end connectivity of diverse endpoints.</p><p>ESCs are commonly known as Call Servers, Communications Servers, and Call-Processing Systems, and
+they vary in complexities and capabilities. The typical <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> can manage thousands of calls between diverse
+client devices such as VoIP-handsets, Softphones, Desktop Telepresence Systems, Room-size Video
+Telepresence Systems, and Mobile Devices. ESCs are normally installed within a SCIF or other entrycontrolled environment, especially systems that can register numerous <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints. To protect the
+<abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>, a Session Border Controller (<abbr class="dyn-abbr"><a href="#abbr_SBC">SBC</a></abbr>) is installed on the outer edge of the <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> network to help protect
+the <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> from external network attacks. Also note that a fairly robust <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> system includes many major
+components such as its own database, operating system (O/S), conferencing system, dialplan, network
+manager, call-signaling protocols (e.g. H.323, Session Initiation Protocol (<abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr>), SS7), and its own
+‘Operations, Administration, and Management (OA&amp;M)’ application system.</p><p>If any one of these major components is successfully attacked, then one can expect the entire <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> system
+to be negatively impacted. The intention of this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is to provide a list of security requirements
+needed by an <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> for protection of its functionality and protection of the <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> communications it is
+responsible for facilitating.</p>
       <h3 class="indexable" data-level="3" id="TOEboundary">1.3.1 TOE Boundary</h3>
         <div class="figure" id="figure-toe"><img id="toe" src="images/Toe.png" width="" height=""></img><br/><span class="ctr" data-myid="toe" data-counter-type="ct-figure">Figure <span class="counter">1</span></span>:
       General <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> </div>
