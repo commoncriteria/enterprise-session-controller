@@ -304,9 +304,8 @@ the functionality required by this PP-Module.
 	<!-- Claims section? If no, you have to write a free-form section -->
 
   </section>  <!-- Conformance Claims -->
-</section
-	<!-- Use Cases (optional) -->
-    
+</section>
+
 
     <!-- Platform definitions (optional) -->
 	<!-- Currently only the App PP uses this. And that's probably the only one that will. -->
