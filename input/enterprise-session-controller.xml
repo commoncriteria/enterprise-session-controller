@@ -387,7 +387,7 @@ baseline of capabilities that all conformant ESCs must provide.
 	All assumptions for the operational environment of the Base-PP also apply to this PP-Module.
 	A.NO_THRU_TRAFFIC_PROTECTION is still operative, but only for the interfaces in the TOE that are
 	defined by the Base-PP and not the PP-Module.
-      
+      <assumptions/>
     </section>   <!-- Assumptions -->
 	
 	<!-- OSPs refer to Objectives or OE Objectives in standard approach documents. -->
