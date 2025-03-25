@@ -339,7 +339,7 @@ ESC. Any VVoIP endpoint could be a threat to launch a malicious attack against t
 shall possess the security requirements needed for mitigating such a threat type.
 </h:p><h:p>Note that as PP-Module of the NDcPP, all threats, assumptions, and Organizational Security Policies (OSPs)
 defined there will also apply to an ESC TOE unless otherwise specified.
-</h:p><h:p></h:p></section>
+</h:p><h:p></h:p>
 
 
     <section title="Threats" id="sec-threats">
