@@ -388,65 +388,13 @@
                         All network devices are expected to provide services that allow the security functionality of the device to be managed. The <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>, as a specific type of network device, has a refined set of management functions to address its specialized behavior.
                     </p>
                     <p>
-                        Addressed by: FAU_STG.1 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>), FAU_SAR.1/Log, FAU_STG.1/<abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr>, FMT_CFG_EXT.1, FMT_SMF.1/<abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>, FAU_STG.1/VVR (selection-based)
+                        Addressed by: FAU_STG.1 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>), FAU_SAR.1/Log, FAU_STG.1/<abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr>, FMT_CFG_EXT.1, FMT_SMF.1/<abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>, FAU_STG.1/VVR (selection-based) 
                     </p>
                 </span>
             </dd>
-            <dt class="SO defined" id="O.MEDIA_RECORDING">O.MEDIA_RECORDING</dt>
+            <dt class="SO defined" id="O.INTEGRITY">O.INTEGRITY</dt>
             <dd>
-                <span class="description">
-                    <p>
-                        The <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> has the ability to capture and store metadata for the communications it facilitates in the form of call detail records. It also may optionally capture and store audio/video recordings of these communications. This data can be used to create a record of potential unauthorized or malicious activity that is occurring on the network in which the <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> is deployed. 
-                    </p>
-                    <p>
-                        Addressed by: FCS_NTP_EXT.1 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>), FPT_STM_EXT.1 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>), FAU_GEN.1/<abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr>, FAU_STG.1/<abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr>, FAU_VVR_EXT.1, FAU_STG.1/VVR (selection-based), FAU_VVR_EXT.2 (selection-based) 
-                    </p>
-                </span>
-            </dd>
-            <dt class="SO defined" id="O.SECURE_VVOIP">O.SECURE_VVOIP</dt>
-            <dd>
-                <span class="description">
-                    <p>
-                        The <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> has the ability to securely broker <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> communications between endpoint devices as well as external telecommunications equipment. This involves authentication and encryption of <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> communications as well as the enforcement of policies that route valid traffic to its intended destination while discarding unauthorized traffic flows. The <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> optionally has the ability to function as an update server for <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> software/firmware to ensure that endpoint devices are securely configured.
-                    </p>
-                    <p>
-                        Addressed by: FCS_DTLSS_EXT.1 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>), FCS_DTLSS_EXT.2 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>), FCS_NTP_EXT.1 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>), FCS_TLSC_EXT.1 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>), FCS_TLSC_EXT.2 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>), FCS_TLSS_EXT.1 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>), FCS_TLSS_EXT.2 (refined from BasePP), FIA_X509_EXT.1 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>), FIA_X509_EXT.2 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>), FIA_X509_EXT.3 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>), FPT_STM_EXT.1 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>), FDP_IFC.1, FDP_IFF.1, FIA_UAU.2/TC, FIA_UAU.2/<abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr>, FTP_ITC.1/<abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>, FPT_TUD_EXT.1/<abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> (implementation-dependent) 
-                    </p>
-                </span>
-            </dd>
-            <dt class="SO defined" id="O.SELF_PROTECTION">O.SELF_PROTECTION</dt>
-            <dd>
-                <span class="description">
-                    <p>
-                        The <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> has the ability to capture diagnostic data about its own functionality in real-time so that anomalous behavior or failures can be diagnosed. The <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> also has the ability to respond securely if a failure state is detected so that a crash of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> cannot be used to facilitate malicious activity. The <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> also enforces purging of residual data so that security-relevant information cannot be obtained from a decommissioned or refurbished device. 
-                    </p>
-                    <p>Addressed by: FAU_GEN.1/Log, FDP_RIP.1, FPT_FLS.1 </p>
-                </span>
-            </dd>
-            <dt class="SO defined" id="O.MEDIA_RECORDING">O.MEDIA_RECORDING</dt>
-            <dd>
-                <span class="description">
-                    <p></p>
-                    <p></p>
-                </span>
-            </dd>
-            <dt class="SO defined" id="O.MEDIA_RECORDING">O.MEDIA_RECORDING</dt>
-            <dd>
-                <span class="description">
-                    <p></p>
-                </span>
-            </dd>
-            <dt class="SO defined" id="O.MEDIA_RECORDING">O.MEDIA_RECORDING</dt>
-            <dd>
-                <span class="description">
-                    <p></p>
-                </span>
-            </dd>
-            <dt class="SO defined" id="O.MEDIA_RECORDING">O.MEDIA_RECORDING</dt>
-            <dd>
-                <span class="description">
-                    <p></p>
-                </span>
+                <span class="description">Conformant OSes ensure the integrity of their update packages. OSes are seldom if ever shipped without errors, and the ability to deploy patches and updates with integrity is critical to enterprise network security. Conformant OSes provide execution environment-based mitigations that increase the cost to attackers by adding complexity to the task of compromising systems. </span>
             </dd>
             <dt class="SO defined" id="O.MANAGEMENT">O.MANAGEMENT</dt>
             <dd>
@@ -509,6 +457,25 @@
                 </caption>
                 <tr>
                     <th>Objective</th><th>Addressed by</th><th>Rationale</th>
+                </tr>
+                <tr class="major-row">
+                    <td rowspan="2"><a href="#O.AUTHORIZED_ADMINISTRATION">O.AUTHORIZED_​ADMINISTRATION</a>
+                        <br>
+                    </td><td>FAU_GEN.1</td><td>'cause FAU_GEN.1 is awesome</td>
+                </tr>
+                <tr>
+                    <td>FTP_ITC_EXT.1</td><td>Cause FTP reasons </td>
+                </tr>
+                <tr class="major-row">
+                    <td rowspan="3"><a href="#O.INTEGRITY">O.INTEGRITY</a>
+                        <br>
+                    </td><td>FPT_SBOP_EXT.1</td><td>For reasons </td>
+                </tr>
+                <tr>
+                    <td>FPT_ASLR_EXT.1</td><td>ASLR For reasons </td>
+                </tr>
+                <tr>
+                    <td>FPT_TUD_EXT.1</td><td>For reasons </td>
                 </tr>
                 <tr class="major-row">
                     <td rowspan="4"><a href="#O.MANAGEMENT">O.MANAGEMENT</a>
