@@ -301,24 +301,13 @@ the functionality required by this PP-Module.
 		<cc-pp-conf/>              		  
 		
 		<!-- Can be in a configuration with these PPs and Modules -->
-		<cc-pp-config-with>             
-		</cc-pp-config-with>
+		<cc-pp-config-with/>
 
 		<!-- Package claims -->
-		<cc-pkg-claim>
-			<!-- No package-->
-		</cc-pkg-claim>
+		<cc-pkg-claim/>
+			
 
-		<!-- Evaluation Methods (optional) -->
-		<cc-eval-methods>
-			<EM-cc-ref>Name of document</EM-cc-ref>
-		</cc-eval-methods>
-		
-		<!-- Additional information to be added to the end of the Conformance Claims section (optional) -->
-		<cc-claims-addnl-info>
-			All security requirements in these claimed functional packages are intended to satisfy 
-			the O.PROTECTED_COMMS TOE security objective of this PP.
-		</cc-claims-addnl-info>
+
 
 	</CClaimsInfo>
   </section>  <!-- Conformance Claims -->
