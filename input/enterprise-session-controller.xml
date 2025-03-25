@@ -1638,47 +1638,7 @@ the functionality required by this PP-Module.
 	</appendix>
 
 	<appendix id="apndx-equiv" title="Application Software Equivalency Guidelines">
-		<section id="app-intro" title="Introduction">
-			<h:p>
-		  The purpose of equivalence in PP-based evaluations is to find a balance between evaluation rigor and commercial practicability—to 
-		  ensure that evaluations meet customer expectations while recognizing that there is little to be gained from requiring that every 
-		  variation in a product or platform be fully tested. If a product is found to be compliant with a PP on one platform, then all 
-		  equivalent products on equivalent platforms are also considered to be compliant with the PP.
-			</h:p><h:p>
-		  A Vendor can make a claim of equivalence if the Vendor believes that a particular instance of their Product implements PP-specified 
-		  security functionality in a way equivalent to the implementation of the same functionality on another instance of their Product on 
-		  which the functionality was tested. The Product instances can differ in version number or feature level (model), or the instances may
-		  run on different platforms. Equivalency can be used to reduce the testing required across claimed evaluated configurations. It can 
-		  also be used during Assurance Maintenance to reduce testing needed to add more evaluated configurations to a certification.
-			</h:p><h:p>
-		  These equivalency guidelines do not replace Assurance Maintenance requirements or NIAP Policy #5 requirements for CAVP certificates. 
-		  Nor may equivalency be used to leverage evaluations with expired certifications.
-			</h:p><h:p>
-		  These Equivalency Guidelines represent a shift from complete testing of all product instances to more of a risk-based approach. 
-		  Rather than require that every combination of product and platform be tested, these guidelines support an approach that recognizes
-		  that products are being used in a variety of environments—and often in cloud environments over where the vendor (and sometimes the 
-		  customer) have little or no control over the underlying hardware. Developers should be responsible for the security functionality of 
-		  their applications on the platforms they are developed for—whether that is an operating system, a virtual machine, or a software-based
-		  execution environment such as a container. But those platforms may themselves run within other environments—virtual machines or
-		  operating systems—that completely abstract away the underlying hardware from the application. The developer should not be held
-		  accountable for security functionality that is implemented by platform layers that are abstracted away. The implication is that
-		  not all security functionality will necessarily be tested for all platform layers down to the hardware for all evaluated
-		  configurations—especially for applications developed for software-based execution environments such as containers. For these cases, 
-		  the balancing of evaluation rigor and commercial practicability tips in favor of practicability. Note that this does not affect
-		  the requirement that at least one product instance be fully tested on at least one platform with cryptography mapped to a CAVP 
-		  certificate.
-			</h:p><h:p>
-		  Equivalency has two aspects:
-			</h:p>
-		  <h:ol>
-			<h:li><h:b><h:i>Product Equivalence:</h:i></h:b> Products may be considered equivalent if there are no
-			  differences between Product Models and Product Versions with respect to PP-specified security functionality.</h:li>
-			<h:li><h:b><h:i>Platform Equivalence:</h:i></h:b> Platforms may be considered equivalent if there are no
-			  significant differences in the services they provide to the Product—or in the way the platforms 
-			  provide those services—with respect to PP-specified security functionality.</h:li>
-		  </h:ol>
-		  The equivalency determination is made in accordance with these guidelines by the Validator and Scheme using information provided by the Evaluator/Vendor.
-		</section>
+		
 		<section id="approach" title="Approach to Equivalency Analysis">
 			<h:p>
 		  There are two scenarios for performing equivalency analysis. One is when a product has been certified and the vendor 
