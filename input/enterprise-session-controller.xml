@@ -526,7 +526,7 @@ xxxx
     </base-pp>
 	<man-sfrs>
     <section title="Security Audit (FAU)" id="m-fau">
-			<f-component name="Audit Data Generation (Audit Log)" cc-id="fau_gen.1" iteration="ESC" id="fau-gen-1-esc">FAU_GEN.1.1 is refined to include the following auditable events in addition to what is defined in the
+			<f-component name="Audit Data Generation (Audit Log)" cc-id="fau_gen.1"  id="fau-gen-1-esc">FAU_GEN.1.1 is refined to include the following auditable events in addition to what is defined in the
 Base-PP.
 
 	    <audit-table table="mandatory" id="mandatory-audit-events">
@@ -539,7 +539,7 @@ Base-PP.
 		</h:i></note>
 
 			</f-component>
-			<f-component name= "Protected Audit Trail Storage" cc-id="fau_stg.1" iteration="ESC" id="fau-stg-1-esc">This SFR is optional in the NDcPP but is mandated by this PP-Module because the ESC is expected to
+			<f-component name= "Protected Audit Trail Storage" cc-id="fau_stg.1" id="fau-stg-1-esc">This SFR is optional in the NDcPP but is mandated by this PP-Module because the ESC is expected to
 	maintain audit data internal to the TOE which must be protected from unauthorized access. 
 	<note role='application'><h:i>Both the “audit data” (FAU_GEN.1) and “system log” data (FAU_GEN.1/Log) are
 	expected to be protected from unauthorized access. This SFR applies to all data
@@ -547,25 +547,25 @@ Base-PP.
 	is stored.</h:i> </note></f-component>
 	</section>
 	<section title="Cryptographic Support" id="m-fcs">
-			<f-component name="DTLS Server Support for Mutual Authentication" cc-id="fcs_dtlss_ext.1" iteration="ESC" id="fcs-dtlss-ext-1">
+			<f-component name="DTLS Server Support for Mutual Authentication" cc-id="fcs_dtlss_ext.1"  id="fcs-dtlss-ext-1">
 			<f-element id='fcs-dtlss-ext-1e1'>
-			<title>
-			The TSF shall implement [<h:i>DTLS 1.2 (RFC 6347))</h:i>] supporting the following ciphersuites: <selectables><selectable>select supported ciphersuites from List 1<h:b> in the NDcPP</h:b></selectable></selectables>and no other ciphersuites.
-			</title>
-			<note role='application'><h:i><h:p>This SFR is selection-based in the NDcPP and remains selection-based in this PPModule because DTLS may be used to secure transmitted media. In this case, it
-must be claimed if ‘DTLS’ is selected in FTP_ITC.1.1/ESC in addition to the
-applicable selection triggers in the Base-PP.</h:p><h:p>This SFR is also refined from its definition in the Base-PP by requiring the use of
-DTLS 1.2 if this function is claimed.
-<h:p/></h:i></note>
-			<aactivity><no-tests/></aactivity>
-			
-			</f-element>
-					</f-component>
-			<f-component name="DTLS Server Support for Mutual Authentication" cc-id="fcs_dtlss_ext.2" iteration="ESC" id="fcs-dtlss-ext-2">This SFR is optional in the NDcPP but is selection-based in this PP-Module because any ESC use of DTLS
-	requires mutually-authenticated DTLS to be implemented. Therefore, this SFR must be claimed if ‘DTLS’ is
-	selected in FTP_ITC.1.1/ESC.
+				<title>
+				The TSF shall implement [<h:i>DTLS 1.2 (RFC 6347))</h:i>] supporting the following ciphersuites: <selectables><selectable>select supported ciphersuites from List 1<h:b> in the NDcPP</h:b></selectable></selectables>and no other ciphersuites.
+				</title>
+				<note role='application'><h:i><h:p>This SFR is selection-based in the NDcPP and remains selection-based in this PPModule because DTLS may be used to secure transmitted media. In this case, it
+				must be claimed if ‘DTLS’ is selected in FTP_ITC.1.1/ESC in addition to the
+				applicable selection triggers in the Base-PP.</h:p><h:p>This SFR is also refined from its definition in the Base-PP by requiring the use of
+				DTLS 1.2 if this function is claimed.
+				<h:p/></h:i></note>
+				<aactivity><no-tests/></aactivity>
+				
+				</f-element>
 			</f-component>
-			<f-component name="NTP Protocol" cc-id="fcs_ntp_ext" iteration="ESC" id="fcs-ntp-ext-">
+			<f-component name="DTLS Server Support for Mutual Authentication" cc-id="fcs_dtlss_ext.2"  id="fcs-dtlss-ext-2">This SFR is optional in the NDcPP but is selection-based in this PP-Module because any ESC use of DTLS
+			requires mutually-authenticated DTLS to be implemented. Therefore, this SFR must be claimed if ‘DTLS’ is
+			selected in FTP_ITC.1.1/ESC.
+			</f-component>
+			<f-component name="NTP Protocol" cc-id="fcs_ntp_ext.1" id="fcs-ntp-ext-1">
 			<f-element id='fcs-ntp-ext-1e1'>
 			<title>The TSF shall use only the following NTP version: [<h:i>NTP v4 (RFC 5905)</h:i>].</title>
 
@@ -575,7 +575,8 @@ DTLS 1.2 if this function is claimed.
 			other parts of the SFR are modified.</h:i></note>
 			<aactivity><no-tests/></aactivity>
 			</f-element></f-component>
-			
+			<f-component name="TLS Client Protocol without Mutual Authentication" cc-id="fcs_tlsc_ext" iteration="ESC" id="fcs-ntp-ext-">
+			<f-element id='fcs-ntp-ext-1e1'>
 			
 			</section>
 		
