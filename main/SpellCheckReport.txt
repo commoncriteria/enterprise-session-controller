@@ -23,6 +23,7 @@ output/enterprise-session-controller-release-linkable.html: TUD
 output/enterprise-session-controller-release-linkable.html: Telepresence
 output/enterprise-session-controller-release-linkable.html: UAU
 output/enterprise-session-controller-release-linkable.html: UID
+output/enterprise-session-controller-release-linkable.html: VVR
 output/enterprise-session-controller-release-linkable.html: Validator
 output/enterprise-session-controller-release-linkable.html: callees
 output/enterprise-session-controller-release-linkable.html: callprocessing
@@ -64,6 +65,7 @@ output/enterprise-session-controller-release.html: TUD
 output/enterprise-session-controller-release.html: Telepresence
 output/enterprise-session-controller-release.html: UAU
 output/enterprise-session-controller-release.html: UID
+output/enterprise-session-controller-release.html: VVR
 output/enterprise-session-controller-release.html: Validator
 output/enterprise-session-controller-release.html: callees
 output/enterprise-session-controller-release.html: callprocessing
@@ -112,6 +114,7 @@ output/enterprise-session-controller.html: TUD
 output/enterprise-session-controller.html: Telepresence
 output/enterprise-session-controller.html: UAU
 output/enterprise-session-controller.html: UID
+output/enterprise-session-controller.html: VVR
 output/enterprise-session-controller.html: Validator
 output/enterprise-session-controller.html: callees
 output/enterprise-session-controller.html: callprocessing
