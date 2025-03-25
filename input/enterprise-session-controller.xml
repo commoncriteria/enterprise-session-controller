@@ -371,7 +371,7 @@ the functionality required by this PP-Module.
   <!-- New conformance claims section for CC:2022. -->
   <!-- If boilerplate is "yes" something that is probably incorrect is generated -->
   
-  
+   <section title="Conformance Claims" id="ConformanceClaims">
 	<CClaimsInfo 
 		cc-version="cc-2022r1"         
 		cc-approach="standard"         
@@ -392,12 +392,9 @@ the functionality required by this PP-Module.
 
 		<!-- Package claims -->
 		<cc-pkg-claim/>
-			
-
-
 
 	</CClaimsInfo>
-  
+  </section>
   <section title="Security Problem Definition" id="sec-spd">
   
     <!-- Arbitrary introductory text -->
