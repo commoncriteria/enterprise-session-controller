@@ -547,6 +547,14 @@ Base-PP.
 	is stored.</h:i> </note></f-component>
 	</section>
 	<section title="Cryptographic Support" id="m-fcs">
+			<f-component name="DTLS Server Support for Mutual Authentication" cc-id="fcs_dtlss_ext.1" iteration="ESC" id="fcs-dtlss-ext-">
+			<f-element id='fcs-dtlss-ext-1e1'>
+			The TSF shall implement [<h:i>DTLS 1.2 (RFC 6347))</h:i>] supporting the following
+			ciphersuites: <selectables><selectable>select supported ciphersuites from List 1<h:b> in the NDcPP</h:b></selectable></selectables></selections> and no other ciphersuites.
+			<aactivity><no-tests/></aactivity>
+			
+			</f-element>
+					</f-component>
 			<f-component name="DTLS Server Support for Mutual Authentication" cc-id="fcs_dtlss_ext.2" iteration="ESC" id="fcs-dtlss-ext-2">This SFR is optional in the NDcPP but is selection-based in this PP-Module because any ESC use of DTLS
 	requires mutually-authenticated DTLS to be implemented. Therefore, this SFR must be claimed if ‘DTLS’ is
 	selected in FTP_ITC.1.1/ESC.
