@@ -662,7 +662,89 @@ updates</selectable>
 	  </modified-sfrs>
     </base-pp>
 	<man-sfrs>
-    
+    <section title='Security Audit (FAU)' id='man-fau'>
+		<f-component name="Audit Data Generation (Call Detail Record)" cc-id='fau_gen.1-cdr' id='fpt-gen-ext-1-cdr' iteration='CDR'>
+		<f-element id='fau-gen-1e1-cdr'>
+		<title>The TSF shall be able to generate a <h:b>call detail</h:b> record <h:b>(CDR)</h:b> for <h:b>communications
+between VVoIP endpoints that are established by the TOE.</h:b></title>
+<aactivity><no-tests/></aactivity></f-element>
+		<f-element id='fau-gen-1e2-cdr'>
+		<title>The TSF shall record within each CDR at least the following information: <h:b>[<h:lu>
+		<h:li>calling party number (i.e. call originator)</h:li>
+		<h:li>called party number (i.e. call receiver or terminating number)</h:li>
+		<h:li>unique transaction sequence number</h:li>
+		<h:li>call disposition (e.g. call connected, call terminated, call transferred)</h:li>
+		<h:li>call type (e.g. voice only, voice and video, text)</h:li>
+		<h:li>call start time</h:li>
+		<h:li>call end time</h:li>
+		<h:li>call duration</h:li>
+		<h:li>unique identifier of the TOE</h:li>
+		<h:li>call routing into TOE</h:li>
+		<h:li>call routing out of TOE</h:li>
+		<h:li>time zone</h:li>
+		<h:li>call release cause, if applicable (i.e. reason for termination of call)</h:li>
+		<h:li>fault condition(s), if applicable</h:li>
+		</h:lu></h:b>]</title>
+		<note role='application'><h:i>The TOE should be uniquely identified as part of the CDR so that there is
+		attribution of individual CDRs in environments where multiple ESCs are feeding
+		CDRs to a centralized server.</h:i></note>
+		<aactivity><no-tests/></aactivity>
+		</f-element>
+		</f-component>
+		<f-component name="g Audit Data Generation (System Log)" cc-id='fau_gen.1-log' id='fpt-gen-ext-1-log' iteration='Log'>
+		<f-element id='fau-gen-1e1-log'>
+		<title>The TSF shall be able to generate a <h:b>system log</h:b> record for <h:b>current IP connections,
+			NTP status, CPU usage, memory usage, disk and file storage capacity, audit
+			storage capacity, <selectables><selectable>power status</selectable><selectable>fan status</selectable><selectable>no other activities</selectable></selectables>.</h:b> </title>
+			<aactivity><no-tests/></aactivity>
+		</f-element>
+		<f-element id='fau-gen-1e2-log'>
+		<title>
+		The TSF shall record within each system log record at least the following information: <h:lo type='a'>
+		<h:li>Date and time of the event, type of event, subject identity (if applicable),
+and the outcome (success or failure of the event); and </h:li>
+<h:li>For each audit event type, based on the auditable event definitions of the
+functional components included in the PP/ST, [<h:i>event details described in
+System Log Events table</h:i>].</h:li></l:lo>
+    <h:head><title>Event Table</title></h:head>
+<h:table border='1'>
+		<h:tr>
+			<h:th>Event</h:th>
+			<h:th>Additional System Log Record Contents</h:th>
+			
+		</h:tr>
+		<h:tr>
+			<h:th>Current IP connections</h:th>
+			<h:th>Network interface card (NIC); Status (up or down).</h:th>
+		</h:tr>
+				<h:tr>
+			<h:th>CPU usage </h:th>
+			<h:th>Utilization percentage of TOE CPU(s).</h:th>
+		</h:tr>
+				<h:tr>
+			<h:th>Memory usage</h:th>
+			<h:th>Percentage and/or amount of free memory available for use.</h:th>
+		</h:tr>
+				<h:tr>
+			<h:th>Disk and file storage capacity</h:th>
+			<h:th>Percentage and/or amount of available space remaining for each disk or disk partition on the TOE.</h:th>
+		</h:tr>
+				<h:tr>
+			<h:th>Fan status (conditional)</h:th>
+			<h:th>Fan identification; Status (on or off).</h:th>
+		</h:tr>
+				<h:tr>
+			<h:th>Power status (conditional) </h:th>
+			<h:th>Status (on or off).</h:th>
+		</h:tr>
+
+		</h:table>
+
+</title>
+<aactivity><no-tests/></aactivity>
+		</f-element>
+		</f-component>
+	</section>
 		
 	</man-sfrs>  <!-- SFRs -->
     
