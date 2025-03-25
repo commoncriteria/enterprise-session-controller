@@ -862,18 +862,10 @@ baseline of capabilities that all conformant ESCs must provide.
 	
 	
     <h2 class="indexable" data-level="2" id="sec-assumptions">3.2 Assumptions</h2>
-These assumptions are made on the Operational Environment (<abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr>) in order to be able to ensure that the
-security functionality specified in the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> can be provided by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.
-If the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is placed in an <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> that does not meet these assumptions, the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> may no longer be able to
-provide all of its security functionality.
-      
 	All assumptions for the operational environment of the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> also apply to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.
 	A.NO_THRU_TRAFFIC_PROTECTION is still operative, but only for the interfaces in the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that are
 	defined by the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> and not the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.
-      <dl><dt class="assumption defined" id="A.PROPER_USER">A.PROPER_USER</dt><dd><span class="description"> The user of the OS is not willfully negligent or hostile, and uses the
-            software in compliance with the applied enterprise security policy. At the same time,
-            malicious software could act <i>as</i> the user, so requirements which
-            confine malicious subjects are still in scope.</span></dd></dl>
+      
        
 	
 	
@@ -881,9 +873,7 @@ provide all of its security functionality.
     <h2 class="indexable" data-level="2" id="sec-OSPs">3.3 Organizational Security Policies</h2><p>An organization deploying the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is
       expected to satisfy the organizational security policy listed below in addition to all
       organizational security policies defined by the claimed <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>. </p>
-      <dl><dt class="OSP defined" id="P.ENTERPRISE">P.ENTERPRISE</dt><dd><span class="description">If the OS is bound to a directory or management server, the configuration of
-            the OS software must be capable of adhering to the enterprise security policies
-            distributed by them.</span></dd></dl>
+      <dl><dt class="OSP defined" id="P.SECURED_PLATFORM">P.SECURED_PLATFORM</dt><dd><span class="description">Administrators in the organization ensure that general purpose computers use secure operating systems and are configured in accordance with applicable security standards.</span></dd></dl>
        
 	
 	
@@ -931,10 +921,7 @@ The assumptions identified in Section 3 are incorporated as security objectives 
     <h2 id="sec-sor" class="indexable,h2" data-level="2">4.3 Security Objectives Rationale</h2>   
 		This section describes how the assumptions, threats, and organizational 
 		security policies map to the security objectives.
-	<table><caption><span class="ctr" data-myid="t-sec-obj-rat" data-counter-type="ct-Table" id="t-sec-obj-rat">Table <span class="counter">1</span></span>: Security Objectives Rationale</caption><tr class="header"><td>Threat, Assumption, or <abbr class="dyn-abbr"><a href="#abbr_OSP">OSP</a></abbr></td><td>Security Objectives</td><td>Rationale</td></tr><tr class="major-row"><td rowspan="1"><a href="#A.PROPER_USER">A.PROPER_​USER</a></td><td><a href="#OE.PROPER_USER">OE.PROPER_​USER</a></td><td>The operational environment objective <a href="#OE.PROPER_USER">OE.PROPER_USER</a> is realized through
-              <a href="#A.PROPER_USER">A.PROPER_USER</a>.</td></tr><tr class="major-row"><td rowspan="1"><a href="#P.ENTERPRISE">P.ENTERPRISE</a></td><td><a href="#O.MANAGEMENT">O.MANAGEMENT</a></td><td>The organizational security policy <a href="#P.ENTERPRISE">P.ENTERPRISE</a> is enforced through the
-              objective <a href="#O.MANAGEMENT">O.MANAGEMENT</a> as this objective represents how the enterprise and user assert
-              management over the OS.</td></tr></table>
+	<table><caption><span class="ctr" data-myid="t-sec-obj-rat" data-counter-type="ct-Table" id="t-sec-obj-rat">Table <span class="counter">1</span></span>: Security Objectives Rationale</caption><tr class="header"><td>Threat, Assumption, or <abbr class="dyn-abbr"><a href="#abbr_OSP">OSP</a></abbr></td><td>Security Objectives</td><td>Rationale</td></tr></table>
 
   <h1 id="sec-reqs" class="indexable" data-level="1">5 Security Requirements</h1>
       This chapter describes the security requirements which have to be fulfilled by the product under evaluation.
