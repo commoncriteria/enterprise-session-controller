@@ -11,6 +11,7 @@ output/enterprise-session-controller-release-linkable.html: FMT
 output/enterprise-session-controller-release-linkable.html: FTA
 output/enterprise-session-controller-release-linkable.html: MACs
 output/enterprise-session-controller-release-linkable.html: MOF
+output/enterprise-session-controller-release-linkable.html: NTP
 output/enterprise-session-controller-release-linkable.html: OA
 output/enterprise-session-controller-release-linkable.html: PPModule
 output/enterprise-session-controller-release-linkable.html: SBOP
@@ -53,6 +54,7 @@ output/enterprise-session-controller-release.html: FMT
 output/enterprise-session-controller-release.html: FTA
 output/enterprise-session-controller-release.html: MACs
 output/enterprise-session-controller-release.html: MOF
+output/enterprise-session-controller-release.html: NTP
 output/enterprise-session-controller-release.html: OA
 output/enterprise-session-controller-release.html: PPModule
 output/enterprise-session-controller-release.html: SBOP
@@ -100,6 +102,7 @@ output/enterprise-session-controller.html: FMT
 output/enterprise-session-controller.html: FTA
 output/enterprise-session-controller.html: MACs
 output/enterprise-session-controller.html: MOF
+output/enterprise-session-controller.html: NTP
 output/enterprise-session-controller.html: OA
 output/enterprise-session-controller.html: PPModule
 output/enterprise-session-controller.html: SBOP
