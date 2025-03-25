@@ -297,7 +297,7 @@ the functionality required by this PP-Module.
 		</usecases>
 		</sec:Use_Cases>
      <!-- Compliant TOEs -->
-<section title="Conformance Claims" id="sec-cclaims" boilerplate="no">
+<section title="Conformance Claims" id="sec-cclaims" >
 
 	<!-- cc-version: cc-2022r1 or cc-31r5   -->
 	<!-- cc-approach: standard or direct-rationale  -->
@@ -322,11 +322,7 @@ the functionality required by this PP-Module.
 		<cc-pp-config-with/>
 
 		<!-- Package claims -->
-		<cc-pkg-claim/>
-
-		<!-- Evaluation Methods (optional) -->
-
-		
+		<cc-pkg-claim/>		
 		<!-- Additional information to be added to the end of the Conformance Claims section (optional) -->
 		<cc-claims-addnl-info/>
 
