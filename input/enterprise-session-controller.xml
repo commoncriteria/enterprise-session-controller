@@ -249,7 +249,7 @@ secure remote connections with trusted entities in the OE.</h:p><h:p>Figure 1 be
 		conference calls and storage of call recordings.</h:li>
 		</h:ul>Different ESCs may implement these capabilities in different ways. This PP-Module defines a minimum
 baseline of capabilities that all conformant ESCs must provide.
-      </section>
+      </sec:TOE_Boundary>
       <section title="TOE Platform" id="sec-TOEplatform">
       </section>
      <!-- Compliant TOEs -->
