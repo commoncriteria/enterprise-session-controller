@@ -398,25 +398,80 @@ baseline of capabilities that all conformant ESCs must provide.
 	<!-- This section is omitted for direct rationale documents -->
     <section title="Security Objectives for the TOE" id="SecurityObjectivesTOE">
       <SOs>
-        <SO name="O.ACCOUNTABILITY">
-          <description> Conformant OSes ensure that information exists that allows
-            administrators to discover unintentional issues with the configuration and operation of
-            the operating system and discover its cause.  Gathering event information and immediately
-            transmitting it to another system can also enable incident response in the event
-            of system compromise.</description>
-          <addressed-by>FAU_GEN.1</addressed-by><rationale>'cause FAU_GEN.1 is awesome</rationale>
-          <addressed-by>FTP_ITC_EXT.1</addressed-by><rationale>Cause FTP reasons </rationale>
+        <SO name="O.AUTHORIZED_ADMINISTRATION">
+          <description> <h:p>All network devices are expected to provide services that allow the security functionality of the device
+			to be managed. The ESC, as a specific type of network device, has a refined set of management
+			functions to address its specialized behavior.</h:p><h:p>Addressed by: FAU_STG.1 (refined from Base-PP), FAU_SAR.1/Log, FAU_STG.1/CDR,
+			FMT_CFG_EXT.1, FMT_SMF.1/ESC, FAU_STG.1/VVR (selection-based)</h:p>
+			</description>
         </SO>
-        <SO name="O.INTEGRITY">
-          <description>Conformant OSes ensure the integrity of their update
-            packages. OSes are seldom if ever shipped without errors, and the
-            ability to deploy patches and updates with integrity is critical to enterprise network
-            security. Conformant OSes provide execution environment-based
-            mitigations that increase the cost to attackers by adding complexity to the task of
-            compromising systems. </description>
-            <addressed-by>FPT_SBOP_EXT.1</addressed-by><rationale>For reasons </rationale>
-            <addressed-by>FPT_ASLR_EXT.1</addressed-by><rationale>ASLR For reasons </rationale>
-            <addressed-by>FPT_TUD_EXT.1</addressed-by><rationale>For reasons </rationale>
+        <SO name="O.MEDIA_RECORDING">
+          <description>
+		  <h:p>The ESC has the ability to capture and store metadata for the communications it facilitates in the form
+			of call detail records. It also may optionally capture and store audio/video recordings of these
+			communications. This data can be used to create a record of potential unauthorized or malicious
+			activity that is occurring on the network in which the ESC is deployed.
+			</h:p>
+		  <h:p>Addressed by: FCS_NTP_EXT.1 (refined from Base-PP), FPT_STM_EXT.1 (refined from Base-PP),
+			FAU_GEN.1/CDR, FAU_STG.1/CDR, FAU_VVR_EXT.1, FAU_STG.1/VVR (selection-based),
+			FAU_VVR_EXT.2 (selection-based)
+			</h:p>
+		  </description>
+
+        </SO>
+		<SO name="O.SECURE_VVOIP">
+          <description>
+		  <h:p>The ESC has the ability to securely broker VVoIP communications between endpoint devices as well
+			as external telecommunications equipment. This involves authentication and encryption of VVoIP
+			communications as well as the enforcement of policies that route valid traffic to its intended
+			destination while discarding unauthorized traffic flows. The ESC optionally has the ability to function
+			as an update server for VVoIP software/firmware to ensure that endpoint devices are securely
+			configured.</h:p>
+		  <h:p>Addressed by: FCS_DTLSS_EXT.1 (refined from Base-PP), FCS_DTLSS_EXT.2 (refined from Base-PP),
+			FCS_NTP_EXT.1 (refined from Base-PP), FCS_TLSC_EXT.1 (refined from Base-PP), FCS_TLSC_EXT.2
+			(refined from Base-PP), FCS_TLSS_EXT.1 (refined from Base-PP), FCS_TLSS_EXT.2 (refined from BasePP), FIA_X509_EXT.1 (refined from Base-PP), FIA_X509_EXT.2 (refined from Base-PP),
+			FIA_X509_EXT.3 (refined from Base-PP), FPT_STM_EXT.1 (refined from Base-PP), FDP_IFC.1,
+			FDP_IFF.1, FIA_UAU.2/TC, FIA_UAU.2/VVoIP, FTP_ITC.1/ESC, FPT_TUD_EXT.1/VVoIP (implementation-dependent)
+			</h:p>
+		  </description>
+
+        </SO>
+		<SO name="O.SELF_PROTECTION">
+          <description>
+		  <h:p>The ESC has the ability to capture diagnostic data about its own functionality in real-time so that
+anomalous behavior or failures can be diagnosed. The ESC also has the ability to respond securely if a
+failure state is detected so that a crash of the TOE cannot be used to facilitate malicious activity. The
+ESC also enforces purging of residual data so that security-relevant information cannot be obtained
+from a decommissioned or refurbished device.
+</h:p><h:p>Addressed by: FAU_GEN.1/Log, FDP_RIP.1, FPT_FLS.1
+</h:p>
+		  </description>
+
+        </SO>
+		<SO name="O.MEDIA_RECORDING">
+          <description>
+		  <h:p/>
+		  <h:p/>
+		  </description>
+
+        </SO>
+		<SO name="O.MEDIA_RECORDING">
+          <description>
+		  <h:p/>
+		  </description>
+
+        </SO>
+		<SO name="O.MEDIA_RECORDING">
+          <description>
+		  <h:p/>
+		  </description>
+
+        </SO>
+		<SO name="O.MEDIA_RECORDING">
+          <description>
+		  <h:p/>
+		  </description>
+
         </SO>
         <SO name="O.MANAGEMENT">
           <description> To facilitate management by users and the enterprise, conformant OSes
