@@ -387,33 +387,15 @@ baseline of capabilities that all conformant ESCs must provide.
 	All assumptions for the operational environment of the Base-PP also apply to this PP-Module.
 	A.NO_THRU_TRAFFIC_PROTECTION is still operative, but only for the interfaces in the TOE that are
 	defined by the Base-PP and not the PP-Module.
-      <assumptions>
-        <assumption name="A.PROPER_USER">
-          <description> The user of the OS is not willfully negligent or hostile, and uses the
-            software in compliance with the applied enterprise security policy. At the same time,
-            malicious software could act <h:i>as</h:i> the user, so requirements which
-            confine malicious subjects are still in scope.</description>
-          <objective-refer ref="OE.PROPER_USER">
-            <rationale>The operational environment objective OE.PROPER_USER is realized through
-              A.PROPER_USER.</rationale>
-          </objective-refer>
-        </assumption>
-      </assumptions>
+      
     </section>   <!-- Assumptions -->
 	
 	<!-- OSPs refer to Objectives or OE Objectives in standard approach documents. -->
 	<!-- In direct rationale PPs, they should refer to OE Objectives -->
     <section title="Organizational Security Policies" id="sec-OSPs">
       <OSPs>
-        <OSP name="P.ENTERPRISE">
-          <description>If the OS is bound to a directory or management server, the configuration of
-            the OS software must be capable of adhering to the enterprise security policies
-            distributed by them.</description>
-          <objective-refer ref="O.MANAGEMENT">
-            <rationale>The organizational security policy P.ENTERPRISE is enforced through the
-              objective O.MANAGEMENT as this objective represents how the enterprise and user assert
-              management over the OS.</rationale>
-          </objective-refer>
+        <OSP name="P.SECURED_PLATFORM">
+          <description>Administrators in the organization ensure that general purpose computers use secure operating systems and are configured in accordance with applicable security standards.</description>
         </OSP>
       </OSPs>
     </section>   <!-- OSPs -->
