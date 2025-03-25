@@ -703,7 +703,7 @@ between VVoIP endpoints that are established by the TOE.</h:b></title>
 		The TSF shall record within each system log record at least the following information: <h:ol type='a'>
 			<h:li>Date and time of the event, type of event, subject identity (if applicable), and the outcome (success or failure of the event); and </h:li>
 			<h:li>For each audit event type, based on the auditable event definitions of the functional components included in the PP/ST, [<h:i>event details described in System Log Events table</h:i>].</h:li></h:ol>
-    <h:head><title><h:b><ctr ctr-type="Table" pre="Table " id="atref-mandatory">: Event Table</ctr></h:b></title></h:head>
+    <h:head><title><h:b><ctr ctr-type="Table" pre="Table " id="atref-mandatory">: System Log Events</ctr></h:b></title></h:head>
 <h:table border='1'>
 		<h:tr>
 			<h:th>Event</h:th>
@@ -738,9 +738,63 @@ between VVoIP endpoints that are established by the TOE.</h:b></title>
 		</h:table>
 
 </title>
+<note role='application'><h:i><h:p>Unlike audit data (see FAU_GEN.1), system log data is used primarily for real-time
+analysis of system behavior. This data is expected to be treated as non-persistent
+data by the TOE.</h:p><h:p>The ST author is expected to identify the sampling interval for the information
+presented in the system log so that it is clear to the evaluator how often updates
+to that information will be presented to an administrator</h:p><h:p>Logging of power status is optional and is only intended for TOEs that have
+multiple redundant power supplies. Logging of fan status is also optional.</h:p></h:i></note>
 <aactivity><no-tests/></aactivity>
 		</f-element>
 		</f-component>
+		<f-component name="Audit Review (System Log)" cc-id='fau_sar.1' id='fau-sar-1-log' iteration='Log'>
+		<f-element id='fau-sar-1e1'>
+		<title>The TSF shall provide [<h:i>Security Administrators</h:i>] with the capability to read <assignable>list of audit information</assignable> from the <h:b>system log</h:b> records.
+		</title>
+		<aactivity><no-tests/></aactivity>
+
+		</f-element>
+		<f-element id='fau-sar-1e2'>
+		<title>The TSF shall provide the <h:b>system log</h:b> records in a <h:b>real-time first-in first-out scrolling method</h:b>.</title>
+		<aactivity><no-tests/></aactivity>
+		</f-element>
+		</f-component>
+		<f-component name="Protected Audit Trail Storage (Call Detail Record)" cc-id='fau_stg.1' id='fau-stg-1-cdr' iteration='CDR'>
+		<f-element id='fau-stg-1e1-cdr'>
+		<title>The TSF shall protect the stored <h:b>call detail records</h:b> from unauthorized <h:b>disclosure and</h:b> deletion.</title>
+		<aactivity><no-tests/></aactivity>
+		</f-element>
+		<f-element id='fau-stg-1e2-cdr'>
+		<title>The TSF shall be able to [<h:i>prevent</h:i>] unauthorized modifications to the stored <h:b>call
+detail records</h:b>.</title>
+		<aactivity><no-tests/></aactivity>
+		</f-element>
+		</f-component>
+		<f-component name="Recording Voice and Video Call Data" cc-id='fua-vvr-ext.1' id='fau-vvr-ext-1' >
+		<title>The TSF shall <selectables><selectable>have</selectable><selectable>not have</selectable></selectables> the capability to record voice and video
+call data.</title>
+		<note role='application'><h:i>If "have" is selected, both FAU_STG.1/VVR and FAU_VVR_EXT.2 must be claimed
+		and “Ability to enable/disable voice and video recordings for any registered VVoIP
+		endpoint” must be selected in FMT_SMF.1.1/ESC.
+		</h:i></note>
+		<aactivity><no-tests/></aactivity>
+		</f-component>
+	</section>
+	<section title='User Data Protection' id='man-fdp'>
+	<f-component name='Subset Information Flow Control' cc-id="fdp_ifc.1" id='fdp-ifc-1'>
+	<f-element id='fdp-ifc-1e1'>
+		<title>The TSF shall enforce the [<h:i>enterprise session controller SFP</h:i>] on [<h:i>caller-callee pairs attempting to communicate through the TOE</h:i>].</title>
+		<aactivity><no-tests/></aactivity>
+	</f-element>
+	</f-component>
+	<f-component name='Simple Security Attributes' cc-id='fdp_iff.1' id='fdp-iff-1'>
+		<f-element id='fdp-iff-1e1'>
+		<title>The TSF shall enforce the [<h:i>enterprise session controller SFP</h:i>] based on the following types of subject and information security attributes: <assignable>method by which the TSF identifies each endpoint for a call</assignable> <h:b>using the following call control protocols: <selectables><selectable>SIP</selectable><selectable>H.323</selectable></selectables> and <selectables><selectable>SS7</selectable><selectable>MGCP</selectable><selectable>no other call control protocols</selectable></selectables></h:b>.
+		</title>
+		<aactivity><no-tests/></aactivity>
+		</f-element>
+	
+	</f-component>
 	</section>
 		
 	</man-sfrs>  <!-- SFRs -->
