@@ -201,6 +201,29 @@ of time if at all.</term>
 	     TOE Boundary, TOE Operational Environment, and Roles. These sections can also be included in the
 		 TOE/PP Overview aove. -->
     <section title="Compliant Targets of Evaluation" id="sec-TOEdescription">
+	<h:p>The Target of Evaluation (TOE) that is defined by the combination of the NDcPP and this PP-Module is a
+network device, either a dedicated appliance with a non-modifiable operating system, or a generalpurpose server running an independent commercially-available operating system that provides ESC
+functionality. Regardless of whether the TOE is a standalone appliance or a general-purpose server that is
+configured to function as an ESC, the TOE must be capable of satisfying all of the mandatory requirements
+of the NDcPP.</h:p><h:p>An ESC is a privately-owned telecommunication switch where its primary function is to set up, process,
+and terminate voice and video calls over an enterprise-wide Internet Protocol (IP) network. ESC operation
+is analogous to the tasks of 1930’stelephone switchboard-operators, which is to patch (connect) together
+callers to callees. But today’s ESC executes switchboard operations automatically, while providing
+simultaneous connectivity to hundreds of callers virtually instantaneously. In addition to establishing,
+processing, and managing thousands of connected calls, most ESCs support auxiliary services such as
+VVoIP Conferencing, Voicemail, Chat, Telepresence, Encrypted Communications, and Protocol Translation
+for end-to-end connectivity of diverse endpoints.</h:p><h:p>ESCs are commonly known as Call Servers, Communications Servers, and Call-Processing Systems, and
+they vary in complexities and capabilities. The typical ESC can manage thousands of calls between diverse
+client devices such as VoIP-handsets, Softphones, Desktop Telepresence Systems, Room-size Video
+Telepresence Systems, and Mobile Devices. ESCs are normally installed within a SCIF or other entrycontrolled environment, especially systems that can register numerous VVoIP endpoints. To protect the
+ESC, a Session Border Controller (SBC) is installed on the outer edge of the VVoIP network to help protect
+the ESC from external network attacks. Also note that a fairly robust ESC system includes many major
+components such as its own database, operating system (O/S), conferencing system, dialplan, network
+manager, call-signaling protocols (e.g. H.323, Session Initiation Protocol (SIP), SS7), and its own
+‘Operations, Administration, and Management (OA&M)’ application system.</h:p><h:p>If any one of these major components is successfully attacked, then one can expect the entire ESC system
+to be negatively impacted. The intention of this PP-Module is to provide a list of security requirements
+needed by an ESC for protection of its functionality and protection of the VVoIP communications it is
+responsible for facilitating.</h:p>
       <section title="TOE Boundary" id="TOEboundary">
         <figure entity="images/Toe.png" title="General TOE " id="toe"/>
       </section>
