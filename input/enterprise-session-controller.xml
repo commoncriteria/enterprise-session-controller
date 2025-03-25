@@ -516,6 +516,7 @@ suggesting the purpose of the iteration, e.g. ‘/CDR’ for an SFR relating to 
 		<f-component name="Audit Data Generation (Audit Log)" cc-id="fau_gen.1" iteration="ESC" id="fau-gen-1-ecr">
 		<title>
 		FAU_GEN.1.1 is refined to include the following auditable events in addition to what is defined in the Base-PP.</title>
+		<aactivity><no-tests/></aactivity>
 		<section id="sec-audit-table" title="Auditable Events for Mandatory SFRs">
 			<audit-table id="at-mandatory" table="mandatory"/>
 		</section>
