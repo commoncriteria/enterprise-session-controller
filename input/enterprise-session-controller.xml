@@ -483,177 +483,45 @@ systems and are configured in accordance with applicable security standards.</de
 
   
   <section title="Security Requirements" id="sec-reqs">
+  <h:p>The Security Functional Requirements (SFRs) included in this section are derived from Part 2 of the
+Common Criteria for Information Technology Security Evaluation, Version 3.1, Revision 5, with additional
+extended functional components</h:p>
+  <h:p>The CC defines operations on Security Functional Requirements: assignments, selections, assignments
+within selections and refinements. This document uses the following font conventions to identify the
+operations defined by the CC:</h:p><h:ul>
+<h:li>• Assignments are indicated with <h:i>italicized</h:i> text.</h:li>
+<h:li>Refinements made by the PP-Module author are indicated with <h:b>bold</h:b> text. Refinements are only
+applied to significant technical changes to existing SFRs; minor presentation changes with no technical
+impact (such as British vs American spelling differences) are not marked as refinements. Refinements
+are also indicated when an operation is added or substituted for an existing operation (e.g. the PPModule completes an assignment in such a way that it introduces a selection into the assignment)
+• Selections are indicated with <h:i>italicized</h:i> text.</h:li>
+<h:li>Iterations are indicated by appending the SFR name either with a slash and unique identifier
+suggesting the purpose of the iteration, e.g. ‘/CDR’ for an SFR relating to call data records</h:li>
+<h:li>Extended SFRs are identified by having a label “EXT” after the SFR name.</h:li>
+</h:ul>
+  <h:p></h:p>
+  <h:p></h:p>
 
 	<!-- For PPs and Packages, this section contains all the SFRs regardless of status. -->
 	<!-- Optional, objective, implekentation-dependent and selection-based SFRs are  -->
 	<!-- automatically displayed in the appropriate place when the document is generated . -->
 	
     <section title="Security Functional Requirements" id="sec-sfrs">
-
+	<man-sfrs>
 		<!-- Audit table for Mandatory SFRs -->
+		
+
+		<!-- Section for SFR Class -->
+		<section title="Security Audit" id="man-fau">
+		<f-component name="Audit Data Generation (Audit Log)" cc-id="fau_gen.1" iteration="ESC" id="fau-gen-1-ecr">
+		<title>
+		FAU_GEN.1.1 is refined to include the following auditable events in addition to what is defined in the Base-PP.</title>
 		<section id="sec-audit-table" title="Auditable Events for Mandatory SFRs">
 			<audit-table id="at-mandatory" table="mandatory"/>
 		</section>
-
-		<!-- Section for SFR Class -->
-		<section title="Class: Cryptologic Support (FCS)" id="sec-fcs">
+		</f-component>
 		
-			<!-- If this Class does not exist in the CC, then you need the following. -->
-			<!-- Try not to create new classes. -->
-<!--	        <class-description>A description of the new class.</class-description>        
-			<ext-comp-class class="ClassName (ClassAbbr)">
-				<description>Not sure what this is for.</description>
-			</ext-comp-class>
--->
-	
-			<!-- For each family in the class that includes one or more  extended components  -->
-			<!-- you need to povide an extended component definition like this. -->
-<!--	        <ext-comp-def title="Cryptographic Key Management" fam-id="FCS_CKM_EXT">
-			<fam-behavior>This family defines requirements for management of cryptographic keys.
-				FCS_CKM_EXT.4 is necessary because FCS_CKM.4 does not include a requirement for the timing of 
-				key destruction.
-				FCS_CKM_EXT.5 is necessary to express requirements for key derivation, which are missing from Part 2. 
-				</fam-behavior>
-			</ext-comp-def>
--->			
-			<!-- Next define all the components in the Class -->
-			<!-- name: Name of the requirement as it should appear in the document -->
-			<!-- id: Should look something like this, but it just needs to be unique in the document -->
-			<!-- cc-id" This is a lower-case version of the SFR name as it would appear in a document -->
-			<!-- iteration: This attribute is required only if the SFR is an iteration -->
-			<!-- status: sel-based, optional, objective, sel-based, feat-based. -->
-			<!-- Omit status for mandatory SFRs -->
-			<f-component name="Cryptographic Operation: Symmetric Key Cryptography"   
-               id="sfr-fcs-cop-ext-1-skc"       
-               cc-id="fcs_cop_ext.1"            
-               iteration="SKC"                   
-               status="sel-based">              
-		
-				<!-- Dependencies for sel-based, feat-based -->
-				<depends on-sel="sel-rot2-audit"/> 
-				
-				<!-- Consistency rationale is required only for SFRs in modified and additional SFR -->
-				<!-- sections of a PP-Module. -->
-<!--				<consistency-rationale>
-					This SFR defines additional uses for X.509 certificate functionality that
-					do not conflict with those defined in the GPOS PP.
-				</consistency-rationale>
--->				
-				<!-- Extended components must provide the following information. -->
-				<!-- Component leveling information for the ECD appendix. -->
-				<comp-lev>
-					specifies how audit data may be transmitted or removed from the TOE, which is not 
-					covered by any FCS_STG component.
-				</comp-lev>
-				<management>
-					The following actions could be considered for the management functions in FMT:
-					<h:ol type="a">
-						<h:li>Ability to configure and manage the audit system and audit data,
-							including the ability to configure name/address of audit/logging server
-							to which to send audit/logging records.
-						</h:li>
-					</h:ol>
-				</management>
-				<audit>The following actions should be auditable if FAU_GEN Security audit data generation 
-					is included in the PP/ST:
-					<h:ol type="a">
-						<h:li>On failure of logging function, capture record of failure and record upon 
-							restart of logging function.
-						</h:li>
-					</h:ol>
-				</audit>
-				<dependencies><h:br/>
-					FAU_GEN.1 Audit Data Generation
-				</dependencies>
-				
-				<!-- Optional description that is seldon used. -->
-<!--				<description>
-					This is something that I want to say up front about this requirement, but I 
-					don't have to. Most people use App Notes for this.
-				</description>
--->
-				<!-- Elements for this component. One or more. -->
-				<f-element id="fcs-cop-ext-1-1-skc">
-					<title>
-						The TSF shall be able to transfer generated audit data to an external IT entity
-						using 
-						<selectables linebreak="yes">
-							<selectable id="sel-fau-itc">a trusted channel as specified in FTP_ITC_EXT.1</selectable>
-							<selectable>removable media requiring physical access to the platform</selectable>
-						</selectables>.
-					</title>
-					
-					<!-- For extended components only that include selections or assignments with an id attribute -->
-					<!-- Make a copy of the title with all selections replaced by assignments and all ids removed.-->
-					<!-- This ensures proper display in the ECD section. -->
-					<ext-comp-def-title>
-						<title>The TSF shall be able to transfer generated audit data to an external IT entity using 
-							<assignable>mechanism for moving audit data</assignable>. 
-						</title>
-					</ext-comp-def-title>
-					
-					<note role="application">
-						Instructions for the ST Author on how to fill in the selections and assignments.
-					</note>
-					
-					<!-- EAs for the element (or component) -->
-					<aactivity level="element">
-						<TSS>What the evaluator has to do with the TSS.</TSS>
-						<Guidance>What the evaluator has to do with the TOE Guidance document.</Guidance>
-						<KMD>What the evaluator has to do with the Key Management Document, or whatever.</KMD>
-						<Tests>The tests that the evaluator has to run to verify that the requirement is met.</Tests>
-					</aactivity>
-					
-					<!-- Optional rules go here. -->
-<!--					<rule id="keyedhash-alg-match-sha-256">
-						<description>If "<h:i><xref to="sel-hmac-sha-256"/></h:i>" is selected in FCS_COP.1/KeyedHash then "<h:i><xref to="sel-hash-sha-256"/></h:i>" 
-							must be selected in FCS_COP.1/Hash.</description>
-						<if><ref-id>sel-hmac-sha-256</ref-id></if><then><ref-id>sel-hash-sha-256</ref-id></then>
-					</rule>
--->
-				</f-element>
 
-				<!-- Audit events for this SFR -->
-				<audit-event>
-					<audit-event-descr>Failure to establish a HTTPS Session.</audit-event-descr>
-					<audit-event-info>Reason for failure.</audit-event-info>
-					<audit-event-info>Non-TOE endpoint of connection (IP address) for failures.</audit-event-info>
-				</audit-event>
-				
-			</f-component>	
-	
-			<!-- We're pretending that this one is from the CC catalog -->
-			<f-component name="Yet Another Requirement"   
-               id="sfr-fcs-yar-1"       
-               cc-id="fcs_yar.1">              
-		
-				<!-- Elements for this component. One or more. -->
-				<f-element id="fcs-yar-1e1">
-					<title>
-						The TSF shall be able to do something important.
-					</title>
-					
-					<note role="application">
-						Instructions for the ST Author on how to fill in the selections and assignments.
-					</note>
-					
-					<!-- EAs for the element (or component) -->
-					<aactivity level="element">
-						<TSS>What the evaluator has to do with the TSS.</TSS>
-						<Guidance>What the evaluator has to do with the TOE Guidance document.</Guidance>
-						<KMD>What the evaluator has to do with the Key Management Document, or whatever.</KMD>
-						<Tests>The tests that the evaluator has to run to verify that the requirement is met.</Tests>
-					</aactivity>
-					
-				</f-element>
-
-				<!-- Audit events for this SFR -->
-				<audit-event>
-					<audit-event-descr>Failure to do the important thing.</audit-event-descr>
-					<audit-event-info>Reason for failure.</audit-event-info>
-				</audit-event>
-				
-			</f-component>	
 	
 			<!-- More components and class sections. -->
 
@@ -663,7 +531,7 @@ systems and are configured in accordance with applicable security standards.</de
 		<!-- This is auto-genertaed and appears here. -->
 		
 	</section>  <!-- SFRs -->
-	
+	</man-sfrs>
 	<!-- Security Assurance Requirements -->
 	<!-- Eventually this will be boilerplate that can be copied directly from here. -->
 	<!-- What's below is probably pretty close, although you'll probably have to fix all the referemces. -->
