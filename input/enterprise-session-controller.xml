@@ -556,7 +556,7 @@ Base-PP.
 				must be claimed if ‘DTLS’ is selected in FTP_ITC.1.1/ESC in addition to the
 				applicable selection triggers in the Base-PP.</h:p><h:p>This SFR is also refined from its definition in the Base-PP by requiring the use of
 				DTLS 1.2 if this function is claimed.
-				<h:p/></h:i></note>
+				</h:p></h:i></note>
 				<aactivity><no-tests/></aactivity>
 				
 				</f-element>
