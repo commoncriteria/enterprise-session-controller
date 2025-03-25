@@ -8,6 +8,7 @@ output/enterprise-session-controller-release-linkable.html: ESCs
 output/enterprise-session-controller-release-linkable.html: FIA
 output/enterprise-session-controller-release-linkable.html: FMT
 output/enterprise-session-controller-release-linkable.html: FTA
+output/enterprise-session-controller-release-linkable.html: MACs
 output/enterprise-session-controller-release-linkable.html: MOF
 output/enterprise-session-controller-release-linkable.html: NTP
 output/enterprise-session-controller-release-linkable.html: OA
@@ -18,6 +19,7 @@ output/enterprise-session-controller-release-linkable.html: SMR
 output/enterprise-session-controller-release-linkable.html: SS7
 output/enterprise-session-controller-release-linkable.html: STM
 output/enterprise-session-controller-release-linkable.html: Softphones
+output/enterprise-session-controller-release-linkable.html: Solaris
 output/enterprise-session-controller-release-linkable.html: T1
 output/enterprise-session-controller-release-linkable.html: TRP
 output/enterprise-session-controller-release-linkable.html: TUD
@@ -32,6 +34,8 @@ output/enterprise-session-controller-release-linkable.html: dialplan
 output/enterprise-session-controller-release-linkable.html: duplicative
 output/enterprise-session-controller-release-linkable.html: entrycontrolled
 output/enterprise-session-controller-release-linkable.html: generalpurpose
+output/enterprise-session-controller-release-linkable.html: iPhones
+output/enterprise-session-controller-release-linkable.html: macOS
 output/enterprise-session-controller-release-linkable.html: microarchitecture
 output/enterprise-session-controller-release-linkable.html: stelephone
 output/enterprise-session-controller-release-linkable.html: supersets
@@ -48,6 +52,7 @@ output/enterprise-session-controller-release.html: ESCs
 output/enterprise-session-controller-release.html: FIA
 output/enterprise-session-controller-release.html: FMT
 output/enterprise-session-controller-release.html: FTA
+output/enterprise-session-controller-release.html: MACs
 output/enterprise-session-controller-release.html: MOF
 output/enterprise-session-controller-release.html: NTP
 output/enterprise-session-controller-release.html: OA
@@ -58,6 +63,7 @@ output/enterprise-session-controller-release.html: SMR
 output/enterprise-session-controller-release.html: SS7
 output/enterprise-session-controller-release.html: STM
 output/enterprise-session-controller-release.html: Softphones
+output/enterprise-session-controller-release.html: Solaris
 output/enterprise-session-controller-release.html: T1
 output/enterprise-session-controller-release.html: TRP
 output/enterprise-session-controller-release.html: TUD
@@ -72,6 +78,8 @@ output/enterprise-session-controller-release.html: dialplan
 output/enterprise-session-controller-release.html: duplicative
 output/enterprise-session-controller-release.html: entrycontrolled
 output/enterprise-session-controller-release.html: generalpurpose
+output/enterprise-session-controller-release.html: iPhones
+output/enterprise-session-controller-release.html: macOS
 output/enterprise-session-controller-release.html: microarchitecture
 output/enterprise-session-controller-release.html: supersets
 output/enterprise-session-controller-release.html: trunkconnected
@@ -93,6 +101,7 @@ output/enterprise-session-controller.html: ESCs
 output/enterprise-session-controller.html: FIA
 output/enterprise-session-controller.html: FMT
 output/enterprise-session-controller.html: FTA
+output/enterprise-session-controller.html: MACs
 output/enterprise-session-controller.html: MOF
 output/enterprise-session-controller.html: NTP
 output/enterprise-session-controller.html: OA
@@ -103,6 +112,7 @@ output/enterprise-session-controller.html: SMR
 output/enterprise-session-controller.html: SS7
 output/enterprise-session-controller.html: STM
 output/enterprise-session-controller.html: Softphones
+output/enterprise-session-controller.html: Solaris
 output/enterprise-session-controller.html: T1
 output/enterprise-session-controller.html: TRP
 output/enterprise-session-controller.html: TUD
@@ -117,6 +127,8 @@ output/enterprise-session-controller.html: dialplan
 output/enterprise-session-controller.html: duplicative
 output/enterprise-session-controller.html: entrycontrolled
 output/enterprise-session-controller.html: generalpurpose
+output/enterprise-session-controller.html: iPhones
+output/enterprise-session-controller.html: macOS
 output/enterprise-session-controller.html: microarchitecture
 output/enterprise-session-controller.html: supersets
 output/enterprise-session-controller.html: trunkconnected
