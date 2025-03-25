@@ -300,7 +300,7 @@ the functionality required by this PP-Module.
 
 
 
-   <section title="Conformance Claims" id="ConformanceClaims" boilerplate="no">
+   <section title="Conformance Claims" id="ConformanceClaims">
 	<CClaimsInfo 
 		cc-version="cc-2022r1"         
 		cc-approach="standard"         
@@ -326,10 +326,20 @@ the functionality required by this PP-Module.
   </section>
   <section title="Security Problem Definition" id="sec-spd">
   
-    <!-- Arbitrary introductory text -->
-	The security problem is described in terms of the threats that the OS is expected to address, 
-	assumptions about the operational environment, and any organizational security policies that the OS
-    is expected to enforce.
+	<h:p>The security problem is described in terms of the threats that the TOE is expected to address, assumptions
+about its operational environment, and any organizational security policies that the TOE is expected to
+enforce.</h:p><h:p>The ESC is a network appliance that incorporates multiple components and protocols, and is designed
+with the purpose of connecting and managing calls that emanate from registered VVoIP endpoints. The
+ESC is also designed to provide centralized control of an enterprise-wide VVoIP communication network.
+As the central control system that manages and processes VVoIP calls from as many as 50,000 endpoints
+per node, it is critically important for the ESC to be protected because it is a single point of failure for tens
+of thousands of end-users.
+</h:p><h:p>As a centralized system the ESC is subject to attacks from the VVoIP endpoints that are registered to the
+ESC. Any VVoIP endpoint could be a threat to launch a malicious attack against the ESC. Therefore the ESC
+shall possess the security requirements needed for mitigating such a threat type.
+</h:p><h:p>Note that as PP-Module of the NDcPP, all threats, assumptions, and Organizational Security Policies (OSPs)
+defined there will also apply to an ESC TOE unless otherwise specified.
+</h:p><h:p></h:p></section>
 
 
     <section title="Threats" id="sec-threats">
