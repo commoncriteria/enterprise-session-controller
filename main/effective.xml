@@ -377,7 +377,9 @@ baseline of capabilities that all conformant ESCs must provide.
     <section title="Organizational Security Policies" id="sec-OSPs">
       <OSPs>
         <OSP name="P.SECURED_PLATFORM">
-          <description>Administrators in the organization ensure that general purpose computers use secure operating systems and are configured in accordance with applicable security standards.</description>
+          <description>Administrators in the organization ensure that general purpose computers use secure operating
+systems and are configured in accordance with applicable security standards.</description>
+    
         </OSP>
       </OSPs>
     </section>   <!-- OSPs -->
@@ -398,13 +400,12 @@ baseline of capabilities that all conformant ESCs must provide.
 	<!-- This section is omitted for direct rationale documents -->
     <section title="Security Objectives for the TOE" id="SecurityObjectivesTOE">
       <SOs>
-        <SO name="O.AUTHORIZED_ADMINISTRATION">
-          <description> <h:p>All network devices are expected to provide services that allow the security functionality of the device
-to be managed. The ESC, as a specific type of network device, has a refined set of management
-functions to address its specialized behavior.</h:p><h:p>Addressed by: FAU_STG.1 (refined from Base-PP), FAU_SAR.1/Log, FAU_STG.1/CDR,
-FMT_CFG_EXT.1, FMT_SMF.1/ESC, FAU_STG.1/VVR (selection-based)
-</h:p>
-</description>
+        <SO name="O.ACCOUNTABILITY">
+          <description> Conformant OSes ensure that information exists that allows
+            administrators to discover unintentional issues with the configuration and operation of
+            the operating system and discover its cause.  Gathering event information and immediately
+            transmitting it to another system can also enable incident response in the event
+            of system compromise.</description>
           <addressed-by>FAU_GEN.1</addressed-by><rationale>'cause FAU_GEN.1 is awesome</rationale>
           <addressed-by>FTP_ITC_EXT.1</addressed-by><rationale>Cause FTP reasons </rationale>
         </SO>

@@ -850,7 +850,8 @@ baseline of capabilities that all conformant ESCs must provide<a id="period_63" 
     <h2 class="indexable" data-level="2" id="sec-OSPs">3.3 Organizational Security Policies</h2><p>An organization deploying the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is
       expected to satisfy the organizational security policy listed below in addition to all
       organizational security policies defined by the claimed <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr><a id="period_110" href="#period_110">. </a></p>
-      <dl><dt class="OSP defined" id="P.SECURED_PLATFORM">P.SECURED_PLATFORM</dt><dd><span class="description">Administrators in the organization ensure that general purpose computers use secure operating systems and are configured in accordance with applicable security standards<a id="period_111" href="#period_111">. </a></span></dd></dl>
+      <dl><dt class="OSP defined" id="P.SECURED_PLATFORM">P.SECURED_PLATFORM</dt><dd><span class="description">Administrators in the organization ensure that general purpose computers use secure operating
+systems and are configured in accordance with applicable security standards<a id="period_111" href="#period_111">. </a></span></dd></dl>
        
 	
 	
@@ -860,12 +861,11 @@ baseline of capabilities that all conformant ESCs must provide<a id="period_63" 
   
 	
     <h2 class="indexable" data-level="2" id="SecurityObjectivesTOE">4.1 Security Objectives for the TOE</h2>
-      <dl><dt class="SO defined" id="O.AUTHORIZED_ADMINISTRATION">O.AUTHORIZED_ADMINISTRATION</dt><dd><span class="description"> <p>All network devices are expected to provide services that allow the security functionality of the device
-to be managed<a id="period_112" href="#period_112">. </a>The <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>, as a specific type of network device, has a refined set of management
-functions to address its specialized behavior<a id="period_113" href="#period_113">. </a></p><p>Addressed by: FAU_STG.1 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>), FAU_SAR.1/Log, FAU_STG.1/<abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr>,
-FMT_CFG_EXT.1, FMT_SMF.1/<abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>, FAU_STG.1/VVR (selection-based)
-</p>
-</span></dd><dt class="SO defined" id="O.INTEGRITY">O.INTEGRITY</dt><dd><span class="description">Conformant OSes ensure the integrity of their update
+      <dl><dt class="SO defined" id="O.ACCOUNTABILITY">O.ACCOUNTABILITY</dt><dd><span class="description"> Conformant OSes ensure that information exists that allows
+            administrators to discover unintentional issues with the configuration and operation of
+            the operating system and discover its cause<a id="period_112" href="#period_112">. </a> Gathering event information and immediately
+            transmitting it to another system can also enable incident response in the event
+            of system compromise<a id="period_113" href="#period_113">. </a></span></dd><dt class="SO defined" id="O.INTEGRITY">O.INTEGRITY</dt><dd><span class="description">Conformant OSes ensure the integrity of their update
             packages<a id="period_114" href="#period_114">. </a>OSes are seldom if ever shipped without errors, and the
             ability to deploy patches and updates with integrity is critical to enterprise network
             security<a id="period_115" href="#period_115">. </a>Conformant OSes provide execution environment-based
@@ -917,7 +917,7 @@ The <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> of the <abbr class="
      </ul>
    <h2 id="man-sfrs" class="indexable" data-level="2">5.1 TOE Security Functional Requirements</h2>
 	This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr><a id="period_136" href="#period_136">. </a>      <h2 id="obj-req-map" class="indexable" data-level="2">5.2 TOE Security Functional Requirements Rationale</h2><p>The following rationale provides justification for each security objective for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, 
-    showing that the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> are suitable to meet and achieve the security objectives:<br><table><caption><span class="ctr" data-myid="t-obj_map" data-counter-type="ct-Table" id="t-obj_map">Table <span class="counter">2</span></span>: <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> Rationale</caption><tr><th>Objective</th><th>Addressed by</th><th>Rationale</th></tr><tr class="major-row"><td rowspan="2"><a href="#O.AUTHORIZED_ADMINISTRATION">O.AUTHORIZED_&#8203;ADMINISTRATION</a><br></td><td>FAU_GEN.1</td><td>'cause FAU_GEN.1 is awesome</td></tr>
+    showing that the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> are suitable to meet and achieve the security objectives:<br><table><caption><span class="ctr" data-myid="t-obj_map" data-counter-type="ct-Table" id="t-obj_map">Table <span class="counter">2</span></span>: <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> Rationale</caption><tr><th>Objective</th><th>Addressed by</th><th>Rationale</th></tr><tr class="major-row"><td rowspan="2"><a href="#O.ACCOUNTABILITY">O.ACCOUNTABILITY</a><br></td><td>FAU_GEN.1</td><td>'cause FAU_GEN.1 is awesome</td></tr>
 <tr><td>FTP_ITC_EXT.1</td><td>Cause FTP reasons </td></tr>
 <tr class="major-row"><td rowspan="3"><a href="#O.INTEGRITY">O.INTEGRITY</a><br></td><td>FPT_SBOP_EXT.1</td><td>For reasons </td></tr>
 <tr><td>FPT_ASLR_EXT.1</td><td>ASLR For reasons </td></tr>

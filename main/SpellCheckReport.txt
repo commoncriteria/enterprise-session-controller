@@ -2,7 +2,6 @@ output/enterprise-session-controller-release-linkable.html: 2e
 output/enterprise-session-controller-release-linkable.html: AFL
 output/enterprise-session-controller-release-linkable.html: AppPP
 output/enterprise-session-controller-release-linkable.html: CEM
-output/enterprise-session-controller-release-linkable.html: CFG
 output/enterprise-session-controller-release-linkable.html: CoreOS
 output/enterprise-session-controller-release-linkable.html: ESCs
 output/enterprise-session-controller-release-linkable.html: FIA
@@ -24,7 +23,6 @@ output/enterprise-session-controller-release-linkable.html: TUD
 output/enterprise-session-controller-release-linkable.html: Telepresence
 output/enterprise-session-controller-release-linkable.html: UAU
 output/enterprise-session-controller-release-linkable.html: UID
-output/enterprise-session-controller-release-linkable.html: VVR
 output/enterprise-session-controller-release-linkable.html: Validator
 output/enterprise-session-controller-release-linkable.html: callees
 output/enterprise-session-controller-release-linkable.html: callprocessing
@@ -43,7 +41,6 @@ output/enterprise-session-controller-release.html: 2e
 output/enterprise-session-controller-release.html: AFL
 output/enterprise-session-controller-release.html: AppPP
 output/enterprise-session-controller-release.html: CEM
-output/enterprise-session-controller-release.html: CFG
 output/enterprise-session-controller-release.html: CoreOS
 output/enterprise-session-controller-release.html: ESCs
 output/enterprise-session-controller-release.html: FIA
@@ -65,7 +62,6 @@ output/enterprise-session-controller-release.html: TUD
 output/enterprise-session-controller-release.html: Telepresence
 output/enterprise-session-controller-release.html: UAU
 output/enterprise-session-controller-release.html: UID
-output/enterprise-session-controller-release.html: VVR
 output/enterprise-session-controller-release.html: Validator
 output/enterprise-session-controller-release.html: callees
 output/enterprise-session-controller-release.html: callprocessing
@@ -89,7 +85,6 @@ output/enterprise-session-controller.html: 2e
 output/enterprise-session-controller.html: AFL
 output/enterprise-session-controller.html: AppPP
 output/enterprise-session-controller.html: CEM
-output/enterprise-session-controller.html: CFG
 output/enterprise-session-controller.html: CoreOS
 output/enterprise-session-controller.html: ESCs
 output/enterprise-session-controller.html: FIA
@@ -111,7 +106,6 @@ output/enterprise-session-controller.html: TUD
 output/enterprise-session-controller.html: Telepresence
 output/enterprise-session-controller.html: UAU
 output/enterprise-session-controller.html: UID
-output/enterprise-session-controller.html: VVR
 output/enterprise-session-controller.html: Validator
 output/enterprise-session-controller.html: callees
 output/enterprise-session-controller.html: callprocessing
