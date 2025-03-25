@@ -304,41 +304,19 @@ the functionality required by this PP-Module.
 		<cc-pp-config-with/>
 
 		<!-- Package claims -->
-		<cc-pkg-claim>
-			<!-- No package-->
-		</cc-pkg-claim>
+		<cc-pkg-claim/>
 
 		<!-- Evaluation Methods (optional) -->
 
 		
 		<!-- Additional information to be added to the end of the Conformance Claims section (optional) -->
-		<cc-claims-addnl-info>
-			All security requirements in these claimed functional packages are intended to satisfy 
-			the O.PROTECTED_COMMS TOE security objective of this PP.
-		</cc-claims-addnl-info>
+		<cc-claims-addnl-info/>
 
 	</CClaimsInfo>
   </section>  <!-- Conformance Claims -->
 
 	<!-- Use Cases (optional) -->
-    <section title="Use Cases" id="sec-usecases">
-
-      <usecases>
-		<!-- Each use case followed by an optional set of selections or restrictions --> 
-		<usecase title="Elephant-own device" id="elephant">
-			<description>This is everything we need to describe in words about this use case.</description>	
-			<!-- The restrictions and selections associated with this use case -->
-			<config>
-                <ref-id>soup</ref-id>
-				<not><ref-id>ratatouille</ref-id><ref-id>pizza</ref-id></not>
-                <not><ref-id>table2</ref-id></not> <!-- This says you can't choose this selectable-->
-                <ref-id>optional-comp-example</ref-id> <!-- Inclusion of an optional/objective requirement -->
-                <not><ref-id>t-network-eavesdrop</ref-id></not>
-                <restrict><ref-id>a-widgets</ref-id>Number <int gte="4" lte="6"/></restrict>
-			</config>
-		</usecase>
-      </usecases>
-    </section>  <!-- Use Cases -->
+   
 
     <!-- Platform definitions (optional) -->
 	<!-- Currently only the App PP uses this. And that's probably the only one that will. -->
