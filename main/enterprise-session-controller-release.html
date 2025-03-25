@@ -636,7 +636,7 @@ function showTarget(id){
 </table><h2>Contents</h2><div class="toc" id="toc"><a href="#sec-intro" style="text-indent:0px">1<span>Introduction</span></a><a href="#sec-ppoverview" style="text-indent:10px">1.1<span>PP Overview</span></a><a href="#glossary" style="text-indent:10px">1.2<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.2.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.2.2<span>Technical Terms</span></a><a href="#sec-TOEdescription" style="text-indent:10px">1.3<span>Compliant Targets of Evaluation</span></a><a href="#TOE_Boundary" style="text-indent:10px">1.4<span>TOE Boundary</span></a><a href="#Use_Cases" style="text-indent:10px">1.5<span>Use Cases</span></a><a href="#sec-cclaims" style="text-indent:0px">2<span>Conformance Claims</span></a><a href="#sec-spd" style="text-indent:0px">3<span>Security Problem Definition</span></a><a href="#sec-threats" style="text-indent:10px">3.1<span>Threats</span></a><a href="#sec-assumptions" style="text-indent:10px">3.2<span>Assumptions</span></a><a href="#sec-OSPs" style="text-indent:10px">3.3<span>Organizational Security Policies</span></a><a href="#sec-objectives" style="text-indent:0px">4<span>Security Objectives</span></a><a href="#SecurityObjectivesTOE" style="text-indent:10px">4.1<span>Security Objectives for the TOE</span></a><a href="#sec-OEObjectives" style="text-indent:10px">4.2<span>Security Objectives for the Operational Environment</span></a><a href="#sec-sor" style="text-indent:10px">4.3<span>Security Objectives Rationale</span></a><a href="#Security_Requirements" style="text-indent:0px">5<span>Security Requirements</span></a><a href="#secreq-ND" style="text-indent:10px">5.1<span>Collaborative 
     Protection Profile for Network Devices
        Security Functional Requirements Direction
-    </span></a><a href="#modsfr-ND" style="text-indent:20px">5.1.1<span> Modified SFRs </span></a><a href="#m-fau" style="text-indent:30px">5.1.1.1<span>Security Audit (FAU)</span></a><a href="#m-fcs" style="text-indent:30px">5.1.1.2<span>Cryptographic Support</span></a><a href="#m-fia" style="text-indent:30px">5.1.1.3<span>Identification and Authentication (FIA)</span></a><a href="#m-fpt" style="text-indent:30px">5.1.1.4<span>Protection of the TSF (FPT)</span></a><a href="#man-sfrs" style="text-indent:10px">5.2<span>TOE Security Functional Requirements</span></a><a href="#obj-req-map" style="text-indent:10px">5.3<span>TOE Security Functional Requirements Rationale</span></a><a href="#mod-conrat" style="text-indent:0px">6<span>Consistency Rationale</span></a><a href="#conrat-ND" style="text-indent:10px">6.1<span>Collaborative 
+    </span></a><a href="#modsfr-ND" style="text-indent:20px">5.1.1<span> Modified SFRs </span></a><a href="#m-fau" style="text-indent:30px">5.1.1.1<span>Security Audit (FAU)</span></a><a href="#m-fcs" style="text-indent:30px">5.1.1.2<span>Cryptographic Support</span></a><a href="#m-fia" style="text-indent:30px">5.1.1.3<span>Identification and Authentication (FIA)</span></a><a href="#m-fpt" style="text-indent:30px">5.1.1.4<span>Protection of the TSF (FPT)</span></a><a href="#man-sfrs" style="text-indent:10px">5.2<span>TOE Security Functional Requirements</span></a><a href="#man-fau" style="text-indent:20px">5.2.1<span>Security Audit (FAU)</span></a><a href="#obj-req-map" style="text-indent:10px">5.3<span>TOE Security Functional Requirements Rationale</span></a><a href="#mod-conrat" style="text-indent:0px">6<span>Consistency Rationale</span></a><a href="#conrat-ND" style="text-indent:10px">6.1<span>Collaborative 
     Protection Profile for Network Devices</span></a><a href="#contoe-ND" style="text-indent:20px">6.1.1<span>
 	Consistency of TOE Type
       </span></a><a href="#consecprob-ND" style="text-indent:20px">6.1.2<span>
@@ -1085,8 +1085,81 @@ updates</span>, <span class="selectable-content" id="_s_10">[<b>assignment</b>:
 			
 			
 	  <h2 id="man-sfrs" class="indexable" data-level="2">5.2 TOE Security Functional Requirements</h2>
-	This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr>.
-      <h2 id="obj-req-map" class="indexable" data-level="2">5.3 TOE Security Functional Requirements Rationale</h2><p>The following rationale provides justification for each security objective for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, 
+	The following section describes the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that must be satisfied by any <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that claims conformance to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.
+	These <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> must be claimed regardless of which <abbr class="dyn-abbr"><a href="#abbr_PP-Configuration">PP-Configuration</a></abbr> is used to define the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.
+        
+    <h3 id="man-fau" class="indexable" data-level="3">5.2.1 Security Audit (FAU)</h3>
+		<div class="comp" id="FAU_GEN.1-CDR/CDR"><h4>FAU_GEN.1-CDR/CDR Audit Data Generation (Call Detail Record)</h4>
+		<div class="element"><div class="reqid" id="FAU_GEN.1-CDR.1/CDR"><a href="#FAU_GEN.1-CDR.1/CDR" class="abbr">FAU_GEN.1-CDR.1/CDR</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to generate a <b>call detail</b> record <b>(<abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr>)</b> for <b>communications
+between <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints that are established by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.</b></div></div>
+		<div class="element"><div class="reqid" id="FAU_GEN.1-CDR.2/CDR"><a href="#FAU_GEN.1-CDR.2/CDR" class="abbr">FAU_GEN.1-CDR.2/CDR</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall record within each <abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr> at least the following information: <b>[<lu>
+		<li>calling party number (i.e. call originator)</li>
+		<li>called party number (i.e. call receiver or terminating number)</li>
+		<li>unique transaction sequence number</li>
+		<li>call disposition (e.g. call connected, call terminated, call transferred)</li>
+		<li>call type (e.g. voice only, voice and video, text)</li>
+		<li>call start time</li>
+		<li>call end time</li>
+		<li>call duration</li>
+		<li>unique identifier of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></li>
+		<li>call routing into <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></li>
+		<li>call routing out of <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></li>
+		<li>time zone</li>
+		<li>call release cause, if applicable (i.e. reason for termination of call)</li>
+		<li>fault condition(s), if applicable</li>
+		</lu></b>]<div class="appnote"><span class="note-header">Application
+      Note:
+    </span><span class="note"><i>The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> should be uniquely identified as part of the <abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr> so that there is
+		attribution of individual CDRs in environments where multiple ESCs are feeding
+		CDRs to a centralized server.</i></span></div></div></div>
+		</div>
+		<div class="comp" id="FAU_GEN.1-LOG/Log"><h4>FAU_GEN.1-LOG/Log g Audit Data Generation (System Log)</h4>
+		<div class="element"><div class="reqid" id="FAU_GEN.1-LOG.1/Log"><a href="#FAU_GEN.1-LOG.1/Log" class="abbr">FAU_GEN.1-LOG.1/Log</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to generate a <b>system log</b> record for <b>current IP connections,
+			NTP status, CPU usage, memory usage, disk and file storage capacity, audit
+			storage capacity, [<b>selection</b>: <span class="selectable-content" id="_s_15">power status</span>, <span class="selectable-content" id="_s_16">fan status</span>, <span class="selectable-content" id="_s_17">no other activities</span>].</b> </div></div>
+		<div class="element"><div class="reqid" id="FAU_GEN.1-LOG.2/Log"><a href="#FAU_GEN.1-LOG.2/Log" class="abbr">FAU_GEN.1-LOG.2/Log</a></div><div class="reqdesc">
+		The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall record within each system log record at least the following information: <ol type="a">
+			<li>Date and time of the event, type of event, subject identity (if applicable), and the outcome (success or failure of the event); and </li>
+			<li>For each audit event type, based on the auditable event definitions of the functional components included in the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>/<abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>, [<i>event details described in System Log Events table</i>].</li></ol>
+    <head>Event Table</head>
+<table border="1">
+		<tr>
+			<th>Event</th>
+			<th>Additional System Log Record Contents</th>
+			
+		</tr>
+		<tr>
+			<th>Current IP connections</th>
+			<th>Network interface card (NIC); Status (up or down).</th>
+		</tr>
+				<tr>
+			<th>CPU usage </th>
+			<th>Utilization percentage of <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> CPU(s).</th>
+		</tr>
+				<tr>
+			<th>Memory usage</th>
+			<th>Percentage and/or amount of free memory available for use.</th>
+		</tr>
+				<tr>
+			<th>Disk and file storage capacity</th>
+			<th>Percentage and/or amount of available space remaining for each disk or disk partition on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.</th>
+		</tr>
+				<tr>
+			<th>Fan status (conditional)</th>
+			<th>Fan identification; Status (on or off).</th>
+		</tr>
+				<tr>
+			<th>Power status (conditional) </th>
+			<th>Status (on or off).</th>
+		</tr>
+
+		</table>
+
+</div></div>
+		</div>
+	
+		
+	<h2 id="obj-req-map" class="indexable" data-level="2">5.3 TOE Security Functional Requirements Rationale</h2><p>The following rationale provides justification for each security objective for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, 
     showing that the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> are suitable to meet and achieve the security objectives:<br/><table><caption><span class="ctr" data-myid="t-obj_map" data-counter-type="ct-Table" id="t-obj_map">Table <span class="counter">3</span></span>: <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> Rationale</caption><tr><th>Objective</th><th>Addressed by</th><th>Rationale</th></tr><tr class="major-row"><td rowspan="2"><a href="#O.ACCOUNTABILITY">O.ACCOUNTABILITY</a><br/></td><td><a href="#FAU_GEN.1">FAU_GEN.1</a></td><td>'cause <a href="#FAU_GEN.1">FAU_GEN.1</a> is awesome</td></tr>
 <tr><td>FTP_ITC_EXT.1</td><td>Cause FTP reasons </td></tr>
 <tr class="major-row"><td rowspan="3"><a href="#O.INTEGRITY">O.INTEGRITY</a><br/></td><td>FPT_SBOP_EXT.1</td><td>For reasons </td></tr>
@@ -1133,9 +1206,7 @@ updates</span>, <span class="selectable-content" id="_s_10">[<b>assignment</b>:
 		</caption><tr><th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> Requirement</th><th>Consistency Rationale</th></tr><tr><th colspan="2"> Modified <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th></tr><tr><td><a href="#FAU_GEN.1">FAU_GEN.1</a></td><td></td></tr><tr><td><a href="#FAU_STG.1">FAU_STG.1</a></td><td></td></tr><tr><td><a href="#FCS_DTLSS_EXT.1">FCS_DTLSS_EXT.1</a></td><td></td></tr><tr><td><a href="#FCS_DTLSS_EXT.2">FCS_DTLSS_EXT.2</a></td><td></td></tr><tr><td><a href="#FCS_NTP_EXT.1">FCS_NTP_EXT.1</a></td><td></td></tr><tr><td><a href="#FCS_TLSC_EXT.1">FCS_TLSC_EXT.1</a></td><td></td></tr><tr><td><a href="#FCS_TLSC_EXT.2">FCS_TLSC_EXT.2</a></td><td></td></tr><tr><td><a href="#FCS_TLSS_EXT.1">FCS_TLSS_EXT.1</a></td><td></td></tr><tr><td><a href="#FCS_TLSS_EXT.2">FCS_TLSS_EXT.2</a></td><td></td></tr><tr><td><a href="#FIA_X509_EXT.1/Rev">FIA_X509_EXT.1/Rev</a></td><td></td></tr><tr><td><a href="#FIA_X509_EXT.2">FIA_X509_EXT.2</a></td><td></td></tr><tr><td><a href="#FIA_X509_EXT.3">FIA_X509_EXT.3</a></td><td></td></tr><tr><td><a href="#FPT_STM_EXT.1">FPT_STM_EXT.1</a></td><td></td></tr><tr><th colspan="2"> Additional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th></tr><tr><td colspan="2" style="text-align:center">
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not add any requirements when the
 	      <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> is the base.
-	    </td></tr><tr><th colspan="2"> Mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
-	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any Mandatory requirements.
-	    </td></tr></tr><tr><th colspan="2"> Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
+	    </td></tr><tr><th colspan="2"> Mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_GEN.1-CDR/CDR">FAU_GEN.1-CDR/CDR</a></td><td></td></tr><tr><td><a href="#FAU_GEN.1-LOG/Log">FAU_GEN.1-LOG/Log</a></td><td></td></tr></tr><tr><th colspan="2"> Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any Optional requirements.
 	    </td></tr></tr><tr><th colspan="2"> Objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any Objective requirements.

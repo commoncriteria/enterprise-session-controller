@@ -1,12 +1,14 @@
 output/enterprise-session-controller-release-linkable.html: 2e
 output/enterprise-session-controller-release-linkable.html: AFL
 output/enterprise-session-controller-release-linkable.html: AppPP
+output/enterprise-session-controller-release-linkable.html: CDRs
 output/enterprise-session-controller-release-linkable.html: CEM
 output/enterprise-session-controller-release-linkable.html: CoreOS
 output/enterprise-session-controller-release-linkable.html: ESCs
 output/enterprise-session-controller-release-linkable.html: FMT
 output/enterprise-session-controller-release-linkable.html: FTA
 output/enterprise-session-controller-release-linkable.html: MOF
+output/enterprise-session-controller-release-linkable.html: NIC
 output/enterprise-session-controller-release-linkable.html: OA
 output/enterprise-session-controller-release-linkable.html: PPModule
 output/enterprise-session-controller-release-linkable.html: SBOP
@@ -43,6 +45,7 @@ output/enterprise-session-controller-release.html: 1930’stelephone
 output/enterprise-session-controller-release.html: 2e
 output/enterprise-session-controller-release.html: AFL
 output/enterprise-session-controller-release.html: AppPP
+output/enterprise-session-controller-release.html: CDRs
 output/enterprise-session-controller-release.html: CEM
 output/enterprise-session-controller-release.html: CoreOS
 output/enterprise-session-controller-release.html: DTLS’
@@ -50,6 +53,7 @@ output/enterprise-session-controller-release.html: ESCs
 output/enterprise-session-controller-release.html: FMT
 output/enterprise-session-controller-release.html: FTA
 output/enterprise-session-controller-release.html: MOF
+output/enterprise-session-controller-release.html: NIC
 output/enterprise-session-controller-release.html: OA
 output/enterprise-session-controller-release.html: PPModule
 output/enterprise-session-controller-release.html: SBOP
@@ -93,6 +97,7 @@ output/enterprise-session-controller.html: 1930’stelephone
 output/enterprise-session-controller.html: 2e
 output/enterprise-session-controller.html: AFL
 output/enterprise-session-controller.html: AppPP
+output/enterprise-session-controller.html: CDRs
 output/enterprise-session-controller.html: CEM
 output/enterprise-session-controller.html: CoreOS
 output/enterprise-session-controller.html: DTLS’
@@ -100,6 +105,7 @@ output/enterprise-session-controller.html: ESCs
 output/enterprise-session-controller.html: FMT
 output/enterprise-session-controller.html: FTA
 output/enterprise-session-controller.html: MOF
+output/enterprise-session-controller.html: NIC
 output/enterprise-session-controller.html: OA
 output/enterprise-session-controller.html: PPModule
 output/enterprise-session-controller.html: SBOP
