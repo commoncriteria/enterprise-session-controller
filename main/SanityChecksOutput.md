@@ -6,4 +6,3 @@
 * Error: Detected multiple elements with an id of 'usecase1'.
 * Error: Detected multiple elements with an id of 'usecase1'.
 * Error: Detected multiple elements with an id of 'usecase1'.
-* Warning: Detected an empty _p_ element./Module[1]""/section[1]""/section[4]""/choice[1]"This PP i"/h:p[1]""
