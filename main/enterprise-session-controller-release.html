@@ -633,7 +633,7 @@ function showTarget(id){
       Version: 1.0<br/>2024-03-28<br/><b>National Information Assurance Partnership</b><br/></div><h2 style="page-break-before:always;">Revision History</h2><table><tr class="header"><th>Version</th><th>Date</th><th>Comment</th></tr><tr><td>Round 1</td><td>2015-04-23</td><td>First draft of version 1.0 for comment</td></tr>
 <tr><td>1.0</td><td>2015-08-14</td><td>Release - first version released</td></tr>
 <tr><td>2.0</td><td>2024-03-28</td><td>Updated for <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, or whatever</td></tr>
-</table><h2>Contents</h2><div class="toc" id="toc"><a href="#sec-intro" style="text-indent:0px">1<span>Introduction</span></a><a href="#sec-ppoverview" style="text-indent:10px">1.1<span>PP Overview</span></a><a href="#glossary" style="text-indent:10px">1.2<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.2.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.2.2<span>Technical Terms</span></a><a href="#sec-TOEdescription" style="text-indent:10px">1.3<span>Compliant Targets of Evaluation</span></a><a href="#TOE_Boundary" style="text-indent:10px">1.4<span>TOE Boundary</span></a><a href="#Use_Cases" style="text-indent:10px">1.5<span>Use Cases</span></a><a href="#sec-cclaims" style="text-indent:10px">1.6<span>Conformance Claims</span></a><a href="#app-intro" style="text-indent:10px">1.7<span>Introduction</span></a><a href="#sec-cclaims" style="text-indent:10px">1.8<span>Conformance Claims</span></a><a href="#sec-spd" style="text-indent:0px">2<span>Security Problem Definition</span></a><a href="#sec-threats" style="text-indent:10px">2.1<span>Threats</span></a><a href="#sec-assumptions" style="text-indent:10px">2.2<span>Assumptions</span></a><a href="#sec-OSPs" style="text-indent:10px">2.3<span>Organizational Security Policies</span></a><a href="#sec-objectives" style="text-indent:0px">3<span>Security Objectives</span></a><a href="#SecurityObjectivesTOE" style="text-indent:10px">3.1<span>Security Objectives for the TOE</span></a><a href="#sec-OEObjectives" style="text-indent:10px">3.2<span>Security Objectives for the Operational Environment</span></a><a href="#sec-sor" style="text-indent:10px">3.3<span>Security Objectives Rationale</span></a><a href="#sec-reqs" style="text-indent:0px">4<span>Security Requirements</span></a><a href="#man-sfrs" style="text-indent:10px">4.1<span>TOE Security Functional Requirements</span></a><a href="#obj-req-map" style="text-indent:10px">4.2<span>TOE Security Functional Requirements Rationale</span></a><a href="#mod-conrat" style="text-indent:0px">5<span>Consistency Rationale</span></a><a href="#opt-sfrs" style="text-indent:0px">Appendix A - <span>Optional SFRs</span></a><a href="#satisfiedreqs" style="text-indent:0px">Appendix B - <span>Inherently Satisfied Requirements</span></a><a href="#entropyappendix" style="text-indent:0px">Appendix C - <span>Entropy Documentation and Assessment</span></a><a href="#entropydesign" style="text-indent:10px">C.1<span>Design Description</span></a><a href="#entropyjustification" style="text-indent:10px">C.2<span>Entropy Justification</span></a><a href="#entropyoperatingconditions" style="text-indent:10px">C.3<span>Operating Conditions</span></a><a href="#entropyhealthtesting" style="text-indent:10px">C.4<span>Health Testing</span></a><a href="#apndx-equiv" style="text-indent:0px">Appendix D - <span>Application Software Equivalency Guidelines</span></a><a href="#app-intro" style="text-indent:10px">D.1<span>Introduction</span></a><a href="#approach" style="text-indent:10px">D.2<span>Approach to Equivalency Analysis</span></a><a href="#modelequiv" style="text-indent:10px">D.3<span>Specific Guidance for Determining Product Model Equivalence</span></a><a href="#versionequiv" style="text-indent:10px">D.4<span>Specific Guidance for Determining Product Version Equivalence</span></a><a href="#platformequiv" style="text-indent:10px">D.5<span>Specific Guidance for Determining Platform Equivalence</span></a><a href="#hardware-equiv" style="text-indent:20px">D.5.1<span>Platform Equivalence—Hardware/Virtual Hardware Platforms</span></a><a href="#os-equiv" style="text-indent:20px">D.5.2<span>Platform Equivalence—OS Platforms</span></a><a href="#software-equiv" style="text-indent:20px">D.5.3<span>Software-based Execution Environment Platform Equivalence</span></a><a href="#specificity" style="text-indent:10px">D.6<span>Level of Specificity for Tested Configurations and Claimed Equivalent Configurations</span></a><a href="#acronyms" style="text-indent:0px">Appendix E - <span>Acronyms</span></a><a href="#appendix-bibliography" style="text-indent:0px">Appendix F - <span>Bibliography</span></a></div><h1 class="indexable" data-level="1" id="sec-intro">1 Introduction</h1>
+</table><h2>Contents</h2><div class="toc" id="toc"><a href="#sec-intro" style="text-indent:0px">1<span>Introduction</span></a><a href="#sec-ppoverview" style="text-indent:10px">1.1<span>PP Overview</span></a><a href="#glossary" style="text-indent:10px">1.2<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.2.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.2.2<span>Technical Terms</span></a><a href="#sec-TOEdescription" style="text-indent:10px">1.3<span>Compliant Targets of Evaluation</span></a><a href="#TOE_Boundary" style="text-indent:10px">1.4<span>TOE Boundary</span></a><a href="#Use_Cases" style="text-indent:10px">1.5<span>Use Cases</span></a><a href="#sec-cclaims" style="text-indent:10px">1.6<span>Conformance Claims</span></a><a href="#sec-cclaims" style="text-indent:10px">1.7<span>Conformance Claims</span></a><a href="#sec-spd" style="text-indent:0px">2<span>Security Problem Definition</span></a><a href="#sec-threats" style="text-indent:10px">2.1<span>Threats</span></a><a href="#sec-assumptions" style="text-indent:10px">2.2<span>Assumptions</span></a><a href="#sec-OSPs" style="text-indent:10px">2.3<span>Organizational Security Policies</span></a><a href="#sec-objectives" style="text-indent:0px">3<span>Security Objectives</span></a><a href="#SecurityObjectivesTOE" style="text-indent:10px">3.1<span>Security Objectives for the TOE</span></a><a href="#sec-OEObjectives" style="text-indent:10px">3.2<span>Security Objectives for the Operational Environment</span></a><a href="#sec-sor" style="text-indent:10px">3.3<span>Security Objectives Rationale</span></a><a href="#sec-reqs" style="text-indent:0px">4<span>Security Requirements</span></a><a href="#man-sfrs" style="text-indent:10px">4.1<span>TOE Security Functional Requirements</span></a><a href="#obj-req-map" style="text-indent:10px">4.2<span>TOE Security Functional Requirements Rationale</span></a><a href="#mod-conrat" style="text-indent:0px">5<span>Consistency Rationale</span></a><a href="#opt-sfrs" style="text-indent:0px">Appendix A - <span>Optional SFRs</span></a><a href="#satisfiedreqs" style="text-indent:0px">Appendix B - <span>Inherently Satisfied Requirements</span></a><a href="#entropyappendix" style="text-indent:0px">Appendix C - <span>Entropy Documentation and Assessment</span></a><a href="#entropydesign" style="text-indent:10px">C.1<span>Design Description</span></a><a href="#entropyjustification" style="text-indent:10px">C.2<span>Entropy Justification</span></a><a href="#entropyoperatingconditions" style="text-indent:10px">C.3<span>Operating Conditions</span></a><a href="#entropyhealthtesting" style="text-indent:10px">C.4<span>Health Testing</span></a><a href="#apndx-equiv" style="text-indent:0px">Appendix D - <span>Application Software Equivalency Guidelines</span></a><a href="#approach" style="text-indent:10px">D.1<span>Approach to Equivalency Analysis</span></a><a href="#modelequiv" style="text-indent:10px">D.2<span>Specific Guidance for Determining Product Model Equivalence</span></a><a href="#versionequiv" style="text-indent:10px">D.3<span>Specific Guidance for Determining Product Version Equivalence</span></a><a href="#platformequiv" style="text-indent:10px">D.4<span>Specific Guidance for Determining Platform Equivalence</span></a><a href="#hardware-equiv" style="text-indent:20px">D.4.1<span>Platform Equivalence—Hardware/Virtual Hardware Platforms</span></a><a href="#os-equiv" style="text-indent:20px">D.4.2<span>Platform Equivalence—OS Platforms</span></a><a href="#software-equiv" style="text-indent:20px">D.4.3<span>Software-based Execution Environment Platform Equivalence</span></a><a href="#specificity" style="text-indent:10px">D.5<span>Level of Specificity for Tested Configurations and Claimed Equivalent Configurations</span></a><a href="#acronyms" style="text-indent:0px">Appendix E - <span>Acronyms</span></a><a href="#appendix-bibliography" style="text-indent:0px">Appendix F - <span>Bibliography</span></a></div><h1 class="indexable" data-level="1" id="sec-intro">1 Introduction</h1>
 
     
 
@@ -825,47 +825,7 @@ the functionality required by this <abbr class="dyn-abbr"><a href="#abbr_PP-Modu
 						Functional or Assurance Packages.</dd><dt>Additional Information</dt><p></p><dd></dd></dl>
     
 
-  <h2 class="indexable" data-level="2" id="app-intro">1.7 Introduction</h2>
-			<p>
-		  The purpose of equivalence in <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-based evaluations is to find a balance between evaluation rigor and commercial practicability—to 
-		  ensure that evaluations meet customer expectations while recognizing that there is little to be gained from requiring that every 
-		  variation in a product or platform be fully tested. If a product is found to be compliant with a <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> on one platform, then all 
-		  equivalent products on equivalent platforms are also considered to be compliant with the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>.
-			</p><p>
-		  A Vendor can make a claim of equivalence if the Vendor believes that a particular instance of their Product implements <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified 
-		  security functionality in a way equivalent to the implementation of the same functionality on another instance of their Product on 
-		  which the functionality was tested. The Product instances can differ in version number or feature level (model), or the instances may
-		  run on different platforms. Equivalency can be used to reduce the testing required across claimed evaluated configurations. It can 
-		  also be used during Assurance Maintenance to reduce testing needed to add more evaluated configurations to a certification.
-			</p><p>
-		  These equivalency guidelines do not replace Assurance Maintenance requirements or NIAP Policy #5 requirements for CAVP certificates. 
-		  Nor may equivalency be used to leverage evaluations with expired certifications.
-			</p><p>
-		  These Equivalency Guidelines represent a shift from complete testing of all product instances to more of a risk-based approach. 
-		  Rather than require that every combination of product and platform be tested, these guidelines support an approach that recognizes
-		  that products are being used in a variety of environments—and often in cloud environments over where the vendor (and sometimes the 
-		  customer) have little or no control over the underlying hardware. Developers should be responsible for the security functionality of 
-		  their applications on the platforms they are developed for—whether that is an operating system, a virtual machine, or a software-based
-		  execution environment such as a container. But those platforms may themselves run within other environments—virtual machines or
-		  operating systems—that completely abstract away the underlying hardware from the application. The developer should not be held
-		  accountable for security functionality that is implemented by platform layers that are abstracted away. The implication is that
-		  not all security functionality will necessarily be tested for all platform layers down to the hardware for all evaluated
-		  configurations—especially for applications developed for software-based execution environments such as containers. For these cases, 
-		  the balancing of evaluation rigor and commercial practicability tips in favor of practicability. Note that this does not affect
-		  the requirement that at least one product instance be fully tested on at least one platform with cryptography mapped to a CAVP 
-		  certificate.
-			</p><p>
-		  Equivalency has two aspects:
-			</p>
-		  <ol>
-			<li><b><i>Product Equivalence:</i></b> Products may be considered equivalent if there are no
-			  differences between Product Models and Product Versions with respect to <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality.</li>
-			<li><b><i>Platform Equivalence:</i></b> Platforms may be considered equivalent if there are no
-			  significant differences in the services they provide to the Product—or in the way the platforms 
-			  provide those services—with respect to <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality.</li>
-		  </ol>
-		  The equivalency determination is made in accordance with these guidelines by the Validator and Scheme using information provided by the Evaluator/Vendor.
-		<h2 class="indexable" data-level="2" id="sec-cclaims">1.8 Conformance Claims</h2>
+  <h2 class="indexable" data-level="2" id="sec-cclaims">1.7 Conformance Claims</h2>
 
 	
 	
@@ -1238,48 +1198,8 @@ The assumptions identified in Section 3 are incorporated as security objectives 
 		
   
 	<h1 id="apndx-equiv" class="indexable" data-level="A">Appendix D -  Application Software Equivalency Guidelines</h1>
-		<h2 class="indexable" data-level="2" id="app-intro">D.1 Introduction</h2>
-			<p>
-		  The purpose of equivalence in <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-based evaluations is to find a balance between evaluation rigor and commercial practicability—to 
-		  ensure that evaluations meet customer expectations while recognizing that there is little to be gained from requiring that every 
-		  variation in a product or platform be fully tested. If a product is found to be compliant with a <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> on one platform, then all 
-		  equivalent products on equivalent platforms are also considered to be compliant with the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>.
-			</p><p>
-		  A Vendor can make a claim of equivalence if the Vendor believes that a particular instance of their Product implements <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified 
-		  security functionality in a way equivalent to the implementation of the same functionality on another instance of their Product on 
-		  which the functionality was tested. The Product instances can differ in version number or feature level (model), or the instances may
-		  run on different platforms. Equivalency can be used to reduce the testing required across claimed evaluated configurations. It can 
-		  also be used during Assurance Maintenance to reduce testing needed to add more evaluated configurations to a certification.
-			</p><p>
-		  These equivalency guidelines do not replace Assurance Maintenance requirements or NIAP Policy #5 requirements for CAVP certificates. 
-		  Nor may equivalency be used to leverage evaluations with expired certifications.
-			</p><p>
-		  These Equivalency Guidelines represent a shift from complete testing of all product instances to more of a risk-based approach. 
-		  Rather than require that every combination of product and platform be tested, these guidelines support an approach that recognizes
-		  that products are being used in a variety of environments—and often in cloud environments over where the vendor (and sometimes the 
-		  customer) have little or no control over the underlying hardware. Developers should be responsible for the security functionality of 
-		  their applications on the platforms they are developed for—whether that is an operating system, a virtual machine, or a software-based
-		  execution environment such as a container. But those platforms may themselves run within other environments—virtual machines or
-		  operating systems—that completely abstract away the underlying hardware from the application. The developer should not be held
-		  accountable for security functionality that is implemented by platform layers that are abstracted away. The implication is that
-		  not all security functionality will necessarily be tested for all platform layers down to the hardware for all evaluated
-		  configurations—especially for applications developed for software-based execution environments such as containers. For these cases, 
-		  the balancing of evaluation rigor and commercial practicability tips in favor of practicability. Note that this does not affect
-		  the requirement that at least one product instance be fully tested on at least one platform with cryptography mapped to a CAVP 
-		  certificate.
-			</p><p>
-		  Equivalency has two aspects:
-			</p>
-		  <ol>
-			<li><b><i>Product Equivalence:</i></b> Products may be considered equivalent if there are no
-			  differences between Product Models and Product Versions with respect to <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality.</li>
-			<li><b><i>Platform Equivalence:</i></b> Platforms may be considered equivalent if there are no
-			  significant differences in the services they provide to the Product—or in the way the platforms 
-			  provide those services—with respect to <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality.</li>
-		  </ol>
-		  The equivalency determination is made in accordance with these guidelines by the Validator and Scheme using information provided by the Evaluator/Vendor.
 		
-		<h2 class="indexable" data-level="2" id="approach">D.2 Approach to Equivalency Analysis</h2>
+		<h2 class="indexable" data-level="2" id="approach">D.1 Approach to Equivalency Analysis</h2>
 			<p>
 		  There are two scenarios for performing equivalency analysis. One is when a product has been certified and the vendor 
 		  wants to show that a later product should be considered certified due to equivalence with the earlier product. The 
@@ -1315,7 +1235,7 @@ The assumptions identified in Section 3 are incorporated as security objectives 
 		  differently to perform the function.
 			</p>
 		
-		<h2 class="indexable" data-level="2" id="modelequiv">D.3 Specific Guidance for Determining Product Model Equivalence</h2>
+		<h2 class="indexable" data-level="2" id="modelequiv">D.2 Specific Guidance for Determining Product Model Equivalence</h2>
 		  <p>
 		  Product Model equivalence attempts to determine whether different feature levels of the same product across 
 		  a product line are equivalent for purposes of <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> testing. For example, if a product has a “basic” edition and an “enterprise” 
@@ -1350,7 +1270,7 @@ The assumptions identified in Section 3 are incorporated as security objectives 
 		  <b>Table 1. Determining Product Model Equivalence</b>
 		  </p>
 		
-		<h2 class="indexable" data-level="2" id="versionequiv">D.4 Specific Guidance for Determining Product Version Equivalence</h2>
+		<h2 class="indexable" data-level="2" id="versionequiv">D.3 Specific Guidance for Determining Product Version Equivalence</h2>
 		  <p>
 		  In cases of version equivalence, differences are expressed in terms of changes implemented in revisions 
 		  of an evaluated Product. In general, versions are equivalent if the changes have no effect on any 
@@ -1386,7 +1306,7 @@ The assumptions identified in Section 3 are incorporated as security objectives 
 		  <b>Table 2. Factors for Determining Product Version Equivalence</b>
 		  </p>
 		
-		<h2 class="indexable" data-level="2" id="platformequiv">D.5 Specific Guidance for Determining Platform Equivalence</h2>
+		<h2 class="indexable" data-level="2" id="platformequiv">D.4 Specific Guidance for Determining Platform Equivalence</h2>
 		  <p>
 		  Platform equivalence is used to determine the platforms that equivalent versions of a Product must be tested on. 
 		  Platform equivalence analysis done for one software application cannot be applied to another software application.
@@ -1399,7 +1319,7 @@ The assumptions identified in Section 3 are incorporated as security objectives 
 		  type of platform separately. In general, platform equivalence is based on differences in the interfaces between the 
 		  <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and Platform that are relevant to the implementation of <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality.
 		  </p>
-		  <h3 class="indexable" data-level="3" id="hardware-equiv">D.5.1 Platform Equivalence—Hardware/Virtual Hardware Platforms</h3>
+		  <h3 class="indexable" data-level="3" id="hardware-equiv">D.4.1 Platform Equivalence—Hardware/Virtual Hardware Platforms</h3>
 			<p>
 				If an application runs directly on hardware without an operating system—or directly on virtualized 
 			hardware without an operating system—then platform equivalence is based on processor architecture and 
@@ -1442,7 +1362,7 @@ The assumptions identified in Section 3 are incorporated as security objectives 
 			<b>Table 3. Factors for Determining Hardware/Virtual Hardware Platform Equivalence</b>
 		  </p>
 		  
-		  <h3 class="indexable" data-level="3" id="os-equiv">D.5.2 Platform Equivalence—OS Platforms</h3>
+		  <h3 class="indexable" data-level="3" id="os-equiv">D.4.2 Platform Equivalence—OS Platforms</h3>
 			<p>
 			For traditional applications that are built for and run on operating systems, platform equivalence is 
 			determined by the interfaces between the application and the operating system that are relevant to <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified 
@@ -1491,7 +1411,7 @@ The assumptions identified in Section 3 are incorporated as security objectives 
 			</p>
 		
 		  
-		  <h3 class="indexable" data-level="3" id="software-equiv">D.5.3 Software-based Execution Environment Platform Equivalence</h3>
+		  <h3 class="indexable" data-level="3" id="software-equiv">D.4.3 Software-based Execution Environment Platform Equivalence</h3>
 			<p>
 			If an Application is built for and runs in a non-OS software-based execution environment, such as a Container or 
 			Java Runtime, then the below criteria must be used to determine platform equivalence. The key point is that the 
@@ -1529,7 +1449,7 @@ The assumptions identified in Section 3 are incorporated as security objectives 
 			</p>
 		  
 		
-		<h2 class="indexable" data-level="2" id="specificity">D.6 Level of Specificity for Tested Configurations and Claimed Equivalent Configurations</h2>
+		<h2 class="indexable" data-level="2" id="specificity">D.5 Level of Specificity for Tested Configurations and Claimed Equivalent Configurations</h2>
 			<p>
 		  In order to make equivalency determinations, the vendor and evaluator must agree on the equivalency claims. They must 
 		  then provide the scheme with sufficient information about the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> instances and platforms that were evaluated, and the 

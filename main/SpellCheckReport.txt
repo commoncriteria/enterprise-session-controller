@@ -1,7 +1,6 @@
 output/enterprise-session-controller-release-linkable.html: 2e
 output/enterprise-session-controller-release-linkable.html: AFL
 output/enterprise-session-controller-release-linkable.html: AppPP
-output/enterprise-session-controller-release-linkable.html: CAVP
 output/enterprise-session-controller-release-linkable.html: CEM
 output/enterprise-session-controller-release-linkable.html: CoreOS
 output/enterprise-session-controller-release-linkable.html: ESCs
@@ -41,7 +40,6 @@ output/enterprise-session-controller-release.html: 1930’stelephone
 output/enterprise-session-controller-release.html: 2e
 output/enterprise-session-controller-release.html: AFL
 output/enterprise-session-controller-release.html: AppPP
-output/enterprise-session-controller-release.html: CAVP
 output/enterprise-session-controller-release.html: CEM
 output/enterprise-session-controller-release.html: CoreOS
 output/enterprise-session-controller-release.html: ESCs
@@ -86,7 +84,6 @@ output/enterprise-session-controller.html: 1930’stelephone
 output/enterprise-session-controller.html: 2e
 output/enterprise-session-controller.html: AFL
 output/enterprise-session-controller.html: AppPP
-output/enterprise-session-controller.html: CAVP
 output/enterprise-session-controller.html: CEM
 output/enterprise-session-controller.html: CoreOS
 output/enterprise-session-controller.html: ESCs
