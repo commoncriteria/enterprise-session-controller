@@ -5,6 +5,8 @@
 * Error: Detected multiple elements with an id of 'atref-mandatory'.
 * Error: Detected multiple elements with an id of 'fcs-tlsc-ext-1e1'.
 * Error: Detected multiple elements with an id of 'fcs-tlsc-ext-1e1'.
+* Error: Detected multiple elements with an id of 'fpt-gen-ext-1'.
+* Error: Detected multiple elements with an id of 'fpt-gen-ext-1'.
 * Error: Detected multiple elements with an id of 'atref-mandatory'.
 * Error: Detected dangling ref to 'T.NETWORK_ACCESS'
         for a ref.
