@@ -262,7 +262,7 @@ the functionality required by this PP-Module.
         <usecase id="usecase1" title="Dedicated Appliance">
           <description>The ESC is sold and packaged as a standalone network appliance that does not have a direct interface to the underlying platform operating system, customized application, or commercialoff-the-shelf database.</description>
         </usecase>
-		<usecase id="usecase1" title="Call Processing (Connect VVoIP Calls Together)">
+		<usecase id="usecase2" title="Call Processing (Connect VVoIP Calls Together)">
           <description>The ESC serves as a call control system that employs multiple technologies for processing and
 			managing voice/video calls between end-point devices. The ESC receives a call-request message
 			from the source IP-phone (endpoint-A) and then locates and connects the call-originator to the
@@ -277,7 +277,7 @@ the functionality required by this PP-Module.
 			an array of ESCs, and can use encryption schemes that secure the ESC’s call control functions.
 					</description>
         </usecase>
-		<usecase id="usecase1" title="Trunk Calls to/from Telecommunications Service Provider">
+		<usecase id="usecase3" title="Trunk Calls to/from Telecommunications Service Provider">
           <description>The ESC may support the ability to bundle numerous calls that originate from locally-registered
 			VVoIP devices onto an ESC’s communication trunk for connectivity through a telecommunications
 			service provider (e.g. Verizon) to remote endpoints. In this case, the ESC supports the aggregation
@@ -287,7 +287,7 @@ the functionality required by this PP-Module.
 			than requiring each individual device to connect to the service provider separately.
           </description>
         </usecase>
-		<usecase id="usecase1" title="Trunk Calls in/out to Remote ESCs">
+		<usecase id="usecase4" title="Trunk Calls in/out to Remote ESCs">
           <description>Similar to trunking calls to telecommunications service providers, the ESC can trunk a large volume
 			of calls to other remote ESCs. An example of this deployment is a meshed configuration of trunkconnected ESCs that are deployed to support a metropolitan-sized enterprise-wide VVoIP callprocessing network. This particular type of use case may not require any of the meshed ESCs to
 			be connected to a service provider.
@@ -296,82 +296,11 @@ the functionality required by this PP-Module.
 		
 		</usecases>
 		</sec:Use_Cases>
-     <!-- Compliant TOEs -->
-<section title="Conformance Claims" id="sec-cclaims" boilerplate="no">
-
-	<!-- cc-version: cc-2022r1 or cc-31r5   -->
-	<!-- cc-approach: standard or direct-rationale  -->
-	<!-- display: Should this info be displayed in the Conformance -->
-	<!-- Claims section? If no, you have to write a free-form section -->
-
-  </section>  <!-- Conformance Claims -->
-
-	<!-- Use Cases (optional) -->
-    <section title="Use Cases" id="sec-usecases">
-
-      <usecases>
-		<!-- Each use case followed by an optional set of selections or restrictions --> 
-		<usecase title="Elephant-own device" id="elephant">
-			<description>This is everything we need to describe in words about this use case.</description>	
-			<!-- The restrictions and selections associated with this use case -->
-			<config>
-                <ref-id>soup</ref-id>
-				<not><ref-id>ratatouille</ref-id><ref-id>pizza</ref-id></not>
-                <not><ref-id>table2</ref-id></not> <!-- This says you can't choose this selectable-->
-                <ref-id>optional-comp-example</ref-id> <!-- Inclusion of an optional/objective requirement -->
-                <not><ref-id>t-network-eavesdrop</ref-id></not>
-                <restrict><ref-id>a-widgets</ref-id>Number <int gte="4" lte="6"/></restrict>
-			</config>
-		</usecase>
-      </usecases>
-    </section>  <!-- Use Cases -->
-
-    <!-- Platform definitions (optional) -->
-	<!-- Currently only the App PP uses this. And that's probably the only one that will. -->
-	<section title="Platforms with Specific EAs" id="sec-platforms">
-		<choice prefix="Platforms:" >
-			This PP includes platform-specific EAs for the below-listed operating system platforms. For "bare-metal" applications, 
-			applications that run on other OS platforms, and applications that run in software-based execution environments contact the
-			Technical Community for guidance.<h:p/>
-		  <selectables linebreak="yes">
-			<selectable id="android"><h:b><snip>Android</snip></h:b>: <h:i>Mobile operating systems based on Google Android.</h:i></selectable>
-			<selectable id="windows"><h:b><snip>Microsoft Windows</snip></h:b>: <h:i>Microsoft Windows operating systems.</h:i></selectable>
-			<selectable id="ios"><h:b><snip>Apple iOS</snip></h:b>: <h:i>Apple's mobile operating system for iPhones.</h:i></selectable>
-			<selectable id="linux"><h:b><snip>Linux</snip></h:b>: <h:i>Linux-based operating systems other than Android.</h:i></selectable>
-			<selectable id="Solaris"><h:b><snip>Oracle Solaris</snip></h:b>: <h:i>Oracle's enterprise operating system.</h:i></selectable>
-			<selectable id="mac"><h:b><snip>Apple macOS</snip></h:b>: <h:i>Apple's operating system for MACs.</h:i></selectable>
-		  </selectables> 
-		</choice>
-	</section>   <!-- Platforms -->
-	
-
-	<!-- Product Features. Required if there are implementation-dependent requirements. -->
-	<!-- These are the product features that are defined in order to support implementation-dependent requirements. -->
-	<section title="Product Features Mapped to Implementation-dependent Requirements" id="sec-features">
-		The feature(s) enumerated below, if implemented by the TOE, require that additional SFRs be claimed in the ST.<h:br/>
-		<implements>
-			<feature id="feat-test1" title="Test Feature 1">
-				<description>Description of test feature one.</description>
-			</feature>
-			<feature id="feat-test2" title="Test Feature 2">
-				<description>Description of test feature two.</description>
-			</feature>
-		</implements>			
-	</section>   <!-- Features -->
-	
-	<!-- Other sections can be added here. -->
-<!--
-    <section title="Yet Another Section" id="sec-yetanother">
-    </section>
--->	
-  </section>   <!-- Introduction  -->
 
 
-  <!-- Conformance Claims Section -->
-  <!-- New conformance claims section for CC:2022. -->
-  <!-- If boilerplate is "yes" something that is probably incorrect is generated -->
-  
-   <section title="Conformance Claims" id="ConformanceClaims">
+
+
+   <section title="Conformance Claims" id="ConformanceClaims" boilerplate="no">
 	<CClaimsInfo 
 		cc-version="cc-2022r1"         
 		cc-approach="standard"         
