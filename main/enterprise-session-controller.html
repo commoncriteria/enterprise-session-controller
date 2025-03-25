@@ -992,7 +992,7 @@ xxxxx
 	maintain audit data internal to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> which must be protected from unauthorized access. 
 	<div class="appnote"><span class="note-header">Application
       Note:
-    </span><span class="note"><i>Both the “audit data” (<a href="#FAU_GEN.1">FAU_GEN.1</a>) and “system log” data (<a href="#FAU_GEN.1">FAU_GEN.1</a>/Log) are
+    </span><span class="note"><i>Both the “audit data” (<a href="#FAU_GEN.1">FAU_GEN.1</a>) and “system log” data (<a href="#FAU_GEN.1/Log">FAU_GEN.1/Log</a>) are
 	expected to be protected from unauthorized access. This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> applies to all data
 	related to the behavior of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> regardless of how it is categorized or where it
 	is stored.</i> </span></div></div>
@@ -1099,10 +1099,10 @@ updates</span>, <span class="selectable-content" id="_s_10">[<b>assignment</b>:
 	These <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> must be claimed regardless of which <abbr class="dyn-abbr"><a href="#abbr_PP-Configuration">PP-Configuration</a></abbr> is used to define the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.
         
     <h3 id="man-fau" class="indexable" data-level="3">5.2.1 Security Audit (FAU)</h3>
-		<div class="comp" id="FAU_GEN.1-CDR/CDR"><h4>FAU_GEN.1-CDR/CDR Audit Data Generation (Call Detail Record)</h4>
-		<div class="element"><div class="reqid" id="FAU_GEN.1-CDR.1/CDR"><a href="#FAU_GEN.1-CDR.1/CDR" class="abbr">FAU_GEN.1-CDR.1/CDR</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to generate a <b>call detail</b> record <b>(<abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr>)</b> for <b>communications
+		<div class="comp" id="FAU_GEN.1/CDR"><h4>FAU_GEN.1/CDR Audit Data Generation (Call Detail Record)</h4>
+		<div class="element"><div class="reqid" id="FAU_GEN.1.1/CDR"><a href="#FAU_GEN.1.1/CDR" class="abbr">FAU_GEN.1.1/CDR</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to generate a <b>call detail</b> record <b>(<abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr>)</b> for <b>communications
 between <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints that are established by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.</b></div></div>
-		<div class="element"><div class="reqid" id="FAU_GEN.1-CDR.2/CDR"><a href="#FAU_GEN.1-CDR.2/CDR" class="abbr">FAU_GEN.1-CDR.2/CDR</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall record within each <abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr> at least the following information: <b>[<lu>
+		<div class="element"><div class="reqid" id="FAU_GEN.1.2/CDR"><a href="#FAU_GEN.1.2/CDR" class="abbr">FAU_GEN.1.2/CDR</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall record within each <abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr> at least the following information: <b>[<lu>
 		<li>calling party number (i.e. call originator)</li>
 		<li>called party number (i.e. call receiver or terminating number)</li>
 		<li>unique transaction sequence number</li>
@@ -1122,16 +1122,16 @@ between <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints 
     </span><span class="note"><i>The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> should be uniquely identified as part of the <abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr> so that there is
 		attribution of individual CDRs in environments where multiple ESCs are feeding
 		CDRs to a centralized server.</i></span></div></div></div>
-		<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FAU_GEN.1-CDR/CDR">FAU_GEN.1-CDR/CDR</a></div>
+		<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FAU_GEN.1/CDR">FAU_GEN.1/CDR</a></div>
 		TODO: You need to explain the lack of EAs for this component!!!!
 	
 		TODO: You need to explain the lack of EAs for this component!!!!
 	</div></div></div>
-		<div class="comp" id="FAU_GEN.1-LOG/Log"><h4>FAU_GEN.1-LOG/Log Audit Data Generation (System Log)</h4>
-		<div class="element"><div class="reqid" id="FAU_GEN.1-LOG.1/Log"><a href="#FAU_GEN.1-LOG.1/Log" class="abbr">FAU_GEN.1-LOG.1/Log</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to generate a <b>system log</b> record for <b>current IP connections,
+		<div class="comp" id="FAU_GEN.1/Log"><h4>FAU_GEN.1/Log Audit Data Generation (System Log)</h4>
+		<div class="element"><div class="reqid" id="FAU_GEN.1.1/Log"><a href="#FAU_GEN.1.1/Log" class="abbr">FAU_GEN.1.1/Log</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to generate a <b>system log</b> record for <b>current IP connections,
 			NTP status, CPU usage, memory usage, disk and file storage capacity, audit
 			storage capacity, [<b>selection</b>: <span class="selectable-content" id="_s_15">power status</span>, <span class="selectable-content" id="_s_16">fan status</span>, <span class="selectable-content" id="_s_17">no other activities</span>].</b> </div></div>
-		<div class="element"><div class="reqid" id="FAU_GEN.1-LOG.2/Log"><a href="#FAU_GEN.1-LOG.2/Log" class="abbr">FAU_GEN.1-LOG.2/Log</a></div><div class="reqdesc">
+		<div class="element"><div class="reqid" id="FAU_GEN.1.2/Log"><a href="#FAU_GEN.1.2/Log" class="abbr">FAU_GEN.1.2/Log</a></div><div class="reqdesc">
 		The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall record within each system log record at least the following information: <ol type="a">
 			<li>Date and time of the event, type of event, subject identity (if applicable), and the outcome (success or failure of the event); and </li>
 			<li>For each audit event type, based on the auditable event definitions of the functional components included in the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>/<abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>, [<i>event details described in System Log Events table</i>].</li></ol>
@@ -1170,7 +1170,7 @@ between <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints 
 		</table>
 
 </div></div>
-		<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FAU_GEN.1-LOG/Log">FAU_GEN.1-LOG/Log</a></div>
+		<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FAU_GEN.1/Log">FAU_GEN.1/Log</a></div>
 		TODO: You need to explain the lack of EAs for this component!!!!
 	
 		TODO: You need to explain the lack of EAs for this component!!!!
@@ -1224,7 +1224,7 @@ between <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints 
 		</caption><tr><th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> Requirement</th><th>Consistency Rationale</th></tr><tr><th colspan="2"> Modified <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th></tr><tr><td><a href="#FAU_GEN.1">FAU_GEN.1</a></td><td></td></tr><tr><td><a href="#FAU_STG.1">FAU_STG.1</a></td><td></td></tr><tr><td><a href="#FCS_DTLSS_EXT.1">FCS_DTLSS_EXT.1</a></td><td></td></tr><tr><td><a href="#FCS_DTLSS_EXT.2">FCS_DTLSS_EXT.2</a></td><td></td></tr><tr><td><a href="#FCS_NTP_EXT.1">FCS_NTP_EXT.1</a></td><td></td></tr><tr><td><a href="#FCS_TLSC_EXT.1">FCS_TLSC_EXT.1</a></td><td></td></tr><tr><td><a href="#FCS_TLSC_EXT.2">FCS_TLSC_EXT.2</a></td><td></td></tr><tr><td><a href="#FCS_TLSS_EXT.1">FCS_TLSS_EXT.1</a></td><td></td></tr><tr><td><a href="#FCS_TLSS_EXT.2">FCS_TLSS_EXT.2</a></td><td></td></tr><tr><td><a href="#FIA_X509_EXT.1/Rev">FIA_X509_EXT.1/Rev</a></td><td></td></tr><tr><td><a href="#FIA_X509_EXT.2">FIA_X509_EXT.2</a></td><td></td></tr><tr><td><a href="#FIA_X509_EXT.3">FIA_X509_EXT.3</a></td><td></td></tr><tr><td><a href="#FPT_STM_EXT.1">FPT_STM_EXT.1</a></td><td></td></tr><tr><th colspan="2"> Additional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th></tr><tr><td colspan="2" style="text-align:center">
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not add any requirements when the
 	      <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> is the base.
-	    </td></tr><tr><th colspan="2"> Mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_GEN.1-CDR/CDR">FAU_GEN.1-CDR/CDR</a></td><td></td></tr><tr><td><a href="#FAU_GEN.1-LOG/Log">FAU_GEN.1-LOG/Log</a></td><td></td></tr></tr><tr><th colspan="2"> Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
+	    </td></tr><tr><th colspan="2"> Mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_GEN.1/CDR">FAU_GEN.1/CDR</a></td><td></td></tr><tr><td><a href="#FAU_GEN.1/Log">FAU_GEN.1/Log</a></td><td></td></tr></tr><tr><th colspan="2"> Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any Optional requirements.
 	    </td></tr></tr><tr><th colspan="2"> Objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any Objective requirements.
