@@ -250,10 +250,96 @@ secure remote connections with trusted entities in the OE.</h:p><h:p>Figure 1 be
 		</h:ul>Different ESCs may implement these capabilities in different ways. This PP-Module defines a minimum
 baseline of capabilities that all conformant ESCs must provide.
       </sec:TOE_Boundary>
-      <section title="TOE Platform" id="sec-TOEplatform">
-      </section>
-     <!-- Compliant TOEs -->
 
+	  <sec:Use_Cases>
+	  <h:p>Requirements in this PP-Module are designed to address the security problem in the following use cases.
+Use cases are not mutually exclusive; a TOE may implement more than one of these use cases. The
+description of these use cases provide instructions for how the TOE and its OE should be made to support
+the functionality required by this PP-Module.
+</h:p><h:p>This PP-Module defines four potential use cases for the ESC TOE:</h:p>
+	  
+	   <usecases>
+        <usecase id="usecase1" title="Dedicated Appliance">
+          <description>The ESC is sold and packaged as a standalone network appliance that does not have a direct interface to the underlying platform operating system, customized application, or commercialoff-the-shelf database.</description>
+        </usecase>
+		<usecase id="usecase1" title="Call Processing (Connect VVoIP Calls Together)">
+          <description>The ESC serves as a call control system that employs multiple technologies for processing and
+			managing voice/video calls between end-point devices. The ESC receives a call-request message
+			from the source IP-phone (endpoint-A) and then locates and connects the call-originator to the
+			destination device (endpoint-B). The ESC is used as a centralized system to process, manage, and
+			connect calls between registered IP-phones. It should be noted that H.323 and SIP are the ESC’s
+			most commonly used call-processing (i.e. call control) protocols. Both H.323 and SIP are used to
+			set up, process, and terminate voice/video calls between endpoints. Supplemental call control
+			protocols such as Media Gateway Control Protocol (MGCP) and SS7 do not limit ESC capabilities,
+			but instead enhances its functionality. Both H.323 and SIP provide an ESC with the capabilities
+			required for execution of all use cases. Both H.323 and SIP provide the ESC with call control
+			capabilities, support trunking between the ESC and Service Providers, support trunking between
+			an array of ESCs, and can use encryption schemes that secure the ESC’s call control functions.
+					</description>
+        </usecase>
+		<usecase id="usecase1" title="Trunk Calls to/from Telecommunications Service Provider">
+          <description>The ESC may support the ability to bundle numerous calls that originate from locally-registered
+			VVoIP devices onto an ESC’s communication trunk for connectivity through a telecommunications
+			service provider (e.g. Verizon) to remote endpoints. In this case, the ESC supports the aggregation
+			of traffic for all registered IP devices for the purpose of passing local calls over a single trunk to an
+			external service provider. This allows for a simplified network deployment where a single
+			connection from the ESC to the service provider can support a large number of devices, rather
+			than requiring each individual device to connect to the service provider separately.
+          </description>
+        </usecase>
+		<usecase id="usecase1" title="Trunk Calls in/out to Remote ESCs">
+          <description>Similar to trunking calls to telecommunications service providers, the ESC can trunk a large volume
+			of calls to other remote ESCs. An example of this deployment is a meshed configuration of trunkconnected ESCs that are deployed to support a metropolitan-sized enterprise-wide VVoIP callprocessing network. This particular type of use case may not require any of the meshed ESCs to
+			be connected to a service provider.
+          </description>
+        </usecase>
+		
+		</usecases>
+		</sec:Use_Cases>
+     <!-- Compliant TOEs -->
+<section title="Conformance Claims" id="sec-cclaims" boilerplate="no">
+
+	<!-- cc-version: cc-2022r1 or cc-31r5   -->
+	<!-- cc-approach: standard or direct-rationale  -->
+	<!-- display: Should this info be displayed in the Conformance -->
+	<!-- Claims section? If no, you have to write a free-form section -->
+	<CClaimsInfo 
+		cc-version="cc-2022r1"         
+		cc-approach="standard"         
+		display="yes">                 
+
+		<!-- Conformance for STs: exact, strict, or demonstrable -->
+		<cc-st-conf>exact</cc-st-conf>                  
+
+		<!-- Part 2 & 3 conformance (extended or conformant) -->
+		<cc-pt2-conf>extended</cc-pt2-conf>           
+		<cc-pt3-conf>conformant</cc-pt3-conf>           
+
+		<!-- Claims conformance to these other PPs (none)-->
+		<cc-pp-conf/>              		  
+		
+		<!-- Can be in a configuration with these PPs and Modules -->
+		<cc-pp-config-with>             
+		</cc-pp-config-with>
+
+		<!-- Package claims -->
+		<cc-pkg-claim>
+			<!-- No package-->
+		</cc-pkg-claim>
+
+		<!-- Evaluation Methods (optional) -->
+		<cc-eval-methods>
+			<EM-cc-ref>Name of document</EM-cc-ref>
+		</cc-eval-methods>
+		
+		<!-- Additional information to be added to the end of the Conformance Claims section (optional) -->
+		<cc-claims-addnl-info>
+			All security requirements in these claimed functional packages are intended to satisfy 
+			the O.PROTECTED_COMMS TOE security objective of this PP.
+		</cc-claims-addnl-info>
+
+	</CClaimsInfo>
+  </section>  <!-- Conformance Claims -->
 
 	<!-- Use Cases (optional) -->
     <section title="Use Cases" id="sec-usecases">
@@ -319,64 +405,7 @@ baseline of capabilities that all conformant ESCs must provide.
   <!-- Conformance Claims Section -->
   <!-- New conformance claims section for CC:2022. -->
   <!-- If boilerplate is "yes" something that is probably incorrect is generated -->
-  <section title="Conformance Claims" id="sec-cclaims" boilerplate="no">
-
-	<!-- cc-version: cc-2022r1 or cc-31r5   -->
-	<!-- cc-approach: standard or direct-rationale  -->
-	<!-- display: Should this info be displayed in the Conformance -->
-	<!-- Claims section? If no, you have to write a free-form section -->
-	<CClaimsInfo 
-		cc-version="cc-2022r1"         
-		cc-approach="standard"         
-		display="yes">                 
-
-		<!-- Conformance for STs: exact, strict, or demonstrable -->
-		<cc-st-conf>exact</cc-st-conf>                  
-
-		<!-- Part 2 & 3 conformance (extended or conformant) -->
-		<cc-pt2-conf>extended</cc-pt2-conf>           
-		<cc-pt3-conf>extended</cc-pt3-conf>           
-
-		<!-- Claims conformance to these other PPs (none)-->
-		<cc-pp-conf/>              		  
-		
-		<!-- Can be in a configuration with these PPs and Modules -->
-		<cc-pp-config-with>             
-	        <PP-cc-ref>Protection Profile for Mobile Device Management Version 4.0</PP-cc-ref>
-			<Mod-cc-ref>PP-Module for File Encryption, Version 1.0</Mod-cc-ref>
-			<Mod-cc-ref>PP-Module for File Encryption Enterprise Management, Version 1.0</Mod-cc-ref>
-			<Mod-cc-ref>PP-Module for VPN Clients, Version 2.2</Mod-cc-ref>
-			<Mod-cc-ref>PP-Module for VPN Clients, Version 2.3</Mod-cc-ref>
-			<Mod-cc-ref>PP-Module for VPN Clients, Version 2.4</Mod-cc-ref>
-			<Mod-cc-ref>PP-Module for Endpoint Detection and Response, Version 1.0</Mod-cc-ref>
-			<Mod-cc-ref>PP-Module for Host Agent, Version 1.0</Mod-cc-ref>
-			<Mod-cc-ref>PP-Module for Voice and Video over IP (VVoIP), Version 1.0</Mod-cc-ref>
-			<Mod-cc-ref>PP-Module for Email Clients, Version 1.0</Mod-cc-ref>
-			<Mod-cc-ref>PP-Module for Web Browsers, Version 1.0</Mod-cc-ref>
-			<Mod-cc-ref>PP-Module for Redaction Tools, Version 1.0</Mod-cc-ref>
-		</cc-pp-config-with>
-
-		<!-- Package claims -->
-		<cc-pkg-claim>
-			<FP-cc-ref conf="conformant">Functional Package for TLS Version 1.1</FP-cc-ref>
-			<FP-cc-ref conf="conformant">Functional Package for TLS Version 2.0</FP-cc-ref>
-			<FP-cc-ref conf="conformant">Functional Package for SSH Version 1.0</FP-cc-ref>
-			<AP-cc-ref conf="conformant">Assurance Package that Doesn't exist</AP-cc-ref>
-		</cc-pkg-claim>
-
-		<!-- Evaluation Methods (optional) -->
-		<cc-eval-methods>
-			<EM-cc-ref>Name of document</EM-cc-ref>
-		</cc-eval-methods>
-		
-		<!-- Additional information to be added to the end of the Conformance Claims section (optional) -->
-		<cc-claims-addnl-info>
-			All security requirements in these claimed functional packages are intended to satisfy 
-			the O.PROTECTED_COMMS TOE security objective of this PP.
-		</cc-claims-addnl-info>
-
-	</CClaimsInfo>
-  </section>  <!-- Conformance Claims -->
+  
   
 
   
