@@ -293,6 +293,7 @@ the functionality required by this PP-Module.
 			be connected to a service provider.
           </description>
         </usecase>
+		
 		</usecases>
 		</sec:Use_Cases>
      <!-- Compliant TOEs -->
@@ -304,8 +305,26 @@ the functionality required by this PP-Module.
 	<!-- Claims section? If no, you have to write a free-form section -->
 
   </section>  <!-- Conformance Claims -->
-</section>
 
+	<!-- Use Cases (optional) -->
+    <section title="Use Cases" id="sec-usecases">
+
+      <usecases>
+		<!-- Each use case followed by an optional set of selections or restrictions --> 
+		<usecase title="Elephant-own device" id="elephant">
+			<description>This is everything we need to describe in words about this use case.</description>	
+			<!-- The restrictions and selections associated with this use case -->
+			<config>
+                <ref-id>soup</ref-id>
+				<not><ref-id>ratatouille</ref-id><ref-id>pizza</ref-id></not>
+                <not><ref-id>table2</ref-id></not> <!-- This says you can't choose this selectable-->
+                <ref-id>optional-comp-example</ref-id> <!-- Inclusion of an optional/objective requirement -->
+                <not><ref-id>t-network-eavesdrop</ref-id></not>
+                <restrict><ref-id>a-widgets</ref-id>Number <int gte="4" lte="6"/></restrict>
+			</config>
+		</usecase>
+      </usecases>
+    </section>  <!-- Use Cases -->
 
     <!-- Platform definitions (optional) -->
 	<!-- Currently only the App PP uses this. And that's probably the only one that will. -->
