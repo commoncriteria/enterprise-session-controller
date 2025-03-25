@@ -225,7 +225,29 @@ to be negatively impacted. The intention of this PP-Module is to provide a list 
 needed by an ESC for protection of its functionality and protection of the VVoIP communications it is
 responsible for facilitating.</h:p>
       <section title="TOE Boundary" id="TOEboundary">
-        <figure entity="images/Toe.png" title="General TOE " id="toe"/>
+	  <h:p>An ESC is a logical component of a physical hardware appliance that is responsible for establishing
+connectivity between VVoIP endpoints. The ESC is an advanced version of a legacy IP-PBX system. As a
+specific type of network device, an ESC TOE will be evaluated against both the NDcPP and this PP-Module.
+All functionality described by the SFRs are within the TOE boundary, as is the ability for the TSF to establish
+secure remote connections with trusted entities in the OE.</h:p><h:p>Figure 1 below shows a typical VVoIP infrastructure in which an ESC is deployed.</h:p>
+        <figure entity="images/network_diagram.png" title="Representative ESC Deployment" id="toe"/>
+		<h:p>As can be seen from this figure, the ESC’s purpose is to provide an interface between VVoIP networks in order
+		to connect calls. The ESC depends on or communicates with a number of services that are located within the
+		internal network such as voicemail, conferencing, Network Time Protocol (NTP), Domain Name System, and
+		software updates that are downloaded from VVoIP endpoint manufacturers and stored on the ESC for
+		distribution to the clients.</h:p><h:p>Certain storage capabilities may be implemented exclusively within the TOE or within both the TOE and its OE (such as the TOE maintaining an internal audit log that is also written to an external audit server).</h:p><h:p>For connecting networks, the ESC relies on edge routing to handle lower-level communications between
+		the networks and on a SBC to filter out potentially malicious activity.</h:p><h:p>The ESC itself, which can be administered locally or remotely, consists of several different logical
+		components, as shown in Figure 2 below.</h:p>
+		<figure entity="images/components_diagram.png" title="ESC Components" id="c-toe"/>
+		<h:p>As can be seen from the figure above, the ESC provides the following logical capabilities:</h:p><h:ul>
+		<h:li>OA&amp;M – Responsible for providing a management interface to the ESC’s configuration.</h:li>
+		<h:li>Call Processing – Responsible for setting up and tearing down calls between VVoIP endpoints using
+		one or more call control protocols.</h:li>
+		<h:li>Call Detail Records – Responsible for storage of call activity for auditing purposes.</h:li>
+		<h:li>Voice/Video Media Conferencing, Controls, and Storage – responsible for establishing multi-way
+		conference calls and storage of call recordings.</h:li>
+		</h:ul>Different ESCs may implement these capabilities in different ways. This PP-Module defines a minimum
+baseline of capabilities that all conformant ESCs must provide.
       </section>
       <section title="TOE Platform" id="sec-TOEplatform">
       </section>
