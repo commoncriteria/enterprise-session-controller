@@ -531,7 +531,12 @@ Base-PP.<section id="ss-audit-table" title="Audit Log Events">
 	    <audit-table table="mandatory" id="mandatory-audit-events">
 	      <h:br/><h:b><ctr ctr-type="Table" pre="Table " id="atref-mandatory">: Auditable Events for Mandatory SFRs</ctr></h:b>
 	    </audit-table>
-
+		</section>
+		<note role='application'><h:i><h:p>The Base-PP version of the SFR requires “all administrative actions” to be audited.
+When the TOE includes this PP-Module, it is expected that this will also include the
+administrative actions that support the PP-Module defined in FMT_SMF.1/ESC.</h:p><h:p>FAU_VVR_EXT.2 is a selection-based requirement. Auditing for this requirement
+must be performed if and only if the TOE claims it</h:p>
+</h:i></note>
 
 			</f-component>
 	</section>
