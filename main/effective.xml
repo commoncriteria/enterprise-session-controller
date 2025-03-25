@@ -645,7 +645,7 @@ updates</selectable>
     </base-pp>
 	<man-sfrs>
     <section title="Security Audit (FAU)" id="man-fau">
-		<f-component name="Audit Data Generation (Call Detail Record)" cc-id="fau_gen.1" id="fpt-gen-ext-1" iteration="CDR">
+		<f-component name="Audit Data Generation (Call Detail Record)" cc-id="fau_gen.1" id="fpt-gen-ext-1-cdr" iteration="CDR">
 		<f-element id="fau-gen-1e1-cdr">
 		<title>The TSF shall be able to generate a <h:b>call detail</h:b> record <h:b>(CDR)</h:b> for <h:b>communications
 between VVoIP endpoints that are established by the TOE.</h:b></title>
@@ -673,7 +673,7 @@ between VVoIP endpoints that are established by the TOE.</h:b></title>
 		<aactivity><no-tests/></aactivity>
 		</f-element>
 		</f-component>
-		<f-component name="Audit Data Generation (System Log)" cc-id="fau_gen.1" id="fpt-gen-ext-1" iteration="Log">
+		<f-component name="Audit Data Generation (System Log)" cc-id="fau_gen.1" id="fpt-gen-ext-1-log" iteration="Log">
 		<f-element id="fau-gen-1e1-log">
 		<title>The TSF shall be able to generate a <h:b>system log</h:b> record for <h:b>current IP connections,
 			NTP status, CPU usage, memory usage, disk and file storage capacity, audit
