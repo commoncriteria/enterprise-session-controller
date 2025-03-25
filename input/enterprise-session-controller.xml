@@ -310,7 +310,7 @@ the functionality required by this PP-Module.
 
 		<!-- Conformance for STs: exact, strict, or demonstrable -->
 		<cc-st-conf>exact</cc-st-conf>                  
-		
+
 		<!-- Part 2 & 3 conformance (extended or conformant) -->
 		<cc-pt2-conf>extended</cc-pt2-conf>           
 		<cc-pt3-conf>conformant</cc-pt3-conf>           
@@ -322,10 +322,18 @@ the functionality required by this PP-Module.
 		<cc-pp-config-with/>
 
 		<!-- Package claims -->
-		<cc-pkg-claim/>
-			
+		<cc-pkg-claim>
+			<!-- No package-->
+		</cc-pkg-claim>
 
+		<!-- Evaluation Methods (optional) -->
 
+		
+		<!-- Additional information to be added to the end of the Conformance Claims section (optional) -->
+		<cc-claims-addnl-info>
+			All security requirements in these claimed functional packages are intended to satisfy 
+			the O.PROTECTED_COMMS TOE security objective of this PP.
+		</cc-claims-addnl-info>
 
 	</CClaimsInfo>
   </section>  <!-- Conformance Claims -->
