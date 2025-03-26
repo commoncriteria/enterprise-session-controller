@@ -636,7 +636,7 @@ function showTarget(id){
 </table><h3>TDs Applied</h3><h2>Contents</h2><div class="toc" id="toc"><a href="#sec-intro" style="text-indent:0px">1<span>Introduction</span></a><a href="#sec-ppoverview" style="text-indent:10px">1.1<span>PP Overview</span></a><a href="#glossary" style="text-indent:10px">1.2<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.2.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.2.2<span>Technical Terms</span></a><a href="#sec-TOEdescription" style="text-indent:10px">1.3<span>Compliant Targets of Evaluation</span></a><a href="#TOE_Boundary" style="text-indent:10px">1.4<span>TOE Boundary</span></a><a href="#Use_Cases" style="text-indent:10px">1.5<span>Use Cases</span></a><a href="#sec-cclaims" style="text-indent:0px">2<span>Conformance Claims</span></a><a href="#sec-spd" style="text-indent:0px">3<span>Security Problem Definition</span></a><a href="#sec-threats" style="text-indent:10px">3.1<span>Threats</span></a><a href="#sec-assumptions" style="text-indent:10px">3.2<span>Assumptions</span></a><a href="#sec-OSPs" style="text-indent:10px">3.3<span>Organizational Security Policies</span></a><a href="#sec-objectives" style="text-indent:0px">4<span>Security Objectives</span></a><a href="#SecurityObjectivesTOE" style="text-indent:10px">4.1<span>Security Objectives for the TOE</span></a><a href="#sec-OEObjectives" style="text-indent:10px">4.2<span>Security Objectives for the Operational Environment</span></a><a href="#sec-sor" style="text-indent:10px">4.3<span>Security Objectives Rationale</span></a><a href="#Security_Requirements" style="text-indent:0px">5<span>Security Requirements</span></a><a href="#secreq-ND" style="text-indent:10px">5.1<span>Collaborative 
     Protection Profile for Network Devices
        Security Functional Requirements Direction
-    </span></a><a href="#modsfr-ND" style="text-indent:20px">5.1.1<span> Modified SFRs </span></a><a href="#m-fau" style="text-indent:30px">5.1.1.1<span>Security Audit (FAU)</span></a><a href="#m-fcs" style="text-indent:30px">5.1.1.2<span>Cryptographic Support</span></a><a href="#m-fia" style="text-indent:30px">5.1.1.3<span>Identification and Authentication (FIA)</span></a><a href="#m-fpt" style="text-indent:30px">5.1.1.4<span>Protection of the TSF (FPT)</span></a><a href="#man-sfrs" style="text-indent:10px">5.2<span>TOE Security Functional Requirements</span></a><a href="#man-fau" style="text-indent:20px">5.2.1<span>Security Audit (FAU)</span></a><a href="#man-fdp" style="text-indent:20px">5.2.2<span>User Data Protection</span></a><a href="#obj-req-map" style="text-indent:10px">5.3<span>TOE Security Functional Requirements Rationale</span></a><a href="#mod-conrat" style="text-indent:0px">6<span>Consistency Rationale</span></a><a href="#conrat-ND" style="text-indent:10px">6.1<span>Collaborative 
+    </span></a><a href="#modsfr-ND" style="text-indent:20px">5.1.1<span> Modified SFRs </span></a><a href="#m-fau" style="text-indent:30px">5.1.1.1<span>Security Audit (FAU)</span></a><a href="#m-fcs" style="text-indent:30px">5.1.1.2<span>Cryptographic Support</span></a><a href="#m-fia" style="text-indent:30px">5.1.1.3<span>Identification and Authentication (FIA)</span></a><a href="#m-fpt" style="text-indent:30px">5.1.1.4<span>Protection of the TSF (FPT)</span></a><a href="#man-sfrs" style="text-indent:10px">5.2<span>TOE Security Functional Requirements</span></a><a href="#man-fau" style="text-indent:20px">5.2.1<span>Security Audit (FAU)</span></a><a href="#man-fdp" style="text-indent:20px">5.2.2<span>User Data Protection (FDP)</span></a><a href="#man-fia" style="text-indent:20px">5.2.3<span>Identification and Authentication (FIA)</span></a><a href="#man-fmt" style="text-indent:20px">5.2.4<span>Security Management (FMT)</span></a><a href="#obj-req-map" style="text-indent:10px">5.3<span>TOE Security Functional Requirements Rationale</span></a><a href="#mod-conrat" style="text-indent:0px">6<span>Consistency Rationale</span></a><a href="#conrat-ND" style="text-indent:10px">6.1<span>Collaborative 
     Protection Profile for Network Devices</span></a><a href="#contoe-ND" style="text-indent:20px">6.1.1<span>
 	Consistency of TOE Type
       </span></a><a href="#consecprob-ND" style="text-indent:20px">6.1.2<span>
@@ -983,7 +983,7 @@ xxxxx
       Note:
     </span><span class="note"><i><p>The <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> version of the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> requires “all administrative actions” to be audited.
 		When the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> includes this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>, it is expected that this will also include the
-		administrative actions that support the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> defined in FMT_SMF.1/<abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>.</p><p>FAU_VVR_EXT.2 is a selection-based requirement. Auditing for this requirement
+		administrative actions that support the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> defined in <a href="#FMT_SMF.1/ESC">FMT_SMF.1/ESC</a>.</p><p>FAU_VVR_EXT.2 is a selection-based requirement. Auditing for this requirement
 		must be performed if and only if the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> claims it</p>
 		</i></span></div>
 
@@ -1175,21 +1175,21 @@ multiple redundant power supplies. Logging of fan status is also optional.</p></
 		<div class="element"><div class="reqid" id="FAU_STG.1.2/CDR"><a href="#FAU_STG.1.2/CDR" class="abbr">FAU_STG.1.2/CDR</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to [<i>prevent</i>] unauthorized modifications to the stored <b>call
 detail records</b>.</div></div>
 		</div>
-		<div class="comp" id="FUA-VVR-EXT.1"><h4>FUA-VVR-EXT.1 Recording Voice and Video Call Data</h4>
+		<div class="comp" id="FUA_VVR_EXT.1"><h4>FUA_VVR_EXT.1 Recording Voice and Video Call Data</h4>
 		The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="_s_18">have</span>, <span class="selectable-content" id="_s_19">not have</span>] the capability to record voice and video
 call data.
 		<div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note"><i>If "have" is selected, both <a href="#FAU_STG.1">FAU_STG.1</a>/VVR and FAU_VVR_EXT.2 must be claimed
 		and “Ability to enable/disable voice and video recordings for any registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr>
-		endpoint” must be selected in FMT_SMF.1.1/<abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>.
+		endpoint” must be selected in <a href="#FMT_SMF.1.1/ESC">FMT_SMF.1.1/ESC</a>.
 		</i></span></div>
 		
 		TODO: You need to explain the lack of EAs for this component!!!!
 	
 		</div>
 	
-	<h3 id="man-fdp" class="indexable" data-level="3">5.2.2 User Data Protection</h3>
+	<h3 id="man-fdp" class="indexable" data-level="3">5.2.2 User Data Protection (FDP)</h3>
 	<div class="comp" id="FDP_IFC.1"><h4>FDP_IFC.1 Subset Information Flow Control</h4>
 	<div class="element"><div class="reqid" id="FDP_IFC.1.1"><a href="#FDP_IFC.1.1" class="abbr">FDP_IFC.1.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall enforce the [<i>enterprise session controller SFP</i>] on [<i>caller-callee pairs attempting to communicate through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></i>].</div></div>
 	</div>
@@ -1197,10 +1197,75 @@ call data.
 		<div class="element"><div class="reqid" id="FDP_IFF.1.1"><a href="#FDP_IFF.1.1" class="abbr">FDP_IFF.1.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall enforce the [<i>enterprise session controller SFP</i>] based on the following types of subject and information security attributes: [<b>assignment</b>: 
      <span class="assignable-content">method by which the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> identifies each endpoint for a call</span>] <b>using the following call control protocols: [<b>selection</b>: <span class="selectable-content" id="_s_20"><abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr></span>, <span class="selectable-content" id="_s_21">H.323</span>] and [<b>selection</b>: <span class="selectable-content" id="_s_22">SS7</span>, <span class="selectable-content" id="_s_23"><abbr class="dyn-abbr"><a href="#abbr_MGCP">MGCP</a></abbr></span>, <span class="selectable-content" id="_s_24">no other call control protocols</span>]</b>.
 		</div></div>
+		<div class="element"><div class="reqid" id="FDP_IFF.1.2"><a href="#FDP_IFF.1.2" class="abbr">FDP_IFF.1.2</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall permit an information flow between a controlled subject and controlled information via a controlled operation if the following rules hold: [<i>when valid communication through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is attempted, the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> will establish
+		a connection between itself and the caller; the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> will establish a second
+		connection between itself and the callee; and the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> will redirect all
+		communications that it receives between the two endpoints out through the
+		proper connection</i>].</div></div>
+		<div class="element"><div class="reqid" id="FDP_IFF.1.3"><a href="#FDP_IFF.1.3" class="abbr">FDP_IFF.1.3</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall enforce the [<i>additional information flow control SFP rules: no additional rules</i>].</div></div>
+		<div class="element"><div class="reqid" id="FDP_IFF.1.4"><a href="#FDP_IFF.1.4" class="abbr">FDP_IFF.1.4</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall explicitly authorize an information flow based on the following rules: [<b>assignment</b>: 
+     <span class="assignable-content">rules, based on security attributes, that explicitly authorize information flows</span>].<div class="appnote"><span class="note-header">Application
+      Note:
+    </span><span class="note"><i>The expectation of this element is that the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author define any explicit allowlist
+		behavior that overrides the normal information flow handling to automatically
+		open a communications channel through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. It is acceptable to complete the
+		assignment with “no additional rules” if there are no exceptions to the behavior
+		defined in <a href="#FDP_IFF.1.2">FDP_IFF.1.2</a> and 1.3.</i></span></div></div></div>
+		<div class="element"><div class="reqid" id="FDP_IFF.1.5"><a href="#FDP_IFF.1.5" class="abbr">FDP_IFF.1.5</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall explicitly deny an information flow based on the following rules: [<b>assignment</b>: 
+     <span class="assignable-content">rules, based on security attributes, that explicitly deny information flows</span>]<div class="appnote"><span class="note-header">Application
+      Note:
+    </span><span class="note"><i>The expectation of this element is that the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author define any explicit denylist
+		behavior that overrides the normal information flow handling to automatically
+		block a communications channel through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. It is acceptable to complete the
+		assignment with “no additional rules” if there are no exceptions to the behavior
+		defined in <a href="#FDP_IFF.1.2">FDP_IFF.1.2</a> and 1.3.</i></span></div></div></div>
+	</div>
+	<div class="comp" id="FDP_RIP.1"><h4>FDP_RIP.1 Subset Residual Information Protection</h4>
+	<div class="element"><div class="reqid" id="FDP_RIP.1.1"><a href="#FDP_RIP.1.1" class="abbr">FDP_RIP.1.1</a></div><div class="reqdesc"><div class="appnote"><span class="note-header">Application
+      Note:
+    </span><span class="note"><i>The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is expected to follow guidelines for [NIST SP 800-88], ‘Disk Storage
+	Sanitization’ as the method for ensuring that residual information is cleared from
+	both volatile and nonvolatile memory. This involves overwriting the entire disk or
+	disk partition with zeroes, followed by all ones, followed by all zeroes. Since it is
+	not feasible to pause the wipe operation while in progress it is sufficient for the evaluator to observe during testing that the final result is all zeroes; however, the
+	vendor-provided evidence is expected to provide a justification that [NIST SP 800-
+	88] guidelines are being followed.</i></span></div></div></div>
+	</div>
+	
+	<h3 id="man-fia" class="indexable" data-level="3">5.2.3 Identification and Authentication (FIA)</h3>
+	<div class="comp" id="FIA_UAU.2/TC"><h4>FIA_UAU.2/TC User Authentication before Any Action (Telecommunications Devices)</h4>
+	<div class="element"><div class="reqid" id="FIA_UAU.2.1/TC"><a href="#FIA_UAU.2.1/TC" class="abbr">FIA_UAU.2.1/TC</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall require each <b>telecommunications device</b> to be successfully
+	authenticated before allowing any other <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>-mediated actions on behalf of that
+	<b>device</b>.</div></div>
+	
+	
+	</div>
+	<div class="comp" id="FIA_UAU.2/VVoIP"><h4>FIA_UAU.2/VVoIP User Authentication before Any Action (VVoIP Endpoints)</h4>
+	<div class="element"><div class="reqid" id="FIA_UAU.2.1/VVoIP"><a href="#FIA_UAU.2.1/VVoIP" class="abbr">FIA_UAU.2.1/VVoIP</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall require each <b><abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint</b> to be successfully authenticated before allowing any other <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>-mediated actions on behalf of that <b>endpoint</b>.<div class="appnote"><span class="note-header">Application
+      Note:
+    </span><span class="note"><i> This includes both the establishment of voice/video calls and the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>-initiated application of an update to the <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint software/firmware.</i></span></div></div></div>
+	</div>
+	
+	<h3 id="man-fmt" class="indexable" data-level="3">5.2.4 Security Management (FMT)</h3>
+	<div class="comp" id="FMT_CFG_EXT.1"><h4>FMT_CFG_EXT.1 Secure by Default Configuration</h4>
+		<div class="element"><div class="reqid" id="FMT_CFG_EXT.1.1"><a href="#FMT_CFG_EXT.1.1" class="abbr">FMT_CFG_EXT.1.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide only enough functionality to set new [<i>Security
+		Administrator</i>] credentials when configured with default credentials or no
+		credentials</div></div>
+		<div class="element"><div class="reqid" id="FMT_CFG_EXT.1.2"><a href="#FMT_CFG_EXT.1.2" class="abbr">FMT_CFG_EXT.1.2</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be configured by default with permissions which protect it and its data from unauthorized access.</div></div>
+	</div>
+	<div class="comp" id="FMT_SMF.1/ESC"><h4>FMT_SMF.1/ESC Specification of Management Functions (ESC)</h4>
+	<div class="element"><div class="reqid" id="FMT_SMF.1.1/ESC"><a href="#FMT_SMF.1.1/ESC" class="abbr">FMT_SMF.1.1/ESC</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be capable of performing the following management functions:<ul>
+		<li>Ability to display the real-time connection status of all <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints (hardware and software) and telecommunications devices;</li>
+		<li>Ability to clear all <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> data stored on disk; </li>
+		<li>[<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_27">Ability to configure the password policy;</span></li><li style=""><span class="selectable-content" id="_s_28">Ability to specify the set of audited events;</span></li><li style=""><span class="selectable-content" id="_s_29">Ability to configure the behavior of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> in response to a self-test failure;</span></li><li style=""><span class="selectable-content" id="_s_30">Ability to enable/disable voice and video recordings for any registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint;</span></li><li style=""><span class="selectable-content" id="_s_31">Ability to specify criteria for retention of voice and video recordings;</span></li><li style=""><span class="selectable-content" id="_s_32">No other capabilities</span></li></ul>].</li>
+		<li></li>
+		<li></li>
+		<li></li>
+		
+		</ul></div></div>
 	
 	</div>
 	
-		
 	<h2 id="obj-req-map" class="indexable" data-level="2">5.3 TOE Security Functional Requirements Rationale</h2><p>The following rationale provides justification for each security objective for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, 
     showing that the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> are suitable to meet and achieve the security objectives:<br/><table><caption><span class="ctr" data-myid="t-obj_map" data-counter-type="ct-Table" id="t-obj_map">Table <span class="counter">4</span></span>: <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> Rationale</caption><tr><th>Objective</th><th>Addressed by</th><th>Rationale</th></tr><tr class="major-row"><td rowspan="2"><a href="#O.ACCOUNTABILITY">O.ACCOUNTABILITY</a><br/></td><td><a href="#FAU_GEN.1">FAU_GEN.1</a></td><td>'cause <a href="#FAU_GEN.1">FAU_GEN.1</a> is awesome</td></tr>
 <tr><td>FTP_ITC_EXT.1</td><td>Cause FTP reasons </td></tr>
@@ -1248,7 +1313,7 @@ call data.
 		</caption><tr><th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> Requirement</th><th>Consistency Rationale</th></tr><tr><th colspan="2"> Modified <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th></tr><tr><td><a href="#FAU_GEN.1">FAU_GEN.1</a></td><td></td></tr><tr><td><a href="#FAU_STG.1">FAU_STG.1</a></td><td></td></tr><tr><td><a href="#FCS_DTLSS_EXT.1">FCS_DTLSS_EXT.1</a></td><td></td></tr><tr><td><a href="#FCS_DTLSS_EXT.2">FCS_DTLSS_EXT.2</a></td><td></td></tr><tr><td><a href="#FCS_NTP_EXT.1">FCS_NTP_EXT.1</a></td><td></td></tr><tr><td><a href="#FCS_TLSC_EXT.1">FCS_TLSC_EXT.1</a></td><td></td></tr><tr><td><a href="#FCS_TLSC_EXT.2">FCS_TLSC_EXT.2</a></td><td></td></tr><tr><td><a href="#FCS_TLSS_EXT.1">FCS_TLSS_EXT.1</a></td><td></td></tr><tr><td><a href="#FCS_TLSS_EXT.2">FCS_TLSS_EXT.2</a></td><td></td></tr><tr><td><a href="#FIA_X509_EXT.1/Rev">FIA_X509_EXT.1/Rev</a></td><td></td></tr><tr><td><a href="#FIA_X509_EXT.2">FIA_X509_EXT.2</a></td><td></td></tr><tr><td><a href="#FIA_X509_EXT.3">FIA_X509_EXT.3</a></td><td></td></tr><tr><td><a href="#FPT_STM_EXT.1">FPT_STM_EXT.1</a></td><td></td></tr><tr><th colspan="2"> Additional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th></tr><tr><td colspan="2" style="text-align:center">
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not add any requirements when the
 	      <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> is the base.
-	    </td></tr><tr><th colspan="2"> Mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_GEN.1/CDR">FAU_GEN.1/CDR</a></td><td></td></tr><tr><td><a href="#FAU_GEN.1/Log">FAU_GEN.1/Log</a></td><td></td></tr><tr><td><a href="#FAU_SAR.1/Log">FAU_SAR.1/Log</a></td><td></td></tr><tr><td><a href="#FAU_STG.1/CDR">FAU_STG.1/CDR</a></td><td></td></tr><tr><td><a href="#FUA-VVR-EXT.1">FUA-VVR-EXT.1</a></td><td></td></tr><tr><td><a href="#FDP_IFC.1">FDP_IFC.1</a></td><td></td></tr><tr><td><a href="#FDP_IFF.1">FDP_IFF.1</a></td><td></td></tr></tr><tr><th colspan="2"> Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
+	    </td></tr><tr><th colspan="2"> Mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_GEN.1/CDR">FAU_GEN.1/CDR</a></td><td></td></tr><tr><td><a href="#FAU_GEN.1/Log">FAU_GEN.1/Log</a></td><td></td></tr><tr><td><a href="#FAU_SAR.1/Log">FAU_SAR.1/Log</a></td><td></td></tr><tr><td><a href="#FAU_STG.1/CDR">FAU_STG.1/CDR</a></td><td></td></tr><tr><td><a href="#FUA_VVR_EXT.1">FUA_VVR_EXT.1</a></td><td></td></tr><tr><td><a href="#FDP_IFC.1">FDP_IFC.1</a></td><td></td></tr><tr><td><a href="#FDP_IFF.1">FDP_IFF.1</a></td><td></td></tr><tr><td><a href="#FDP_RIP.1">FDP_RIP.1</a></td><td></td></tr><tr><td><a href="#FIA_UAU.2/TC">FIA_UAU.2/TC</a></td><td></td></tr><tr><td><a href="#FIA_UAU.2/VVoIP">FIA_UAU.2/VVoIP</a></td><td></td></tr><tr><td><a href="#FMT_CFG_EXT.1">FMT_CFG_EXT.1</a></td><td></td></tr><tr><td><a href="#FMT_SMF.1/ESC">FMT_SMF.1/ESC</a></td><td></td></tr></tr><tr><th colspan="2"> Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any Optional requirements.
 	    </td></tr></tr><tr><th colspan="2"> Objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any Objective requirements.
