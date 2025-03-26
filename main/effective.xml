@@ -530,7 +530,7 @@ Base-PP.
 			<f-component name="DTLS Server Support for Mutual Authentication" cc-id="fcs_dtlss_ext.1" id="fcs-dtlss-ext-1">
 			<f-element id="fcs-dtlss-ext-1e1">
 				<title>
-				The TSF shall implement [<h:i>DTLS 1.2 (RFC 6347))</h:i>] supporting the following ciphersuites: <selectables> 	
+				The TSF shall implement DTLS 1.2 (RFC 6347)) supporting the following ciphersuites: <selectables> 	
 					<selectable>select supported ciphersuites from List 1<h:b> in the NDcPP</h:b></selectable>
 					</selectables>and no other ciphersuites.
 				</title>
@@ -551,7 +551,7 @@ Base-PP.
 			</f-component>
 			<f-component name="NTP Protocol" cc-id="fcs_ntp_ext.1" id="fcs-ntp-ext-1">
 			<f-element id="fcs-ntp-ext-1e1">
-			<title>The TSF shall use only the following NTP version: [<h:i>NTP v4 (RFC 5905)</h:i>].</title>
+			<title>The TSF shall use only the following NTP version: NTP v4 (RFC 5905).</title>
 
 			<note role="application"><h:i><h:p>te: This SFR is selection-based in the Base-PP but is mandatory for a TOE that
 			conforms to this PP-Module because the refinement to FPT_STM_EXT.1 requires
@@ -561,7 +561,7 @@ Base-PP.
 			</f-element></f-component>
 			<f-component name="TLS Client Protocol without Mutual Authentication" cc-id="fcs_tlsc_ext.1" id="fcs-tlsc-ext-1">
 			<f-element id="fcs-tlsc-ext-1e1">
-				<title>The TSF shall implement [<h:i>TLS 1.2 (RFC 5246))</h:i>] and reject all other TLS and SSL
+				<title>The TSF shall implement TLS 1.2 (RFC 5246)) and reject all other TLS and SSL
 				versions. The TLS implementation will support the following ciphersuites:
 				<selectables>
 					<selectable>select supported ciphersuites from List 1 <h:p>in the NDcPP</h:p></selectable>
@@ -575,7 +575,7 @@ Base-PP.
 				communications require mutually-authenticated TLS.</f-component>
 				<f-component name="TLS Server Protocol without Mutual Authentication" cc-id="fcs_tlss_ext.1" id="fcs-tlss-ext-1">
 				<f-element id="fcs-tlsc-ext-1e1">
-				<title>The TSF shall implement [<h:i>TLS 1.2 (RFC 5246))</h:i>] and reject all other TLS and SSL
+				<title>The TSF shall implement TLS 1.2 (RFC 5246)) and reject all other TLS and SSL
 				versions. The TLS implementation will support the following ciphersuites: <selectables>
 				<selectable>select supported ciphersuites from List 1 <h:p>in the NDcPP</h:p></selectable></selectables> and no other
 				ciphersuites.</title>
@@ -635,7 +635,7 @@ updates</selectable>
 		<section title="Protection of the TSF (FPT)" id="m-fpt">
 		<f-component name="Reliable Time Stamps" cc-id="fpt_stm_ext.1" id="fpt-stm-ext-1">
 		<f-element id="fpt-stm-ext-1e1">
-		<title>The TSF shall [<h:i>synchronize time with an NTP server</h:i>]. </title>
+		<title>The TSF shall synchronize time with an NTP server. </title>
 		<note role="application"><h:i>This SFR has been refined from the NDcPP to permit the NTP server selection only. No other parts of the SFR are modified.</h:i></note>
 		</f-element>
 		</f-component>
@@ -684,7 +684,7 @@ between VVoIP endpoints that are established by the TOE.</h:b></title>
 		<title>
 		The TSF shall record within each system log record at least the following information: <h:ol type="a">
 			<h:li>Date and time of the event, type of event, subject identity (if applicable), and the outcome (success or failure of the event); and </h:li>
-			<h:li>For each audit event type, based on the auditable event definitions of the functional components included in the PP/ST, [<h:i>event details described in System Log Events table</h:i>].</h:li></h:ol>
+			<h:li>For each audit event type, based on the auditable event definitions of the functional components included in the PP/ST, event details described in System Log Events table].</h:li></h:ol>
     <h:head><title><h:b><ctr ctr-type="Table" pre="Table " id="atref-mandatory">: System Log Events</ctr></h:b></title></h:head>
 <h:table border="1">
 		<h:tr>
@@ -846,8 +846,8 @@ call data.</title>
 	<section title="Security Management (FMT)" id="man-fmt">
 	<f-component name="Secure by Default Configuration" cc-id="fmt_cfg_ext.1" id="fmt-cfg-ext-1">
 		<f-element id="fmt-cfg-ext-1e1">
-		<title>The TSF shall provide only enough functionality to set new [<h:i>Security
-		Administrator</h:i>] credentials when configured with default credentials or no
+		<title>The TSF shall provide only enough functionality to set new Security
+		Administrator credentials when configured with default credentials or no
 		credentials</title>	
 		<aactivity><no-tests/></aactivity>
 		</f-element>
@@ -869,27 +869,154 @@ call data.</title>
 		<selectable>Ability to specify criteria for retention of voice and video recordings;</selectable>
 		<selectable>No other capabilities</selectable>
 		</selectables>.</h:li>
-		<h:li/>
-		<h:li/>
-		<h:li/>
-		
 		</h:ul></title>
+		<note role="application"><h:i><h:p>This SFR defines additional management functions for the TOE beyond what is
+		defined in the Base-PP as FMT_SMF.1. The TOE may have all management
+		functionality implemented in the same logical interface; it is not necessary for “network device management” and “enterprise session controller management”
+		to be implemented in separate interfaces. </h:p><h:p>The TOE developer is encouraged, but not required, to provide a more
+		sophisticated password strength policy than what is prescribed by
+		FIA_PMG_EXT.1 as defined in the NDcPP. This may include the ability for an
+		administrator to configure the metrics used to define an acceptable password. At
+		minimum, the minimum password length must be configurable. If "have” is
+		selected in FAU_VVR_EXT.1.1, then "Ability to enable/disable voice and video
+		recordings for any registered VVoIP endpoint" must be selected.
+		</h:p><h:p>The selection “Ability to configure NTP” must be included in the ST if the TOE uses
+		NTP for timestamp configuration. If selected, FCS_NTP_EXT.1 from the NDcPP
+		must be claimed as well.</h:p><h:p>If “Ability to specify the set of audited events” is selected, FAU_SEL.1 must be
+		claimed.
+		</h:p></h:i></note>
 		<aactivity><no-tests/></aactivity>
 	</f-element>
+	</f-component>
+	</section>
+	<section title="Protection of the TSF (FPT)" id="man-fpt">
+	<f-component name="Failure with Preservation of a Secure State" cc-id="fpt_fls.1" id="fpt-fls-1">
+		<f-element id="fpt-fls-1-1">
+		<title>The TSF shall preserve a secure state <h:b>through the following means: <selectables><selectable>audible alarm</selectable>
+			<selectable>visual indicator</selectable>
+			<selectable>reboot of the TOE</selectable>
+			<selectable>shutdown of the TOE</selectable>
+			<selectable><assignable>other methods</assignable></selectable></selectables></h:b>
+			when the following types of failures occur: [<h:i>failure
+of self-tests defined in FPT_TST_EXT.1, failure of </h:i><assignable>hardware
+components that affect the proper functioning of the TOE</assignable>].
+			</title>
+			<aactivity><no-tests/></aactivity>
+		</f-element>
+	</f-component>
 	
+	</section>
+	<section title="Trusted Path/Channels (FTP)" id="man-ftp">
+	<f-component name="Inter-TSF Trusted Channel (ESC Communications)" cc-id="ftp-itc.1.1" id="ftp-itc.1.1-esc" iteration="ESC">
+		<f-element id="ftp-itc-1e1"> 
+		<title>The TSF shall <h:b>be capable of using TLS and <selectables><selectable>DTLS</selectable><selectable>IPsec</selectable><selectable>no other protocols</selectable></selectables> to</h:b> provide a communication channel between itself and another trusted IT product <h:b>supporting the following capabilities: VVoIP endpoints (for protection of signaling protocols), VVoIP endpoints (for protection of voice/video/media content), other ESC devices (for SIP trunking), <selectables><selectable>VVoIP conferencing system</selectable><selectable>no other capabilities</selectable></selectables></h:b> that is logically distinct from other communication channels and provides assured identification of its end points and protection of the channel data from modification or disclosure.</title>
+		<aactivity><no-tests/></aactivity>
+
+		</f-element>
+		<f-element id="ftp-itc-1e2-esc">
+		<title>The TSF shall permit [<h:p>the TSF, another trusted IT product</h:p>] to initiate communication via the trusted channel.</title>
+		<aactivity><no-tests/></aactivity>
+		</f-element> 
+		<f-element id="ftp-itc-1e3-esc">
+		<title>The TSF shall initiate communication via the trusted channel for <assignable>list of functions for which a trusted channel is required</assignable>.</title>
+		<aactivity><no-tests/></aactivity>
+		</f-element> 
 	</f-component>
 	</section>
 	</man-sfrs>  <!-- SFRs -->
-    
     <opt-sfrs>
 	</opt-sfrs>		
 	<obj-sfrs>
 	</obj-sfrs>
-    <sel-sfrs/>
-    
     <impl-dep-sfrs>
+		<section title="Protection of the TSF (FPT)" id="imp-fpt">
+		<f-component name="Trusted Update (VVoIP Endpoints)" cc-id="fpt_tud_ext.1" id="fpt-tud-ext-1-vvoip" iteration="VVoIP">
+			<f-element id="fpt-tud-ext-1e1-vvoip">
+			<title>The TSF shall provide Security Administrators the ability to query the
+			currently executing version of the <h:b>registered VVoIP endpoint</h:b>
+			firmware/software as well as the most recently installed version of the
+			<h:b>registered VVoIP endpoint</h:b> firmware/software.</title>
+			<aactivity><no-tests/></aactivity>
+			</f-element>
+			<f-element id="fpt-tud-ext-1e2-vvoip">
+			<title>The TSF shall provide Security Administrators the ability to manually
+			initiate updates to <h:b>registered VVoIP endpoint</h:b> firmware/software and no
+			other update mechanism. </title>	
+			<aactivity><no-tests/></aactivity>
+			</f-element>
+			<f-element id="fpt-tud-ext-1e3-vvoip">
+			<title>The TSF shall provide means to authenticate firmware/software updates
+			to the <h:b>registered VVoIP endpoint</h:b> using a <selectables><selectable>X.509 certificate</selectable><selectable>digital signature mechanism</selectable><selectable>published hash</selectable></selectables> prior to installing those
+			updates.</title>
+			<note role="applications">
+			<h:b>The TOE may either validate the update prior to storing it for delivery to
+			registered VVoIP endpoints or it may provide the means to validate the
+			update to the VVoIP endpoint itself by preserving the manufacturer’s
+			integrity/authenticity mechanism and including that information in the update. In other words, either the TSF itself validates the update or it
+			facilitates the ability of the VVoIP endpoint to do this by providing all
+			information necessary to validate the update to the client. </h:b><h:b>It is typical behavior for ESCs to push software updates to registered
+			VVoIP endpoint devices. However, many VVoIP endpoints have the ability
+			to receive software updates from either an ESC or third-party update
+			server. This SFR addresses the case where it is the ESC’s responsibility for
+			delivery of software updates to registered VVoIP endpoints. For those
+			scenarios where the VVoIP endpoint gets its upload from a separate
+			server, then the ESC is not responsible for assuring
+			FPT_TUD_EXT.1/VVoIP.</h:b>
+			</note>
+			<aactivity><no-tests/></aactivity>
+			</f-element>
 	
+		</f-component>
+		</section>
 	</impl-dep-sfrs>
+	<sel-sfrs>
+	<section title="Security Audit (FAU)" id="sel-fau">
+		<f-component name="Selective Audit" cc-id="fau_sel.1" id="fau-sel-1">
+		<f-element id="fau-sel-1e1">
+		<title>The TSF shall be able to select the set of events to be audited from the set of all
+auditable events based on the following attributes:<h:ol type="a">
+		<h:li><selectables>
+			<selectable>object identity</selectable>
+			<selectable>user identity</selectable>
+			<selectable>subject identity</selectable>
+			<selectable>host identity</selectable>
+			<selectable>event type</selectable></selectables></h:li>
+		<h:li><assignable>list of additional attributes that audit selectivity is based
+		upon</assignable></h:li></h:ol></title>
+		<note role="application"><h:i>This requirement must be claimed when ‘Ability to specify the set of audited events’ is chosen in FMT_SMF.1.1/ESC.</h:i></note>
+		<aactivity><no-tests/></aactivity>
+		</f-element>
+		</f-component>
+		<f-component name="Protected Audit Trail Storage (Voice/Video Recording)" cc-id="fau_stg.1" id="fau-stg-1-vvr" iteration="VVR">
+		<f-element id="fau-stg-1e1-vvr">
+		<title>The TSF shall protect the stored <h:b>voice and video recordings</h:b> from unauthorized
+			<h:b>disclosure</h:b> and deletion <h:b>by encrypting voice and video recording data that is stored
+			on the TOE using an encryption method specified in FCS_COP.1.</h:b></title>
+		<aactivity><no-tests/></aactivity></f-element>
+		<f-element id="fau-stg-1e2-vvr">
+		<title>The TSF shall be able to [<h:i>prevent</h:i>] unauthorized modifications to the stored voice and video recordings.</title>
+		<note role="application"><h:i>This requirement must be claimed if ‘have’ is selected in FAU_VVR_EXT.1.1.</h:i></note>
+		<aactivity><no-tests/></aactivity></f-element>
+		</f-component>
+		<f-component name="Generation of Voice and Video Recordings" cc-id="fau_vvr-ext-2" id="fau-vvr-ext-2">
+		<f-element id="fau_vvr-ext-2e1">
+		<title>The TSF shall provide the ability to retain voice and video recordings based on <assignable>administrator-specified criteria</assignable></title>
+		<aactivity><no-tests/></aactivity></f-element>
+		<f-element id="fau_vvr-ext-2e2">
+		<title>The TSF shall store voice and video recordings as <assignable>supported file
+format</assignable> data.</title>
+		<aactivity><no-tests/></aactivity>
+		</f-element>
+		<f-element id="fau-sel-1e1">
+		<title>The TSF shall uniquely identify individual voice/video recordings using the following method: <assignable>unique identifying data</assignable>.</title>
+		<note role="application"><h:i>This requirement must be claimed if ‘have’ is selected in FAU_VVR_EXT.1.1</h:i></note>
+		<aactivity><no-tests/></aactivity>
+		</f-element>
+		</f-component>
+	</section>
+	</sel-sfrs>
+    
+ 
 	
 
 

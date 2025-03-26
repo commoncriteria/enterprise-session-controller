@@ -9,6 +9,7 @@ output/enterprise-session-controller-release-linkable.html: FTA
 output/enterprise-session-controller-release-linkable.html: MOF
 output/enterprise-session-controller-release-linkable.html: NIC
 output/enterprise-session-controller-release-linkable.html: OA
+output/enterprise-session-controller-release-linkable.html: PMG
 output/enterprise-session-controller-release-linkable.html: PPModule
 output/enterprise-session-controller-release-linkable.html: SBOP
 output/enterprise-session-controller-release-linkable.html: SCIF
@@ -20,7 +21,7 @@ output/enterprise-session-controller-release-linkable.html: Softphones
 output/enterprise-session-controller-release-linkable.html: T1
 output/enterprise-session-controller-release-linkable.html: TODO
 output/enterprise-session-controller-release-linkable.html: TRP
-output/enterprise-session-controller-release-linkable.html: TUD
+output/enterprise-session-controller-release-linkable.html: TST
 output/enterprise-session-controller-release-linkable.html: Telepresence
 output/enterprise-session-controller-release-linkable.html: UID
 output/enterprise-session-controller-release-linkable.html: Validator
@@ -55,6 +56,7 @@ output/enterprise-session-controller-release.html: FTA
 output/enterprise-session-controller-release.html: MOF
 output/enterprise-session-controller-release.html: NIC
 output/enterprise-session-controller-release.html: OA
+output/enterprise-session-controller-release.html: PMG
 output/enterprise-session-controller-release.html: PPModule
 output/enterprise-session-controller-release.html: SBOP
 output/enterprise-session-controller-release.html: SCIF
@@ -66,7 +68,7 @@ output/enterprise-session-controller-release.html: Softphones
 output/enterprise-session-controller-release.html: T1
 output/enterprise-session-controller-release.html: TODO
 output/enterprise-session-controller-release.html: TRP
-output/enterprise-session-controller-release.html: TUD
+output/enterprise-session-controller-release.html: TST
 output/enterprise-session-controller-release.html: Telepresence
 output/enterprise-session-controller-release.html: UID
 output/enterprise-session-controller-release.html: Validator
@@ -78,7 +80,9 @@ output/enterprise-session-controller-release.html: denylist
 output/enterprise-session-controller-release.html: dialplan
 output/enterprise-session-controller-release.html: duplicative
 output/enterprise-session-controller-release.html: entrycontrolled
+output/enterprise-session-controller-release.html: events’
 output/enterprise-session-controller-release.html: generalpurpose
+output/enterprise-session-controller-release.html: have’
 output/enterprise-session-controller-release.html: microarchitecture
 output/enterprise-session-controller-release.html: supersets
 output/enterprise-session-controller-release.html: te
@@ -109,6 +113,7 @@ output/enterprise-session-controller.html: FTA
 output/enterprise-session-controller.html: MOF
 output/enterprise-session-controller.html: NIC
 output/enterprise-session-controller.html: OA
+output/enterprise-session-controller.html: PMG
 output/enterprise-session-controller.html: PPModule
 output/enterprise-session-controller.html: SBOP
 output/enterprise-session-controller.html: SCIF
@@ -120,7 +125,7 @@ output/enterprise-session-controller.html: Softphones
 output/enterprise-session-controller.html: T1
 output/enterprise-session-controller.html: TODO
 output/enterprise-session-controller.html: TRP
-output/enterprise-session-controller.html: TUD
+output/enterprise-session-controller.html: TST
 output/enterprise-session-controller.html: Telepresence
 output/enterprise-session-controller.html: UID
 output/enterprise-session-controller.html: Validator
@@ -132,7 +137,9 @@ output/enterprise-session-controller.html: denylist
 output/enterprise-session-controller.html: dialplan
 output/enterprise-session-controller.html: duplicative
 output/enterprise-session-controller.html: entrycontrolled
+output/enterprise-session-controller.html: events’
 output/enterprise-session-controller.html: generalpurpose
+output/enterprise-session-controller.html: have’
 output/enterprise-session-controller.html: microarchitecture
 output/enterprise-session-controller.html: supersets
 output/enterprise-session-controller.html: te
