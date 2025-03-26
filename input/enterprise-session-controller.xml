@@ -1130,19 +1130,19 @@ components that affect the proper functioning of the TOE</assignable>].
 			to the <h:b>registered VVoIP endpoint</h:b> using a <selectables><selectable>X.509 certificate</selectable><selectable>digital signature mechanism</selectable><selectable>published hash</selectable></selectables> prior to installing those
 			updates.</title>
 			<note role="applications">
-			<h:i>The TOE may either validate the update prior to storing it for delivery to
+			<h:i><h:p>The TOE may either validate the update prior to storing it for delivery to
 			registered VVoIP endpoints or it may provide the means to validate the
 			update to the VVoIP endpoint itself by preserving the manufacturer’s
 			integrity/authenticity mechanism and including that information in the update. In other words, either the TSF itself validates the update or it
 			facilitates the ability of the VVoIP endpoint to do this by providing all
-			information necessary to validate the update to the client. </h:b><h:b>It is typical behavior for ESCs to push software updates to registered
+			information necessary to validate the update to the client. </h:p><h:p>It is typical behavior for ESCs to push software updates to registered
 			VVoIP endpoint devices. However, many VVoIP endpoints have the ability
 			to receive software updates from either an ESC or third-party update
 			server. This SFR addresses the case where it is the ESC’s responsibility for
 			delivery of software updates to registered VVoIP endpoints. For those
 			scenarios where the VVoIP endpoint gets its upload from a separate
 			server, then the ESC is not responsible for assuring
-			FPT_TUD_EXT.1/VVoIP.</h:i>
+			FPT_TUD_EXT.1/VVoIP.</h:p></h:i>
 			</note>
 			<aactivity><no-tests/></aactivity>
 			</f-element>
