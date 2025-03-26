@@ -982,7 +982,25 @@ call data.</title>
 	not feasible to pause the wipe operation while in progress it is sufficient for the evaluator to observe during testing that the final result is all zeroes; however, the
 	vendor-provided evidence is expected to provide a justification that [NIST SP 800-
 	88] guidelines are being followed.</h:i></note>
-	<aactivity><no-tests/></aactivity>
+	<aactivity>
+	<TSS>The evaluator shall examine the TSS to ensure it describes the data objects overwritten as part of the
+	sanitation operation. This should include both the TSF data that is overwritten as well as the characteristics of the physical drive that is erased (e.g. an entire drive, one or more logical partitions of a
+	drive). The evaluator shall also examine the TSS to ensure that the sanitation process is described. In
+	particular, the TSS must describe how the sanitation process follow the NIST 800-88 guidelines for "Disk
+	Storage Sanitation."</TSS>
+	<Guidance>The evaluator shall examine the guidance documentation to ensure it describes the data objects
+	overwritten as part of the sanitation operation. The evaluation shall also ensure that the guidance
+	documentation describes the administrative procedures necessary to trigger the sanitation operation. The
+	evaluation shall also ensure that the TOE indication that the sanitization operation has completed is
+	described, if applicable. </Guidance>
+	<Test>
+	<h:p>The following test may require the evaluator to have access to developer tools.</h:p><h:p>The evaluator shall identify the storage locations (e.g. drives, disk partitions) that are erased when the
+	TOE performs a wipe operation. The evaluator shall then populate each of these locations with large
+	amounts of ‘junk’ data so that a known amount of their storage is used. The evaluator shall use the TOE
+	to verify that the current storage levels are consistent with the amount of data that was introduced to
+	each location.</h:p><h:p>The evaluator shall then initiate a wipe command and observe that each location that is subject to erasure
+	is 100% free. The evaluator shall use forensic tools to examine each location that is subject to erasure and
+	verify that the data has been overwritten by all zeroes.</h:p></Test></aactivity>
 	</f-element>
 	</f-component>
 	</section>
