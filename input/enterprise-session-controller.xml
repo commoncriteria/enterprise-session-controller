@@ -969,6 +969,7 @@ call data.</title>
 		</aactivity>
 		</f-element>
 		</f-component>
+		
 
 	<f-component name='Subset Residual Information Protection' cc-id='fdp_rip.1' id='fdp-rip-1'>
 	<f-element id='fdp-rip-1e1'>The TSF shall ensure that any previous information content of a resource is made
