@@ -861,7 +861,7 @@ call data.</title>
 		<aactivity>
 		<TSS>The evaluator shall examine the TSS to verify that it describes if the TSF has or does not have the capability to record voice and video call data.</TSS>
 		<Guidance>There are no guidance EAs for this SFR.</Guidance>
-		<Test>The test for this SFR is performed as part of FMT_SMF.1/ESC’s EAs.</Test>
+		<Tests>The test for this SFR is performed as part of FMT_SMF.1/ESC’s EAs.</Tests>
 		</aactivity>
 		</f-component>
 	</section>
@@ -914,7 +914,7 @@ call data.</title>
 		protocol used or the circumstances in which the TSF will or will not transmit streaming media data), the
 		evaluator shall examine the operational guidance to verify that instructions for configuring this behavior
 		are provided.</Guidance>
-		<Test>
+		<Tests>
 		<h:p>The evaluator shall perform one or more of the following tests depending on the protocols that the TOE
 		claims to support. For each test performed, the evaluator shall conduct the test for each supported
 		environment (IPv4 and/or IPv6).</h:p>
@@ -965,7 +965,7 @@ call data.</title>
 		is employed by verifying that a two-way conversation can occur over the connected call.</h:p><h:p>If the TSF supports both H.323 and SIP, the evaluator shall repeat this test for the VVoIP endpoint
 		registration method not chosen during the first iteration of the test.
 		</h:p>
-		</Test>
+		</Tests>
 		</aactivity>
 		</f-element>
 		</f-component>
@@ -993,14 +993,14 @@ call data.</title>
 	documentation describes the administrative procedures necessary to trigger the sanitation operation. The
 	evaluation shall also ensure that the TOE indication that the sanitization operation has completed is
 	described, if applicable. </Guidance>
-	<Test>
+	<Tests>
 	<h:p>The following test may require the evaluator to have access to developer tools.</h:p><h:p>The evaluator shall identify the storage locations (e.g. drives, disk partitions) that are erased when the
 	TOE performs a wipe operation. The evaluator shall then populate each of these locations with large
 	amounts of ‘junk’ data so that a known amount of their storage is used. The evaluator shall use the TOE
 	to verify that the current storage levels are consistent with the amount of data that was introduced to
 	each location.</h:p><h:p>The evaluator shall then initiate a wipe command and observe that each location that is subject to erasure
 	is 100% free. The evaluator shall use forensic tools to examine each location that is subject to erasure and
-	verify that the data has been overwritten by all zeroes.</h:p></Test></aactivity>
+	verify that the data has been overwritten by all zeroes.</h:p></Tests></aactivity>
 	</f-element>
 	</f-component>
 	</section>
