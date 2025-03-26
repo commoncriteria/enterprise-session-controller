@@ -667,7 +667,7 @@ updates</selectable>
 		<f-element id='fau-gen-1e1-cdr'>
 		<title>The TSF shall be able to generate a <h:b>call detail</h:b> record <h:b>(CDR)</h:b> for <h:b>communications
 between VVoIP endpoints that are established by the TOE.</h:b></title>
-
+		</f-element>
 		<f-element id='fau-gen-1e2-cdr'>
 		<title>The TSF shall record within each CDR at least the following information: <h:b>[<h:lu>
 		<h:li>calling party number (i.e. call originator)</h:li>
@@ -969,7 +969,7 @@ call data.</title>
 		</aactivity>
 		</f-element>
 		</f-component>
-		
+
 
 	<f-component name='Subset Residual Information Protection' cc-id='fdp_rip.1' id='fdp-rip-1'>
 	<f-element id='fdp-rip-1e1'>The TSF shall ensure that any previous information content of a resource is made
