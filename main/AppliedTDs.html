@@ -1164,17 +1164,20 @@ presented in the system log so that it is clear to the evaluator how often updat
 to that information will be presented to an administrator</p><p>Logging of power status is optional and is only intended for <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr> that have
 multiple redundant power supplies. Logging of fan status is also optional.</p></i></span></div></div></div>
 		</div>
+
 		<div class="comp" id="FAU_SAR.1/Log"><h4>FAU_SAR.1/Log Audit Review (System Log)</h4>
 		<div class="element"><div class="reqid" id="FAU_SAR.1.1/Log"><a href="#FAU_SAR.1.1/Log" class="abbr">FAU_SAR.1.1/Log</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide [<i>Security Administrators</i>] with the capability to read [<b>assignment</b>: 
      <span class="assignable-content">list of audit information</span>] from the <b>system log</b> records.
 		</div></div>
 		<div class="element"><div class="reqid" id="FAU_SAR.1.2/Log"><a href="#FAU_SAR.1.2/Log" class="abbr">FAU_SAR.1.2/Log</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide the <b>system log</b> records in a <b>real-time first-in first-out scrolling method</b>.</div></div>
 		</div>
+
 		<div class="comp" id="FAU_STG.1/CDR"><h4>FAU_STG.1/CDR Protected Audit Trail Storage (Call Detail Record)</h4>
 		<div class="element"><div class="reqid" id="FAU_STG.1.1/CDR"><a href="#FAU_STG.1.1/CDR" class="abbr">FAU_STG.1.1/CDR</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall protect the stored <b>call detail records</b> from unauthorized <b>disclosure and</b> deletion.</div></div>
 		<div class="element"><div class="reqid" id="FAU_STG.1.2/CDR"><a href="#FAU_STG.1.2/CDR" class="abbr">FAU_STG.1.2/CDR</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to [<i>prevent</i>] unauthorized modifications to the stored <b>call
 detail records</b>.</div></div>
 		</div>
+
 		<div class="comp" id="FUA_VVR_EXT.1"><h4>FUA_VVR_EXT.1 Recording Voice and Video Call Data</h4>
 		The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="_s_18">have</span>, <span class="selectable-content" id="_s_19">not have</span>] the capability to record voice and video
 call data.
@@ -1185,15 +1188,20 @@ call data.
 		endpoint” must be selected in <a href="#FMT_SMF.1.1/ESC">FMT_SMF.1.1/ESC</a>.
 		</i></span></div>
 		
-		TODO: You need to explain the lack of EAs for this component!!!!
-	
+		The evaluator shall examine the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> to verify that it describes if the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> has or does not have the capability to record voice and video call data.
+		There are no guidance EAs for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>.
+		The test for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is performed as part of <a href="#FMT_SMF.1/ESC">FMT_SMF.1/ESC</a>’s EAs.
+		
 		</div>
 	
+
+
 	<h3 id="man-fdp" class="indexable" data-level="3">5.2.2 User Data Protection (FDP)</h3>
-	<div class="comp" id="FDP_IFC.1"><h4>FDP_IFC.1 Subset Information Flow Control</h4>
-	<div class="element"><div class="reqid" id="FDP_IFC.1.1"><a href="#FDP_IFC.1.1" class="abbr">FDP_IFC.1.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall enforce the [<i>enterprise session controller SFP</i>] on [<i>caller-callee pairs attempting to communicate through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></i>].</div></div>
-	</div>
-	<div class="comp" id="FDP_IFF.1"><h4>FDP_IFF.1 Simple Security Attributes</h4>
+		<div class="comp" id="FDP_IFC.1"><h4>FDP_IFC.1 Subset Information Flow Control</h4>
+		<div class="element"><div class="reqid" id="FDP_IFC.1.1"><a href="#FDP_IFC.1.1" class="abbr">FDP_IFC.1.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall enforce the [<i>enterprise session controller SFP</i>] on [<i>caller-callee pairs attempting to communicate through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></i>].</div></div>
+		</div>
+
+		<div class="comp" id="FDP_IFF.1"><h4>FDP_IFF.1 Simple Security Attributes</h4>
 		<div class="element"><div class="reqid" id="FDP_IFF.1.1"><a href="#FDP_IFF.1.1" class="abbr">FDP_IFF.1.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall enforce the [<i>enterprise session controller SFP</i>] based on the following types of subject and information security attributes: [<b>assignment</b>: 
      <span class="assignable-content">method by which the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> identifies each endpoint for a call</span>] <b>using the following call control protocols: [<b>selection</b>: <span class="selectable-content" id="_s_20"><abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr></span>, <span class="selectable-content" id="_s_21">H.323</span>] and [<b>selection</b>: <span class="selectable-content" id="_s_22">SS7</span>, <span class="selectable-content" id="_s_23"><abbr class="dyn-abbr"><a href="#abbr_MGCP">MGCP</a></abbr></span>, <span class="selectable-content" id="_s_24">no other call control protocols</span>]</b>.
 		</div></div>
@@ -1219,7 +1227,9 @@ call data.
 		block a communications channel through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. It is acceptable to complete the
 		assignment with “no additional rules” if there are no exceptions to the behavior
 		defined in <a href="#FDP_IFF.1.2">FDP_IFF.1.2</a> and 1.3.</i></span></div></div></div>
-	</div>
+		</div>
+
+
 	<div class="comp" id="FDP_RIP.1"><h4>FDP_RIP.1 Subset Residual Information Protection</h4>
 	<div class="element"><div class="reqid" id="FDP_RIP.1.1"><a href="#FDP_RIP.1.1" class="abbr">FDP_RIP.1.1</a></div><div class="reqdesc"><div class="appnote"><span class="note-header">Application
       Note:
@@ -1370,19 +1380,19 @@ components that affect the proper functioning of the <abbr class="dyn-abbr"><a h
 			updates.<div class="appnote"><span class="note-header">Applications
       Note:
     </span><span class="note">
-			<b>The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> may either validate the update prior to storing it for delivery to
+			<i><p>The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> may either validate the update prior to storing it for delivery to
 			registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints or it may provide the means to validate the
 			update to the <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint itself by preserving the manufacturer’s
 			integrity/authenticity mechanism and including that information in the update. In other words, either the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> itself validates the update or it
 			facilitates the ability of the <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint to do this by providing all
-			information necessary to validate the update to the client. </b><b>It is typical behavior for ESCs to push software updates to registered
+			information necessary to validate the update to the client. </p><p>It is typical behavior for ESCs to push software updates to registered
 			<abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint devices. However, many <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints have the ability
 			to receive software updates from either an <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> or third-party update
 			server. This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> addresses the case where it is the <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>’s responsibility for
 			delivery of software updates to registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints. For those
 			scenarios where the <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint gets its upload from a separate
 			server, then the <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> is not responsible for assuring
-			<a href="#FPT_TUD_EXT.1/VVoIP">FPT_TUD_EXT.1/VVoIP</a>.</b>
+			<a href="#FPT_TUD_EXT.1/VVoIP">FPT_TUD_EXT.1/VVoIP</a>.</p></i>
 			</span></div></div></div>
 	
 		</div>
