@@ -795,7 +795,7 @@ system log item is described in the guidance documentation along with each requi
 		<test id="fau-log-power-status">(power status): <testlist>
 			<test id="fau-log-power-status-redundant"> (conditional): If TOE employs redundant power supplies (PS), then test may be a simple matter of
 			cycling one PS while leaving other power units untouched. Reset one PS while allowing the other(s) to
-			remain up. Peruse system log and verify message indicating PS cycled (went down & up).</test>
+			remain up. Peruse system log and verify message indicating PS cycled (went down &amp; up).</test>
 			<test id="fau-log-power-status-single">(conditional): If TOE is supported by a single PS, than test has to be verified by waiting for system
 			log to provide power status on periodic intervals. If system log does not report power status, then PS test
 			failed.</test>
@@ -931,7 +931,7 @@ call data.</title>
 		the other and observe via packet capture that two separate H.323 connections are established: one from
 		the caller to the TOE and the other from the TOE to the callee.</h:p>
 		<h:p><h:b>If the TSF supports SS7:</h:b></h:p>
-		<h:p>Unlike H.323 & SIP which are call-setup and teardown protocols primarily used to process calls between
+		<h:p>Unlike H.323 &amp; SIP which are call-setup and teardown protocols primarily used to process calls between
 		local VVoIP endpoints that are registered to the ESC, the SS7 protocol focuses on setup and teardown of
 		calls over the legacy Public Switch Telephone Network (PSTN). Therefore, when assessing the SS7 protocol, the evaluator will need to configure the TOE to make a call from a local VVoIP endpoint through
 		its SS7 interface to a remote endpoint.</h:p><h:p>The evaluator shall set up a test environment where a single VVoIP endpoint is registered to the TOE
@@ -946,7 +946,7 @@ call data.</title>
 		shall verify that SS7 call processing is employed by verifying that a two-way conversation can occur over
 		the connected call.</h:p><h:p>If the TSF supports both H.323 and SIP, the evaluator shall repeat this test for the VVoIP endpoint
 		registration method not chosen during the first iteration of the test</h:p>
-		<h:p><h:b>If the TSF supports MGCP:</h:b></h:p><h:p>Unlike H.323 & SIP which are call-setup and teardown protocols primarily used to process calls between
+		<h:p><h:b>If the TSF supports MGCP:</h:b></h:p><h:p>Unlike H.323 &amp; SIP which are call-setup and teardown protocols primarily used to process calls between
 		local VVoIP-clients that are registered to the ESC, the MGCP protocol focuses on the control of Media
 		Gateways (MG) which set up voice calls between VVoIP networks and the PSTN. The TSF employs MGCP
 		to control MGs that provision VVoIP calls for external connection to the PSTN and from the PSTN to the
