@@ -9,12 +9,9 @@
 * Error: Detected dangling ref to 'fau-gen-1'
         for a ref.
 	/Module[1]""/sec:Security_Requirements[1]""/base-pp[1]""/con-mod[6]"This PP-M"/ref[1]""
-* Error: Detected dangling ref to 'FAU_STG.1'
+* Error: Detected dangling ref to 'fau-stg-1'
         for a ref.
 	/Module[1]""/sec:Security_Requirements[1]""/base-pp[1]""/con-mod[7]"This PP-M"/ref[1]""
-* Error: Detected dangling ref to 'FCS_DTLSS_EXT.1'
-        for a ref.
-	/Module[1]""/sec:Security_Requirements[1]""/base-pp[1]""/con-mod[8]"This PP-M"/ref[1]""
 * Error: Detected dangling ref to 'FCS_DTLSS_EXT.2'
         for a ref.
 	/Module[1]""/sec:Security_Requirements[1]""/base-pp[1]""/con-mod[9]"This PP-M"/ref[1]""
