@@ -826,7 +826,6 @@ updates</selectable>
 			FCS_TLSS_EXT.2 are mandatory SFRs for a TOE that conforms to this PP-Module.
 			Additional protocols may or may not be selected depending on the other
 			functionality provided by the TSF</h:i></note>
-			<aactivity><no-tests/></aactivity>
 			</f-element>
 			<f-element id='fia-x509-ext-2e2'>
 			<title>When the TSF cannot establish a connection to determine the validity of a
@@ -852,6 +851,7 @@ updates</selectable>
 		<f-element id='fpt-stm-ext-1e1'>
 		<title>The TSF shall synchronize time with an NTP server. </title>
 		<note role='application'><h:i>This SFR has been refined from the NDcPP to permit the NTP server selection only. No other parts of the SFR are modified.</h:i></note>
+		<aactivity>No additional EAs are specified for this SFR beyond what is defined in the NDcPP SD.</aactivity>
 		</f-element>
 		</f-component>
 			
@@ -881,7 +881,7 @@ between VVoIP endpoints that are established by the TOE.</h:b></title>
 		<h:li>time zone</h:li>
 		<h:li>call release cause, if applicable (i.e. reason for termination of call)</h:li>
 		<h:li>fault condition(s), if applicable</h:li>
-		</h:lu></h:b>]</title>
+		</h:lu></h:b>].</title>
 		<note role='application'><h:i>The TOE should be uniquely identified as part of the CDR so that there is
 		attribution of individual CDRs in environments where multiple ESCs are feeding
 		CDRs to a centralized server.</h:i></note>
@@ -905,13 +905,12 @@ between VVoIP endpoints that are established by the TOE.</h:b></title>
 		<title>The TSF shall be able to generate a <h:b>system log</h:b> record for <h:b>current IP connections,
 			NTP status, CPU usage, memory usage, disk and file storage capacity, audit
 			storage capacity, <selectables><selectable>power status</selectable><selectable>fan status</selectable><selectable>no other activities</selectable></selectables>.</h:b> </title>
-			<aactivity><no-tests/></aactivity>
 		</f-element>
 		<f-element id='fau-gen-1e2-log'>
 		<title>
 		The TSF shall record within each system log record at least the following information: <h:ol type='a'>
 			<h:li>Date and time of the event, type of event, subject identity (if applicable), and the outcome (success or failure of the event); and </h:li>
-			<h:li>For each audit event type, based on the auditable event definitions of the functional components included in the PP/ST, event details described in System Log Events table].</h:li></h:ol>
+			<h:li>For each audit event type, based on the auditable event definitions of the functional components included in the PP/ST, [<h:i>event details described in System Log Events table</h:i>].</h:li></h:ol>
     <h:head><title><h:b><ctr ctr-type="Table" pre="Table " id="atref-mandatory">: System Log Events</ctr></h:b></title></h:head>
 <h:table border='1'>
 		<h:tr>
@@ -949,7 +948,8 @@ between VVoIP endpoints that are established by the TOE.</h:b></title>
 </title>
 <note role='application'><h:i><h:p>Unlike audit data (see FAU_GEN.1), system log data is used primarily for real-time
 analysis of system behavior. This data is expected to be treated as non-persistent
-data by the TOE.</h:p><h:p>The ST author is expected to identify the sampling interval for the information
+data by the TOE.</h:p>
+<h:p>The ST author is expected to identify the sampling interval for the information
 presented in the system log so that it is clear to the evaluator how often updates
 to that information will be presented to an administrator</h:p><h:p>Logging of power status is optional and is only intended for TOEs that have
 multiple redundant power supplies. Logging of fan status is also optional.</h:p></h:i></note>
@@ -1169,10 +1169,11 @@ call data.</title>
 
 
 	<f-component name='Subset Residual Information Protection' cc-id='fdp_rip.1' id='fdp-rip-1'>
-	<f-element id='fdp-rip-1e1'>The TSF shall ensure that any previous information content of a resource is made
+		<f-element id='fdp-rip-1e1'>
+		<title>The TSF shall ensure that any previous information content of a resource is made
 	unavailable upon the <selectables><selectable>allocation of the resource to</selectable><selectable>deallocation of the
 	resource from</selectable></selectables> the following objects: <assignable>disk storage location(s) erased
-	by the TSF during factory reset or other wipe operation</assignable>.
+	by the TSF during factory reset or other wipe operation</assignable>.</title>
 	<note role='application'><h:i>The TOE is expected to follow guidelines for [NIST SP 800-88], ‘Disk Storage
 	Sanitization’ as the method for ensuring that residual information is cleared from
 	both volatile and nonvolatile memory. This involves overwriting the entire disk or
