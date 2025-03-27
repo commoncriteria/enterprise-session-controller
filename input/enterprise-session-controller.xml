@@ -1386,7 +1386,7 @@ auditable events based on the following attributes:<h:ol type='a'>
 
 		<f-component name="Generation of Voice and Video Recordings" cc-id='fau_vvr-ext-2' id='fau-vvr-ext-2'>
 		<f-element id='fau_vvr-ext-2e1'>
-		<title>The TSF shall provide the ability to retain voice and video recordings based on <assignable>administrator-specified criteria</assignable></title>
+		<title>The TSF shall provide the ability to retain voice and video recordings based on <assignable>administrator-specified criteria</assignable></title></f-element>
 		<f-element id='fau_vvr-ext-2e2'>
 		<title>The TSF shall store voice and video recordings as <assignable>supported file
 		format</assignable> data.</title>
@@ -1402,18 +1402,18 @@ auditable events based on the following attributes:<h:ol type='a'>
 		describes how voice/video recordings are retained, both in terms of the supported audio/video formats
 		and how each recording is uniquely identified for future access.</TSS>
 		<Guidance>The evaluator shall examine the operational guidance to ensure that it describes how retention for
-voice/video recordings can be enabled and disabled, how stored records are encoded, and how they are
-uniquely identified.</Guidance>
-<Tests><h:p>The evaluator shall disable all mechanisms for voice/video recording. The evaluator shall then place a
-call that is mediated by the TSF and observe that no recording is generated after the call is completed.
-The evaluator shall then configure the TSF to enable recording, repeat the call, and ensure that a
-recording is generated in the required format after the call is completed. The evaluator shall then repeat
-this process and observe that a second recording is generated, and that the two recordings can be
-distinguished from one another using unique identifying information. The evaluator shall then disable
-recording, repeat the call, and observe that a recording is not generated.
-</h:p><h:p>If the TSF supports multiple mechanisms for enabling the recording of voice/video data, the evaluator
-shall repeat this test for each supported mechanism to ensure that voice/video recordings are only
-generated when that mechanism is active.</h:p></Tests></aactivity>
+		voice/video recordings can be enabled and disabled, how stored records are encoded, and how they are
+		uniquely identified.</Guidance>
+		<Tests><h:p>The evaluator shall disable all mechanisms for voice/video recording. The evaluator shall then place a
+		call that is mediated by the TSF and observe that no recording is generated after the call is completed.
+		The evaluator shall then configure the TSF to enable recording, repeat the call, and ensure that a
+		recording is generated in the required format after the call is completed. The evaluator shall then repeat
+		this process and observe that a second recording is generated, and that the two recordings can be
+		distinguished from one another using unique identifying information. The evaluator shall then disable
+		recording, repeat the call, and observe that a recording is not generated.
+		</h:p><h:p>If the TSF supports multiple mechanisms for enabling the recording of voice/video data, the evaluator
+		shall repeat this test for each supported mechanism to ensure that voice/video recordings are only
+		generated when that mechanism is active.</h:p></Tests></aactivity>
 		</f-element>
 		</f-component>
 	</section>
