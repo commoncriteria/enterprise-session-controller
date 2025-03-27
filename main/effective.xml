@@ -696,7 +696,7 @@ Base-PP.
 	is stored.</h:i> </note></f-component>
 	</section>
 	<section title="Cryptographic Support" id="m-fcs">
-			<f-component name="DTLS Server Support for Mutual Authentication" cc-id="fcs_dtlss_ext.1" id="fcs-dtlss-ext-1">
+			<f-component name="DTLS Server Support without Mutual Authentication" cc-id="fcs_dtlss_ext.1" id="fcs-dtlss-ext-1">
 			<f-element id="fcs-dtlss-ext-1e1">
 				<title>
 				The TSF shall implement DTLS 1.2 (RFC 6347)) supporting the following ciphersuites: <selectables> 	
@@ -710,7 +710,7 @@ Base-PP.
 				DTLS 1.2 if this function is claimed.</h:p>
 				</h:i>
 				</note>
-				<aactivity><no-tests/></aactivity>
+				<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD.</aactivity>
 				
 				</f-element>
 			</f-component>
@@ -726,7 +726,9 @@ Base-PP.
 			conforms to this PP-Module because the refinement to FPT_STM_EXT.1 requires
 			this SFR to be claimed in all cases.</h:p><h:p/>This SFR has been refined from the NDcPP to permit the NTP v4 selection only. No
 			other parts of the SFR are modified.</h:i></note>
-			<aactivity><no-tests/></aactivity>
+			<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to
+			make its inclusion selection-based rather than optional, but there is no change to how the SFR is to be
+			implemented.</aactivity>
 			</f-element></f-component>
 			<f-component name="TLS Client Protocol without Mutual Authentication" cc-id="fcs_tlsc_ext.1" id="fcs-tlsc-ext-1">
 			<f-element id="fcs-tlsc-ext-1e1">

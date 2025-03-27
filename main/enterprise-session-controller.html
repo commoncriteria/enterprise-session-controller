@@ -1012,7 +1012,7 @@ connected (if available).</li></ul></td></tr><tr data-sortkey="FIA_UAU.2/VVoIP">
 	is stored.</i> </span></div></div>
 	
 	<h4 id="m-fcs" class="indexable" data-level="4">5.1.1.2 Cryptographic Support</h4>
-			<div class="comp" id="FCS_DTLSS_EXT.1"><h4>FCS_DTLSS_EXT.1 DTLS Server Support for Mutual Authentication</h4>
+			<div class="comp" id="FCS_DTLSS_EXT.1"><h4>FCS_DTLSS_EXT.1 DTLS Server Support without Mutual Authentication</h4>
 			<div class="element"><div class="reqid" id="FCS_DTLSS_EXT.1.1"><a href="#FCS_DTLSS_EXT.1.1" class="abbr">FCS_DTLSS_EXT.1.1</a></div><div class="reqdesc">
 				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement DTLS 1.2 (RFC 6347)) supporting the following ciphersuites: [<b>selection</b>: <span class="selectable-content" id="_s_1">select supported ciphersuites from List 1<b> in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr></b></span>]and no other ciphersuites.
 				<div class="appnote"><span class="note-header">Application
@@ -1024,9 +1024,7 @@ connected (if available).</li></ul></td></tr><tr data-sortkey="FIA_UAU.2/VVoIP">
 				DTLS 1.2 if this function is claimed.</p>
 				</i>
 				</span></div></div></div>
-			<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FCS_DTLSS_EXT.1">FCS_DTLSS_EXT.1</a></div>
-		TODO: You need to explain the lack of EAs for this component!!!!
-	</div></div></div>
+			<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FCS_DTLSS_EXT.1">FCS_DTLSS_EXT.1</a></div>There is no change to the EAs specified for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> SD.</div></div></div>
 			<div class="comp" id="FCS_DTLSS_EXT.2"><h4>FCS_DTLSS_EXT.2 DTLS Server Support for Mutual Authentication</h4>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is optional in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is selection-based in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because any <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> use of DTLS
 			requires mutually-authenticated DTLS to be implemented. Therefore, this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> must be claimed if ‘DTLS’ is
 			selected in FTP_ITC.1.1/<abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>.
@@ -1037,9 +1035,9 @@ connected (if available).</li></ul></td></tr><tr data-sortkey="FIA_UAU.2/VVoIP">
     </span><span class="note"><i><p>te: This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is selection-based in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> but is mandatory for a <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that
 			conforms to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because the refinement to <a href="#FPT_STM_EXT.1">FPT_STM_EXT.1</a> requires
 			this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> to be claimed in all cases.</p><p></p>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> has been refined from the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> to permit the NTP v4 selection only. No
-			other parts of the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> are modified.</i></span></div></div></div><div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FCS_NTP_EXT.1">FCS_NTP_EXT.1</a></div>
-		TODO: You need to explain the lack of EAs for this component!!!!
-	</div></div></div>
+			other parts of the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> are modified.</i></span></div></div></div><div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FCS_NTP_EXT.1">FCS_NTP_EXT.1</a></div>There is no change to the EAs specified for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> SD. The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> modifies this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> to
+			make its inclusion selection-based rather than optional, but there is no change to how the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is to be
+			implemented.</div></div></div>
 			<div class="comp" id="FCS_TLSC_EXT.1"><h4>FCS_TLSC_EXT.1 TLS Client Protocol without Mutual Authentication</h4>
 			<div class="element"><div class="reqid" id="FCS_TLSC_EXT.1.1"><a href="#FCS_TLSC_EXT.1.1" class="abbr">FCS_TLSC_EXT.1.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement TLS 1.2 (RFC 5246)) and reject all other TLS and SSL
 				versions. The TLS implementation will support the following ciphersuites:
