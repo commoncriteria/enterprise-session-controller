@@ -622,7 +622,7 @@ following rationale: </con-op-en>
 		systems are configured in any specific manner. Therefore, it is expected that requiring environmental systems to be configured in a secure manner will not
 		prevent the TSF from being fully implemented.
 	  </con-mod>
-	  <con-mod ref="OE.SECURED_PLATFORM">
+	  <con-mod ref="OE.PLATFORM">
 		This objective expects the TOE to be configured in such a manner that the
 		underlying OS on which the TOE runs cannot be used to alter the behavior of
 		the TSF. This is consistent with the OE.NO_GENERAL_PURPOSE objective in
