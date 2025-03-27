@@ -485,22 +485,14 @@ systems and are configured in accordance with applicable security standards.</de
 
 	<!-- This section is included in direct rationale documents if there are OE Objectives -->
     <section title="Security Objectives for the Operational Environment" id="sec-OEObjectives">
+	All objectives for the operational environment of the Base-PP also apply to this PP-Module.
+	OE.NO_THRU_TRAFFIC_PROTECTION is still operative, but only for the interfaces in the TOE that are
+	defined by the Base-PP and not the PP-Module.<h:p>This PP-Module also defines the following additional environmental objective:
+	</h:p>
 	  <SOEs>
-        <SOE name="OE.PLATFORM">
-          <description>The OS relies on being installed on trusted
-            hardware.</description>
-        </SOE>
-        <SOE name="OE.PROPER_USER">
-          <description> The user of the OS is not willfully negligent or hostile,
-            and uses the software within compliance of the applied enterprise security policy.
-            Standard user accounts are provisioned in accordance with the least privilege model.
-            Users requiring higher levels of access should have a separate account dedicated for
-            that use. </description>
-        </SOE>
-        <SOE name="OE.PROPER_ADMIN">
-          <description> The administrator of the OS is not careless, willfully
-            negligent or hostile, and administers the OS within compliance of the applied enterprise
-            security policy. </description>
+        <SOE name="OE.SECURED_PLATFORM">
+          <description>The operating system of the network device does not provide an interface or other capability that can
+be used to adversely affect the TOE or its own functionality.</description>
         </SOE>
       </SOEs>
 	</section>  <!-- OE Objectives -->

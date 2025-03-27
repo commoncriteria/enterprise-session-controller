@@ -911,14 +911,12 @@ The security objectives for the <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a>
 This section defines the security objectives that are to be addressed by the IT domain or by non-technical or procedural means.
 The assumptions identified in Section 3 are incorporated as security objectives for the environment.
       
-	  <dl><dt class="SOE defined" id="OE.PLATFORM">OE.PLATFORM</dt><dd><span class="description">The OS relies on being installed on trusted
-            hardware.</span></dd><dt class="SOE defined" id="OE.PROPER_USER">OE.PROPER_USER</dt><dd><span class="description"> The user of the OS is not willfully negligent or hostile,
-            and uses the software within compliance of the applied enterprise security policy.
-            Standard user accounts are provisioned in accordance with the least privilege model.
-            Users requiring higher levels of access should have a separate account dedicated for
-            that use. </span></dd><dt class="SOE defined" id="OE.PROPER_ADMIN">OE.PROPER_ADMIN</dt><dd><span class="description"> The administrator of the OS is not careless, willfully
-            negligent or hostile, and administers the OS within compliance of the applied enterprise
-            security policy. </span></dd></dl>
+	All objectives for the operational environment of the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> also apply to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.
+	<abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr>.NO_THRU_TRAFFIC_PROTECTION is still operative, but only for the interfaces in the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that are
+	defined by the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> and not the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.<p>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> also defines the following additional environmental objective:
+	</p>
+	  <dl><dt class="SOE defined" id="OE.SECURED_PLATFORM">OE.SECURED_PLATFORM</dt><dd><span class="description">The operating system of the network device does not provide an interface or other capability that can
+be used to adversely affect the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> or its own functionality.</span></dd></dl>
 	  
 
 	
@@ -1743,7 +1741,14 @@ components that affect the proper functioning of the <abbr class="dyn-abbr"><a h
 			Consistency of OE Objectives
 		</h3><p>The objectives for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s operational environment are consistent with the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> based on the
 following rationale: <table><caption><span class="ctr" data-myid="t-con-oe-objs" data-counter-type="ct-Table" id="t-con-oe-objs">Table <span class="counter">6</span></span>: Consistency of <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> Objectives (<abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> base)
-		</caption><tr><th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> Objective</th><th>Consistency Rationale</th></tr><tr><td><a href="#OE.PLATFORM">OE.PLATFORM</a></td><td></td></tr><tr><td><a href="#OE.PROPER_USER">OE.PROPER_USER</a></td><td></td></tr><tr><td><a href="#OE.PROPER_ADMIN">OE.PROPER_ADMIN</a></td><td></td></tr></table></p><h3 id="conreq-ND" class="indexable" data-level="3">6.1.4 
+		</caption><tr><th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> Objective</th><th>Consistency Rationale</th></tr><tr><td><a href="#OE.SECURED_PLATFORM">OE.SECURED_PLATFORM</a></td><td>
+		This objective expects the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to be configured in such a manner that the
+		underlying OS on which the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> runs cannot be used to alter the behavior of
+		the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>. This is consistent with the <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr>.NO_GENERAL_PURPOSE objective in
+		the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> that expects that general-purpose computing capability will be
+		prohibited by the OS. This ensures that <a href="#OE.SECURED_PLATFORM">OE.SECURED_PLATFORM</a> can be
+		satisfied by the operational environment.
+	  </td></tr></table></p><h3 id="conreq-ND" class="indexable" data-level="3">6.1.4 
 	Consistency of Requirements
       </h3>
       This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> identifies several <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> from the

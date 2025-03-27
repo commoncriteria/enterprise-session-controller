@@ -6,9 +6,6 @@
 * Error: Detected multiple elements with an id of 'fcs-tlsc-ext-1e1'.
 * Error: Detected multiple elements with an id of 'fcs-tlsc-ext-1e1'.
 * Error: Detected multiple elements with an id of 'atref-mandatory'.
-* Error: Detected dangling ref to 'OE.SECURED_PLATFORM'
-        for a ref.
-	/Module[1]""/sec:Security_Requirements[1]""/base-pp[1]""/con-mod[5]"This obje"/ref[1]""
 * Error: Detected dangling ref to 'fau-gen-1'
         for a ref.
 	/Module[1]""/sec:Security_Requirements[1]""/base-pp[1]""/con-mod[6]"This PP-M"/ref[1]""
