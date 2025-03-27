@@ -1195,7 +1195,7 @@ components that affect the proper functioning of the TOE</assignable>].
 		communications interfaces and protocols specified in this iteration of the requirement.</Guidance>
 		<Tests>In addition to the assurance activities specified in the NDcPP SD for FTP_ITC.1, the evaluator shall perform
 		the following tests:<testlist>
-		<test><h:p>For each combination of signaling protocol (SIP, H.323), method of securing that protocol (IPsec,
+		<test>For each combination of signaling protocol (SIP, H.323), method of securing that protocol (IPsec,
 		TLS), and method of securing transmitted media (SRTP, DTLS), the evaluator shall configure the TOE to
 		use the selected protocols through a trunk to a remote ESC. The evaluator shall register a VVoIP endpoint
 		to the TOE and a second VVoIP endpoint to the remote ESC. The evaluator shall place a packet sniffer on
@@ -1204,7 +1204,7 @@ components that affect the proper functioning of the TOE</assignable>].
 		TOE’s audit trail shows that the local VVoIP endpoint was configured as a client using the configured
 		protocol, that the traffic between the local VVoIP endpoint and the TOE is unintelligible, and that the
 		traffic between the TOE and the remote ESC is protected for both signaling and media communications
-		using the configured methods of securing them. </h:p><h:p>The evaluator shall repeat this test as many times as is necessary to demonstrate that each combination
+		using the configured methods of securing them.<h:p>The evaluator shall repeat this test as many times as is necessary to demonstrate that each combination
 		of securing the signaling protocol communications, securing the media protocol communications, and
 		securing the SIP trunk from the TOE to the remote ESC can be used as claimed. Note that in any case
 		where this results in double encryption of the traffic (e.g. SRTP-protected media tunneled through IPsec
@@ -1276,9 +1276,9 @@ components that affect the proper functioning of the TOE</assignable>].
 			</test><test>The evaluator shall check to ensure that VVoIP endpoint software/firmware updates are signed
 			and/or hashed by the manufacturer based on what is specified in the ST.</test>
 			<test>The evaluator shall check to ensure that only administrators of the TOE are permitted to initiate an update to a registered VVoIP endpoint.</test>
-			<test><h:p>The evaluator shall check to ensure that software updates are correctly performed by verifying
+			<test>The evaluator shall check to ensure that software updates are correctly performed by verifying
 			that the VVoIP endpoint is running the newly-obtained software version obtaining the newly updated
-			software version of the VVoIP-client device once update has complete.</h:p>
+			software version of the VVoIP-client device once update has complete.
 			<h:p>Note: In some cases the ESC will not receive an explicit message from the VVoIP endpoint stating that the
 			software update executed successfully. In addition, some software updates will not take effect until a
 			reboot of the VVoIP endpoint is initiated remotely by the ESC or manually/physically at the VVoIP endpoint
@@ -1293,11 +1293,11 @@ components that affect the proper functioning of the TOE</assignable>].
 			TOE should receive a message indicating that the download was completed. When the VVoIP endpoint
 			reboots, it is expected to report the new software/firmware version to the TOE so that the new version
 			will be displayed in the OA&amp;M application.</h:p></test>
-			<test><h:p>The evaluator shall check to ensure that the verification of software/firmware updates from the
+			<test>The evaluator shall check to ensure that the verification of software/firmware updates from the
 			TOE to the VVoIP endpoint fails using unauthorized data or improperly signed updates. The evaluator shall
 			also check those cases where hash verification mechanism and digital signature verification mechanism
 			fail.
-			</h:p><h:p>Note: this may require the evaluator to obtain a deliberately invalid software update from the device
+			<h:p>Note: this may require the evaluator to obtain a deliberately invalid software update from the device
 			manufacturer or developer access to the TOE so that a stored update can be manipulated directly in a
 			manner that will cause signature and/or hash verification to fail.</h:p></test>
 			</testlist></Tests>
@@ -1400,11 +1400,6 @@ auditable events based on the following attributes:<h:ol type="a">
 		</f-component>
 	</section>
 	</sel-sfrs>
-    
- 
-	
-
-
     </sec:Security_Requirements> <!-- Security Requirements  -->
 
 
