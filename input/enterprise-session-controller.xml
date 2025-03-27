@@ -594,96 +594,96 @@ following rationale: </con-op-en>
 		prohibited by the OS. This ensures that OE.SECURED_PLATFORM can be
 		satisfied by the operational environment.
 	  </con-mod>
-	  <con-mod ref='fau-gen-1'>This PP-Module modifies the Base-PP SFR to add specific auditable events that
+	  <con-mod ref='fau-gen-1-esc'>This PP-Module modifies the Base-PP SFR to add specific auditable events that
 		relate to ESC functionality.</con-mod>
-	  <con-mod ref='fau-stg-1'>This PP-Module mandates the inclusion of this optional SFR because it is
+	  <con-mod ref='fau-stg-1-esc'>This PP-Module mandates the inclusion of this optional SFR because it is
 		required to implement functionality required by this PP-Module.</con-mod>
 	  <con-mod ref='fcs-dtlss-ext-1'>This PP-Module refines this selection-based SFR to a more restrictive selection if claimed. The available selection item is one of the items in the original version of the SFR. This PP-Module also specifies an additional trigger for when this SFR must be claimed</con-mod>
-	  <con-mod ref='FCS_DTLSS_EXT.2'>This PP-Module conditionally mandates the inclusion of this optional SFR for any situation where DTLS is claimed, which makes this into a selection-based SFR.</con-mod>
-	  <con-mod ref='FCS_NTP_EXT.1'>This PP-Module requires NTP v4 to be selected, which is one of two selection
+	  <con-mod ref='fcs-dtlss-ext-2'>This PP-Module conditionally mandates the inclusion of this optional SFR for any situation where DTLS is claimed, which makes this into a selection-based SFR.</con-mod>
+	  <con-mod ref='fcs-ntp-ext-1'>This PP-Module requires NTP v4 to be selected, which is one of two selection
 		options defined in the original SFR in the Base-PP. This PP-Module also mandates the inclusion of this selection-based SFR because it is required to
 		implement the NTP functionality prompted by the PP-Module’s refinement to
 		FPT_STM_EXT.1.</con-mod>
-	  <con-mod ref='FCS_TLSC_EXT.1'>This PP-Module mandates the inclusion of this selection-based SFR because it
+	  <con-mod ref='fcs-tlsc-ext-1'>This PP-Module mandates the inclusion of this selection-based SFR because it
 		is required to implement the trusted communications required by the PPModule.</con-mod>
-	  <con-mod ref='FCS_TLSC_EXT.2'>This PP-Module mandates the inclusion of this optional SFR because it is
+	  <con-mod ref='fcs-tlsc-ext-2'>This PP-Module mandates the inclusion of this optional SFR because it is
 		required to implement the trusted communications required by the PPModule.
 		</con-mod>
-	  <con-mod ref='FCS_TLSS_EXT.1'>This PP-Module mandates the inclusion of this selection-based SFR because it
+	  <con-mod ref='fcs-tlss-ext-1'>This PP-Module mandates the inclusion of this selection-based SFR because it
 		is required to implement the trusted communications required by the PPModule.</con-mod>
-	  <con-mod ref='FCS_TLSS_EXT.2'>This PP-Module mandates the inclusion of this optional SFR because it is
+	  <con-mod ref='fcs-tlss-ext-2'>This PP-Module mandates the inclusion of this optional SFR because it is
 		required to implement the trusted communications required by the PPModule.</con-mod>
-	  <con-mod ref='FIA_X509_EXT.1/Rev'>This PP-Module mandates the inclusion of this selection-based SFR because
+	  <con-mod ref='fia-x509-ext-1'>This PP-Module mandates the inclusion of this selection-based SFR because
 		all TOEs that conform to this PP-Module will perform functions that require
 		certificate validation.</con-mod>
-	  <con-mod ref='FIA_X509_EXT.2'>This PP-Module modifies the Base-PP requirement by defining a mandatory
+	  <con-mod ref='fia-x509-ext-2'>This PP-Module modifies the Base-PP requirement by defining a mandatory
 		usage of X.509 certificate authentication and to require the TOE to implement
 		at least one trusted protocol that requires certificate validation.</con-mod>
-	  <con-mod ref='FIA_X509_EXT.3'>This PP-Module mandates the inclusion of this selection-based SFR because
+	  <con-mod ref='fia-x509-ext-3'>This PP-Module mandates the inclusion of this selection-based SFR because
 		all TOEs that conform to this PP-Module will perform functions that require
 		the TSF to have the ability to issue a certificate request to obtain its own X.509
 		certificate.</con-mod>
-	  <con-mod ref='FPT_STM_EXT.1'>This PP-Module modifies the Base-PP by requiring one of this SFR’s two
+	  <con-mod ref='fpt-stm-ext-1'>This PP-Module modifies the Base-PP by requiring one of this SFR’s two
 		original selection items to be chosen.</con-mod>
-	  <con-mod ref='FAU_GEN.1/CDR'>The PP-Module iterates an SFR defined in the Base-PP to require the TOE to
+	  <con-mod ref='pt-gen-ext-1-cdr'>The PP-Module iterates an SFR defined in the Base-PP to require the TOE to
 		generate a type of audit record that is specific to the functions defined in this
 		PP-Module.</con-mod>
-	  <con-mod ref='FAU_GEN.1/Log'>The PP-Module iterates an SFR defined in the Base-PP to require the TOE to
+	  <con-mod ref='fpt-gen-ext-1-log'>The PP-Module iterates an SFR defined in the Base-PP to require the TOE to
 		generate a type of audit record that is specific to the functions defined in this
 		PP-Module.</con-mod>
-	  <con-mod ref='FAU_SAR.1/Log'>This PP-Module requires the TOE to implement a mechanism for review of
+	  <con-mod ref='fau-sar-1-log'>This PP-Module requires the TOE to implement a mechanism for review of
 		system log records that are defined by this PP-Module in FAU_GEN.1/Log and
 		does not relate to the audit records required by the Base-PP.
 		</con-mod>
-	  <con-mod ref='FAU_STG.1/CDR'>The PP-Module iterates an SFR defined in the Base-PP by protecting audit data
+	  <con-mod ref='fau-stg-1-cdr'>The PP-Module iterates an SFR defined in the Base-PP by protecting audit data
 		required by this PP-Module in the same manner that the Base-PP defines for
 		its own audit records.</con-mod>
-	  <con-mod ref='FAU_VVR_EXT.1'>This SFR applies to recording voice and video call data, which is beyond the
+	  <con-mod ref='fau-vvr-ext-1'>This SFR applies to recording voice and video call data, which is beyond the
 		original scope of the Base-PP.</con-mod>
-	  <con-mod ref='FDP_IFC.1'>This SFR applies to the TOE’s implementation of an enterprise session
+	  <con-mod ref='fdp-ifc-1'>This SFR applies to the TOE’s implementation of an enterprise session
 		controller policy, which applies to the TOE’s through-traffic interfaces and is
 		therefore beyond the original scope of the Base-PP.</con-mod>
-	  <con-mod ref='FDP_IFF.1'>This SFR applies to the TOE’s implementation of an enterprise session
+	  <con-mod ref='fdp-iff-1'>This SFR applies to the TOE’s implementation of an enterprise session
 		controller policy, which applies to the TOE’s through-traffic interfaces and is
 		therefore beyond the original scope of the Base-PP.</con-mod>
-	  <con-mod ref='FDP_RIP.1'>This SFR applies to data wipe operations which is beyond the original scope of
+	  <con-mod ref='fdp-rip-1'>This SFR applies to data wipe operations which is beyond the original scope of
 		the Base-PP. The Base-PP defines FCS_CKM.4 for destruction of cryptographic
 		data but this PP-Module extends the requirements for data destruction to
 		entire disk storage locations.
 		</con-mod>
-	  <con-mod ref='FIA_UAU.2/TC'>This SFR applies to authentication of external entities on the TOE’s throughtraffic interfaces and is therefore beyond the original scope of the Base-PP.</con-mod>
-	  <con-mod ref='FIA_UAU.2/VVoIP'></con-mod>
+	  <con-mod ref='fia-uau-2-tc'>This SFR applies to authentication of external entities on the TOE’s throughtraffic interfaces and is therefore beyond the original scope of the Base-PP.</con-mod>
+	  <con-mod ref='fia-uau-2-vvoip'></con-mod>
 	  <con-mod ref=''>This SFR applies to authentication of external entities on the TOE’s throughtraffic interfaces and is therefore beyond the original scope of the Base-PP.</con-mod>
-	  <con-mod ref='FMT_CFG_EXT.1'>This SFR requires the TOE to implement a secure default configuration. There
+	  <con-mod ref='fmt-cfg-ext-1'>This SFR requires the TOE to implement a secure default configuration. There
 		is no inconsistency here with the Base-PP because the Base-PP’s functionality
 		is not dependent on a particular default configuration.
 		</con-mod>
-	  <con-mod ref='FMT_SMF.1/ESC'>This SFR requires the TOE to implement management functions that are
+	  <con-mod ref='fmt-smf-1-ecs'>This SFR requires the TOE to implement management functions that are
 specific to ESC functionality. This does not conflict with the Base-PP because
 these are all additional functions that go beyond what the Base-PP requires.</con-mod>
-	  <con-mod ref='FPT_FLS.1'>This SFR requires the TOE to take some specific action in the event of self-test
+	  <con-mod ref='fpt-fls-1'>This SFR requires the TOE to take some specific action in the event of self-test
 failures or other hardware failures. This extends the functionality required by
 the Base-PP because the Base-PP defines the self-tests that the TOE must
 perform but does not define specific requirements for the TOE’s behavior
 when a self-test fails.</con-mod>
-	  <con-mod ref='FTP_ITC.1/ESC'>This SFR requires the TOE to implement trusted channels for VVoIP and SIP
+	  <con-mod ref='ftp-itc.1-esc'>This SFR requires the TOE to implement trusted channels for VVoIP and SIP
 trunking communications. This is an iteration of the same Base-PP SFR that
 adds new external interfaces beyond the scope of the Base-PP.
 </con-mod>
-	  <con-mod ref='FPT_TUD_EXT.1/VVoIP'>This PP-Module extends the functionality required by the Base-PP by
+	  <con-mod ref='fpt-tud-ext-1-vvoip'>This PP-Module extends the functionality required by the Base-PP by
 optionally allowing the TSF to perform software update activities for
 connected VVoIP endpoints and not just for the TOE itself.</con-mod>
-	  <con-mod ref='FAU_SEL.1'>This PP-Module optionally allows a conformant TOE to claim the ability to
+	  <con-mod ref='fau-sel-1'>This PP-Module optionally allows a conformant TOE to claim the ability to
 suppress the generation of audit events based on certain factors. This does
 not conflict with the Base-PP because if the administrators desires all required
 auditable events to be audited, they can choose to disable this function.
 </con-mod>
-	  <con-mod ref='FAU_STG.1/VVR'>This PP-Module optionally allows a conformant TOE to claim the ability to
+	  <con-mod ref='fau-stg-1-vvr'>This PP-Module optionally allows a conformant TOE to claim the ability to
 securely store voice/video recordings. This does not conflict with the Base-PP
 because the Base-PP already has the ability to define secured storage (e.g.
 through FAU_STG.1) so there is no expectation of availability that is being
 violated if this is claimed</con-mod>
-	  <con-mod ref='FAU_VVR_EXT.2'>This PP-Module optionally allows a conformant TOE to claim the ability to
+	  <con-mod ref='fau-vvr-ext-2'>This PP-Module optionally allows a conformant TOE to claim the ability to
 generate and retain voice/video recordings of calls. This does not conflict with
 the Base-PP because the Base-PP already defines an audit mechanism via
 FAU_GEN.1 and also does not define any requirements that would prevent
