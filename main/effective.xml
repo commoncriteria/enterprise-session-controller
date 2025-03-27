@@ -464,8 +464,18 @@ baseline of capabilities that all conformant ESCs must provide.
         <OSP name="P.SECURED_PLATFORM">
           <description>Administrators in the organization ensure that general purpose computers use secure operating
 systems and are configured in accordance with applicable security standards.</description>
-			<objective-refer ref="XXX">
-            <rationale>YYYY</rationale>
+			<objective-refer ref="OE.SECURED_PLATFORM">
+            <rationale>In order to ensure that the ESC is not subject
+to compromise, it is important for the OS that
+it is installed on to be secure in terms of
+closing unnecessary interfaces and providing
+appropriate security functionality. However,
+it is necessary for this PP-Module to make this
+an organizational policy in the scenario where the TOE uses a commercial third-party OS
+because the ESC vendor is not responsible for
+providing the OS and therefore has no control
+over its inherent functionality or
+administrative configuration.</rationale>
           </objective-refer>
         </OSP>
       </OSPs>
