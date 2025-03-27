@@ -555,7 +555,7 @@
         </div>
         <div class="comp" id="FCS_DTLSS_EXT.2">
             <h4>FCS_DTLSS_EXT.2 DTLS Server Support for Mutual Authentication</h4>
-            This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is optional in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is selection-based in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because any <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> use of DTLS requires mutually-authenticated DTLS to be implemented. Therefore, this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> must be claimed if &lsquo;DTLS&rsquo; is selected in FTP_ITC.1.1/<abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>. 
+            This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is optional in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is selection-based in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because any <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> use of DTLS requires mutually-authenticated DTLS to be implemented. Therefore, this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> must be claimed if &lsquo;DTLS&rsquo; is selected in FTP_ITC.1.1/<abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>. There is no change to the EAs specified for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> SD. The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> modifies this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> to make its inclusion selection-based rather than optional, but there is no change to how the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is to be implemented. 
         </div>
         <div class="comp" id="FCS_NTP_EXT.1">
             <h4>FCS_NTP_EXT.1 NTP Protocol</h4>
@@ -583,11 +583,7 @@
                     <a href="#FCS_TLSC_EXT.1.1" class="abbr">FCS_TLSC_EXT.1.1</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement TLS 1.2 (RFC 5246) and reject all other TLS and SSL versions. The TLS implementation will support the following ciphersuites: [<b>selection</b>: <span class="selectable-content" id="_s_2">select supported ciphersuites from List 1 
-                        <p>
-                            in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr>
-                        </p>
-                    </span>] and no other ciphersuites. 
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement TLS 1.2 (RFC 5246) and reject all other TLS and SSL versions. The TLS implementation will support the following ciphersuites: [<b>selection</b>: <span class="selectable-content" id="_s_2">select supported ciphersuites from List 1 <b>in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr></b></span>] and no other ciphersuites. 
                     <div class="appnote">
                         <span class="note-header">Application Note: </span><span class="note"><i>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is selection-based in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is mandated by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because Transport Layer Security (TLS) is used to secure <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications. Additionally, this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> mandates the use of TLS 1.2.</i></span>
                     </div>
@@ -596,7 +592,13 @@
         </div>
         <div class="comp" id="FCS_TLSC_EXT.2">
             <h4>FCS_TLSC_EXT.2 TLS Client Protocol Mutual Authentication</h4>
-            This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is optional in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is mandated by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications require mutually-authenticated TLS. There is no change to the EAs specified for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> SD. The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> modifies this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> to make its inclusion mandatory rather than optional, but there is no change to how the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is to be implemented. 
+            This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is optional in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is mandated by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications require mutually-authenticated TLS. 
+            <div class="element">
+                <div class="reqid" id="FCS_TLSC_EXT.2.1">
+                    <a href="#FCS_TLSC_EXT.2.1" class="abbr">FCS_TLSC_EXT.2.1</a>
+                </div>
+                <div class="reqdesc"></div>
+            </div>
         </div>
         <div class="comp" id="FCS_TLSS_EXT.1">
             <h4>FCS_TLSS_EXT.1 TLS Server Protocol without Mutual Authentication</h4>

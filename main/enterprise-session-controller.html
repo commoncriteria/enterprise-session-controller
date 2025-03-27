@@ -990,7 +990,7 @@ connected (if available).</li></ul></td></tr><tr data-sortkey="FIA_UAU.2/VVoIP">
 	to <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> (if available).</li></ul></td></tr><tr data-sortkey="FMT_SMF.1/ESC"><td rowspan="3"><a href="#FMT_SMF.1/ESC">FMT_SMF.1/ESC</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FMT_SMF.1/ESC#"><td></td></tr><tr data-sortkey="FMT_SMF.1/ESC.1"><td>Enabling/disabling <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint/device features</td><td><ul><li>ID of Administrator attempting to enable/disable service or feature on <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> or on external registered device;</li><li>IP address of device where enabling/disabling of services or features was initiated;</li><li>The feature or service that was enabled/disabled.</li></ul></td></tr><tr data-sortkey="FMT_SMF.1/ESC.2"><td>Modification of <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Call Detail Records (<abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr>)</td><td><ul><li>ID of Administrator attempting to query or modify database;</li><li>IP address of device where database query was initiated;</li><li>The exact SQL command/instruction that was executed.</li></ul></td></tr></table>
 	  <h4 id="m-fau" class="indexable" data-level="4">5.1.1.1 Security Audit (FAU)</h4>
 
-	  
+
 			<div class="comp" id="FAU_GEN.1"><h4>FAU_GEN.1 Audit Data Generation (Audit Log)</h4><a href="#FAU_GEN.1">FAU_GEN.1</a>.1 is refined to include the following auditable events in addition to what is defined in the
 <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>.
 		<div class="appnote"><span class="note-header">Application
@@ -1038,7 +1038,14 @@ implemented.</div></div></div>
 			<div class="comp" id="FCS_DTLSS_EXT.2"><h4>FCS_DTLSS_EXT.2 DTLS Server Support for Mutual Authentication</h4>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is optional in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is selection-based in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because any <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> use of DTLS
 			requires mutually-authenticated DTLS to be implemented. Therefore, this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> must be claimed if ‘DTLS’ is
 			selected in FTP_ITC.1.1/<abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>.
-			</div>
+			There is no change to the EAs specified for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> SD. The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> modifies this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> to
+			make its inclusion selection-based rather than optional, but there is no change to how the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is to be
+			implemented.
+			
+			<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FCS_DTLSS_EXT.2">FCS_DTLSS_EXT.2</a></div>There is no change to the EAs specified for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> SD. The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> modifies this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> to
+			make its inclusion selection-based rather than optional, but there is no change to how the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is to be
+			implemented.
+			</div></div></div>
 			<div class="comp" id="FCS_NTP_EXT.1"><h4>FCS_NTP_EXT.1 NTP Protocol</h4>
 			<div class="element"><div class="reqid" id="FCS_NTP_EXT.1.1"><a href="#FCS_NTP_EXT.1.1" class="abbr">FCS_NTP_EXT.1.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall use only the following NTP version: NTP v4 (RFC 5905).<div class="appnote"><span class="note-header">Application
       Note:
@@ -1051,7 +1058,7 @@ implemented.</div></div></div>
 			<div class="comp" id="FCS_TLSC_EXT.1"><h4>FCS_TLSC_EXT.1 TLS Client Protocol without Mutual Authentication</h4>
 			<div class="element"><div class="reqid" id="FCS_TLSC_EXT.1.1"><a href="#FCS_TLSC_EXT.1.1" class="abbr">FCS_TLSC_EXT.1.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement TLS 1.2 (RFC 5246) and reject all other TLS and SSL
 				versions. The TLS implementation will support the following ciphersuites:
-				[<b>selection</b>: <span class="selectable-content" id="_s_2">select supported ciphersuites from List 1 <p>in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr></p></span>] and no other ciphersuites.
+				[<b>selection</b>: <span class="selectable-content" id="_s_2">select supported ciphersuites from List 1 <b>in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr></b></span>] and no other ciphersuites.
 				<div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note"><i>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is selection-based in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is mandated by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>
@@ -1060,13 +1067,11 @@ implemented.</div></div></div>
 				make its inclusion mandatory rather than conditional, but there is no change to how the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is to be
 				implemented.</div></div></div>
 			<div class="comp" id="FCS_TLSC_EXT.2"><h4>FCS_TLSC_EXT.2 TLS Client Protocol Mutual Authentication</h4>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is optional in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is mandated by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323
-				communications require mutually-authenticated TLS.
-				There is no change to the EAs specified for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> SD. The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> modifies this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> to
-make its inclusion mandatory rather than optional, but there is no change to how the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is to be
-implemented.
+			communications require mutually-authenticated TLS.
+			<div class="element"><div class="reqid" id="FCS_TLSC_EXT.2.1"><a href="#FCS_TLSC_EXT.2.1" class="abbr">FCS_TLSC_EXT.2.1</a></div><div class="reqdesc"></div></div>
 				<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FCS_TLSC_EXT.2">FCS_TLSC_EXT.2</a></div>There is no change to the EAs specified for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> SD. The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> modifies this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> to
-make its inclusion mandatory rather than optional, but there is no change to how the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is to be
-implemented.</div></div></div>
+				make its inclusion mandatory rather than optional, but there is no change to how the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is to be
+				implemented.</div></div></div>
 
 
 				<div class="comp" id="FCS_TLSS_EXT.1"><h4>FCS_TLSS_EXT.1 TLS Server Protocol without Mutual Authentication</h4>
