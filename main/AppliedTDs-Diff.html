@@ -521,6 +521,7 @@
                         </p>
                     </i></span>
             </div>
+             The evaluator shall complete the EA for <a href="#FAU_GEN.1">FAU_GEN.1</a> as described in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> SD for the auditable events defined above in addition to the applicable auditable events that are defined in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr>. The evaluator shall also ensure that the administrative actions defined for this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> are appropriately audited. 
         </div>
         <div class="comp" id="FAU_STG.1">
             <h4>FAU_STG.1 Protected Audit Trail Storage</h4>
@@ -528,6 +529,7 @@
             <div class="appnote">
                 <span class="note-header">Application Note: </span><span class="note"><i>Both the &ldquo;audit data&rdquo; (<a href="#FAU_GEN.1">FAU_GEN.1</a>) and &ldquo;system log&rdquo; data (<a href="#FAU_GEN.1/Log">FAU_GEN.1/Log</a>) are expected to be protected from unauthorized access. This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> applies to all data related to the behavior of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> regardless of how it is categorized or where it is stored.</i> </span>
             </div>
+             There is no change to the EAs specified for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> SD. The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> modifies this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> to make its inclusion mandatory rather than optional, but there is no change to how the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is to be implemented.
         </div>
         <h4 id="m-fcs" class="indexable" data-level="4">5.1.1.2 Cryptographic Support (FCS)</h4>
         <div class="comp" id="FCS_DTLSS_EXT.1">
@@ -537,7 +539,7 @@
                     <a href="#FCS_DTLSS_EXT.1.1" class="abbr">FCS_DTLSS_EXT.1.1</a>
                 </div>
                 <div class="reqdesc">
-                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement DTLS 1.2 (RFC 6347)) supporting the following ciphersuites: [<b>selection</b>: <span class="selectable-content" id="_s_1">select supported ciphersuites from List 1<b> in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr></b></span>]and no other ciphersuites. 
+                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement DTLS 1.2 (RFC 6347) supporting the following ciphersuites: [<b>selection</b>: <span class="selectable-content" id="_s_1">select supported ciphersuites from List 1<b> in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr></b></span>]and no other ciphersuites. 
                     <div class="appnote">
                         <span class="note-header">Application Note: </span><span class="note"><i>
                                 <p>
@@ -581,7 +583,7 @@
                     <a href="#FCS_TLSC_EXT.1.1" class="abbr">FCS_TLSC_EXT.1.1</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement TLS 1.2 (RFC 5246)) and reject all other TLS and SSL versions. The TLS implementation will support the following ciphersuites: [<b>selection</b>: <span class="selectable-content" id="_s_2">select supported ciphersuites from List 1 
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement TLS 1.2 (RFC 5246) and reject all other TLS and SSL versions. The TLS implementation will support the following ciphersuites: [<b>selection</b>: <span class="selectable-content" id="_s_2">select supported ciphersuites from List 1 
                         <p>
                             in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr>
                         </p>
@@ -603,7 +605,7 @@
                     <a href="#FCS_TLSS_EXT.1.1" class="abbr">FCS_TLSS_EXT.1.1</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement TLS 1.2 (RFC 5246)) and reject all other TLS and SSL versions. The TLS implementation will support the following ciphersuites: [<b>selection</b>: <span class="selectable-content" id="_s_3">select supported ciphersuites from List 1 <b>in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr></b></span>] and no other ciphersuites.
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement TLS 1.2 (RFC 5246) and reject all other TLS and SSL versions. The TLS implementation will support the following ciphersuites: [<b>selection</b>: <span class="selectable-content" id="_s_3">select supported ciphersuites from List 1 <b>in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr></b></span>] and no other ciphersuites.
                     <div class="appnote">
                         <span class="note-header">Application Note: </span><span class="note"><i>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is selection-based in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is mandated by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because TLS is used to secure <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications. Additionally, this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> mandates the use of TLS 1.2.</i></span>
                     </div>

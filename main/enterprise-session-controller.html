@@ -989,10 +989,10 @@ connected (if available).</li></ul></td></tr><tr data-sortkey="FIA_UAU.2/VVoIP">
 	</li><li>IP address of <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint that attempt to register
 	to <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> (if available).</li></ul></td></tr><tr data-sortkey="FMT_SMF.1/ESC"><td rowspan="3"><a href="#FMT_SMF.1/ESC">FMT_SMF.1/ESC</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FMT_SMF.1/ESC#"><td></td></tr><tr data-sortkey="FMT_SMF.1/ESC.1"><td>Enabling/disabling <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint/device features</td><td><ul><li>ID of Administrator attempting to enable/disable service or feature on <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> or on external registered device;</li><li>IP address of device where enabling/disabling of services or features was initiated;</li><li>The feature or service that was enabled/disabled.</li></ul></td></tr><tr data-sortkey="FMT_SMF.1/ESC.2"><td>Modification of <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Call Detail Records (<abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr>)</td><td><ul><li>ID of Administrator attempting to query or modify database;</li><li>IP address of device where database query was initiated;</li><li>The exact SQL command/instruction that was executed.</li></ul></td></tr></table>
 	  <h4 id="m-fau" class="indexable" data-level="4">5.1.1.1 Security Audit (FAU)</h4>
+
+	  
 			<div class="comp" id="FAU_GEN.1"><h4>FAU_GEN.1 Audit Data Generation (Audit Log)</h4><a href="#FAU_GEN.1">FAU_GEN.1</a>.1 is refined to include the following auditable events in addition to what is defined in the
 <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>.
-
-	    
 		<div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note"><i><p>The <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> version of the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> requires “all administrative actions” to be audited.
@@ -1000,8 +1000,13 @@ connected (if available).</li></ul></td></tr><tr data-sortkey="FIA_UAU.2/VVoIP">
 		administrative actions that support the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> defined in <a href="#FMT_SMF.1/ESC">FMT_SMF.1/ESC</a>.</p><p><a href="#FAU_VVR_EXT.2">FAU_VVR_EXT.2</a> is a selection-based requirement. Auditing for this requirement
 		must be performed if and only if the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> claims it</p>
 		</i></span></div>
+		The evaluator shall complete the EA for <a href="#FAU_GEN.1">FAU_GEN.1</a> as described in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> SD for the auditable events
+defined above in addition to the applicable auditable events that are defined in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr>. The evaluator
+shall also ensure that the administrative actions defined for this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> are appropriately audited. 
 
-			</div>
+			<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FAU_GEN.1">FAU_GEN.1</a></div>The evaluator shall complete the EA for <a href="#FAU_GEN.1">FAU_GEN.1</a> as described in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> SD for the auditable events
+defined above in addition to the applicable auditable events that are defined in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr>. The evaluator
+shall also ensure that the administrative actions defined for this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> are appropriately audited. </div></div></div>
 			<div class="comp" id="FAU_STG.1"><h4>FAU_STG.1 Protected Audit Trail Storage</h4>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is optional in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is mandated by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because the <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> is expected to
 	maintain audit data internal to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> which must be protected from unauthorized access. 
 	<div class="appnote"><span class="note-header">Application
@@ -1009,12 +1014,17 @@ connected (if available).</li></ul></td></tr><tr data-sortkey="FIA_UAU.2/VVoIP">
     </span><span class="note"><i>Both the “audit data” (<a href="#FAU_GEN.1">FAU_GEN.1</a>) and “system log” data (<a href="#FAU_GEN.1/Log">FAU_GEN.1/Log</a>) are
 	expected to be protected from unauthorized access. This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> applies to all data
 	related to the behavior of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> regardless of how it is categorized or where it
-	is stored.</i> </span></div></div>
+	is stored.</i> </span></div>
+	There is no change to the EAs specified for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> SD. The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> modifies this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> to
+make its inclusion mandatory rather than optional, but there is no change to how the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is to be
+implemented.<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FAU_STG.1">FAU_STG.1</a></div>There is no change to the EAs specified for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> SD. The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> modifies this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> to
+make its inclusion mandatory rather than optional, but there is no change to how the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is to be
+implemented.</div></div></div>
 	
 	<h4 id="m-fcs" class="indexable" data-level="4">5.1.1.2 Cryptographic Support (FCS)</h4>
 			<div class="comp" id="FCS_DTLSS_EXT.1"><h4>FCS_DTLSS_EXT.1 DTLS Server Support without Mutual Authentication</h4>
 			<div class="element"><div class="reqid" id="FCS_DTLSS_EXT.1.1"><a href="#FCS_DTLSS_EXT.1.1" class="abbr">FCS_DTLSS_EXT.1.1</a></div><div class="reqdesc">
-				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement DTLS 1.2 (RFC 6347)) supporting the following ciphersuites: [<b>selection</b>: <span class="selectable-content" id="_s_1">select supported ciphersuites from List 1<b> in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr></b></span>]and no other ciphersuites.
+				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement DTLS 1.2 (RFC 6347) supporting the following ciphersuites: [<b>selection</b>: <span class="selectable-content" id="_s_1">select supported ciphersuites from List 1<b> in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr></b></span>]and no other ciphersuites.
 				<div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note"><i><p>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is selection-based in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> and remains selection-based in this PPModule because DTLS may be used to secure transmitted media. In this case, it
@@ -1039,7 +1049,7 @@ connected (if available).</li></ul></td></tr><tr data-sortkey="FIA_UAU.2/VVoIP">
 			make its inclusion selection-based rather than optional, but there is no change to how the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is to be
 			implemented.</div></div></div>
 			<div class="comp" id="FCS_TLSC_EXT.1"><h4>FCS_TLSC_EXT.1 TLS Client Protocol without Mutual Authentication</h4>
-			<div class="element"><div class="reqid" id="FCS_TLSC_EXT.1.1"><a href="#FCS_TLSC_EXT.1.1" class="abbr">FCS_TLSC_EXT.1.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement TLS 1.2 (RFC 5246)) and reject all other TLS and SSL
+			<div class="element"><div class="reqid" id="FCS_TLSC_EXT.1.1"><a href="#FCS_TLSC_EXT.1.1" class="abbr">FCS_TLSC_EXT.1.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement TLS 1.2 (RFC 5246) and reject all other TLS and SSL
 				versions. The TLS implementation will support the following ciphersuites:
 				[<b>selection</b>: <span class="selectable-content" id="_s_2">select supported ciphersuites from List 1 <p>in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr></p></span>] and no other ciphersuites.
 				<div class="appnote"><span class="note-header">Application
@@ -1060,7 +1070,7 @@ implemented.</div></div></div>
 
 
 				<div class="comp" id="FCS_TLSS_EXT.1"><h4>FCS_TLSS_EXT.1 TLS Server Protocol without Mutual Authentication</h4>
-				<div class="element"><div class="reqid" id="FCS_TLSS_EXT.1.1"><a href="#FCS_TLSS_EXT.1.1" class="abbr">FCS_TLSS_EXT.1.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement TLS 1.2 (RFC 5246)) and reject all other TLS and SSL
+				<div class="element"><div class="reqid" id="FCS_TLSS_EXT.1.1"><a href="#FCS_TLSS_EXT.1.1" class="abbr">FCS_TLSS_EXT.1.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement TLS 1.2 (RFC 5246) and reject all other TLS and SSL
 				versions. The TLS implementation will support the following ciphersuites: [<b>selection</b>: <span class="selectable-content" id="_s_3">select supported ciphersuites from List 1 <b>in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr></b></span>] and no other
 				ciphersuites.<div class="appnote"><span class="note-header">Application
       Note:
