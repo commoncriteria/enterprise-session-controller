@@ -51,4 +51,3 @@
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/input/enterprise-session-controller.xml:1458:12: error: element "obj-sfrs" not allowed yet; missing required element "sel-sfrs"
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/input/enterprise-session-controller.xml:1482:30: error: value of attribute "role" is invalid; must be equal to "Application", "Developer", "application" or "developer"
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/input/enterprise-session-controller.xml:1546:12: error: element "sel-sfrs" not allowed here; expected the element end-tag
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/input/enterprise-session-controller.xml:1607:105: error: value of attribute "cc-id" is invalid; must be a string matching the regular expression "f[a-z]{2}_[a-z0-9^]{2,10}(_ext)?\.[0-9]"
