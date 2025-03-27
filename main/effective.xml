@@ -672,13 +672,14 @@ the generation of media recordings such as unobservability of user actions.</con
 
 
 	  <modified-sfrs>
+	  <audit-table table="mandatory" id="mandatory-audit-events">
+	      <h:br/><h:b><ctr ctr-type="Table" pre="Table " id="atref-mandatory">: Audit Log Events</ctr></h:b>
+	    </audit-table>
 	  <section title="Security Audit (FAU)" id="m-fau">
 			<f-component name="Audit Data Generation (Audit Log)" cc-id="fau_gen.1" id="fau-gen-1-esc">FAU_GEN.1.1 is refined to include the following auditable events in addition to what is defined in the
 Base-PP.
 
-	    <audit-table table="mandatory" id="mandatory-audit-events">
-	      <h:br/><h:b><ctr ctr-type="Table" pre="Table " id="atref-mandatory">: Audit Log Events</ctr></h:b>
-	    </audit-table>
+	    
 		<note role="application"><h:i><h:p>The Base-PP version of the SFR requires “all administrative actions” to be audited.
 		When the TOE includes this PP-Module, it is expected that this will also include the
 		administrative actions that support the PP-Module defined in FMT_SMF.1/ESC.</h:p><h:p>FAU_VVR_EXT.2 is a selection-based requirement. Auditing for this requirement
@@ -1440,6 +1441,9 @@ components that affect the proper functioning of the TOE</assignable>].
 	</obj-sfrs>
 
     <impl-dep-sfrs>
+	<section title="Auditable Events for Implementation-Dependent SFRs">
+    		<audit-table id="at-impl-dep" table="impl-dep"/>
+    	</section>
 		<section title="Protection of the TSF (FPT)" id="imp-fpt">
 		<f-component name="Trusted Update (VVoIP Endpoints)" cc-id="fpt_tud_ext.1" id="fpt-tud-ext-1-vvoip" iteration="VVoIP">
 			<f-element id="fpt-tud-ext-1e1-vvoip">
@@ -1522,6 +1526,9 @@ components that affect the proper functioning of the TOE</assignable>].
 
 	</impl-dep-sfrs>
 	<sel-sfrs>
+	<section id="sec-sel-audit-table" title="Auditable Events for Selectable SFRs">
+        <audit-table id="at-selectable" table="selectable"/>
+      </section>
 	<section title="Security Audit (FAU)" id="sel-fau">
 		<f-component name="Selective Audit" cc-id="fau_sel.1" id="fau-sel-1">
 		<f-element id="fau-sel-1e1">
