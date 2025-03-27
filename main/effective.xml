@@ -421,6 +421,7 @@ baseline of capabilities that all conformant ESCs must provide.
 	<!-- OSPs refer to Objectives or OE Objectives in standard approach documents. -->
 	<!-- In direct rationale PPs, they should refer to OE Objectives -->
     <section title="Organizational Security Policies" id="sec-OSPs">
+	The following organizational security policy is applicable to the TOE if the TOE is deployed on an independent, commercially-available operating system:
       <OSPs>
         <OSP name="P.SECURED_PLATFORM">
           <description>Administrators in the organization ensure that general purpose computers use secure operating
@@ -446,12 +447,10 @@ systems and are configured in accordance with applicable security standards.</de
 	<!-- This section is omitted for direct rationale documents -->
     <section title="Security Objectives for the TOE" id="SecurityObjectivesTOE">
       <SOs>
-        <SO name="O.ACCOUNTABILITY">
-          <description> Conformant OSes ensure that information exists that allows
-            administrators to discover unintentional issues with the configuration and operation of
-            the operating system and discover its cause.  Gathering event information and immediately
-            transmitting it to another system can also enable incident response in the event
-            of system compromise.</description>
+        <SO name="O.AUTHORIZED_ADMINISTRATION">
+          <description>All network devices are expected to provide services that allow the security functionality of the device
+to be managed. The ESC, as a specific type of network device, has a refined set of management
+functions to address its specialized behavior.</description>
           <addressed-by>FAU_GEN.1</addressed-by><rationale>'cause FAU_GEN.1 is awesome</rationale>
           <addressed-by>FTP_ITC_EXT.1</addressed-by><rationale>Cause FTP reasons </rationale>
         </SO>
