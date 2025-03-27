@@ -1375,7 +1375,7 @@ auditable events based on the following attributes:<h:ol type='a'>
 		and directs the reader to ensure that this is enabled in the TOE’s evaluated configuration.</Guidance>
 		<Tests>The evaluator shall perform the following tests: <testlist><test>The evaluator shall verify that the TSF provides no interface to access voice/video recording data
 		stored on the TOE except for legitimate access from an authorized administrator through the Operations,
-		Administration, and Management (OA&M) interface.</test><test>Both B2B subscriber calls and voice/video conferencing calls may be stored on the TOE based on
+		Administration, and Management (OA&amp;M) interface.</test><test>Both B2B subscriber calls and voice/video conferencing calls may be stored on the TOE based on
 		safeguards (i.e. secured or unsecured) for which they were recorded. The evaluator shall identify the
 		location of stored voice and video records and verify that this data is stored in an encrypted format for all
 		types of voice and video calls that can be processed by the TOE. If this functionality is configurable, the
