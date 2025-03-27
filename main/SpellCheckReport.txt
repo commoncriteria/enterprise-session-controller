@@ -32,7 +32,6 @@ output/enterprise-session-controller-release-linkable.html: SS7
 output/enterprise-session-controller-release-linkable.html: Sanitization
 output/enterprise-session-controller-release-linkable.html: Softphones
 output/enterprise-session-controller-release-linkable.html: T1
-output/enterprise-session-controller-release-linkable.html: TODO
 output/enterprise-session-controller-release-linkable.html: TSFmediated
 output/enterprise-session-controller-release-linkable.html: TST
 output/enterprise-session-controller-release-linkable.html: Telepresence
@@ -42,6 +41,7 @@ output/enterprise-session-controller-release-linkable.html: callee
 output/enterprise-session-controller-release-linkable.html: callees
 output/enterprise-session-controller-release-linkable.html: callprocessing
 output/enterprise-session-controller-release-linkable.html: commercialoff
+output/enterprise-session-controller-release-linkable.html: deallocation
 output/enterprise-session-controller-release-linkable.html: denylist
 output/enterprise-session-controller-release-linkable.html: dialplan
 output/enterprise-session-controller-release-linkable.html: duplicative
@@ -91,6 +91,7 @@ output/enterprise-session-controller-release.html: callee
 output/enterprise-session-controller-release.html: callees
 output/enterprise-session-controller-release.html: callprocessing
 output/enterprise-session-controller-release.html: commercialoff
+output/enterprise-session-controller-release.html: deallocation
 output/enterprise-session-controller-release.html: denylist
 output/enterprise-session-controller-release.html: dialplan
 output/enterprise-session-controller-release.html: duplicative
@@ -133,7 +134,6 @@ output/enterprise-session-controller-sd.html: RLC
 output/enterprise-session-controller-sd.html: SRTP
 output/enterprise-session-controller-sd.html: SS7
 output/enterprise-session-controller-sd.html: T1
-output/enterprise-session-controller-sd.html: TODO
 output/enterprise-session-controller-sd.html: TSFmediated
 output/enterprise-session-controller-sd.html: TST
 output/enterprise-session-controller-sd.html: callee
@@ -183,7 +183,6 @@ output/enterprise-session-controller.html: SS7
 output/enterprise-session-controller.html: Sanitization’
 output/enterprise-session-controller.html: Softphones
 output/enterprise-session-controller.html: T1
-output/enterprise-session-controller.html: TODO
 output/enterprise-session-controller.html: TSFmediated
 output/enterprise-session-controller.html: TST
 output/enterprise-session-controller.html: Telepresence
@@ -194,6 +193,7 @@ output/enterprise-session-controller.html: callees
 output/enterprise-session-controller.html: callprocessing
 output/enterprise-session-controller.html: commercialoff
 output/enterprise-session-controller.html: complete’
+output/enterprise-session-controller.html: deallocation
 output/enterprise-session-controller.html: denylist
 output/enterprise-session-controller.html: dialplan
 output/enterprise-session-controller.html: download’

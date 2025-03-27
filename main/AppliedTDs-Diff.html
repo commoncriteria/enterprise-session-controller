@@ -703,7 +703,7 @@
                             <li>call release cause, if applicable (i.e. reason for termination of call)</li>
                             <li>fault condition(s), if applicable</li>
                         </lu>
-                    </b>]
+                    </b>].
                     <div class="appnote">
                         <span class="note-header">Application Note: </span><span class="note"><i>The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> should be uniquely identified as part of the <abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr> so that there is attribution of individual CDRs in environments where multiple ESCs are feeding CDRs to a centralized server.</i></span>
                     </div>
@@ -729,7 +729,7 @@
                     <ol type="a">
                         <li>Date and time of the event, type of event, subject identity (if applicable), and the outcome (success or failure of the event); and </li>
                         <li>
-                            For each audit event type, based on the auditable event definitions of the functional components included in the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>/<abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>, event details described in System Log Events table].
+                            For each audit event type, based on the auditable event definitions of the functional components included in the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>/<abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>, [<i>event details described in System Log Events table</i>].
                         </li>
                     </ol>
                      <b><span class="ctr" data-myid="atref-mandatory" data-counter-type="ct-Table" id="atref-mandatory">Table <span class="counter">3</span>: System Log Events</span></b> 
@@ -886,6 +886,7 @@
                     <a href="#FDP_RIP.1.1" class="abbr">FDP_RIP.1.1</a>
                 </div>
                 <div class="reqdesc">
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall ensure that any previous information content of a resource is made unavailable upon the [<b>selection</b>: <span class="selectable-content" id="_s_25">allocation of the resource to</span>, <span class="selectable-content" id="_s_26">deallocation of the resource from</span>] the following objects: [<b>assignment</b>: <span class="assignable-content">disk storage location(s) erased by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> during factory reset or other wipe operation</span>].
                     <div class="appnote">
                         <span class="note-header">Application Note: </span><span class="note"><i>The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is expected to follow guidelines for [NIST SP 800-88], &lsquo;Disk Storage Sanitization&rsquo; as the method for ensuring that residual information is cleared from both volatile and nonvolatile memory. This involves overwriting the entire disk or disk partition with zeroes, followed by all ones, followed by all zeroes. Since it is not feasible to pause the wipe operation while in progress it is sufficient for the evaluator to observe during testing that the final result is all zeroes; however, the vendor-provided evidence is expected to provide a justification that [NIST SP 800- 88] guidelines are being followed.</i></span>
                     </div>

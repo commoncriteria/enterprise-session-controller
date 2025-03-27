@@ -1143,7 +1143,7 @@ between <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints 
 		<li>time zone</li>
 		<li>call release cause, if applicable (i.e. reason for termination of call)</li>
 		<li>fault condition(s), if applicable</li>
-		</lu></b>]<div class="appnote"><span class="note-header">Application
+		</lu></b>].<div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note"><i>The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> should be uniquely identified as part of the <abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr> so that there is
 		attribution of individual CDRs in environments where multiple ESCs are feeding
@@ -1156,7 +1156,7 @@ between <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints 
 		<div class="element"><div class="reqid" id="FAU_GEN.1.2/Log"><a href="#FAU_GEN.1.2/Log" class="abbr">FAU_GEN.1.2/Log</a></div><div class="reqdesc">
 		The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall record within each system log record at least the following information: <ol type="a">
 			<li>Date and time of the event, type of event, subject identity (if applicable), and the outcome (success or failure of the event); and </li>
-			<li>For each audit event type, based on the auditable event definitions of the functional components included in the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>/<abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>, event details described in System Log Events table].</li></ol>
+			<li>For each audit event type, based on the auditable event definitions of the functional components included in the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>/<abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>, [<i>event details described in System Log Events table</i>].</li></ol>
     <head><b><span class="ctr" data-myid="atref-mandatory" data-counter-type="ct-Table" id="atref-mandatory">Table  <span class="counter">3</span>: System Log Events</span></b></head>
 <table border="1">
 		<tr>
@@ -1195,7 +1195,8 @@ between <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints 
       Note:
     </span><span class="note"><i><p>Unlike audit data (see <a href="#FAU_GEN.1">FAU_GEN.1</a>), system log data is used primarily for real-time
 analysis of system behavior. This data is expected to be treated as non-persistent
-data by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.</p><p>The <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author is expected to identify the sampling interval for the information
+data by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.</p>
+<p>The <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author is expected to identify the sampling interval for the information
 presented in the system log so that it is clear to the evaluator how often updates
 to that information will be presented to an administrator</p><p>Logging of power status is optional and is only intended for <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr> that have
 multiple redundant power supplies. Logging of fan status is also optional.</p></i></span></div></div></div>
@@ -1267,7 +1268,11 @@ call data.
 
 
 	<div class="comp" id="FDP_RIP.1"><h4>FDP_RIP.1 Subset Residual Information Protection</h4>
-	<div class="element"><div class="reqid" id="FDP_RIP.1.1"><a href="#FDP_RIP.1.1" class="abbr">FDP_RIP.1.1</a></div><div class="reqdesc"><div class="appnote"><span class="note-header">Application
+		<div class="element"><div class="reqid" id="FDP_RIP.1.1"><a href="#FDP_RIP.1.1" class="abbr">FDP_RIP.1.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall ensure that any previous information content of a resource is made
+	unavailable upon the [<b>selection</b>: <span class="selectable-content" id="_s_25">allocation of the resource to</span>, <span class="selectable-content" id="_s_26">deallocation of the
+	resource from</span>] the following objects: [<b>assignment</b>: 
+     <span class="assignable-content">disk storage location(s) erased
+	by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> during factory reset or other wipe operation</span>].<div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note"><i>The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is expected to follow guidelines for [NIST SP 800-88], ‘Disk Storage
 	Sanitization’ as the method for ensuring that residual information is cleared from
