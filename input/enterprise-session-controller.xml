@@ -625,7 +625,7 @@ following rationale: </con-op-en>
 		certificate.</con-mod>
 	  <con-mod ref='fpt-stm-ext-1'>This PP-Module modifies the Base-PP by requiring one of this SFR’s two
 		original selection items to be chosen.</con-mod>
-	  <con-mod ref='pt-gen-ext-1-cdr'>The PP-Module iterates an SFR defined in the Base-PP to require the TOE to
+	  <con-mod ref='fpt-gen-ext-1-cdr'>The PP-Module iterates an SFR defined in the Base-PP to require the TOE to
 		generate a type of audit record that is specific to the functions defined in this
 		PP-Module.</con-mod>
 	  <con-mod ref='fpt-gen-ext-1-log'>The PP-Module iterates an SFR defined in the Base-PP to require the TOE to
@@ -652,8 +652,7 @@ following rationale: </con-op-en>
 		entire disk storage locations.
 		</con-mod>
 	  <con-mod ref='fia-uau-2-tc'>This SFR applies to authentication of external entities on the TOE’s throughtraffic interfaces and is therefore beyond the original scope of the Base-PP.</con-mod>
-	  <con-mod ref='fia-uau-2-vvoip'></con-mod>
-	  <con-mod ref=''>This SFR applies to authentication of external entities on the TOE’s throughtraffic interfaces and is therefore beyond the original scope of the Base-PP.</con-mod>
+	  <con-mod ref='fia-uau-2-vvoip'>This SFR applies to authentication of external entities on the TOE’s throughtraffic interfaces and is therefore beyond the original scope of the Base-PP.</con-mod>
 	  <con-mod ref='fmt-cfg-ext-1'>This SFR requires the TOE to implement a secure default configuration. There
 		is no inconsistency here with the Base-PP because the Base-PP’s functionality
 		is not dependent on a particular default configuration.
