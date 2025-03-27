@@ -696,7 +696,7 @@ the generation of media recordings such as unobservability of user actions.</con
 	    </audit-table>
 	  <section title="Security Audit (FAU)" id="m-fau">
 
-	  
+
 			<f-component name="Audit Data Generation (Audit Log)" cc-id="fau_gen.1"  id="fau-gen-1-esc">FAU_GEN.1.1 is refined to include the following auditable events in addition to what is defined in the
 Base-PP.
 		<note role='application'><h:i><h:p>The Base-PP version of the SFR requires “all administrative actions” to be audited.
@@ -741,6 +741,10 @@ implemented.</aactivity></f-component>
 			<f-component name="DTLS Server Support for Mutual Authentication" cc-id="fcs_dtlss_ext.2"  id="fcs-dtlss-ext-2">This SFR is optional in the NDcPP but is selection-based in this PP-Module because any ESC use of DTLS
 			requires mutually-authenticated DTLS to be implemented. Therefore, this SFR must be claimed if ‘DTLS’ is
 			selected in FTP_ITC.1.1/ESC.
+			<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to
+			make its inclusion selection-based rather than optional, but there is no change to how the SFR is to be
+			implemented.
+			</aactivity>
 			</f-component>
 			<f-component name="NTP Protocol" cc-id="fcs_ntp_ext.1" id="fcs-ntp-ext-1">
 			<f-element id='fcs-ntp-ext-1e1'>
@@ -759,7 +763,7 @@ implemented.</aactivity></f-component>
 				<title>The TSF shall implement TLS 1.2 (RFC 5246) and reject all other TLS and SSL
 				versions. The TLS implementation will support the following ciphersuites:
 				<selectables>
-					<selectable>select supported ciphersuites from List 1 <h:p>in the NDcPP</h:p></selectable>
+					<selectable>select supported ciphersuites from List 1 <h:b>in the NDcPP</h:b></selectable>
 				</selectables> and no other ciphersuites.
 				<note role='application'><h:i>This SFR is selection-based in the NDcPP but is mandated by this PP-Module
 				because Transport Layer Security (TLS) is used to secure SIP and H.323
@@ -769,10 +773,12 @@ implemented.</aactivity></f-component>
 				implemented.</aactivity>
 				</f-element></f-component>
 			<f-component name="TLS Client Protocol Mutual Authentication" cc-id="fcs_tlsc_ext.2" id="fcs-tlsc-ext-2">This SFR is optional in the NDcPP but is mandated by this PP-Module because SIP and H.323
-				communications require mutually-authenticated TLS.
+			communications require mutually-authenticated TLS.
+			<f-element>
 				<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to
-make its inclusion mandatory rather than optional, but there is no change to how the SFR is to be
-implemented.</aactivity>
+				make its inclusion mandatory rather than optional, but there is no change to how the SFR is to be
+				implemented.</aactivity>
+			</f-element>
 				</f-component>
 
 
