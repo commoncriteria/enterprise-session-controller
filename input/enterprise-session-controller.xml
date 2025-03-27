@@ -1278,11 +1278,17 @@ connected (if available).</audit-event-info>
 		and that the registered device can be used to place calls.</test>
 		</testlist></Tests></aactivity>
 	</f-element>
-	<comment>review audit.</comment>
+	
 
 	<audit-event>
 	<audit-event-descr>Authentication of external VVoIP
 	endpoint/device</audit-event-descr>
+	<audit-event-info>ID of Administrator that attempts to connect trunk to
+external device (if available);</audit-event-info>
+<audit-event-info>IP address of device where trunk request was
+initiated (if available);</audit-event-info>
+<audit-event-info>IP address of external device where trunk is to be
+connected (if available).</audit-event-info>
 	<audit-event-info>FIA_UAU.2/VVoIP. Authentication of external VVoIP
 	endpoints must occur before registration. In short,
 	no successful registration of VVoIP endpoint can
@@ -1445,7 +1451,7 @@ components that affect the proper functioning of the TOE</assignable>].
 		<title>The TSF shall <h:b>be capable of using TLS and <selectables><selectable>DTLS</selectable><selectable>IPsec</selectable><selectable>no other protocols</selectable></selectables> to</h:b> provide a communication channel between itself and another trusted IT product <h:b>supporting the following capabilities: VVoIP endpoints (for protection of signaling protocols), VVoIP endpoints (for protection of voice/video/media content), other ESC devices (for SIP trunking), <selectables><selectable>VVoIP conferencing system</selectable><selectable>no other capabilities</selectable></selectables></h:b> that is logically distinct from other communication channels and provides assured identification of its end points and protection of the channel data from modification or disclosure.</title>
 		</f-element>
 		<f-element id='ftp-itc-1e2-esc'>
-		<title>The TSF shall permit [<h:p>the TSF, another trusted IT product</h:p>] to initiate communication via the trusted channel.</title>
+		<title>The TSF shall permit [<h:i>the TSF, another trusted IT product</h:i>] to initiate communication via the trusted channel.</title>
 		</f-element> 
 		<f-element id='ftp-itc-1e3-esc'>
 		<title>The TSF shall initiate communication via the trusted channel for <assignable>list of functions for which a trusted channel is required</assignable>.</title>
@@ -1489,9 +1495,7 @@ components that affect the proper functioning of the TOE</assignable>].
 	</obj-sfrs>
 
     <impl-dep-sfrs>
-	<section title="Auditable Events for Implementation-Dependent SFRs">
-    		<audit-table id="at-impl-dep" table="impl-dep"/>
-    	</section>
+	
 		<section title='Protection of the TSF (FPT)' id='imp-fpt'>
 		<f-component name='Trusted Update (VVoIP Endpoints)' cc-id='fpt_tud_ext.1' id='fpt-tud-ext-1-vvoip' iteration='VVoIP'>
 			<f-element id='fpt-tud-ext-1e1-vvoip'>
@@ -1613,7 +1617,7 @@ auditable events based on the following attributes:<h:ol type='a'>
 			<h:b>disclosure</h:b> and deletion <h:b>by encrypting voice and video recording data that is stored
 			on the TOE using an encryption method specified in FCS_COP.1.</h:b></title></f-element>
 		<f-element id='fau-stg-1e2-vvr'>
-		<title>The TSF shall be able to [<h:i>prevent</h:i>] unauthorized modifications to the stored voice and video recordings.</title>
+		<title>The TSF shall be able to [<h:i>prevent</h:i>] unauthorized modifications to the stored <h:b>voice and video recordings</h:b>.</title>
 		<note role='application'><h:i>This requirement must be claimed if ‘have’ is selected in FAU_VVR_EXT.1.1.</h:i></note>
 		<aactivity>
 		<TSS>The evaluator shall examine the TSS to verify that it describes the method by which locally-stored voice
