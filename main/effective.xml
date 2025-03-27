@@ -507,6 +507,8 @@ be used to adversely affect the TOE or its own functionality.</description>
 
 	<!-- This section is automatically generated, but this placeholder is reuired -->
     <section title="Security Objectives Rationale" id="sec-sor"/>
+	Note that this section only provides mappings for the security objectives defined in
+this PP-Module.
 
   </section>  <!-- Security_Objectives  -->
 
