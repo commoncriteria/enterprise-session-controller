@@ -1222,7 +1222,7 @@ components that affect the proper functioning of the TOE</assignable>].
 		TOE’s audit trail shows that the local VVoIP endpoint was configured as a client using the configured
 		protocol, that the traffic between the local VVoIP endpoint and the TOE is unintelligible, and that the
 		traffic between the TOE and the remote ESC is protected for both signaling and media communications
-		using the configured methods of securing them. </h:p><h:p>The evaluator shall repeat this test as many times as is necessary to demonstrate that each combination
+		using the configured methods of securing them.<h:p>The evaluator shall repeat this test as many times as is necessary to demonstrate that each combination
 		of securing the signaling protocol communications, securing the media protocol communications, and
 		securing the SIP trunk from the TOE to the remote ESC can be used as claimed. Note that in any case
 		where this results in double encryption of the traffic (e.g. SRTP-protected media tunneled through IPsec
@@ -1418,11 +1418,6 @@ auditable events based on the following attributes:<h:ol type='a'>
 		</f-component>
 	</section>
 	</sel-sfrs>
-    
- 
-	
-
-
     </sec:Security_Requirements> <!-- Security Requirements  -->
 
 
