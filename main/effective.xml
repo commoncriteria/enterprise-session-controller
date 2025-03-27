@@ -482,41 +482,6 @@ systems and are configured in accordance with applicable security standards.</de
   <!-- It should be included in direct rationale documents if there are OE Objectives. -->
   <section title="Security Objectives" id="sec-objectives">
   
-	<!-- This section is omitted for direct rationale documents -->
-    <section title="Security Objectives for the TOE" id="SecurityObjectivesTOE">
-      <SOs>
-        <SO name="O.AUTHORIZED_ADMINISTRATION">
-          <description>All network devices are expected to provide services that allow the security functionality of the device
-to be managed. The ESC, as a specific type of network device, has a refined set of management
-functions to address its specialized behavior.</description>
-          <addressed-by>FAU_GEN.1</addressed-by><rationale>'cause FAU_GEN.1 is awesome</rationale>
-          <addressed-by>FTP_ITC_EXT.1</addressed-by><rationale>Cause FTP reasons </rationale>
-        </SO>
-        <SO name="O.INTEGRITY">
-          <description>Conformant OSes ensure the integrity of their update
-            packages. OSes are seldom if ever shipped without errors, and the
-            ability to deploy patches and updates with integrity is critical to enterprise network
-            security. Conformant OSes provide execution environment-based
-            mitigations that increase the cost to attackers by adding complexity to the task of
-            compromising systems. </description>
-            <addressed-by>FPT_SBOP_EXT.1</addressed-by><rationale>For reasons </rationale>
-            <addressed-by>FPT_ASLR_EXT.1</addressed-by><rationale>ASLR For reasons </rationale>
-            <addressed-by>FPT_TUD_EXT.1</addressed-by><rationale>For reasons </rationale>
-        </SO>
-        <SO name="O.MANAGEMENT">
-          <description> To facilitate management by users and the enterprise, conformant OSes
-	    provide consistent and supported interfaces for their
-            security-relevant configuration and maintenance. This includes the deployment of
-            applications and application updates through the use of platform-supported deployment
-            mechanisms and formats, as well as providing mechanisms for configuration and
-            application execution control. </description>
-            <addressed-by>FMT_MOF_EXT.1</addressed-by><rationale>For reasons </rationale>
-            <addressed-by>FMT_SMF_EXT.1</addressed-by><rationale>For reasons </rationale>
-            <addressed-by>FTA_TAB.1</addressed-by><rationale>For reasons </rationale>
-            <addressed-by>FTP_TRP.1</addressed-by><rationale>For reasons </rationale>
-        </SO>
-      </SOs>
-    </section>  <!-- Security Objectives for the TOE -->
 
 	<!-- This section is included in direct rationale documents if there are OE Objectives -->
     <section title="Security Objectives for the Operational Environment" id="sec-OEObjectives">
@@ -598,13 +563,12 @@ following rationale: </con-op-en>
 		communicate successfully with the TOE because the TSF is incapable of
 		authenticating clients to determine which are or are not authorized.
 	  </con-mod>
-
 	  <con-mod ref="P.SECURED_PLATFORM">
 		The Base-PP does not define any policies that expect that environmental
 		systems are configured in any specific manner. Therefore, it is expected that requiring environmental systems to be configured in a secure manner will not
 		prevent the TSF from being fully implemented.
 	  </con-mod>
-	  <con-mod ref="OE.PLATFORM">
+	  <con-mod ref="OE.SECURED_PLATFORM">
 		This objective expects the TOE to be configured in such a manner that the
 		underlying OS on which the TOE runs cannot be used to alter the behavior of
 		the TSF. This is consistent with the OE.NO_GENERAL_PURPOSE objective in

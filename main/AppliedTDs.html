@@ -633,7 +633,7 @@ function showTarget(id){
       Version: 1.0<br/>2024-03-28<br/><b>National Information Assurance Partnership</b><br/></div><h2 style="page-break-before:always;">Revision History</h2><table><tr class="header"><th>Version</th><th>Date</th><th>Comment</th></tr><tr><td>Round 1</td><td>2015-04-23</td><td>First draft of version 1.0 for comment</td></tr>
 <tr><td>1.0</td><td>2015-08-14</td><td>Release - first version released</td></tr>
 <tr><td>2.0</td><td>2024-03-28</td><td>Updated for <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, or whatever</td></tr>
-</table><h3>TDs Applied</h3><h2>Contents</h2><div class="toc" id="toc"><a href="#sec-intro" style="text-indent:0px">1<span>Introduction</span></a><a href="#sec-ppoverview" style="text-indent:10px">1.1<span>PP Overview</span></a><a href="#glossary" style="text-indent:10px">1.2<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.2.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.2.2<span>Technical Terms</span></a><a href="#sec-TOEdescription" style="text-indent:10px">1.3<span>Compliant Targets of Evaluation</span></a><a href="#TOE_Boundary" style="text-indent:10px">1.4<span>TOE Boundary</span></a><a href="#Use_Cases" style="text-indent:10px">1.5<span>Use Cases</span></a><a href="#sec-cclaims" style="text-indent:0px">2<span>Conformance Claims</span></a><a href="#sec-spd" style="text-indent:0px">3<span>Security Problem Definition</span></a><a href="#sec-threats" style="text-indent:10px">3.1<span>Threats</span></a><a href="#sec-assumptions" style="text-indent:10px">3.2<span>Assumptions</span></a><a href="#sec-OSPs" style="text-indent:10px">3.3<span>Organizational Security Policies</span></a><a href="#sec-objectives" style="text-indent:0px">4<span>Security Objectives</span></a><a href="#SecurityObjectivesTOE" style="text-indent:10px">4.1<span>Security Objectives for the TOE</span></a><a href="#sec-OEObjectives" style="text-indent:10px">4.2<span>Security Objectives for the Operational Environment</span></a><a href="#sec-sor" style="text-indent:10px">4.3<span>Security Objectives Rationale</span></a><a href="#Security_Requirements" style="text-indent:0px">5<span>Security Requirements</span></a><a href="#secreq-ND" style="text-indent:10px">5.1<span>Collaborative 
+</table><h3>TDs Applied</h3><h2>Contents</h2><div class="toc" id="toc"><a href="#sec-intro" style="text-indent:0px">1<span>Introduction</span></a><a href="#sec-ppoverview" style="text-indent:10px">1.1<span>PP Overview</span></a><a href="#glossary" style="text-indent:10px">1.2<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.2.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.2.2<span>Technical Terms</span></a><a href="#sec-TOEdescription" style="text-indent:10px">1.3<span>Compliant Targets of Evaluation</span></a><a href="#TOE_Boundary" style="text-indent:10px">1.4<span>TOE Boundary</span></a><a href="#Use_Cases" style="text-indent:10px">1.5<span>Use Cases</span></a><a href="#sec-cclaims" style="text-indent:0px">2<span>Conformance Claims</span></a><a href="#sec-spd" style="text-indent:0px">3<span>Security Problem Definition</span></a><a href="#sec-threats" style="text-indent:10px">3.1<span>Threats</span></a><a href="#sec-assumptions" style="text-indent:10px">3.2<span>Assumptions</span></a><a href="#sec-OSPs" style="text-indent:10px">3.3<span>Organizational Security Policies</span></a><a href="#sec-objectives" style="text-indent:0px">4<span>Security Objectives</span></a><a href="#sec-OEObjectives" style="text-indent:10px">4.1<span>Security Objectives for the Operational Environment</span></a><a href="#sec-sor" style="text-indent:10px">4.2<span>Security Objectives Rationale</span></a><a href="#Security_Requirements" style="text-indent:0px">5<span>Security Requirements</span></a><a href="#secreq-ND" style="text-indent:10px">5.1<span>Collaborative 
     Protection Profile for Network Devices
        Security Functional Requirements Direction
     </span></a><a href="#modsfr-ND" style="text-indent:20px">5.1.1<span> Modified SFRs </span></a><a href="#m-fau" style="text-indent:30px">5.1.1.1<span>Security Audit (FAU)</span></a><a href="#m-fcs" style="text-indent:30px">5.1.1.2<span>Cryptographic Support</span></a><a href="#m-fia" style="text-indent:30px">5.1.1.3<span>Identification and Authentication (FIA)</span></a><a href="#m-fpt" style="text-indent:30px">5.1.1.4<span>Protection of the TSF (FPT)</span></a><a href="#man-sfrs" style="text-indent:10px">5.2<span>TOE Security Functional Requirements</span></a><a href="#man-fau" style="text-indent:20px">5.2.1<span>Security Audit (FAU)</span></a><a href="#man-fdp" style="text-indent:20px">5.2.2<span>User Data Protection (FDP)</span></a><a href="#man-fia" style="text-indent:20px">5.2.3<span>Identification and Authentication (FIA)</span></a><a href="#man-fmt" style="text-indent:20px">5.2.4<span>Security Management (FMT)</span></a><a href="#man-fpt" style="text-indent:20px">5.2.5<span>Protection of the TSF (FPT)</span></a><a href="#man-ftp" style="text-indent:20px">5.2.6<span>Trusted Path/Channels (FTP)</span></a><a href="#obj-req-map" style="text-indent:10px">5.3<span>TOE Security Functional Requirements Rationale</span></a><a href="#mod-conrat" style="text-indent:0px">6<span>Consistency Rationale</span></a><a href="#conrat-ND" style="text-indent:10px">6.1<span>Collaborative 
@@ -903,25 +903,9 @@ systems and are configured in accordance with applicable security standards.</sp
 	
   <h1 class="indexable" data-level="1" id="sec-objectives">4 Security Objectives</h1>
   
-	
-    <h2 class="indexable" data-level="2" id="SecurityObjectivesTOE">4.1 Security Objectives for the TOE</h2>
-      <dl><dt class="SO defined" id="O.AUTHORIZED_ADMINISTRATION">O.AUTHORIZED_ADMINISTRATION</dt><dd><span class="description">All network devices are expected to provide services that allow the security functionality of the device
-to be managed. The <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>, as a specific type of network device, has a refined set of management
-functions to address its specialized behavior.</span></dd><dt class="SO defined" id="O.INTEGRITY">O.INTEGRITY</dt><dd><span class="description">Conformant OSes ensure the integrity of their update
-            packages. OSes are seldom if ever shipped without errors, and the
-            ability to deploy patches and updates with integrity is critical to enterprise network
-            security. Conformant OSes provide execution environment-based
-            mitigations that increase the cost to attackers by adding complexity to the task of
-            compromising systems. </span></dd><dt class="SO defined" id="O.MANAGEMENT">O.MANAGEMENT</dt><dd><span class="description"> To facilitate management by users and the enterprise, conformant OSes
-	    provide consistent and supported interfaces for their
-            security-relevant configuration and maintenance. This includes the deployment of
-            applications and application updates through the use of platform-supported deployment
-            mechanisms and formats, as well as providing mechanisms for configuration and
-            application execution control. </span></dd></dl>
-      
 
 	
-    <h2 class="indexable" data-level="2" id="sec-OEObjectives">4.2 Security Objectives for the Operational Environment</h2>
+    <h2 class="indexable" data-level="2" id="sec-OEObjectives">4.1 Security Objectives for the Operational Environment</h2>
 The <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> implements technical and procedural measures to assist the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> in correctly providing its security functionality (which is defined by the security objectives for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>).
 The security objectives for the <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> consist of a set of statements describing the goals that the <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> should achieve.
 This section defines the security objectives that are to be addressed by the IT domain or by non-technical or procedural means.
@@ -938,7 +922,7 @@ The assumptions identified in Section 3 are incorporated as security objectives 
 	  
 
 	
-    <h2 id="sec-sor" class="indexable,h2" data-level="2">4.3 Security Objectives Rationale</h2>   
+    <h2 id="sec-sor" class="indexable,h2" data-level="2">4.2 Security Objectives Rationale</h2>   
 		This section describes how the assumptions and organizational 
 		security policies map to operational environment security objectives.
 	<table><caption><span class="ctr" data-myid="t-sec-obj-rat" data-counter-type="ct-Table" id="t-sec-obj-rat">Table <span class="counter">1</span></span>: Security Objectives Rationale</caption><tr class="header"><td>Assumption or <abbr class="dyn-abbr"><a href="#abbr_OSP">OSP</a></abbr></td><td>Security Objectives</td><td>Rationale</td></tr></table>
@@ -1431,14 +1415,7 @@ components that affect the proper functioning of the <abbr class="dyn-abbr"><a h
 			Consistency of OE Objectives
 		</h3><p>The objectives for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s operational environment are consistent with the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> based on the
 following rationale: <table><caption><span class="ctr" data-myid="t-con-oe-objs" data-counter-type="ct-Table" id="t-con-oe-objs">Table <span class="counter">6</span></span>: Consistency of <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> Objectives (<abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> base)
-		</caption><tr><th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> Objective</th><th>Consistency Rationale</th></tr><tr><td><a href="#OE.PLATFORM">OE.PLATFORM</a></td><td>
-		This objective expects the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to be configured in such a manner that the
-		underlying OS on which the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> runs cannot be used to alter the behavior of
-		the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>. This is consistent with the <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr>.NO_GENERAL_PURPOSE objective in
-		the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> that expects that general-purpose computing capability will be
-		prohibited by the OS. This ensures that <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr>.SECURED_PLATFORM can be
-		satisfied by the operational environment.
-	  </td></tr><tr><td><a href="#OE.PROPER_USER">OE.PROPER_USER</a></td><td></td></tr><tr><td><a href="#OE.PROPER_ADMIN">OE.PROPER_ADMIN</a></td><td></td></tr></table></p><h3 id="conreq-ND" class="indexable" data-level="3">6.1.4 
+		</caption><tr><th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> Objective</th><th>Consistency Rationale</th></tr><tr><td><a href="#OE.PLATFORM">OE.PLATFORM</a></td><td></td></tr><tr><td><a href="#OE.PROPER_USER">OE.PROPER_USER</a></td><td></td></tr><tr><td><a href="#OE.PROPER_ADMIN">OE.PROPER_ADMIN</a></td><td></td></tr></table></p><h3 id="conreq-ND" class="indexable" data-level="3">6.1.4 
 	Consistency of Requirements
       </h3>
       This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> identifies several <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> from the
