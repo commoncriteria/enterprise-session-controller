@@ -1759,7 +1759,14 @@ components that affect the proper functioning of the <abbr class="dyn-abbr"><a h
 			Consistency of OE Objectives
 		</h3><p>The objectives for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s operational environment are consistent with the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> based on the
 following rationale: <table><caption><span class="ctr" data-myid="t-con-oe-objs" data-counter-type="ct-Table" id="t-con-oe-objs">Table <span class="counter">6</span></span>: Consistency of <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> Objectives (<abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> base)
-		</caption><tr><th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> Objective</th><th>Consistency Rationale</th></tr><tr><td><a href="#OE.PLATFORM">OE.PLATFORM</a></td><td></td></tr><tr><td><a href="#OE.PROPER_USER">OE.PROPER_USER</a></td><td></td></tr><tr><td><a href="#OE.PROPER_ADMIN">OE.PROPER_ADMIN</a></td><td></td></tr></table></p><h3 id="conreq-ND" class="indexable" data-level="3">6.1.4 
+		</caption><tr><th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> Objective</th><th>Consistency Rationale</th></tr><tr><td><a href="#OE.PLATFORM">OE.PLATFORM</a></td><td>
+		This objective expects the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to be configured in such a manner that the
+		underlying OS on which the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> runs cannot be used to alter the behavior of
+		the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>. This is consistent with the <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr>.NO_GENERAL_PURPOSE objective in
+		the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> that expects that general-purpose computing capability will be
+		prohibited by the OS. This ensures that <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr>.SECURED_PLATFORM can be
+		satisfied by the operational environment.
+	  </td></tr><tr><td><a href="#OE.PROPER_USER">OE.PROPER_USER</a></td><td></td></tr><tr><td><a href="#OE.PROPER_ADMIN">OE.PROPER_ADMIN</a></td><td></td></tr></table></p><h3 id="conreq-ND" class="indexable" data-level="3">6.1.4 
 	Consistency of Requirements
       </h3>
       This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> identifies several <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> from the
