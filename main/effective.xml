@@ -695,7 +695,7 @@ Base-PP.
 	related to the behavior of the TOE regardless of how it is categorized or where it
 	is stored.</h:i> </note></f-component>
 	</section>
-	<section title="Cryptographic Support" id="m-fcs">
+	<section title="Cryptographic Support (FCS)" id="m-fcs">
 			<f-component name="DTLS Server Support without Mutual Authentication" cc-id="fcs_dtlss_ext.1" id="fcs-dtlss-ext-1">
 			<f-element id="fcs-dtlss-ext-1e1">
 				<title>
@@ -740,23 +740,36 @@ Base-PP.
 				<note role="application"><h:i>This SFR is selection-based in the NDcPP but is mandated by this PP-Module
 				because Transport Layer Security (TLS) is used to secure SIP and H.323
 				communications. Additionally, this PP-Module mandates the use of TLS 1.2.</h:i></note></title>
-				<aactivity><no-tests/></aactivity>
+				<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to
+				make its inclusion mandatory rather than conditional, but there is no change to how the SFR is to be
+				implemented.</aactivity>
 				</f-element></f-component>
 			<f-component name="TLS Client Protocol Mutual Authentication" cc-id="fcs_tlsc_ext.2" id="fcs-tlsc-ext-2">This SFR is optional in the NDcPP but is mandated by this PP-Module because SIP and H.323
-				communications require mutually-authenticated TLS.</f-component>
+				communications require mutually-authenticated TLS.
+				<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to
+make its inclusion mandatory rather than optional, but there is no change to how the SFR is to be
+implemented.</aactivity>
+				</f-component>
+
+
 				<f-component name="TLS Server Protocol without Mutual Authentication" cc-id="fcs_tlss_ext.1" id="fcs-tlss-ext-1">
-				<f-element id="fcs-tlsc-ext-1e1">
+				<f-element id="fcs-tlss-ext-1e1">
 				<title>The TSF shall implement TLS 1.2 (RFC 5246)) and reject all other TLS and SSL
 				versions. The TLS implementation will support the following ciphersuites: <selectables>
-				<selectable>select supported ciphersuites from List 1 <h:p>in the NDcPP</h:p></selectable></selectables> and no other
+				<selectable>select supported ciphersuites from List 1 <h:b>in the NDcPP</h:b></selectable></selectables> and no other
 				ciphersuites.</title>
 				<note role="application"><h:i>This SFR is selection-based in the NDcPP but is mandated by this PP-Module
 				because TLS is used to secure SIP and H.323 communications. Additionally, this
 				PP-Module mandates the use of TLS 1.2.</h:i></note>
-				<aactivity><no-tests/></aactivity>
+				<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to
+make its inclusion mandatory rather than conditional, but there is no change to how the SFR is to be
+implemented.</aactivity>
 				</f-element></f-component>
 			<f-component name="TLS Server Protocol  Mutual Authentication" cc-id="fcs_tlss_ext.2" id="fcs-tlss-ext-2">
 			This SFR is optional in the NDcPP but is mandated by this PP-Module because SIP and H.323 communications require mutually-authenticated TLS.
+			<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to
+make its inclusion mandatory rather than optional, but there is no change to how the SFR is to be
+implemented.</aactivity>
 			</f-component>
 			</section>
 			<section title="Identification and Authentication (FIA)" id="m-fia">
