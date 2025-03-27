@@ -1426,23 +1426,73 @@ call data.
 	is 100% free. The evaluator shall use forensic tools to examine each location that is subject to erasure and
 	verify that the data has been overwritten by all zeroes.</p></div></div></div></div></div>
 	
+
+
 	<h3 id="man-fia" class="indexable" data-level="3">5.2.3 Identification and Authentication (FIA)</h3>
 	<div class="comp" id="FIA_UAU.2/TC"><h4>FIA_UAU.2/TC User Authentication before Any Action (Telecommunications Devices)</h4>
 	<div class="element"><div class="reqid" id="FIA_UAU.2.1/TC"><a href="#FIA_UAU.2.1/TC" class="abbr">FIA_UAU.2.1/TC</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall require each <b>telecommunications device</b> to be successfully
 	authenticated before allowing any other <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>-mediated actions on behalf of that
 	<b>device</b>.</div></div>
-	
-	
 	<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FIA_UAU.2/TC">FIA_UAU.2/TC</a></div>
-		TODO: You need to explain the lack of EAs for this component!!!!
-	</div></div></div>
+	
+	
+	<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">The evaluator shall examine the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> and ensure that the telecommunications device authentication
+	procedures are described including a description of how the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> prevents <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>-mediated actions by
+	unauthenticated devices.</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">The evaluator shall examine the guidance documentation and ensure that any actions required to enable
+	authentication of telecommunications devices is described.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
+	<p>The following testing shall be repeated for each supported environment (IPv4 and/or IPv6):</p>
+	<p>The evaluator shall deploy the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> in an environment with another <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> and configure both ESCs to
+	support an encrypted trunk to one another, where the trunk is encrypted using a security protocol
+	selected in FTP_ITC.1 from the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>. The evaluator shall also deploy a packet sniffer on the encrypted
+	trunk channel. The evaluator shall perform the following tests:</p>
+	<span class="testlist-"><ul>
+		<li class="test-"><a id="_t_9" class="defined" href="#_t_9">Test FIA_UAU.2/TC:1</a>:
+      The evaluator shall configure the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to accept encrypted trunk communications from the remote
+		<abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> using authentication credentials and IP address. The evaluator shall then use the remote <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> to
+		connect to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and verify that the encrypted trunk is successfully established. The evaluator shall use
+		packet captures to verify that encrypted traffic is transmitted between the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and the remote <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>.</li>
+		<li class="test-"><a id="_t_10" class="defined" href="#_t_10">Test FIA_UAU.2/TC:2</a>:
+      The evaluator shall repeat test 1 but enter invalid credentials when attempting to authenticate.
+		The evaluator shall observe that the encrypted trunk is not successfully established due to invalid
+		credentials.</li>
+		<li class="test-"><a id="_t_11" class="defined" href="#_t_11">Test FIA_UAU.2/TC:3</a>:
+      The evaluator shall repeat test 1 but configure the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to accept encrypted trunk communications
+		from a different IP address than what is assigned to the remote <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>. The evaluator shall then attempt to
+		connect to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> using the remote <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> with valid credentials and observe that the encrypted trunk is
+		not successfully established due to invalid IP address.</li>
+</ul></span></div></div></div></div></div>
+
 	<div class="comp" id="FIA_UAU.2/VVoIP"><h4>FIA_UAU.2/VVoIP User Authentication before Any Action (VVoIP Endpoints)</h4>
 	<div class="element"><div class="reqid" id="FIA_UAU.2.1/VVoIP"><a href="#FIA_UAU.2.1/VVoIP" class="abbr">FIA_UAU.2.1/VVoIP</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall require each <b><abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint</b> to be successfully authenticated before allowing any other <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>-mediated actions on behalf of that <b>endpoint</b>.<div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note"><i> This includes both the establishment of voice/video calls and the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>-initiated application of an update to the <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint software/firmware.</i></span></div></div></div>
 	<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FIA_UAU.2/VVoIP">FIA_UAU.2/VVoIP</a></div>
-		TODO: You need to explain the lack of EAs for this component!!!!
-	</div></div></div>
+		
+		
+		<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">The evaluator shall examine the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> and ensure that the <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint authentication procedures are
+		described including a description of how the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> prevents <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>-mediated actions by unauthenticated
+		devices. In addition to establishment of voice/video calls, this includes <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>-initiated application of an
+		update to the <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint software/firmware.</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">The evaluator shall examine the guidance documentation and ensure that any actions required to
+		authenticate <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints are described.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea"><p>The following testing shall be repeated for each supported environment (IPv4 and/or IPv6):</p><p>The evaluator shall ensure that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> is configured to support encrypted <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and/or H.323 client
+		connections and that any <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint devices used for this testing can use the protocol that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>
+		is configured to support.</p><p>The evaluator shall perform the following tests:</p><span class="testlist-"><ul>
+		<li class="test-"><a id="_t_12" class="defined" href="#_t_12">Test FIA_UAU.2/VVoIP:1</a>:
+      The evaluator shall attempt to place a call with a <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint device without registering to the
+		<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. The attempt should fail. The evaluator shall also attempt to download an update from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and
+		observe failure.</li>
+		<li class="test-"><a id="_t_13" class="defined" href="#_t_13">Test FIA_UAU.2/VVoIP:2</a>:
+      [Conditional on <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> requiring certificate authentication to establish the connection used for
+		registration]: The evaluator shall load an invalid certificate onto a <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint device and initiate the
+		registration process. The registration process should fail due to an invalid certificate.</li>
+		<li class="test-"><a id="_t_14" class="defined" href="#_t_14">Test FIA_UAU.2/VVoIP:3</a>:
+      The evaluator shall connect to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and initiate the registration process. When prompted for
+		credentials, the evaluator shall supply invalid credentials and observe that the registration process fails
+		for that reason.</li>
+		<li class="test-"><a id="_t_15" class="defined" href="#_t_15">Test FIA_UAU.2/VVoIP:4</a>:
+      The evaluator shall connect to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and initiate the registration process. When prompted for
+		credentials, the evaluator shall supply valid credentials and observe that the registration process succeeds
+		and that the registered device can be used to place calls.</li>
+</ul></span></div></div></div></div></div>
 	
 	<h3 id="man-fmt" class="indexable" data-level="3">5.2.4 Security Management (FMT)</h3>
 	<div class="comp" id="FMT_CFG_EXT.1"><h4>FMT_CFG_EXT.1 Secure by Default Configuration</h4>
@@ -1451,10 +1501,24 @@ call data.
 		credentials</div></div>
 		<div class="element"><div class="reqid" id="FMT_CFG_EXT.1.2"><a href="#FMT_CFG_EXT.1.2" class="abbr">FMT_CFG_EXT.1.2</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be configured by default with permissions which protect it and its data from unauthorized access.</div></div>
 	<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FMT_CFG_EXT.1">FMT_CFG_EXT.1</a></div>
-		TODO: You need to explain the lack of EAs for this component!!!!
-	
-		TODO: You need to explain the lack of EAs for this component!!!!
-	</div></div></div>
+		
+		
+		<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">The evaluator shall check the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> and ensure that it identifies if the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is delivered with default or no
+		Security Administrative credentials. The evaluator shall also check the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> and ensure that the
+		functionality available when the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is configured with default credentials or no credentials is identified.
+		The evaluator shall examine the identified functionality and ensure that only enough functionality to set
+		new Security Administrator credentials is available when the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is configured with default credentials or
+		no credentials.</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">The evaluator shall check the guidance documentation and ensure that the administrative functionality
+		that is available when the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is configured with default credentials or no credentials is identified. The
+		evaluator shall examine the guidance documentation and ensure the instructions for establishing new
+		Security Administrative credentials is described.
+		</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea"><p>Note that this test may only be deployed the first time the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is run or immediately following a factory
+		reset.</p><p>The evaluator shall perform the initial setup steps for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> as specified in the administrative guidance.
+		The evaluator shall verify that if a default administrative account is used to log in to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> for the first
+		time, the login event is immediately followed by a prompt to change the password for the default account.
+		If no default account is used, the evaluator shall verify that they are prompted to define an initial
+		administrator account and that no further security-relevant actions can be performed until the evaluator
+		has authenticated to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> using that account.</p></div></div></div></div></div>
 	<div class="comp" id="FMT_SMF.1/ESC"><h4>FMT_SMF.1/ESC Specification of Management Functions (ESC)</h4>
 	<div class="element"><div class="reqid" id="FMT_SMF.1.1/ESC"><a href="#FMT_SMF.1.1/ESC" class="abbr">FMT_SMF.1.1/ESC</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be capable of performing the following management functions:<ul>
 		<li>Ability to display the real-time connection status of all <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints (hardware and software) and telecommunications devices;</li>
@@ -1478,8 +1542,39 @@ call data.
 		claimed.
 		</p></i></span></div></div></div>
 	<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FMT_SMF.1/ESC">FMT_SMF.1/ESC</a></div>
-		TODO: You need to explain the lack of EAs for this component!!!!
-	</div></div></div>
+		
+		
+		
+		<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">For each management function specified in <a href="#FMT_SMF.1.1/ESC">FMT_SMF.1.1/ESC</a>, the evaluator shall conform that the
+		management function is provided by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. The evaluator shall also conform that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> details, for
+		each supported management interface, which specific functions are available at that interface.</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">If "Ability to enable/disable voice and video recordings for any registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint" is selected, the
+		evaluator shall examine the guidance document to verify it describes how to enable or disable recordings
+		of voice and video calls.
+		</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea"><span class="testlist-"><ul>
+		<li class="test-"><a id="_t_16" class="defined" href="#_t_16">Test FMT_SMF.1/ESC:1</a>:
+      (Conditional): If “Ability to enable/disable voice and video recordings for any registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr>
+		endpoint” is selected, the evaluator shall deploy a test environment with two or more registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints. The evaluator shall choose two endpoints and configure the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to disable enable voice/video
+		recording between them. The evaluator shall place a call between the two selected endpoints, verify that
+		the call is successfully established, then terminate the call and verify that a recording is generated. The
+		evaluator shall then configure the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to disable voice/video recording between the same two endpoints,
+		repeat the call, verify that the call is established, then terminate the call. The evaluator shall examine the
+		location where the first recording was generated and verify that no new recording is generated.</li>
+		<li class="test-"><a id="_t_17" class="defined" href="#_t_17">Test FMT_SMF.1/ESC:2</a>:
+      The evaluator shall deploy a test environment with two or more registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints. The
+		evaluator shall choose two endpoints, place a call between them, and verify that the call is successfully
+		established. While the call is active, the evaluator shall use the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to review active connections and verify
+		that the <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints’ connections to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> are active. The evaluator shall discontinue the call and
+		verify that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> no longer shows the <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints’ connections to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> as active.</li>
+		<li class="test-"><a id="_t_18" class="defined" href="#_t_18">Test FMT_SMF.1/ESC:3</a>:
+       (Conditional): If “ability to configure the password policy” is selected, the evaluator shall observe
+		what the password strength policy is configured to by default on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and shall verify that it is enforced
+		by defining several weak administrative passwords for a given administrator account that are
+		appropriately rejected by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>. The evaluator shall then modify the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s password policy in such a
+		manner that at least one of these weak passwords would now be accepted by the policy. The evaluator
+		shall repeat the attempted password changes and observe that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> correctly accepts or rejects the
+		passwords based on the new policy. </li></ul></span></div></div></div></div></div>
+
+
 	
 	<h3 id="man-fpt" class="indexable" data-level="3">5.2.5 Protection of the TSF (FPT)</h3>
 	<div class="comp" id="FPT_FLS.1"><h4>FPT_FLS.1 Failure with Preservation of a Secure State</h4>
@@ -1491,10 +1586,22 @@ of self-tests defined in FPT_TST_EXT.1, failure of </i>[<b>assignment</b>:
 components that affect the proper functioning of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span>]].
 			</div></div>
 	<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FPT_FLS.1">FPT_FLS.1</a></div>
-		TODO: You need to explain the lack of EAs for this component!!!!
-	</div></div></div>
+			
+			
+			<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">The evaluator shall examine the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> to verify that it describes the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> failures that can occur and the
+			<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s response to these failures. The evaluator shall also examine the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> to verify that it provides
+			sufficient detail to justify how the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s responses to these failures preserves a secure state.
+			</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">The evaluator shall examine the guidance documentation and ensure that if the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s failure handling
+			behavior is configurable, any instructions for doing so are provided. The evaluator shall also examine the
+			guidance documentation to verify that it identifies the potential failures that can occur and the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s
+			response to them so that the reader is aware of when the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> has failed to a secure state.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall perform the EAs for FPT_TST_EXT.1 as defined in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> SD. For each self-test
+			failure, the evaluator shall verify that the observed <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> behavior is consistent with the failure state
+			defined in the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>. If this functionality is configurable, the evaluator shall reconfigure the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
+			to each possible response to a self-test failure and re-execute the testing as many times as is necessary to
+			demonstrate that the configured behavior is observed in each case.</div></div></div></div></div>
 	
-	
+
+
 	<h3 id="man-ftp" class="indexable" data-level="3">5.2.6 Trusted Path/Channels (FTP)</h3>
 	<div class="comp" id="FTP-ITC.1.1/ESC"><h4>FTP-ITC.1.1/ESC Inter-TSF Trusted Channel (ESC Communications)</h4>
 		<div class="element"><div class="reqid" id="FTP-ITC.1.1.1/ESC"><a href="#FTP-ITC.1.1.1/ESC" class="abbr">FTP-ITC.1.1.1/ESC</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall <b>be capable of using TLS and [<b>selection</b>: <span class="selectable-content" id="_s_38">DTLS</span>, <span class="selectable-content" id="_s_39">IPsec</span>, <span class="selectable-content" id="_s_40">no other protocols</span>] to</b> provide a communication channel between itself and another trusted IT product <b>supporting the following capabilities: <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints (for protection of signaling protocols), <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints (for protection of voice/video/media content), other <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> devices (for <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> trunking), [<b>selection</b>: <span class="selectable-content" id="_s_41"><abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> conferencing system</span>, <span class="selectable-content" id="_s_42">no other capabilities</span>]</b> that is logically distinct from other communication channels and provides assured identification of its end points and protection of the channel data from modification or disclosure.</div></div>
@@ -1502,12 +1609,35 @@ components that affect the proper functioning of the <abbr class="dyn-abbr"><a h
 		<div class="element"><div class="reqid" id="FTP-ITC.1.1.3/ESC"><a href="#FTP-ITC.1.1.3/ESC" class="abbr">FTP-ITC.1.1.3/ESC</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall initiate communication via the trusted channel for [<b>assignment</b>: 
      <span class="assignable-content">list of functions for which a trusted channel is required</span>].</div></div> 
 	<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FTP-ITC.1.1/ESC">FTP-ITC.1.1/ESC</a></div>
-		TODO: You need to explain the lack of EAs for this component!!!!
-	
-		TODO: You need to explain the lack of EAs for this component!!!!
-	
-		TODO: You need to explain the lack of EAs for this component!!!!
-	</div></div></div>
+		
+		
+		<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">The evaluator shall perform the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> evaluation activities specified in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> SD for FTP_ITC.1 for the
+		communications interfaces and protocols specified in this iteration of the requirement.
+		</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">The evaluator shall perform the AGD evaluation activities specified in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> SD for FTP_ITC.1 for the
+		communications interfaces and protocols specified in this iteration of the requirement.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">In addition to the assurance activities specified in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> SD for FTP_ITC.1, the evaluator shall perform
+		the following tests:<span class="testlist-"><ul>
+		<li class="test-"><a id="_t_19" class="defined" href="#_t_19">Test FTP-ITC.1.1/ESC:1</a>:
+      <p>For each combination of signaling protocol (<abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr>, H.323), method of securing that protocol (IPsec,
+		TLS), and method of securing transmitted media (SRTP, DTLS), the evaluator shall configure the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to
+		use the selected protocols through a trunk to a remote <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>. The evaluator shall register a <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint
+		to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and a second <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint to the remote <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>. The evaluator shall place a packet sniffer on
+		the network and capture traffic from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to the local <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint and the remote <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>. The
+		evaluator shall then place a call from one <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint to the other. The evaluator shall verify that the
+		<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s audit trail shows that the local <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint was configured as a client using the configured
+		protocol, that the traffic between the local <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint and the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is unintelligible, and that the
+		traffic between the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and the remote <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> is protected for both signaling and media communications
+		using the configured methods of securing them. </p><p>The evaluator shall repeat this test as many times as is necessary to demonstrate that each combination
+		of securing the signaling protocol communications, securing the media protocol communications, and
+		securing the <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> trunk from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to the remote <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> can be used as claimed. Note that in any case
+		where this results in double encryption of the traffic (e.g. SRTP-protected media tunneled through IPsec
+		over a <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> trunk), the evaluator shall conduct the test with the outer layer enabled and then disabled in
+		order to verify that both methods of protection are being used.</p></li>
+		<li class="test-"><a id="_t_20" class="defined" href="#_t_20">Test FTP-ITC.1.1/ESC:2</a>:
+      (conditional): If ‘<abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> conferencing system’ is selected, the evaluator shall repeat test 1
+		(depending on the protocols the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> claims to support) in an environment where the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is being used
+		to establish a conference call between three or more registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints. In both cases, the
+		evaluator shall verify that all <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and SRTP traffic is encrypted.</li>
+		</ul></span></div></div></div></div></div>
 	
 	<h2 id="obj-req-map" class="indexable" data-level="2">5.3 TOE Security Functional Requirements Rationale</h2><p>The following rationale provides justification for each security objective for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, 
     showing that the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> are suitable to meet and achieve the security objectives:<br/><table><caption><span class="ctr" data-myid="t-obj_map" data-counter-type="ct-Table" id="t-obj_map">Table <span class="counter">4</span></span>: <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> Rationale</caption><tr><th>Objective</th><th>Addressed by</th><th>Rationale</th></tr><tr class="major-row"><td rowspan="2"><a href="#O.ACCOUNTABILITY">O.ACCOUNTABILITY</a><br/></td><td><a href="#FAU_GEN.1">FAU_GEN.1</a></td><td>'cause <a href="#FAU_GEN.1">FAU_GEN.1</a> is awesome</td></tr>
@@ -1578,7 +1708,7 @@ components that affect the proper functioning of the <abbr class="dyn-abbr"><a h
 			<b>registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint</b> firmware/software.</div></div>
 			<div class="element"><div class="reqid" id="FPT_TUD_EXT.1.2/VVoIP"><a href="#FPT_TUD_EXT.1.2/VVoIP" class="abbr">FPT_TUD_EXT.1.2/VVoIP</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide Security Administrators the ability to manually
 			initiate updates to <b>registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint</b> firmware/software and no
-			other update mechanism. </div></div>
+			other update mechanism.</div></div>
 			<div class="element"><div class="reqid" id="FPT_TUD_EXT.1.3/VVoIP"><a href="#FPT_TUD_EXT.1.3/VVoIP" class="abbr">FPT_TUD_EXT.1.3/VVoIP</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide means to authenticate firmware/software updates
 			to the <b>registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint</b> using a [<b>selection</b>: <span class="selectable-content" id="_s_43">X.509 certificate</span>, <span class="selectable-content" id="_s_44">digital signature mechanism</span>, <span class="selectable-content" id="_s_45">published hash</span>] prior to installing those
 			updates.<div class="appnote"><span class="note-header">Applications
@@ -1598,15 +1728,57 @@ components that affect the proper functioning of the <abbr class="dyn-abbr"><a h
 			server, then the <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> is not responsible for assuring
 			<a href="#FPT_TUD_EXT.1/VVoIP">FPT_TUD_EXT.1/VVoIP</a>.</p></i>
 			</span></div></div></div>
-	
 		<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FPT_TUD_EXT.1/VVoIP">FPT_TUD_EXT.1/VVoIP</a></div>
-		TODO: You need to explain the lack of EAs for this component!!!!
-	
-		TODO: You need to explain the lack of EAs for this component!!!!
-	
-		TODO: You need to explain the lack of EAs for this component!!!!
-	</div></div></div>
+			
+			
+			
+			<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">The evaluator shall examine the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> to verify that it describes the ability of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to retrieve <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr>
+			endpoint software/firmware updates and the process by which <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints can register to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
+			and acquire these updates. The evaluator shall also examine the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> to verify that it describes by which
+			the authenticity and integrity of <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint software updates are assured and what role the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> has
+			in ensuring that updates are genuine.</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">The evaluator shall examine the operational guidance to verify that it provides instructions on how to
+			acquire and verify a <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint software/firmware update from the manufacturer. The evaluator
+			shall also verify that the guidance includes instructions on how an <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> administrator can use the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to
+			apply software/firmware updates to registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall perform the following test:<span class="testlist-"><ul>
+			<li class="test-"><a id="_t_21" class="defined" href="#_t_21">Test FPT_TUD_EXT.1/VVoIP:1</a>:
+      Prior to downloading software update from <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr>-client, the evaluator shall
+			check to ensure the current version of the registered client device can be appropriately obtained by means
+			of the operation methods specified by the administrator guidance.
+			</li><li class="test-"><a id="_t_22" class="defined" href="#_t_22">Test FPT_TUD_EXT.1/VVoIP:2</a>:
+      The evaluator shall check to ensure that <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint software/firmware updates are signed
+			and/or hashed by the manufacturer based on what is specified in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>.</li>
+			<li class="test-"><a id="_t_23" class="defined" href="#_t_23">Test FPT_TUD_EXT.1/VVoIP:3</a>:
+      The evaluator shall check to ensure that only administrators of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> are permitted to initiate an update to a registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint.</li>
+			<li class="test-"><a id="_t_24" class="defined" href="#_t_24">Test FPT_TUD_EXT.1/VVoIP:4</a>:
+      <p>The evaluator shall check to ensure that software updates are correctly performed by verifying
+			that the <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint is running the newly-obtained software version obtaining the newly updated
+			software version of the <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr>-client device once update has complete.</p>
+			<p>Note: In some cases the <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> will not receive an explicit message from the <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint stating that the
+			software update executed successfully. In addition, some software updates will not take effect until a
+			reboot of the <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint is initiated remotely by the <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> or manually/physically at the <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint
+			device itself. In either scenario, the <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint itself will always indicate whether verification of the
+			update has failed. Therefore, the tester can (or may have to) verify successful software download by
+			querying the <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint device for new software/firmware version. The tester can also verify
+			whether software update failed by querying the registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint for errors.
+			</p><p>In most cases, failed software update messages will originate from the <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint and not the <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>.
+			Any failed software update reported by the registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint should have the report forwarded
+			to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. However, as mentioned earlier, the registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint may not report successful
+			software downloads an therefore no ‘successful download’ report should be expected to be forwarded to the <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>. If the <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint does report a ‘software download complete’ or just ‘complete’, then the
+			<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> should receive a message indicating that the download was completed. When the <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint
+			reboots, it is expected to report the new software/firmware version to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> so that the new version
+			will be displayed in the OA&amp;M application.</p></li>
+			<li class="test-"><a id="_t_25" class="defined" href="#_t_25">Test FPT_TUD_EXT.1/VVoIP:5</a>:
+      <p>The evaluator shall check to ensure that the verification of software/firmware updates from the
+			<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to the <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint fails using unauthorized data or improperly signed updates. The evaluator shall
+			also check those cases where hash verification mechanism and digital signature verification mechanism
+			fail.
+			</p><p>Note: this may require the evaluator to obtain a deliberately invalid software update from the device
+			manufacturer or developer access to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> so that a stored update can be manipulated directly in a
+			manner that will cause signature and/or hash verification to fail.</p></li>
+			</ul></span></div></div></div></div></div>
 		
+
+
 	<h1 id="sel-sfrs" class="indexable" data-level="1">Appendix B -  Selection-based Requirements
     </h1>
 	<h2 id="sel-fau" class="indexable" data-level="2">B.1 Security Audit (FAU)</h2>
@@ -1620,8 +1792,19 @@ auditable events based on the following attributes:<ol type="a">
       Note:
     </span><span class="note"><i>This requirement must be claimed when ‘Ability to specify the set of audited events’ is chosen in <a href="#FMT_SMF.1.1/ESC">FMT_SMF.1.1/ESC</a>.</i></span></div></div></div>
 		<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FAU_SEL.1">FAU_SEL.1</a></div>
-		TODO: You need to explain the lack of EAs for this component!!!!
-	</div></div></div>
+		
+		
+		<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">The evaluator shall examine the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> to verify that it identifies the attributes by which the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> can be
+		configured to selectively enable or disable the generation of auditable events.</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">The evaluator shall examine the operational guidance to verify that it provides a list of the attributes that
+		can be used to selectively enable or disable the generation of auditable events as well as instructions for
+		performing this operation.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea"><p>Note that the following testing may be done in conjunction with other EAs since auditable events occur
+		as a by-product of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> being used to perform other security functions.</p>
+		<p>The evaluator shall perform <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>-mediated actions with all auditable events enabled and observe that
+		these events are audited as expected. The evaluator shall then log on to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and disable auditable
+		events by each attribute defined in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>. The evaluator shall then re-execute the same set of TSFmediated actions as before and observe that audit logs are not generated for all auditable events that are
+		administratively disabled.
+		</p></div></div></div></div></div>
+
 		<div class="comp" id="FAU_STG.1/VVR"><h4>FAU_STG.1/VVR Protected Audit Trail Storage (Voice/Video Recording)</h4><div class="statustag"></div>
 		<div class="element"><div class="reqid" id="FAU_STG.1.1/VVR"><a href="#FAU_STG.1.1/VVR" class="abbr">FAU_STG.1.1/VVR</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall protect the stored <b>voice and video recordings</b> from unauthorized
 			<b>disclosure</b> and deletion <b>by encrypting voice and video recording data that is stored
@@ -1630,27 +1813,54 @@ auditable events based on the following attributes:<ol type="a">
       Note:
     </span><span class="note"><i>This requirement must be claimed if ‘have’ is selected in FAU_VVR_EXT.1.1.</i></span></div></div></div>
 		<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FAU_STG.1/VVR">FAU_STG.1/VVR</a></div>
-		TODO: You need to explain the lack of EAs for this component!!!!
-	
-		TODO: You need to explain the lack of EAs for this component!!!!
-	</div></div></div>
+		
+		
+		<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">The evaluator shall examine the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> to verify that it describes the method by which locally-stored voice
+		and video recordings are protected and that this method uses cryptographic mechanisms defined in
+		FCS_COP.1.
+		</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">If the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> provides the ability to enable/disable encryption of locally stored voice and video recordings,
+		the evaluator shall verify that the operational guidance provides instructions on how to enable encryption
+		and directs the reader to ensure that this is enabled in the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s evaluated configuration.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall perform the following tests: <span class="testlist-"><ul><li class="test-"><a id="_t_26" class="defined" href="#_t_26">Test FAU_STG.1/VVR:1</a>:
+      The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> provides no interface to access voice/video recording data
+		stored on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> except for legitimate access from an authorized administrator through the Operations,
+		Administration, and Management (OA&amp;M) interface.</li><li class="test-"><a id="_t_27" class="defined" href="#_t_27">Test FAU_STG.1/VVR:2</a>:
+      Both B2B subscriber calls and voice/video conferencing calls may be stored on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> based on
+		safeguards (i.e. secured or unsecured) for which they were recorded. The evaluator shall identify the
+		location of stored voice and video records and verify that this data is stored in an encrypted format for all
+		types of voice and video calls that can be processed by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. If this functionality is configurable, the
+		evaluator shall follow the operational guidance to enable encryption prior to generating any voice/video
+		recordings. </li></ul></span></div></div></div></div></div>
+
 		<div class="comp" id="FAU_VVR-EXT-2"><h4>FAU_VVR-EXT-2 Generation of Voice and Video Recordings</h4><div class="statustag"></div>
 		<div class="element"><div class="reqid" id="FAU_VVR-EXT-2.1"><a href="#FAU_VVR-EXT-2.1" class="abbr">FAU_VVR-EXT-2.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide the ability to retain voice and video recordings based on [<b>assignment</b>: 
      <span class="assignable-content">administrator-specified criteria</span>]</div></div>
 		<div class="element"><div class="reqid" id="FAU_VVR-EXT-2.2"><a href="#FAU_VVR-EXT-2.2" class="abbr">FAU_VVR-EXT-2.2</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall store voice and video recordings as [<b>assignment</b>: 
      <span class="assignable-content">supported file
-format</span>] data.</div></div>
+		format</span>] data.</div></div>
 		<div class="element"><div class="reqid" id="FAU_VVR-EXT-2.3"><a href="#FAU_VVR-EXT-2.3" class="abbr">FAU_VVR-EXT-2.3</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall uniquely identify individual voice/video recordings using the following method: [<b>assignment</b>: 
      <span class="assignable-content">unique identifying data</span>].<div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note"><i>This requirement must be claimed if ‘have’ is selected in FAU_VVR_EXT.1.1</i></span></div></div></div>
 		<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FAU_VVR-EXT-2">FAU_VVR-EXT-2</a></div>
-		TODO: You need to explain the lack of EAs for this component!!!!
-	
-		TODO: You need to explain the lack of EAs for this component!!!!
-	
-		TODO: You need to explain the lack of EAs for this component!!!!
-	</div></div></div>
+		
+		
+		<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">The evaluator shall examine the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> to ensure that it describes the conditions that can be set for the
+		retention of voice/video recordings (all calls to/from a specific endpoint are recorded by administrator
+		control, user manually specifies a call to be recorded at the start of the call session, etc.) and that these
+		are consistent with what is specified in FAU_VVR_EXT.2.1. The evaluator shall also ensure that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr>
+		describes how voice/video recordings are retained, both in terms of the supported audio/video formats
+		and how each recording is uniquely identified for future access.</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">The evaluator shall examine the operational guidance to ensure that it describes how retention for
+		voice/video recordings can be enabled and disabled, how stored records are encoded, and how they are
+		uniquely identified.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea"><p>The evaluator shall disable all mechanisms for voice/video recording. The evaluator shall then place a
+		call that is mediated by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> and observe that no recording is generated after the call is completed.
+		The evaluator shall then configure the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to enable recording, repeat the call, and ensure that a
+		recording is generated in the required format after the call is completed. The evaluator shall then repeat
+		this process and observe that a second recording is generated, and that the two recordings can be
+		distinguished from one another using unique identifying information. The evaluator shall then disable
+		recording, repeat the call, and observe that a recording is not generated.
+		</p><p>If the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> supports multiple mechanisms for enabling the recording of voice/video data, the evaluator
+		shall repeat this test for each supported mechanism to ensure that voice/video recordings are only
+		generated when that mechanism is active.</p></div></div></div></div></div>
 	
 	<h1 id="satisfiedreqs" class="indexable" data-level="A">Appendix C -  Inherently Satisfied Requirements</h1> 
 		This appendix lists requirements that should be considered satisfied by products

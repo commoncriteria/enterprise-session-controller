@@ -44,9 +44,9 @@
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:959:78: error: element "assignable" not allowed here; expected element "title"
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:960:71: error: text not allowed here; expected element "title"
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:961:27: error: element "note" not allowed yet; missing required element "title"
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:1002:36: error: value of attribute "id" is invalid; must be a string matching the regular expression "[a-zA-Z][\-0-9a-zA-Z_]+"
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:1073:126: error: value of attribute "cc-id" is invalid; must be a string matching the regular expression "f[a-z]{2}_[a-z0-9^]{2,10}(_ext)?\.[0-9]"
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:1092:12: error: element "obj-sfrs" not allowed yet; missing required element "sel-sfrs"
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:1114:30: error: value of attribute "role" is invalid; must be equal to "Application", "Developer", "application" or "developer"
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:1135:12: error: element "sel-sfrs" not allowed here; expected the element end-tag
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:1164:105: error: value of attribute "cc-id" is invalid; must be a string matching the regular expression "f[a-z]{2}_[a-z0-9^]{2,10}(_ext)?\.[0-9]"
+/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:1027:36: error: value of attribute "id" is invalid; must be a string matching the regular expression "[a-zA-Z][\-0-9a-zA-Z_]+"
+/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:1181:126: error: value of attribute "cc-id" is invalid; must be a string matching the regular expression "f[a-z]{2}_[a-z0-9^]{2,10}(_ext)?\.[0-9]"
+/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:1226:12: error: element "obj-sfrs" not allowed yet; missing required element "sel-sfrs"
+/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:1247:30: error: value of attribute "role" is invalid; must be equal to "Application", "Developer", "application" or "developer"
+/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:1311:12: error: element "sel-sfrs" not allowed here; expected the element end-tag
+/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:1369:105: error: value of attribute "cc-id" is invalid; must be a string matching the regular expression "f[a-z]{2}_[a-z0-9^]{2,10}(_ext)?\.[0-9]"
