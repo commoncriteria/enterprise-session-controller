@@ -695,15 +695,18 @@ the generation of media recordings such as unobservability of user actions.</con
 	      <h:br/><h:b><ctr ctr-type="Table" pre="Table " id="atref-mandatory">: Audit Log Events</ctr></h:b>
 	    </audit-table>
 	  <section title="Security Audit (FAU)" id="m-fau">
+
+	  
 			<f-component name="Audit Data Generation (Audit Log)" cc-id="fau_gen.1"  id="fau-gen-1-esc">FAU_GEN.1.1 is refined to include the following auditable events in addition to what is defined in the
 Base-PP.
-
-	    
 		<note role='application'><h:i><h:p>The Base-PP version of the SFR requires “all administrative actions” to be audited.
 		When the TOE includes this PP-Module, it is expected that this will also include the
 		administrative actions that support the PP-Module defined in FMT_SMF.1/ESC.</h:p><h:p>FAU_VVR_EXT.2 is a selection-based requirement. Auditing for this requirement
 		must be performed if and only if the TOE claims it</h:p>
 		</h:i></note>
+		<aactivity>The evaluator shall complete the EA for FAU_GEN.1 as described in the NDcPP SD for the auditable events
+defined above in addition to the applicable auditable events that are defined in the NDcPP. The evaluator
+shall also ensure that the administrative actions defined for this PP-Module are appropriately audited. </aactivity>
 
 			</f-component>
 			<f-component name= "Protected Audit Trail Storage" cc-id="fau_stg.1" id="fau-stg-1-esc">This SFR is optional in the NDcPP but is mandated by this PP-Module because the ESC is expected to
@@ -711,13 +714,16 @@ Base-PP.
 	<note role='application'><h:i>Both the “audit data” (FAU_GEN.1) and “system log” data (FAU_GEN.1/Log) are
 	expected to be protected from unauthorized access. This SFR applies to all data
 	related to the behavior of the TOE regardless of how it is categorized or where it
-	is stored.</h:i> </note></f-component>
+	is stored.</h:i> </note>
+	<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to
+make its inclusion mandatory rather than optional, but there is no change to how the SFR is to be
+implemented.</aactivity></f-component>
 	</section>
 	<section title="Cryptographic Support (FCS)" id="m-fcs">
 			<f-component name="DTLS Server Support without Mutual Authentication" cc-id="fcs_dtlss_ext.1"  id="fcs-dtlss-ext-1">
 			<f-element id='fcs-dtlss-ext-1e1'>
 				<title>
-				The TSF shall implement DTLS 1.2 (RFC 6347)) supporting the following ciphersuites: <selectables> 	
+				The TSF shall implement DTLS 1.2 (RFC 6347) supporting the following ciphersuites: <selectables> 	
 					<selectable>select supported ciphersuites from List 1<h:b> in the NDcPP</h:b></selectable>
 					</selectables>and no other ciphersuites.
 				</title>
@@ -750,7 +756,7 @@ Base-PP.
 			</f-element></f-component>
 			<f-component name="TLS Client Protocol without Mutual Authentication" cc-id="fcs_tlsc_ext.1" id="fcs-tlsc-ext-1">
 			<f-element id='fcs-tlsc-ext-1e1'>
-				<title>The TSF shall implement TLS 1.2 (RFC 5246)) and reject all other TLS and SSL
+				<title>The TSF shall implement TLS 1.2 (RFC 5246) and reject all other TLS and SSL
 				versions. The TLS implementation will support the following ciphersuites:
 				<selectables>
 					<selectable>select supported ciphersuites from List 1 <h:p>in the NDcPP</h:p></selectable>
@@ -772,7 +778,7 @@ implemented.</aactivity>
 
 				<f-component name="TLS Server Protocol without Mutual Authentication" cc-id="fcs_tlss_ext.1" id="fcs-tlss-ext-1">
 				<f-element id='fcs-tlss-ext-1e1'>
-				<title>The TSF shall implement TLS 1.2 (RFC 5246)) and reject all other TLS and SSL
+				<title>The TSF shall implement TLS 1.2 (RFC 5246) and reject all other TLS and SSL
 				versions. The TLS implementation will support the following ciphersuites: <selectables>
 				<selectable>select supported ciphersuites from List 1 <h:b>in the NDcPP</h:b></selectable></selectables> and no other
 				ciphersuites.</title>
