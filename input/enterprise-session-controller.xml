@@ -1604,7 +1604,7 @@ auditable events based on the following attributes:<h:ol type='a'>
 		</f-element>
 		</f-component>
 
-		<f-component name="Generation of Voice and Video Recordings" cc-id='fau_vvr-ext-2' id='fau-vvr-ext-2'>
+		<f-component name="Generation of Voice and Video Recordings" cc-id='fau_vvr_ext.2' id='fau-vvr-ext-2'>
 		<f-element id='fau_vvr-ext-2e1'>
 		<title>The TSF shall provide the ability to retain voice and video recordings based on <assignable>administrator-specified criteria</assignable></title></f-element>
 		<f-element id='fau_vvr-ext-2e2'>
