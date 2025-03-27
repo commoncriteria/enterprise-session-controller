@@ -1188,6 +1188,17 @@ call data.</title>
 		not successfully established due to invalid IP address.</test>
 </testlist></Tests></aactivity>
 	</f-element>
+	<audit-event>
+	<audit-event-descr>Successful or failed authentication
+of trunk connected network
+component</audit-event-descr>
+<audit-event-info>ID of Administrator that attempts to connect trunk to
+external device (if available);</audit-event-info>
+<audit-event-info>IP address of device where trunk request was
+initiated (if available);</audit-event-info>
+<audit-event-info>IP address of external device where trunk is to be
+connected (if available).</audit-event-info>
+	</audit-event>
 	</f-component>
 
 	<f-component name="User Authentication before Any Action (VVoIP Endpoints)" cc-id="fia_uau.2" id="fia-uau-2-vvoip" iteration="VVoIP">
@@ -1216,8 +1227,31 @@ call data.</title>
 		<test>The evaluator shall connect to the TOE and initiate the registration process. When prompted for
 		credentials, the evaluator shall supply valid credentials and observe that the registration process succeeds
 		and that the registered device can be used to place calls.</test>
-</testlist></Tests></aactivity>
+		</testlist></Tests></aactivity>
 	</f-element>
+	<comment>review audit.</comment>
+
+	<audit-event>
+	<audit-event-descr>Authentication of external VVoIP
+	endpoint/device</audit-event-descr>
+	<audit-event-info>FIA_UAU.2/VVoIP. Authentication of external VVoIP
+	endpoints must occur before registration. In short,
+	no successful registration of VVoIP endpoint can
+	happen until after the successful authentication of
+	the VVoIP endpoint.</audit-event-info>
+	</audit-event>
+	<audit-event>
+	<audit-event-descr>Successful or failed registration of
+	VVoIP endpoint/device
+	</audit-event-descr>
+	<audit-event-info>ID of Administrator that attempt to register VVoIP
+	endpoint to TOE (if available);</audit-event-info>
+	<audit-event-info>IP address of device where registration attempt was
+	initiated (if available);
+	</audit-event-info>
+	<audit-event-info>IP address of VVoIP endpoint that attempt to register
+	to ESC (if available).</audit-event-info>
+	</audit-event>
 	</f-component>
 	</section>
 	<section title="Security Management (FMT)" id="man-fmt">
@@ -1309,6 +1343,18 @@ call data.</title>
 		passwords based on the new policy. </test></testlist></Tests>
 		</aactivity>
 	</f-element>
+	<audit-event>
+	<audit-event-descr>Enabling/disabling VVoIP endpoint/device features</audit-event-descr>
+	<audit-event-info>ID of Administrator attempting to enable/disable service or feature on ESC or on external registered device;</audit-event-info>
+	<audit-event-info>IP address of device where enabling/disabling of services or features was initiated;</audit-event-info>
+	<audit-event-info>The feature or service that was enabled/disabled.</audit-event-info>
+	</audit-event>
+	<audit-event>
+	<audit-event-descr>Modification of TOE Call Detail Records (CDR)</audit-event-descr>
+	<audit-event-info>ID of Administrator attempting to query or modify database;</audit-event-info>
+	<audit-event-info>IP address of device where database query was initiated;</audit-event-info>
+	<audit-event-info>The exact SQL command/instruction that was executed.</audit-event-info>
+	</audit-event>
 	</f-component>
 
 
@@ -1564,6 +1610,9 @@ auditable events based on the following attributes:<h:ol type="a">
 		shall repeat this test for each supported mechanism to ensure that voice/video recordings are only
 		generated when that mechanism is active.</h:p></Tests></aactivity>
 		</f-element>
+		<audit-event>
+		<audit-event-descr>Voice/video recordings of completed calls</audit-event-descr>
+		<audit-event-info>Unique identifying data specified in FAU_VVR_EXT.2.3.</audit-event-info> </audit-event>
 		</f-component>
 	</section>
 	</sel-sfrs>

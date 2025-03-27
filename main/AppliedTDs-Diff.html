@@ -17,6 +17,10 @@
                 </tr>
             </table>
         </div>
+        <div id="commmentbox-">
+            <a href="#Comment-1-">Comment: Comment-1-</a>
+            <br>
+        </div>
         <h1 class="title" style="page-break-before:auto;">PP-Module for Enterprise Session Controllers</h1>
         <h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1>
         <div class="center">
@@ -440,6 +444,69 @@
                 <tr data-sortkey="#1">
                     <th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th>
                 </tr>
+                <tr data-sortkey="FIA_UAU.2/TC">
+                    <td rowspan="2"><a href="#FIA_UAU.2/TC">FIA_UAU.2/TC</a></td><td style="display:none"></td>
+                </tr>
+                <tr style="display:none;" data-sortkey="FIA_UAU.2/TC#">
+                    <td></td>
+                </tr>
+                <tr data-sortkey="FIA_UAU.2/TC.1">
+                    <td>Successful or failed authentication of trunk connected network component</td><td>
+                        <ul>
+                            <li>ID of Administrator that attempts to connect trunk to external device (if available);</li>
+                            <li>IP address of device where trunk request was initiated (if available);</li>
+                            <li>IP address of external device where trunk is to be connected (if available).</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr data-sortkey="FIA_UAU.2/VVoIP">
+                    <td rowspan="3"><a href="#FIA_UAU.2/VVoIP">FIA_UAU.2/VVoIP</a></td><td style="display:none"></td>
+                </tr>
+                <tr style="display:none;" data-sortkey="FIA_UAU.2/VVoIP#">
+                    <td></td>
+                </tr>
+                <tr data-sortkey="FIA_UAU.2/VVoIP.2">
+                    <td>Authentication of external <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint/device</td><td><a href="#FIA_UAU.2/VVoIP">FIA_UAU.2/VVoIP</a>. Authentication of external <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints must occur before registration. In short, no successful registration of <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint can happen until after the successful authentication of the <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint.</td>
+                </tr>
+                <tr data-sortkey="FIA_UAU.2/VVoIP.3">
+                    <td>Successful or failed registration of <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint/device </td><td>
+                        <ul>
+                            <li>
+                                ID of Administrator that attempt to register <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint to <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> (if available);
+                            </li>
+                            <li>IP address of device where registration attempt was initiated (if available); </li>
+                            <li>
+                                IP address of <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint that attempt to register to <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> (if available).
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr data-sortkey="FMT_SMF.1/ESC">
+                    <td rowspan="3"><a href="#FMT_SMF.1/ESC">FMT_SMF.1/ESC</a></td><td style="display:none"></td>
+                </tr>
+                <tr style="display:none;" data-sortkey="FMT_SMF.1/ESC#">
+                    <td></td>
+                </tr>
+                <tr data-sortkey="FMT_SMF.1/ESC.1">
+                    <td>Enabling/disabling <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint/device features</td><td>
+                        <ul>
+                            <li>
+                                ID of Administrator attempting to enable/disable service or feature on <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> or on external registered device;
+                            </li>
+                            <li>IP address of device where enabling/disabling of services or features was initiated;</li>
+                            <li>The feature or service that was enabled/disabled.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr data-sortkey="FMT_SMF.1/ESC.2">
+                    <td>Modification of <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Call Detail Records (<abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr>)</td><td>
+                        <ul>
+                            <li>ID of Administrator attempting to query or modify database;</li>
+                            <li>IP address of device where database query was initiated;</li>
+                            <li>The exact SQL command/instruction that was executed.</li>
+                        </ul>
+                    </td>
+                </tr>
             </table>
             <div class="appnote">
                 <span class="note-header">Application Note: </span><span class="note"><i>
@@ -852,6 +919,7 @@
                     </div>
                 </div>
             </div>
+             <span style="" class="comment " id="Comment-1-">review audit.</span> 
         </div>
         <h3 id="man-fmt" class="indexable" data-level="3">5.2.4 Security Management (FMT)</h3>
         <div class="comp" id="FMT_CFG_EXT.1">

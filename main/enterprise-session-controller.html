@@ -629,7 +629,7 @@ function showTarget(id){
 	            img[src="images/collapsed.png"] { display:none;}
 
           }
-    </style></head><body onLoad="init()"><h1 class="title" style="page-break-before:auto;">PP-Module for Enterprise Session Controllers</h1><noscript><h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1></noscript><div class="center"><img src="images/niaplogo.png" alt="NIAP Logo"></img><br/>
+    </style></head><body onLoad="init()"><div id="commmentbox-"><a href="#Comment-1-">Comment: Comment-1-</a><br/></div><h1 class="title" style="page-break-before:auto;">PP-Module for Enterprise Session Controllers</h1><noscript><h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1></noscript><div class="center"><img src="images/niaplogo.png" alt="NIAP Logo"></img><br/>
       Version: 1.0<br/>2024-03-28<br/><b>National Information Assurance Partnership</b><br/></div><h2 style="page-break-before:always;">Revision History</h2><table><tr class="header"><th>Version</th><th>Date</th><th>Comment</th></tr><tr><td>Round 1</td><td>2015-04-23</td><td>First draft of version 1.0 for comment</td></tr>
 <tr><td>1.0</td><td>2015-08-14</td><td>Release - first version released</td></tr>
 <tr><td>2.0</td><td>2024-03-28</td><td>Updated for <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, or whatever</td></tr>
@@ -974,7 +974,23 @@ included.</p>
 			<div class="comp" id="FAU_GEN.1"><h4>FAU_GEN.1 Audit Data Generation (Audit Log)</h4><a href="#FAU_GEN.1">FAU_GEN.1</a>.1 is refined to include the following auditable events in addition to what is defined in the
 <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>.
 
-	    <table class="sort_kids_" border="1"><caption data-sortkey="#0"><span class="ctr" data-myid="mandatory-audit-events" data-counter-type="ct-Table" id="mandatory-audit-events">Table <span class="counter">2</span></span>: Auditable Events for Mandatory Requirements</caption><tr data-sortkey="#1"><th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th></tr></table>
+	    <table class="sort_kids_" border="1"><caption data-sortkey="#0"><span class="ctr" data-myid="mandatory-audit-events" data-counter-type="ct-Table" id="mandatory-audit-events">Table <span class="counter">2</span></span>: Auditable Events for Mandatory Requirements</caption><tr data-sortkey="#1"><th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th></tr><tr data-sortkey="FIA_UAU.2/TC"><td rowspan="2"><a href="#FIA_UAU.2/TC">FIA_UAU.2/TC</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FIA_UAU.2/TC#"><td></td></tr><tr data-sortkey="FIA_UAU.2/TC.1"><td>Successful or failed authentication
+of trunk connected network
+component</td><td><ul><li>ID of Administrator that attempts to connect trunk to
+external device (if available);</li><li>IP address of device where trunk request was
+initiated (if available);</li><li>IP address of external device where trunk is to be
+connected (if available).</li></ul></td></tr><tr data-sortkey="FIA_UAU.2/VVoIP"><td rowspan="3"><a href="#FIA_UAU.2/VVoIP">FIA_UAU.2/VVoIP</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FIA_UAU.2/VVoIP#"><td></td></tr><tr data-sortkey="FIA_UAU.2/VVoIP.2"><td>Authentication of external <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr>
+	endpoint/device</td><td><a href="#FIA_UAU.2/VVoIP">FIA_UAU.2/VVoIP</a>. Authentication of external <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr>
+	endpoints must occur before registration. In short,
+	no successful registration of <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint can
+	happen until after the successful authentication of
+	the <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint.</td></tr><tr data-sortkey="FIA_UAU.2/VVoIP.3"><td>Successful or failed registration of
+	<abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint/device
+	</td><td><ul><li>ID of Administrator that attempt to register <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr>
+	endpoint to <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> (if available);</li><li>IP address of device where registration attempt was
+	initiated (if available);
+	</li><li>IP address of <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint that attempt to register
+	to <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> (if available).</li></ul></td></tr><tr data-sortkey="FMT_SMF.1/ESC"><td rowspan="3"><a href="#FMT_SMF.1/ESC">FMT_SMF.1/ESC</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FMT_SMF.1/ESC#"><td></td></tr><tr data-sortkey="FMT_SMF.1/ESC.1"><td>Enabling/disabling <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint/device features</td><td><ul><li>ID of Administrator attempting to enable/disable service or feature on <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> or on external registered device;</li><li>IP address of device where enabling/disabling of services or features was initiated;</li><li>The feature or service that was enabled/disabled.</li></ul></td></tr><tr data-sortkey="FMT_SMF.1/ESC.2"><td>Modification of <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Call Detail Records (<abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr>)</td><td><ul><li>ID of Administrator attempting to query or modify database;</li><li>IP address of device where database query was initiated;</li><li>The exact SQL command/instruction that was executed.</li></ul></td></tr></table>
 		<div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note"><i><p>The <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> version of the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> requires “all administrative actions” to be audited.
@@ -1429,6 +1445,7 @@ call data.
 	<div class="element"><div class="reqid" id="FIA_UAU.2.1/TC"><a href="#FIA_UAU.2.1/TC" class="abbr">FIA_UAU.2.1/TC</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall require each <b>telecommunications device</b> to be successfully
 	authenticated before allowing any other <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>-mediated actions on behalf of that
 	<b>device</b>.</div></div>
+	
 	<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FIA_UAU.2/TC">FIA_UAU.2/TC</a></div>
 	
 	
@@ -1462,6 +1479,10 @@ call data.
 	<div class="element"><div class="reqid" id="FIA_UAU.2.1/VVoIP"><a href="#FIA_UAU.2.1/VVoIP" class="abbr">FIA_UAU.2.1/VVoIP</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall require each <b><abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint</b> to be successfully authenticated before allowing any other <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>-mediated actions on behalf of that <b>endpoint</b>.<div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note"><i> This includes both the establishment of voice/video calls and the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>-initiated application of an update to the <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint software/firmware.</i></span></div></div></div>
+	<span style="" class="comment " id="Comment-1-">review audit.</span>
+
+	
+	
 	<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FIA_UAU.2/VVoIP">FIA_UAU.2/VVoIP</a></div>
 		
 		
@@ -1488,7 +1509,7 @@ call data.
       The evaluator shall connect to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and initiate the registration process. When prompted for
 		credentials, the evaluator shall supply valid credentials and observe that the registration process succeeds
 		and that the registered device can be used to place calls.</li>
-</ul></span></div></div></div></div></div>
+		</ul></span></div></div></div></div></div>
 	
 	<h3 id="man-fmt" class="indexable" data-level="3">5.2.4 Security Management (FMT)</h3>
 	<div class="comp" id="FMT_CFG_EXT.1"><h4>FMT_CFG_EXT.1 Secure by Default Configuration</h4>
@@ -1537,6 +1558,8 @@ call data.
 		must be claimed as well.</p><p>If “Ability to specify the set of audited events” is selected, <a href="#FAU_SEL.1">FAU_SEL.1</a> must be
 		claimed.
 		</p></i></span></div></div></div>
+	
+	
 	<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FMT_SMF.1/ESC">FMT_SMF.1/ESC</a></div>
 		
 		
@@ -1992,6 +2015,7 @@ auditable events based on the following attributes:<ol type="a">
      <span class="assignable-content">unique identifying data</span>].<div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note"><i>This requirement must be claimed if ‘have’ is selected in FAU_VVR_EXT.1.1</i></span></div></div></div>
+		
 		<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FAU_VVR-EXT-2">FAU_VVR-EXT-2</a></div>
 		
 		
