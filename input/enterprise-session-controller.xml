@@ -481,19 +481,15 @@ baseline of capabilities that all conformant ESCs must provide.
       <OSPs>
         <OSP name="P.SECURED_PLATFORM">
           <description>Administrators in the organization ensure that general purpose computers use secure operating
-systems and are configured in accordance with applicable security standards.</description>
+		systems and are configured in accordance with applicable security standards.</description>
 			<objective-refer ref="OE.SECURED_PLATFORM">
-            <rationale>In order to ensure that the ESC is not subject
-to compromise, it is important for the OS that
-it is installed on to be secure in terms of
-closing unnecessary interfaces and providing
-appropriate security functionality. However,
-it is necessary for this PP-Module to make this
-an organizational policy in the scenario where the TOE uses a commercial third-party OS
-because the ESC vendor is not responsible for
-providing the OS and therefore has no control
-over its inherent functionality or
-administrative configuration.</rationale>
+            <rationale>In order to ensure that the ESC is not subject to compromise, it is important for the OS that it is installed on to be secure in terms of closing unnecessary interfaces and providing appropriate security functionality. However,
+			it is necessary for this PP-Module to make this
+			an organizational policy in the scenario where the TOE uses a commercial third-party OS
+			because the ESC vendor is not responsible for
+			providing the OS and therefore has no control
+			over its inherent functionality or
+			administrative configuration.</rationale>
           </objective-refer>
         </OSP>
       </OSPs>
@@ -600,9 +596,9 @@ following rationale: </con-op-en>
 	  </con-mod>
 	  <con-mod ref='fau-gen-1'>This PP-Module modifies the Base-PP SFR to add specific auditable events that
 		relate to ESC functionality.</con-mod>
-	  <con-mod ref='FAU_STG.1'>This PP-Module mandates the inclusion of this optional SFR because it is
+	  <con-mod ref='fau-stg-1'>This PP-Module mandates the inclusion of this optional SFR because it is
 		required to implement functionality required by this PP-Module.</con-mod>
-	  <con-mod ref='FCS_DTLSS_EXT.1'>This PP-Module refines this selection-based SFR to a more restrictive selection if claimed. The available selection item is one of the items in the original version of the SFR. This PP-Module also specifies an additional trigger for when this SFR must be claimed</con-mod>
+	  <con-mod ref='fcs-dtlss-ext-1'>This PP-Module refines this selection-based SFR to a more restrictive selection if claimed. The available selection item is one of the items in the original version of the SFR. This PP-Module also specifies an additional trigger for when this SFR must be claimed</con-mod>
 	  <con-mod ref='FCS_DTLSS_EXT.2'>This PP-Module conditionally mandates the inclusion of this optional SFR for any situation where DTLS is claimed, which makes this into a selection-based SFR.</con-mod>
 	  <con-mod ref='FCS_NTP_EXT.1'>This PP-Module requires NTP v4 to be selected, which is one of two selection
 		options defined in the original SFR in the Base-PP. This PP-Module also mandates the inclusion of this selection-based SFR because it is required to
