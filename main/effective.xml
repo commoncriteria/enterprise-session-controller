@@ -377,32 +377,70 @@ baseline of capabilities that all conformant ESCs must provide.
 			<addressed-by>FIA_X509_EXT.1/Rev (refined from Base-PP)</addressed-by><rationale>This SFR supports the objective by requiring X.509 validation in support of establishing TLS communications.</rationale>
 			<addressed-by>FIA_X509_EXT.2 (refined from Base-PP)</addressed-by><rationale>This SFR supports the objective by requiring X.509 authentication in support of establishing TLS communications.</rationale>
 			<addressed-by>FIA_X509_EXT.3 (refined from Base-PP)</addressed-by><rationale>This SFR supports the objective by requiring the TSF to be able to request an X.509 certificate that it can present to external entities when establishing cryptographic communications.</rationale>
-			<addressed-by>FPT_STM_EXT.1 (refined from Base-PP)</addressed-by><rationale/>
-			<addressed-by/><rationale/>
-			<addressed-by/><rationale/>
-			<addressed-by/><rationale/>
-			<addressed-by/><rationale/>
-			<addressed-by/><rationale/>
-			<addressed-by/><rationale/>
+			<addressed-by>FPT_STM_EXT.1 (refined from Base-PP)</addressed-by><rationale>This SFR supports the objective by requiring the TSF to synchronize with an NTP server for reliable time data that is used for establishment of valid cryptographic channels.</rationale>
+			<addressed-by>FDP_IFC.1</addressed-by><rationale>This SFR supports the objective by defining an enterprise session controller policy to broker VVoIP endpoint communications.</rationale>
+			<addressed-by>FDP_IFF.1</addressed-by><rationale>This SFR supports the objective by defining the rules enforced by the enterprise session controller policy.</rationale>
+			<addressed-by>FIA_UAU.2/TC</addressed-by><rationale>This SFR supports the objective by requiring authentication of telecommunications devices that are connected to the TOE before the TSF will interact with them.</rationale>
+			<addressed-by>FIA_UAU.2/VVoIP</addressed-by><rationale>This SFR supports the objective by requiring authentication of VVoIP endpoints that are connected to the TOE before the TSF will interact with them.</rationale>
+			<addressed-by>FTP_ITC.1/ESC</addressed-by><rationale>This SFR supports the objective by defining the trusted channels used for protection of signaling and media data used in VVoIP and SIP trunking communications.</rationale>
+			<addressed-by>FPT_TUD_EXT.1/VVoIP (implementationdependent)</addressed-by><rationale>This SFR supports the objective by optionally allowing the TOE to distribute software/firmware updates to connected VVoIP endpoints.</rationale>
 			<addressed-by/><rationale/>
 			<!--O.SELF_PROTECTION-->
-			<addressed-by/><rationale/>
-			<addressed-by/><rationale/>
-			<addressed-by/><rationale/>
-			<addressed-by/><rationale/>
-			<addressed-by/><rationale/>
-			<addressed-by/><rationale/>
-			
+			<addressed-by>FAU_GEN.1/Log</addressed-by><rationale>This SFR supports the objective by generating realtime diagnostic activity for the TOE’s behavior that can be used to determine if it is experiencing conditions that could lead to a failure state.</rationale>
+			<addressed-by>FDP_RIP.1</addressed-by><rationale>This SFR supports the objective by ensuring the permanent erasure of residual data so that a decommissioned or refurbished device cannot be used to disclose TSF data without authorization.</rationale>
+			<addressed-by>FPT_FLS.1</addressed-by><rationale>This SFR supports the objective by ensuring that the TSF enters a secure failure state if specific hardware or software failures are detected.</rationale>
 			</threat>
 			<threat name="T.NETWORK_DISCLOSURE" id="t-network-disclosure"><description> An attacker may attempt to “map” IP addresses of VVoIP endpoint/devices and other
 			telecommunications equipment for the purpose of determining the organizational structure of the
 			enterprise, providing reconnaissance for future targeted attacks.</description>
 			<!--O.SECURE_VVOIP,  -->
+			<addressed-by>FCS_DTLSS_EXT.1 (refined from Base-PP)</addressed-by><rationale>This SFR supports the objective by requiring the use of DTLS to protect transmitted voice/video media if this is the chosen method for securing it.</rationale>
+			<addressed-by>FCS_DTLSS_EXT.2 (refined from Base-PP)</addressed-by><rationale>This SFR supports the objective by requiring any implementation of DTLS to use mutual authentication.</rationale>
+			<addressed-by>FCS_NTP_EXT.1 (refined from Base-PP)</addressed-by><rationale>This SFR supports the objective by requiring the TSF to support NTP communications to obtain reliable time data that is used for establishment of valid cryptographic channels.</rationale>
+			<addressed-by>FCS_TLSC_EXT.1 (refined from Base-PP)</addressed-by><rationale>This SFR supports the objective by requiring TLS for SIP and H.323 communications.</rationale>
+			<addressed-by>FCS_TLSC_EXT.2 (refined from Base-PP)</addressed-by><rationale>This SFR supports the objective by requiring TLS for SIP and H.323 communications.</rationale>
+			<addressed-by>FCS_TLSS_EXT.1 (refined from Base-PP)</addressed-by><rationale>This SFR supports the objective by requiring TLS for SIP and H.323 communications.</rationale>
+			<addressed-by>FCS_TLSS_EXT.2 (refined from Base-PP)</addressed-by><rationale>This SFR supports the objective by requiring TLS for SIP and H.323 communications.</rationale>
+			<addressed-by>FIA_X509_EXT.1/Rev (refined from Base-PP)</addressed-by><rationale>This SFR supports the objective by requiring X.509 validation in support of establishing TLS communications.</rationale>
+			<addressed-by>FIA_X509_EXT.2 (refined from Base-PP)</addressed-by><rationale>This SFR supports the objective by requiring X.509 authentication in support of establishing TLS communications.</rationale>
+			<addressed-by>FIA_X509_EXT.3 (refined from Base-PP)</addressed-by><rationale>This SFR supports the objective by requiring the TSF to be able to request an X.509 certificate that it can present to external entities when establishing cryptographic communications.</rationale>
+			<addressed-by>FPT_STM_EXT.1 (refined from Base-PP)</addressed-by><rationale>This SFR supports the objective by requiring the TSF to synchronize with an NTP server for reliable time data that is used for establishment of valid cryptographic channels.</rationale>
+			<addressed-by>FDP_IFC.1</addressed-by><rationale>This SFR supports the objective by defining an enterprise session controller policy to broker VVoIP endpoint communications.</rationale>
+			<addressed-by>FDP_IFF.1</addressed-by><rationale>This SFR supports the objective by defining the rules enforced by the enterprise session controller policy.</rationale>
+			<addressed-by>FIA_UAU.2/TC</addressed-by><rationale>This SFR supports the objective by requiring authentication of telecommunications devices that are connected to the TOE before the TSF will interact with them.</rationale>
+			<addressed-by>FIA_UAU.2/VVoIP</addressed-by><rationale>This SFR supports the objective by requiring authentication of VVoIP endpoints that are connected to the TOE before the TSF will interact with them.</rationale>
+			<addressed-by>FTP_ITC.1/ESC</addressed-by><rationale>This SFR supports the objective by defining the trusted channels used for protection of signaling and media data used in VVoIP and SIP trunking communications.</rationale>
+			<addressed-by>FPT_TUD_EXT.1/VVoIP (implementationdependent)</addressed-by><rationale>This SFR supports the objective by optionally allowing the TOE to distribute software/firmware updates to connected VVoIP endpoints.</rationale>
 			</threat>
 			<threat name="T.UNAUTHORIZED_CLIENT" id="t-unauthorized-client"><description>An attacker may attempt to register an unauthorized VVoIP endpoint to the TOE for the purpose of
 			impersonating a legitimate end user device in order to gain unauthorized connectivity to other clients
 			or active calls.</description>
-			<!-- O.SECURE_VVOIP ,O.SYSTEM_MONITORING-->
+			<!-- O.SECURE_VVOIP-->
+			<addressed-by>FCS_DTLSS_EXT.1 (refined from Base-PP)</addressed-by><rationale>This SFR supports the objective by requiring the use of DTLS to protect transmitted voice/video media if this is the chosen method for securing it.</rationale>
+			<addressed-by>FCS_DTLSS_EXT.2 (refined from Base-PP)</addressed-by><rationale>This SFR supports the objective by requiring any implementation of DTLS to use mutual authentication.</rationale>
+			<addressed-by>FCS_NTP_EXT.1 (refined from Base-PP)</addressed-by><rationale>This SFR supports the objective by requiring the TSF to support NTP communications to obtain reliable time data that is used for establishment of valid cryptographic channels.</rationale>
+			<addressed-by>FCS_TLSC_EXT.1 (refined from Base-PP)</addressed-by><rationale>This SFR supports the objective by requiring TLS for SIP and H.323 communications.</rationale>
+			<addressed-by>FCS_TLSC_EXT.2 (refined from Base-PP)</addressed-by><rationale>This SFR supports the objective by requiring TLS for SIP and H.323 communications.</rationale>
+			<addressed-by>FCS_TLSS_EXT.1 (refined from Base-PP)</addressed-by><rationale>This SFR supports the objective by requiring TLS for SIP and H.323 communications.</rationale>
+			<addressed-by>FCS_TLSS_EXT.2 (refined from Base-PP)</addressed-by><rationale>This SFR supports the objective by requiring TLS for SIP and H.323 communications.</rationale>
+			<addressed-by>FIA_X509_EXT.1/Rev (refined from Base-PP)</addressed-by><rationale>This SFR supports the objective by requiring X.509 validation in support of establishing TLS communications.</rationale>
+			<addressed-by>FIA_X509_EXT.2 (refined from Base-PP)</addressed-by><rationale>This SFR supports the objective by requiring X.509 authentication in support of establishing TLS communications.</rationale>
+			<addressed-by>FIA_X509_EXT.3 (refined from Base-PP)</addressed-by><rationale>This SFR supports the objective by requiring the TSF to be able to request an X.509 certificate that it can present to external entities when establishing cryptographic communications.</rationale>
+			<addressed-by>FPT_STM_EXT.1 (refined from Base-PP)</addressed-by><rationale>This SFR supports the objective by requiring the TSF to synchronize with an NTP server for reliable time data that is used for establishment of valid cryptographic channels.</rationale>
+			<addressed-by>FDP_IFC.1</addressed-by><rationale>This SFR supports the objective by defining an enterprise session controller policy to broker VVoIP endpoint communications.</rationale>
+			<addressed-by>FDP_IFF.1</addressed-by><rationale>This SFR supports the objective by defining the rules enforced by the enterprise session controller policy.</rationale>
+			<addressed-by>FIA_UAU.2/TC</addressed-by><rationale>This SFR supports the objective by requiring authentication of telecommunications devices that are connected to the TOE before the TSF will interact with them.</rationale>
+			<addressed-by>FIA_UAU.2/VVoIP</addressed-by><rationale>This SFR supports the objective by requiring authentication of VVoIP endpoints that are connected to the TOE before the TSF will interact with them.</rationale>
+			<addressed-by>FTP_ITC.1/ESC</addressed-by><rationale>This SFR supports the objective by defining the trusted channels used for protection of signaling and media data used in VVoIP and SIP trunking communications.</rationale>
+			<addressed-by>FPT_TUD_EXT.1/VVoIP (implementationdependent)</addressed-by><rationale>This SFR supports the objective by optionally allowing the TOE to distribute software/firmware updates to connected VVoIP endpoints.</rationale>
+			<!-- O.SYSTEM_MONITORING-->
+			<addressed-by>FAU_GEN.1 (refined from Base-PP)</addressed-by><rationale>This SFR supports the objective by defining additional required auditable events that are specific to ESC functionality that extend the audit generation requirement defined in the Base-PP.</rationale>
+			<addressed-by>FAU_STG.1 (refined from Base-PP)</addressed-by><rationale>This SFR supports the objective by requiring all stored audit data to be protected against unauthorized access.</rationale>
+			<addressed-by>FCS_NTP_EXT.1 (refined from Base-PP)</addressed-by><rationale>This SFR supports the objective by requiring the TSF to support NTP communications to obtain reliable time data that is used for accurate recording of log data.</rationale>
+			<addressed-by>FPT_STM_EXT.1 (refined from Base-PP)</addressed-by><rationale>This SFR supports the objective by requiring the TSF to synchronize with an NTP server for reliable time data that is used for accurate log data.</rationale>
+			<addressed-by>FAU_GEN.1/Log</addressed-by><rationale>This SFR supports the objective by requiring the TSF to generate a real-time system log of its own diagnostic details.</rationale>
+			<addressed-by>FAU_SAR.1/Log</addressed-by><rationale>This SFR supports the objective by defining what users are able to review the real-time system log.</rationale>
+			<addressed-by>FAU_SEL.1 (selectionbased)</addressed-by><rationale>This SFR supports the objective by optionally allowing an administrator to suppress the generation of certain audit records.</rationale>
 			</threat>
 
       </threats>
@@ -513,41 +551,66 @@ functions to address its specialized behavior.</description>
     <base-pp id="ND" version="3.0e" name="Network Device" product="Network Device" short="ND" plural="Network Devices">
       <url>https://www.niap-ccevs.org/protectionprofiles/482</url>
       <cPP/>
-      <sec-func-req-dir> 
-xxxxx
+      <sec-func-req-dir> <h:p>This section instructs the ST author on what selections must be made to certain SFRs contained in the
+NDcPP in order to mitigate the threats defined in this PP-Module or to mitigate a threat from the NDcPP
+in a more specific or restrictive manner than what it specifies.</h:p><h:p>
+Full assurance activities are not repeated for the requirements in this section; only the additional testing
+needed to supplement what has already been captured in the Supporting Documents for the NDcPP is
+included.</h:p>
+
       </sec-func-req-dir>
       <modified-sfrs/>
       <additional-sfrs/>
       <con-toe>
-     xxxxx
+     	When this PP-Module is used to extend the NDcPP, the TOE type for the overall TOE is still a network device. The TOE boundary is simply extended to include ESC functionality that is provided by the network device.
       </con-toe>
       <con-sec-prob>
-	 xxxx
+	 	The threats defined by this PP-Module (see section 3.1) supplement those defined in the NDcPP as follows:
 	  </con-sec-prob>
       <con-obj/>
-      <con-op-en>xxxx </con-op-en>
+      <con-op-en>The objectives for the TOE’s operational environment are consistent with the NDcPP based on the
+following rationale: </con-op-en>
       
       
-      <con-mod ref="T.NETWORK_ACCESS">
-xxxx
+      <con-mod ref="T.MALICIOUS_TRAFFIC">The Base-PP does not define a threat for malicious traffic because all of its
+		security-relevant external interfaces define the network device as the
+		endpoint. This PP-Module defines interfaces where the TOE is facilitating a
+		connection between two external entities, such that traffic between them will
+		flow “through” the TOE as opposed to “to/from the TOE.” This threat is
+		consistent with the Base-PP because it is only applied to the interfaces defined
+		in this PP-Module where it is relevant; it does not apply to the interfaces
+		defined in the Base-PP.
 	  </con-mod>
       <con-mod ref="T.NETWORK_DISCLOSURE">
-
+		The Base-PP does not define a threat for access to network resources because
+		all of its security-relevant external interfaces define the network device as the
+		endpoint. This PP-Module defines interfaces where the TOE is facilitating a
+		connection between two external entities, such that traffic between them will
+		flow “through” the TOE as opposed to “to/from the TOE.” This threat is
+		consistent with the Base-PP because it is only applied to the interfaces defined
+		in this PP-Module where it is relevant; it does not apply to the interfaces
+		defined in the Base-PP.
 	  </con-mod>
-	  <con-mod ref="T.NETWORK_DOS">
-
+	  <con-mod ref="T.UNAUTHORIZED_CLIENT">
+		This threat is a specific instance of the
+		T.WEAK_AUTHENTICATION_ENDPOINTS threat defined in the Base-PP
+		because it refers to a scenario where an unauthorized client is able to
+		communicate successfully with the TOE because the TSF is incapable of
+		authenticating clients to determine which are or are not authorized.
 	  </con-mod>
-	  <con-mod ref="T.NETWORK_MISUSE">
 
+	  <con-mod ref="P.SECURED_PLATFORM">
+		The Base-PP does not define any policies that expect that environmental
+		systems are configured in any specific manner. Therefore, it is expected that requiring environmental systems to be configured in a secure manner will not
+		prevent the TSF from being fully implemented.
 	  </con-mod>
-	  <con-mod ref="T.NETWORK_MISUSE">
-
-	  </con-mod>
-	  <con-mod ref="A.CONNECTIONS">
-
-	  </con-mod>
-	  <con-mod ref="P.ANALYZE">
-
+	  <con-mod ref="OE.SECURED_PLATFORM">
+		This objective expects the TOE to be configured in such a manner that the
+		underlying OS on which the TOE runs cannot be used to alter the behavior of
+		the TSF. This is consistent with the OE.NO_GENERAL_PURPOSE objective in
+		the Base-PP that expects that general-purpose computing capability will be
+		prohibited by the OS. This ensures that OE.SECURED_PLATFORM can be
+		satisfied by the operational environment.
 	  </con-mod>
 	  <modified-sfrs>
 	  <section title="Security Audit (FAU)" id="m-fau">
