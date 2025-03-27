@@ -1,6 +1,5 @@
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:109:21: error: element "using-cc2022" not allowed here; expected the element end-tag or element "display-audit-with-sfrs"
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:419:15: error: element "section" incomplete; missing required element "assumptions"
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:424:41: error: text not allowed here; expected element "OSPs"
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:424:154: error: text not allowed here; expected element "OSPs"
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:430:15: error: element "OSP" incomplete; missing required element "objective-refer"
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:552:19: error: element "modified-sfrs" not allowed here; expected the element end-tag or element "con-mod"
@@ -22,7 +21,6 @@
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:613:19: error: element "selectables" incomplete; missing required element "selectable"
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:614:30: error: element "note" not allowed here; expected the element end-tag, text, element "_", "assignable", "choice", "comment", "ctr", "depends", "endnote", "equation", "figure", "implements", "management-function-set", "no-link", "provides", "refinement", "replace", "requires", "rule", "selectables", "snip", "testlist" or "xref" or an element from another namespace
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:619:198: error: text not allowed here; expected element "consistency-rationale", "depends" or "note"
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:620:40: error: text not allowed here; expected element "consistency-rationale", "depends" or "note"
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:620:55: error: text not allowed here; expected element "consistency-rationale", "depends" or "note"
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:620:69: error: element "f-component" incomplete; missing required element "consistency-rationale"
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:622:38: error: element "f-element" not allowed yet; missing required element "consistency-rationale"

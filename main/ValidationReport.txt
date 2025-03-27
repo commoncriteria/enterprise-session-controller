@@ -25,7 +25,6 @@
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/input/enterprise-session-controller.xml:638:69: error: element "f-component" incomplete; missing required element "consistency-rationale"
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/input/enterprise-session-controller.xml:640:38: error: element "f-element" not allowed yet; missing required element "consistency-rationale"
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/input/enterprise-session-controller.xml:643:109: error: element "selectables" incomplete; missing required element "selectable"
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/input/enterprise-session-controller.xml:651:24: error: text not allowed here; expected element "consistency-rationale", "depends" or "note"
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/input/enterprise-session-controller.xml:651:144: error: text not allowed here; expected element "consistency-rationale", "depends" or "note"
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/input/enterprise-session-controller.xml:652:18: error: element "f-component" incomplete; missing required element "consistency-rationale"
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/input/enterprise-session-controller.xml:656:258: error: text not allowed here; expected element "consistency-rationale", "depends" or "note"

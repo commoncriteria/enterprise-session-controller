@@ -24,7 +24,6 @@ output/enterprise-session-controller-release-linkable.html: PMG
 output/enterprise-session-controller-release-linkable.html: PPModule
 output/enterprise-session-controller-release-linkable.html: PSTN
 output/enterprise-session-controller-release-linkable.html: RLC
-output/enterprise-session-controller-release-linkable.html: SBOP
 output/enterprise-session-controller-release-linkable.html: SCIF
 output/enterprise-session-controller-release-linkable.html: SFP
 output/enterprise-session-controller-release-linkable.html: SMR
@@ -34,7 +33,6 @@ output/enterprise-session-controller-release-linkable.html: Sanitization
 output/enterprise-session-controller-release-linkable.html: Softphones
 output/enterprise-session-controller-release-linkable.html: T1
 output/enterprise-session-controller-release-linkable.html: TODO
-output/enterprise-session-controller-release-linkable.html: TRP
 output/enterprise-session-controller-release-linkable.html: TSFmediated
 output/enterprise-session-controller-release-linkable.html: TST
 output/enterprise-session-controller-release-linkable.html: Telepresence
@@ -75,7 +73,6 @@ output/enterprise-session-controller-release.html: NIC
 output/enterprise-session-controller-release.html: OA
 output/enterprise-session-controller-release.html: PMG
 output/enterprise-session-controller-release.html: PPModule
-output/enterprise-session-controller-release.html: SBOP
 output/enterprise-session-controller-release.html: SCIF
 output/enterprise-session-controller-release.html: SFP
 output/enterprise-session-controller-release.html: SMR
@@ -83,7 +80,6 @@ output/enterprise-session-controller-release.html: SS7
 output/enterprise-session-controller-release.html: Sanitization’
 output/enterprise-session-controller-release.html: Softphones
 output/enterprise-session-controller-release.html: T1
-output/enterprise-session-controller-release.html: TRP
 output/enterprise-session-controller-release.html: TST
 output/enterprise-session-controller-release.html: Telepresence
 output/enterprise-session-controller-release.html: UID
@@ -173,7 +169,6 @@ output/enterprise-session-controller.html: PMG
 output/enterprise-session-controller.html: PPModule
 output/enterprise-session-controller.html: PSTN
 output/enterprise-session-controller.html: RLC
-output/enterprise-session-controller.html: SBOP
 output/enterprise-session-controller.html: SCIF
 output/enterprise-session-controller.html: SFP
 output/enterprise-session-controller.html: SMR
@@ -183,7 +178,6 @@ output/enterprise-session-controller.html: Sanitization’
 output/enterprise-session-controller.html: Softphones
 output/enterprise-session-controller.html: T1
 output/enterprise-session-controller.html: TODO
-output/enterprise-session-controller.html: TRP
 output/enterprise-session-controller.html: TSFmediated
 output/enterprise-session-controller.html: TST
 output/enterprise-session-controller.html: Telepresence
