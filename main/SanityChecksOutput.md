@@ -9,7 +9,7 @@
 * Error: Detected dangling ref to 'OE.SECURED_PLATFORM'
         for a ref.
 	/Module[1]""/sec:Security_Requirements[1]""/base-pp[1]""/con-mod[5]"This obje"/ref[1]""
-* Error: Detected dangling ref to 'FAU_GEN.1'
+* Error: Detected dangling ref to 'fau-gen-1'
         for a ref.
 	/Module[1]""/sec:Security_Requirements[1]""/base-pp[1]""/con-mod[6]"This PP-M"/ref[1]""
 * Error: Detected dangling ref to 'FAU_STG.1'

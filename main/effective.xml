@@ -576,7 +576,7 @@ following rationale: </con-op-en>
 		prohibited by the OS. This ensures that OE.SECURED_PLATFORM can be
 		satisfied by the operational environment.
 	  </con-mod>
-	  <con-mod ref="FAU_GEN.1">This PP-Module modifies the Base-PP SFR to add specific auditable events that
+	  <con-mod ref="fau-gen-1">This PP-Module modifies the Base-PP SFR to add specific auditable events that
 		relate to ESC functionality.</con-mod>
 	  <con-mod ref="FAU_STG.1">This PP-Module mandates the inclusion of this optional SFR because it is
 		required to implement functionality required by this PP-Module.</con-mod>
