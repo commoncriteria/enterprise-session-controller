@@ -1030,7 +1030,15 @@ detail records</h:b>.</title>
 		</f-element>
 		</f-component>
 
+		<ext-comp-def title="Voice and Video Recording" fam-id="FAU_VVR_EXT">
+<fam-behavior>This family defines requirements for recording of voice and video data.</fam-behavior>
+</ext-comp-def>
+
 		<f-component name="Recording Voice and Video Call Data" cc-id="fua_vvr_ext.1" id="fau-vvr-ext-1">
+			<comp-lev> requires the TSF to specify whether or not it records voice and video call data.</comp-lev>
+			<management>The following actions could be considered for the management functions in FMT: <h:ol><h:li>Ability to enable/disable voice and video recordings</h:li></h:ol></management>
+			<audit>There are no auditable events foreseen.</audit>
+			<dependencies>No dependencies.</dependencies>
 		<title>The TSF shall <selectables><selectable>have</selectable><selectable>not have</selectable></selectables> the capability to record voice and video
 call data.</title>
 		<note role="application"><h:i>If "have" is selected, both FAU_STG.1/VVR and FAU_VVR_EXT.2 must be claimed
@@ -1042,6 +1050,7 @@ call data.</title>
 		<Guidance>There are no guidance EAs for this SFR.</Guidance>
 		<Tests>The test for this SFR is performed as part of FMT_SMF.1/ESC’s EAs.</Tests>
 		</aactivity>
+
 		</f-component>
 	</section>
 
