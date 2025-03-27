@@ -630,6 +630,49 @@ following rationale: </con-op-en>
 		prohibited by the OS. This ensures that OE.SECURED_PLATFORM can be
 		satisfied by the operational environment.
 	  </con-mod>
+	  <con-mod ref='FAU_GEN.1'></con-mod>
+	  <con-mod ref=''>This PP-Module modifies the Base-PP SFR to add specific auditable events that relate to ESC functionality.</con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+	  <con-mod ref=''></con-mod>
+
 	  <modified-sfrs>
 	  <section title="Security Audit (FAU)" id="m-fau">
 			<f-component name="Audit Data Generation (Audit Log)" cc-id="fau_gen.1"  id="fau-gen-1-esc">FAU_GEN.1.1 is refined to include the following auditable events in addition to what is defined in the
