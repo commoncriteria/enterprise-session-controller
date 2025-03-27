@@ -464,7 +464,9 @@ baseline of capabilities that all conformant ESCs must provide.
         <OSP name="P.SECURED_PLATFORM">
           <description>Administrators in the organization ensure that general purpose computers use secure operating
 systems and are configured in accordance with applicable security standards.</description>
-    
+			<objective-refer ref="XXX">
+            <rationale>YYYY</rationale>
+          </objective-refer>
         </OSP>
       </OSPs>
     </section>   <!-- OSPs -->
