@@ -1361,7 +1361,7 @@ auditable events based on the following attributes:<h:ol type='a'>
 		<f-element id='fau-stg-1e1-vvr'>
 		<title>The TSF shall protect the stored <h:b>voice and video recordings</h:b> from unauthorized
 			<h:b>disclosure</h:b> and deletion <h:b>by encrypting voice and video recording data that is stored
-			on the TOE using an encryption method specified in FCS_COP.1.</h:b></title>
+			on the TOE using an encryption method specified in FCS_COP.1.</h:b></title></f-element>
 		<f-element id='fau-stg-1e2-vvr'>
 		<title>The TSF shall be able to [<h:i>prevent</h:i>] unauthorized modifications to the stored voice and video recordings.</title>
 		<note role='application'><h:i>This requirement must be claimed if ‘have’ is selected in FAU_VVR_EXT.1.1.</h:i></note>
