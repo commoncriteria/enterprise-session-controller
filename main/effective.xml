@@ -1178,7 +1178,7 @@ components that affect the proper functioning of the TOE</assignable>].
 
 
 	<section title="Trusted Path/Channels (FTP)" id="man-ftp">
-	<f-component name="Inter-TSF Trusted Channel (ESC Communications)" cc-id="ftp-itc.1.1" id="ftp-itc.1.1-esc" iteration="ESC">
+	<f-component name="Inter-TSF Trusted Channel (ESC Communications)" cc-id="ftp-itc.1" id="ftp-itc.1-esc" iteration="ESC">
 		<f-element id="ftp-itc-1e1"> 
 		<title>The TSF shall <h:b>be capable of using TLS and <selectables><selectable>DTLS</selectable><selectable>IPsec</selectable><selectable>no other protocols</selectable></selectables> to</h:b> provide a communication channel between itself and another trusted IT product <h:b>supporting the following capabilities: VVoIP endpoints (for protection of signaling protocols), VVoIP endpoints (for protection of voice/video/media content), other ESC devices (for SIP trunking), <selectables><selectable>VVoIP conferencing system</selectable><selectable>no other capabilities</selectable></selectables></h:b> that is logically distinct from other communication channels and provides assured identification of its end points and protection of the channel data from modification or disclosure.</title>
 		</f-element>

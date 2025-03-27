@@ -728,7 +728,7 @@ system log item is described in the guidance documentation along with each requi
 			failure, the evaluator shall verify that the observed TOE behavior is consistent with the failure state
 			defined in the TSS for this SFR. If this functionality is configurable, the evaluator shall reconfigure the TOE
 			to each possible response to a self-test failure and re-execute the testing as many times as is necessary to
-			demonstrate that the configured behavior is observed in each case.</div></div></span></div><h2 class="indexable" data-level="2" id="man-ftp">2.2.6 Trusted Path/Channels (FTP)</h2><div class="comp" id="FTP-ITC.1.1-ESC"><h4>FTP-ITC.1.1/ESC Inter-TSF Trusted Channel (ESC Communications)</h4><span class="activity_pane_body"><div class="component-activity-header">FTP-ITC.1.1/ESC</div>
+			demonstrate that the configured behavior is observed in each case.</div></div></span></div><h2 class="indexable" data-level="2" id="man-ftp">2.2.6 Trusted Path/Channels (FTP)</h2><div class="comp" id="FTP-ITC.1-ESC"><h4>FTP-ITC.1/ESC Inter-TSF Trusted Channel (ESC Communications)</h4><span class="activity_pane_body"><div class="component-activity-header">FTP-ITC.1/ESC</div>
 		
 		
 		<div class="eacategory">TSS</div><div class="ea"><div class="ea">The evaluator shall perform the TSS evaluation activities specified in the NDcPP SD for FTP_ITC.1 for the
@@ -736,7 +736,7 @@ system log item is described in the guidance documentation along with each requi
 		</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">The evaluator shall perform the AGD evaluation activities specified in the NDcPP SD for FTP_ITC.1 for the
 		communications interfaces and protocols specified in this iteration of the requirement.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">In addition to the assurance activities specified in the NDcPP SD for FTP_ITC.1, the evaluator shall perform
 		the following tests:<span class="testlist-"><ul>
-		<li class="test-"><a id="_t_19" class="defined" href="#_t_19">Test FTP-ITC.1.1/ESC:1</a>:
+		<li class="test-"><a id="_t_19" class="defined" href="#_t_19">Test FTP-ITC.1/ESC:1</a>:
       For each combination of signaling protocol (SIP, H.323), method of securing that protocol (IPsec,
 		TLS), and method of securing transmitted media (SRTP, DTLS), the evaluator shall configure the TOE to
 		use the selected protocols through a trunk to a remote ESC. The evaluator shall register a VVoIP endpoint
@@ -752,7 +752,7 @@ system log item is described in the guidance documentation along with each requi
 		where this results in double encryption of the traffic (e.g. SRTP-protected media tunneled through IPsec
 		over a SIP trunk), the evaluator shall conduct the test with the outer layer enabled and then disabled in
 		order to verify that both methods of protection are being used.</p></li>
-		<li class="test-"><a id="_t_20" class="defined" href="#_t_20">Test FTP-ITC.1.1/ESC:2</a>:
+		<li class="test-"><a id="_t_20" class="defined" href="#_t_20">Test FTP-ITC.1/ESC:2</a>:
       (conditional): If ‘VVoIP conferencing system’ is selected, the evaluator shall repeat test 1
 		(depending on the protocols the TOE claims to support) in an environment where the TOE is being used
 		to establish a conference call between three or more registered VVoIP endpoints. In both cases, the
