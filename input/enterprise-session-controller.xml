@@ -774,11 +774,9 @@ implemented.</aactivity></f-component>
 				</f-element></f-component>
 			<f-component name="TLS Client Protocol Mutual Authentication" cc-id="fcs_tlsc_ext.2" id="fcs-tlsc-ext-2">This SFR is optional in the NDcPP but is mandated by this PP-Module because SIP and H.323
 			communications require mutually-authenticated TLS.
-			<f-element>
 				<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to
 				make its inclusion mandatory rather than optional, but there is no change to how the SFR is to be
 				implemented.</aactivity>
-			</f-element>
 				</f-component>
 
 
@@ -792,9 +790,10 @@ implemented.</aactivity></f-component>
 				because TLS is used to secure SIP and H.323 communications. Additionally, this
 				PP-Module mandates the use of TLS 1.2.</h:i></note>
 				<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to
-make its inclusion mandatory rather than conditional, but there is no change to how the SFR is to be
-implemented.</aactivity>
+				make its inclusion mandatory rather than conditional, but there is no change to how the SFR is to be
+				implemented.</aactivity>
 				</f-element></f-component>
+
 			<f-component name="TLS Server Protocol  Mutual Authentication" cc-id="fcs_tlss_ext.2" id="fcs-tlss-ext-2">
 			This SFR is optional in the NDcPP but is mandated by this PP-Module because SIP and H.323 communications require mutually-authenticated TLS.
 			<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to
@@ -805,7 +804,7 @@ implemented.</aactivity>
 			<section title='Identification and Authentication (FIA)' id='m-fia'>
 			<f-component name="X.509 Certificate Validation" cc-id='fia_x509_ext.1' id='fia-x509-ext-1' iteration='Rev'>
 			This SFR is selection-based in the Base-PP. It is mandatory when the TOE claims conformance to this PPModule because X.509 certificate validation is needed when establishing TLS communications for SIP and H.323. There are no changes to the SFR otherwise.
-			
+			<aactivity>No additional EAs are specified for this SFR beyond what is defined in the NDcPP SD.</aactivity>
 			</f-component>
 			<f-component name="X.509 Certificate Authentication" cc-id='fia_x509_ext.2' id='fia-x509-ext-2' >
 			<f-element id='fia-x509-ext-2e1'>
@@ -840,10 +839,12 @@ updates</selectable>
 			</selectables>.</title>
 			<note role='application'><h:i>This SFR is selection-based in the Base-PP but is made mandatory when this PPModule is claimed because the ESC implements functionality that requires the use of certificate authentication.</h:i></note>
 			</f-element>
+			<aactivity>No additional EAs are specified for this SFR beyond what is defined in the NDcPP SD.</aactivity>
 			</f-component>
 			<f-component name="X.509 Certificate Requests" cc-id='fia_x509_ext.3' id='fia-x509-ext-3'>
 			This SFR is selection-based in the NDcPP but is mandated by this PP-Module because an ESC must
 			implement security functions that require it to be issued its own X.509 certificate.
+			<aactivity>No additional EAs are specified for this SFR beyond what is defined in the NDcPP SD.</aactivity>
 			</f-component>
 			</section>
 		<section title='Protection of the TSF (FPT)' id='m-fpt'>
