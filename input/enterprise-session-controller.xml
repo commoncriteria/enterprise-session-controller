@@ -1544,9 +1544,9 @@ components that affect the proper functioning of the TOE</assignable>].
 
 	</impl-dep-sfrs>
 	<sel-sfrs>
-	<section id="sec-sel-audit-table" title="Auditable Events for Selectable SFRs">
-        <audit-table id="at-selectable" table="selectable"/>
-      </section>
+		<section id="sec-sel-audit-table" title="Auditable Events for Selection-based SFRs">
+           <audit-table id="at-sel-based" table="sel-based"/>
+	</section>
 	<section title='Security Audit (FAU)' id='sel-fau'>
 		<f-component name="Selective Audit" cc-id='fau_sel.1' id='fau-sel-1'>
 		<f-element id='fau-sel-1e1'>
