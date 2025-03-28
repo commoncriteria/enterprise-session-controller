@@ -171,7 +171,7 @@ functionality. Regardless of whether the TOE is a standalone appliance or a gene
 configured to function as an ESC, the TOE must be capable of satisfying all of the mandatory requirements
 of the NDcPP.</h:p><h:p>An ESC is a privately-owned telecommunication switch where its primary function is to set up, process,
 and terminate voice and video calls over an enterprise-wide Internet Protocol (IP) network. ESC operation
-is analogous to the tasks of 1930’stelephone switchboard-operators, which is to patch (connect) together
+is analogous to the tasks of 1930’s telephone switchboard-operators, which is to patch (connect) together
 callers to callees. But today’s ESC executes switchboard operations automatically, while providing
 simultaneous connectivity to hundreds of callers virtually instantaneously. In addition to establishing,
 processing, and managing thousands of connected calls, most ESCs support auxiliary services such as
@@ -182,7 +182,7 @@ client devices such as VoIP-handsets, Softphones, Desktop Telepresence Systems, 
 Telepresence Systems, and Mobile Devices. ESCs are normally installed within a SCIF or other entry-controlled environment, especially systems that can register numerous VVoIP endpoints. To protect the
 ESC, a Session Border Controller (SBC) is installed on the outer edge of the VVoIP network to help protect
 the ESC from external network attacks. Also note that a fairly robust ESC system includes many major
-components such as its own database, operating system (O/S), conferencing system, dialplan, network
+components such as its own database, operating system (O/S), conferencing system, dial plan, network
 manager, call-signaling protocols (e.g. H.323, Session Initiation Protocol (SIP), SS7), and its own
 ‘Operations, Administration, and Management (OA&amp;M)’ application system.</h:p><h:p>If any one of these major components is successfully attacked, then one can expect the entire ESC system
 to be negatively impacted. The intention of this PP-Module is to provide a list of security requirements
@@ -253,7 +253,7 @@ baseline of capabilities that all conformant ESCs must provide.
         </usecase>
 		<usecase id="usecase4" title="Trunk Calls in/out to Remote ESCs">
           <description>Similar to trunking calls to telecommunications service providers, the ESC can trunk a large volume
-			of calls to other remote ESCs. An example of this deployment is a meshed configuration of trunk-connected ESCs that are deployed to support a metropolitan-sized enterprise-wide VVoIP callprocessing network. This particular type of use case may not require any of the meshed ESCs to
+			of calls to other remote ESCs. An example of this deployment is a meshed configuration of trunk-connected ESCs that are deployed to support a metropolitan-sized enterprise-wide VVoIP call processing network. This particular type of use case may not require any of the meshed ESCs to
 			be connected to a service provider.
           </description>
         </usecase>
