@@ -598,13 +598,13 @@
             <tr data-sortkey="FPT_FLS.1.1">
                 <td>No events specified</td><td>N/A</td>
             </tr>
-            <tr data-sortkey="FTP-ITC.1/ESC">
-                <td rowspan="2"><a href="#FTP-ITC.1/ESC">FTP-ITC.1/ESC</a></td><td style="display:none"></td>
+            <tr data-sortkey="FTP_ITC.1/ESC">
+                <td rowspan="2"><a href="#FTP_ITC.1/ESC">FTP_ITC.1/ESC</a></td><td style="display:none"></td>
             </tr>
-            <tr style="display:none;" data-sortkey="FTP-ITC.1/ESC#">
+            <tr style="display:none;" data-sortkey="FTP_ITC.1/ESC#">
                 <td></td>
             </tr>
-            <tr data-sortkey="FTP-ITC.1/ESC.1">
+            <tr data-sortkey="FTP_ITC.1/ESC.1">
                 <td>No events specified</td><td>N/A</td>
             </tr>
         </table>
@@ -644,7 +644,7 @@
                     <div class="appnote">
                         <span class="note-header">Application Note: </span><span class="note"><i>
                                 <p>
-                                    This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is selection-based in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> and remains selection-based in this PPModule because DTLS may be used to secure transmitted media. In this case, it must be claimed if &lsquo;DTLS&rsquo; is selected in FTP_ITC.1.1/<abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> in addition to the applicable selection triggers in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>.
+                                    This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is selection-based in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> and remains selection-based in this PPModule because DTLS may be used to secure transmitted media. In this case, it must be claimed if &lsquo;DTLS&rsquo; is selected in <a href="#FTP_ITC.1.1/ESC">FTP_ITC.1.1/ESC</a> in addition to the applicable selection triggers in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>.
                                 </p>
                                 <p>
                                     This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is also refined from its definition in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> by requiring the use of DTLS 1.2 if this function is claimed.
@@ -659,7 +659,7 @@
         </div>
         <div class="comp" id="FCS_DTLSS_EXT.2">
             <h4>FCS_DTLSS_EXT.2 DTLS Server Support for Mutual Authentication</h4>
-            This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is optional in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is selection-based in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because any <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> use of DTLS requires mutually-authenticated DTLS to be implemented. Therefore, this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> must be claimed if &lsquo;DTLS&rsquo; is selected in FTP_ITC.1.1/<abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>. There is no change to the EAs specified for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> SD. The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> modifies this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> to make its inclusion selection-based rather than optional, but there is no change to how the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is to be implemented. 
+            This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is optional in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is selection-based in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because any <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> use of DTLS requires mutually-authenticated DTLS to be implemented. Therefore, this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> must be claimed if &lsquo;DTLS&rsquo; is selected in <a href="#FTP_ITC.1.1/ESC">FTP_ITC.1.1/ESC</a>. There is no change to the EAs specified for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> SD. The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> modifies this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> to make its inclusion selection-based rather than optional, but there is no change to how the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is to be implemented. 
         </div>
         <div class="comp" id="FCS_NTP_EXT.1">
             <h4>FCS_NTP_EXT.1 NTP Protocol</h4>
@@ -1115,27 +1115,27 @@
             </div>
         </div>
         <h3 id="man-ftp" class="indexable" data-level="3">5.2.6 Trusted Path/Channels (FTP)</h3>
-        <div class="comp" id="FTP-ITC.1/ESC">
-            <h4>FTP-ITC.1/ESC Inter-TSF Trusted Channel (ESC Communications)</h4>
+        <div class="comp" id="FTP_ITC.1/ESC">
+            <h4>FTP_ITC.1/ESC Inter-TSF Trusted Channel (ESC Communications)</h4>
             <div class="element">
-                <div class="reqid" id="FTP-ITC.1.1/ESC">
-                    <a href="#FTP-ITC.1.1/ESC" class="abbr">FTP-ITC.1.1/ESC</a>
+                <div class="reqid" id="FTP_ITC.1.1/ESC">
+                    <a href="#FTP_ITC.1.1/ESC" class="abbr">FTP_ITC.1.1/ESC</a>
                 </div>
                 <div class="reqdesc">
                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall <b>be capable of using TLS and [<b>selection</b>: <span class="selectable-content" id="_s_38">DTLS</span>, <span class="selectable-content" id="_s_39">IPsec</span>, <span class="selectable-content" id="_s_40">no other protocols</span>] to</b> provide a communication channel between itself and another trusted IT product <b>supporting the following capabilities: <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints (for protection of signaling protocols), <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints (for protection of voice/video/media content), other <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> devices (for <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> trunking), [<b>selection</b>: <span class="selectable-content" id="_s_41"><abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> conferencing system</span>, <span class="selectable-content" id="_s_42">no other capabilities</span>]</b> that is logically distinct from other communication channels and provides assured identification of its end points and protection of the channel data from modification or disclosure.
                 </div>
             </div>
             <div class="element">
-                <div class="reqid" id="FTP-ITC.1.2/ESC">
-                    <a href="#FTP-ITC.1.2/ESC" class="abbr">FTP-ITC.1.2/ESC</a>
+                <div class="reqid" id="FTP_ITC.1.2/ESC">
+                    <a href="#FTP_ITC.1.2/ESC" class="abbr">FTP_ITC.1.2/ESC</a>
                 </div>
                 <div class="reqdesc">
                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall permit [<i>the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>, another trusted IT product</i>] to initiate communication via the trusted channel.
                 </div>
             </div>
             <div class="element">
-                <div class="reqid" id="FTP-ITC.1.3/ESC">
-                    <a href="#FTP-ITC.1.3/ESC" class="abbr">FTP-ITC.1.3/ESC</a>
+                <div class="reqid" id="FTP_ITC.1.3/ESC">
+                    <a href="#FTP_ITC.1.3/ESC" class="abbr">FTP_ITC.1.3/ESC</a>
                 </div>
                 <div class="reqdesc">
                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall initiate communication via the trusted channel for [<b>assignment</b>: <span class="assignable-content">list of functions for which a trusted channel is required</span>].
@@ -1225,7 +1225,7 @@
                     <td><a href="#FIA_UAU.2/VVoIP">FIA_UAU.2/VVoIP</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by requiring authentication of <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints that are connected to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> before the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> will interact with them.</td>
                 </tr>
                 <tr>
-                    <td>FTP_ITC.1/<abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by defining the trusted channels used for protection of signaling and media data used in <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> and <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> trunking communications.</td>
+                    <td><a href="#FTP_ITC.1/ESC">FTP_ITC.1/ESC</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by defining the trusted channels used for protection of signaling and media data used in <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> and <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> trunking communications.</td>
                 </tr>
                 <tr>
                     <td><a href="#FPT_TUD_EXT.1/VVoIP">FPT_TUD_EXT.1/VVoIP</a> (implementation-dependent)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by optionally allowing the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to distribute software/firmware updates to connected <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints.</td>
@@ -1290,7 +1290,7 @@
                     <td><a href="#FIA_UAU.2/VVoIP">FIA_UAU.2/VVoIP</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by requiring authentication of <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints that are connected to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> before the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> will interact with them.</td>
                 </tr>
                 <tr>
-                    <td>FTP_ITC.1/<abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by defining the trusted channels used for protection of signaling and media data used in <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> and <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> trunking communications.</td>
+                    <td><a href="#FTP_ITC.1/ESC">FTP_ITC.1/ESC</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by defining the trusted channels used for protection of signaling and media data used in <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> and <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> trunking communications.</td>
                 </tr>
                 <tr>
                     <td><a href="#FPT_TUD_EXT.1/VVoIP">FPT_TUD_EXT.1/VVoIP</a> (implementation-dependent)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by optionally allowing the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to distribute software/firmware updates to connected <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints.</td>
@@ -1343,7 +1343,7 @@
                     <td><a href="#FIA_UAU.2/VVoIP">FIA_UAU.2/VVoIP</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by requiring authentication of <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints that are connected to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> before the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> will interact with them.</td>
                 </tr>
                 <tr>
-                    <td>FTP_ITC.1/<abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by defining the trusted channels used for protection of signaling and media data used in <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> and <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> trunking communications.</td>
+                    <td><a href="#FTP_ITC.1/ESC">FTP_ITC.1/ESC</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by defining the trusted channels used for protection of signaling and media data used in <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> and <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> trunking communications.</td>
                 </tr>
                 <tr>
                     <td><a href="#FPT_TUD_EXT.1/VVoIP">FPT_TUD_EXT.1/VVoIP</a> (implementation-dependent)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by optionally allowing the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to distribute software/firmware updates to connected <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints.</td>
@@ -1512,7 +1512,7 @@
                 <td><a href="#FPT_FLS.1">FPT_FLS.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> requires the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to take some specific action in the event of self-test failures or other hardware failures. This extends the functionality required by the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> because the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> defines the self-tests that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must perform but does not define specific requirements for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&rsquo;s behavior when a self-test fails.</td>
             </tr>
             <tr>
-                <td><a href="#FTP-ITC.1/ESC">FTP-ITC.1/ESC</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> requires the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to implement trusted channels for <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> and <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> trunking communications. This is an iteration of the same <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> that adds new external interfaces beyond the scope of the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>. </td>
+                <td><a href="#FTP_ITC.1/ESC">FTP_ITC.1/ESC</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> requires the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to implement trusted channels for <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> and <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> trunking communications. This is an iteration of the same <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> that adds new external interfaces beyond the scope of the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>. </td>
             </tr>
             <tr>
                 <th colspan="2"> Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th>
@@ -1562,15 +1562,6 @@
             </caption>
             <tr data-sortkey="#1">
                 <th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th>
-            </tr>
-            <tr data-sortkey="FMT_CFG_EXT.1">
-                <td rowspan="2"><a href="#FMT_CFG_EXT.1">FMT_CFG_EXT.1</a></td><td style="display:none"></td>
-            </tr>
-            <tr style="display:none;" data-sortkey="FMT_CFG_EXT.1#">
-                <td></td>
-            </tr>
-            <tr data-sortkey="FMT_CFG_EXT.1.1">
-                <td>No events specified</td><td>N/A</td>
             </tr>
             <tr data-sortkey="FPT_TUD_EXT.1/VVoIP">
                 <td rowspan="2"><a href="#FPT_TUD_EXT.1/VVoIP">FPT_TUD_EXT.1/VVoIP</a></td><td style="display:none"></td>
@@ -1892,7 +1883,7 @@
                 <td>Requirement</td><td>Rationale for Satisfaction</td>
             </tr>
             <tr>
-                <td><b>FIA_UID.1 &ndash; Timing of Identification</b></td><td>FIA_UAU.2 (which is iterated in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> as <a href="#FIA_UAU.2/TC">FIA_UAU.2/TC</a> and <a href="#FIA_UAU.2/VVoIP">FIA_UAU.2/VVoIP</a>) has a dependency on FIA_UID.1 because authentication of an external entity requires that entity to first identify itself so that its identity can be validated by the authentication process. This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> has not been defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because in both iterations of FIA_UAU.2, the entity being authenticated is a trusted IT product in the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&rsquo;s operational environment that communicates with the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> over a channel specified in FTP_ITC.1/<abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>. FTP_ITC.1/<abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> explicitly states that the channel itself provides &lsquo;assured identification of its end points&rsquo; which implies that these entities are identified prior to the authentication behavior required by the iterations of FIA_UAU.2. </td>
+                <td><b>FIA_UID.1 &ndash; Timing of Identification</b></td><td>FIA_UAU.2 (which is iterated in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> as <a href="#FIA_UAU.2/TC">FIA_UAU.2/TC</a> and <a href="#FIA_UAU.2/VVoIP">FIA_UAU.2/VVoIP</a>) has a dependency on FIA_UID.1 because authentication of an external entity requires that entity to first identify itself so that its identity can be validated by the authentication process. This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> has not been defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because in both iterations of FIA_UAU.2, the entity being authenticated is a trusted IT product in the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&rsquo;s operational environment that communicates with the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> over a channel specified in <a href="#FTP_ITC.1/ESC">FTP_ITC.1/ESC</a>. <a href="#FTP_ITC.1/ESC">FTP_ITC.1/ESC</a> explicitly states that the channel itself provides &lsquo;assured identification of its end points&rsquo; which implies that these entities are identified prior to the authentication behavior required by the iterations of FIA_UAU.2. </td>
             </tr>
             <tr>
                 <td><b>FMT_MSA.3 &ndash; Static Attribute Initialization</b></td><td>
