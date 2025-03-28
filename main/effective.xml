@@ -1,26 +1,5 @@
 <Module xmlns="https://niap-ccevs.org/cc/v1" xmlns:sec="https://niap-ccevs.org/cc/v1/section" xmlns:h="http://www.w3.org/1999/xhtml" boilerplate="yes" target-product="Enterprise Session Controller" name="Enterprise Session Controller">
 
-<!--    <cPP/>    -->                                 <!-- This empty element must be included here if this is a cPP. It must not be here if it is not.  -->
-
-<!-- for FP -->
-<!--
-<Package name="TLS"                                   
-    xmlns="https://niap-ccevs.org/cc/v1"
-    xmlns:h="http://www.w3.org/1999/xhtml"
-    xmlns:sec="https://niap-ccevs.org/cc/v1/section"
--->
-
-<!-- For a PP-Module 
-<Module
-    name="Widget Clients"                              # Name of the Module  
-    xmlns="https://niap-ccevs.org/cc/v1"               # Some html magic
-    xmlns:h="http://www.w3.org/1999/xhtml"             # uses the "h" namespace for inline HTML
-    xmlns:sec="https://niap-ccevs.org/cc/v1/section"   # The "sec" namespace for sections is available
-    target-product="Widget"                            # Name of the TOE product
-    target-products="Widgets"                          # Plural name of the TOE product (optional)
-    boilerplate="yes"                                  # Whether to use boilerplate text by default (can be disabled in sections)
-    short="Wid">                                       # A short name for the PP (e.g. App or MDF)
--->
 
   <!-- PPReference (all documents) -->
   <PPReference>
@@ -187,7 +166,7 @@ of time if at all.</term>
 		 TOE/PP Overview aove. -->
     <section title="Compliant Targets of Evaluation" id="sec-TOEdescription">
 	<h:p>The Target of Evaluation (TOE) that is defined by the combination of the NDcPP and this PP-Module is a
-network device, either a dedicated appliance with a non-modifiable operating system, or a generalpurpose server running an independent commercially-available operating system that provides ESC
+network device, either a dedicated appliance with a non-modifiable operating system, or a general-purpose server running an independent commercially-available operating system that provides ESC
 functionality. Regardless of whether the TOE is a standalone appliance or a general-purpose server that is
 configured to function as an ESC, the TOE must be capable of satisfying all of the mandatory requirements
 of the NDcPP.</h:p><h:p>An ESC is a privately-owned telecommunication switch where its primary function is to set up, process,
@@ -200,7 +179,7 @@ VVoIP Conferencing, Voicemail, Chat, Telepresence, Encrypted Communications, and
 for end-to-end connectivity of diverse endpoints.</h:p><h:p>ESCs are commonly known as Call Servers, Communications Servers, and Call-Processing Systems, and
 they vary in complexities and capabilities. The typical ESC can manage thousands of calls between diverse
 client devices such as VoIP-handsets, Softphones, Desktop Telepresence Systems, Room-size Video
-Telepresence Systems, and Mobile Devices. ESCs are normally installed within a SCIF or other entrycontrolled environment, especially systems that can register numerous VVoIP endpoints. To protect the
+Telepresence Systems, and Mobile Devices. ESCs are normally installed within a SCIF or other entry-controlled environment, especially systems that can register numerous VVoIP endpoints. To protect the
 ESC, a Session Border Controller (SBC) is installed on the outer edge of the VVoIP network to help protect
 the ESC from external network attacks. Also note that a fairly robust ESC system includes many major
 components such as its own database, operating system (O/S), conferencing system, dialplan, network
@@ -245,7 +224,7 @@ baseline of capabilities that all conformant ESCs must provide.
 	  
 	   <usecases>
         <usecase id="usecase1" title="Dedicated Appliance">
-          <description>The ESC is sold and packaged as a standalone network appliance that does not have a direct interface to the underlying platform operating system, customized application, or commercialoff-the-shelf database.</description>
+          <description>The ESC is sold and packaged as a standalone network appliance that does not have a direct interface to the underlying platform operating system, customized application, or commercial off-the-shelf database.</description>
         </usecase>
 		<usecase id="usecase2" title="Call Processing (Connect VVoIP Calls Together)">
           <description>The ESC serves as a call control system that employs multiple technologies for processing and
@@ -274,7 +253,7 @@ baseline of capabilities that all conformant ESCs must provide.
         </usecase>
 		<usecase id="usecase4" title="Trunk Calls in/out to Remote ESCs">
           <description>Similar to trunking calls to telecommunications service providers, the ESC can trunk a large volume
-			of calls to other remote ESCs. An example of this deployment is a meshed configuration of trunkconnected ESCs that are deployed to support a metropolitan-sized enterprise-wide VVoIP callprocessing network. This particular type of use case may not require any of the meshed ESCs to
+			of calls to other remote ESCs. An example of this deployment is a meshed configuration of trunk-connected ESCs that are deployed to support a metropolitan-sized enterprise-wide VVoIP callprocessing network. This particular type of use case may not require any of the meshed ESCs to
 			be connected to a service provider.
           </description>
         </usecase>
@@ -383,10 +362,10 @@ baseline of capabilities that all conformant ESCs must provide.
 			<addressed-by>FIA_UAU.2/TC</addressed-by><rationale>This SFR supports the objective by requiring authentication of telecommunications devices that are connected to the TOE before the TSF will interact with them.</rationale>
 			<addressed-by>FIA_UAU.2/VVoIP</addressed-by><rationale>This SFR supports the objective by requiring authentication of VVoIP endpoints that are connected to the TOE before the TSF will interact with them.</rationale>
 			<addressed-by>FTP_ITC.1/ESC</addressed-by><rationale>This SFR supports the objective by defining the trusted channels used for protection of signaling and media data used in VVoIP and SIP trunking communications.</rationale>
-			<addressed-by>FPT_TUD_EXT.1/VVoIP (implementationdependent)</addressed-by><rationale>This SFR supports the objective by optionally allowing the TOE to distribute software/firmware updates to connected VVoIP endpoints.</rationale>
+			<addressed-by>FPT_TUD_EXT.1/VVoIP (implementation-dependent)</addressed-by><rationale>This SFR supports the objective by optionally allowing the TOE to distribute software/firmware updates to connected VVoIP endpoints.</rationale>
 			<addressed-by/><rationale/>
 			<!--O.SELF_PROTECTION-->
-			<addressed-by>FAU_GEN.1/Log</addressed-by><rationale>This SFR supports the objective by generating realtime diagnostic activity for the TOE’s behavior that can be used to determine if it is experiencing conditions that could lead to a failure state.</rationale>
+			<addressed-by>FAU_GEN.1/Log</addressed-by><rationale>This SFR supports the objective by generating real-time diagnostic activity for the TOE’s behavior that can be used to determine if it is experiencing conditions that could lead to a failure state.</rationale>
 			<addressed-by>FDP_RIP.1</addressed-by><rationale>This SFR supports the objective by ensuring the permanent erasure of residual data so that a decommissioned or refurbished device cannot be used to disclose TSF data without authorization.</rationale>
 			<addressed-by>FPT_FLS.1</addressed-by><rationale>This SFR supports the objective by ensuring that the TSF enters a secure failure state if specific hardware or software failures are detected.</rationale>
 			</threat>
@@ -440,7 +419,7 @@ baseline of capabilities that all conformant ESCs must provide.
 			<addressed-by>FPT_STM_EXT.1 (refined from Base-PP)</addressed-by><rationale>This SFR supports the objective by requiring the TSF to synchronize with an NTP server for reliable time data that is used for accurate log data.</rationale>
 			<addressed-by>FAU_GEN.1/Log</addressed-by><rationale>This SFR supports the objective by requiring the TSF to generate a real-time system log of its own diagnostic details.</rationale>
 			<addressed-by>FAU_SAR.1/Log</addressed-by><rationale>This SFR supports the objective by defining what users are able to review the real-time system log.</rationale>
-			<addressed-by>FAU_SEL.1 (selectionbased)</addressed-by><rationale>This SFR supports the objective by optionally allowing an administrator to suppress the generation of certain audit records.</rationale>
+			<addressed-by>FAU_SEL.1 (selection-based)</addressed-by><rationale>This SFR supports the objective by optionally allowing an administrator to suppress the generation of certain audit records.</rationale>
 			</threat>
 
       </threats>
@@ -634,8 +613,8 @@ following rationale: </con-op-en>
 		data but this PP-Module extends the requirements for data destruction to
 		entire disk storage locations.
 		</con-mod>
-	  <con-mod ref="fia-uau-2-tc">This SFR applies to authentication of external entities on the TOE’s throughtraffic interfaces and is therefore beyond the original scope of the Base-PP.</con-mod>
-	  <con-mod ref="fia-uau-2-vvoip">This SFR applies to authentication of external entities on the TOE’s throughtraffic interfaces and is therefore beyond the original scope of the Base-PP.</con-mod>
+	  <con-mod ref="fia-uau-2-tc">This SFR applies to authentication of external entities on the TOE’s through-traffic interfaces and is therefore beyond the original scope of the Base-PP.</con-mod>
+	  <con-mod ref="fia-uau-2-vvoip">This SFR applies to authentication of external entities on the TOE’s through-traffic interfaces and is therefore beyond the original scope of the Base-PP.</con-mod>
 	  <con-mod ref="fmt-cfg-ext-1">This SFR requires the TOE to implement a secure default configuration. There
 		is no inconsistency here with the Base-PP because the Base-PP’s functionality
 		is not dependent on a particular default configuration.
