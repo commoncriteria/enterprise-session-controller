@@ -629,7 +629,7 @@ function showTarget(id){
 	            img[src="images/collapsed.png"] { display:none;}
 
           }
-    </style></head><body onLoad="init()"><div id="commmentbox-"><a href="#Comment-1-">Comment: Comment-1-</a><br/></div><h1 class="title" style="page-break-before:auto;">PP-Module for Enterprise Session Controllers</h1><noscript><h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1></noscript><div class="center"><img src="images/niaplogo.png" alt="NIAP Logo"></img><br/>
+    </style></head><body onLoad="init()"><div id="commmentbox-"><a href="#Comment-1-">Comment: Comment-1-</a><br/><a href="#Comment-2-">Comment: Comment-2-</a><br/></div><h1 class="title" style="page-break-before:auto;">PP-Module for Enterprise Session Controllers</h1><noscript><h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1></noscript><div class="center"><img src="images/niaplogo.png" alt="NIAP Logo"></img><br/>
       Version: 1.0<br/>2024-03-28<br/><b>National Information Assurance Partnership</b><br/></div><h2 style="page-break-before:always;">Revision History</h2><table><tr class="header"><th>Version</th><th>Date</th><th>Comment</th></tr><tr><td>Round 1</td><td>2015-04-23</td><td>First draft of version 1.0 for comment</td></tr>
 <tr><td>1.0</td><td>2015-08-14</td><td>Release - first version released</td></tr>
 <tr><td>2.0</td><td>2024-03-28</td><td>Updated for <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, or whatever</td></tr>
@@ -657,7 +657,7 @@ function showTarget(id){
 		<p>The scope of this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is to describe the security functionality of an Enterprise Session Controller
 		(<abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>) in terms of [<abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>] and to define functional and assurance requirements for such products. This PPModule is intended for use with the following <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PPs</a></abbr>:
 		</p>
-		<ul><li>collaborative Protection Profile for Network Devices (<abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr>), Version 2.2e
+		<ul><li>collaborative Protection Profile for Network Devices (<abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr>), Version 3.0e
 		</li></ul>
 		<p>This <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> is valid because a device that implements an <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> is a specific type of network device, and
 		there is nothing about the implementation of an <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> that would prevent any of the security capabilities
@@ -1034,7 +1034,7 @@ implemented.</div></div></div>
 				must be claimed if ‘DTLS’ is selected in FTP_ITC.1.1/<abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> in addition to the
 				applicable selection triggers in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>.</p>
 				<p>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is also refined from its definition in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> by requiring the use of
-				DTLS 1.2 if this function is claimed.</p>
+				DTLS 1.2 if this function is claimed.</p><p>When CPP_ND_V3.0E is the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>, the element in Section 5.1.2.1 should be used, instead.</p>
 				</i>
 				</span></div></div></div>
 			<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FCS_DTLSS_EXT.1">FCS_DTLSS_EXT.1</a></div>There is no change to the EAs specified for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> SD.</div></div></div>
@@ -1066,7 +1066,7 @@ implemented.</div></div></div>
       Note:
     </span><span class="note"><i>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is selection-based in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is mandated by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>
 				because Transport Layer Security (TLS) is used to secure <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323
-				communications. Additionally, this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> mandates the use of TLS 1.2.</i></span></div></div></div><div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FCS_TLSC_EXT.1">FCS_TLSC_EXT.1</a></div>There is no change to the EAs specified for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> SD. The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> modifies this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> to
+				communications. Additionally, this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> mandates the use of TLS 1.2. When CPP_ND_V3.0E is the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>, the element in Section 5.1.2.1 should be used, instead.</i></span></div></div></div><div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FCS_TLSC_EXT.1">FCS_TLSC_EXT.1</a></div>There is no change to the EAs specified for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> SD. The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> modifies this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> to
 				make its inclusion mandatory rather than conditional, but there is no change to how the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is to be
 				implemented.</div></div></div>
 			<div class="comp" id="FCS_TLSC_EXT.2"><h4>FCS_TLSC_EXT.2 TLS Client Protocol Mutual Authentication</h4>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is optional in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is mandated by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323
@@ -1086,7 +1086,7 @@ implemented.</div></div></div>
       Note:
     </span><span class="note"><i>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is selection-based in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is mandated by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>
 				because TLS is used to secure <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications. Additionally, this
-				<abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> mandates the use of TLS 1.2.</i></span></div></div></div><div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FCS_TLSS_EXT.1">FCS_TLSS_EXT.1</a></div>There is no change to the EAs specified for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> SD. The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> modifies this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> to
+				<abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> mandates the use of TLS 1.2. When CPP_ND_V3.0E is the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>, the element in Section 5.1.2.1 should be used, instead.</i></span></div></div></div><div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FCS_TLSS_EXT.1">FCS_TLSS_EXT.1</a></div>There is no change to the EAs specified for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> SD. The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> modifies this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> to
 				make its inclusion mandatory rather than conditional, but there is no change to how the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is to be
 				implemented.</div></div></div>
 
@@ -1140,6 +1140,7 @@ updates</span>, <span class="selectable-content" id="_s_10">[<b>assignment</b>:
 		<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FPT_STM_EXT.1">FPT_STM_EXT.1</a></div>No additional EAs are specified for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> beyond what is defined in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> SD.</div></div></div>
 			
 			
+			<span style="" class="comment " id="Comment-1-">First half of TD0835 has been applied to this document, however the other half of this TD adds a "Further Modified <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr>"- Guidance is needed on how to implement this into the current document </span>
 	  <h2 id="man-sfrs" class="indexable" data-level="2">5.2 TOE Security Functional Requirements</h2>
 	The following section describes the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that must be satisfied by any <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that claims conformance to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.
 	These <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> must be claimed regardless of which <abbr class="dyn-abbr"><a href="#abbr_PP-Configuration">PP-Configuration</a></abbr> is used to define the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.
@@ -1148,7 +1149,7 @@ updates</span>, <span class="selectable-content" id="_s_10">[<b>assignment</b>:
 		<div class="comp" id="FAU_GEN.1/CDR"><h4>FAU_GEN.1/CDR Audit Data Generation (Call Detail Record)</h4>
 		<div class="element"><div class="reqid" id="FAU_GEN.1.1/CDR"><a href="#FAU_GEN.1.1/CDR" class="abbr">FAU_GEN.1.1/CDR</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to generate a <b>call detail</b> record <b>(<abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr>)</b> for <b>communications
 between <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints that are established by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.</b></div></div>
-		<div class="element"><div class="reqid" id="FAU_GEN.1.2/CDR"><a href="#FAU_GEN.1.2/CDR" class="abbr">FAU_GEN.1.2/CDR</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall record within each <abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr> at least the following information: <b>[<lu>
+		<div class="element"><div class="reqid" id="FAU_GEN.1.2/CDR"><a href="#FAU_GEN.1.2/CDR" class="abbr">FAU_GEN.1.2/CDR</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall record within each <b><abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr></b> at least the following information: <b><i>[<lu>
 		<li>calling party number (i.e. call originator)</li>
 		<li>called party number (i.e. call receiver or terminating number)</li>
 		<li>unique transaction sequence number</li>
@@ -1163,7 +1164,7 @@ between <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints 
 		<li>time zone</li>
 		<li>call release cause, if applicable (i.e. reason for termination of call)</li>
 		<li>fault condition(s), if applicable</li>
-		</lu></b>].<div class="appnote"><span class="note-header">Application
+		</lu></i></b>].<div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note"><i>The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> should be uniquely identified as part of the <abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr> so that there is
 		attribution of individual CDRs in environments where multiple ESCs are feeding
@@ -1186,7 +1187,7 @@ between <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints 
 			NTP status, CPU usage, memory usage, disk and file storage capacity, audit
 			storage capacity, [<b>selection</b>: <span class="selectable-content" id="_s_15">power status</span>, <span class="selectable-content" id="_s_16">fan status</span>, <span class="selectable-content" id="_s_17">no other activities</span>].</b> </div></div>
 		<div class="element"><div class="reqid" id="FAU_GEN.1.2/Log"><a href="#FAU_GEN.1.2/Log" class="abbr">FAU_GEN.1.2/Log</a></div><div class="reqdesc">
-		The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall record within each system log record at least the following information: <ol type="a">
+		The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall record within each <b>system log</b> record at least the following information: <ol type="a">
 			<li>Date and time of the event, type of event, subject identity (if applicable), and the outcome (success or failure of the event); and </li>
 			<li>For each audit event type, based on the auditable event definitions of the functional components included in the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>/<abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>, [<i>event details described in System Log Events table</i>].</li></ol>
     <head><b><span class="ctr" data-myid="atref-mandatory" data-counter-type="ct-Table" id="atref-mandatory">Table  <span class="counter">3</span>: System Log Events</span></b></head>
@@ -1331,7 +1332,7 @@ detail records</b>.</div></div>
 			
 			
 			
-			<span style="" class="comment " id="Comment-1-">Audit and dependencies- aren't being generated</span>
+			<span style="" class="comment " id="Comment-2-">Audit and dependencies- aren't being generated for the extended component list(Appendix C).</span>
 		The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="_s_18">have</span>, <span class="selectable-content" id="_s_19">not have</span>] the capability to record voice and video
 call data.
 		<div class="appnote"><span class="note-header">Application
@@ -1590,8 +1591,8 @@ call data.
 		has authenticated to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> using that account.</p></div></div></div></div></div>
 	<div class="comp" id="FMT_SMF.1/ESC"><h4>FMT_SMF.1/ESC Specification of Management Functions (ESC)</h4>
 	<div class="element"><div class="reqid" id="FMT_SMF.1.1/ESC"><a href="#FMT_SMF.1.1/ESC" class="abbr">FMT_SMF.1.1/ESC</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be capable of performing the following management functions:<ul>
-		<li>Ability to display the real-time connection status of all <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints (hardware and software) and telecommunications devices;</li>
-		<li>Ability to clear all <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> data stored on disk; </li>
+		<li><i>Ability to display the real-time connection status of all <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints (hardware and software) and telecommunications devices;</i></li>
+		<li><i>Ability to clear all <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> data stored on disk;</i></li>
 		<li>[<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_27">Ability to configure the password policy;</span></li><li style=""><span class="selectable-content" id="_s_28">Ability to specify the set of audited events;</span></li><li style=""><span class="selectable-content" id="_s_29">Ability to configure the behavior of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> in response to a self-test failure;</span></li><li style=""><span class="selectable-content" id="_s_30">Ability to enable/disable voice and video recordings for any registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint;</span></li><li style=""><span class="selectable-content" id="_s_31">Ability to specify criteria for retention of voice and video recordings;</span></li><li style=""><span class="selectable-content" id="_s_32">No other capabilities</span></li></ul>].</li>
 		</ul><div class="appnote"><span class="note-header">Application
       Note:
@@ -1937,7 +1938,7 @@ the generation of media recordings such as unobservability of user actions.</td>
 			initiate updates to <b>registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint</b> firmware/software and no
 			other update mechanism.</div></div>
 			<div class="element"><div class="reqid" id="FPT_TUD_EXT.1.3/VVoIP"><a href="#FPT_TUD_EXT.1.3/VVoIP" class="abbr">FPT_TUD_EXT.1.3/VVoIP</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide means to authenticate firmware/software updates
-			to the <b>registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint</b> using a [<b>selection</b>: <span class="selectable-content" id="_s_43">X.509 certificate</span>, <span class="selectable-content" id="_s_44">digital signature mechanism</span>, <span class="selectable-content" id="_s_45">published hash</span>] prior to installing those
+			to the <b>registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint</b> using a [<b>selection</b>: <span class="selectable-content" id="_s_43">X.509 certificate</span>, <span class="selectable-content" id="_s_44">digital signature </span>, <span class="selectable-content" id="_s_45">published hash</span>] prior to installing those
 			updates.<div class="appnote"><span class="note-header">Applications
       Note:
     </span><span class="note">

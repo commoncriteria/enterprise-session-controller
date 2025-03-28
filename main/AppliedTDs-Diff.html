@@ -20,6 +20,8 @@
         <div id="commmentbox-">
             <a href="#Comment-1-">Comment: Comment-1-</a>
             <br>
+            <a href="#Comment-2-">Comment: Comment-2-</a>
+            <br>
         </div>
         <h1 class="title" style="page-break-before:auto;">PP-Module for Enterprise Session Controllers</h1>
         <h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1>
@@ -62,7 +64,7 @@
         </p>
         <ul>
             <li>
-                collaborative Protection Profile for Network Devices (<abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr>), Version 2.2e 
+                collaborative Protection Profile for Network Devices (<abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr>), Version 3.0e 
             </li>
         </ul>
         <p>
@@ -557,6 +559,9 @@
                                 <p>
                                     This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is also refined from its definition in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> by requiring the use of DTLS 1.2 if this function is claimed.
                                 </p>
+                                <p>
+                                    When CPP_ND_V3.0E is the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>, the element in Section 5.1.2.1 should be used, instead.
+                                </p>
                             </i> </span>
                     </div>
                 </div>
@@ -594,7 +599,7 @@
                 <div class="reqdesc">
                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement TLS 1.2 (RFC 5246) and reject all other TLS and SSL versions. The TLS implementation will support the following ciphersuites: [<b>selection</b>: <span class="selectable-content" id="_s_2">select supported ciphersuites from List 1 <b>in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr></b></span>] and no other ciphersuites. 
                     <div class="appnote">
-                        <span class="note-header">Application Note: </span><span class="note"><i>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is selection-based in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is mandated by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because Transport Layer Security (TLS) is used to secure <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications. Additionally, this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> mandates the use of TLS 1.2.</i></span>
+                        <span class="note-header">Application Note: </span><span class="note"><i>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is selection-based in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is mandated by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because Transport Layer Security (TLS) is used to secure <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications. Additionally, this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> mandates the use of TLS 1.2. When CPP_ND_V3.0E is the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>, the element in Section 5.1.2.1 should be used, instead.</i></span>
                     </div>
                 </div>
             </div>
@@ -612,7 +617,7 @@
                 <div class="reqdesc">
                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement TLS 1.2 (RFC 5246) and reject all other TLS and SSL versions. The TLS implementation will support the following ciphersuites: [<b>selection</b>: <span class="selectable-content" id="_s_3">select supported ciphersuites from List 1 <b>in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr></b></span>] and no other ciphersuites.
                     <div class="appnote">
-                        <span class="note-header">Application Note: </span><span class="note"><i>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is selection-based in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is mandated by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because TLS is used to secure <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications. Additionally, this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> mandates the use of TLS 1.2.</i></span>
+                        <span class="note-header">Application Note: </span><span class="note"><i>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is selection-based in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is mandated by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because TLS is used to secure <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications. Additionally, this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> mandates the use of TLS 1.2. When CPP_ND_V3.0E is the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>, the element in Section 5.1.2.1 should be used, instead.</i></span>
                     </div>
                 </div>
             </div>
@@ -671,6 +676,7 @@
                 </div>
             </div>
         </div>
+         <span style="" class="comment " id="Comment-1-">First half of TD0835 has been applied to this document, however the other half of this TD adds a "Further Modified <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr>"- Guidance is needed on how to implement this into the current document </span> 
         <h2 id="man-sfrs" class="indexable" data-level="2">5.2 TOE Security Functional Requirements</h2>
          The following section describes the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that must be satisfied by any <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that claims conformance to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>. These <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> must be claimed regardless of which <abbr class="dyn-abbr"><a href="#abbr_PP-Configuration">PP-Configuration</a></abbr> is used to define the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. 
         <h3 id="man-fau" class="indexable" data-level="3">5.2.1 Security Audit (FAU)</h3>
@@ -689,30 +695,30 @@
                     <a href="#FAU_GEN.1.2/CDR" class="abbr">FAU_GEN.1.2/CDR</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall record within each <abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr> at least the following information: <b>[
-                        <lu>
-                            <li>calling party number (i.e. call originator)</li>
-                            <li>called party number (i.e. call receiver or terminating number)</li>
-                            <li>unique transaction sequence number</li>
-                            <li>call disposition (e.g. call connected, call terminated, call transferred)</li>
-                            <li>call type (e.g. voice only, voice and video, text)</li>
-                            <li>call start time</li>
-                            <li>call end time</li>
-                            <li>call duration</li>
-                            <li>
-                                unique identifier of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
-                            </li>
-                            <li>
-                                call routing into <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
-                            </li>
-                            <li>
-                                call routing out of <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
-                            </li>
-                            <li>time zone</li>
-                            <li>call release cause, if applicable (i.e. reason for termination of call)</li>
-                            <li>fault condition(s), if applicable</li>
-                        </lu>
-                    </b>].
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall record within each <b><abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr></b> at least the following information: <b><i>[
+                            <lu>
+                                <li>calling party number (i.e. call originator)</li>
+                                <li>called party number (i.e. call receiver or terminating number)</li>
+                                <li>unique transaction sequence number</li>
+                                <li>call disposition (e.g. call connected, call terminated, call transferred)</li>
+                                <li>call type (e.g. voice only, voice and video, text)</li>
+                                <li>call start time</li>
+                                <li>call end time</li>
+                                <li>call duration</li>
+                                <li>
+                                    unique identifier of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
+                                </li>
+                                <li>
+                                    call routing into <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
+                                </li>
+                                <li>
+                                    call routing out of <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
+                                </li>
+                                <li>time zone</li>
+                                <li>call release cause, if applicable (i.e. reason for termination of call)</li>
+                                <li>fault condition(s), if applicable</li>
+                            </lu>
+                        </i></b>].
                     <div class="appnote">
                         <span class="note-header">Application Note: </span><span class="note"><i>The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> should be uniquely identified as part of the <abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr> so that there is attribution of individual CDRs in environments where multiple ESCs are feeding CDRs to a centralized server.</i></span>
                     </div>
@@ -734,7 +740,7 @@
                     <a href="#FAU_GEN.1.2/Log" class="abbr">FAU_GEN.1.2/Log</a>
                 </div>
                 <div class="reqdesc">
-                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall record within each system log record at least the following information: 
+                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall record within each <b>system log</b> record at least the following information: 
                     <ol type="a">
                         <li>Date and time of the event, type of event, subject identity (if applicable), and the outcome (success or failure of the event); and </li>
                         <li>
@@ -821,7 +827,7 @@
         </div>
         <div class="comp" id="FUA_VVR_EXT.1">
             <h4>FUA_VVR_EXT.1 Recording Voice and Video Call Data</h4>
-             <span style="" class="comment " id="Comment-1-">Audit and dependencies- aren't being generated</span> The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="_s_18">have</span>, <span class="selectable-content" id="_s_19">not have</span>] the capability to record voice and video call data. 
+             <span style="" class="comment " id="Comment-2-">Audit and dependencies- aren't being generated for the extended component list(Appendix C).</span> The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="_s_18">have</span>, <span class="selectable-content" id="_s_19">not have</span>] the capability to record voice and video call data. 
             <div class="appnote">
                 <span class="note-header">Application Note: </span><span class="note"><i>If "have" is selected, both <a href="#FAU_STG.1/VVR">FAU_STG.1/VVR</a> and <a href="#FAU_VVR_EXT.2">FAU_VVR_EXT.2</a> must be claimed and &ldquo;Ability to enable/disable voice and video recordings for any registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint&rdquo; must be selected in <a href="#FMT_SMF.1.1/ESC">FMT_SMF.1.1/ESC</a>. </i></span>
             </div>
@@ -958,10 +964,10 @@
                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be capable of performing the following management functions:
                     <ul>
                         <li>
-                            Ability to display the real-time connection status of all <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints (hardware and software) and telecommunications devices;
+                            <i>Ability to display the real-time connection status of all <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints (hardware and software) and telecommunications devices;</i>
                         </li>
                         <li>
-                            Ability to clear all <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> data stored on disk; 
+                            <i>Ability to clear all <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> data stored on disk;</i>
                         </li>
                         <li>
                             [<b>selection</b>: 
@@ -1484,7 +1490,7 @@
                     <a href="#FPT_TUD_EXT.1.3/VVoIP" class="abbr">FPT_TUD_EXT.1.3/VVoIP</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide means to authenticate firmware/software updates to the <b>registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint</b> using a [<b>selection</b>: <span class="selectable-content" id="_s_43">X.509 certificate</span>, <span class="selectable-content" id="_s_44">digital signature mechanism</span>, <span class="selectable-content" id="_s_45">published hash</span>] prior to installing those updates.
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide means to authenticate firmware/software updates to the <b>registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint</b> using a [<b>selection</b>: <span class="selectable-content" id="_s_43">X.509 certificate</span>, <span class="selectable-content" id="_s_44">digital signature </span>, <span class="selectable-content" id="_s_45">published hash</span>] prior to installing those updates.
                     <div class="appnote">
                         <span class="note-header">Applications Note: </span><span class="note"> <i>
                                 <p>
