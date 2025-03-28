@@ -787,6 +787,7 @@ implemented.</aactivity>
 			
 			<comment>The xml file contians text that has been commented out- in case we need to fall back to the original write up, feel free to comment the section below</comment>
 			<!-- The following commented section is used as a placeholder for modification of this requirement-->
+			<!-- 
 			<base-sfr-spec cc-id="fia_x509_ext.1" title="X.509 Certificate Validation" id="nd-mod-fia-x509-ext-1">
 			<consistency-rationale>
 						This PP-Module mandates the inclusion of this selection-based SFR because it is a dependency of the TLS requirements that it also mandates.
