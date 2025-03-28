@@ -589,13 +589,13 @@
                     </ul>
                 </td>
             </tr>
-            <tr data-sortkey="FPT_FLS.1">
-                <td rowspan="2"><a href="#FPT_FLS.1">FPT_FLS.1</a></td><td style="display:none"></td>
+            <tr data-sortkey="FPT_FLS.1/ESC">
+                <td rowspan="2"><a href="#FPT_FLS.1/ESC">FPT_FLS.1/ESC</a></td><td style="display:none"></td>
             </tr>
-            <tr style="display:none;" data-sortkey="FPT_FLS.1#">
+            <tr style="display:none;" data-sortkey="FPT_FLS.1/ESC#">
                 <td></td>
             </tr>
-            <tr data-sortkey="FPT_FLS.1.1">
+            <tr data-sortkey="FPT_FLS.1/ESC.1">
                 <td>No events specified</td><td>N/A</td>
             </tr>
             <tr data-sortkey="FTP_ITC.1/ESC">
@@ -1103,11 +1103,11 @@
             </div>
         </div>
         <h3 id="man-fpt" class="indexable" data-level="3">5.2.5 Protection of the TSF (FPT)</h3>
-        <div class="comp" id="FPT_FLS.1">
-            <h4>FPT_FLS.1 Failure with Preservation of a Secure State</h4>
+        <div class="comp" id="FPT_FLS.1/ESC">
+            <h4>FPT_FLS.1/ESC Failure with Preservation of a Secure State</h4>
             <div class="element">
-                <div class="reqid" id="FPT_FLS.1.1">
-                    <a href="#FPT_FLS.1.1" class="abbr">FPT_FLS.1.1</a>
+                <div class="reqid" id="FPT_FLS.1.1/ESC">
+                    <a href="#FPT_FLS.1.1/ESC" class="abbr">FPT_FLS.1.1/ESC</a>
                 </div>
                 <div class="reqdesc">
                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall preserve a secure state <b>through the following means: [<b>selection</b>: <span class="selectable-content" id="_s_33">audible alarm</span>, <span class="selectable-content" id="_s_34">visual indicator</span>, <span class="selectable-content" id="_s_35">reboot of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span>, <span class="selectable-content" id="_s_36">shutdown of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span>, <span class="selectable-content" id="_s_37">[<b>assignment</b>: <span class="assignable-content">other methods</span>]</span>]</b> when the following types of failures occur: [<i>failure of self-tests defined in FPT_TST_EXT.1, failure of </i>[<b>assignment</b>: <span class="assignable-content">hardware components that affect the proper functioning of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span>]]. 
@@ -1240,7 +1240,7 @@
                     <td><a href="#FDP_RIP.1">FDP_RIP.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by ensuring the permanent erasure of residual data so that a decommissioned or refurbished device cannot be used to disclose <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> data without authorization.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FPT_FLS.1">FPT_FLS.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by ensuring that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> enters a secure failure state if specific hardware or software failures are detected.</td>
+                    <td><a href="#FPT_FLS.1/ESC">FPT_FLS.1/ESC</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by ensuring that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> enters a secure failure state if specific hardware or software failures are detected.</td>
                 </tr>
                 <tr class="major-row">
                     <td rowspan="17"><a href="#T.NETWORK_DISCLOSURE">T.NETWORK_​DISCLOSURE</a>
@@ -1509,7 +1509,7 @@
                 <td><a href="#FMT_SMF.1/ESC">FMT_SMF.1/ESC</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> requires the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to implement management functions that are specific to <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> functionality. This does not conflict with the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> because these are all additional functions that go beyond what the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> requires.</td>
             </tr>
             <tr>
-                <td><a href="#FPT_FLS.1">FPT_FLS.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> requires the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to take some specific action in the event of self-test failures or other hardware failures. This extends the functionality required by the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> because the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> defines the self-tests that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must perform but does not define specific requirements for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&rsquo;s behavior when a self-test fails.</td>
+                <td><a href="#FPT_FLS.1/ESC">FPT_FLS.1/ESC</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> requires the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to take some specific action in the event of self-test failures or other hardware failures. This extends the functionality required by the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> because the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> defines the self-tests that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must perform but does not define specific requirements for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&rsquo;s behavior when a self-test fails.</td>
             </tr>
             <tr>
                 <td><a href="#FTP_ITC.1/ESC">FTP_ITC.1/ESC</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> requires the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to implement trusted channels for <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> and <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> trunking communications. This is an iteration of the same <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> that adds new external interfaces beyond the scope of the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>. </td>

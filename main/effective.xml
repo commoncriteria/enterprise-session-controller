@@ -367,7 +367,7 @@ baseline of capabilities that all conformant ESCs must provide.
 			<!--O.SELF_PROTECTION-->
 			<addressed-by>FAU_GEN.1/Log</addressed-by><rationale>This SFR supports the objective by generating real-time diagnostic activity for the TOE’s behavior that can be used to determine if it is experiencing conditions that could lead to a failure state.</rationale>
 			<addressed-by>FDP_RIP.1</addressed-by><rationale>This SFR supports the objective by ensuring the permanent erasure of residual data so that a decommissioned or refurbished device cannot be used to disclose TSF data without authorization.</rationale>
-			<addressed-by>FPT_FLS.1</addressed-by><rationale>This SFR supports the objective by ensuring that the TSF enters a secure failure state if specific hardware or software failures are detected.</rationale>
+			<addressed-by>FPT_FLS.1/ESC</addressed-by><rationale>This SFR supports the objective by ensuring that the TSF enters a secure failure state if specific hardware or software failures are detected.</rationale>
 			</threat>
 			<threat name="T.NETWORK_DISCLOSURE" id="t-network-disclosure"><description> An attacker may attempt to “map” IP addresses of VVoIP endpoint/devices and other
 			telecommunications equipment for the purpose of determining the organizational structure of the
@@ -1409,7 +1409,7 @@ posture on the TOE.</comp-lev>
 
 	</section>
 	<section title="Protection of the TSF (FPT)" id="man-fpt">
-	<f-component name="Failure with Preservation of a Secure State" cc-id="fpt_fls.1" id="fpt-fls-1">
+	<f-component name="Failure with Preservation of a Secure State" cc-id="fpt_fls.1" id="fpt-fls-1" iteration="ESC">
 		<f-element id="fpt-fls-1-1">
 		<title>The TSF shall preserve a secure state <h:b>through the following means: <selectables><selectable>audible alarm</selectable>
 			<selectable>visual indicator</selectable>
