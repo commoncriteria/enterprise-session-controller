@@ -440,6 +440,7 @@ baseline of capabilities that all conformant ESCs must provide.
 			<addressed-by>FAU_SAR.1/Log</addressed-by><rationale>This SFR supports the objective by defining what users are able to review the real-time system log.</rationale>
 			<addressed-by>FAU_SEL.1 (selection-based)</addressed-by><rationale>This SFR supports the objective by optionally allowing an administrator to suppress the generation of certain audit records.</rationale>
 			<addressed-by>FMT_SMF.1/ESC</addressed-by><rationale>This SFR supports the objective by defining the authorized management functions supported by the TOE.</rationale>
+			<comment>FMT_SMF.1/ESC mitigates T.UNAUTHORIZED_CLIENT by making it so that VVoIP endpoints can't be registered without authorization</comment>
 			</threat>
 
 
