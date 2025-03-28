@@ -22,6 +22,10 @@
             <br>
             <a href="#Comment-2-">Comment: Comment-2-</a>
             <br>
+            <a href="#Comment-3-">Comment: Comment-3-</a>
+            <br>
+            <a href="#Comment-4-">Comment: Comment-4-</a>
+            <br>
         </div>
         <h1 class="title" style="page-break-before:auto;">PP-Module for Enterprise Session Controllers</h1>
         <h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1>
@@ -332,7 +336,21 @@
             <dt>Package Claim</dt>
             <p></p>
             <dd>
-                This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is not conformant to any Functional or Assurance Packages.
+                <ul>
+                    <li>
+                        This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is Functional Package for TLS, version 2.0 conformant.
+                    </li>
+                    <li>
+                        This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is Functional Package for X.509, version 1.0 conformant.
+                    </li>
+                    <li>
+                        This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not conform to any assurance packages.
+                    </li>
+                </ul>
+            </dd>
+            <p></p>
+            <dd>
+                 The functional packages to which the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> conforms may include <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that are not mandatory to claim for the sake of conformance. An <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> that claims one or more of these functional packages may include any non-mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that are appropriate to claim based on the capabilities of the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> and on any triggers for their inclusion based inherently on the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> selections made. 
             </dd>
         </dl>
          
@@ -765,7 +783,7 @@
                 </div>
             </div>
         </div>
-         <span style="" class="comment " id="Comment-1-">First half of TD0835 has been applied to this document, however the other half of this TD adds a "Further Modified <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr>"- Guidance is needed on how to implement this into the current document </span> 
+         <span style="" class="comment " id="Comment-3-">First half of TD0835 has been applied to this document, however the other half of this TD adds a "Further Modified <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr>"- Guidance is needed on how to implement this into the current document </span> 
         <h2 id="man-sfrs" class="indexable" data-level="2">5.2 TOE Security Functional Requirements</h2>
          The following section describes the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that must be satisfied by any <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that claims conformance to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>. These <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> must be claimed regardless of which <abbr class="dyn-abbr"><a href="#abbr_PP-Configuration">PP-Configuration</a></abbr> is used to define the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. 
         <h3 id="man-fau" class="indexable" data-level="3">5.2.1 Security Audit (FAU)</h3>
@@ -916,7 +934,7 @@
         </div>
         <div class="comp" id="FAU_VVR_EXT.1">
             <h4>FAU_VVR_EXT.1 Recording Voice and Video Call Data</h4>
-             <span style="" class="comment " id="Comment-2-">Audit and dependencies- aren't being generated for the extended component list(Appendix C).</span> The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="_s_18">have</span>, <span class="selectable-content" id="_s_19">not have</span>] the capability to record voice and video call data. 
+             <span style="" class="comment " id="Comment-4-">Audit and dependencies- aren't being generated for the extended component list(Appendix C).</span> The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="_s_18">have</span>, <span class="selectable-content" id="_s_19">not have</span>] the capability to record voice and video call data. 
             <div class="appnote">
                 <span class="note-header">Application Note: </span><span class="note"><i>If "have" is selected, both <a href="#FAU_STG.2/VVR">FAU_STG.2/VVR</a> and <a href="#FAU_VVR_EXT.2">FAU_VVR_EXT.2</a> must be claimed and &ldquo;Ability to enable/disable voice and video recordings for any registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint&rdquo; must be selected in <a href="#FMT_SMF.1.1/ESC">FMT_SMF.1.1/ESC</a>. </i></span>
             </div>
