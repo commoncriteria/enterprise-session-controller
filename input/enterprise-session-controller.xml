@@ -1057,6 +1057,7 @@ detail records</h:b>.</title>
 			<management>The following actions could be considered for the management functions in FMT: <h:ol><h:li>Ability to enable/disable voice and video recordings</h:li></h:ol></management>
 			<audit>There are no auditable events foreseen.</audit>
 			<dependencies>No dependencies.</dependencies>
+			<comment>Audit and dependencies- aren't being generated</comment>
 		<title>The TSF shall <selectables><selectable>have</selectable><selectable>not have</selectable></selectables> the capability to record voice and video
 call data.</title>
 		<note role='application'><h:i>If "have" is selected, both FAU_STG.1/VVR and FAU_VVR_EXT.2 must be claimed
@@ -1648,6 +1649,11 @@ auditable events based on the following attributes:<h:ol type='a'>
 		</f-component>
 
 		<f-component name="Generation of Voice and Video Recordings" cc-id='fau_vvr_ext.2' id='fau-vvr-ext-2'>
+		<comp-lev> requires the TSF to store uniquely identified voice and video call recordings in a certain format and when certain conditions are met</comp-lev>
+		<management>The following actions could be considered for the management functions in FMT:<h:ul><h:li>Ability to specify criteria for retention of voice and video recordings</h:li></h:ul></management>
+		<audit>The following actions should be auditable if FAU_GEN Security Audit Data Generation is included in
+the PP/ST:<h:ul><h:li>Voice/video recordings of completed calls</h:li></h:ul></audit>
+		<dependencies>FAU_VVR_EXT.1 Recording Voice and Video Call Data</dependencies>
 		<f-element id='fau_vvr-ext-2e1'>
 		<title>The TSF shall provide the ability to retain voice and video recordings based on <assignable>administrator-specified criteria</assignable></title></f-element>
 		<f-element id='fau_vvr-ext-2e2'>
