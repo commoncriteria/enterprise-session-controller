@@ -629,7 +629,7 @@ function showTarget(id){
 	            img[src="images/collapsed.png"] { display:none;}
 
           }
-    </style></head><body onLoad="init()"><h1 class="title" style="page-break-before:auto;">PP-Module for Enterprise Session Controllers</h1><noscript><h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1></noscript><div class="center"><img src="images/niaplogo.png" alt="NIAP Logo"></img><br/>
+    </style></head><body onLoad="init()"><div id="commmentbox-"><a href="#Comment-1-">Comment: Comment-1-</a><br/></div><h1 class="title" style="page-break-before:auto;">PP-Module for Enterprise Session Controllers</h1><noscript><h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1></noscript><div class="center"><img src="images/niaplogo.png" alt="NIAP Logo"></img><br/>
       Version: 1.0<br/>2024-03-28<br/><b>National Information Assurance Partnership</b><br/></div><h2 style="page-break-before:always;">Revision History</h2><table><tr class="header"><th>Version</th><th>Date</th><th>Comment</th></tr><tr><td>Round 1</td><td>2015-04-23</td><td>First draft of version 1.0 for comment</td></tr>
 <tr><td>1.0</td><td>2015-08-14</td><td>Release - first version released</td></tr>
 <tr><td>2.0</td><td>2024-03-28</td><td>Updated for <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, or whatever</td></tr>
@@ -1331,6 +1331,7 @@ detail records</b>.</div></div>
 			
 			
 			
+			<span style="" class="comment " id="Comment-1-">Audit and dependencies- aren't being generated</span>
 		The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="_s_18">have</span>, <span class="selectable-content" id="_s_19">not have</span>] the capability to record voice and video
 call data.
 		<div class="appnote"><span class="note-header">Application
@@ -2001,7 +2002,7 @@ the generation of media recordings such as unobservability of user actions.</td>
 	<h1 id="sel-sfrs" class="indexable" data-level="1">Appendix B -  Selection-based Requirements
     </h1>
 		<h2 class="indexable" data-level="2" id="sec-sel-audit-table">B.1 Auditable Events for Selection-based SFRs</h2>
-           <table class="sort_kids_" border="1"><caption data-sortkey="#0"><span class="ctr" data-myid="at-sel-based" data-counter-type="ct-Table" id="at-sel-based">Table <span class="counter">8</span></span>: Auditable Events for Selection-based Requirements</caption><tr data-sortkey="#1"><th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th></tr><tr data-sortkey="FAU_VVR_EXT.2"><td rowspan="2"><a href="#FAU_VVR_EXT.2">FAU_VVR_EXT.2</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FAU_VVR_EXT.2#"><td></td></tr><tr data-sortkey="FAU_VVR_EXT.2.3"><td>Voice/video recordings of completed calls</td><td>Unique identifying data specified in <a href="#FAU_VVR_EXT.2.3">FAU_VVR_EXT.2.3</a>.</td></tr></table>
+           <table class="sort_kids_" border="1"><caption data-sortkey="#0"><span class="ctr" data-myid="at-sel-based" data-counter-type="ct-Table" id="at-sel-based">Table <span class="counter">8</span></span>: Auditable Events for Selection-based Requirements</caption><tr data-sortkey="#1"><th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th></tr><tr data-sortkey="FAU_VVR_EXT.2"><td rowspan="2"><a href="#FAU_VVR_EXT.2">FAU_VVR_EXT.2</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FAU_VVR_EXT.2#"><td></td></tr><tr data-sortkey="FAU_VVR_EXT.2.7"><td>Voice/video recordings of completed calls</td><td>Unique identifying data specified in <a href="#FAU_VVR_EXT.2.3">FAU_VVR_EXT.2.3</a>.</td></tr></table>
 	
 	<h2 id="sel-fau" class="indexable" data-level="2">B.2 Security Audit (FAU)</h2>
 		<div class="comp" id="FAU_SEL.1"><h4>FAU_SEL.1 Selective Audit</h4><div class="statustag"></div>
@@ -2054,6 +2055,10 @@ auditable events based on the following attributes:<ol type="a">
 		recordings. </li></ul></span></div></div></div></div></div>
 
 		<div class="comp" id="FAU_VVR_EXT.2"><h4>FAU_VVR_EXT.2 Generation of Voice and Video Recordings</h4><div class="statustag"></div>
+		
+		
+		
+		
 		<div class="element"><div class="reqid" id="FAU_VVR_EXT.2.1"><a href="#FAU_VVR_EXT.2.1" class="abbr">FAU_VVR_EXT.2.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide the ability to retain voice and video recordings based on [<b>assignment</b>: 
      <span class="assignable-content">administrator-specified criteria</span>]</div></div>
 		<div class="element"><div class="reqid" id="FAU_VVR_EXT.2.2"><a href="#FAU_VVR_EXT.2.2" class="abbr">FAU_VVR_EXT.2.2</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall store voice and video recordings as [<b>assignment</b>: 
@@ -2094,7 +2099,14 @@ auditable events based on the following attributes:<ol type="a">
 
 <table class="sort_kids_"><caption data-sortkey="#0"><b><span class="ctr" data-myid="" data-counter-type="ct-Table" id="">Table <span class="counter">9</span></span>: Extended Component Definitions</b></caption><tr data-sortkey="#1"><th>Functional Class</th><th>Functional Components</th></tr><tr data-sortkey="Security Audit (FAU)"><td>Security Audit (FAU)</td><td>FAU_VVR_EXT Voice and Video Recording<br/></td></tr></table><h2 id="ext-comp-defs-bg" class="indexable" data-level="2">C.2 Extended Component Definitions</h2><span class="sort_kids_"><span data-sortkey="Security Audit (FAU)"><h3 id="ext-comp-FAU" class="indexable" data-level="3">C.2.1 Security Audit (FAU)</h3>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> defines the following extended components as part of the
 	 FAU class originally defined by <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr> Part 2:
-	<h3 id="ext-comp-FAU_VVR_EXT" class="indexable" data-level="4">C.2.1.1 FAU_VVR_EXT Voice and Video Recording</h3><div style="margin-left: 1em;"><h4>Family Behavior</h4><div>This family defines requirements for recording of voice and video data.</div><h4>Component Leveling</h4><svg style="max-height: 10px;"><text x="4" fill="black" font-size="15" y="24">FAU_VVR_EXT</text><rect x="2" y="11" width="150" height="16" fill="none" stroke="black"></rect></svg></div></span></span><h1 id="satisfiedreqs" class="indexable" data-level="A">Appendix D -  Inherently Satisfied Requirements</h1> 
+	<h3 id="ext-comp-FAU_VVR_EXT" class="indexable" data-level="4">C.2.1.1 FAU_VVR_EXT Voice and Video Recording</h3><div style="margin-left: 1em;"><h4>Family Behavior</h4><div>This family defines requirements for recording of voice and video data.</div><h4>Component Leveling</h4><svg style="max-height: 30px;"><text x="4" fill="black" font-size="15" y="24">FAU_VVR_EXT</text><rect x="2" y="11" width="150" height="16" fill="none" stroke="black"></rect><text x="234" fill="black" font-size="15" y="24">2</text><rect x="232" y="11" width="12" height="16" fill="none" stroke="black"></rect><line x1="152" y1="17" x2="231" y2="17" stroke="black"></line></svg><p><a href="#FAU_VVR_EXT.2">FAU_VVR_EXT.2</a>,
+             Generation of Voice and Video Recordings,
+              requires the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to store uniquely identified voice and video call recordings in a certain format and when certain conditions are met</p><h4>Management: FAU_VVR_EXT.2</h4><p>The following actions could be considered for the management functions in FMT:<ul><li>Ability to specify criteria for retention of voice and video recordings</li></ul></p><h4>Audit: FAU_VVR_EXT.2</h4><p>The following actions should be auditable if FAU_GEN Security Audit Data Generation is included in
+the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>/<abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>:<ul><li>Voice/video recordings of completed calls</li></ul></p><h4>FAU_VVR_EXT.2 Generation of Voice and Video Recordings</h4><div style="margin-left: 1em;"><table class="ecd_heir_dep" style="width: 100%"><tr><td style="whitespace: nowrap">Hierarchical to:</td><td style="width: 100%">No other components.</td></tr><tr style="background-color: inherit"><td>Dependencies to:</td><td>FAU_VVR_EXT.1 Recording Voice and Video Call Data</td></tr></table><h4 id="ext-comp-FAU_VVR_EXT.2.1">FAU_VVR_EXT.2.1</h4>The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide the ability to retain voice and video recordings based on [<b>assignment</b>: 
+     <span class="assignable-content">administrator-specified criteria</span>]<h4 id="ext-comp-FAU_VVR_EXT.2.2">FAU_VVR_EXT.2.2</h4>The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall store voice and video recordings as [<b>assignment</b>: 
+     <span class="assignable-content">supported file
+		format</span>] data.<h4 id="ext-comp-FAU_VVR_EXT.2.3">FAU_VVR_EXT.2.3</h4>The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall uniquely identify individual voice/video recordings using the following method: [<b>assignment</b>: 
+     <span class="assignable-content">unique identifying data</span>].</div></div></span></span><h1 id="satisfiedreqs" class="indexable" data-level="A">Appendix D -  Inherently Satisfied Requirements</h1> 
 		This appendix lists requirements that should be considered satisfied by products
 		successfully evaluated against this Protection Profile.  
 		However, these requirements are not featured explicitly as <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> and should not be
