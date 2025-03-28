@@ -1301,8 +1301,20 @@ connected (if available).</audit-event-info>
 	</audit-event>
 	</f-component>
 	</section>
+
 	<section title="Security Management (FMT)" id="man-fmt">
+
+	<ext-comp-def title="Secure by Default Configuration" fam-id="FMT_CFG_EXT">
+<fam-behavior>This family defines requirements for protecting the TSF and its data from unauthorized access.</fam-behavior>
+</ext-comp-def>
 	<f-component name="Secure by Default Configuration" cc-id="fmt_cfg_ext.1" id="fmt-cfg-ext-1">
+	<comp-lev>requires credentials to be administratively-defined
+before allowing any other TSF-mediated security functionality and to enforce a deny-by-default
+posture on the TOE.</comp-lev>
+<management>No specific management functions are identified.</management>
+<audit>There are no auditable events foreseen.</audit>
+<dependencies><h:p>FIA_UAU.1 Timing of Authentication</h:p><h:p>FMT_MTD.1 Management of TSF Data</h:p><h:p>FMT_SMR.1 Security Roles
+</h:p></dependencies>
 		<f-element id="fmt-cfg-ext-1e1">
 		<title>The TSF shall provide only enough functionality to set new Security
 		Administrator credentials when configured with default credentials or no
