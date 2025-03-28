@@ -2019,7 +2019,7 @@ require random data, in addition to any functionality required by the Base-PP.
             Cost for Security in Agency Information Technology Investments</h:a>, OMB M-06-19, July
           12, 2006. </description>
       </entry>
-	  entry id="bibndcpp3">
+	  <entry id="bibndcpp3">
 			<tag>NDcPP</tag>
 			<description>NDcPP  - <h:a
 				href="https://www.niap-ccevs.org/protectionprofiles/482">Collaborative Protection Profile for Network Devices, Version 3.0e, December 06, 2023</h:a></description>
