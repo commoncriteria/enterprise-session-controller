@@ -819,8 +819,9 @@ updates</selectable>
 			certificate</selectable>
 			</selectables>.</title>
 			<note role="application"><h:i>This SFR is selection-based in the Base-PP but is made mandatory when this PPModule is claimed because the ESC implements functionality that requires the use of certificate authentication.</h:i></note>
-			</f-element>
 			<aactivity>No additional EAs are specified for this SFR beyond what is defined in the NDcPP SD.</aactivity>
+			</f-element>
+			
 			</f-component>
 			<f-component name="X.509 Certificate Requests" cc-id="fia_x509_ext.3" id="fia-x509-ext-3">
 			This SFR is selection-based in the NDcPP but is mandated by this PP-Module because an ESC must
@@ -1645,7 +1646,7 @@ auditable events based on the following attributes:<h:ol type="a">
 
 		<f-component name="Generation of Voice and Video Recordings" cc-id="fau_vvr_ext.2" id="fau-vvr-ext-2">
 		<comp-lev> requires the TSF to store uniquely identified voice and video call recordings in a certain format and when certain conditions are met</comp-lev>
-		<management>The following actions could be considered for the management functions in FMT:<h:ul><h:li>Ability to specify criteria for retention of voice and video recordings</h:li></h:ul></management>
+		<management>The following actions could be considered for the management functions in FMT:<h:ol><h:li>Ability to specify criteria for retention of voice and video recordings</h:li></h:ol></management>
 		<audit>The following actions should be auditable if FAU_GEN Security Audit Data Generation is included in
 the PP/ST:<h:ul><h:li>Voice/video recordings of completed calls</h:li></h:ul></audit>
 		<dependencies>FAU_VVR_EXT.1 Recording Voice and Video Call Data</dependencies>
