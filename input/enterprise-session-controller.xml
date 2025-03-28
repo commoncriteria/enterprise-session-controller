@@ -660,7 +660,7 @@ auditable events to be audited, they can choose to disable this function.
 	  <con-mod ref='fau-stg-2-vvr'>This PP-Module optionally allows a conformant TOE to claim the ability to
 securely store voice/video recordings. This does not conflict with the Base-PP
 because the Base-PP already has the ability to define secured storage (e.g.
-through FAU_STG.1) so there is no expectation of availability that is being
+through FAU_STG.2) so there is no expectation of availability that is being
 violated if this is claimed</con-mod>
 	  <con-mod ref='fau-vvr-ext-2'>This PP-Module optionally allows a conformant TOE to claim the ability to
 generate and retain voice/video recordings of calls. This does not conflict with
