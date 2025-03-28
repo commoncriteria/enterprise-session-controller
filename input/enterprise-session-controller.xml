@@ -784,8 +784,9 @@ implemented.</aactivity>
 			</f-component>
 			</section>
 			<section title='Identification and Authentication (FIA)' id='m-fia'>
+			
+			<comment>The xml file contians text that has been commented out- in case we need to fall back to the original write up, feel free to comment the section below</comment>
 			<!-- The following commented section is used as a placeholder for modification of this requirement-->
-			<!-- Comment out if-->
 			<base-sfr-spec cc-id="fia_x509_ext.1" title="X.509 Certificate Validation" id="nd-mod-fia-x509-ext-1">
 			<consistency-rationale>
 						This PP-Module mandates the inclusion of this selection-based SFR because it is a dependency of the TLS requirements that it also mandates.
@@ -809,8 +810,9 @@ implemented.</aactivity>
 			<description>This SFR is selection-based in the X.509 Functional Package but mandatory in this PP-Module because the TOE’s TLS implementation requires appropriate X.509 functionality. The SFR is unchanged from its original definition.</description><no-change/>
 			<set-status status="mandatory"/>
 			</base-sfr-spec>
+			-->
 			
-			<!-- 
+			
 			<f-component name="X.509 Certificate Validation" cc-id='fia_x509_ext.1' id='fia-x509-ext-1' iteration='Rev'>
 			This SFR is selection-based in the Base-PP. It is mandatory when the TOE claims conformance to this PPModule because X.509 certificate validation is needed when establishing TLS communications for SIP and H.323. There are no changes to the SFR otherwise.
 			<aactivity>No additional EAs are specified for this SFR beyond what is defined in the NDcPP SD.</aactivity>
@@ -865,7 +867,7 @@ updates</selectable>
 		</f-element>
 		<audit-event />
 		</f-component>
-			-->
+			
 			</section>
 
 			<comment>First half of TD0835 has been applied to this document, however the other half of this TD adds a "Further Modified SFRs"- Guidance is needed on how to implement this into the current document </comment>
