@@ -414,7 +414,7 @@ of time if at all.</td></tr>
 	    
 	  <h3 class="indexable" data-level="3" id="m-fau">2.1.1.1 Security Audit (FAU)</h3><div class="comp" id="FAU-GEN-1-ESC"><h4>FAU_GEN.1 Audit Data Generation (Audit Log)</h4><span class="activity_pane_body"><div class="component-activity-header">FAU_GEN.1</div>The evaluator shall complete the EA for FAU_GEN.1 as described in the NDcPP SD for the auditable events
 defined above in addition to the applicable auditable events that are defined in the NDcPP. The evaluator
-shall also ensure that the administrative actions defined for this PP-Module are appropriately audited. </span></div><div class="comp" id="FAU-STG-1-ESC"><h4>FAU_STG.1 Protected Audit Trail Storage</h4><span class="activity_pane_body"><div class="component-activity-header">FAU_STG.1</div>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to
+shall also ensure that the administrative actions defined for this PP-Module are appropriately audited. </span></div><div class="comp" id="FAU-STG-2-ESC"><h4>FAU_STG.2 Protected Audit Trail Storage</h4><span class="activity_pane_body"><div class="component-activity-header">FAU_STG.2</div>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to
 make its inclusion mandatory rather than optional, but there is no change to how the SFR is to be
 implemented.</span></div>
 	<h3 class="indexable" data-level="3" id="m-fcs">2.1.1.2 Cryptographic Support (FCS)</h3><div class="comp" id="FCS-DTLSS-EXT-1"><h4>FCS_DTLSS_EXT.1 DTLS Server Support without Mutual Authentication</h4><span class="activity_pane_body"><div class="component-activity-header">FCS_DTLSS_EXT.1</div>There is no change to the EAs specified for this SFR in the NDcPP SD.</span></div><div class="comp" id="FCS-DTLSS-EXT-2"><h4>FCS_DTLSS_EXT.2 DTLS Server Support for Mutual Authentication</h4><span class="activity_pane_body"><div class="component-activity-header">FCS_DTLSS_EXT.2</div>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to
@@ -511,7 +511,7 @@ system log item is described in the guidance documentation along with each requi
 			status by unplugging and reconnecting the TOE’s Ethernet connection and verifying that an appropriate
 			log was generated for both. In all cases, the evaluator shall verify that the contents and formatting of the
 			log data are consistent with what is defined in FAU_GEN.1.2/Log.
-			</div></div></span></div><div class="comp" id="FAU-STG-1-CDR"><h4>FAU_STG.1/CDR Protected Audit Trail Storage (Call Detail Record)</h4><span class="activity_pane_body"><div class="component-activity-header">FAU_STG.1/CDR</div>
+			</div></div></span></div><div class="comp" id="FAU-STG-2-CDR"><h4>FAU_STG.2/CDR Protected Audit Trail Storage (Call Detail Record)</h4><span class="activity_pane_body"><div class="component-activity-header">FAU_STG.2/CDR</div>
 		
 		
 		
@@ -762,7 +762,7 @@ system log item is described in the guidance documentation along with each requi
 		these events are audited as expected. The evaluator shall then log on to the TOE and disable auditable
 		events by each attribute defined in the ST. The evaluator shall then re-execute the same set of TSFmediated actions as before and observe that audit logs are not generated for all auditable events that are
 		administratively disabled.
-		</p></div></div></span></div><div class="comp" id="FAU-STG-1-VVR"><h4>FAU_STG.1/VVR Protected Audit Trail Storage (Voice/Video Recording)</h4><span class="activity_pane_body"><div class="component-activity-header">FAU_STG.1/VVR</div>
+		</p></div></div></span></div><div class="comp" id="FAU-STG-2-VVR"><h4>FAU_STG.2/VVR Protected Audit Trail Storage (Voice/Video Recording)</h4><span class="activity_pane_body"><div class="component-activity-header">FAU_STG.2/VVR</div>
 		
 		
 		<div class="eacategory">TSS</div><div class="ea"><div class="ea">The evaluator shall examine the TSS to verify that it describes the method by which locally-stored voice
@@ -770,10 +770,10 @@ system log item is described in the guidance documentation along with each requi
 		FCS_COP.1.
 		</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">If the TOE provides the ability to enable/disable encryption of locally stored voice and video recordings,
 		the evaluator shall verify that the operational guidance provides instructions on how to enable encryption
-		and directs the reader to ensure that this is enabled in the TOE’s evaluated configuration.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall perform the following tests: <span class="testlist-"><ul><li class="test-"><a id="_t_26" class="defined" href="#_t_26">Test FAU_STG.1/VVR:1</a>:
+		and directs the reader to ensure that this is enabled in the TOE’s evaluated configuration.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall perform the following tests: <span class="testlist-"><ul><li class="test-"><a id="_t_26" class="defined" href="#_t_26">Test FAU_STG.2/VVR:1</a>:
       The evaluator shall verify that the TSF provides no interface to access voice/video recording data
 		stored on the TOE except for legitimate access from an authorized administrator through the Operations,
-		Administration, and Management (OA&amp;M) interface.</li><li class="test-"><a id="_t_27" class="defined" href="#_t_27">Test FAU_STG.1/VVR:2</a>:
+		Administration, and Management (OA&amp;M) interface.</li><li class="test-"><a id="_t_27" class="defined" href="#_t_27">Test FAU_STG.2/VVR:2</a>:
       Both B2B subscriber calls and voice/video conferencing calls may be stored on the TOE based on
 		safeguards (i.e. secured or unsecured) for which they were recorded. The evaluator shall identify the
 		location of stored voice and video records and verify that this data is stored in an encrypted format for all

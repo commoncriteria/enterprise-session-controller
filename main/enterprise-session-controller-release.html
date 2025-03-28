@@ -648,7 +648,7 @@ function showTarget(id){
       </span></a><a href="#opt-sfrs" style="text-indent:0px">Appendix A - <span>Optional SFRs</span></a><a href="#opt-sfrs" style="text-indent:10px">A.1<span>Strictly Optional Requirements
     </span></a><a href="#obj-sfrs" style="text-indent:10px">A.2<span>Objective Requirements
     </span></a><a href="#impl-dep-sfrs" style="text-indent:10px">A.3<span>Implementation-dependent Requirements
-    </span></a><a href="#imp-fpt" style="text-indent:20px">A.3.1<span>Protection of the TSF (FPT)</span></a><a href="#sel-sfrs" style="text-indent:0px">Appendix B - <span>Selection-based Requirements
+    </span></a><a href="#_sec_22" style="text-indent:20px">A.3.1<span>Auditable Events for Implementation-Dependent SFRs</span></a><a href="#imp-fpt" style="text-indent:20px">A.3.2<span>Protection of the TSF (FPT)</span></a><a href="#sel-sfrs" style="text-indent:0px">Appendix B - <span>Selection-based Requirements
     </span></a><a href="#sec-sel-audit-table" style="text-indent:10px">B.1<span>Auditable Events for Selection-based SFRs</span></a><a href="#sel-fau" style="text-indent:10px">B.2<span>Security Audit (FAU)</span></a><a href="#ext-comp-defs" style="text-indent:0px">Appendix C - <span>Extended Component Definitions</span></a><a href="#ext-comp-defs-bg" style="text-indent:10px">C.1<span>Extended Components Table</span></a><a href="#ext-comp-defs-bg" style="text-indent:10px">C.2<span>Extended Component Definitions</span></a><a href="#ext-comp-FAU" style="text-indent:20px">C.2.1<span>Security Audit (FAU)</span></a><a href="#ext-comp-FAU_VVR_EXT" style="text-indent:30px">C.2.1.1<span>FAU_VVR_EXT Voice and Video Recording</span></a><a href="#ext-comp-FMT" style="text-indent:20px">C.2.2<span>Security Management (FMT)</span></a><a href="#ext-comp-FMT_CFG_EXT" style="text-indent:30px">C.2.2.1<span>FMT_CFG_EXT Secure by Default Configuration</span></a><a href="#satisfiedreqs" style="text-indent:0px">Appendix D - <span>Inherently Satisfied Requirements</span></a><a href="#entropyappendix" style="text-indent:0px">Appendix E - <span>Entropy Documentation and Assessment</span></a><a href="#acronyms" style="text-indent:0px">Appendix F - <span>Acronyms</span></a><a href="#appendix-bibliography" style="text-indent:0px">Appendix G - <span>Bibliography</span></a></div><h1 class="indexable" data-level="1" id="sec-intro">1 Introduction</h1>
 
     
@@ -971,7 +971,7 @@ included.</p>
 		The <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> listed in this section are defined in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> and 
 		relevant to the secure operation of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.
 		
-	  <table class="sort_kids_" border="1"><caption data-sortkey="#0"><span class="ctr" data-myid="mandatory-audit-events" data-counter-type="ct-Table" id="mandatory-audit-events">Table <span class="counter">2</span></span>: Auditable Events for Mandatory Requirements</caption><tr data-sortkey="#1"><th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th></tr><tr data-sortkey="FIA_UAU.2/TC"><td rowspan="2"><a href="#FIA_UAU.2/TC">FIA_UAU.2/TC</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FIA_UAU.2/TC#"><td></td></tr><tr data-sortkey="FIA_UAU.2/TC.1"><td>Successful or failed authentication
+	  <table class="sort_kids_" border="1"><caption data-sortkey="#0"><span class="ctr" data-myid="mandatory-audit-events" data-counter-type="ct-Table" id="mandatory-audit-events">Table <span class="counter">2</span></span>: Auditable Events for Mandatory Requirements</caption><tr data-sortkey="#1"><th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th></tr><tr data-sortkey="FAU_GEN.1/CDR"><td rowspan="2"><a href="#FAU_GEN.1/CDR">FAU_GEN.1/CDR</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FAU_GEN.1/CDR#"><td></td></tr><tr data-sortkey="FAU_GEN.1/CDR.1"><td>No events specified</td><td>N/A</td></tr><tr data-sortkey="FAU_GEN.1/Log"><td rowspan="2"><a href="#FAU_GEN.1/Log">FAU_GEN.1/Log</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FAU_GEN.1/Log#"><td></td></tr><tr data-sortkey="FAU_GEN.1/Log.1"><td>No events specified</td><td>N/A</td></tr><tr data-sortkey="FAU_SAR.1/Log"><td rowspan="2"><a href="#FAU_SAR.1/Log">FAU_SAR.1/Log</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FAU_SAR.1/Log#"><td></td></tr><tr data-sortkey="FAU_SAR.1/Log.1"><td>No events specified</td><td>N/A</td></tr><tr data-sortkey="FAU_STG.2/CDR"><td rowspan="2"><a href="#FAU_STG.2/CDR">FAU_STG.2/CDR</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FAU_STG.2/CDR#"><td></td></tr><tr data-sortkey="FAU_STG.2/CDR.1"><td>No events specified</td><td>N/A</td></tr><tr data-sortkey="FAU_VVR_EXT.1"><td rowspan="2"><a href="#FAU_VVR_EXT.1">FAU_VVR_EXT.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FAU_VVR_EXT.1#"><td></td></tr><tr data-sortkey="FAU_VVR_EXT.1.1"><td>No events specified</td><td>N/A</td></tr><tr data-sortkey="FDP_IFC.1"><td rowspan="2"><a href="#FDP_IFC.1">FDP_IFC.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FDP_IFC.1#"><td></td></tr><tr data-sortkey="FDP_IFC.1.1"><td>No events specified</td><td>N/A</td></tr><tr data-sortkey="FDP_IFF.1"><td rowspan="2"><a href="#FDP_IFF.1">FDP_IFF.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FDP_IFF.1#"><td></td></tr><tr data-sortkey="FDP_IFF.1.1"><td>No events specified</td><td>N/A</td></tr><tr data-sortkey="FDP_RIP.1"><td rowspan="2"><a href="#FDP_RIP.1">FDP_RIP.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FDP_RIP.1#"><td></td></tr><tr data-sortkey="FDP_RIP.1.1"><td>No events specified</td><td>N/A</td></tr><tr data-sortkey="FIA_UAU.2/TC"><td rowspan="2"><a href="#FIA_UAU.2/TC">FIA_UAU.2/TC</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FIA_UAU.2/TC#"><td></td></tr><tr data-sortkey="FIA_UAU.2/TC.1"><td>Successful or failed authentication
 of trunk connected network
 component</td><td><ul><li>ID of Administrator that attempts to connect trunk to
 external device (if available);</li><li>IP address of device where trunk request was
@@ -990,7 +990,7 @@ connected (if available).</li><li><a href="#FIA_UAU.2/VVoIP">FIA_UAU.2/VVoIP</a>
 	endpoint to <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> (if available);</li><li>IP address of device where registration attempt was
 	initiated (if available);
 	</li><li>IP address of <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint that attempt to register
-	to <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> (if available).</li></ul></td></tr><tr data-sortkey="FMT_SMF.1/ESC"><td rowspan="3"><a href="#FMT_SMF.1/ESC">FMT_SMF.1/ESC</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FMT_SMF.1/ESC#"><td></td></tr><tr data-sortkey="FMT_SMF.1/ESC.1"><td>Enabling/disabling <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint/device features</td><td><ul><li>ID of Administrator attempting to enable/disable service or feature on <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> or on external registered device;</li><li>IP address of device where enabling/disabling of services or features was initiated;</li><li>The feature or service that was enabled/disabled.</li></ul></td></tr><tr data-sortkey="FMT_SMF.1/ESC.2"><td>Modification of <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Call Detail Records (<abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr>)</td><td><ul><li>ID of Administrator attempting to query or modify database;</li><li>IP address of device where database query was initiated;</li><li>The exact SQL command/instruction that was executed.</li></ul></td></tr></table>
+	to <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> (if available).</li></ul></td></tr><tr data-sortkey="FMT_SMF.1/ESC"><td rowspan="3"><a href="#FMT_SMF.1/ESC">FMT_SMF.1/ESC</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FMT_SMF.1/ESC#"><td></td></tr><tr data-sortkey="FMT_SMF.1/ESC.1"><td>Enabling/disabling <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint/device features</td><td><ul><li>ID of Administrator attempting to enable/disable service or feature on <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> or on external registered device;</li><li>IP address of device where enabling/disabling of services or features was initiated;</li><li>The feature or service that was enabled/disabled.</li></ul></td></tr><tr data-sortkey="FMT_SMF.1/ESC.2"><td>Modification of <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Call Detail Records (<abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr>)</td><td><ul><li>ID of Administrator attempting to query or modify database;</li><li>IP address of device where database query was initiated;</li><li>The exact SQL command/instruction that was executed.</li></ul></td></tr><tr data-sortkey="FPT_FLS.1"><td rowspan="2"><a href="#FPT_FLS.1">FPT_FLS.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FPT_FLS.1#"><td></td></tr><tr data-sortkey="FPT_FLS.1.1"><td>No events specified</td><td>N/A</td></tr><tr data-sortkey="FTP-ITC.1/ESC"><td rowspan="2"><a href="#FTP-ITC.1/ESC">FTP-ITC.1/ESC</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FTP-ITC.1/ESC#"><td></td></tr><tr data-sortkey="FTP-ITC.1/ESC.1"><td>No events specified</td><td>N/A</td></tr></table>
 	  <h4 id="m-fau" class="indexable" data-level="4">5.1.1.1 Security Audit (FAU)</h4>
 
 
@@ -1008,7 +1008,7 @@ defined above in addition to the applicable auditable events that are defined in
 shall also ensure that the administrative actions defined for this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> are appropriately audited. 
 
 			</div>
-			<div class="comp" id="FAU_STG.1"><h4>FAU_STG.1 Protected Audit Trail Storage</h4>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is optional in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is mandated by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because the <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> is expected to
+			<div class="comp" id="FAU_STG.2"><h4>FAU_STG.2 Protected Audit Trail Storage</h4>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is optional in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is mandated by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because the <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> is expected to
 	maintain audit data internal to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> which must be protected from unauthorized access. 
 	<div class="appnote"><span class="note-header">Application
       Note:
@@ -1120,6 +1120,7 @@ updates</span>, <span class="selectable-content" id="_s_10">[<b>assignment</b>:
 		<div class="element"><div class="reqid" id="FPT_STM_EXT.1.1"><a href="#FPT_STM_EXT.1.1" class="abbr">FPT_STM_EXT.1.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall synchronize time with an NTP server. <div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note"><i>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> has been refined from the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> to permit the NTP server selection only. No other parts of the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> are modified.</i></span></div></div></div>
+		
 		</div>
 			
 			
@@ -1152,6 +1153,7 @@ between <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints 
     </span><span class="note"><i>The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> should be uniquely identified as part of the <abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr> so that there is
 		attribution of individual CDRs in environments where multiple ESCs are feeding
 		CDRs to a centralized server.</i></span></div></div></div>
+		
 		</div>
 		<div class="comp" id="FAU_GEN.1/Log"><h4>FAU_GEN.1/Log Audit Data Generation (System Log)</h4>
 		<div class="element"><div class="reqid" id="FAU_GEN.1.1/Log"><a href="#FAU_GEN.1.1/Log" class="abbr">FAU_GEN.1.1/Log</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to generate a <b>system log</b> record for <b>current IP connections,
@@ -1204,6 +1206,7 @@ data by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.</p>
 presented in the system log so that it is clear to the evaluator how often updates
 to that information will be presented to an administrator</p><p>Logging of power status is optional and is only intended for <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr> that have
 multiple redundant power supplies. Logging of fan status is also optional.</p></i></span></div></div></div>
+		
 		</div>
 
 		<div class="comp" id="FAU_SAR.1/Log"><h4>FAU_SAR.1/Log Audit Review (System Log)</h4>
@@ -1211,12 +1214,14 @@ multiple redundant power supplies. Logging of fan status is also optional.</p></
      <span class="assignable-content">list of audit information</span>] from the <b>system log</b> records.
 		</div></div>
 		<div class="element"><div class="reqid" id="FAU_SAR.1.2/Log"><a href="#FAU_SAR.1.2/Log" class="abbr">FAU_SAR.1.2/Log</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide the <b>system log</b> records in a <b>real-time first-in first-out scrolling method</b>.</div></div>
+		
 		</div>
 
-		<div class="comp" id="FAU_STG.1/CDR"><h4>FAU_STG.1/CDR Protected Audit Trail Storage (Call Detail Record)</h4>
-		<div class="element"><div class="reqid" id="FAU_STG.1.1/CDR"><a href="#FAU_STG.1.1/CDR" class="abbr">FAU_STG.1.1/CDR</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall protect the stored <b>call detail records</b> from unauthorized <b>disclosure and</b> deletion.</div></div>
-		<div class="element"><div class="reqid" id="FAU_STG.1.2/CDR"><a href="#FAU_STG.1.2/CDR" class="abbr">FAU_STG.1.2/CDR</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to [<i>prevent</i>] unauthorized modifications to the stored <b>call
+		<div class="comp" id="FAU_STG.2/CDR"><h4>FAU_STG.2/CDR Protected Audit Trail Storage (Call Detail Record)</h4>
+		<div class="element"><div class="reqid" id="FAU_STG.2.1/CDR"><a href="#FAU_STG.2.1/CDR" class="abbr">FAU_STG.2.1/CDR</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall protect the stored <b>call detail records</b> from unauthorized <b>disclosure and</b> deletion.</div></div>
+		<div class="element"><div class="reqid" id="FAU_STG.2.2/CDR"><a href="#FAU_STG.2.2/CDR" class="abbr">FAU_STG.2.2/CDR</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to [<i>prevent</i>] unauthorized modifications to the stored <b>call
 detail records</b>.</div></div>
+		
 		</div>
 
 		
@@ -1231,7 +1236,7 @@ detail records</b>.</div></div>
 call data.
 		<div class="appnote"><span class="note-header">Application
       Note:
-    </span><span class="note"><i>If "have" is selected, both <a href="#FAU_STG.1/VVR">FAU_STG.1/VVR</a> and <a href="#FAU_VVR_EXT.2">FAU_VVR_EXT.2</a> must be claimed
+    </span><span class="note"><i>If "have" is selected, both <a href="#FAU_STG.2/VVR">FAU_STG.2/VVR</a> and <a href="#FAU_VVR_EXT.2">FAU_VVR_EXT.2</a> must be claimed
 		and “Ability to enable/disable voice and video recordings for any registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr>
 		endpoint” must be selected in <a href="#FMT_SMF.1.1/ESC">FMT_SMF.1.1/ESC</a>.
 		</i></span></div>
@@ -1240,7 +1245,7 @@ call data.
 		There are no guidance EAs for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>.
 		The test for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is performed as part of <a href="#FMT_SMF.1/ESC">FMT_SMF.1/ESC</a>’s EAs.
 		
-
+		
 		</div>
 	
 
@@ -1248,6 +1253,7 @@ call data.
 	<h3 id="man-fdp" class="indexable" data-level="3">5.2.2 User Data Protection (FDP)</h3>
 		<div class="comp" id="FDP_IFC.1"><h4>FDP_IFC.1 Subset Information Flow Control</h4>
 		<div class="element"><div class="reqid" id="FDP_IFC.1.1"><a href="#FDP_IFC.1.1" class="abbr">FDP_IFC.1.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall enforce the [<i>enterprise session controller SFP</i>] on [<i>caller-callee pairs attempting to communicate through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></i>].</div></div>
+		
 		</div>
 
 		<div class="comp" id="FDP_IFF.1"><h4>FDP_IFF.1 Simple Security Attributes</h4>
@@ -1276,6 +1282,7 @@ call data.
 		block a communications channel through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. It is acceptable to complete the
 		assignment with “no additional rules” if there are no exceptions to the behavior
 		defined in <a href="#FDP_IFF.1.2">FDP_IFF.1.2</a> and 1.3.</i></span></div></div></div>
+		
 		</div>
 
 
@@ -1293,6 +1300,7 @@ call data.
 	not feasible to pause the wipe operation while in progress it is sufficient for the evaluator to observe during testing that the final result is all zeroes; however, the
 	vendor-provided evidence is expected to provide a justification that [NIST SP 800-
 	88] guidelines are being followed.</i></span></div></div></div>
+	
 	</div>
 	
 
@@ -1328,6 +1336,7 @@ call data.
 		Administrator credentials when configured with default credentials or no
 		credentials</div></div>
 		<div class="element"><div class="reqid" id="FMT_CFG_EXT.1.2"><a href="#FMT_CFG_EXT.1.2" class="abbr">FMT_CFG_EXT.1.2</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be configured by default with permissions which protect it and its data from unauthorized access.</div></div>
+		
 	</div>
 	<div class="comp" id="FMT_SMF.1/ESC"><h4>FMT_SMF.1/ESC Specification of Management Functions (ESC)</h4>
 	<div class="element"><div class="reqid" id="FMT_SMF.1.1/ESC"><a href="#FMT_SMF.1.1/ESC" class="abbr">FMT_SMF.1.1/ESC</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be capable of performing the following management functions:<ul>
@@ -1366,6 +1375,7 @@ of self-tests defined in FPT_TST_EXT.1, failure of </i>[<b>assignment</b>:
      <span class="assignable-content">hardware
 components that affect the proper functioning of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span>]].
 			</div></div>
+		
 	</div>
 	
 
@@ -1376,16 +1386,17 @@ components that affect the proper functioning of the <abbr class="dyn-abbr"><a h
 		<div class="element"><div class="reqid" id="FTP-ITC.1.2/ESC"><a href="#FTP-ITC.1.2/ESC" class="abbr">FTP-ITC.1.2/ESC</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall permit [<i>the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>, another trusted IT product</i>] to initiate communication via the trusted channel.</div></div> 
 		<div class="element"><div class="reqid" id="FTP-ITC.1.3/ESC"><a href="#FTP-ITC.1.3/ESC" class="abbr">FTP-ITC.1.3/ESC</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall initiate communication via the trusted channel for [<b>assignment</b>: 
      <span class="assignable-content">list of functions for which a trusted channel is required</span>].</div></div> 
+		
 	</div>
 	
 	<h2 id="obj-req-map" class="indexable" data-level="2">5.3 TOE Security Functional Requirements Rationale</h2><p>The following rationale provides justification for each <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, 
     showing that the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> are suitable to address the specified threats:<br/><table><caption><span class="ctr" data-myid="t-obj_map" data-counter-type="ct-Table" id="t-obj_map">Table <span class="counter">4</span></span>: <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> Rationale</caption><tr><th>Threat</th><th>Addressed by</th><th>Rationale</th></tr><tr class="major-row"><td rowspan="29"><a href="#T.MALICIOUS_TRAFFIC">T.MALICIOUS_​TRAFFIC</a><br/></td><td><a href="#FCS_NTP_EXT.1">FCS_NTP_EXT.1</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to support NTP communications to obtain reliable time data that is used for accurate recording of call metadata.</td></tr>
 <tr><td><a href="#FPT_STM_EXT.1">FPT_STM_EXT.1</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to synchronize with an NTP server for reliable time data that is used for accurate recording of call metadata.</td></tr>
 <tr><td><a href="#FAU_GEN.1/CDR">FAU_GEN.1/CDR</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to generate call detail records of <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> communications.</td></tr>
-<tr><td><a href="#FAU_STG.1/CDR">FAU_STG.1/CDR</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to securely store call detail records.</td></tr>
+<tr><td><a href="#FAU_STG.2/CDR">FAU_STG.2/CDR</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to securely store call detail records.</td></tr>
 <tr><td><a href="#FAU_VVR_EXT.1">FAU_VVR_EXT.1</a></td><td></td></tr>
 <tr><td></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by allowing the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to claim whether or not it performs voice/video recording of <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> communications.</td></tr>
-<tr><td><a href="#FAU_STG.1/VVR">FAU_STG.1/VVR</a> (selection-based)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to securely store call detail records, if generated by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>.</td></tr>
+<tr><td><a href="#FAU_STG.2/VVR">FAU_STG.2/VVR</a> (selection-based)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to securely store call detail records, if generated by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>.</td></tr>
 <tr><td><a href="#FAU_VVR_EXT.2">FAU_VVR_EXT.2</a> (selection-based)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by defining when voice and video recordings are generated by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>, how they are stored, and how they are uniquely identified for future access.</td></tr>
 <tr><td><a href="#FCS_DTLSS_EXT.1">FCS_DTLSS_EXT.1</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by requiring the use of DTLS to protect transmitted voice/video media if this is the chosen method for securing it.</td></tr>
 <tr><td><a href="#FCS_DTLSS_EXT.2">FCS_DTLSS_EXT.2</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by requiring any implementation of DTLS to use mutual authentication.</td></tr>
@@ -1443,7 +1454,7 @@ components that affect the proper functioning of the <abbr class="dyn-abbr"><a h
 <tr><td>FTP_ITC.1/<abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by defining the trusted channels used for protection of signaling and media data used in <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> and <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> trunking communications.</td></tr>
 <tr><td><a href="#FPT_TUD_EXT.1/VVoIP">FPT_TUD_EXT.1/VVoIP</a> (implementation-dependent)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by optionally allowing the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to distribute software/firmware updates to connected <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints.</td></tr>
 <tr><td><a href="#FAU_GEN.1">FAU_GEN.1</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by defining additional required auditable events that are specific to <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> functionality that extend the audit generation requirement defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>.</td></tr>
-<tr><td><a href="#FAU_STG.1">FAU_STG.1</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by requiring all stored audit data to be protected against unauthorized access.</td></tr>
+<tr><td><a href="#FAU_STG.2">FAU_STG.2</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by requiring all stored audit data to be protected against unauthorized access.</td></tr>
 <tr><td><a href="#FCS_NTP_EXT.1">FCS_NTP_EXT.1</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to support NTP communications to obtain reliable time data that is used for accurate recording of log data.</td></tr>
 <tr><td><a href="#FPT_STM_EXT.1">FPT_STM_EXT.1</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to synchronize with an NTP server for reliable time data that is used for accurate log data.</td></tr>
 <tr><td><a href="#FAU_GEN.1/Log">FAU_GEN.1/Log</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to generate a real-time system log of its own diagnostic details.</td></tr>
@@ -1516,7 +1527,7 @@ following rationale: <table><caption><span class="ctr" data-myid="t-con-oe-objs"
       <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> are as follows:
       <table><caption><span class="ctr" data-myid="t-con-reqs" data-counter-type="ct-Table" id="t-con-reqs">Table <span class="counter">7</span></span>: Consistency of Requirements (<abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> base)
 		</caption><tr><th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> Requirement</th><th>Consistency Rationale</th></tr><tr><th colspan="2"> Modified <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th></tr><tr><td><a href="#FAU_GEN.1">FAU_GEN.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> modifies the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> to add specific auditable events that
-		relate to <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> functionality.</td></tr><tr><td><a href="#FAU_STG.1">FAU_STG.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> mandates the inclusion of this optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> because it is
+		relate to <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> functionality.</td></tr><tr><td><a href="#FAU_STG.2">FAU_STG.2</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> mandates the inclusion of this optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> because it is
 		required to implement functionality required by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.</td></tr><tr><td><a href="#FCS_DTLSS_EXT.1">FCS_DTLSS_EXT.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> refines this selection-based <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> to a more restrictive selection if claimed. The available selection item is one of the items in the original version of the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>. This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> also specifies an additional trigger for when this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> must be claimed</td></tr><tr><td><a href="#FCS_DTLSS_EXT.2">FCS_DTLSS_EXT.2</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> conditionally mandates the inclusion of this optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> for any situation where DTLS is claimed, which makes this into a selection-based <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>.</td></tr><tr><td><a href="#FCS_NTP_EXT.1">FCS_NTP_EXT.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> requires NTP v4 to be selected, which is one of two selection
 		options defined in the original <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>. This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> also mandates the inclusion of this selection-based <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> because it is required to
 		implement the NTP functionality prompted by the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>’s refinement to
@@ -1543,7 +1554,7 @@ following rationale: <table><caption><span class="ctr" data-myid="t-con-oe-objs"
 		<abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.</td></tr><tr><td><a href="#FAU_SAR.1/Log">FAU_SAR.1/Log</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> requires the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to implement a mechanism for review of
 		system log records that are defined by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> in <a href="#FAU_GEN.1/Log">FAU_GEN.1/Log</a> and
 		does not relate to the audit records required by the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>.
-		</td></tr><tr><td><a href="#FAU_STG.1/CDR">FAU_STG.1/CDR</a></td><td>The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> iterates an <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> by protecting audit data
+		</td></tr><tr><td><a href="#FAU_STG.2/CDR">FAU_STG.2/CDR</a></td><td>The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> iterates an <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> by protecting audit data
 		required by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> in the same manner that the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> defines for
 		its own audit records.</td></tr><tr><td><a href="#FAU_VVR_EXT.1">FAU_VVR_EXT.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> applies to recording voice and video call data, which is beyond the
 		original scope of the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>.</td></tr><tr><td><a href="#FDP_IFC.1">FDP_IFC.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> applies to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s implementation of an enterprise session
@@ -1576,10 +1587,10 @@ connected <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint
 suppress the generation of audit events based on certain factors. This does
 not conflict with the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> because if the administrators desires all required
 auditable events to be audited, they can choose to disable this function.
-</td></tr><tr><td><a href="#FAU_STG.1/VVR">FAU_STG.1/VVR</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> optionally allows a conformant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to claim the ability to
+</td></tr><tr><td><a href="#FAU_STG.2/VVR">FAU_STG.2/VVR</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> optionally allows a conformant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to claim the ability to
 securely store voice/video recordings. This does not conflict with the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>
 because the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> already has the ability to define secured storage (e.g.
-through <a href="#FAU_STG.1">FAU_STG.1</a>) so there is no expectation of availability that is being
+through FAU_STG.1) so there is no expectation of availability that is being
 violated if this is claimed</td></tr><tr><td><a href="#FAU_VVR_EXT.2">FAU_VVR_EXT.2</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> optionally allows a conformant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to claim the ability to
 generate and retain voice/video recordings of calls. This does not conflict with
 the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> because the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> already defines an audit mechanism via
@@ -1592,8 +1603,11 @@ the generation of media recordings such as unobservability of user actions.</td>
        Objective       <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr>.</p>
 	<h2 id="impl-dep-sfrs" class="indexable" data-level="2">A.3 Implementation-dependent Requirements
     </h2>
+	<h3 class="indexable" data-level="3" id="_sec_22">A.3.1 Auditable Events for Implementation-Dependent SFRs</h3>
+    		<table class="sort_kids_" border="1"><caption data-sortkey="#0"><span class="ctr" data-myid="at-impl-dep" data-counter-type="ct-Table" id="at-impl-dep">Table <span class="counter">8</span></span>: Auditable Events for  Requirements</caption><tr data-sortkey="#1"><th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th></tr><tr data-sortkey="FMT_CFG_EXT.1"><td rowspan="2"><a href="#FMT_CFG_EXT.1">FMT_CFG_EXT.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FMT_CFG_EXT.1#"><td></td></tr><tr data-sortkey="FMT_CFG_EXT.1.1"><td>No events specified</td><td>N/A</td></tr><tr data-sortkey="FPT_TUD_EXT.1/VVoIP"><td rowspan="2"><a href="#FPT_TUD_EXT.1/VVoIP">FPT_TUD_EXT.1/VVoIP</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FPT_TUD_EXT.1/VVoIP#"><td></td></tr><tr data-sortkey="FPT_TUD_EXT.1/VVoIP.1"><td>No events specified</td><td>N/A</td></tr></table>
+    	
 	
-		<h3 id="imp-fpt" class="indexable" data-level="3">A.3.1 Protection of the TSF (FPT)</h3>
+		<h3 id="imp-fpt" class="indexable" data-level="3">A.3.2 Protection of the TSF (FPT)</h3>
 		<div class="comp" id="FPT_TUD_EXT.1/VVoIP"><h4>FPT_TUD_EXT.1/VVoIP Trusted Update (VVoIP Endpoints)</h4>
 			<div class="element"><div class="reqid" id="FPT_TUD_EXT.1.1/VVoIP"><a href="#FPT_TUD_EXT.1.1/VVoIP" class="abbr">FPT_TUD_EXT.1.1/VVoIP</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide Security Administrators the ability to query the
 			currently executing version of the <b>registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint</b>
@@ -1621,6 +1635,7 @@ the generation of media recordings such as unobservability of user actions.</td>
 			server, then the <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> is not responsible for assuring
 			<a href="#FPT_TUD_EXT.1/VVoIP">FPT_TUD_EXT.1/VVoIP</a>.</p></i>
 			</span></div></div></div>
+			
 		</div>
 		
 
@@ -1628,7 +1643,7 @@ the generation of media recordings such as unobservability of user actions.</td>
 	<h1 id="sel-sfrs" class="indexable" data-level="1">Appendix B -  Selection-based Requirements
     </h1>
 		<h2 class="indexable" data-level="2" id="sec-sel-audit-table">B.1 Auditable Events for Selection-based SFRs</h2>
-           <table class="sort_kids_" border="1"><caption data-sortkey="#0"><span class="ctr" data-myid="at-sel-based" data-counter-type="ct-Table" id="at-sel-based">Table <span class="counter">8</span></span>: Auditable Events for Selection-based Requirements</caption><tr data-sortkey="#1"><th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th></tr><tr data-sortkey="FAU_VVR_EXT.2"><td rowspan="2"><a href="#FAU_VVR_EXT.2">FAU_VVR_EXT.2</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FAU_VVR_EXT.2#"><td></td></tr><tr data-sortkey="FAU_VVR_EXT.2.7"><td>Voice/video recordings of completed calls</td><td>Unique identifying data specified in <a href="#FAU_VVR_EXT.2.3">FAU_VVR_EXT.2.3</a>.</td></tr></table>
+           <table class="sort_kids_" border="1"><caption data-sortkey="#0"><span class="ctr" data-myid="at-sel-based" data-counter-type="ct-Table" id="at-sel-based">Table <span class="counter">9</span></span>: Auditable Events for Selection-based Requirements</caption><tr data-sortkey="#1"><th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th></tr><tr data-sortkey="FAU_SEL.1"><td rowspan="2"><a href="#FAU_SEL.1">FAU_SEL.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FAU_SEL.1#"><td></td></tr><tr data-sortkey="FAU_SEL.1.1"><td>No events specified</td><td>N/A</td></tr><tr data-sortkey="FAU_STG.2/VVR"><td rowspan="2"><a href="#FAU_STG.2/VVR">FAU_STG.2/VVR</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FAU_STG.2/VVR#"><td></td></tr><tr data-sortkey="FAU_STG.2/VVR.1"><td>No events specified</td><td>N/A</td></tr><tr data-sortkey="FAU_VVR_EXT.2"><td rowspan="2"><a href="#FAU_VVR_EXT.2">FAU_VVR_EXT.2</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FAU_VVR_EXT.2#"><td></td></tr><tr data-sortkey="FAU_VVR_EXT.2.7"><td>Voice/video recordings of completed calls</td><td>Unique identifying data specified in <a href="#FAU_VVR_EXT.2.3">FAU_VVR_EXT.2.3</a>.</td></tr></table>
 	
 	<h2 id="sel-fau" class="indexable" data-level="2">B.2 Security Audit (FAU)</h2>
 		<div class="comp" id="FAU_SEL.1"><h4>FAU_SEL.1 Selective Audit</h4><div class="statustag"></div>
@@ -1640,15 +1655,17 @@ auditable events based on the following attributes:<ol type="a">
 		upon</span>]</li></ol><div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note"><i>This requirement must be claimed when ‘Ability to specify the set of audited events’ is chosen in <a href="#FMT_SMF.1.1/ESC">FMT_SMF.1.1/ESC</a>.</i></span></div></div></div>
+		
 		</div>
 
-		<div class="comp" id="FAU_STG.1/VVR"><h4>FAU_STG.1/VVR Protected Audit Trail Storage (Voice/Video Recording)</h4><div class="statustag"></div>
-		<div class="element"><div class="reqid" id="FAU_STG.1.1/VVR"><a href="#FAU_STG.1.1/VVR" class="abbr">FAU_STG.1.1/VVR</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall protect the stored <b>voice and video recordings</b> from unauthorized
+		<div class="comp" id="FAU_STG.2/VVR"><h4>FAU_STG.2/VVR Protected Audit Trail Storage (Voice/Video Recording)</h4><div class="statustag"></div>
+		<div class="element"><div class="reqid" id="FAU_STG.2.1/VVR"><a href="#FAU_STG.2.1/VVR" class="abbr">FAU_STG.2.1/VVR</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall protect the stored <b>voice and video recordings</b> from unauthorized
 			<b>disclosure</b> and deletion <b>by encrypting voice and video recording data that is stored
 			on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> using an encryption method specified in FCS_COP.1.</b></div></div>
-		<div class="element"><div class="reqid" id="FAU_STG.1.2/VVR"><a href="#FAU_STG.1.2/VVR" class="abbr">FAU_STG.1.2/VVR</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to [<i>prevent</i>] unauthorized modifications to the stored <b>voice and video recordings</b>.<div class="appnote"><span class="note-header">Application
+		<div class="element"><div class="reqid" id="FAU_STG.2.2/VVR"><a href="#FAU_STG.2.2/VVR" class="abbr">FAU_STG.2.2/VVR</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to [<i>prevent</i>] unauthorized modifications to the stored <b>voice and video recordings</b>.<div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note"><i>This requirement must be claimed if ‘have’ is selected in <a href="#FAU_VVR_EXT.1">FAU_VVR_EXT.1</a>.1.</i></span></div></div></div>
+		
 		</div>
 
 		<div class="comp" id="FAU_VVR_EXT.2"><h4>FAU_VVR_EXT.2 Generation of Voice and Video Recordings</h4><div class="statustag"></div>
@@ -1675,7 +1692,7 @@ auditable events based on the following attributes:<ol type="a">
 
 	All extended components specified in the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> are listed in this table:
 
-<table class="sort_kids_"><caption data-sortkey="#0"><b><span class="ctr" data-myid="" data-counter-type="ct-Table" id="">Table <span class="counter">9</span></span>: Extended Component Definitions</b></caption><tr data-sortkey="#1"><th>Functional Class</th><th>Functional Components</th></tr><tr data-sortkey="Security Audit (FAU)"><td>Security Audit (FAU)</td><td>FAU_VVR_EXT Voice and Video Recording<br/></td></tr><tr data-sortkey="Security Management (FMT)"><td>Security Management (FMT)</td><td>FMT_CFG_EXT Secure by Default Configuration<br/></td></tr></table><h2 id="ext-comp-defs-bg" class="indexable" data-level="2">C.2 Extended Component Definitions</h2><span class="sort_kids_"><span data-sortkey="Security Audit (FAU)"><h3 id="ext-comp-FAU" class="indexable" data-level="3">C.2.1 Security Audit (FAU)</h3>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> defines the following extended components as part of the
+<table class="sort_kids_"><caption data-sortkey="#0"><b><span class="ctr" data-myid="" data-counter-type="ct-Table" id="">Table <span class="counter">10</span></span>: Extended Component Definitions</b></caption><tr data-sortkey="#1"><th>Functional Class</th><th>Functional Components</th></tr><tr data-sortkey="Security Audit (FAU)"><td>Security Audit (FAU)</td><td>FAU_VVR_EXT Voice and Video Recording<br/></td></tr><tr data-sortkey="Security Management (FMT)"><td>Security Management (FMT)</td><td>FMT_CFG_EXT Secure by Default Configuration<br/></td></tr></table><h2 id="ext-comp-defs-bg" class="indexable" data-level="2">C.2 Extended Component Definitions</h2><span class="sort_kids_"><span data-sortkey="Security Audit (FAU)"><h3 id="ext-comp-FAU" class="indexable" data-level="3">C.2.1 Security Audit (FAU)</h3>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> defines the following extended components as part of the
 	 FAU class originally defined by <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr> Part 2:
 	<h3 id="ext-comp-FAU_VVR_EXT" class="indexable" data-level="4">C.2.1.1 FAU_VVR_EXT Voice and Video Recording</h3><div style="margin-left: 1em;"><h4>Family Behavior</h4><div>This family defines requirements for recording of voice and video data.</div><h4>Component Leveling</h4><svg style="max-height: 50px;"><text x="4" fill="black" font-size="15" y="44">FAU_VVR_EXT</text><rect x="2" y="31" width="150" height="16" fill="none" stroke="black"></rect><text x="234" fill="black" font-size="15" y="24">1</text><rect x="232" y="11" width="12" height="16" fill="none" stroke="black"></rect><line x1="152" y1="37" x2="231" y2="17" stroke="black"></line><text x="234" fill="black" font-size="15" y="44">2</text><rect x="232" y="31" width="12" height="16" fill="none" stroke="black"></rect><line x1="152" y1="37" x2="231" y2="37" stroke="black"></line></svg><p><a href="#FAU_VVR_EXT.1">FAU_VVR_EXT.1</a>,
              Recording Voice and Video Call Data,
@@ -1757,7 +1774,7 @@ requirement is that the entropy documentation also applies to the specific <abbr
 require random data, in addition to any functionality required by the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>. 
 		</p>
 		
-	<h1 id="acronyms" class="indexable" data-level="A">Appendix F -  Acronyms</h1><table><caption><span class="ctr" data-myid="t-acronyms" data-counter-type="ct-Table" id="t-acronyms">Table <span class="counter">10</span></span>: Acronyms
+	<h1 id="acronyms" class="indexable" data-level="A">Appendix F -  Acronyms</h1><table><caption><span class="ctr" data-myid="t-acronyms" data-counter-type="ct-Table" id="t-acronyms">Table <span class="counter">11</span></span>: Acronyms
 		</caption><tr class="header"><th>Acronym</th><th>Meaning</th></tr><tr><td><span class="term" id="abbr_Base-PP" data-plural="Base-PPs"><abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr></span></td><td><span id="long_abbr_Base-PP">Base Protection Profile</span></td></tr>
 <tr><td><span class="term" id="abbr_CC"><abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr></span></td><td><span id="long_abbr_CC">Common Criteria</span></td></tr>
 <tr><td><span class="term" id="abbr_CDR"><abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr></span></td><td><span id="long_abbr_CDR">Call Detail Record</span></td></tr>
@@ -1785,7 +1802,7 @@ require random data, in addition to any functionality required by the <abbr clas
 <tr><td><span class="term" id="abbr_TSFI" data-plural="TSFIs"><abbr class="dyn-abbr"><a href="#abbr_TSFI">TSFI</a></abbr></span></td><td><span id="long_abbr_TSFI"><abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> Interface</span></td></tr>
 <tr><td><span class="term" id="abbr_TSS"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></span></td><td><span id="long_abbr_TSS"><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Summary Specification</span></td></tr>
 <tr><td><span class="term" id="abbr_VVoIP"><abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr></span></td><td><span id="long_abbr_VVoIP">Voice/Video over IP</span></td></tr>
-</table><h1 id="appendix-bibliography" class="indexable" data-level="A">Appendix G -  Bibliography</h1><table><caption><span class="ctr" data-myid="t-biblio" data-counter-type="ct-Table" id="t-biblio">Table <span class="counter">11</span></span>: Bibliography</caption><tr class="header"><th>Identifier</th><th>Title</th></tr><tr><td><span id="bibndcpp3">[<abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr>]</span></td><td><span class="description"><abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr>  - <a href="https://www.niap-ccevs.org/protectionprofiles/482">Collaborative Protection Profile for Network Devices, Version 3.0e, December 06, 2023</a></span></td></tr><tr><td><span id="NIST-SP-800-88">[NIST SP 800-88]</span></td><td><span class="description">NIST-SP-800-88  - <a href="https://csrc.nist.gov/pubs/sp/800/88/r1/final">Guidelines for Media Sanitization, Revision 1, December 2014</a></span></td></tr><tr><td><span id="bibCC">[<abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>]</span></td><td><span class="description">Common Criteria for Information Technology Security Evaluation - <ul>
+</table><h1 id="appendix-bibliography" class="indexable" data-level="A">Appendix G -  Bibliography</h1><table><caption><span class="ctr" data-myid="t-biblio" data-counter-type="ct-Table" id="t-biblio">Table <span class="counter">12</span></span>: Bibliography</caption><tr class="header"><th>Identifier</th><th>Title</th></tr><tr><td><span id="bibndcpp3">[<abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr>]</span></td><td><span class="description"><abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr>  - <a href="https://www.niap-ccevs.org/protectionprofiles/482">Collaborative Protection Profile for Network Devices, Version 3.0e, December 06, 2023</a></span></td></tr><tr><td><span id="NIST-SP-800-88">[NIST SP 800-88]</span></td><td><span class="description">NIST-SP-800-88  - <a href="https://csrc.nist.gov/pubs/sp/800/88/r1/final">Guidelines for Media Sanitization, Revision 1, December 2014</a></span></td></tr><tr><td><span id="bibCC">[<abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>]</span></td><td><span class="description">Common Criteria for Information Technology Security Evaluation - <ul>
             <li><a href="https://www.commoncriteriaportal.org/files/ccfiles/CC2022PART1R1.pdf">Part 1: 
 				Introduction and general model</a>, CCMB-2022-11-001, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022.</li>
             <li><a href="http://www.commoncriteriaportal.org/files/ccfiles/CC2022PART2R1.pdf">Part 2: 
