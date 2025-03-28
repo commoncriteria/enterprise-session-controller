@@ -769,6 +769,7 @@ implemented.</aactivity>
 			
 			<comment>The xml file contians text that has been commented out- in case we need to fall back to the original write up, feel free to comment the section below</comment>
 			<!-- The following commented section is used as a placeholder for modification of this requirement-->
+			<!-- 
 			<base-sfr-spec cc-id="fia_x509_ext.1" title="X.509 Certificate Validation" id="nd-mod-fia-x509-ext-1">
 			<consistency-rationale>
 						This PP-Module mandates the inclusion of this selection-based SFR because it is a dependency of the TLS requirements that it also mandates.
@@ -792,7 +793,7 @@ implemented.</aactivity>
 			<description>This SFR is selection-based in the X.509 Functional Package but mandatory in this PP-Module because the TOE’s TLS implementation requires appropriate X.509 functionality. The SFR is unchanged from its original definition.</description><no-change/>
 			<set-status status="mandatory"/>
 			</base-sfr-spec>
-			--&gt;
+			-->
 			
 			
 			<f-component name="X.509 Certificate Validation" cc-id="fia_x509_ext.1" id="fia-x509-ext-1" iteration="Rev">
