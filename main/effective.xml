@@ -389,7 +389,7 @@ baseline of capabilities that all conformant ESCs must provide.
 			<addressed-by>FIA_UAU.2/TC</addressed-by><rationale>This SFR supports the objective by requiring authentication of telecommunications devices that are connected to the TOE before the TSF will interact with them.</rationale>
 			<addressed-by>FIA_UAU.2/VVoIP</addressed-by><rationale>This SFR supports the objective by requiring authentication of VVoIP endpoints that are connected to the TOE before the TSF will interact with them.</rationale>
 			<addressed-by>FTP_ITC.1/ESC</addressed-by><rationale>This SFR supports the objective by defining the trusted channels used for protection of signaling and media data used in VVoIP and SIP trunking communications.</rationale>
-			<addressed-by>FPT_TUD_EXT.1/VVoIP (implementationdependent)</addressed-by><rationale>This SFR supports the objective by optionally allowing the TOE to distribute software/firmware updates to connected VVoIP endpoints.</rationale>
+			<addressed-by>FPT_TUD_EXT.1/VVoIP (implementation-dependent)</addressed-by><rationale>This SFR supports the objective by optionally allowing the TOE to distribute software/firmware updates to connected VVoIP endpoints.</rationale>
 			</threat>
 			<threat name="T.UNAUTHORIZED_CLIENT" id="t-unauthorized-client"><description>An attacker may attempt to register an unauthorized VVoIP endpoint to the TOE for the purpose of
 			impersonating a legitimate end user device in order to gain unauthorized connectivity to other clients
@@ -411,7 +411,7 @@ baseline of capabilities that all conformant ESCs must provide.
 			<addressed-by>FIA_UAU.2/TC</addressed-by><rationale>This SFR supports the objective by requiring authentication of telecommunications devices that are connected to the TOE before the TSF will interact with them.</rationale>
 			<addressed-by>FIA_UAU.2/VVoIP</addressed-by><rationale>This SFR supports the objective by requiring authentication of VVoIP endpoints that are connected to the TOE before the TSF will interact with them.</rationale>
 			<addressed-by>FTP_ITC.1/ESC</addressed-by><rationale>This SFR supports the objective by defining the trusted channels used for protection of signaling and media data used in VVoIP and SIP trunking communications.</rationale>
-			<addressed-by>FPT_TUD_EXT.1/VVoIP (implementationdependent)</addressed-by><rationale>This SFR supports the objective by optionally allowing the TOE to distribute software/firmware updates to connected VVoIP endpoints.</rationale>
+			<addressed-by>FPT_TUD_EXT.1/VVoIP (implementation-dependent)</addressed-by><rationale>This SFR supports the objective by optionally allowing the TOE to distribute software/firmware updates to connected VVoIP endpoints.</rationale>
 			<!-- O.SYSTEM_MONITORING-->
 			<addressed-by>FAU_GEN.1 (refined from Base-PP)</addressed-by><rationale>This SFR supports the objective by defining additional required auditable events that are specific to ESC functionality that extend the audit generation requirement defined in the Base-PP.</rationale>
 			<addressed-by>FAU_STG.1 (refined from Base-PP)</addressed-by><rationale>This SFR supports the objective by requiring all stored audit data to be protected against unauthorized access.</rationale>

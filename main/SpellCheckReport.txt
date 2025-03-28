@@ -42,7 +42,6 @@ output/enterprise-session-controller-release-linkable.html: callprocessing
 output/enterprise-session-controller-release-linkable.html: deallocation
 output/enterprise-session-controller-release-linkable.html: denylist
 output/enterprise-session-controller-release-linkable.html: dialplan
-output/enterprise-session-controller-release-linkable.html: implementationdependent
 output/enterprise-session-controller-release-linkable.html: sanitization
 output/enterprise-session-controller-release-linkable.html: stelephone
 output/enterprise-session-controller-release-linkable.html: te
@@ -83,7 +82,6 @@ output/enterprise-session-controller-release.html: denylist
 output/enterprise-session-controller-release.html: dialplan
 output/enterprise-session-controller-release.html: events’
 output/enterprise-session-controller-release.html: have’
-output/enterprise-session-controller-release.html: implementationdependent
 output/enterprise-session-controller-release.html: points’
 output/enterprise-session-controller-release.html: te
 output/enterprise-session-controller-release.html: unobservability
@@ -179,7 +177,6 @@ output/enterprise-session-controller.html: download’
 output/enterprise-session-controller.html: endpoints’
 output/enterprise-session-controller.html: events’
 output/enterprise-session-controller.html: have’
-output/enterprise-session-controller.html: implementationdependent
 output/enterprise-session-controller.html: junk’
 output/enterprise-session-controller.html: points’
 output/enterprise-session-controller.html: sanitization
