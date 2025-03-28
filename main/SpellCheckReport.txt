@@ -26,7 +26,6 @@ output/enterprise-session-controller-release-linkable.html: SFP
 output/enterprise-session-controller-release-linkable.html: SMR
 output/enterprise-session-controller-release-linkable.html: SRTP
 output/enterprise-session-controller-release-linkable.html: SS7
-output/enterprise-session-controller-release-linkable.html: STM
 output/enterprise-session-controller-release-linkable.html: Sanitization
 output/enterprise-session-controller-release-linkable.html: Softphones
 output/enterprise-session-controller-release-linkable.html: T1
@@ -57,7 +56,6 @@ output/enterprise-session-controller-release.html: SCIF
 output/enterprise-session-controller-release.html: SFP
 output/enterprise-session-controller-release.html: SMR
 output/enterprise-session-controller-release.html: SS7
-output/enterprise-session-controller-release.html: STM
 output/enterprise-session-controller-release.html: Sanitization
 output/enterprise-session-controller-release.html: Sanitization’
 output/enterprise-session-controller-release.html: Softphones
@@ -142,7 +140,6 @@ output/enterprise-session-controller.html: SFP
 output/enterprise-session-controller.html: SMR
 output/enterprise-session-controller.html: SRTP
 output/enterprise-session-controller.html: SS7
-output/enterprise-session-controller.html: STM
 output/enterprise-session-controller.html: Sanitization
 output/enterprise-session-controller.html: Sanitization’
 output/enterprise-session-controller.html: Softphones
