@@ -134,7 +134,7 @@
 		<h:p>The scope of this PP-Module is to describe the security functionality of an Enterprise Session Controller
 		(ESC) in terms of [CC] and to define functional and assurance requirements for such products. This PPModule is intended for use with the following Base-PPs:
 		</h:p>
-		<h:ul><h:li>collaborative Protection Profile for Network Devices (NDcPP), Version 2.2e
+		<h:ul><h:li>collaborative Protection Profile for Network Devices (NDcPP), Version 3.0e
 		</h:li></h:ul>
 		<h:p>This Base-PP is valid because a device that implements an ESC is a specific type of network device, and
 		there is nothing about the implementation of an ESC that would prevent any of the security capabilities
@@ -731,7 +731,7 @@ implemented.</aactivity></f-component>
 				must be claimed if ‘DTLS’ is selected in FTP_ITC.1.1/ESC in addition to the
 				applicable selection triggers in the Base-PP.</h:p>
 				<h:p>This SFR is also refined from its definition in the Base-PP by requiring the use of
-				DTLS 1.2 if this function is claimed.</h:p>
+				DTLS 1.2 if this function is claimed.</h:p><h:p>When CPP_ND_V3.0E is the Base-PP, the element in Section 5.1.2.1 should be used, instead.</h:p>
 				</h:i>
 				</note>
 				<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD.</aactivity>
@@ -767,7 +767,7 @@ implemented.</aactivity></f-component>
 				</selectables> and no other ciphersuites.
 				<note role='application'><h:i>This SFR is selection-based in the NDcPP but is mandated by this PP-Module
 				because Transport Layer Security (TLS) is used to secure SIP and H.323
-				communications. Additionally, this PP-Module mandates the use of TLS 1.2.</h:i></note></title>
+				communications. Additionally, this PP-Module mandates the use of TLS 1.2. When CPP_ND_V3.0E is the Base-PP, the element in Section 5.1.2.1 should be used, instead.</h:i></note></title>
 				<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to
 				make its inclusion mandatory rather than conditional, but there is no change to how the SFR is to be
 				implemented.</aactivity>
@@ -788,7 +788,7 @@ implemented.</aactivity></f-component>
 				ciphersuites.</title>
 				<note role='application'><h:i>This SFR is selection-based in the NDcPP but is mandated by this PP-Module
 				because TLS is used to secure SIP and H.323 communications. Additionally, this
-				PP-Module mandates the use of TLS 1.2.</h:i></note>
+				PP-Module mandates the use of TLS 1.2. When CPP_ND_V3.0E is the Base-PP, the element in Section 5.1.2.1 should be used, instead.</h:i></note>
 				<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to
 				make its inclusion mandatory rather than conditional, but there is no change to how the SFR is to be
 				implemented.</aactivity>
@@ -856,6 +856,7 @@ updates</selectable>
 		</f-component>
 			
 			</section>
+			<comment>First half of TD0835 has been applied to this document, however the other half of this TD adds a "Further Modified SFRs"- Guidance is needed on how to implement this into the current document </comment>
 	  </modified-sfrs>
     </base-pp>
 	<man-sfrs>
@@ -866,7 +867,7 @@ updates</selectable>
 between VVoIP endpoints that are established by the TOE.</h:b></title>
 		</f-element>
 		<f-element id='fau-gen-1e2-cdr'>
-		<title>The TSF shall record within each CDR at least the following information: <h:b>[<h:lu>
+		<title>The TSF shall record within each <h:b>CDR</h:b> at least the following information: <h:b><h:i>[<h:lu>
 		<h:li>calling party number (i.e. call originator)</h:li>
 		<h:li>called party number (i.e. call receiver or terminating number)</h:li>
 		<h:li>unique transaction sequence number</h:li>
@@ -881,7 +882,7 @@ between VVoIP endpoints that are established by the TOE.</h:b></title>
 		<h:li>time zone</h:li>
 		<h:li>call release cause, if applicable (i.e. reason for termination of call)</h:li>
 		<h:li>fault condition(s), if applicable</h:li>
-		</h:lu></h:b>].</title>
+		</h:lu></h:i></h:b>].</title>
 		<note role='application'><h:i>The TOE should be uniquely identified as part of the CDR so that there is
 		attribution of individual CDRs in environments where multiple ESCs are feeding
 		CDRs to a centralized server.</h:i></note>
@@ -908,7 +909,7 @@ between VVoIP endpoints that are established by the TOE.</h:b></title>
 		</f-element>
 		<f-element id='fau-gen-1e2-log'>
 		<title>
-		The TSF shall record within each system log record at least the following information: <h:ol type='a'>
+		The TSF shall record within each <h:b>system log</h:b> record at least the following information: <h:ol type='a'>
 			<h:li>Date and time of the event, type of event, subject identity (if applicable), and the outcome (success or failure of the event); and </h:li>
 			<h:li>For each audit event type, based on the auditable event definitions of the functional components included in the PP/ST, [<h:i>event details described in System Log Events table</h:i>].</h:li></h:ol>
     <h:head><title><h:b><ctr ctr-type="Table" pre="Table " id="atref-mandatory">: System Log Events</ctr></h:b></title></h:head>
@@ -1057,7 +1058,7 @@ detail records</h:b>.</title>
 			<management>The following actions could be considered for the management functions in FMT: <h:ol><h:li>Ability to enable/disable voice and video recordings</h:li></h:ol></management>
 			<audit>There are no auditable events foreseen.</audit>
 			<dependencies>No dependencies.</dependencies>
-			<comment>Audit and dependencies- aren't being generated</comment>
+			<comment>Audit and dependencies- aren't being generated for the extended component list(Appendix C).</comment>
 		<title>The TSF shall <selectables><selectable>have</selectable><selectable>not have</selectable></selectables> the capability to record voice and video
 call data.</title>
 		<note role='application'><h:i>If "have" is selected, both FAU_STG.1/VVR and FAU_VVR_EXT.2 must be claimed
@@ -1364,8 +1365,8 @@ posture on the TOE.</comp-lev>
 	<f-component name='Specification of Management Functions (ESC)' cc-id='fmt_smf.1' id='fmt-smf-1-ecs' iteration='ESC'>
 	<f-element id='fmt-smf-1-1-esc'>
 	<title>The TSF shall be capable of performing the following management functions:<h:ul>
-		<h:li>Ability to display the real-time connection status of all VVoIP endpoints (hardware and software) and telecommunications devices;</h:li>
-		<h:li>Ability to clear all TSF data stored on disk; </h:li>
+		<h:li><h:i>Ability to display the real-time connection status of all VVoIP endpoints (hardware and software) and telecommunications devices;</h:i></h:li>
+		<h:li><h:i>Ability to clear all TSF data stored on disk;</h:i></h:li>
 		<h:li><selectables linebreak='yes'>
 		<selectable>Ability to configure the password policy;</selectable>
 		<selectable>Ability to specify the set of audited events;</selectable>
@@ -1533,7 +1534,7 @@ components that affect the proper functioning of the TOE</assignable>].
 			</f-element>
 			<f-element id='fpt-tud-ext-1e3-vvoip'>
 			<title>The TSF shall provide means to authenticate firmware/software updates
-			to the <h:b>registered VVoIP endpoint</h:b> using a <selectables><selectable>X.509 certificate</selectable><selectable>digital signature mechanism</selectable><selectable>published hash</selectable></selectables> prior to installing those
+			to the <h:b>registered VVoIP endpoint</h:b> using a <selectables><selectable>X.509 certificate</selectable><selectable>digital signature </selectable><selectable>published hash</selectable></selectables> prior to installing those
 			updates.</title>
 			<note role="applications">
 			<h:i><h:p>The TOE may either validate the update prior to storing it for delivery to
