@@ -2123,97 +2123,59 @@ posture on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.</p><h4
 </p></td></tr></table><h4 id="ext-comp-FMT_CFG_EXT.1.1">FMT_CFG_EXT.1.1</h4>The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide only enough functionality to set new Security
 		Administrator credentials when configured with default credentials or no
 		credentials<h4 id="ext-comp-FMT_CFG_EXT.1.2">FMT_CFG_EXT.1.2</h4>The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be configured by default with permissions which protect it and its data from unauthorized access.</div></div></span></span><h1 id="satisfiedreqs" class="indexable" data-level="A">Appendix D -  Inherently Satisfied Requirements</h1> 
-		This appendix lists requirements that should be considered satisfied by products
-		successfully evaluated against this Protection Profile.  
-		However, these requirements are not featured explicitly as <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> and should not be
-		included in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>.  
-		They are not included as standalone <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> because it would
-		increase the time, cost, and complexity of evaluation.  This approach is permitted
-		by <a href="#bibCC">[CC]</a> Part 1, <b>8.2 Dependencies between components</b>.
-		<br/>
-		This information benefits systems engineering activities which call for inclusion of 
-		particular security controls.  Evaluation against the Protection Profile
-		provides evidence that these controls are present and have been evaluated.
+		<p>This appendix lists requirements that should be considered satisfied by products successfully evaluated
+		against this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>. However, these requirements are not featured explicitly as <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> and should not be
+		included in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>. They are not included as standalone <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> because it would increase the time, cost, and
+		complexity of evaluation. This approach is permitted by <a href="#bibCC">[CC]</a> Part 1, 8.2 Dependencies between
+		components.</p><p></p>This information benefits systems engineering activities which call for inclusion of particular security
+		controls. Evaluation against the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> provides evidence that these controls are present and have
+		been evaluated.
 		<table>
 			<tr class="header">
 				<td>Requirement</td>
 				<td>Rationale for Satisfaction</td>
 			</tr>
 			<tr>
-				<td>FIA_UAU.1 - Timing of authentication</td>
-				<td>
-				  FIA_AFL.1 implicitly requires that the OS perform all necessary actions, 
-				  including those on behalf of the user who has not been authenticated, 
-				  in order to authenticate;
-				  therefore it is duplicative to include these actions as a 
-				  separate assignment and test.
+				<td><b>FIA_UID.1 – Timing of Identification</b></td>
+				<td>FIA_UAU.2 (which is iterated in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> as
+					<a href="#FIA_UAU.2/TC">FIA_UAU.2/TC</a> and <a href="#FIA_UAU.2/VVoIP">FIA_UAU.2/VVoIP</a>) has a dependency
+					on FIA_UID.1 because authentication of an external entity
+					requires that entity to first identify itself so that its identity
+					can be validated by the authentication process.
+					This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> has not been defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because
+					in both iterations of FIA_UAU.2, the entity being
+					authenticated is a trusted IT product in the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s
+					operational environment that communicates with the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>
+					over a channel specified in FTP_ITC.1/<abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>. FTP_ITC.1/<abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr>
+					explicitly states that the channel itself provides ‘assured
+					identification of its end points’ which implies that these
+					entities are identified prior to the authentication behavior
+					required by the iterations of FIA_UAU.2.
 				</td>
 			</tr>
 			<tr>
-				<td>FIA_UID.1 - Timing of identification</td>
-				<td>
-				  FIA_AFL.1 implicitly requires that the OS perform all necessary actions, 
-				  including those on behalf of the user who has not been identified, 
-				  in order to authenticate;
-				  therefore it is duplicative to include these actions as a 
-				  separate assignment and test.
-				</td>
-			</tr>
-			<tr>
-				<td>FMT_SMR.1 - Security roles</td>
-				<td>
-				  FMT_MOF_EXT.1 specifies role-based management functions that implicitly defines
-				  user and privileged accounts; 
-				  therefore, it is duplicative to include separate role requirements.
-				</td>
-			</tr>
-			<tr>
-				<td>FPT_STM.1 - Reliable time stamps</td>
-				<td>
-				  <a href="#FAU_GEN.1">FAU_GEN.1</a>.2 explicitly requires that the OS associate timestamps with audit records;
-				  therefore it is duplicative to include a separate timestamp requirement.
-				</td>
-			</tr>
-			<tr>
-				<td>FTA_SSL.1 - <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>-initiated session locking</td>
-				<td>
-					  FMT_MOF_EXT.1 defines requirements for managing session locking;
-					  therefore, it is duplicative to include a separate session locking requirement.
-				</td>
-			</tr>
-			<tr>
-				<td>FTA_SSL.2 - User-initiated locking</td>
-				<td>
-				  FMT_MOF_EXT.1 defines requirements for user-initiated session locking;
-				  therefore, it is duplicative to include a separate session locking requirement.
-				</td>
-			</tr>
-			<tr>
-				<td><a href="#FAU_STG.1">FAU_STG.1</a> - Protected audit trail storage</td>
-				<td>
-				  FPT_ACF_EXT.1 defines a requirement to protect audit logs;
-				  therefore, it is duplicative to include a separate protection of audit trail requirements.
-				</td>
-			</tr>
-			<tr>
-				<td>FAU_GEN.2 - User identity association</td>
-				<td>
-				  <a href="#FAU_GEN.1">FAU_GEN.1</a>.2 explicitly requires that the OS record
-				  any user account associated with each event; therefore, it is duplicative
-				  to include a separate requirement to associate a user account with each
-				  event.
-				</td>
-			</tr>
-			<tr>
-				<td>FAU_SAR.1 - Audit review</td>
-				<td>
-					FPT_ACF_EXT.1.2 requires that audit logs (and other objects)
-					are protected from reading by unprivileged users; therefore, it is duplicative
-					to include a separate requirement to protect only the audit information.
-				</td>
+				<td><b>FMT_MSA.3 – Static Attribute Initialization</b></td>
+				<td><p><a href="#FDP_IFF.1">FDP_IFF.1</a> has a dependency on FMT_MSA.3 to define the
+				default security posture of security attributes for the
+				purpose of information flow control enforcement. This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>
+				has not been defined by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because the
+				enforcement of <a href="#FDP_IFF.1">FDP_IFF.1</a> is not dependent on the initial
+				state of security attributes. For example, <a href="#FDP_IFF.1.2">FDP_IFF.1.2</a>
+				requires the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to determine if a communication attempt
+				is valid before authorizing it. This is true regardless of
+				whether the default value of security attributes associated
+				with the connection attempt are permissive or restrictive;
+				there is no difference in how the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> determines “validity”
+				in this case.</p><p>The default values of security attributes do not cause the
+				information flow control policy to behave differently for
+				those rules that must always be enforced by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>. The
+				<abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author has the ability to define additional default-allow
+				or default-deny rules through the assignments in <a href="#FDP_IFF.1.4">FDP_IFF.1.4</a> and 1.5. The ability to specify this behavior in
+				the policy itself implies a default security posture of the
+				relevant security attributes that does not need to be
+				explicitly re-stated in a separate <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>.</p></td>
 			</tr>
 		</table>
-
 	<h1 id="entropyappendix" class="indexable" data-level="A">Appendix E -  Entropy Documentation and Assessment</h1> 
 		<p>
 			This appendix describes the required supplementary information for the entropy

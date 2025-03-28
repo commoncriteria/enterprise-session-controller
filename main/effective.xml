@@ -1686,6 +1686,62 @@ the PP/ST:<h:ul><h:li>Voice/video recordings of completed calls</h:li></h:ul></a
 	</sel-sfrs>
     </sec:Security_Requirements> <!-- Security Requirements  -->
 
+<appendix title="Inherently Satisfied Requirements" id="satisfiedreqs"> 
+		<h:p>This appendix lists requirements that should be considered satisfied by products successfully evaluated
+		against this PP. However, these requirements are not featured explicitly as SFRs and should not be
+		included in the ST. They are not included as standalone SFRs because it would increase the time, cost, and
+		complexity of evaluation. This approach is permitted by <xref g="CC"/> Part 1, 8.2 Dependencies between
+		components.</h:p><h:p/>This information benefits systems engineering activities which call for inclusion of particular security
+		controls. Evaluation against the PP-Module provides evidence that these controls are present and have
+		been evaluated.
+		<table xmlns="http://www.w3.org/1999/xhtml">
+			<tr class="header">
+				<td>Requirement</td>
+				<td>Rationale for Satisfaction</td>
+			</tr>
+			<tr>
+				<td><b>FIA_UID.1 – Timing of Identification</b></td>
+				<td>FIA_UAU.2 (which is iterated in this PP-Module as
+					FIA_UAU.2/TC and FIA_UAU.2/VVoIP) has a dependency
+					on FIA_UID.1 because authentication of an external entity
+					requires that entity to first identify itself so that its identity
+					can be validated by the authentication process.
+					This SFR has not been defined in this PP-Module because
+					in both iterations of FIA_UAU.2, the entity being
+					authenticated is a trusted IT product in the TOE’s
+					operational environment that communicates with the TSF
+					over a channel specified in FTP_ITC.1/ESC. FTP_ITC.1/ESC
+					explicitly states that the channel itself provides ‘assured
+					identification of its end points’ which implies that these
+					entities are identified prior to the authentication behavior
+					required by the iterations of FIA_UAU.2.
+				</td>
+			</tr>
+			<tr>
+				<td><b>FMT_MSA.3 – Static Attribute Initialization</b></td>
+				<td><h:p>FDP_IFF.1 has a dependency on FMT_MSA.3 to define the
+				default security posture of security attributes for the
+				purpose of information flow control enforcement. This SFR
+				has not been defined by this PP-Module because the
+				enforcement of FDP_IFF.1 is not dependent on the initial
+				state of security attributes. For example, FDP_IFF.1.2
+				requires the TSF to determine if a communication attempt
+				is valid before authorizing it. This is true regardless of
+				whether the default value of security attributes associated
+				with the connection attempt are permissive or restrictive;
+				there is no difference in how the TSF determines “validity”
+				in this case.</h:p><h:p>The default values of security attributes do not cause the
+				information flow control policy to behave differently for
+				those rules that must always be enforced by the TSF. The
+				ST author has the ability to define additional default-allow
+				or default-deny rules through the assignments in FDP_IFF.1.4 and 1.5. The ability to specify this behavior in
+				the policy itself implies a default security posture of the
+				relevant security attributes that does not need to be
+				explicitly re-stated in a separate SFR.</h:p></td>
+			</tr>
+		</table>
+	</appendix>
+
 
 <?modules <!-- Security Reuirements Section for Modules -->
 	<section title="Security Requirements" id="sec-reqs">
@@ -1904,99 +1960,7 @@ the PP/ST:<h:ul><h:li>Voice/video recordings of completed calls</h:li></h:ul></a
 
 	<!-- This should be included if there are SFRs that are dependencies for included SFRs, 
 	     but the dependencies are not incluuded in the PP. -->
-	<appendix title="Inherently Satisfied Requirements" id="satisfiedreqs"> 
-		This appendix lists requirements that should be considered satisfied by products
-		successfully evaluated against this Protection Profile.  
-		However, these requirements are not featured explicitly as SFRs and should not be
-		included in the ST.  
-		They are not included as standalone SFRs because it would
-		increase the time, cost, and complexity of evaluation.  This approach is permitted
-		by <xref g="CC"/> Part 1, <h:b>8.2 Dependencies between components</h:b>.
-		<h:br/>
-		This information benefits systems engineering activities which call for inclusion of 
-		particular security controls.  Evaluation against the Protection Profile
-		provides evidence that these controls are present and have been evaluated.
-		<table xmlns="http://www.w3.org/1999/xhtml">
-			<tr class="header">
-				<td>Requirement</td>
-				<td>Rationale for Satisfaction</td>
-			</tr>
-			<tr>
-				<td>FIA_UAU.1 - Timing of authentication</td>
-				<td>
-				  FIA_AFL.1 implicitly requires that the OS perform all necessary actions, 
-				  including those on behalf of the user who has not been authenticated, 
-				  in order to authenticate;
-				  therefore it is duplicative to include these actions as a 
-				  separate assignment and test.
-				</td>
-			</tr>
-			<tr>
-				<td>FIA_UID.1 - Timing of identification</td>
-				<td>
-				  FIA_AFL.1 implicitly requires that the OS perform all necessary actions, 
-				  including those on behalf of the user who has not been identified, 
-				  in order to authenticate;
-				  therefore it is duplicative to include these actions as a 
-				  separate assignment and test.
-				</td>
-			</tr>
-			<tr>
-				<td>FMT_SMR.1 - Security roles</td>
-				<td>
-				  FMT_MOF_EXT.1 specifies role-based management functions that implicitly defines
-				  user and privileged accounts; 
-				  therefore, it is duplicative to include separate role requirements.
-				</td>
-			</tr>
-			<tr>
-				<td>FPT_STM.1 - Reliable time stamps</td>
-				<td>
-				  FAU_GEN.1.2 explicitly requires that the OS associate timestamps with audit records;
-				  therefore it is duplicative to include a separate timestamp requirement.
-				</td>
-			</tr>
-			<tr>
-				<td>FTA_SSL.1 - TSF-initiated session locking</td>
-				<td>
-					  FMT_MOF_EXT.1 defines requirements for managing session locking;
-					  therefore, it is duplicative to include a separate session locking requirement.
-				</td>
-			</tr>
-			<tr>
-				<td>FTA_SSL.2 - User-initiated locking</td>
-				<td>
-				  FMT_MOF_EXT.1 defines requirements for user-initiated session locking;
-				  therefore, it is duplicative to include a separate session locking requirement.
-				</td>
-			</tr>
-			<tr>
-				<td>FAU_STG.1 - Protected audit trail storage</td>
-				<td>
-				  FPT_ACF_EXT.1 defines a requirement to protect audit logs;
-				  therefore, it is duplicative to include a separate protection of audit trail requirements.
-				</td>
-			</tr>
-			<tr>
-				<td>FAU_GEN.2 - User identity association</td>
-				<td>
-				  FAU_GEN.1.2 explicitly requires that the OS record
-				  any user account associated with each event; therefore, it is duplicative
-				  to include a separate requirement to associate a user account with each
-				  event.
-				</td>
-			</tr>
-			<tr>
-				<td>FAU_SAR.1 - Audit review</td>
-				<td>
-					FPT_ACF_EXT.1.2 requires that audit logs (and other objects)
-					are protected from reading by unprivileged users; therefore, it is duplicative
-					to include a separate requirement to protect only the audit information.
-				</td>
-			</tr>
-		</table>
-
-	</appendix>
+	
 
 	<!-- Entropy documentation -->
 	<appendix title="Entropy Documentation and Assessment" id="entropyappendix"> 
