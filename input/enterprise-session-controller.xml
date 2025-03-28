@@ -40,9 +40,9 @@
   <!-- PPReference (all documents) -->
   <PPReference>
     <ReferenceTable>
-      <PPVersion>1.0</PPVersion>
+      <PPVersion>1.1</PPVersion>
       <PPAuthor>National Information Assurance Partnership</PPAuthor>
-      <PPPubDate>2024-03-28</PPPubDate>
+      <PPPubDate>2025-03-28</PPPubDate>
       <Keywords>QQQQ</Keywords>               <!-- This field is unused and optional -->
     </ReferenceTable>
   </PPReference>
@@ -1053,7 +1053,7 @@ detail records</h:b>.</title>
 <fam-behavior>This family defines requirements for recording of voice and video data.</fam-behavior>
 </ext-comp-def>
 
-		<f-component name="Recording Voice and Video Call Data" cc-id='fua_vvr_ext.1' id='fau-vvr-ext-1' >
+		<f-component name="Recording Voice and Video Call Data" cc-id='fau_vvr_ext.1' id='fau-vvr-ext-1' >
 			<comp-lev> requires the TSF to specify whether or not it records voice and video call data.</comp-lev>
 			<management>The following actions could be considered for the management functions in FMT: <h:ol><h:li>Ability to enable/disable voice and video recordings</h:li></h:ol></management>
 			<audit>There are no auditable events foreseen.</audit>
