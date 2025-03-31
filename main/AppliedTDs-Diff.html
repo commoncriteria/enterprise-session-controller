@@ -809,32 +809,33 @@
                             <s>Date and time of the auditable event, type of event, subject identity (if applicable), and the outcome (success or failure) of the event;</s>
                         </li>
                         <li>
-                             For each auditable event type, based on the auditable event definitions of the functional components included in the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>, functional package or <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>, <b><i>[
-                                    <lu>
-                                        <li>calling party number (i.e. call originator)</li>
-                                        <li>called party number (i.e. call receiver or terminating number)</li>
-                                        <li>unique transaction sequence number</li>
-                                        <li>call disposition (e.g. call connected, call terminated, call transferred)</li>
-                                        <li>call type (e.g. voice only, voice and video, text)</li>
-                                        <li>call start time</li>
-                                        <li>call end time</li>
-                                        <li>call duration</li>
-                                        <li>
-                                            unique identifier of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
-                                        </li>
-                                        <li>
-                                            call routing into <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
-                                        </li>
-                                        <li>
-                                            call routing out of <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
-                                        </li>
-                                        <li>time zone</li>
-                                        <li>call release cause, if applicable (i.e. reason for termination of call)</li>
-                                        <li>fault condition(s), if applicable</li>
-                                    </lu>
-                                </i></b>]. 
+                             For each auditable event type, based on the auditable event definitions of the functional components included in the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>, functional package or <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>, [
                         </li>
                     </ol>
+                     <b><i>
+                            <lu>
+                                <li>calling party number (i.e. call originator)</li>
+                                <li>called party number (i.e. call receiver or terminating number)</li>
+                                <li>unique transaction sequence number</li>
+                                <li>call disposition (e.g. call connected, call terminated, call transferred)</li>
+                                <li>call type (e.g. voice only, voice and video, text)</li>
+                                <li>call start time</li>
+                                <li>call end time</li>
+                                <li>call duration</li>
+                                <li>
+                                    unique identifier of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
+                                </li>
+                                <li>
+                                    call routing into <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
+                                </li>
+                                <li>
+                                    call routing out of <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
+                                </li>
+                                <li>time zone</li>
+                                <li>call release cause, if applicable (i.e. reason for termination of call)</li>
+                                <li>fault condition(s), if applicable</li>
+                            </lu>
+                        </i></b>]. 
                     <div class="appnote">
                         <span class="note-header">Application Note: </span><span class="note"><i>The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> should be uniquely identified as part of the <abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr> so that there is attribution of individual CDRs in environments where multiple ESCs are feeding CDRs to a centralized server.</i></span>
                     </div>
