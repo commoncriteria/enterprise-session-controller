@@ -880,13 +880,12 @@ updates</selectable>
     <section title='Security Audit (FAU)' id='man-fau'>
 		<f-component name="Audit Data Generation (Call Detail Record)" cc-id='fau_gen.1' id='fpt-gen-ext-1-cdr' iteration='CDR'>
 		<f-element id='fau-gen-1e1-cdr'>
-		<title>The TSF shall be able to generate a <h:b>call detail record (CDR)</h:b> for <h:b>communications
-between VVoIP endpoints that are established by the TOE.</h:b>
-<h:s><h:ol type='a'>
-<h:li>Start-up and shutdown of the audit functions;</h:li>
-<h:li>All auditable events for the <selectables choose-one-of="yes"><selectable>minimum</selectable><selectable>basic</selectable><selectable>detailed</selectable><selectable>not specified</selectable></selectables></h:li>
-<h:li><assignable>other specifically defined auditable events]</assignable></h:li>
-</h:ol></h:s></title>
+		<title>The TSF shall be able to generate <h:b>a call detail record (CDR)</h:b> for the following auditable events:
+<h:ol type='a'>
+<h:li><h:s>Start-up and shutdown of the audit functions;</h:s></h:li>
+<h:li>All auditable events for the [<h:i>not specified</h:i>]</h:li>
+<h:li>[<h:i>communications between VVoIP endpoints that are established by the TOE</h:i></h:li>
+</h:ol></title>
 		
 		</f-element>
 		<f-element id='fau-gen-1e2-cdr'>
@@ -937,15 +936,26 @@ components included in the PP, PP-Module, functional package or ST, [</h:li></h:
 		</f-component>
 		<f-component name="Audit Data Generation (System Log)" cc-id='fau_gen.1' id='fpt-gen-ext-1-log' iteration='Log'>
 		<f-element id='fau-gen-1e1-log'>
-		<title>The TSF shall be able to generate a <h:b>system log</h:b> record for <h:b>current IP connections,
-			NTP status, CPU usage, memory usage, disk and file storage capacity, audit
-			storage capacity, <selectables><selectable>power status</selectable><selectable>fan status</selectable><selectable>no other activities</selectable></selectables>.</h:b> </title>
+		<title>
+		The TSF shall be able to generate <h:b>system log</h:b> of the following auditable events:
+			<h:ol type='a'>
+			<h:li><h:s>Start-up and shutdown of the audit functions;</h:s></h:li>
+			<h:li>All auditable events for the [<h:i>not specified</h:i>]</h:li>
+			<h:li>[<h:b>current IP connections, NTP status, CPU usage, memory usage, disk and file storage capacity, audit storage capacity, <selectables><selectable>power Status</selectable><selectable>fan status</selectable><selectable>no other activities</selectable></selectables></h:b></h:li>
+			</h:ol>
+		
+		</title>
+		
 		</f-element>
 		<f-element id='fau-gen-1e2-log'>
 		<title>
-		The TSF shall record within each <h:b>system log</h:b> record at least the following information: <h:ol type='a'>
-			<h:li>Date and time of the event, type of event, subject identity (if applicable), and the outcome (success or failure of the event); and </h:li>
-			<h:li>For each audit event type, based on the auditable event definitions of the functional components included in the PP/ST, [<h:i>event details described in System Log Events table</h:i>].</h:li></h:ol>
+		The TSF shall record within <h:b>each system log</h:b> data at least the following information:
+		<h:ol>
+		<h:li>Date and time of the auditable event, type of event, subject identity (if applicable), and the outcome (success or failure) of the event;</h:li>
+		<h:li>For each auditable event type, based on the auditable event definitions of the functional
+components included in the PP, PP-Module, functional package or ST, [<h:i>event details described in System Log Events table</h:i>].</h:li>
+		</h:ol>
+		
     <h:head><title><h:b><ctr ctr-type="Table" pre="Table " id="atref-mandatory">: System Log Events</ctr></h:b></title></h:head>
 <h:table border='1'>
 		<h:tr>
