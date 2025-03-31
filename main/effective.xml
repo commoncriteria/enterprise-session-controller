@@ -1706,7 +1706,7 @@ auditable events based on the following attributes:<h:ol type="a">
 
 		<f-component name="Generation of Voice and Video Recordings" cc-id="fau_vvr_ext.2" id="fau-vvr-ext-2">
 		<comp-lev> requires the TSF to store uniquely identified voice and video call recordings in a certain format and when certain conditions are met</comp-lev>
-		<management>The following actions could be considered for the management functions in FMT:<h:ol><h:li>Ability to specify criteria for retention of voice and video recordings</h:li></h:ol></management>
+		<management>The following actions could be considered for the management functions in FMT:<h:ul><h:li>Ability to specify criteria for retention of voice and video recordings</h:li></h:ul></management>
 		<audit>The following actions should be auditable if FAU_GEN Security Audit Data Generation is included in
 the PP/ST:<h:ul><h:li>Voice/video recordings of completed calls</h:li></h:ul></audit>
 		<dependencies>FAU_VVR_EXT.1 Recording Voice and Video Call Data</dependencies>
