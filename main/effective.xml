@@ -1032,7 +1032,7 @@ system log item is described in the guidance documentation along with each requi
 
 		<f-component name="Audit Review (System Log)" cc-id="fau_sar.1" id="fau-sar-1-log" iteration="Log">
 		<f-element id="fau-sar-1e1">
-		<title>The TSF shall provide [<h:i>Security Administrators</h:i>] with the capability to read <assignable>list of audit information</assignable> from the <h:b>system log</h:b> records.
+		<title>The TSF shall provide <assignable>authorized users</assignable> with the capability to read <assignable>list of audit information</assignable> from the <h:b>system log</h:b> records.
 		</title>
 		</f-element>
 		<f-element id="fau-sar-1e2">
@@ -1107,15 +1107,17 @@ call data.</title>
 	<section title="User Data Protection (FDP)" id="man-fdp">
 		<f-component name="Subset Information Flow Control" cc-id="fdp_ifc.1" id="fdp-ifc-1">
 		<f-element id="fdp-ifc-1e1">
-			<title>The TSF shall enforce the [<h:i>enterprise session controller SFP</h:i>] on [<h:i>caller-callee pairs attempting to communicate through the TOE</h:i>].</title>
-			<aactivity>This SFR is tested in conjunction with FDP_IFF.1.</aactivity>
+		<title>
+			The TSF shall enforce the [<h:b><h:i>enterprise session controller SFP</h:i></h:b>] on [<h:b><h:i>caller-callee pairs attempting to communicate through the TOE</h:i></h:b>].
+			</title>
+		<aactivity>This SFR is tested in conjunction with FDP_IFF.1.</aactivity>
 		</f-element>
 		<audit-event/>
 		</f-component>
 
 		<f-component name="Simple Security Attributes" cc-id="fdp_iff.1" id="fdp-iff-1">
 		<f-element id="fdp-iff-1e1">
-		<title>The TSF shall enforce the [<h:i>enterprise session controller SFP</h:i>] based on the following types of subject and information security attributes: <assignable>method by which the TSF identifies each endpoint for a call</assignable> <h:b>using the following call control protocols: <selectables><selectable>SIP</selectable><selectable>H.323</selectable></selectables> and <selectables><selectable>SS7</selectable><selectable>MGCP</selectable><selectable>no other call control protocols</selectable></selectables></h:b>.
+		<title>The TSF shall enforce the [<h:b><h:i>enterprise session controller SFP</h:i></h:b>] based on the following types of subject and information security attributes: <h:b><assignable>method by which the TSF identifies each endpoint for a call</assignable> using the following call control protocols: <selectables><selectable>SIP</selectable><selectable>H.323</selectable></selectables> and <selectables><selectable>SS7</selectable><selectable>MGCP</selectable><selectable>no other call control protocols</selectable></selectables></h:b>.
 		</title>
 		</f-element>
 		<f-element id="fdp-iff-1e2">
@@ -1397,7 +1399,7 @@ posture on the TOE.</comp-lev>
 	</f-component>
 	<f-component name="Specification of Management Functions (ESC)" cc-id="fmt_smf.1" id="fmt-smf-1-ecs" iteration="ESC">
 	<f-element id="fmt-smf-1-1-esc">
-	<title>The TSF shall be capable of performing the following management functions:<h:ul>
+	<title>The TSF shall be capable of performing the following management functions: [<h:ul>
 		<h:li><h:i>Ability to display the real-time connection status of all VVoIP endpoints (hardware and software) and telecommunications devices;</h:i></h:li>
 		<h:li><h:i>Ability to clear all TSF data stored on disk;</h:i></h:li>
 		<h:li><selectables linebreak="yes">
@@ -1407,7 +1409,7 @@ posture on the TOE.</comp-lev>
 		<selectable>Ability to enable/disable voice and video recordings for any registered VVoIP endpoint;</selectable>
 		<selectable>Ability to specify criteria for retention of voice and video recordings;</selectable>
 		<selectable>No other capabilities</selectable>
-		</selectables>.</h:li>
+		</selectables>].</h:li>
 		</h:ul></title>
 		<note role="application"><h:i><h:p>This SFR defines additional management functions for the TOE beyond what is
 		defined in the Base-PP as FMT_SMF.1. The TOE may have all management
