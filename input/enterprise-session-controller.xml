@@ -1135,7 +1135,7 @@ call data.</title>
 
 		<f-component name='Simple Security Attributes' cc-id='fdp_iff.1' id='fdp-iff-1'>
 		<f-element id='fdp-iff-1e1'>
-		<title>The TSF shall enforce the [</h:b><h:i>enterprise session controller SFP</h:i></h:b>] based on the following types of subject and information security attributes: <assignable></h:b>method by which the TSF identifies each endpoint for a call</assignable> using the following call control protocols: <selectables><selectable>SIP</selectable><selectable>H.323</selectable></selectables> and <selectables><selectable>SS7</selectable><selectable>MGCP</selectable><selectable>no other call control protocols</selectable></selectables></h:b>.
+		<title>The TSF shall enforce the [<h:b><h:i>enterprise session controller SFP</h:i></h:b>] based on the following types of subject and information security attributes: <h:b><assignable>method by which the TSF identifies each endpoint for a call</assignable> using the following call control protocols: <selectables><selectable>SIP</selectable><selectable>H.323</selectable></selectables> and <selectables><selectable>SS7</selectable><selectable>MGCP</selectable><selectable>no other call control protocols</selectable></selectables></h:b>.
 		</title>
 		</f-element>
 		<f-element id='fdp-iff-1e2'>
