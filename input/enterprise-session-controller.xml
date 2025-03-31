@@ -896,25 +896,25 @@ between VVoIP endpoints that are established by the TOE.</h:b>
 outcome (success or failure) of the event;</h:s></h:li>
 <h:li>
 For each auditable event type, based on the auditable event definitions of the functional
-components included in the PP, PP-Module, functional package or ST, 
-<h:b><h:i>[<h:lu>
-		<h:li>calling party number (i.e. call originator)</h:li>
-		<h:li>called party number (i.e. call receiver or terminating number)</h:li>
-		<h:li>unique transaction sequence number</h:li>
-		<h:li>call disposition (e.g. call connected, call terminated, call transferred)</h:li>
-		<h:li>call type (e.g. voice only, voice and video, text)</h:li>
-		<h:li>call start time</h:li>
-		<h:li>call end time</h:li>
-		<h:li>call duration</h:li>
-		<h:li>unique identifier of the TOE</h:li>
-		<h:li>call routing into TOE</h:li>
-		<h:li>call routing out of TOE</h:li>
-		<h:li>time zone</h:li>
-		<h:li>call release cause, if applicable (i.e. reason for termination of call)</h:li>
-		<h:li>fault condition(s), if applicable</h:li>
+components included in the PP, PP-Module, functional package or ST, [</h:li></h:ol>
+		<h:b><h:i><h:lu>
+			<h:li>calling party number (i.e. call originator)</h:li>
+			<h:li>called party number (i.e. call receiver or terminating number)</h:li>
+			<h:li>unique transaction sequence number</h:li>
+			<h:li>call disposition (e.g. call connected, call terminated, call transferred)</h:li>
+			<h:li>call type (e.g. voice only, voice and video, text)</h:li>
+			<h:li>call start time</h:li>
+			<h:li>call end time</h:li>
+			<h:li>call duration</h:li>
+			<h:li>unique identifier of the TOE</h:li>
+			<h:li>call routing into TOE</h:li>
+			<h:li>call routing out of TOE</h:li>
+			<h:li>time zone</h:li>
+			<h:li>call release cause, if applicable (i.e. reason for termination of call)</h:li>
+			<h:li>fault condition(s), if applicable</h:li>
 		</h:lu></h:i></h:b>].
-</h:li>
-		</h:ol>
+
+		
 		</title>
 		<note role='application'><h:i>The TOE should be uniquely identified as part of the CDR so that there is
 		attribution of individual CDRs in environments where multiple ESCs are feeding
