@@ -284,9 +284,8 @@ baseline of capabilities that all conformant ESCs must provide.
 		<cc-pp-config-with/>
 
 		<!-- Package claims -->
-		<cc-pkg-claim><FP-cc-ref conf="conformant">Functional Package for TLS, version 2.0</FP-cc-ref>
-        <FP-cc-ref conf="conformant">Functional Package for X.509, version 1.0</FP-cc-ref>
-		</cc-pkg-claim>
+        
+		<cc-pkg-claim/>
 
 		
 
@@ -422,7 +421,10 @@ baseline of capabilities that all conformant ESCs must provide.
 			<addressed-by>FAU_GEN.1/Log</addressed-by><rationale>This SFR supports the objective by requiring the TSF to generate a real-time system log of its own diagnostic details.</rationale>
 			<addressed-by>FAU_SAR.1/Log</addressed-by><rationale>This SFR supports the objective by defining what users are able to review the real-time system log.</rationale>
 			<addressed-by>FAU_SEL.1 (selection-based)</addressed-by><rationale>This SFR supports the objective by optionally allowing an administrator to suppress the generation of certain audit records.</rationale>
+			<addressed-by>FMT_SMF.1/ESC</addressed-by><rationale>This SFR supports the objective by defining the authorized management functions supported by the TOE.</rationale>
+			<comment>FMT_SMF.1/ESC mitigates T.UNAUTHORIZED_CLIENT by making it so that VVoIP endpoints can't be registered without authorization</comment>
 			</threat>
+
 
       </threats>
     </section>  <!-- Threats -->
@@ -860,12 +862,24 @@ updates</selectable>
     <section title="Security Audit (FAU)" id="man-fau">
 		<f-component name="Audit Data Generation (Call Detail Record)" cc-id="fau_gen.1" id="fpt-gen-ext-1-cdr" iteration="CDR">
 		<f-element id="fau-gen-1e1-cdr">
-		<title>The TSF shall be able to generate a <h:b>call detail</h:b> record <h:b>(CDR)</h:b> for <h:b>communications
-between VVoIP endpoints that are established by the TOE.</h:b></title>
+		<title>The TSF shall be able to generate a <h:b>call detail record (CDR)</h:b> for <h:b>communications
+between VVoIP endpoints that are established by the TOE.</h:b>
+<h:s><h:ol type="a">
+<h:li>Start-up and shutdown of the audit functions;</h:li>
+<h:li>All auditable events for the <selectables choose-one-of="yes"><selectable>minimum</selectable><selectable>basic</selectable><selectable>detailed</selectable><selectable>not specified</selectable></selectables></h:li>
+<h:li><assignable>other specifically defined auditable events]</assignable></h:li>
+</h:ol></h:s></title>
 		
 		</f-element>
 		<f-element id="fau-gen-1e2-cdr">
-		<title>The TSF shall record within each <h:b>CDR</h:b> at least the following information: <h:b><h:i>[<h:lu>
+		<title>The TSF shall record within each <h:b>CDR</h:b> at least the following information: 
+		<h:ol type="a">
+		<h:li><h:s>Date and time of the auditable event, type of event, subject identity (if applicable), and the
+outcome (success or failure) of the event;</h:s></h:li>
+<h:li>
+For each auditable event type, based on the auditable event definitions of the functional
+components included in the PP, PP-Module, functional package or ST, 
+<h:b><h:i>[<h:lu>
 		<h:li>calling party number (i.e. call originator)</h:li>
 		<h:li>called party number (i.e. call receiver or terminating number)</h:li>
 		<h:li>unique transaction sequence number</h:li>
@@ -880,7 +894,10 @@ between VVoIP endpoints that are established by the TOE.</h:b></title>
 		<h:li>time zone</h:li>
 		<h:li>call release cause, if applicable (i.e. reason for termination of call)</h:li>
 		<h:li>fault condition(s), if applicable</h:li>
-		</h:lu></h:i></h:b>].</title>
+		</h:lu></h:i></h:b>].
+</h:li>
+		</h:ol>
+		</title>
 		<note role="application"><h:i>The TOE should be uniquely identified as part of the CDR so that there is
 		attribution of individual CDRs in environments where multiple ESCs are feeding
 		CDRs to a centralized server.</h:i></note>

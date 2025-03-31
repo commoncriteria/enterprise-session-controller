@@ -28,6 +28,8 @@
             <br>
             <a href="#Comment-5-">Comment: Comment-5-</a>
             <br>
+            <a href="#Comment-6-">Comment: Comment-6-</a>
+            <br>
         </div>
         <h1 class="title" style="page-break-before:auto;">PP-Module for Enterprise Session Controllers</h1>
         <h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1>
@@ -338,21 +340,7 @@
             <dt>Package Claim</dt>
             <p></p>
             <dd>
-                <ul>
-                    <li>
-                        This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is Functional Package for TLS, version 2.0 conformant.
-                    </li>
-                    <li>
-                        This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is Functional Package for X.509, version 1.0 conformant.
-                    </li>
-                    <li>
-                        This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not conform to any assurance packages.
-                    </li>
-                </ul>
-            </dd>
-            <p></p>
-            <dd>
-                 The functional packages to which the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> conforms may include <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that are not mandatory to claim for the sake of conformance. An <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> that claims one or more of these functional packages may include any non-mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that are appropriate to claim based on the capabilities of the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> and on any triggers for their inclusion based inherently on the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> selections made. 
+                This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is not conformant to any Functional or Assurance Packages.
             </dd>
         </dl>
          
@@ -737,7 +725,7 @@
              This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is optional in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is mandated by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications require mutually-authenticated TLS. There is no change to the EAs specified for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> SD. The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> modifies this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> to make its inclusion mandatory rather than optional, but there is no change to how the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is to be implemented. 
         </div>
         <h4 id="m-fia" class="indexable" data-level="4">5.1.1.3 Identification and Authentication (FIA)</h4>
-         <span style="" class="comment " id="Comment-3-">The xml file contians text that has been commented out- in case we need to fall back to the original write up, feel free to comment the section below</span> 
+         <span style="" class="comment " id="Comment-4-">The xml file contians text that has been commented out- in case we need to fall back to the original write up, feel free to comment the section below</span> 
         <div class="comp" id="FIA_X509_EXT.1/Rev">
             <h4>FIA_X509_EXT.1/Rev X.509 Certificate Validation</h4>
              This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is selection-based in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>. It is mandatory when the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> claims conformance to this PPModule because X.509 certificate validation is needed when establishing TLS communications for <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323. There are no changes to the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> otherwise. No additional EAs are specified for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> beyond what is defined in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> SD. 
@@ -786,7 +774,7 @@
                 </div>
             </div>
         </div>
-         <span style="" class="comment " id="Comment-4-">First half of TD0835 has been applied to this document, however the other half of this TD adds a "Further Modified <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr>"- Guidance is needed on how to implement this into the current document </span> 
+         <span style="" class="comment " id="Comment-5-">First half of TD0835 has been applied to this document, however the other half of this TD adds a "Further Modified <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr>"- Guidance is needed on how to implement this into the current document </span> 
         <h2 id="man-sfrs" class="indexable" data-level="2">5.2 TOE Security Functional Requirements</h2>
          The following section describes the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that must be satisfied by any <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that claims conformance to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>. These <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> must be claimed regardless of which <abbr class="dyn-abbr"><a href="#abbr_PP-Configuration">PP-Configuration</a></abbr> is used to define the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. 
         <h3 id="man-fau" class="indexable" data-level="3">5.2.1 Security Audit (FAU)</h3>
@@ -797,7 +785,17 @@
                     <a href="#FAU_GEN.1.1/CDR" class="abbr">FAU_GEN.1.1/CDR</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to generate a <b>call detail</b> record <b>(<abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr>)</b> for <b>communications between <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints that are established by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.</b>
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to generate a <b>call detail record (<abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr>)</b> for <b>communications between <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints that are established by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.</b> <s>
+                        <ol type="a">
+                            <li>Start-up and shutdown of the audit functions;</li>
+                            <li>
+                                All auditable events for the [<b>selection</b><b>, choose one of</b>: <span class="selectable-content" id="_s_15">minimum</span>, <span class="selectable-content" id="_s_16">basic</span>, <span class="selectable-content" id="_s_17">detailed</span>, <span class="selectable-content" id="_s_18">not specified</span>]
+                            </li>
+                            <li>
+                                [<b>assignment</b>: <span class="assignable-content">other specifically defined auditable events]</span>]
+                            </li>
+                        </ol>
+                    </s>
                 </div>
             </div>
             <div class="element">
@@ -805,30 +803,38 @@
                     <a href="#FAU_GEN.1.2/CDR" class="abbr">FAU_GEN.1.2/CDR</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall record within each <b><abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr></b> at least the following information: <b><i>[
-                            <lu>
-                                <li>calling party number (i.e. call originator)</li>
-                                <li>called party number (i.e. call receiver or terminating number)</li>
-                                <li>unique transaction sequence number</li>
-                                <li>call disposition (e.g. call connected, call terminated, call transferred)</li>
-                                <li>call type (e.g. voice only, voice and video, text)</li>
-                                <li>call start time</li>
-                                <li>call end time</li>
-                                <li>call duration</li>
-                                <li>
-                                    unique identifier of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
-                                </li>
-                                <li>
-                                    call routing into <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
-                                </li>
-                                <li>
-                                    call routing out of <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
-                                </li>
-                                <li>time zone</li>
-                                <li>call release cause, if applicable (i.e. reason for termination of call)</li>
-                                <li>fault condition(s), if applicable</li>
-                            </lu>
-                        </i></b>].
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall record within each <b><abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr></b> at least the following information: 
+                    <ol type="a">
+                        <li>
+                            <s>Date and time of the auditable event, type of event, subject identity (if applicable), and the outcome (success or failure) of the event;</s>
+                        </li>
+                        <li>
+                             For each auditable event type, based on the auditable event definitions of the functional components included in the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>, functional package or <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>, <b><i>[
+                                    <lu>
+                                        <li>calling party number (i.e. call originator)</li>
+                                        <li>called party number (i.e. call receiver or terminating number)</li>
+                                        <li>unique transaction sequence number</li>
+                                        <li>call disposition (e.g. call connected, call terminated, call transferred)</li>
+                                        <li>call type (e.g. voice only, voice and video, text)</li>
+                                        <li>call start time</li>
+                                        <li>call end time</li>
+                                        <li>call duration</li>
+                                        <li>
+                                            unique identifier of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
+                                        </li>
+                                        <li>
+                                            call routing into <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
+                                        </li>
+                                        <li>
+                                            call routing out of <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
+                                        </li>
+                                        <li>time zone</li>
+                                        <li>call release cause, if applicable (i.e. reason for termination of call)</li>
+                                        <li>fault condition(s), if applicable</li>
+                                    </lu>
+                                </i></b>]. 
+                        </li>
+                    </ol>
                     <div class="appnote">
                         <span class="note-header">Application Note: </span><span class="note"><i>The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> should be uniquely identified as part of the <abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr> so that there is attribution of individual CDRs in environments where multiple ESCs are feeding CDRs to a centralized server.</i></span>
                     </div>
@@ -842,7 +848,7 @@
                     <a href="#FAU_GEN.1.1/Log" class="abbr">FAU_GEN.1.1/Log</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to generate a <b>system log</b> record for <b>current IP connections, NTP status, CPU usage, memory usage, disk and file storage capacity, audit storage capacity, [<b>selection</b>: <span class="selectable-content" id="_s_15">power status</span>, <span class="selectable-content" id="_s_16">fan status</span>, <span class="selectable-content" id="_s_17">no other activities</span>].</b> 
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to generate a <b>system log</b> record for <b>current IP connections, NTP status, CPU usage, memory usage, disk and file storage capacity, audit storage capacity, [<b>selection</b>: <span class="selectable-content" id="_s_19">power status</span>, <span class="selectable-content" id="_s_20">fan status</span>, <span class="selectable-content" id="_s_21">no other activities</span>].</b> 
                 </div>
             </div>
             <div class="element">
@@ -937,7 +943,7 @@
         </div>
         <div class="comp" id="FAU_VVR_EXT.1">
             <h4>FAU_VVR_EXT.1 Recording Voice and Video Call Data</h4>
-             <span style="" class="comment " id="Comment-5-">Audit and dependencies- aren't being generated for the extended component list(Appendix C).</span> The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="_s_18">have</span>, <span class="selectable-content" id="_s_19">not have</span>] the capability to record voice and video call data. 
+             <span style="" class="comment " id="Comment-6-">Audit and dependencies- aren't being generated for the extended component list(Appendix C).</span> The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="_s_22">have</span>, <span class="selectable-content" id="_s_23">not have</span>] the capability to record voice and video call data. 
             <div class="appnote">
                 <span class="note-header">Application Note: </span><span class="note"><i>If "have" is selected, both <a href="#FAU_STG.2/VVR">FAU_STG.2/VVR</a> and <a href="#FAU_VVR_EXT.2">FAU_VVR_EXT.2</a> must be claimed and &ldquo;Ability to enable/disable voice and video recordings for any registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint&rdquo; must be selected in <a href="#FMT_SMF.1.1/ESC">FMT_SMF.1.1/ESC</a>. </i></span>
             </div>
@@ -962,7 +968,7 @@
                     <a href="#FDP_IFF.1.1" class="abbr">FDP_IFF.1.1</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall enforce the [<i>enterprise session controller SFP</i>] based on the following types of subject and information security attributes: [<b>assignment</b>: <span class="assignable-content">method by which the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> identifies each endpoint for a call</span>] <b>using the following call control protocols: [<b>selection</b>: <span class="selectable-content" id="_s_20"><abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr></span>, <span class="selectable-content" id="_s_21">H.323</span>] and [<b>selection</b>: <span class="selectable-content" id="_s_22">SS7</span>, <span class="selectable-content" id="_s_23"><abbr class="dyn-abbr"><a href="#abbr_MGCP">MGCP</a></abbr></span>, <span class="selectable-content" id="_s_24">no other call control protocols</span>]</b>. 
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall enforce the [<i>enterprise session controller SFP</i>] based on the following types of subject and information security attributes: [<b>assignment</b>: <span class="assignable-content">method by which the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> identifies each endpoint for a call</span>] <b>using the following call control protocols: [<b>selection</b>: <span class="selectable-content" id="_s_24"><abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr></span>, <span class="selectable-content" id="_s_25">H.323</span>] and [<b>selection</b>: <span class="selectable-content" id="_s_26">SS7</span>, <span class="selectable-content" id="_s_27"><abbr class="dyn-abbr"><a href="#abbr_MGCP">MGCP</a></abbr></span>, <span class="selectable-content" id="_s_28">no other call control protocols</span>]</b>. 
                 </div>
             </div>
             <div class="element">
@@ -1011,7 +1017,7 @@
                     <a href="#FDP_RIP.1.1" class="abbr">FDP_RIP.1.1</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall ensure that any previous information content of a resource is made unavailable upon the [<b>selection</b>: <span class="selectable-content" id="_s_25">allocation of the resource to</span>, <span class="selectable-content" id="_s_26">deallocation of the resource from</span>] the following objects: [<b>assignment</b>: <span class="assignable-content">disk storage location(s) erased by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> during factory reset or other wipe operation</span>].
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall ensure that any previous information content of a resource is made unavailable upon the [<b>selection</b>: <span class="selectable-content" id="_s_29">allocation of the resource to</span>, <span class="selectable-content" id="_s_30">deallocation of the resource from</span>] the following objects: [<b>assignment</b>: <span class="assignable-content">disk storage location(s) erased by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> during factory reset or other wipe operation</span>].
                     <div class="appnote">
                         <span class="note-header">Application Note: </span><span class="note"><i>The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is expected to follow guidelines for [NIST SP 800-88], &lsquo;Disk Storage Sanitization&rsquo; as the method for ensuring that residual information is cleared from both volatile and nonvolatile memory. This involves overwriting the entire disk or disk partition with zeroes, followed by all ones, followed by all zeroes. Since it is not feasible to pause the wipe operation while in progress it is sufficient for the evaluator to observe during testing that the final result is all zeroes; however, the vendor-provided evidence is expected to provide a justification that [NIST SP 800- 88] guidelines are being followed.</i></span>
                     </div>
@@ -1083,22 +1089,22 @@
                             [<b>selection</b>: 
                             <ul>
                                 <li style="">
-                                    <span class="selectable-content" id="_s_27">Ability to configure the password policy;</span>
+                                    <span class="selectable-content" id="_s_31">Ability to configure the password policy;</span>
                                 </li>
                                 <li style="">
-                                    <span class="selectable-content" id="_s_28">Ability to specify the set of audited events;</span>
+                                    <span class="selectable-content" id="_s_32">Ability to specify the set of audited events;</span>
                                 </li>
                                 <li style="">
-                                    <span class="selectable-content" id="_s_29">Ability to configure the behavior of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> in response to a self-test failure;</span>
+                                    <span class="selectable-content" id="_s_33">Ability to configure the behavior of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> in response to a self-test failure;</span>
                                 </li>
                                 <li style="">
-                                    <span class="selectable-content" id="_s_30">Ability to enable/disable voice and video recordings for any registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint;</span>
+                                    <span class="selectable-content" id="_s_34">Ability to enable/disable voice and video recordings for any registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint;</span>
                                 </li>
                                 <li style="">
-                                    <span class="selectable-content" id="_s_31">Ability to specify criteria for retention of voice and video recordings;</span>
+                                    <span class="selectable-content" id="_s_35">Ability to specify criteria for retention of voice and video recordings;</span>
                                 </li>
                                 <li style="">
-                                    <span class="selectable-content" id="_s_32">No other capabilities</span>
+                                    <span class="selectable-content" id="_s_36">No other capabilities</span>
                                 </li>
                             </ul>
                             ].
@@ -1131,7 +1137,7 @@
                     <a href="#FPT_FLS.1.1/ESC" class="abbr">FPT_FLS.1.1/ESC</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall preserve a secure state <b>through the following means: [<b>selection</b>: <span class="selectable-content" id="_s_33">audible alarm</span>, <span class="selectable-content" id="_s_34">visual indicator</span>, <span class="selectable-content" id="_s_35">reboot of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span>, <span class="selectable-content" id="_s_36">shutdown of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span>, <span class="selectable-content" id="_s_37">[<b>assignment</b>: <span class="assignable-content">other methods</span>]</span>]</b> when the following types of failures occur: [<i>failure of self-tests defined in FPT_TST_EXT.1, failure of </i>[<b>assignment</b>: <span class="assignable-content">hardware components that affect the proper functioning of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span>]]. 
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall preserve a secure state <b>through the following means: [<b>selection</b>: <span class="selectable-content" id="_s_37">audible alarm</span>, <span class="selectable-content" id="_s_38">visual indicator</span>, <span class="selectable-content" id="_s_39">reboot of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span>, <span class="selectable-content" id="_s_40">shutdown of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span>, <span class="selectable-content" id="_s_41">[<b>assignment</b>: <span class="assignable-content">other methods</span>]</span>]</b> when the following types of failures occur: [<i>failure of self-tests defined in FPT_TST_EXT.1, failure of </i>[<b>assignment</b>: <span class="assignable-content">hardware components that affect the proper functioning of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span>]]. 
                 </div>
             </div>
         </div>
@@ -1143,7 +1149,7 @@
                     <a href="#FTP_ITC.1.1/ESC" class="abbr">FTP_ITC.1.1/ESC</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall <b>be capable of using TLS and [<b>selection</b>: <span class="selectable-content" id="_s_38">DTLS</span>, <span class="selectable-content" id="_s_39">IPsec</span>, <span class="selectable-content" id="_s_40">no other protocols</span>] to</b> provide a communication channel between itself and another trusted IT product <b>supporting the following capabilities: <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints (for protection of signaling protocols), <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints (for protection of voice/video/media content), other <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> devices (for <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> trunking), [<b>selection</b>: <span class="selectable-content" id="_s_41"><abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> conferencing system</span>, <span class="selectable-content" id="_s_42">no other capabilities</span>]</b> that is logically distinct from other communication channels and provides assured identification of its end points and protection of the channel data from modification or disclosure.
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall <b>be capable of using TLS and [<b>selection</b>: <span class="selectable-content" id="_s_42">DTLS</span>, <span class="selectable-content" id="_s_43">IPsec</span>, <span class="selectable-content" id="_s_44">no other protocols</span>] to</b> provide a communication channel between itself and another trusted IT product <b>supporting the following capabilities: <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints (for protection of signaling protocols), <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints (for protection of voice/video/media content), other <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> devices (for <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> trunking), [<b>selection</b>: <span class="selectable-content" id="_s_45"><abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> conferencing system</span>, <span class="selectable-content" id="_s_46">no other capabilities</span>]</b> that is logically distinct from other communication channels and provides assured identification of its end points and protection of the channel data from modification or disclosure.
                 </div>
             </div>
             <div class="element">
@@ -1311,7 +1317,7 @@
                     <td><a href="#FPT_TUD_EXT.1/VVoIP">FPT_TUD_EXT.1/VVoIP</a> (implementation-dependent)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by optionally allowing the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to distribute software/firmware updates to connected <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints.</td>
                 </tr>
                 <tr class="major-row">
-                    <td rowspan="24"><a href="#T.UNAUTHORIZED_CLIENT">T.UNAUTHORIZED_​CLIENT</a>
+                    <td rowspan="25"><a href="#T.UNAUTHORIZED_CLIENT">T.UNAUTHORIZED_​CLIENT</a>
                         <br>
                     </td><td><a href="#FCS_DTLSS_EXT.1">FCS_DTLSS_EXT.1</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by requiring the use of DTLS to protect transmitted voice/video media if this is the chosen method for securing it.</td>
                 </tr>
@@ -1383,6 +1389,9 @@
                 </tr>
                 <tr>
                     <td><a href="#FAU_SEL.1">FAU_SEL.1</a> (selection-based)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by optionally allowing an administrator to suppress the generation of certain audit records.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FMT_SMF.1/ESC">FMT_SMF.1/ESC</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> supports the objective by defining the authorized management functions supported by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.</td>
                 </tr>
             </table>
         </p>
@@ -1612,7 +1621,7 @@
                     <a href="#FPT_TUD_EXT.1.3/VVoIP" class="abbr">FPT_TUD_EXT.1.3/VVoIP</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide means to authenticate firmware/software updates to the <b>registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint</b> using a [<b>selection</b>: <span class="selectable-content" id="_s_43">X.509 certificate</span>, <span class="selectable-content" id="_s_44">digital signature </span>, <span class="selectable-content" id="_s_45">published hash</span>] prior to installing those updates.
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide means to authenticate firmware/software updates to the <b>registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint</b> using a [<b>selection</b>: <span class="selectable-content" id="_s_47">X.509 certificate</span>, <span class="selectable-content" id="_s_48">digital signature </span>, <span class="selectable-content" id="_s_49">published hash</span>] prior to installing those updates.
                     <div class="appnote">
                         <span class="note-header">Applications Note: </span><span class="note"> <i>
                                 <p>
@@ -1675,7 +1684,7 @@
                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to select the set of events to be audited from the set of all auditable events based on the following attributes:
                     <ol type="a">
                         <li>
-                            [<b>selection</b>: <span class="selectable-content" id="_s_46">object identity</span>, <span class="selectable-content" id="_s_47">user identity</span>, <span class="selectable-content" id="_s_48">subject identity</span>, <span class="selectable-content" id="_s_49">host identity</span>, <span class="selectable-content" id="_s_50">event type</span>]
+                            [<b>selection</b>: <span class="selectable-content" id="_s_50">object identity</span>, <span class="selectable-content" id="_s_51">user identity</span>, <span class="selectable-content" id="_s_52">subject identity</span>, <span class="selectable-content" id="_s_53">host identity</span>, <span class="selectable-content" id="_s_54">event type</span>]
                         </li>
                         <li>
                             [<b>assignment</b>: <span class="assignable-content">list of additional attributes that audit selectivity is based upon</span>]

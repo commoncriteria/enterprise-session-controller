@@ -1,3 +1,7 @@
+* Error: Found a "selectables" element that is buried under stricken text:
+        /Module[1]""/sec:Security_Requirements[1]""/man-sfrs[1]""/section[1]""/f-component[1]""/f-element[1]""/title[1]"The TSF s"/h:s[1]""/h:ol[1]""/h:li[2]"All audit"/selectables[1]""
+* Error: Found a "assignable" element that is buried under stricken text:
+        /Module[1]""/sec:Security_Requirements[1]""/man-sfrs[1]""/section[1]""/f-component[1]""/f-element[1]""/title[1]"The TSF s"/h:s[1]""/h:ol[1]""/h:li[3]""/assignable[1]"other spe"
 * Warning: This document still has at least one comment.
 * Error: Detected dangling id-reference to pizza from attribute
         on/Module[1]""/include-pkg[1]""/depends[1]""/on[1]""
