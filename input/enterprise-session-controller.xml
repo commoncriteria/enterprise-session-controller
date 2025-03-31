@@ -302,8 +302,8 @@ baseline of capabilities that all conformant ESCs must provide.
 		<cc-pp-config-with/>
 
 		<!-- Package claims -->
-        <FP-cc-ref conf="conformant">Functional Package for X.509, version 1.0</FP-cc-ref>
-		</cc-pkg-claim>
+        
+		<cc-pkg-claim/>
 
 		
 
