@@ -1125,8 +1125,10 @@ call data.</title>
 	<section title='User Data Protection (FDP)' id='man-fdp'>
 		<f-component name='Subset Information Flow Control' cc-id="fdp_ifc.1" id='fdp-ifc-1'>
 		<f-element id='fdp-ifc-1e1'>
-			<title>The TSF shall enforce the [<h:b><h:i>enterprise session controller SFP</h:i></h:b>] on [</h:b><h:i>caller-callee pairs attempting to communicate through the TOE</h:i></h:b>].</title>
-			<aactivity>This SFR is tested in conjunction with FDP_IFF.1.</aactivity>
+		<title>
+			The TSF shall enforce the [<h:b><h:i>enterprise session controller SFP</h:i></h:b>] on [<h:b><h:i>caller-callee pairs attempting to communicate through the TOE</h:i></h:b>].
+			</title>
+		<aactivity>This SFR is tested in conjunction with FDP_IFF.1.</aactivity>
 		</f-element>
 		<audit-event/>
 		</f-component>
