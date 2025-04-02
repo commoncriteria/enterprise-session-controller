@@ -1106,7 +1106,7 @@ detail records</h:b>.</title>
 			<audit>There are no auditable events foreseen.</audit>
 			<dependencies>No dependencies.</dependencies>
 			<comment>Audit and dependencies- aren't being generated for the extended component list(Appendix C).</comment>
-		<title>The TSF shall <selectables><selectable>have</selectable><selectable>not have</selectable></selectables> the capability to record voice and video
+		<title>The TSF shall <selectables><selectable id='fau-vvr-ext-1-1-have'>have</selectable><selectable>not have</selectable></selectables> the capability to record voice and video
 call data.</title>
 		<note role='application'><h:i>If "have" is selected, both FAU_STG.2/VVR and FAU_VVR_EXT.2 must be claimed
 		and “Ability to enable/disable voice and video recordings for any registered VVoIP
@@ -1696,6 +1696,7 @@ auditable events based on the following attributes:<h:ol type='a'>
 		</f-component>
 
 		<f-component name="Protected Audit Trail Storage (Voice/Video Recording)" cc-id='fau_stg.2' id='fau-stg-2-vvr' iteration='VVR'>
+		<depends on='fau-vvr-ext-1-1-have'/>
 		<f-element id='fau-stg-2e1-vvr'>
 		<title>The TSF shall protect the stored <h:b>voice and video recordings</h:b> from unauthorized
 			<h:b>disclosure</h:b> and deletion <h:b>by encrypting voice and video recording data that is stored
@@ -1729,6 +1730,7 @@ auditable events based on the following attributes:<h:ol type='a'>
 		<audit>The following actions should be auditable if FAU_GEN Security Audit Data Generation is included in
 the PP/ST:<h:ul><h:li>Voice/video recordings of completed calls</h:li></h:ul></audit>
 		<dependencies>FAU_VVR_EXT.1 Recording Voice and Video Call Data</dependencies>
+		<depends on='fau-vvr-ext-1-1-have'/>
 		<f-element id='fau_vvr-ext-2e1'>
 		<title>The TSF shall provide the ability to retain voice and video recordings based on <assignable>administrator-specified criteria</assignable></title></f-element>
 		<f-element id='fau_vvr-ext-2e2'>
