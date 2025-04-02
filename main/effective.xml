@@ -1404,7 +1404,7 @@ posture on the TOE.</comp-lev>
 		<h:li><h:i>Ability to clear all TSF data stored on disk;</h:i></h:li>
 		<h:li><selectables linebreak="yes">
 		<selectable>Ability to configure the password policy;</selectable>
-		<selectable>Ability to specify the set of audited events;</selectable>
+		<selectable id="fmt-smf-1-1-esc-select2">Ability to specify the set of audited events;</selectable>
 		<selectable>Ability to configure the behavior of the TOE in response to a self-test failure;</selectable>
 		<selectable>Ability to enable/disable voice and video recordings for any registered VVoIP endpoint;</selectable>
 		<selectable>Ability to specify criteria for retention of voice and video recordings;</selectable>
@@ -1647,7 +1647,7 @@ components that affect the proper functioning of the TOE</assignable>].
 	</section>
 	<section title="Security Audit (FAU)" id="sel-fau">
 		<f-component name="Selective Audit" cc-id="fau_sel.1" id="fau-sel-1">
-		<depends on-sel="fmt-smf-1-1-esc"/>
+		<depends on-sel="fmt-smf-1-1-esc-select2"/>
 		<f-element id="fau-sel-1e1">
 		<title>The TSF shall be able to select the set of events to be audited from the set of all
 auditable events based on the following attributes:<h:ol type="a">
