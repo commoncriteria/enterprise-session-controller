@@ -1665,6 +1665,7 @@ components that affect the proper functioning of the TOE</assignable>].
 	</section>
 	<section title='Security Audit (FAU)' id='sel-fau'>
 		<f-component name="Selective Audit" cc-id='fau_sel.1' id='fau-sel-1'>
+		<depends on='ffmt-smf-1-1-esc'/>
 		<f-element id='fau-sel-1e1'>
 		<title>The TSF shall be able to select the set of events to be audited from the set of all
 auditable events based on the following attributes:<h:ol type='a'>
