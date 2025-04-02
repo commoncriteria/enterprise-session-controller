@@ -1265,19 +1265,13 @@ detail records</b>.</div></div>
 			
 			
 			<span style="" class="comment " id="Comment-6-">Audit and dependencies- aren't being generated for the extended component list(Appendix C). Also the selection base box is not being successfully generated. I think this has to do with the fact that the f-element is not established.</span>
-		The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="fau-vvr-ext-1-1-have">have</span>, <span class="selectable-content" id="_s_19">not have</span>] the capability to record voice and video
-call data.
-		<div class="appnote"><span class="note-header">Application
+			<div class="element"><div class="reqid" id="FAU_VVR_EXT.1.1"><a href="#FAU_VVR_EXT.1.1" class="abbr">FAU_VVR_EXT.1.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="fau-vvr-ext-1-1-have">have</span>, <span class="selectable-content" id="_s_19">not have</span>] the capability to record voice and video
+call data.<div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note"><i>If "have" is selected, both <a href="#FAU_STG.2/VVR">FAU_STG.2/VVR</a> and <a href="#FAU_VVR_EXT.2">FAU_VVR_EXT.2</a> must be claimed
 		and “Ability to enable/disable voice and video recordings for any registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr>
 		endpoint” must be selected in <a href="#FMT_SMF.1.1/ESC">FMT_SMF.1.1/ESC</a>.
-		</i></span></div>
-		
-		The evaluator shall examine the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> to verify that it describes if the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> has or does not have the capability to record voice and video call data.
-		There are no guidance EAs for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>.
-		The test for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is performed as part of <a href="#FMT_SMF.1/ESC">FMT_SMF.1/ESC</a>’s EAs.
-		
+		</i></span></div></div></div>
 		
 		</div>
 	
@@ -1388,7 +1382,7 @@ call data.
 		FIA_PMG_EXT.1 as defined in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr>. This may include the ability for an
 		administrator to configure the metrics used to define an acceptable password. At
 		minimum, the minimum password length must be configurable. If "have” is
-		selected in <a href="#FAU_VVR_EXT.1">FAU_VVR_EXT.1</a>.1, then "Ability to enable/disable voice and video
+		selected in <a href="#FAU_VVR_EXT.1.1">FAU_VVR_EXT.1.1</a>, then "Ability to enable/disable voice and video
 		recordings for any registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint" must be selected.
 		</p><p>The selection “Ability to configure NTP” must be included in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> if the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> uses
 		NTP for timestamp configuration. If selected, <a href="#FCS_NTP_EXT.1">FCS_NTP_EXT.1</a> from the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr>
@@ -1696,7 +1690,7 @@ auditable events based on the following attributes:<ol type="a">
 		</div>
 
 		<div class="comp" id="FAU_STG.2/VVR"><h4>FAU_STG.2/VVR Protected Audit Trail Storage (Voice/Video Recording)</h4><div class="statustag"><b><i>The inclusion of this selection-based component depends upon selection in
-           .
+           <a href="#FAU_VVR_EXT.1.1">FAU_VVR_EXT.1.1</a>.
            </i></b></div>
 		
 		<div class="element"><div class="reqid" id="FAU_STG.2.1/VVR"><a href="#FAU_STG.2.1/VVR" class="abbr">FAU_STG.2.1/VVR</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall protect the stored <b>voice and video recordings</b> from unauthorized
@@ -1704,12 +1698,12 @@ auditable events based on the following attributes:<ol type="a">
 			on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> using an encryption method specified in FCS_COP.1.</b></div></div>
 		<div class="element"><div class="reqid" id="FAU_STG.2.2/VVR"><a href="#FAU_STG.2.2/VVR" class="abbr">FAU_STG.2.2/VVR</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to [<i>prevent</i>] unauthorized modifications to the stored <b>voice and video recordings</b>.<div class="appnote"><span class="note-header">Application
       Note:
-    </span><span class="note"><i>This requirement must be claimed if ‘have’ is selected in <a href="#FAU_VVR_EXT.1">FAU_VVR_EXT.1</a>.1.</i></span></div></div></div>
+    </span><span class="note"><i>This requirement must be claimed if ‘have’ is selected in <a href="#FAU_VVR_EXT.1.1">FAU_VVR_EXT.1.1</a>.</i></span></div></div></div>
 		
 		</div>
 
 		<div class="comp" id="FAU_VVR_EXT.2"><h4>FAU_VVR_EXT.2 Generation of Voice and Video Recordings</h4><div class="statustag"><b><i>The inclusion of this selection-based component depends upon selection in
-           .
+           <a href="#FAU_VVR_EXT.1.1">FAU_VVR_EXT.1.1</a>.
            </i></b></div>
 		
 		
@@ -1724,7 +1718,7 @@ auditable events based on the following attributes:<ol type="a">
 		<div class="element"><div class="reqid" id="FAU_VVR_EXT.2.3"><a href="#FAU_VVR_EXT.2.3" class="abbr">FAU_VVR_EXT.2.3</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall uniquely identify individual voice/video recordings using the following method: [<b>assignment</b>: 
      <span class="assignable-content">unique identifying data</span>].<div class="appnote"><span class="note-header">Application
       Note:
-    </span><span class="note"><i>This requirement must be claimed if ‘have’ is selected in <a href="#FAU_VVR_EXT.1">FAU_VVR_EXT.1</a>.1</i></span></div></div></div>
+    </span><span class="note"><i>This requirement must be claimed if ‘have’ is selected in <a href="#FAU_VVR_EXT.1.1">FAU_VVR_EXT.1.1</a></i></span></div></div></div>
 		
 		</div>
 	
@@ -1741,7 +1735,8 @@ auditable events based on the following attributes:<ol type="a">
              Recording Voice and Video Call Data,
               requires the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to specify whether or not it records voice and video call data.</p><p><a href="#FAU_VVR_EXT.2">FAU_VVR_EXT.2</a>,
              Generation of Voice and Video Recordings,
-              requires the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to store uniquely identified voice and video call recordings in a certain format and when certain conditions are met</p><h4>Management: FAU_VVR_EXT.1</h4><p>The following actions could be considered for the management functions in FMT: <ul><li>Ability to enable/disable voice and video recordings</li></ul></p><h4>Audit: FAU_VVR_EXT.1</h4><p>There are no auditable events foreseen.</p><h4>FAU_VVR_EXT.1 Recording Voice and Video Call Data</h4><div style="margin-left: 1em;"><table class="ecd_heir_dep" style="width: 100%"><tr><td style="whitespace: nowrap">Hierarchical to:</td><td style="width: 100%">No other components.</td></tr><tr style="background-color: inherit"><td>Dependencies to:</td><td>No dependencies.</td></tr></table></div><h4>Management: FAU_VVR_EXT.2</h4><p>The following actions could be considered for the management functions in FMT:<ul><li>Ability to specify criteria for retention of voice and video recordings</li></ul></p><h4>Audit: FAU_VVR_EXT.2</h4><p>The following actions should be auditable if FAU_GEN Security Audit Data Generation is included in
+              requires the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to store uniquely identified voice and video call recordings in a certain format and when certain conditions are met</p><h4>Management: FAU_VVR_EXT.1</h4><p>The following actions could be considered for the management functions in FMT: <ul><li>Ability to enable/disable voice and video recordings</li></ul></p><h4>Audit: FAU_VVR_EXT.1</h4><p>There are no auditable events foreseen.</p><h4>FAU_VVR_EXT.1 Recording Voice and Video Call Data</h4><div style="margin-left: 1em;"><table class="ecd_heir_dep" style="width: 100%"><tr><td style="whitespace: nowrap">Hierarchical to:</td><td style="width: 100%">No other components.</td></tr><tr style="background-color: inherit"><td>Dependencies to:</td><td>No dependencies.</td></tr></table><h4 id="ext-comp-FAU_VVR_EXT.1.1">FAU_VVR_EXT.1.1</h4>The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="fau-vvr-ext-1-1-have">have</span>, <span class="selectable-content" id="_s_19">not have</span>] the capability to record voice and video
+call data.</div><h4>Management: FAU_VVR_EXT.2</h4><p>The following actions could be considered for the management functions in FMT:<ul><li>Ability to specify criteria for retention of voice and video recordings</li></ul></p><h4>Audit: FAU_VVR_EXT.2</h4><p>The following actions should be auditable if FAU_GEN Security Audit Data Generation is included in
 the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>/<abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>:<ul><li>Voice/video recordings of completed calls</li></ul></p><h4>FAU_VVR_EXT.2 Generation of Voice and Video Recordings</h4><div style="margin-left: 1em;"><table class="ecd_heir_dep" style="width: 100%"><tr><td style="whitespace: nowrap">Hierarchical to:</td><td style="width: 100%">No other components.</td></tr><tr style="background-color: inherit"><td>Dependencies to:</td><td><a href="#FAU_VVR_EXT.1">FAU_VVR_EXT.1</a> Recording Voice and Video Call Data</td></tr></table><h4 id="ext-comp-FAU_VVR_EXT.2.1">FAU_VVR_EXT.2.1</h4>The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide the ability to retain voice and video recordings based on [<b>assignment</b>: 
      <span class="assignable-content">administrator-specified criteria</span>]<h4 id="ext-comp-FAU_VVR_EXT.2.2">FAU_VVR_EXT.2.2</h4>The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall store voice and video recordings as [<b>assignment</b>: 
      <span class="assignable-content">supported file

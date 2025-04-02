@@ -956,11 +956,18 @@
         </div>
         <div class="comp" id="FAU_VVR_EXT.1">
             <h4>FAU_VVR_EXT.1 Recording Voice and Video Call Data</h4>
-             <span style="" class="comment " id="Comment-6-">Audit and dependencies- aren't being generated for the extended component list(Appendix C). Also the selection base box is not being successfully generated. I think this has to do with the fact that the f-element is not established.</span> The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="fau-vvr-ext-1-1-have">have</span>, <span class="selectable-content" id="_s_19">not have</span>] the capability to record voice and video call data. 
-            <div class="appnote">
-                <span class="note-header">Application Note: </span><span class="note"><i>If "have" is selected, both <a href="#FAU_STG.2/VVR">FAU_STG.2/VVR</a> and <a href="#FAU_VVR_EXT.2">FAU_VVR_EXT.2</a> must be claimed and &ldquo;Ability to enable/disable voice and video recordings for any registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint&rdquo; must be selected in <a href="#FMT_SMF.1.1/ESC">FMT_SMF.1.1/ESC</a>. </i></span>
+             <span style="" class="comment " id="Comment-6-">Audit and dependencies- aren't being generated for the extended component list(Appendix C). Also the selection base box is not being successfully generated. I think this has to do with the fact that the f-element is not established.</span> 
+            <div class="element">
+                <div class="reqid" id="FAU_VVR_EXT.1.1">
+                    <a href="#FAU_VVR_EXT.1.1" class="abbr">FAU_VVR_EXT.1.1</a>
+                </div>
+                <div class="reqdesc">
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="fau-vvr-ext-1-1-have">have</span>, <span class="selectable-content" id="_s_19">not have</span>] the capability to record voice and video call data.
+                    <div class="appnote">
+                        <span class="note-header">Application Note: </span><span class="note"><i>If "have" is selected, both <a href="#FAU_STG.2/VVR">FAU_STG.2/VVR</a> and <a href="#FAU_VVR_EXT.2">FAU_VVR_EXT.2</a> must be claimed and &ldquo;Ability to enable/disable voice and video recordings for any registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint&rdquo; must be selected in <a href="#FMT_SMF.1.1/ESC">FMT_SMF.1.1/ESC</a>. </i></span>
+                    </div>
+                </div>
             </div>
-             The evaluator shall examine the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> to verify that it describes if the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> has or does not have the capability to record voice and video call data. There are no guidance EAs for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>. The test for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is performed as part of <a href="#FMT_SMF.1/ESC">FMT_SMF.1/ESC</a>&rsquo;s EAs. 
         </div>
         <h3 id="man-fdp" class="indexable" data-level="3">5.2.2 User Data Protection (FDP)</h3>
         <div class="comp" id="FDP_IFC.1">
@@ -1129,7 +1136,7 @@
                                     This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defines additional management functions for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> beyond what is defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> as FMT_SMF.1. The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> may have all management functionality implemented in the same logical interface; it is not necessary for &ldquo;network device management&rdquo; and &ldquo;enterprise session controller management&rdquo; to be implemented in separate interfaces. 
                                 </p>
                                 <p>
-                                    The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> developer is encouraged, but not required, to provide a more sophisticated password strength policy than what is prescribed by FIA_PMG_EXT.1 as defined in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr>. This may include the ability for an administrator to configure the metrics used to define an acceptable password. At minimum, the minimum password length must be configurable. If "have&rdquo; is selected in <a href="#FAU_VVR_EXT.1">FAU_VVR_EXT.1</a>.1, then "Ability to enable/disable voice and video recordings for any registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint" must be selected. 
+                                    The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> developer is encouraged, but not required, to provide a more sophisticated password strength policy than what is prescribed by FIA_PMG_EXT.1 as defined in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr>. This may include the ability for an administrator to configure the metrics used to define an acceptable password. At minimum, the minimum password length must be configurable. If "have&rdquo; is selected in <a href="#FAU_VVR_EXT.1.1">FAU_VVR_EXT.1.1</a>, then "Ability to enable/disable voice and video recordings for any registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint" must be selected. 
                                 </p>
                                 <p>
                                     The selection &ldquo;Ability to configure NTP&rdquo; must be included in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> if the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> uses NTP for timestamp configuration. If selected, <a href="#FCS_NTP_EXT.1">FCS_NTP_EXT.1</a> from the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> must be claimed as well.
@@ -1714,7 +1721,7 @@
         <div class="comp" id="FAU_STG.2/VVR">
             <h4>FAU_STG.2/VVR Protected Audit Trail Storage (Voice/Video Recording)</h4>
             <div class="statustag">
-                <b><i>The inclusion of this selection-based component depends upon selection in . </i></b>
+                <b><i>The inclusion of this selection-based component depends upon selection in <a href="#FAU_VVR_EXT.1.1">FAU_VVR_EXT.1.1</a>. </i></b>
             </div>
             <div class="element">
                 <div class="reqid" id="FAU_STG.2.1/VVR">
@@ -1731,7 +1738,7 @@
                 <div class="reqdesc">
                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to [<i>prevent</i>] unauthorized modifications to the stored <b>voice and video recordings</b>.
                     <div class="appnote">
-                        <span class="note-header">Application Note: </span><span class="note"><i>This requirement must be claimed if &lsquo;have&rsquo; is selected in <a href="#FAU_VVR_EXT.1">FAU_VVR_EXT.1</a>.1.</i></span>
+                        <span class="note-header">Application Note: </span><span class="note"><i>This requirement must be claimed if &lsquo;have&rsquo; is selected in <a href="#FAU_VVR_EXT.1.1">FAU_VVR_EXT.1.1</a>.</i></span>
                     </div>
                 </div>
             </div>
@@ -1739,7 +1746,7 @@
         <div class="comp" id="FAU_VVR_EXT.2">
             <h4>FAU_VVR_EXT.2 Generation of Voice and Video Recordings</h4>
             <div class="statustag">
-                <b><i>The inclusion of this selection-based component depends upon selection in . </i></b>
+                <b><i>The inclusion of this selection-based component depends upon selection in <a href="#FAU_VVR_EXT.1.1">FAU_VVR_EXT.1.1</a>. </i></b>
             </div>
             <div class="element">
                 <div class="reqid" id="FAU_VVR_EXT.2.1">
@@ -1764,7 +1771,7 @@
                 <div class="reqdesc">
                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall uniquely identify individual voice/video recordings using the following method: [<b>assignment</b>: <span class="assignable-content">unique identifying data</span>].
                     <div class="appnote">
-                        <span class="note-header">Application Note: </span><span class="note"><i>This requirement must be claimed if &lsquo;have&rsquo; is selected in <a href="#FAU_VVR_EXT.1">FAU_VVR_EXT.1</a>.1</i></span>
+                        <span class="note-header">Application Note: </span><span class="note"><i>This requirement must be claimed if &lsquo;have&rsquo; is selected in <a href="#FAU_VVR_EXT.1.1">FAU_VVR_EXT.1.1</a></i></span>
                     </div>
                 </div>
             </div>
@@ -1835,6 +1842,8 @@
                                 <td>Dependencies to:</td><td>No dependencies.</td>
                             </tr>
                         </table>
+                        <h4 id="ext-comp-FAU_VVR_EXT.1.1">FAU_VVR_EXT.1.1</h4>
+                        The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="fau-vvr-ext-1-1-have">have</span>, <span class="selectable-content" id="_s_19">not have</span>] the capability to record voice and video call data.
                     </div>
                     <h4>Management: FAU_VVR_EXT.2</h4>
                     <p>

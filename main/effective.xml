@@ -1088,6 +1088,7 @@ detail records</h:b>.</title>
 			<audit>There are no auditable events foreseen.</audit>
 			<dependencies>No dependencies.</dependencies>
 			<comment>Audit and dependencies- aren't being generated for the extended component list(Appendix C). Also the selection base box is not being successfully generated. I think this has to do with the fact that the f-element is not established.</comment>
+			<f-element id="fau-vvr-ext-1-1">
 		<title>The TSF shall <selectables>
 		<selectable id="fau-vvr-ext-1-1-have">have</selectable>
 		<selectable>not have</selectable>
@@ -1102,6 +1103,7 @@ call data.</title>
 		<Guidance>There are no guidance EAs for this SFR.</Guidance>
 		<Tests>The test for this SFR is performed as part of FMT_SMF.1/ESC’s EAs.</Tests>
 		</aactivity>
+		</f-element>
 		<audit-event/>
 		</f-component>
 	</section>
