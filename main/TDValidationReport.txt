@@ -62,3 +62,4 @@
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:1554:12: error: element "obj-sfrs" not allowed yet; missing required element "sel-sfrs"
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:1579:30: error: value of attribute "role" is invalid; must be equal to "Application", "Developer", "application" or "developer"
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:1644:12: error: element "sel-sfrs" not allowed here; expected the element end-tag
+/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:1715:39: error: element "depends" not allowed here; expected the element end-tag or element "audit-event", "description" or "f-element"

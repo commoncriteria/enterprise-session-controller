@@ -1371,7 +1371,7 @@ detail records</b>.</div></div>
 			
 			
 			<span style="" class="comment " id="Comment-6-">Audit and dependencies- aren't being generated for the extended component list(Appendix C).</span>
-		The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="_s_18">have</span>, <span class="selectable-content" id="_s_19">not have</span>] the capability to record voice and video
+		The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="fau-vvr-ext-1-1-have">have</span>, <span class="selectable-content" id="_s_19">not have</span>] the capability to record voice and video
 call data.
 		<div class="appnote"><span class="note-header">Application
       Note:
@@ -2059,7 +2059,7 @@ the generation of media recordings such as unobservability of user actions.</td>
 	<h1 id="sel-sfrs" class="indexable" data-level="1">Appendix B -  Selection-based Requirements
     </h1>
 		<h2 class="indexable" data-level="2" id="sec-sel-audit-table">B.1 Auditable Events for Selection-based SFRs</h2>
-           <table class="sort_kids_" border="1"><caption data-sortkey="#0"><span class="ctr" data-myid="at-sel-based" data-counter-type="ct-Table" id="at-sel-based">Table <span class="counter">9</span></span>: Auditable Events for Selection-based Requirements</caption><tr data-sortkey="#1"><th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th></tr><tr data-sortkey="FAU_SEL.1"><td rowspan="2"><a href="#FAU_SEL.1">FAU_SEL.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FAU_SEL.1#"><td></td></tr><tr data-sortkey="FAU_SEL.1.1"><td>No events specified</td><td>N/A</td></tr><tr data-sortkey="FAU_STG.2/VVR"><td rowspan="2"><a href="#FAU_STG.2/VVR">FAU_STG.2/VVR</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FAU_STG.2/VVR#"><td></td></tr><tr data-sortkey="FAU_STG.2/VVR.1"><td>No events specified</td><td>N/A</td></tr><tr data-sortkey="FAU_VVR_EXT.2"><td rowspan="2"><a href="#FAU_VVR_EXT.2">FAU_VVR_EXT.2</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FAU_VVR_EXT.2#"><td></td></tr><tr data-sortkey="FAU_VVR_EXT.2.7"><td>Voice/video recordings of completed calls</td><td>Unique identifying data specified in <a href="#FAU_VVR_EXT.2.3">FAU_VVR_EXT.2.3</a>.</td></tr></table>
+           <table class="sort_kids_" border="1"><caption data-sortkey="#0"><span class="ctr" data-myid="at-sel-based" data-counter-type="ct-Table" id="at-sel-based">Table <span class="counter">9</span></span>: Auditable Events for Selection-based Requirements</caption><tr data-sortkey="#1"><th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th></tr><tr data-sortkey="FAU_SEL.1"><td rowspan="2"><a href="#FAU_SEL.1">FAU_SEL.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FAU_SEL.1#"><td></td></tr><tr data-sortkey="FAU_SEL.1.1"><td>No events specified</td><td>N/A</td></tr><tr data-sortkey="FAU_STG.2/VVR"><td rowspan="2"><a href="#FAU_STG.2/VVR">FAU_STG.2/VVR</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FAU_STG.2/VVR#"><td></td></tr><tr data-sortkey="FAU_STG.2/VVR.1"><td>No events specified</td><td>N/A</td></tr><tr data-sortkey="FAU_VVR_EXT.2"><td rowspan="2"><a href="#FAU_VVR_EXT.2">FAU_VVR_EXT.2</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FAU_VVR_EXT.2#"><td></td></tr><tr data-sortkey="FAU_VVR_EXT.2.8"><td>Voice/video recordings of completed calls</td><td>Unique identifying data specified in <a href="#FAU_VVR_EXT.2.3">FAU_VVR_EXT.2.3</a>.</td></tr></table>
 	
 	<h2 id="sel-fau" class="indexable" data-level="2">B.2 Security Audit (FAU)</h2>
 		<div class="comp" id="FAU_SEL.1"><h4>FAU_SEL.1 Selective Audit</h4><div class="statustag"><b><i>The inclusion of this selection-based component depends upon selection in
@@ -2089,7 +2089,10 @@ auditable events based on the following attributes:<ol type="a">
 		administratively disabled.
 		</p></div></div></div></div></div>
 
-		<div class="comp" id="FAU_STG.2/VVR"><h4>FAU_STG.2/VVR Protected Audit Trail Storage (Voice/Video Recording)</h4><div class="statustag"></div>
+		<div class="comp" id="FAU_STG.2/VVR"><h4>FAU_STG.2/VVR Protected Audit Trail Storage (Voice/Video Recording)</h4><div class="statustag"><b><i>The inclusion of this selection-based component depends upon selection in
+           .
+           </i></b></div>
+		
 		<div class="element"><div class="reqid" id="FAU_STG.2.1/VVR"><a href="#FAU_STG.2.1/VVR" class="abbr">FAU_STG.2.1/VVR</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall protect the stored <b>voice and video recordings</b> from unauthorized
 			<b>disclosure</b> and deletion <b>by encrypting voice and video recording data that is stored
 			on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> using an encryption method specified in FCS_COP.1.</b></div></div>
@@ -2116,7 +2119,10 @@ auditable events based on the following attributes:<ol type="a">
 		evaluator shall follow the operational guidance to enable encryption prior to generating any voice/video
 		recordings. </li></ul></span></div></div></div></div></div>
 
-		<div class="comp" id="FAU_VVR_EXT.2"><h4>FAU_VVR_EXT.2 Generation of Voice and Video Recordings</h4><div class="statustag"></div>
+		<div class="comp" id="FAU_VVR_EXT.2"><h4>FAU_VVR_EXT.2 Generation of Voice and Video Recordings</h4><div class="statustag"><b><i>The inclusion of this selection-based component depends upon selection in
+           .
+           </i></b></div>
+		
 		
 		
 		
