@@ -1105,8 +1105,11 @@ detail records</h:b>.</title>
 			<management>The following actions could be considered for the management functions in FMT: <h:ul><h:li>Ability to enable/disable voice and video recordings</h:li></h:ul></management>
 			<audit>There are no auditable events foreseen.</audit>
 			<dependencies>No dependencies.</dependencies>
-			<comment>Audit and dependencies- aren't being generated for the extended component list(Appendix C).</comment>
-		<title>The TSF shall <selectables><selectable id='fau-vvr-ext-1-1-have'>have</selectable><selectable>not have</selectable></selectables> the capability to record voice and video
+			<comment>Audit and dependencies- aren't being generated for the extended component list(Appendix C). Also the selection base box is not being successfully generated. I think this has to do with the face that the f-element is not established.</comment>
+		<title>The TSF shall <selectables>
+		<selectable id='fau-vvr-ext-1-1-have'>have</selectable>
+		<selectable>not have</selectable>
+		</selectables> the capability to record voice and video
 call data.</title>
 		<note role='application'><h:i>If "have" is selected, both FAU_STG.2/VVR and FAU_VVR_EXT.2 must be claimed
 		and “Ability to enable/disable voice and video recordings for any registered VVoIP
