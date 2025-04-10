@@ -665,7 +665,6 @@ the generation of media recordings such as unobservability of user actions.</con
 
 
 	  <modified-sfrs>
-		<section title="Auditable Events for Modified SFRs"></section>
 	  <audit-table table="mandatory" id="mandatory-audit-events">
 	      <h:br/><h:b><ctr ctr-type="Table" pre="Table " id="atref-mandatory">: Audit Log Events</ctr></h:b>
 	    </audit-table>
@@ -849,10 +848,6 @@ the generation of media recordings such as unobservability of user actions.</con
 	  </modified-sfrs>
     </base-pp>
 	<man-sfrs>
-		<section title="Auditable Events for Mandatory SFRs">
-			<audit-table table="mandatory" id="at-mandatory">
-			</audit-table>
-		  </section>
     <section title='Security Audit (FAU)' id='man-fau'>
 		<f-component name="Audit Data Generation (Call Detail Record)" cc-id='fau_gen.1' id='fpt-gen-ext-1-cdr' iteration='CDR'>
 		<f-element id='fau-gen-1e1-cdr'>
