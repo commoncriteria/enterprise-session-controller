@@ -802,6 +802,7 @@ the generation of media recordings such as unobservability of user actions.</con
 			<base-sfr-spec title="X.509 Certificate Authentication" cc-id="fia_x509_ext.2" id="fia-x509-ext-2">
 				<consistency-rationale/>
 				<description> 
+					<comment>Should the following be removed?</comment>
 					<f-component name="X.509 Certificate Authentication" cc-id="fia_x509_ext.2" id="fia-x509-ext-2">
 				<f-element id="fia-x509-ext-2e1">
 				<title>The TSF shall use X.509v3 certificates as defined by RFC 5280 to support authentication for <h:b>TLS,</h:b> <selectables>
