@@ -1,11 +1,13 @@
-* Error: f-element .1  appears not to have an associated evaluation activity.:
-        /Module[1]""/sec:Security_Requirements[1]""/base-pp[1]""/modified-sfrs[1]""/section[3]""/base-sfr-spec[2]""/description[1]""/f-element[1]""
-* Error: f-element .2  appears not to have an associated evaluation activity.:
-        /Module[1]""/sec:Security_Requirements[1]""/base-pp[1]""/modified-sfrs[1]""/section[3]""/base-sfr-spec[2]""/description[1]""/f-element[2]""
+* Error: f-element FIA_X509_EXT.2.1  appears not to have an associated evaluation activity.:
+        /Module[1]""/sec:Security_Requirements[1]""/base-pp[1]""/modified-sfrs[1]""/section[3]""/base-sfr-spec[2]""/description[1]""/f-component[1]""/f-element[1]""
+* Error: f-element FIA_X509_EXT.2.2  appears not to have an associated evaluation activity.:
+        /Module[1]""/sec:Security_Requirements[1]""/base-pp[1]""/modified-sfrs[1]""/section[3]""/base-sfr-spec[2]""/description[1]""/f-component[1]""/f-element[2]""
 * Warning: This document still has at least one comment.
 * Error: Detected dangling id-reference to pizza from attribute
         on/Module[1]""/include-pkg[1]""/depends[1]""/on[1]""
 * Error: Detected multiple elements with an id of 'atref-mandatory'.
+* Error: Detected multiple elements with an id of 'fia-x509-ext-2'.
+* Error: Detected multiple elements with an id of 'fia-x509-ext-2'.
 * Error: Detected multiple elements with an id of 'sec-sel-audit-table'.
 * Error: Detected multiple elements with an id of 'atref-mandatory'.
 * Error: Detected multiple elements with an id of 'sec-sel-audit-table'.
@@ -39,9 +41,6 @@
 * Error: Detected dangling ref to 'fia-x509-ext-1'
         for a ref.
 	/Module[1]""/sec:Security_Requirements[1]""/base-pp[1]""/con-mod[15]"This PP-M"/ref[1]""
-* Error: Detected dangling ref to 'fia-x509-ext-2'
-        for a ref.
-	/Module[1]""/sec:Security_Requirements[1]""/base-pp[1]""/con-mod[16]"This PP-M"/ref[1]""
 * Error: Detected dangling ref to 'fia-x509-ext-3'
         for a ref.
 	/Module[1]""/sec:Security_Requirements[1]""/base-pp[1]""/con-mod[17]"This PP-M"/ref[1]""
