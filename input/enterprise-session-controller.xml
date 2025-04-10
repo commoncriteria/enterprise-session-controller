@@ -754,9 +754,10 @@ the generation of media recordings such as unobservability of user actions.</con
 
 			<base-sfr-spec title="TLS Client Protocol without Mutual Authentication" cc-id="fcs_tlsc_ext.1" id="fcs-tlsc-ext-1">
 				<consistency-rationale/>
-				<description><h:p>This modification adds clarity to the cipherlist that this PP-Module refers to. In this case, the assignable ciphersuite list for FCS_TLSC_EXT.1 can be seen in List 1 and List 2 of the Base PP(NDcPP).<comment>Based on what is currently present in ndcpp.3- it seems like the assigning of TLS1.3 should be supported for this PP-mod. If not, then we should rewrite this section. </comment></h:p>
+				<description><h:p>This modification adds clarity to the cipherlist that this PP-Module refers to. In this case, the assignable ciphersuite list for FCS_TLSC_EXT.1 can be seen in List 1 and List 2 of the Base PP(NDcPP).</h:p>
+					<comment>Based on what is currently present in ndcpp.3- it seems like the assigning of TLS1.3 should be supported for this PP-mod. If not, then we should rewrite this section. </comment>
 
-				<h:p> <h:i><h:b>Application Note: </h:b>This SFR is selection-based in the NDcPP but is mandated by this PP-Module because Transport Layer Security (TLS) is used to secure SIP and H.323 communications. <comment>Should we remove the following sentence?</comment>Additionally, this PP-Module mandates the use of TLS 1.2.</h:i></h:p>
+				<h:p> <h:i><h:b>Application Note: </h:b>This SFR is selection-based in the NDcPP but is mandated by this PP-Module because Transport Layer Security (TLS) is used to secure SIP and H.323 communications. Additionally, this PP-Module mandates the use of TLS 1.2.</h:i></h:p><comment>Should we remove the last sentence?</comment>
 				</description>
 				
 				<!-- 
@@ -784,9 +785,12 @@ the generation of media recordings such as unobservability of user actions.</con
 					
 				<consistency-rationale/>
 				<description>
-					<h:p>This modification adds clarity to the cipherlist that this PP-Module refers to. In this case, the assignable ciphersuite list for FCS_TLSS_EXT.1 can be seen in List 1 and List 2 of the Base PP(NDcPP).<comment>Based on what is currently present in ndcpp.3- it seems like the assigning of TLS1.3 should be supported for this PP-mod. If not, then we should rewrite this section. </comment>
+					<h:p>This modification adds clarity to the cipherlist that this PP-Module refers to. In this case, the assignable ciphersuite list for FCS_TLSS_EXT.1 can be seen in List 1 and List 2 of the Base PP(NDcPP).
 				</h:p>
-				<h:p> <h:i><h:b>Application Note: </h:b>This SFR is selection-based in the NDcPP but is mandated by this PP-Module because Transport Layer Security (TLS) is used to secure SIP and H.323 communications.<comment>Should we remove the following sentence?</comment>Additionally, this PP-Module mandates the use of TLS 1.2.</h:i></h:p>
+				<comment>Based on what is currently present in ndcpp.3- it seems like the assigning of TLS1.3 should be supported for this PP-mod. If not, then we should rewrite this section. </comment>
+
+				<h:p> <h:i><h:b>Application Note: </h:b>This SFR is selection-based in the NDcPP but is mandated by this PP-Module because Transport Layer Security (TLS) is used to secure SIP and H.323 communications.Additionally, this PP-Module mandates the use of TLS 1.2.</h:i></h:p>
+				<comment>Should we remove the last sentence?</comment>
 				</description>
 				<!-- 
 				<f-element id='fcs-tlss-ext-1e1'>
