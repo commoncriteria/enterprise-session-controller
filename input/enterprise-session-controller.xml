@@ -697,9 +697,9 @@ the generation of media recordings such as unobservability of user actions.</con
 			<base-sfr-spec title="DTLS Server Support without Mutual Authentication" cc-id="fcs_dtlss_ext.1"  id="fcs-dtlss-ext-1">
 			<!-- <f-element id='fcs-dtlss-ext-1e1'>-->
 				<consistency-rationale/>
-				<description/>
+				<description>This modification adds clarity to the cipherlist that this PP-Module refers to. In this case, the assignable ciphersuite list for FCS_DTLSS_EXT.1 can be seen in List 1 of the Base PP(NDcPP).<comment>Based on what is currently present in ndcpp.3- it seems like the assigning of TLS1.3 should be supported for this PP-mod. If not, then we should rewrite this section. </comment></description>
 				
-				
+				<!--
 				<f-element>
 				<title>
 				The TSF shall implement DTLS 1.2 (RFC 6347) supporting the following ciphersuites: <selectables> 	
@@ -711,15 +711,18 @@ the generation of media recordings such as unobservability of user actions.</con
 				</h:i>
 				</note>				
 				</f-element>
-				
+			-->
 				<no-change/>
 				<set-status status="mandatory"/>
 			  </base-sfr-spec> 
 
 			<base-sfr-spec title="DTLS Server Support for Mutual Authentication" cc-id="fcs_dtlss_ext.2"  id="fcs-dtlss-ext-2">
+				<depends on-sel='ftp-itc-1e1-dtls'/>
 				<consistency-rationale/>
-				<description></description>
-				
+				<description>This SFR is optional in the NDcPP but is selection-based in this PP-Module because any ESC use of DTLS
+					requires mutually-authenticated DTLS to be implemented. Therefore, this SFR must be claimed if ‘DTLS’ is
+					selected in FTP_ITC.1.1/ESC.</description>
+					
 			<no-change/>
             <set-status status="sel-based"/>
           </base-sfr-spec> 
@@ -742,7 +745,7 @@ the generation of media recordings such as unobservability of user actions.</con
 
 			<base-sfr-spec title="TLS Client Protocol without Mutual Authentication" cc-id="fcs_tlsc_ext.1" id="fcs-tlsc-ext-1">
 				<consistency-rationale/>
-				<description></description>
+				<description>This modification adds clarity to the cipherlist that this PP-Module refers to. In this case, the assignable ciphersuite list for FCS_DTLSS_EXT.1 can be seen in List 1 of the Base PP(NDcPP).<comment>Based on what is currently present in ndcpp.3- it seems like the assigning of TLS1.3 should be supported for this PP-mod. If not, then we should rewrite this section. </comment></description>
 				
 				<!-- 
 			<f-element id='fcs-tlsc-ext-1e1'>
@@ -1396,7 +1399,7 @@ components that affect the proper functioning of the TOE</assignable>].
 	<section title='Trusted Path/Channels (FTP)' id='man-ftp'>
 	<f-component name="Inter-TSF Trusted Channel (ESC Communications)" cc-id='ftp_itc.1' id='ftp-itc.1-esc' iteration='ESC'>
 		<f-element id='ftp-itc-1e1'> 
-		<title>The TSF shall <h:b>be capable of using TLS and <selectables><selectable>DTLS</selectable><selectable>IPsec</selectable><selectable>no other protocols</selectable></selectables> to</h:b> provide a communication channel between itself and another trusted IT product <h:b>supporting the following capabilities: VVoIP endpoints (for protection of signaling protocols), VVoIP endpoints (for protection of voice/video/media content), other ESC devices (for SIP trunking), <selectables><selectable>VVoIP conferencing system</selectable><selectable>no other capabilities</selectable></selectables></h:b> that is logically distinct from other communication channels and provides assured identification of its end points and protection of the channel data from modification or disclosure.</title>
+		<title>The TSF shall <h:b>be capable of using TLS and <selectables><selectable id='ftp-itc-1e1-dtls'>DTLS</selectable><selectable>IPsec</selectable><selectable>no other protocols</selectable></selectables> to</h:b> provide a communication channel between itself and another trusted IT product <h:b>supporting the following capabilities: VVoIP endpoints (for protection of signaling protocols), VVoIP endpoints (for protection of voice/video/media content), other ESC devices (for SIP trunking), <selectables><selectable>VVoIP conferencing system</selectable><selectable>no other capabilities</selectable></selectables></h:b> that is logically distinct from other communication channels and provides assured identification of its end points and protection of the channel data from modification or disclosure.</title>
 		</f-element>
 		<f-element id='ftp-itc-1e2-esc'>
 		<title>The TSF shall permit [<h:i>the TSF, another trusted IT product</h:i>] to initiate communication via the trusted channel.</title>
