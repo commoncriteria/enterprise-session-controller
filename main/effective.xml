@@ -40,14 +40,7 @@
       <url>https://www.niap-ccevs.org/Profile/Info.cfm?PPID=439&amp;id=439</url>  <!-- url of published document on NIAP site -->
       <depends on="pizza"/>     <!-- If package inclusion is dependent on something. Absent if package inclusion is mandatory -->
 	</include-pkg>
-	    
-	<include-pkg id="ssh">
-	  <git>
-	    <url>https://github.com/commoncriteria/ssh</url>
-	    <branch>release-1.0</branch>
-	  </git>
-	  <url>https://www.niap-ccevs.org/Profile/Info.cfm?PPID=389&amp;id=389</url>
-   </include-pkg>	
+	
 
 <!-- Modules (optional). A properly constructed PP does not need this section. -->
 <!-- It is abomination that PPs refer to Modules. This should never happen. -->
@@ -436,7 +429,7 @@ baseline of capabilities that all conformant ESCs must provide.
 	All assumptions for the operational environment of the Base-PP also apply to this PP-Module.
 	A.NO_THRU_TRAFFIC_PROTECTION is still operative, but only for the interfaces in the TOE that are
 	defined by the Base-PP and not the PP-Module.
-      
+	<assumptions/>
     </section>   <!-- Assumptions -->
 	
 	<!-- OSPs refer to Objectives or OE Objectives in standard approach documents. -->
@@ -1548,12 +1541,13 @@ auditable events based on the following attributes:<h:ol type="a">
 		</f-component>
 
 		<f-component name="Generation of Voice and Video Recordings" cc-id="fau_vvr_ext.2" id="fau-vvr-ext-2">
+			<depends on="fau-vvr-ext-1-1-have"/>
 		<comp-lev> requires the TSF to store uniquely identified voice and video call recordings in a certain format and when certain conditions are met</comp-lev>
 		<management>The following actions could be considered for the management functions in FMT:<h:ul><h:li>Ability to specify criteria for retention of voice and video recordings</h:li></h:ul></management>
 		<audit>The following actions should be auditable if FAU_GEN Security Audit Data Generation is included in
 the PP/ST:<h:ul><h:li>Voice/video recordings of completed calls</h:li></h:ul></audit>
 		<dependencies>FAU_VVR_EXT.1 Recording Voice and Video Call Data</dependencies>
-		<depends on="fau-vvr-ext-1-1-have"/>
+		
 		<f-element id="fau_vvr-ext-2e1">
 		<title>The TSF shall provide the ability to retain voice and video recordings based on <assignable>administrator-specified criteria</assignable></title></f-element>
 		<f-element id="fau_vvr-ext-2e2">
