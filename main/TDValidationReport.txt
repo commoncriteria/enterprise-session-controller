@@ -1,6 +1,8 @@
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:504:16: error: element "con-toe" not allowed yet; missing required element "modified-sfrs"
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:649:19: error: element "modified-sfrs" not allowed here; expected the element end-tag or element "con-mod"
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:658:98: error: element "base-sfr-spec" not allowed here; expected element "audit-table", "ext-comp-class", "ext-comp-def" or "f-component"
+/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:664:19: error: element "audit-table" not allowed here; expected element "delete", "insert-after", "insert-before", "no-change", "replace" or "set-status"
+/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:664:19: error: element "audit-table" missing required attributes "id" and "table"
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:669:94: error: element "base-sfr-spec" not allowed here; expected element "audit-table", "ext-comp-class", "ext-comp-def" or "f-component"
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:675:12: error: element "section" incomplete; expected element "audit-table", "ext-comp-class", "ext-comp-def" or "f-component"
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:677:122: error: element "base-sfr-spec" not allowed here; expected element "audit-table", "ext-comp-class", "ext-comp-def" or "f-component"
