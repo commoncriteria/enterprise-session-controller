@@ -667,10 +667,10 @@ of time if at all.</td></tr>
 		FCS_COP.1.
 		</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">If the TOE provides the ability to enable/disable encryption of locally stored voice and video recordings,
 		the evaluator shall verify that the operational guidance provides instructions on how to enable encryption
-		and directs the reader to ensure that this is enabled in the TOE’s evaluated configuration.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall perform the following tests: <span class="testlist-"><ul><li class="test-"><a id="_t_26" class="defined" href="#_t_26">Test FAU_STG.2/VVR:1</a>:
+		and directs the reader to ensure that this is enabled in the TOE’s evaluated configuration.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall perform the following tests: <span class="testlist-"><ul><li class="test-"><a id="_t_21" class="defined" href="#_t_21">Test FAU_STG.2/VVR:1</a>:
       The evaluator shall verify that the TSF provides no interface to access voice/video recording data
 		stored on the TOE except for legitimate access from an authorized administrator through the Operations,
-		Administration, and Management (OA&amp;M) interface.</li><li class="test-"><a id="_t_27" class="defined" href="#_t_27">Test FAU_STG.2/VVR:2</a>:
+		Administration, and Management (OA&amp;M) interface.</li><li class="test-"><a id="_t_22" class="defined" href="#_t_22">Test FAU_STG.2/VVR:2</a>:
       Both B2B subscriber calls and voice/video conferencing calls may be stored on the TOE based on
 		safeguards (i.e. secured or unsecured) for which they were recorded. The evaluator shall identify the
 		location of stored voice and video records and verify that this data is stored in an encrypted format for all
@@ -707,16 +707,16 @@ of time if at all.</td></tr>
 			acquire and verify a VVoIP endpoint software/firmware update from the manufacturer. The evaluator
 			shall also verify that the guidance includes instructions on how an ESC administrator can use the TOE to
 			apply software/firmware updates to registered VVoIP endpoints.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall perform the following test:<span class="testlist-"><ul>
-			<li class="test-"><a id="_t_21" class="defined" href="#_t_21">Test FPT_TUD_EXT.1/VVoIP:1</a>:
+			<li class="test-"><a id="_t_23" class="defined" href="#_t_23">Test FPT_TUD_EXT.1/VVoIP:1</a>:
       Prior to downloading software update from TOE to registered VVoIP-client, the evaluator shall
 			check to ensure the current version of the registered client device can be appropriately obtained by means
 			of the operation methods specified by the administrator guidance.
-			</li><li class="test-"><a id="_t_22" class="defined" href="#_t_22">Test FPT_TUD_EXT.1/VVoIP:2</a>:
+			</li><li class="test-"><a id="_t_24" class="defined" href="#_t_24">Test FPT_TUD_EXT.1/VVoIP:2</a>:
       The evaluator shall check to ensure that VVoIP endpoint software/firmware updates are signed
 			and/or hashed by the manufacturer based on what is specified in the ST.</li>
-			<li class="test-"><a id="_t_23" class="defined" href="#_t_23">Test FPT_TUD_EXT.1/VVoIP:3</a>:
+			<li class="test-"><a id="_t_25" class="defined" href="#_t_25">Test FPT_TUD_EXT.1/VVoIP:3</a>:
       The evaluator shall check to ensure that only administrators of the TOE are permitted to initiate an update to a registered VVoIP endpoint.</li>
-			<li class="test-"><a id="_t_24" class="defined" href="#_t_24">Test FPT_TUD_EXT.1/VVoIP:4</a>:
+			<li class="test-"><a id="_t_26" class="defined" href="#_t_26">Test FPT_TUD_EXT.1/VVoIP:4</a>:
       The evaluator shall check to ensure that software updates are correctly performed by verifying
 			that the VVoIP endpoint is running the newly-obtained software version obtaining the newly updated
 			software version of the VVoIP-client device once update has complete.
@@ -734,7 +734,7 @@ of time if at all.</td></tr>
 			TOE should receive a message indicating that the download was completed. When the VVoIP endpoint
 			reboots, it is expected to report the new software/firmware version to the TOE so that the new version
 			will be displayed in the OA&amp;M application.</p></li>
-			<li class="test-"><a id="_t_25" class="defined" href="#_t_25">Test FPT_TUD_EXT.1/VVoIP:5</a>:
+			<li class="test-"><a id="_t_27" class="defined" href="#_t_27">Test FPT_TUD_EXT.1/VVoIP:5</a>:
       The evaluator shall check to ensure that the verification of software/firmware updates from the
 			TOE to the VVoIP endpoint fails using unauthorized data or improperly signed updates. The evaluator shall
 			also check those cases where hash verification mechanism and digital signature verification mechanism

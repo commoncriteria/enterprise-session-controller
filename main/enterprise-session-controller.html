@@ -648,7 +648,7 @@ function showTarget(id){
       </span></a><a href="#opt-sfrs" style="text-indent:0px">Appendix A - <span>Optional SFRs</span></a><a href="#opt-sfrs" style="text-indent:10px">A.1<span>Strictly Optional Requirements
     </span></a><a href="#obj-sfrs" style="text-indent:10px">A.2<span>Objective Requirements
     </span></a><a href="#impl-dep-sfrs" style="text-indent:10px">A.3<span>Implementation-dependent Requirements
-    </span></a><a href="#_sec_22" style="text-indent:20px">A.3.1<span>Auditable Events for Implementation-Dependent SFRs</span></a><a href="#imp-fpt" style="text-indent:20px">A.3.2<span>Protection of the TSF (FPT)</span></a><a href="#sel-sfrs" style="text-indent:0px">Appendix B - <span>Selection-based Requirements
+    </span></a><a href="#_sec_24" style="text-indent:20px">A.3.1<span>Auditable Events for Implementation-Dependent SFRs</span></a><a href="#imp-fpt" style="text-indent:20px">A.3.2<span>Protection of the TSF (FPT)</span></a><a href="#sel-sfrs" style="text-indent:0px">Appendix B - <span>Selection-based Requirements
     </span></a><a href="#sec-sel-audit-table" style="text-indent:10px">B.1<span>Auditable Events for Selection-based SFRs</span></a><a href="#sel-fau" style="text-indent:10px">B.2<span>Security Audit (FAU)</span></a><a href="#ext-comp-defs" style="text-indent:0px">Appendix C - <span>Extended Component Definitions</span></a><a href="#ext-comp-defs-bg" style="text-indent:10px">C.1<span>Extended Components Table</span></a><a href="#ext-comp-defs-bg" style="text-indent:10px">C.2<span>Extended Component Definitions</span></a><a href="#ext-comp-FAU" style="text-indent:20px">C.2.1<span>Security Audit (FAU)</span></a><a href="#ext-comp-FAU_VVR_EXT" style="text-indent:30px">C.2.1.1<span>FAU_VVR_EXT Voice and Video Recording</span></a><a href="#ext-comp-FMT" style="text-indent:20px">C.2.2<span>Security Management (FMT)</span></a><a href="#ext-comp-FMT_CFG_EXT" style="text-indent:30px">C.2.2.1<span>FMT_CFG_EXT Secure by Default Configuration</span></a><a href="#satisfiedreqs" style="text-indent:0px">Appendix D - <span>Inherently Satisfied Requirements</span></a><a href="#entropyappendix" style="text-indent:0px">Appendix E - <span>Entropy Documentation and Assessment</span></a><a href="#acronyms" style="text-indent:0px">Appendix F - <span>Acronyms</span></a><a href="#appendix-bibliography" style="text-indent:0px">Appendix G - <span>Bibliography</span></a></div><h1 class="indexable" data-level="1" id="sec-intro">1 Introduction</h1>
 
     
@@ -1795,7 +1795,7 @@ the generation of media recordings such as unobservability of user actions.</td>
        Objective       <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr>.</p>
 	<h2 id="impl-dep-sfrs" class="indexable" data-level="2">A.3 Implementation-dependent Requirements
     </h2>
-	<h3 class="indexable" data-level="3" id="_sec_22">A.3.1 Auditable Events for Implementation-Dependent SFRs</h3>
+	<h3 class="indexable" data-level="3" id="_sec_24">A.3.1 Auditable Events for Implementation-Dependent SFRs</h3>
     		<table class="sort_kids_" border="1"><caption data-sortkey="#0"><span class="ctr" data-myid="at-impl-dep" data-counter-type="ct-Table" id="at-impl-dep">Table <span class="counter">8</span></span>: Auditable Events for  Requirements</caption><tr data-sortkey="#1"><th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th></tr><tr data-sortkey="FPT_TUD_EXT.1/VVoIP"><td rowspan="2"><a href="#FPT_TUD_EXT.1/VVoIP">FPT_TUD_EXT.1/VVoIP</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FPT_TUD_EXT.1/VVoIP#"><td></td></tr><tr data-sortkey="FPT_TUD_EXT.1/VVoIP.1"><td>No events specified</td><td>N/A</td></tr></table>
     	
 	
@@ -1811,7 +1811,7 @@ the generation of media recordings such as unobservability of user actions.</td>
 			initiate updates to <b>registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint</b> firmware/software and no
 			other update mechanism.</div></div>
 			<div class="element"><div class="reqid" id="FPT_TUD_EXT.1.3/VVoIP"><a href="#FPT_TUD_EXT.1.3/VVoIP" class="abbr">FPT_TUD_EXT.1.3/VVoIP</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide means to authenticate firmware/software updates
-			to the <b>registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint</b> using a [<b>selection</b>: <span class="selectable-content" id="_s_43">X.509 certificate</span>, <span class="selectable-content" id="_s_44">digital signature </span>, <span class="selectable-content" id="_s_45">published hash</span>] prior to installing those
+			to the <b>registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint</b> using a [<b>selection</b>: <span class="selectable-content" id="_s_48">X.509 certificate</span>, <span class="selectable-content" id="_s_49">digital signature </span>, <span class="selectable-content" id="_s_50">published hash</span>] prior to installing those
 			updates.<div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note">
@@ -1842,16 +1842,16 @@ the generation of media recordings such as unobservability of user actions.</td>
 			acquire and verify a <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint software/firmware update from the manufacturer. The evaluator
 			shall also verify that the guidance includes instructions on how an <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> administrator can use the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to
 			apply software/firmware updates to registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall perform the following test:<span class="testlist-"><ul>
-			<li class="test-"><a id="_t_21" class="defined" href="#_t_21">Test FPT_TUD_EXT.1/VVoIP:1</a>:
+			<li class="test-"><a id="_t_23" class="defined" href="#_t_23">Test FPT_TUD_EXT.1/VVoIP:1</a>:
       Prior to downloading software update from <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr>-client, the evaluator shall
 			check to ensure the current version of the registered client device can be appropriately obtained by means
 			of the operation methods specified by the administrator guidance.
-			</li><li class="test-"><a id="_t_22" class="defined" href="#_t_22">Test FPT_TUD_EXT.1/VVoIP:2</a>:
+			</li><li class="test-"><a id="_t_24" class="defined" href="#_t_24">Test FPT_TUD_EXT.1/VVoIP:2</a>:
       The evaluator shall check to ensure that <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint software/firmware updates are signed
 			and/or hashed by the manufacturer based on what is specified in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>.</li>
-			<li class="test-"><a id="_t_23" class="defined" href="#_t_23">Test FPT_TUD_EXT.1/VVoIP:3</a>:
+			<li class="test-"><a id="_t_25" class="defined" href="#_t_25">Test FPT_TUD_EXT.1/VVoIP:3</a>:
       The evaluator shall check to ensure that only administrators of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> are permitted to initiate an update to a registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint.</li>
-			<li class="test-"><a id="_t_24" class="defined" href="#_t_24">Test FPT_TUD_EXT.1/VVoIP:4</a>:
+			<li class="test-"><a id="_t_26" class="defined" href="#_t_26">Test FPT_TUD_EXT.1/VVoIP:4</a>:
       The evaluator shall check to ensure that software updates are correctly performed by verifying
 			that the <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint is running the newly-obtained software version obtaining the newly updated
 			software version of the <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr>-client device once update has complete.
@@ -1869,7 +1869,7 @@ the generation of media recordings such as unobservability of user actions.</td>
 			<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> should receive a message indicating that the download was completed. When the <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint
 			reboots, it is expected to report the new software/firmware version to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> so that the new version
 			will be displayed in the OA&amp;M application.</p></li>
-			<li class="test-"><a id="_t_25" class="defined" href="#_t_25">Test FPT_TUD_EXT.1/VVoIP:5</a>:
+			<li class="test-"><a id="_t_27" class="defined" href="#_t_27">Test FPT_TUD_EXT.1/VVoIP:5</a>:
       The evaluator shall check to ensure that the verification of software/firmware updates from the
 			<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to the <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint fails using unauthorized data or improperly signed updates. The evaluator shall
 			also check those cases where hash verification mechanism and digital signature verification mechanism
@@ -1893,7 +1893,7 @@ the generation of media recordings such as unobservability of user actions.</td>
 		
 		<div class="element"><div class="reqid" id="FAU_SEL.1.1"><a href="#FAU_SEL.1.1" class="abbr">FAU_SEL.1.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to select the set of events to be audited from the set of all
 auditable events based on the following attributes:<ol type="a">
-		<li>[<b>selection</b>: <span class="selectable-content" id="_s_46">object identity</span>, <span class="selectable-content" id="_s_47">user identity</span>, <span class="selectable-content" id="_s_48">subject identity</span>, <span class="selectable-content" id="_s_49">host identity</span>, <span class="selectable-content" id="_s_50">event type</span>]</li>
+		<li>[<b>selection</b>: <span class="selectable-content" id="_s_43">object identity</span>, <span class="selectable-content" id="_s_44">user identity</span>, <span class="selectable-content" id="_s_45">subject identity</span>, <span class="selectable-content" id="_s_46">host identity</span>, <span class="selectable-content" id="_s_47">event type</span>]</li>
 		<li>[<b>assignment</b>: 
      <span class="assignable-content">list of additional attributes that audit selectivity is based
 		upon</span>]</li></ol><div class="appnote"><span class="note-header">Application
@@ -1933,10 +1933,10 @@ auditable events based on the following attributes:<ol type="a">
 		FCS_COP.1.
 		</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">If the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> provides the ability to enable/disable encryption of locally stored voice and video recordings,
 		the evaluator shall verify that the operational guidance provides instructions on how to enable encryption
-		and directs the reader to ensure that this is enabled in the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s evaluated configuration.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall perform the following tests: <span class="testlist-"><ul><li class="test-"><a id="_t_26" class="defined" href="#_t_26">Test FAU_STG.2/VVR:1</a>:
+		and directs the reader to ensure that this is enabled in the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s evaluated configuration.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall perform the following tests: <span class="testlist-"><ul><li class="test-"><a id="_t_21" class="defined" href="#_t_21">Test FAU_STG.2/VVR:1</a>:
       The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> provides no interface to access voice/video recording data
 		stored on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> except for legitimate access from an authorized administrator through the Operations,
-		Administration, and Management (OA&amp;M) interface.</li><li class="test-"><a id="_t_27" class="defined" href="#_t_27">Test FAU_STG.2/VVR:2</a>:
+		Administration, and Management (OA&amp;M) interface.</li><li class="test-"><a id="_t_22" class="defined" href="#_t_22">Test FAU_STG.2/VVR:2</a>:
       Both B2B subscriber calls and voice/video conferencing calls may be stored on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> based on
 		safeguards (i.e. secured or unsecured) for which they were recorded. The evaluator shall identify the
 		location of stored voice and video records and verify that this data is stored in an encrypted format for all

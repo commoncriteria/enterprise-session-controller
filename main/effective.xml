@@ -1387,97 +1387,6 @@ components that affect the proper functioning of the TOE</assignable>].
 
     <opt-sfrs>
 	</opt-sfrs>		
-
-	<obj-sfrs>
-	</obj-sfrs>
-
-    <impl-dep-sfrs>
-	<section title="Auditable Events for Implementation-Dependent SFRs">
-    		<audit-table id="at-impl-dep" table="impl-dep"/>
-    	</section>
-	
-		<section title="Protection of the TSF (FPT)" id="imp-fpt">
-		<f-component name="Trusted Update (VVoIP Endpoints)" cc-id="fpt_tud_ext.1" id="fpt-tud-ext-1-vvoip" iteration="VVoIP">
-			<f-element id="fpt-tud-ext-1e1-vvoip">
-			<title>The TSF shall provide Security Administrators the ability to query the
-			currently executing version of the <h:b>registered VVoIP endpoint</h:b>
-			firmware/software as well as the most recently installed version of the
-			<h:b>registered VVoIP endpoint</h:b> firmware/software.</title>
-			</f-element>
-			<f-element id="fpt-tud-ext-1e2-vvoip">
-			<title>The TSF shall provide Security Administrators the ability to manually
-			initiate updates to <h:b>registered VVoIP endpoint</h:b> firmware/software and no
-			other update mechanism.</title>
-			</f-element>
-			<f-element id="fpt-tud-ext-1e3-vvoip">
-			<title>The TSF shall provide means to authenticate firmware/software updates
-			to the <h:b>registered VVoIP endpoint</h:b> using a <selectables><selectable>X.509 certificate</selectable><selectable>digital signature </selectable><selectable>published hash</selectable></selectables> prior to installing those
-			updates.</title>
-			<note role="application">
-			<h:i><h:p>The TOE may either validate the update prior to storing it for delivery to
-			registered VVoIP endpoints or it may provide the means to validate the
-			update to the VVoIP endpoint itself by preserving the manufacturer’s
-			integrity/authenticity mechanism and including that information in the update. In other words, either the TSF itself validates the update or it
-			facilitates the ability of the VVoIP endpoint to do this by providing all
-			information necessary to validate the update to the client. </h:p><h:p>It is typical behavior for ESCs to push software updates to registered
-			VVoIP endpoint devices. However, many VVoIP endpoints have the ability
-			to receive software updates from either an ESC or third-party update
-			server. This SFR addresses the case where it is the ESC’s responsibility for
-			delivery of software updates to registered VVoIP endpoints. For those
-			scenarios where the VVoIP endpoint gets its upload from a separate
-			server, then the ESC is not responsible for assuring
-			FPT_TUD_EXT.1/VVoIP.</h:p></h:i>
-			</note>
-			<aactivity>
-			<TSS>The evaluator shall examine the TSS to verify that it describes the ability of the TOE to retrieve VVoIP
-			endpoint software/firmware updates and the process by which VVoIP endpoints can register to the TOE
-			and acquire these updates. The evaluator shall also examine the TSS to verify that it describes by which
-			the authenticity and integrity of VVoIP endpoint software updates are assured and what role the TSF has
-			in ensuring that updates are genuine.</TSS>
-			<Guidance>The evaluator shall examine the operational guidance to verify that it provides instructions on how to
-			acquire and verify a VVoIP endpoint software/firmware update from the manufacturer. The evaluator
-			shall also verify that the guidance includes instructions on how an ESC administrator can use the TOE to
-			apply software/firmware updates to registered VVoIP endpoints.</Guidance>
-			<Tests>The evaluator shall perform the following test:<testlist>
-			<test>Prior to downloading software update from TOE to registered VVoIP-client, the evaluator shall
-			check to ensure the current version of the registered client device can be appropriately obtained by means
-			of the operation methods specified by the administrator guidance.
-			</test><test>The evaluator shall check to ensure that VVoIP endpoint software/firmware updates are signed
-			and/or hashed by the manufacturer based on what is specified in the ST.</test>
-			<test>The evaluator shall check to ensure that only administrators of the TOE are permitted to initiate an update to a registered VVoIP endpoint.</test>
-			<test>The evaluator shall check to ensure that software updates are correctly performed by verifying
-			that the VVoIP endpoint is running the newly-obtained software version obtaining the newly updated
-			software version of the VVoIP-client device once update has complete.
-			<h:p>Note: In some cases the ESC will not receive an explicit message from the VVoIP endpoint stating that the
-			software update executed successfully. In addition, some software updates will not take effect until a
-			reboot of the VVoIP endpoint is initiated remotely by the ESC or manually/physically at the VVoIP endpoint
-			device itself. In either scenario, the VVoIP endpoint itself will always indicate whether verification of the
-			update has failed. Therefore, the tester can (or may have to) verify successful software download by
-			querying the VVoIP endpoint device for new software/firmware version. The tester can also verify
-			whether software update failed by querying the registered VVoIP endpoint for errors.
-			</h:p><h:p>In most cases, failed software update messages will originate from the VVoIP endpoint and not the ESC.
-			Any failed software update reported by the registered VVoIP endpoint should have the report forwarded
-			to the TOE. However, as mentioned earlier, the registered VVoIP endpoint may not report successful
-			software downloads an therefore no ‘successful download’ report should be expected to be forwarded to the ESC. If the VVoIP endpoint does report a ‘software download complete’ or just ‘complete’, then the
-			TOE should receive a message indicating that the download was completed. When the VVoIP endpoint
-			reboots, it is expected to report the new software/firmware version to the TOE so that the new version
-			will be displayed in the OA&amp;M application.</h:p></test>
-			<test>The evaluator shall check to ensure that the verification of software/firmware updates from the
-			TOE to the VVoIP endpoint fails using unauthorized data or improperly signed updates. The evaluator shall
-			also check those cases where hash verification mechanism and digital signature verification mechanism
-			fail.
-			<h:p>Note: this may require the evaluator to obtain a deliberately invalid software update from the device
-			manufacturer or developer access to the TOE so that a stored update can be manipulated directly in a
-			manner that will cause signature and/or hash verification to fail.</h:p></test>
-			</testlist></Tests>
-			</aactivity>
-			</f-element>
-			<audit-event table="impl-dep"/>
-		</f-component>
-		</section>
-
-
-	</impl-dep-sfrs>
 	<sel-sfrs>
 		<section id="sec-sel-audit-table" title="Auditable Events for Selection-based SFRs">
            <audit-table id="at-sel-based" table="sel-based"/>
@@ -1587,6 +1496,97 @@ the PP/ST:<h:ul><h:li>Voice/video recordings of completed calls</h:li></h:ul></a
 		</f-component>
 	</section>
 	</sel-sfrs>
+	<obj-sfrs>
+	</obj-sfrs>
+
+    <impl-dep-sfrs>
+	<section title="Auditable Events for Implementation-Dependent SFRs">
+    		<audit-table id="at-impl-dep" table="impl-dep"/>
+    	</section>
+	
+		<section title="Protection of the TSF (FPT)" id="imp-fpt">
+		<f-component name="Trusted Update (VVoIP Endpoints)" cc-id="fpt_tud_ext.1" id="fpt-tud-ext-1-vvoip" iteration="VVoIP">
+			<f-element id="fpt-tud-ext-1e1-vvoip">
+			<title>The TSF shall provide Security Administrators the ability to query the
+			currently executing version of the <h:b>registered VVoIP endpoint</h:b>
+			firmware/software as well as the most recently installed version of the
+			<h:b>registered VVoIP endpoint</h:b> firmware/software.</title>
+			</f-element>
+			<f-element id="fpt-tud-ext-1e2-vvoip">
+			<title>The TSF shall provide Security Administrators the ability to manually
+			initiate updates to <h:b>registered VVoIP endpoint</h:b> firmware/software and no
+			other update mechanism.</title>
+			</f-element>
+			<f-element id="fpt-tud-ext-1e3-vvoip">
+			<title>The TSF shall provide means to authenticate firmware/software updates
+			to the <h:b>registered VVoIP endpoint</h:b> using a <selectables><selectable>X.509 certificate</selectable><selectable>digital signature </selectable><selectable>published hash</selectable></selectables> prior to installing those
+			updates.</title>
+			<note role="application">
+			<h:i><h:p>The TOE may either validate the update prior to storing it for delivery to
+			registered VVoIP endpoints or it may provide the means to validate the
+			update to the VVoIP endpoint itself by preserving the manufacturer’s
+			integrity/authenticity mechanism and including that information in the update. In other words, either the TSF itself validates the update or it
+			facilitates the ability of the VVoIP endpoint to do this by providing all
+			information necessary to validate the update to the client. </h:p><h:p>It is typical behavior for ESCs to push software updates to registered
+			VVoIP endpoint devices. However, many VVoIP endpoints have the ability
+			to receive software updates from either an ESC or third-party update
+			server. This SFR addresses the case where it is the ESC’s responsibility for
+			delivery of software updates to registered VVoIP endpoints. For those
+			scenarios where the VVoIP endpoint gets its upload from a separate
+			server, then the ESC is not responsible for assuring
+			FPT_TUD_EXT.1/VVoIP.</h:p></h:i>
+			</note>
+			<aactivity>
+			<TSS>The evaluator shall examine the TSS to verify that it describes the ability of the TOE to retrieve VVoIP
+			endpoint software/firmware updates and the process by which VVoIP endpoints can register to the TOE
+			and acquire these updates. The evaluator shall also examine the TSS to verify that it describes by which
+			the authenticity and integrity of VVoIP endpoint software updates are assured and what role the TSF has
+			in ensuring that updates are genuine.</TSS>
+			<Guidance>The evaluator shall examine the operational guidance to verify that it provides instructions on how to
+			acquire and verify a VVoIP endpoint software/firmware update from the manufacturer. The evaluator
+			shall also verify that the guidance includes instructions on how an ESC administrator can use the TOE to
+			apply software/firmware updates to registered VVoIP endpoints.</Guidance>
+			<Tests>The evaluator shall perform the following test:<testlist>
+			<test>Prior to downloading software update from TOE to registered VVoIP-client, the evaluator shall
+			check to ensure the current version of the registered client device can be appropriately obtained by means
+			of the operation methods specified by the administrator guidance.
+			</test><test>The evaluator shall check to ensure that VVoIP endpoint software/firmware updates are signed
+			and/or hashed by the manufacturer based on what is specified in the ST.</test>
+			<test>The evaluator shall check to ensure that only administrators of the TOE are permitted to initiate an update to a registered VVoIP endpoint.</test>
+			<test>The evaluator shall check to ensure that software updates are correctly performed by verifying
+			that the VVoIP endpoint is running the newly-obtained software version obtaining the newly updated
+			software version of the VVoIP-client device once update has complete.
+			<h:p>Note: In some cases the ESC will not receive an explicit message from the VVoIP endpoint stating that the
+			software update executed successfully. In addition, some software updates will not take effect until a
+			reboot of the VVoIP endpoint is initiated remotely by the ESC or manually/physically at the VVoIP endpoint
+			device itself. In either scenario, the VVoIP endpoint itself will always indicate whether verification of the
+			update has failed. Therefore, the tester can (or may have to) verify successful software download by
+			querying the VVoIP endpoint device for new software/firmware version. The tester can also verify
+			whether software update failed by querying the registered VVoIP endpoint for errors.
+			</h:p><h:p>In most cases, failed software update messages will originate from the VVoIP endpoint and not the ESC.
+			Any failed software update reported by the registered VVoIP endpoint should have the report forwarded
+			to the TOE. However, as mentioned earlier, the registered VVoIP endpoint may not report successful
+			software downloads an therefore no ‘successful download’ report should be expected to be forwarded to the ESC. If the VVoIP endpoint does report a ‘software download complete’ or just ‘complete’, then the
+			TOE should receive a message indicating that the download was completed. When the VVoIP endpoint
+			reboots, it is expected to report the new software/firmware version to the TOE so that the new version
+			will be displayed in the OA&amp;M application.</h:p></test>
+			<test>The evaluator shall check to ensure that the verification of software/firmware updates from the
+			TOE to the VVoIP endpoint fails using unauthorized data or improperly signed updates. The evaluator shall
+			also check those cases where hash verification mechanism and digital signature verification mechanism
+			fail.
+			<h:p>Note: this may require the evaluator to obtain a deliberately invalid software update from the device
+			manufacturer or developer access to the TOE so that a stored update can be manipulated directly in a
+			manner that will cause signature and/or hash verification to fail.</h:p></test>
+			</testlist></Tests>
+			</aactivity>
+			</f-element>
+			<audit-event table="impl-dep"/>
+		</f-component>
+		</section>
+
+
+	</impl-dep-sfrs>
+
     </sec:Security_Requirements> <!-- Security Requirements  -->
 
 <appendix title="Inherently Satisfied Requirements" id="satisfiedreqs"> 
