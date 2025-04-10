@@ -801,8 +801,8 @@ the generation of media recordings such as unobservability of user actions.</con
 
 			<base-sfr-spec title="X.509 Certificate Authentication" cc-id="fia_x509_ext.2" id="fia-x509-ext-2">
 				<consistency-rationale/>
-				<description/><!-- 
-				<f-element id='fia-x509-ext-2e1'>
+				<description/> 
+				<f-element id="fia-x509-ext-2e1">
 				<title>The TSF shall use X.509v3 certificates as defined by RFC 5280 to support authentication for <h:b>TLS,</h:b> <selectables>
 			<selectable>DTLS</selectable>
 			<selectable>HTTPS</selectable>
@@ -812,10 +812,10 @@ the generation of media recordings such as unobservability of user actions.</con
 			<selectable><assignable>other uses</assignable></selectable>
 			<selectable>no additional</selectable></selectables>
 			</title>			
-			<note role='application'>
+			<note role="application">
 			<h:i>The NDcPP requires the ST author to select the protocol(s) that certificate authentication is used for. This element has been modified from its definition in the Base-PP by mandating support for TLS because FCS_TLSC_EXT.1 and FCS_TLSS_EXT.2 are mandatory SFRs for a TOE that conforms to this PP-Module. Additional protocols may or may not be selected depending on the other functionality provided by the TSF</h:i></note>
 			</f-element>
-			<f-element id='fia-x509-ext-2e2'>
+			<f-element id="fia-x509-ext-2e2">
 			<title>When the TSF cannot establish a connection to determine the validity of a certificate, the TSF shall <selectables>
 			<selectable>allow the administrator to choose whether to
 			accept the certificate in these cases</selectable>
@@ -823,10 +823,10 @@ the generation of media recordings such as unobservability of user actions.</con
 			<selectable>not accept the
 			certificate</selectable>
 			</selectables>.</title>
-			<note role='application'><h:i>This SFR is selection-based in the Base-PP but is made mandatory when this PPModule is claimed because the ESC implements functionality that requires the use of certificate authentication.</h:i></note>
+			<note role="application"><h:i>This SFR is selection-based in the Base-PP but is made mandatory when this PPModule is claimed because the ESC implements functionality that requires the use of certificate authentication.</h:i></note>
 
 			</f-element>
-			-->
+			
 			
             <set-status status="mandatory"/>
           </base-sfr-spec> 
