@@ -765,8 +765,9 @@ the generation of media recordings such as unobservability of user actions.</con
 		  		<base-sfr-spec title="TLS Server Protocol without Mutual Authentication" cc-id="fcs_tlss_ext.1" id="fcs-tlss-ext-1">
 					
 				<consistency-rationale/>
-				<description>This modification adds clarity to the cipherlist that this PP-Module refers to. In this case, the assignable ciphersuite list for FCS_TLSS_EXT.1 can be seen in List 1 and List 2 of the Base PP(NDcPP).<comment>Based on what is currently present in ndcpp.3- it seems like the assigning of TLS1.3 should be supported for this PP-mod. If not, then we should rewrite this section. </comment>
-					
+				<description>
+					<h:p>This modification adds clarity to the cipherlist that this PP-Module refers to. In this case, the assignable ciphersuite list for FCS_TLSS_EXT.1 can be seen in List 1 and List 2 of the Base PP(NDcPP).<comment>Based on what is currently present in ndcpp.3- it seems like the assigning of TLS1.3 should be supported for this PP-mod. If not, then we should rewrite this section. </comment>
+				</h:p>
 				<h:p> <h:i><h:b>Application Note: </h:b>This SFR is selection-based in the NDcPP but is mandated by this PP-Module because Transport Layer Security (TLS) is used to secure SIP and H.323 communications.<comment>Should we remove the following sentence?</comment>Additionally, this PP-Module mandates the use of TLS 1.2.</h:i></h:p>
 				</description>
 				<!-- 
@@ -802,10 +803,10 @@ the generation of media recordings such as unobservability of user actions.</con
 			<base-sfr-spec title="X.509 Certificate Authentication" cc-id="fia_x509_ext.2" id="fia-x509-ext-2">
 				<consistency-rationale/>
 				<description> 
-					<comment>Should the following be removed?</comment>
+					
 					<f-component name="X.509 Certificate Authentication" cc-id="fia_x509_ext.2" id="fia-x509-ext-2">
 				<f-element id="fia-x509-ext-2e1">
-				<title>The TSF shall use X.509v3 certificates as defined by RFC 5280 to support authentication for <h:b>TLS,</h:b> <selectables>
+				<title><comment>Should this all be removed and replaced with something more generic?</comment>The TSF shall use X.509v3 certificates as defined by RFC 5280 to support authentication for <h:b>TLS,</h:b> <selectables>
 			<selectable>DTLS</selectable>
 			<selectable>HTTPS</selectable>
 			<selectable>IPsec</selectable>
@@ -848,7 +849,7 @@ the generation of media recordings such as unobservability of user actions.</con
 		<base-sfr-spec title="Reliable Time Stamps" cc-id="fpt_stm_ext.1" id="fpt-stm-ext-1">
 			<consistency-rationale/>
 			<description><h:p>The TSF shall synchronize time with an NTP server.</h:p>
-			<h:p><h:i><h:b>Application Note: This SFR has been refined from the NDcPP to permit the NTP server selection only. No other parts of the SFR are modified.</h:b></h:i></h:p></description>
+			<h:p><h:i><h:b>Application Note: </h:b>This SFR has been refined from the NDcPP to permit the NTP server selection only. No other parts of the SFR are modified.</h:i></h:p></description>
 		<no-change/>
     	<set-status status="mandatory"/>
         </base-sfr-spec> 

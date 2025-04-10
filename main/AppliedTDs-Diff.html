@@ -514,7 +514,10 @@
         </div>
         <div class="comp" id="@id">
             <h4>FCS_TLSS_EXT.1: TLS Server Protocol without Mutual Authentication</h4>
-            <span class="description">This modification adds clarity to the cipherlist that this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> refers to. In this case, the assignable ciphersuite list for FCS_TLSS_EXT.1 can be seen in List 1 and List 2 of the Base <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>(<abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr>).<span style="" class="comment " id="Comment-6-">Based on what is currently present in ndcpp.3- it seems like the assigning of TLS1.3 should be supported for this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-mod. If not, then we should rewrite this section. </span> 
+            <span class="description">
+                <p>
+                    This modification adds clarity to the cipherlist that this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> refers to. In this case, the assignable ciphersuite list for FCS_TLSS_EXT.1 can be seen in List 1 and List 2 of the Base <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>(<abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr>).<span style="" class="comment " id="Comment-6-">Based on what is currently present in ndcpp.3- it seems like the assigning of TLS1.3 should be supported for this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-mod. If not, then we should rewrite this section. </span> 
+                </p>
                 <p>
                      <i><b>Application Note: </b>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is selection-based in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is mandated by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because Transport Layer Security (TLS) is used to secure <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications.<span style="" class="comment " id="Comment-7-">Should we remove the following sentence?</span>Additionally, this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> mandates the use of TLS 1.2.</i>
                 </p>
@@ -531,7 +534,7 @@
         </div>
         <div class="comp" id="@id">
             <h4>FIA_X509_EXT.2: X.509 Certificate Authentication</h4>
-            <span class="description"> <span style="" class="comment " id="Comment-8-">Should the following be removed?</span> 
+            <span class="description">
                 <div class="comp" id="FIA_X509_EXT.2">
                     <h4>FIA_X509_EXT.2 X.509 Certificate Authentication</h4>
                     <div class="element">
@@ -539,7 +542,7 @@
                             <a href="#FIA_X509_EXT.2.1" class="abbr">FIA_X509_EXT.2.1</a>
                         </div>
                         <div class="reqdesc">
-                            The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall use X.509v3 certificates as defined by RFC 5280 to support authentication for <b>TLS,</b> [<b>selection</b>: <span class="selectable-content" id="_s_1">DTLS</span>, <span class="selectable-content" id="_s_2">HTTPS</span>, <span class="selectable-content" id="_s_3">IPsec</span>, <span class="selectable-content" id="_s_4">SSH</span>, <span class="selectable-content" id="_s_5">no other protocols</span>], <b><abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint registration,</b> and [<b>selection</b>: <span class="selectable-content" id="_s_6">code signing for system software updates</span>, <span class="selectable-content" id="_s_7">[<b>assignment</b>: <span class="assignable-content">other uses</span>]</span>, <span class="selectable-content" id="_s_8">no additional</span>] 
+                            <span style="" class="comment " id="Comment-8-">Should this all be removed and replaced with something more generic?</span>The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall use X.509v3 certificates as defined by RFC 5280 to support authentication for <b>TLS,</b> [<b>selection</b>: <span class="selectable-content" id="_s_1">DTLS</span>, <span class="selectable-content" id="_s_2">HTTPS</span>, <span class="selectable-content" id="_s_3">IPsec</span>, <span class="selectable-content" id="_s_4">SSH</span>, <span class="selectable-content" id="_s_5">no other protocols</span>], <b><abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint registration,</b> and [<b>selection</b>: <span class="selectable-content" id="_s_6">code signing for system software updates</span>, <span class="selectable-content" id="_s_7">[<b>assignment</b>: <span class="assignable-content">other uses</span>]</span>, <span class="selectable-content" id="_s_8">no additional</span>] 
                             <div class="appnote">
                                 <span class="note-header">Application Note: </span><span class="note"> <i>The <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> requires the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author to select the protocol(s) that certificate authentication is used for. This element has been modified from its definition in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> by mandating support for TLS because FCS_TLSC_EXT.1 and FCS_TLSS_EXT.2 are mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> for a <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that conforms to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>. Additional protocols may or may not be selected depending on the other functionality provided by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr></i></span>
                             </div>
@@ -571,7 +574,7 @@
                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall synchronize time with an NTP server.
                 </p>
                 <p>
-                    <i><b>Application Note: This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> has been refined from the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> to permit the NTP server selection only. No other parts of the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> are modified.</b></i>
+                    <i><b>Application Note: </b>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> has been refined from the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> to permit the NTP server selection only. No other parts of the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> are modified.</i>
                 </p>
             </span>
         </div>
