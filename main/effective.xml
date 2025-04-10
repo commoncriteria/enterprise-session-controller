@@ -714,7 +714,7 @@ the generation of media recordings such as unobservability of user actions.</con
 			<base-sfr-spec title="NTP Protocol" cc-id="fcs_ntp_ext.1" id="fcs-ntp-ext-1">
 				<consistency-rationale/>
 				<description>
-					<h:p>The TSF shall use only the following NTP version: NTP v4 (RFC 5905).</h:p>
+					<h:p><h:b>FCS_NTP_EXT.1.1</h:b>: The TSF shall use only the following NTP version: NTP v4 (RFC 5905).</h:p>
 					<h:i><h:p><h:b>Application Note: </h:b>This SFR is selection-based in the Base-PP but is mandatory for a TOE that conforms to this PP-Module because the refinement to FPT_STM_EXT.1 requires this SFR to be claimed in all cases.</h:p>
 					<h:p>This SFR has been refined from the NDcPP to permit the NTP v4 selection only. No
 						other parts of the SFR are modified.
@@ -803,33 +803,27 @@ the generation of media recordings such as unobservability of user actions.</con
 			<base-sfr-spec title="X.509 Certificate Authentication" cc-id="fia_x509_ext.2" id="fia-x509-ext-2">
 				<consistency-rationale/>
 				<description> 
-					
-					<f-component name="X.509 Certificate Authentication" cc-id="fia_x509_ext.2" id="fia-x509-ext-2">
-				<f-element id="fia-x509-ext-2e1">
-				<title><comment>Should this all be removed and replaced with something more generic?</comment>The TSF shall use X.509v3 certificates as defined by RFC 5280 to support authentication for <h:b>TLS,</h:b> <selectables>
-			<selectable>DTLS</selectable>
-			<selectable>HTTPS</selectable>
-			<selectable>IPsec</selectable>
-			<selectable>SSH</selectable>
-			<selectable>no other protocols</selectable></selectables>, <h:b>VVoIP endpoint registration,</h:b> and  <selectables><selectable>code signing for system software updates</selectable>
-			<selectable><assignable>other uses</assignable></selectable>
-			<selectable>no additional</selectable></selectables>
-			</title>			
-			<note role="application">
-			<h:i>The NDcPP requires the ST author to select the protocol(s) that certificate authentication is used for. This element has been modified from its definition in the Base-PP by mandating support for TLS because FCS_TLSC_EXT.1 and FCS_TLSS_EXT.2 are mandatory SFRs for a TOE that conforms to this PP-Module. Additional protocols may or may not be selected depending on the other functionality provided by the TSF</h:i></note>
-			</f-element>
-			<f-element id="fia-x509-ext-2e2">
-			<title>When the TSF cannot establish a connection to determine the validity of a certificate, the TSF shall <selectables>
-			<selectable>allow the administrator to choose whether to
-			accept the certificate in these cases</selectable>
-			<selectable>accept the certificate</selectable>
-			<selectable>not accept the
-			certificate</selectable>
-			</selectables>.</title>
-			<note role="application"><h:i>This SFR is selection-based in the Base-PP but is made mandatory when this PPModule is claimed because the ESC implements functionality that requires the use of certificate authentication.</h:i></note>
+					<h:p><h:b>FIA_X509_EXT.2.1</h:b>:
+					The TSF shall use X.509v3 certificates as defined by RFC 5280 to support authentication for <h:b>TLS,</h:b> [<h:b>selection</h:b>: <h:i>DTLS, HTTPS, IPsec, SSH, no other protocol</h:i>], <h:b>VVoIP endpoint registration,</h:b> and [<h:b>selection</h:b>: <h:i>code signing for system software updates, [<h:b>assignment</h:b>: other uses], no additional</h:i>].
+				</h:p>
+				<h:p><h:i><h:b>Application Note: </h:b>
+				The NDcPP requires the ST author to select the protocol(s) that certificate
+				authentication is used for. This element has been modified from its definition in
+				the Base-PP by mandating support for TLS because FCS_TLSC_EXT.1 and
+				FCS_TLSS_EXT.2 are mandatory SFRs for a TOE that conforms to this PP-Module.
+				Additional protocols may or may not be selected depending on the other
+				functionality provided by the TSF.
+			</h:i>	
+				</h:p>
+			
+			<h:p><h:b>FIA_X509_EXT.2.1</h:b>:
+			When the TSF cannot establish a connection to determine the validity of a certificate, the TSF shall [<h:b>selection</h:b>: <h:i>allow the administrator to choose whether to accept the certificate in these cases, accept the certificate, not accept the certificate</h:i>].
+			</h:p>
+			<h:p><h:i><h:b>Application Note: </h:b>This SFR is selection-based in the Base-PP but is made mandatory when this PPModule is claimed because the ESC implements functionality that requires the use
+				of certificate authentication</h:i></h:p>
+			
 
-			</f-element>
-					</f-component>
+
 		</description> 
 			
             <set-status status="mandatory"/>
@@ -848,7 +842,7 @@ the generation of media recordings such as unobservability of user actions.</con
 
 		<base-sfr-spec title="Reliable Time Stamps" cc-id="fpt_stm_ext.1" id="fpt-stm-ext-1">
 			<consistency-rationale/>
-			<description><h:p>The TSF shall synchronize time with an NTP server.</h:p>
+			<description><h:p><h:b>FPT_STM_EXT.1.1</h:b>: The TSF shall synchronize time with an NTP server.</h:p>
 			<h:p><h:i><h:b>Application Note: </h:b>This SFR has been refined from the NDcPP to permit the NTP server selection only. No other parts of the SFR are modified.</h:i></h:p></description>
 		<no-change/>
     	<set-status status="mandatory"/>
