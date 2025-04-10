@@ -822,10 +822,8 @@ the generation of media recordings such as unobservability of user actions.</con
 				<consistency-rationale/>
 				<description> 
 					<h:p><h:b>FIA_X509_EXT.2.1</h:b>:
-					The TSF shall use X.509v3 certificates as defined by RFC 5280 to support authentication for <h:b>TLS,</h:b> [<h:b>selection</h:b>: <h:i>DTLS, HTTPS, IPsec, SSH, no other protocol</h:i>], <h:b>VVoIP endpoint registration,</h:b> and [<h:b>selection</h:b>: <h:i>code signing for system software updates, [<h:b>assignment</h:b>:<h:i> other uses], no additional</h:i>].
+					The TSF shall use X.509v3 certificates as defined by RFC 5280 to support authentication for <h:b>TLS,</h:b> [<h:b>selection</h:b>: <h:i>DTLS, HTTPS, IPsec, SSH, no other protocol</h:i>], <h:b>VVoIP endpoint registration,</h:b> and [<h:b>selection</h:b>: <h:i>code signing for system software updates, [<h:b>assignment</h:b>: other uses], no additional</h:i>].
 				</h:p>
-				
-				<h:p>
 				<h:p><h:i><h:b>Application Note: </h:b>
 				The NDcPP requires the ST author to select the protocol(s) that certificate
 				authentication is used for. This element has been modified from its definition in
@@ -838,8 +836,8 @@ the generation of media recordings such as unobservability of user actions.</con
 			
 			<h:p><h:b>FIA_X509_EXT.2.1</h:b>:
 			When the TSF cannot establish a connection to determine the validity of a certificate, the TSF shall [<h:b>selection</h:b>: <h:i>allow the administrator to choose whether to accept the certificate in these cases, accept the certificate, not accept the certificate</h:i>].
-			
-			<h:p><h:i><h:b>Application Note: </h:b><h:i>This SFR is selection-based in the Base-PP but is made mandatory when this PPModule is claimed because the ESC implements functionality that requires the use
+			</h:p>
+			<h:p><h:i><h:b>Application Note: </h:b>This SFR is selection-based in the Base-PP but is made mandatory when this PPModule is claimed because the ESC implements functionality that requires the use
 				of certificate authentication</h:i></h:p>
 			
 
