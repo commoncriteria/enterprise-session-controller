@@ -717,12 +717,12 @@ the generation of media recordings such as unobservability of user actions.</con
 			  </base-sfr-spec> 
 
 			<base-sfr-spec title="DTLS Server Support for Mutual Authentication" cc-id="fcs_dtlss_ext.2"  id="fcs-dtlss-ext-2">
-				<depends on-sel='ftp-itc-1e1-dtls'/>
+				
 				<consistency-rationale/>
 				<description>This SFR is optional in the NDcPP but is selection-based in this PP-Module because any ESC use of DTLS
 					requires mutually-authenticated DTLS to be implemented. Therefore, this SFR must be claimed if ‘DTLS’ is
 					selected in FTP_ITC.1.1/ESC.</description>
-					
+					<depends on-sel='ftp-itc-1e1-dtls'/>
 			<no-change/>
             <set-status status="sel-based"/>
           </base-sfr-spec> 
