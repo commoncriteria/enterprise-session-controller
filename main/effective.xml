@@ -657,18 +657,20 @@ the generation of media recordings such as unobservability of user actions.</con
 			<base-sfr-spec title="Audit Data Generation (Audit Log)" cc-id="fau_gen.1" id="fau-gen-1-esc">
 				<consistency-rationale/>
 				<description>
-					<h:p>FAU_GEN.1.1 is refined to include the following auditable events in addition to what is defined in the Base-PP.</h:p>
-					<h:p><h:b>Application Note:</h:b><h:i>The Base-PP version of the SFR requires “all administrative actions” to be audited. When the TOE includes this PP-Module, it is expected that this will also include the administrative actions that support the PP-Module defined in FMT_SMF.1/ESC.</h:i></h:p>
+					<h:p>FAU_GEN.1.1 is refined to include the following auditable events in addition to what is defined in the Base-PP. For each new addition of an SFR, the auditable requirements have been updated within the Mandatory, Implementation-dependent and Selection-based SFRs.</h:p>
+					<h:p><h:b>Application Note: </h:b><h:i>The Base-PP version of the SFR requires “all administrative actions” to be audited. When the TOE includes this PP-Module, it is expected that this will also include the administrative actions that support the PP-Module defined in FMT_SMF.1/ESC.</h:i></h:p>
 					<h:p><h:i>FAU_VVR_EXT.2 is a selection-based requirement. Auditing for this requirement must be performed if and only if the TOE claims it.</h:i></h:p>
 				</description>
-				
 		<no-change/>
 		<set-status status="mandatory"/>
 		</base-sfr-spec> 
 
 			<base-sfr-spec title="Protected Audit Trail Storage" cc-id="fau_stg.2" id="fau-stg-2-esc">
 				<consistency-rationale/>
-				<description/>
+				<description>
+					<h:p>This SFR is optional in the NDcPP but is mandated by this PP-Module because the ESC is expected to maintain audit data internal to the TOE which must be protected from unauthorized access.</h:p>
+					<h:p><h:b>Application Note: </h:b><h:i>Both the “audit data” (FAU_GEN.1) and “system log” data (FAU_GEN.1/Log) are expected to be protected from unauthorized access. This SFR applies to all data related to the behavior of the TOE regardless of how it is categorized or where it is stored.</h:i></h:p>
+				</description>
 				<no-change/>
 			<set-status status="mandatory"/>
   		</base-sfr-spec> 
@@ -679,18 +681,19 @@ the generation of media recordings such as unobservability of user actions.</con
 				<consistency-rationale/>
 				<description/>
 				
-				<!-- 
+				
+				<f-element>
 				<title>
 				The TSF shall implement DTLS 1.2 (RFC 6347) supporting the following ciphersuites: <selectables> 	
 					<selectable>select supported ciphersuites from List 1<h:b> in the NDcPP</h:b></selectable>
 					</selectables>and no other ciphersuites.
 				</title>
-				<note role='application'><h:i><h:p>This SFR is selection-based in the NDcPP and remains selection-based in this PPModule because DTLS may be used to secure transmitted media. In this case, it must be claimed if ‘DTLS’ is selected in FTP_ITC.1.1/ESC in addition to the applicable selection triggers in the Base-PP.</h:p>
+				<note role="application"><h:i><h:p>This SFR is selection-based in the NDcPP and remains selection-based in this PPModule because DTLS may be used to secure transmitted media. In this case, it must be claimed if ‘DTLS’ is selected in FTP_ITC.1.1/ESC in addition to the applicable selection triggers in the Base-PP.</h:p>
 				<h:p>This SFR is also refined from its definition in the Base-PP by requiring the use of DTLS 1.2 if this function is claimed.</h:p><h:p>When CPP_ND_V3.0E is the Base-PP, the element in Section 5.1.2.1 should be used, instead.</h:p>
 				</h:i>
 				</note>				
 				</f-element>
-				-->
+				
 				<no-change/>
 				<set-status status="mandatory"/>
 			  </base-sfr-spec> 
