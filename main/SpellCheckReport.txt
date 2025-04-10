@@ -46,6 +46,7 @@ output/enterprise-session-controller-release-linkable.html: ndcpp
 output/enterprise-session-controller-release-linkable.html: sanitization
 output/enterprise-session-controller-release-linkable.html: teardown
 output/enterprise-session-controller-release-linkable.html: unobservability
+output/enterprise-session-controller-release-linkable.html: v4
 output/enterprise-session-controller-release.html: 0e
 output/enterprise-session-controller-release.html: 1930’s
 output/enterprise-session-controller-release.html: CDRs
@@ -84,6 +85,7 @@ output/enterprise-session-controller-release.html: have’
 output/enterprise-session-controller-release.html: ndcpp
 output/enterprise-session-controller-release.html: points’
 output/enterprise-session-controller-release.html: unobservability
+output/enterprise-session-controller-release.html: v4
 output/enterprise-session-controller-release.html: ’
 output/enterprise-session-controller-sd.html: 0e
 output/enterprise-session-controller-sd.html: ACM
@@ -181,4 +183,5 @@ output/enterprise-session-controller.html: sanitization
 output/enterprise-session-controller.html: system’
 output/enterprise-session-controller.html: teardown
 output/enterprise-session-controller.html: unobservability
+output/enterprise-session-controller.html: v4
 output/enterprise-session-controller.html: ’
