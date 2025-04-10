@@ -54,6 +54,7 @@
       </git>
       <url>https://www.niap-ccevs.org/Profile/Info.cfm?PPID=439&amp;id=439</url>  <!-- url of published document on NIAP site -->
       <depends on="pizza"/>     <!-- If package inclusion is dependent on something. Absent if package inclusion is mandatory -->
+	</include-pkg>
 	
 
 <!-- Modules (optional). A properly constructed PP does not need this section. -->
