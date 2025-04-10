@@ -2,7 +2,9 @@
 * Error: Detected dangling id-reference to pizza from attribute
         on/Module[1]""/include-pkg[1]""/depends[1]""/on[1]""
 * Error: Detected multiple elements with an id of 'atref-mandatory'.
+* Error: Detected multiple elements with an id of 'sec-sel-audit-table'.
 * Error: Detected multiple elements with an id of 'atref-mandatory'.
+* Error: Detected multiple elements with an id of 'sec-sel-audit-table'.
 * Error: Detected dangling ref to 'fau-gen-1-esc'
         for a ref.
 	/Module[1]""/sec:Security_Requirements[1]""/base-pp[1]""/con-mod[6]"This PP-M"/ref[1]""
