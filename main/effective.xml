@@ -787,17 +787,18 @@ the generation of media recordings such as unobservability of user actions.</con
 			</section>
 		<section title="Protection of the TSF (FPT)" id="m-fpt">
 		<f-component name="Reliable Time Stamps" cc-id="fpt_stm_ext.1" id="fpt-stm-ext-1">
+			<consistency-rationale/>
 		<f-element id="fpt-stm-ext-1e1">
 		<title>The TSF shall synchronize time with an NTP server. </title>
 		<note role="application"><h:i>This SFR has been refined from the NDcPP to permit the NTP server selection only. No other parts of the SFR are modified.</h:i></note>
-		<aactivity>No additional EAs are specified for this SFR beyond what is defined in the NDcPP SD.</aactivity>
-		</f-element>
+		<aactivity><no-tests>No additional EAs are specified for this SFR beyond what is defined in the NDcPP SD.</no-tests></aactivity>
+		<comment>First half of TD0835 has been applied to this document, however the other half of this TD adds a "Further Modified SFRs"- Guidance is needed on how to implement this into the current document </comment></f-element>
 		<audit-event/>
 		</f-component>
-			
+			<comment>First half of TD0835 has been applied to this document, however the other half of this TD adds a "Further Modified SFRs"- Guidance is needed on how to implement this into the current document </comment>
 			</section>
 
-			<comment>First half of TD0835 has been applied to this document, however the other half of this TD adds a "Further Modified SFRs"- Guidance is needed on how to implement this into the current document </comment>
+			
 	  </modified-sfrs>
     </base-pp>
 	<man-sfrs>
@@ -995,7 +996,7 @@ call data.</title>
 		<title>
 			The TSF shall enforce the [<h:b><h:i>enterprise session controller SFP</h:i></h:b>] on [<h:b><h:i>caller-callee pairs attempting to communicate through the TOE</h:i></h:b>].
 			</title>
-		<aactivity>This SFR is tested in conjunction with FDP_IFF.1.</aactivity>
+		<aactivity><no-tests>This SFR is tested in conjunction with FDP_IFF.1.</no-tests></aactivity>
 		</f-element>
 		<audit-event/>
 		</f-component>
@@ -1130,7 +1131,7 @@ connected (if available).</audit-event-info>
 	</f-component>
 
 	<f-component name="User Authentication before Any Action (VVoIP Endpoints)" cc-id="fia_uau.2" id="fia-uau-2-vvoip" iteration="VVoIP">
-	<f-element id="fia-uau.2e1-vvoip">
+	<f-element id="fia-uau-2e1-vvoip">
 	<title>The TSF shall require each <h:b>VVoIP endpoint</h:b> to be successfully authenticated before allowing any other TSF-mediated actions on behalf of that <h:b>endpoint</h:b>.</title>
 	<note role="application"><h:i> This includes both the establishment of voice/video calls and the TOE-initiated application of an update to the VVoIP endpoint software/firmware.</h:i></note>
 	<aactivity>
@@ -1410,7 +1411,7 @@ components that affect the proper functioning of the TOE</assignable>].
 			<title>The TSF shall provide means to authenticate firmware/software updates
 			to the <h:b>registered VVoIP endpoint</h:b> using a <selectables><selectable>X.509 certificate</selectable><selectable>digital signature </selectable><selectable>published hash</selectable></selectables> prior to installing those
 			updates.</title>
-			<note role="applications">
+			<note role="application">
 			<h:i><h:p>The TOE may either validate the update prior to storing it for delivery to
 			registered VVoIP endpoints or it may provide the means to validate the
 			update to the VVoIP endpoint itself by preserving the manufacturer’s

@@ -105,7 +105,6 @@ output/enterprise-session-controller-sd.html: SRTP
 output/enterprise-session-controller-sd.html: SS7
 output/enterprise-session-controller-sd.html: Sanitization
 output/enterprise-session-controller-sd.html: T1
-output/enterprise-session-controller-sd.html: TD0835
 output/enterprise-session-controller-sd.html: TST
 output/enterprise-session-controller-sd.html: callee
 output/enterprise-session-controller-sd.html: complete’
