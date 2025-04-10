@@ -756,7 +756,7 @@ the generation of media recordings such as unobservability of user actions.</con
 				<consistency-rationale/>
 				<description><h:p>This modification adds clarity to the cipherlist that this PP-Module refers to. In this case, the assignable ciphersuite list for FCS_TLSC_EXT.1 can be seen in List 1 and List 2 of the Base PP(NDcPP).<comment>Based on what is currently present in ndcpp.3- it seems like the assigning of TLS1.3 should be supported for this PP-mod. If not, then we should rewrite this section. </comment></h:p>
 
-				<h:p> <h:i><h:b>Application Note: </h:b>This SFR is selection-based in the NDcPP but is mandated by this PP-Module because Transport Layer Security (TLS) is used to secure SIP and H.323 communications. <comment>Should we remove the following sentence?</comment>Additionally, this PP-Module mandates the use of TLS 1.2.</h:i></h:p:>
+				<h:p> <h:i><h:b>Application Note: </h:b>This SFR is selection-based in the NDcPP but is mandated by this PP-Module because Transport Layer Security (TLS) is used to secure SIP and H.323 communications. <comment>Should we remove the following sentence?</comment>Additionally, this PP-Module mandates the use of TLS 1.2.</h:i></h:p>
 				</description>
 				
 				<!-- 
@@ -785,7 +785,7 @@ the generation of media recordings such as unobservability of user actions.</con
 				<consistency-rationale/>
 				<description>This modification adds clarity to the cipherlist that this PP-Module refers to. In this case, the assignable ciphersuite list for FCS_TLSS_EXT.1 can be seen in List 1 and List 2 of the Base PP(NDcPP).<comment>Based on what is currently present in ndcpp.3- it seems like the assigning of TLS1.3 should be supported for this PP-mod. If not, then we should rewrite this section. </comment>
 					
-				<h:p> <h:i><h:b>Application Note: </h:b>This SFR is selection-based in the NDcPP but is mandated by this PP-Module because Transport Layer Security (TLS) is used to secure SIP and H.323 communications.<comment>Should we remove the following sentence?</comment>Additionally, this PP-Module mandates the use of TLS 1.2.</h:i></h:p:>
+				<h:p> <h:i><h:b>Application Note: </h:b>This SFR is selection-based in the NDcPP but is mandated by this PP-Module because Transport Layer Security (TLS) is used to secure SIP and H.323 communications.<comment>Should we remove the following sentence?</comment>Additionally, this PP-Module mandates the use of TLS 1.2.</h:i></h:p>
 				</description>
 				<!-- 
 				<f-element id='fcs-tlss-ext-1e1'>
@@ -819,7 +819,7 @@ the generation of media recordings such as unobservability of user actions.</con
 
 			<base-sfr-spec title="X.509 Certificate Authentication" cc-id='fia_x509_ext.2' id='fia-x509-ext-2' >
 				<consistency-rationale/>
-				<description/> 
+				<description/><!-- 
 				<f-element id='fia-x509-ext-2e1'>
 				<title>The TSF shall use X.509v3 certificates as defined by RFC 5280 to support authentication for <h:b>TLS,</h:b> <selectables>
 			<selectable>DTLS</selectable>
@@ -829,7 +829,7 @@ the generation of media recordings such as unobservability of user actions.</con
 			<selectable>no other protocols</selectable></selectables>, <h:b>VVoIP endpoint registration,</h:b> and  <selectables><selectable>code signing for system software updates</selectable>
 			<selectable><assignable>other uses</assignable></selectable>
 			<selectable>no additional</selectable></selectables>
-			</title>
+			</title>			
 			<note role='application'>
 			<h:i>The NDcPP requires the ST author to select the protocol(s) that certificate authentication is used for. This element has been modified from its definition in the Base-PP by mandating support for TLS because FCS_TLSC_EXT.1 and FCS_TLSS_EXT.2 are mandatory SFRs for a TOE that conforms to this PP-Module. Additional protocols may or may not be selected depending on the other functionality provided by the TSF</h:i></note>
 			</f-element>
@@ -844,7 +844,7 @@ the generation of media recordings such as unobservability of user actions.</con
 			<note role='application'><h:i>This SFR is selection-based in the Base-PP but is made mandatory when this PPModule is claimed because the ESC implements functionality that requires the use of certificate authentication.</h:i></note>
 
 			</f-element>
-			
+			-->
 			
             <set-status status="mandatory"/>
           </base-sfr-spec> 
