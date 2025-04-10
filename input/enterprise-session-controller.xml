@@ -716,7 +716,7 @@ the generation of media recordings such as unobservability of user actions.</con
 				<description></description>
 				
 			<no-change/>
-            <set-status status="selectable"/>
+            <set-status status="sel-based"/>
           </base-sfr-spec> 
 
 			<base-sfr-spec title="NTP Protocol" cc-id="fcs_ntp_ext.1" id="fcs-ntp-ext-1">
@@ -732,7 +732,7 @@ the generation of media recordings such as unobservability of user actions.</con
 			</f-element>
 			-->
 			<no-change/>
-            <set-status status="selectable"/>
+            <set-status status="sel-based"/>
           </base-sfr-spec> 
 
 			<base-sfr-spec title="TLS Client Protocol without Mutual Authentication" cc-id="fcs_tlsc_ext.1" id="fcs-tlsc-ext-1">
@@ -793,7 +793,8 @@ the generation of media recordings such as unobservability of user actions.</con
           </base-sfr-spec> 
 
 			<base-sfr-spec title="X.509 Certificate Authentication" cc-id='fia_x509_ext.2' id='fia-x509-ext-2' >
-			<!-- <f-element id='fia-x509-ext-2e1'>
+				<consistency-rationale/>
+				<description/><!-- <f-element id='fia-x509-ext-2e1'>
 				<title>The TSF shall use X.509v3 certificates as defined by RFC 5280 to support authentication for <h:b>TLS,</h:b> <selectables>
 			<selectable>DTLS</selectable>
 			<selectable>HTTPS</selectable>
