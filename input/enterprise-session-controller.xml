@@ -453,7 +453,7 @@ baseline of capabilities that all conformant ESCs must provide.
 	<!-- OSPs refer to Objectives or OE Objectives in standard approach documents. -->
 	<!-- In direct rationale PPs, they should refer to OE Objectives -->
     <section title="Organizational Security Policies" id="sec-OSPs">
-	<description>The following organizational security policy is applicable to the TOE if the TOE is deployed on an independent, commercially-available operating system:</description>
+
       <OSPs>
         <OSP name="P.SECURED_PLATFORM">
           <description>Administrators in the organization ensure that general purpose computers use secure operating
@@ -501,7 +501,7 @@ be used to adversely affect the TOE or its own functionality.</description>
 
 	<!-- This section is automatically generated, but this placeholder is reuired -->
     <section title="Security Objectives Rationale" id="sec-sor"/>
-	Note that this section only provides mappings for the security objectives defined in this PP-Module.  </section>  
+	</section>  
 
 
   
@@ -518,7 +518,7 @@ included.</h:p>
 
       </sec-func-req-dir>
 
-      <additional-sfrs/>
+     
       <con-toe>
      	When this PP-Module is used to extend the NDcPP, the TOE type for the overall TOE is still a network device. The TOE boundary is simply extended to include ESC functionality that is provided by the network device.
       </con-toe>
