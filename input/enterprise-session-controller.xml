@@ -665,11 +665,10 @@ the generation of media recordings such as unobservability of user actions.</con
 
 
 	  <modified-sfrs>
-		<section title="Audit Table" id="audit-table">
+		
 	  <audit-table table="mandatory" id="mandatory-audit-events">
 	      <h:br/><h:b><ctr ctr-type="Table" pre="Table " id="atref-mandatory">: Audit Log Events</ctr></h:b>
 	    </audit-table>
-		</section>
 	  <section title="Security Audit (FAU)" id="ms-fau">
 
 
@@ -679,7 +678,7 @@ the generation of media recordings such as unobservability of user actions.</con
 					<h:p>FAU_GEN.1.1 is refined to include the following auditable events in addition to what is defined in the Base-PP.</h:p>
 
 				</description>
-				<audit-table/>
+				
 		<no-change/>
 		<set-status status="mandatory"/>
 		</base-sfr-spec> 
