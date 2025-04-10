@@ -721,13 +721,13 @@ the generation of media recordings such as unobservability of user actions.</con
 			<section title="Identification and Authentication (FIA)" id="m-fia">
 
 			
-			<base-sfr-spec title="X.509 Certificate Validation" cc-id="fia_x509_ext.1" id="fia-x509-ext-1" iteration="Rev">
+			<f-component title="X.509 Certificate Validation" cc-id="fia_x509_ext.1" id="fia-x509-ext-1" iteration="Rev">
 				<consistency-rationale/>
 				<description>This SFR is selection-based in the Base-PP. It is mandatory when the TOE claims conformance to this PPModule because X.509 certificate validation is needed when establishing TLS communications for SIP and H.323. There are no changes to the SFR otherwise.</description>
-			<aactivity><no-tests>No additional EAs are specified for this SFR beyond what is defined in the NDcPP SD.</no-tests></aactivity>
+			<!-- <aactivity><no-tests>No additional EAs are specified for this SFR beyond what is defined in the NDcPP SD.</no-tests></aactivity>-->
 			<set-status status="mandatory"/>
           <no-change/>
-          </base-sfr-spec>
+			</f-component>
 			<f-component name="X.509 Certificate Authentication" cc-id="fia_x509_ext.2" id="fia-x509-ext-2">
 			<f-element id="fia-x509-ext-2e1">
 				<title>The TSF shall use X.509v3 certificates as defined by RFC 5280 to support authentication for <h:b>TLS,</h:b> <selectables>
