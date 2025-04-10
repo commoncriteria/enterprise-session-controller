@@ -502,12 +502,7 @@ included.</h:p>
 
      
 
-      <con-sec-prob>
-	 	The threats defined by this PP-Module (see section 3.1) supplement those defined in the NDcPP as follows:
-	  </con-sec-prob>
-      <con-obj/>
-      <con-op-en>The objectives for the TOE’s operational environment are consistent with the NDcPP based on the
-following rationale: </con-op-en>
+      
       
       
       <con-mod ref="T.MALICIOUS_TRAFFIC">The Base-PP does not define a threat for malicious traffic because all of its
@@ -830,6 +825,13 @@ the generation of media recordings such as unobservability of user actions.</con
 	<con-toe>
 		When this PP-Module is used to extend the NDcPP, the TOE type for the overall TOE is still a network device. The TOE boundary is simply extended to include ESC functionality that is provided by the network device.
 	 </con-toe>
+	 <con-sec-prob>
+		The threats defined by this PP-Module (see section 3.1) supplement those defined in the NDcPP as follows:
+	 </con-sec-prob>
+	 <con-obj/>
+	 <con-op-en>The objectives for the TOE’s operational environment are consistent with the NDcPP based on the
+following rationale: </con-op-en>
+
 	<man-sfrs>
     <section title="Security Audit (FAU)" id="man-fau">
 		<f-component name="Audit Data Generation (Call Detail Record)" cc-id="fau_gen.1" id="fpt-gen-ext-1-cdr" iteration="CDR">
