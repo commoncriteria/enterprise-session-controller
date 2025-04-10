@@ -524,7 +524,7 @@ needed to supplement what has already been captured in the Supporting Documents 
 included.</h:p>
 
       </sec-func-req-dir>
-      <modified-sfrs/>
+
       <additional-sfrs/>
       <con-toe>
      	When this PP-Module is used to extend the NDcPP, the TOE type for the overall TOE is still a network device. The TOE boundary is simply extended to include ESC functionality that is provided by the network device.
@@ -678,27 +678,16 @@ the generation of media recordings such as unobservability of user actions.</con
 	  <section title="Security Audit (FAU)" id="m-fau">
 
 
-			<f-component name="Audit Data Generation (Audit Log)" cc-id="fau_gen.1"  id="fau-gen-1-esc">FAU_GEN.1.1 is refined to include the following auditable events in addition to what is defined in the
-Base-PP.
+			<f-component name="Audit Data Generation (Audit Log)" cc-id="fau_gen.1"  id="fau-gen-1-esc">FAU_GEN.1.1 is refined to include the following auditable events in addition to what is defined in the Base-PP.
 		<note role='application'><h:i><h:p>The Base-PP version of the SFR requires “all administrative actions” to be audited.
-		When the TOE includes this PP-Module, it is expected that this will also include the
-		administrative actions that support the PP-Module defined in FMT_SMF.1/ESC.</h:p><h:p>FAU_VVR_EXT.2 is a selection-based requirement. Auditing for this requirement
-		must be performed if and only if the TOE claims it</h:p>
+		When the TOE includes this PP-Module, it is expected that this will also include the administrative actions that support the PP-Module defined in FMT_SMF.1/ESC.</h:p><h:p>FAU_VVR_EXT.2 is a selection-based requirement. Auditing for this requirement must be performed if and only if the TOE claims it</h:p>
 		</h:i></note>
-		<aactivity>The evaluator shall complete the EA for FAU_GEN.1 as described in the NDcPP SD for the auditable events
-defined above in addition to the applicable auditable events that are defined in the NDcPP. The evaluator
-shall also ensure that the administrative actions defined for this PP-Module are appropriately audited. </aactivity>
+		<aactivity>The evaluator shall complete the EA for FAU_GEN.1 as described in the NDcPP SD for the auditable events defined above in addition to the applicable auditable events that are defined in the NDcPP. The evaluator shall also ensure that the administrative actions defined for this PP-Module are appropriately audited. </aactivity>
 
 			</f-component>
-			<f-component name= "Protected Audit Trail Storage" cc-id="fau_stg.2" id="fau-stg-2-esc">This SFR is optional in the NDcPP but is mandated by this PP-Module because the ESC is expected to
-	maintain audit data internal to the TOE which must be protected from unauthorized access. 
-	<note role='application'><h:i>Both the “audit data” (FAU_GEN.1) and “system log” data (FAU_GEN.1/Log) are
-	expected to be protected from unauthorized access. This SFR applies to all data
-	related to the behavior of the TOE regardless of how it is categorized or where it
-	is stored.</h:i> </note>
-	<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to
-make its inclusion mandatory rather than optional, but there is no change to how the SFR is to be
-implemented.</aactivity></f-component>
+			<f-component name= "Protected Audit Trail Storage" cc-id="fau_stg.2" id="fau-stg-2-esc">This SFR is optional in the NDcPP but is mandated by this PP-Module because the ESC is expected to maintain audit data internal to the TOE which must be protected from unauthorized access. 
+	<note role='application'><h:i>Both the “audit data” (FAU_GEN.1) and “system log” data (FAU_GEN.1/Log) are expected to be protected from unauthorized access. This SFR applies to all data related to the behavior of the TOE regardless of how it is categorized or where it is stored.</h:i> </note>
+	<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to make its inclusion mandatory rather than optional, but there is no change to how the SFR is to be implemented.</aactivity></f-component>
 	</section>
 	<section title="Cryptographic Support (FCS)" id="m-fcs">
 			<f-component name="DTLS Server Support without Mutual Authentication" cc-id="fcs_dtlss_ext.1"  id="fcs-dtlss-ext-1">
@@ -708,79 +697,50 @@ implemented.</aactivity></f-component>
 					<selectable>select supported ciphersuites from List 1<h:b> in the NDcPP</h:b></selectable>
 					</selectables>and no other ciphersuites.
 				</title>
-				<note role='application'><h:i><h:p>This SFR is selection-based in the NDcPP and remains selection-based in this PPModule because DTLS may be used to secure transmitted media. In this case, it
-				must be claimed if ‘DTLS’ is selected in FTP_ITC.1.1/ESC in addition to the
-				applicable selection triggers in the Base-PP.</h:p>
-				<h:p>This SFR is also refined from its definition in the Base-PP by requiring the use of
-				DTLS 1.2 if this function is claimed.</h:p><h:p>When CPP_ND_V3.0E is the Base-PP, the element in Section 5.1.2.1 should be used, instead.</h:p>
+				<note role='application'><h:i><h:p>This SFR is selection-based in the NDcPP and remains selection-based in this PPModule because DTLS may be used to secure transmitted media. In this case, it must be claimed if ‘DTLS’ is selected in FTP_ITC.1.1/ESC in addition to the applicable selection triggers in the Base-PP.</h:p>
+				<h:p>This SFR is also refined from its definition in the Base-PP by requiring the use of DTLS 1.2 if this function is claimed.</h:p><h:p>When CPP_ND_V3.0E is the Base-PP, the element in Section 5.1.2.1 should be used, instead.</h:p>
 				</h:i>
 				</note>
 				<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD.</aactivity>
 				
 				</f-element>
 			</f-component>
-			<f-component name="DTLS Server Support for Mutual Authentication" cc-id="fcs_dtlss_ext.2"  id="fcs-dtlss-ext-2">This SFR is optional in the NDcPP but is selection-based in this PP-Module because any ESC use of DTLS
-			requires mutually-authenticated DTLS to be implemented. Therefore, this SFR must be claimed if ‘DTLS’ is
-			selected in FTP_ITC.1.1/ESC.
-			<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to
-			make its inclusion selection-based rather than optional, but there is no change to how the SFR is to be
-			implemented.
+			<f-component name="DTLS Server Support for Mutual Authentication" cc-id="fcs_dtlss_ext.2"  id="fcs-dtlss-ext-2">This SFR is optional in the NDcPP but is selection-based in this PP-Module because any ESC use of DTLS requires mutually-authenticated DTLS to be implemented. Therefore, this SFR must be claimed if ‘DTLS’ is selected in FTP_ITC.1.1/ESC.
+			<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to make its inclusion selection-based rather than optional, but there is no change to how the SFR is to be implemented.
 			</aactivity>
 			</f-component>
 			<f-component name="NTP Protocol" cc-id="fcs_ntp_ext.1" id="fcs-ntp-ext-1">
 			<f-element id='fcs-ntp-ext-1e1'>
 			<title>The TSF shall use only the following NTP version: NTP v4 (RFC 5905).</title>
 
-			<note role="application"><h:i><h:p>te: This SFR is selection-based in the Base-PP but is mandatory for a TOE that
-			conforms to this PP-Module because the refinement to FPT_STM_EXT.1 requires
-			this SFR to be claimed in all cases.</h:p><h:p></h:p>This SFR has been refined from the NDcPP to permit the NTP v4 selection only. No
-			other parts of the SFR are modified.</h:i></note>
-			<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to
-			make its inclusion selection-based rather than optional, but there is no change to how the SFR is to be
-			implemented.</aactivity>
+			<note role="application"><h:i><h:p>te: This SFR is selection-based in the Base-PP but is mandatory for a TOE that conforms to this PP-Module because the refinement to FPT_STM_EXT.1 requires this SFR to be claimed in all cases.</h:p><h:p></h:p>This SFR has been refined from the NDcPP to permit the NTP v4 selection only. No other parts of the SFR are modified.</h:i></note>
+			<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to make its inclusion selection-based rather than optional, but there is no change to how the SFR is to be implemented.</aactivity>
 			</f-element></f-component>
 			<f-component name="TLS Client Protocol without Mutual Authentication" cc-id="fcs_tlsc_ext.1" id="fcs-tlsc-ext-1">
 			<f-element id='fcs-tlsc-ext-1e1'>
-				<title>The TSF shall implement TLS 1.2 (RFC 5246) and reject all other TLS and SSL
-				versions. The TLS implementation will support the following ciphersuites:
+				<title>The TSF shall implement TLS 1.2 (RFC 5246) and reject all other TLS and SSL versions. The TLS implementation will support the following ciphersuites:
 				<selectables>
 					<selectable>select supported ciphersuites from List 1 <h:b>in the NDcPP</h:b></selectable>
 				</selectables> and no other ciphersuites.
-				<note role='application'><h:i>This SFR is selection-based in the NDcPP but is mandated by this PP-Module
-				because Transport Layer Security (TLS) is used to secure SIP and H.323
-				communications. Additionally, this PP-Module mandates the use of TLS 1.2. When CPP_ND_V3.0E is the Base-PP, the element in Section 5.1.2.1 should be used, instead.</h:i></note></title>
-				<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to
-				make its inclusion mandatory rather than conditional, but there is no change to how the SFR is to be
-				implemented.</aactivity>
+				<note role='application'><h:i>This SFR is selection-based in the NDcPP but is mandated by this PP-Module because Transport Layer Security (TLS) is used to secure SIP and H.323 communications. Additionally, this PP-Module mandates the use of TLS 1.2. When CPP_ND_V3.0E is the Base-PP, the element in Section 5.1.2.1 should be used, instead.</h:i></note></title>
+				<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to make its inclusion mandatory rather than conditional, but there is no change to how the SFR is to be implemented.</aactivity>
 				</f-element></f-component>
-			<f-component name="TLS Client Protocol Mutual Authentication" cc-id="fcs_tlsc_ext.2" id="fcs-tlsc-ext-2">This SFR is optional in the NDcPP but is mandated by this PP-Module because SIP and H.323
-			communications require mutually-authenticated TLS.
-				<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to
-				make its inclusion mandatory rather than optional, but there is no change to how the SFR is to be
-				implemented.</aactivity>
+			<f-component name="TLS Client Protocol Mutual Authentication" cc-id="fcs_tlsc_ext.2" id="fcs-tlsc-ext-2">This SFR is optional in the NDcPP but is mandated by this PP-Module because SIP and H.323 communications require mutually-authenticated TLS.
+				<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to make its inclusion mandatory rather than optional, but there is no change to how the SFR is to be implemented.</aactivity>
 				</f-component>
 
 
 				<f-component name="TLS Server Protocol without Mutual Authentication" cc-id="fcs_tlss_ext.1" id="fcs-tlss-ext-1">
 				<f-element id='fcs-tlss-ext-1e1'>
-				<title>The TSF shall implement TLS 1.2 (RFC 5246) and reject all other TLS and SSL
-				versions. The TLS implementation will support the following ciphersuites: <selectables>
-				<selectable>select supported ciphersuites from List 1 <h:b>in the NDcPP</h:b></selectable></selectables> and no other
-				ciphersuites.</title>
-				<note role='application'><h:i>This SFR is selection-based in the NDcPP but is mandated by this PP-Module
-				because TLS is used to secure SIP and H.323 communications. Additionally, this
-				PP-Module mandates the use of TLS 1.2. When CPP_ND_V3.0E is the Base-PP, the element in Section 5.1.2.1 should be used, instead.</h:i></note>
-				<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to
-				make its inclusion mandatory rather than conditional, but there is no change to how the SFR is to be
-				implemented.</aactivity>
+				<title>The TSF shall implement TLS 1.2 (RFC 5246) and reject all other TLS and SSL versions. The TLS implementation will support the following ciphersuites: <selectables>
+				<selectable>select supported ciphersuites from List 1 <h:b>in the NDcPP</h:b></selectable></selectables> and no other ciphersuites.</title>
+				<note role='application'><h:i>This SFR is selection-based in the NDcPP but is mandated by this PP-Module mandates the use of TLS 1.2. When CPP_ND_V3.0E is the Base-PP, the element in Section 5.1.2.1 should be used, instead.</h:i></note>
+				<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to make its inclusion mandatory rather than conditional, but there is no change to how the SFR is to be implemented.</aactivity>
 				</f-element></f-component>
 
 			<f-component name="TLS Server Protocol  Mutual Authentication" cc-id="fcs_tlss_ext.2" id="fcs-tlss-ext-2">
-
-			This SFR is optional in the NDcPP but is mandated by this PP-Module because SIP and H.323 communications require mutually-authenticated TLS.
-			<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to
-make its inclusion mandatory rather than optional, but there is no change to how the SFR is to be
-implemented.</aactivity>
+ 			This SFR is optional in the NDcPP but is mandated by this PP-Module because SIP and H.323 communications require mutually-authenticated TLS.
+			<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to make its inclusion mandatory rather than optional, but there is no change to how the SFR is to be implemented.</aactivity>
 			</f-component>
 			</section>
 			<section title='Identification and Authentication (FIA)' id='m-fia'>
@@ -820,28 +780,20 @@ implemented.</aactivity>
 			</f-component>
 			<f-component name="X.509 Certificate Authentication" cc-id='fia_x509_ext.2' id='fia-x509-ext-2' >
 			<f-element id='fia-x509-ext-2e1'>
-				<title>The TSF shall use X.509v3 certificates as defined by RFC 5280 to support
-authentication for <h:b>TLS,</h:b> <selectables>
+				<title>The TSF shall use X.509v3 certificates as defined by RFC 5280 to support authentication for <h:b>TLS,</h:b> <selectables>
 			<selectable>DTLS</selectable>
 			<selectable>HTTPS</selectable>
 			<selectable>IPsec</selectable>
 			<selectable>SSH</selectable>
-			<selectable>no other protocols</selectable></selectables>, <h:b>VVoIP endpoint registration,</h:b> and  <selectables><selectable>code signing for system software
-updates</selectable>
+			<selectable>no other protocols</selectable></selectables>, <h:b>VVoIP endpoint registration,</h:b> and  <selectables><selectable>code signing for system software updates</selectable>
 			<selectable><assignable>other uses</assignable></selectable>
 			<selectable>no additional</selectable></selectables>
 			</title>
 			<note role='application'>
-			<h:i>The NDcPP requires the ST author to select the protocol(s) that certificate
-			authentication is used for. This element has been modified from its definition in
-			the Base-PP by mandating support for TLS because FCS_TLSC_EXT.1 and
-			FCS_TLSS_EXT.2 are mandatory SFRs for a TOE that conforms to this PP-Module.
-			Additional protocols may or may not be selected depending on the other
-			functionality provided by the TSF</h:i></note>
+			<h:i>The NDcPP requires the ST author to select the protocol(s) that certificate authentication is used for. This element has been modified from its definition in the Base-PP by mandating support for TLS because FCS_TLSC_EXT.1 and FCS_TLSS_EXT.2 are mandatory SFRs for a TOE that conforms to this PP-Module. Additional protocols may or may not be selected depending on the other functionality provided by the TSF</h:i></note>
 			</f-element>
 			<f-element id='fia-x509-ext-2e2'>
-			<title>When the TSF cannot establish a connection to determine the validity of a
-			certificate, the TSF shall <selectables>
+			<title>When the TSF cannot establish a connection to determine the validity of a certificate, the TSF shall <selectables>
 			<selectable>allow the administrator to choose whether to
 			accept the certificate in these cases</selectable>
 			<selectable>accept the certificate</selectable>
@@ -854,8 +806,7 @@ updates</selectable>
 			
 			</f-component>
 			<f-component name="X.509 Certificate Requests" cc-id='fia_x509_ext.3' id='fia-x509-ext-3'>
-			This SFR is selection-based in the NDcPP but is mandated by this PP-Module because an ESC must
-			implement security functions that require it to be issued its own X.509 certificate.
+			This SFR is selection-based in the NDcPP but is mandated by this PP-Module because an ESC must implement security functions that require it to be issued its own X.509 certificate.
 			<aactivity>No additional EAs are specified for this SFR beyond what is defined in the NDcPP SD.</aactivity>
 			</f-component>
 			</section>
@@ -889,10 +840,8 @@ updates</selectable>
 		<f-element id='fau-gen-1e2-cdr'>
 		<title>The TSF shall record within each <h:b>CDR</h:b> at least the following information: 
 		<h:ol type='a'>
-		<h:li><h:s>Date and time of the auditable event, type of event, subject identity (if applicable), and the
-outcome (success or failure) of the event;</h:s></h:li>
-<h:li>
-For each auditable event type, based on the auditable event definitions of the functional
+		<h:li><h:s>Date and time of the auditable event, type of event, subject identity (if applicable), and the outcome (success or failure) of the event;</h:s></h:li>
+<h:li>For each auditable event type, based on the auditable event definitions of the functional
 components included in the PP, PP-Module, functional package or ST, [</h:li></h:ol>
 		<h:b><h:i><h:lu>
 			<h:li>calling party number (i.e. call originator)</h:li>
@@ -913,21 +862,12 @@ components included in the PP, PP-Module, functional package or ST, [</h:li></h:
 
 		
 		</title>
-		<note role='application'><h:i>The TOE should be uniquely identified as part of the CDR so that there is
-		attribution of individual CDRs in environments where multiple ESCs are feeding
-		CDRs to a centralized server.</h:i></note>
+		<note role='application'><h:i>The TOE should be uniquely identified as part of the CDR so that there is attribution of individual CDRs in environments where multiple ESCs are feeding CDRs to a centralized server.</h:i></note>
 		<aactivity>
 			<TSS>The evaluator shall examine the TSS to ensure it describes the format of the Call Detail Records (CDRs) generated by the TOE in sufficient detail to demonstrate that the requirement is satisfied.</TSS>
-			<Guidance>The evaluator shall examine the guidance documentation to determine that it describes the format of
-			CDRs in sufficient detail for the reader to understand their contents and any configuration actions that
-			are required in order for the CDRs to include the data that is mandated by this PP-Module.</Guidance>
+			<Guidance>The evaluator shall examine the guidance documentation to determine that it describes the format of CDRs in sufficient detail for the reader to understand their contents and any configuration actions that are required in order for the CDRs to include the data that is mandated by this PP-Module.</Guidance>
 			<Tests><h:p>Note that these test activities may be performed in conjunction with other tests. 
-			</h:p><h:p>The evaluator shall deploy the TOE in an environment where it can be used to establish calls for a
-			supported signaling protocol (i.e. Session Initiation Protocol (SIP), H.323). The evaluator shall place a call
-			between two VVoIP endpoints, allow it to remain connected for three minutes, and then hang up. The
-			evaluator shall then verify that the TOE generated CDRs for this call that contain all necessary information
-			in the format specified by the operational guidance and that this information is accurate. The evaluator
-			shall then place a second call where the call is transferred to a third VVoIP endpoint prior to termination.</h:p><h:p>The evaluator shall repeat this testing for each type of signaling protocol supported by the TOE.</h:p></Tests>
+			</h:p><h:p>The evaluator shall deploy the TOE in an environment where it can be used to establish calls for a supported signaling protocol (i.e. Session Initiation Protocol (SIP), H.323). The evaluator shall place a call between two VVoIP endpoints, allow it to remain connected for three minutes, and then hang up. The evaluator shall then verify that the TOE generated CDRs for this call that contain all necessary information in the format specified by the operational guidance and that this information is accurate. The evaluator shall then place a second call where the call is transferred to a third VVoIP endpoint prior to termination.</h:p><h:p>The evaluator shall repeat this testing for each type of signaling protocol supported by the TOE.</h:p></Tests>
 		</aactivity>
 		</f-element>
 		<audit-event/>
@@ -950,8 +890,7 @@ components included in the PP, PP-Module, functional package or ST, [</h:li></h:
 		The TSF shall record within <h:b>each system log</h:b> data at least the following information:
 		<h:ol>
 		<h:li>Date and time of the auditable event, type of event, subject identity (if applicable), and the outcome (success or failure) of the event;</h:li>
-		<h:li>For each auditable event type, based on the auditable event definitions of the functional
-components included in the PP, PP-Module, functional package or ST, [<h:i>event details described in System Log Events table</h:i>].</h:li>
+		<h:li>For each auditable event type, based on the auditable event definitions of the functional components included in the PP, PP-Module, functional package or ST, [<h:i>event details described in System Log Events table</h:i>].</h:li>
 		</h:ol>
 		
     <h:head><title><h:b><ctr ctr-type="Table" pre="Table " id="atref-mandatory">: System Log Events</ctr></h:b></title></h:head>
@@ -989,55 +928,23 @@ components included in the PP, PP-Module, functional package or ST, [<h:i>event 
 		</h:table>
 
 </title>
-<note role='application'><h:i><h:p>Unlike audit data (see FAU_GEN.1), system log data is used primarily for real-time
-analysis of system behavior. This data is expected to be treated as non-persistent
-data by the TOE.</h:p>
-<h:p>The ST author is expected to identify the sampling interval for the information
-presented in the system log so that it is clear to the evaluator how often updates
-to that information will be presented to an administrator</h:p><h:p>Logging of power status is optional and is only intended for TOEs that have
-multiple redundant power supplies. Logging of fan status is also optional.</h:p></h:i></note>
+<note role='application'><h:i><h:p>Unlike audit data (see FAU_GEN.1), system log data is used primarily for real-time analysis of system behavior. This data is expected to be treated as non-persistent data by the TOE.</h:p>
+<h:p>The ST author is expected to identify the sampling interval for the information presented in the system log so that it is clear to the evaluator how often updates to that information will be presented to an administrator</h:p><h:p>Logging of power status is optional and is only intended for TOEs that have multiple redundant power supplies. Logging of fan status is also optional.</h:p></h:i></note>
 <aactivity>
-<TSS>The evaluator shall examine the TSS to ensure that and ensure that it mentions the system log and
-describes how the log is presented. Each type of entry in the system log shall be listed along with a brief
-description of each content field and what the sampling interval for the data is. The evaluator shall also
-check to make sure that every log type mandated by the PP-Module is described and that the description
-of the content fields contains the information required in FAU_GEN.1.2/Log.</TSS>
-<Guidance>The evaluator shall check the guidance documentation and ensure any configuration necessary to ensure
-the TOE generates the required system log is included. The evaluator shall also check that each required
-system log item is described in the guidance documentation along with each required content field.</Guidance>
+<TSS>The evaluator shall examine the TSS to ensure that and ensure that it mentions the system log and describes how the log is presented. Each type of entry in the system log shall be listed along with a brief description of each content field and what the sampling interval for the data is. The evaluator shall also check to make sure that every log type mandated by the PP-Module is described and that the description of the content fields contains the information required in FAU_GEN.1.2/Log.</TSS>
+<Guidance>The evaluator shall check the guidance documentation and ensure any configuration necessary to ensure the TOE generates the required system log is included. The evaluator shall also check that each required system log item is described in the guidance documentation along with each required content field.</Guidance>
 <Tests>The evaluator shall perform the following tests: 
 	<testlist>
-		<test id='fau-log-current-ip-connection'>(current IP connections): First, confirm TOE is connected via IP by pinging it from a remote device.
-		Once IP is confirmed connected, take down IP connection either by physically disconnecting network cable
-		from the TOE’s NIC; or as TOE Administrator, issue command to logically take down IP connection. Peruse
-		system logs to confirm IP connection is down. After confirming IP connection as down, reconnect IP or
-		logically bring up IP connection and confirm IP status as up. Repeat for each physical network interface of
-		the TOE.</test>
-		<test id="fau-log-cpu-usage">(CPU usage): The evaluator shall use the TOE and monitor the CPU usage status over a period of 10
-		minutes and observe that fluctuations in CPU usage are reported. It is not necessary to verify that this
-		information is accurate at a low level but the evaluator is expected to justify at a high level why these
-		fluctuations are occurring (e.g. CPU usage spikes while the TOE is establishing a call).
+		<test id='fau-log-current-ip-connection'>(current IP connections): First, confirm TOE is connected via IP by pinging it from a remote device. Once IP is confirmed connected, take down IP connection either by physically disconnecting network cable from the TOE’s NIC; or as TOE Administrator, issue command to logically take down IP connection. Peruse system logs to confirm IP connection is down. After confirming IP connection as down, reconnect IP or logically bring up IP connection and confirm IP status as up. Repeat for each physical network interface of the TOE.</test>
+		<test id="fau-log-cpu-usage">(CPU usage): The evaluator shall use the TOE and monitor the CPU usage status over a period of 10 minutes and observe that fluctuations in CPU usage are reported. It is not necessary to verify that this information is accurate at a low level but the evaluator is expected to justify at a high level why these fluctuations are occurring (e.g. CPU usage spikes while the TOE is establishing a call).
 		</test>
-		<test id="fau-log-memory-usage">(memory usage): The evaluator shall use the TOE and monitor the memory usage status over a
-		period of 10 minutes and observe that fluctuations in memory usage are reported. It is not necessary to
-		verify that this information is accurate at a low level but the evaluator is expected to justify at a high level
-		why these fluctuations are occurring (e.g. memory usage spikes while the TOE is establishing a call or
-		downloading an update).</test>
-		<test id="fau-log-disk-and-file-storage-capacity">(disk and file storage capacity): The evaluator shall use the TOE and monitor the disk capacity status
-		over a period of 10 minutes and observe that fluctuations in storage capacity are reported. It is not
-		necessary to verify that this information is accurate at a low level but the evaluator is expected to justify
-		at a high level why these changes are occurring (e.g. the evaluator transfers a file with a known file size to
+		<test id="fau-log-memory-usage">(memory usage): The evaluator shall use the TOE and monitor the memory usage status over a period of 10 minutes and observe that fluctuations in memory usage are reported. It is not necessary to verify that this information is accurate at a low level but the evaluator is expected to justify at a high level why these fluctuations are occurring (e.g. memory usage spikes while the TOE is establishing a call or downloading an update).</test>
+		<test id="fau-log-disk-and-file-storage-capacity">(disk and file storage capacity): The evaluator shall use the TOE and monitor the disk capacity status over a period of 10 minutes and observe that fluctuations in storage capacity are reported. It is not necessary to verify that this information is accurate at a low level but the evaluator is expected to justify at a high level why these changes are occurring (e.g. the evaluator transfers a file with a known file size to
 		a disk partition and observes that the available space decreased by a corresponding amount).</test>
-		<test id="fau-log-fan-status">(fan status) (conditional): First, confirm fan is working as designed. Once fan is confirmed
-		functioning properly, disconnect fan to shut it down. Peruse system logs to confirm fan has been reported
-		as down. After confirming fan as down, reconnect fan and confirm fan as up. Repeat this process for each
-		fan that is monitored by the TSF.</test>
+		<test id="fau-log-fan-status">(fan status) (conditional): First, confirm fan is working as designed. Once fan is confirmed functioning properly, disconnect fan to shut it down. Peruse system logs to confirm fan has been reported as down. After confirming fan as down, reconnect fan and confirm fan as up. Repeat this process for each fan that is monitored by the TSF.</test>
 		<test id="fau-log-power-status">(power status): <testlist>
-			<test id="fau-log-power-status-redundant"> (conditional): If TOE employs redundant power supplies (PS), then test may be a simple matter of
-			cycling one PS while leaving other power units untouched. Reset one PS while allowing the other(s) to
-			remain up. Peruse system log and verify message indicating PS cycled (went down &amp; up).</test>
-			<test id="fau-log-power-status-single">(conditional): If TOE is supported by a single PS, than test has to be verified by waiting for system
-			log to provide power status on periodic intervals. If system log does not report power status, then PS test
+			<test id="fau-log-power-status-redundant"> (conditional): If TOE employs redundant power supplies (PS), then test may be a simple matter of cycling one PS while leaving other power units untouched. Reset one PS while allowing the other(s) to remain up. Peruse system log and verify message indicating PS cycled (went down &amp; up).</test>
+			<test id="fau-log-power-status-single">(conditional): If TOE is supported by a single PS, than test has to be verified by waiting for system log to provide power status on periodic intervals. If system log does not report power status, then PS test
 			failed.</test>
 		</testlist></test>
 		</testlist></Tests>
@@ -1056,14 +963,7 @@ system log item is described in the guidance documentation along with each requi
 		<aactivity>
 			<TSS>There are no TSS EAs for this SFR.</TSS>
 			<Guidance>There are no guidance EAs for this SFR.</Guidance>
-			<Tests>For each system log event described in FAU_GEN.1.1/Log, the evaluator shall review the system log to
-			observe that they are displayed in real time. For those system log events that are periodic or persistent
-			status messages, the evaluator shall observe that they are shown in the system log at the proper time.
-			For those events that are triggered by a certain event, the evaluator shall cause that event to occur and
-			ensure that it is logged. For example, the evaluator shall verify that the TOE logs data link connection
-			status by unplugging and reconnecting the TOE’s Ethernet connection and verifying that an appropriate
-			log was generated for both. In all cases, the evaluator shall verify that the contents and formatting of the
-			log data are consistent with what is defined in FAU_GEN.1.2/Log.
+			<Tests>For each system log event described in FAU_GEN.1.1/Log, the evaluator shall review the system log to observe that they are displayed in real time. For those system log events that are periodic or persistent status messages, the evaluator shall observe that they are shown in the system log at the proper time. For those events that are triggered by a certain event, the evaluator shall cause that event to occur and ensure that it is logged. For example, the evaluator shall verify that the TOE logs data link connection status by unplugging and reconnecting the TOE’s Ethernet connection and verifying that an appropriate log was generated for both. In all cases, the evaluator shall verify that the contents and formatting of the log data are consistent with what is defined in FAU_GEN.1.2/Log.
 			</Tests>
 		</aactivity>
 		</f-element>
@@ -1075,20 +975,11 @@ system log item is described in the guidance documentation along with each requi
 		<title>The TSF shall protect the stored <h:b>call detail records</h:b> from unauthorized <h:b>disclosure and</h:b> deletion.</title>
 		</f-element>
 		<f-element id='fau-stg-2e2-cdr'>
-		<title>The TSF shall be able to [<h:i>prevent</h:i>] unauthorized modifications to the stored <h:b>call
-detail records</h:b>.</title>
+		<title>The TSF shall be able to [<h:i>prevent</h:i>] unauthorized modifications to the stored <h:b>call detail records</h:b>.</title>
 		<aactivity>
-		<TSS>The evaluator shall examine the TSS to ensure it describes how CDRs are protected against unauthorized
-		modification or deletion. The evaluator shall also examine the TSS to ensure it describes any
-		administrative access controls placed on CDR modification (e.g., Administrator Type 1 can modify/delete
-		CDRs while Administrator Type 2 cannot modify/delete CDRs).</TSS>
-		<Guidance>The evaluator shall examine the guidance documentation to determine that it describes any configuration
-		required for protection of the locally stored CDRs against unauthorized modification. The evaluator shall
-		also examine the documentation to ensure that any administrative access controls and configuration of
-		the access controls on CDR access are described.</Guidance>
-		<Tests><h:p>The evaluator shall log in to the TOE as a Security Administrator and verify that authorized administrators
-		are able to view stored CDRs but have no ability to modify them.</h:p><h:p>If an administrator access control restricts a user associated with the Security Administrator role from accessing CDR data, the evaluator shall then log in to the TOE as the user that lacks privilege to interact
-		with CDRs and observe that there is no way for that user to access the CDR data.</h:p></Tests>
+		<TSS>The evaluator shall examine the TSS to ensure it describes how CDRs are protected against unauthorized modification or deletion. The evaluator shall also examine the TSS to ensure it describes any administrative access controls placed on CDR modification (e.g., Administrator Type 1 can modify/delete CDRs while Administrator Type 2 cannot modify/delete CDRs).</TSS>
+		<Guidance>The evaluator shall examine the guidance documentation to determine that it describes any configuration required for protection of the locally stored CDRs against unauthorized modification. The evaluator shall also examine the documentation to ensure that any administrative access controls and configuration of the access controls on CDR access are described.</Guidance>
+		<Tests><h:p>The evaluator shall log in to the TOE as a Security Administrator and verify that authorized administrators are able to view stored CDRs but have no ability to modify them.</h:p><h:p>If an administrator access control restricts a user associated with the Security Administrator role from accessing CDR data, the evaluator shall then log in to the TOE as the user that lacks privilege to interact with CDRs and observe that there is no way for that user to access the CDR data.</h:p></Tests>
 		</aactivity>
 		</f-element>
 		<audit-event />
@@ -1110,9 +1001,7 @@ detail records</h:b>.</title>
 		<selectable>not have</selectable>
 		</selectables> the capability to record voice and video
 call data.</title>
-		<note role='application'><h:i>If "have" is selected, both FAU_STG.2/VVR and FAU_VVR_EXT.2 must be claimed
-		and “Ability to enable/disable voice and video recordings for any registered VVoIP
-		endpoint” must be selected in FMT_SMF.1.1/ESC.
+		<note role='application'><h:i>If "have" is selected, both FAU_STG.2/VVR and FAU_VVR_EXT.2 must be claimed and “Ability to enable/disable voice and video recordings for any registered VVoIP endpoint” must be selected in FMT_SMF.1.1/ESC.
 		</h:i></note>
 		<aactivity>
 		<TSS>The evaluator shall examine the TSS to verify that it describes if the TSF has or does not have the capability to record voice and video call data.</TSS>
@@ -1142,94 +1031,43 @@ call data.</title>
 		</title>
 		</f-element>
 		<f-element id='fdp-iff-1e2'>
-		<title>The TSF shall permit an information flow between a controlled subject and controlled information via a controlled operation if the following rules hold: [<h:i>when valid communication through the TOE is attempted, the TSF will establish
-		a connection between itself and the caller; the TSF will establish a second
-		connection between itself and the callee; and the TSF will redirect all
-		communications that it receives between the two endpoints out through the
-		proper connection</h:i>].</title>
+		<title>The TSF shall permit an information flow between a controlled subject and controlled information via a controlled operation if the following rules hold: [<h:i>when valid communication through the TOE is attempted, the TSF will establish a connection between itself and the caller; the TSF will establish a second connection between itself and the callee; and the TSF will redirect all communications that it receives between the two endpoints out through the proper connection</h:i>].</title>
 		</f-element>
 		<f-element id='fdp-iff-1e3'>
 		<title>The TSF shall enforce the [<h:i>additional information flow control SFP rules: no additional rules</h:i>].</title>
 		</f-element>
 		<f-element id='fdp-iff-1e4'>
 		<title>The TSF shall explicitly authorize an information flow based on the following rules: <assignable>rules, based on security attributes, that explicitly authorize information flows</assignable>.</title>
-		<note role='application'><h:i>The expectation of this element is that the ST author define any explicit allowlist
-		behavior that overrides the normal information flow handling to automatically
-		open a communications channel through the TOE. It is acceptable to complete the
-		assignment with “no additional rules” if there are no exceptions to the behavior
-		defined in FDP_IFF.1.2 and 1.3.</h:i></note>
+		<note role='application'><h:i>The expectation of this element is that the ST author define any explicit allowlist behavior that overrides the normal information flow handling to automatically open a communications channel through the TOE. It is acceptable to complete the assignment with “no additional  rules” if there are no exceptions to the behavior defined in FDP_IFF.1.2 and 1.3.</h:i></note>
 		</f-element>
 		<f-element id='fdp-iff-1e5'>
 		<title>The TSF shall explicitly deny an information flow based on the following rules: <assignable>rules, based on security attributes, that explicitly deny information flows</assignable></title>
-		<note role="application"><h:i>The expectation of this element is that the ST author define any explicit denylist
-		behavior that overrides the normal information flow handling to automatically
-		block a communications channel through the TOE. It is acceptable to complete the
-		assignment with “no additional rules” if there are no exceptions to the behavior
-		defined in FDP_IFF.1.2 and 1.3.</h:i></note>
+		<note role="application"><h:i>The expectation of this element is that the ST author define any explicit denylist behavior that overrides the normal information flow handling to automatically block a communications channel through the TOE. It is acceptable to complete the assignment with “no additional rules” if there are no exceptions to the behavior defined in FDP_IFF.1.2 and 1.3.</h:i></note>
 		<aactivity>
-		<TSS>The evaluator shall examine the TSS to verify that it describes the call control protocol(s) used by the TOE
-		and the circumstances under which the TSF will transmit streaming media data. The evaluator shall verify
-		that the TSF does not transmit any streaming media in circumstances where a VVoIP endpoint operator
-		would not reasonably expect it to do so and whether there are any explicit overrides to the policy.</TSS>
-		<Guidance>If any aspects of the TOE’s call control functionality are configurable (such as the specific call control
-		protocol used or the circumstances in which the TSF will or will not transmit streaming media data), the
-		evaluator shall examine the operational guidance to verify that instructions for configuring this behavior
-		are provided.</Guidance>
+		<TSS>The evaluator shall examine the TSS to verify that it describes the call control protocol(s) used by the TOE and the circumstances under which the TSF will transmit streaming media data. The evaluator shall verify that the TSF does not transmit any streaming media in circumstances where a VVoIP endpoint operator would not reasonably expect it to do so and whether there are any explicit overrides to the policy.</TSS>
+		<Guidance>If any aspects of the TOE’s call control functionality are configurable (such as the specific call control protocol used or the circumstances in which the TSF will or will not transmit streaming media data), the evaluator shall examine the operational guidance to verify that instructions for configuring this behavior are provided.</Guidance>
 		<Tests>
-		<h:p>The evaluator shall perform one or more of the following tests depending on the protocols that the TOE
-		claims to support. For each test performed, the evaluator shall conduct the test for each supported
-		environment (IPv4 and/or IPv6).</h:p>
+		<h:p>The evaluator shall perform one or more of the following tests depending on the protocols that the TOE claims to support. For each test performed, the evaluator shall conduct the test for each supported environment (IPv4 and/or IPv6).</h:p>
 		<h:p><h:b>If the TSF supports SIP:</h:b></h:p>
-		<h:p>The evaluator shall set up a test environment where two SIP clients are registered to the TOE and the TSF
-		is configured to allow call signals to capture through it. The evaluator shall use a packet sniffer to capture
-		call-signaling packets traversing the TOE. The evaluator shall place a call from one SIP client to the other
-		and observe via packet capture that two separate SIP connections are established: one from the caller to
-		the TOE and the other from the TOE to the callee.</h:p>
+		<h:p>The evaluator shall set up a test environment where two SIP clients are registered to the TOE and the TSF is configured to allow call signals to capture through it. The evaluator shall use a packet sniffer to capture call-signaling packets traversing the TOE. The evaluator shall place a call from one SIP client to the other and observe via packet capture that two separate SIP connections are established: one from the caller to the TOE and the other from the TOE to the callee.</h:p>
 		<h:p><h:b>If the TSF supports H.323:</h:b></h:p>
-		<h:p>The evaluator shall set up a test environment where two H.323 clients are registered to the TOE and the
-		TSF is configured to allow call signals to capture through it. The evaluator shall use a packet sniffer to
-		capture call-signaling packets traversing the TOE. The evaluator shall place a call from one H.323 client to
-		the other and observe via packet capture that two separate H.323 connections are established: one from
-		the caller to the TOE and the other from the TOE to the callee.</h:p>
+		<h:p>The evaluator shall set up a test environment where two H.323 clients are registered to the TOE and the TSF is configured to allow call signals to capture through it. The evaluator shall use a packet sniffer to capture call-signaling packets traversing the TOE. The evaluator shall place a call from one H.323 client to the other and observe via packet capture that two separate H.323 connections are established: one from the caller to the TOE and the other from the TOE to the callee.</h:p>
 		<h:p><h:b>If the TSF supports SS7:</h:b></h:p>
-		<h:p>Unlike H.323 &amp; SIP which are call-setup and teardown protocols primarily used to process calls between
-		local VVoIP endpoints that are registered to the ESC, the SS7 protocol focuses on setup and teardown of
-		calls over the legacy Public Switch Telephone Network (PSTN). Therefore, when assessing the SS7 protocol, the evaluator will need to configure the TOE to make a call from a local VVoIP endpoint through
-		its SS7 interface to a remote endpoint.</h:p><h:p>The evaluator shall set up a test environment where a single VVoIP endpoint is registered to the TOE
-		(through H.323 or SIP) and the TSF is configured to allow call signals through it. The evaluator shall use a
-		packet sniffer to capture call-signaling packets traversing the TOE. The evaluator shall place a call from
-		the locally registered VVoIP endpoint to a remote endpoint that requires the use of the TOE’s SS7
-		extension. The evaluator shall observe and capture SS7 signaling messages transiting through the TOE to
-		both the local client and remote SS7-based endpoint. The evaluator shall verify that the TOE successfully
-		sets up, processes, and tears down call between local VVoIP endpoint and external telephony device
-		requiring SS7 signaling for connectivity. The evaluator shall also verify that the TOE transmits and receives
-		the SS7 signaling messages IAM, ACM, and ANM to set up a call and RLC to tear down a call. The evaluator
+		<h:p>Unlike H.323 &amp; SIP which are call-setup and teardown protocols primarily used to process calls between local VVoIP endpoints that are registered to the ESC, the SS7 protocol focuses on setup and teardown of calls over the legacy Public Switch Telephone Network (PSTN). Therefore, when assessing the SS7 protocol, the evaluator will need to configure the TOE to make a call from a local VVoIP endpoint through its SS7 interface to a remote endpoint.</h:p>
+		<h:p>The evaluator shall set up a test environment where a single VVoIP endpoint is registered to the TOE (through H.323 or SIP) and the TSF is configured to allow call signals through it. The evaluator shall use a packet sniffer to capture call-signaling packets traversing the TOE. The evaluator shall place a call from the locally registered VVoIP endpoint to a remote endpoint that requires the use of the TOE’s SS7 extension. The evaluator shall observe and capture SS7 signaling messages transiting through the TOE to both the local client and remote SS7-based endpoint. The evaluator shall verify that the TOE successfully sets up, processes, and tears down call between local VVoIP endpoint and external telephony device requiring SS7 signaling for connectivity. The evaluator shall also verify that the TOE transmits and receives the SS7 signaling messages IAM, ACM, and ANM to set up a call and RLC to tear down a call. The evaluator
 		shall verify that SS7 call processing is employed by verifying that a two-way conversation can occur over
-		the connected call.</h:p><h:p>If the TSF supports both H.323 and SIP, the evaluator shall repeat this test for the VVoIP endpoint
+		the connected call.</h:p>
+		<h:p>If the TSF supports both H.323 and SIP, the evaluator shall repeat this test for the VVoIP endpoint
 		registration method not chosen during the first iteration of the test</h:p>
-		<h:p><h:b>If the TSF supports MGCP:</h:b></h:p><h:p>Unlike H.323 &amp; SIP which are call-setup and teardown protocols primarily used to process calls between
-		local VVoIP-clients that are registered to the ESC, the MGCP protocol focuses on the control of Media
-		Gateways (MG) which set up voice calls between VVoIP networks and the PSTN. The TSF employs MGCP
-		to control MGs that provision VVoIP calls for external connection to the PSTN and from the PSTN to the
-		local VVoIP network. Therefore, when assessing the SS7 protocol, the evaluator will need to configure the
-		TOE to make a call from a local VVoIP-client through its MGCP interface (i.e. MGC/Call Agent) to a remote
-		endpoint.</h:p><h:p>The evaluator shall set up a test environment where a single VVoIP endpoint is registered to the TOE
-		(through H.323 or SIP) and the TSF is configured to allow call signals through it. The evaluator shall use a
-		packet sniffer to capture call-signaling packets traversing the TOE. The evaluator shall place a call from
-		the locally registered VVoIP endpoint to a remote endpoint that requires the use of the TOE’s MGCP
-		extension for PSTN connection. The evaluator shall observe and capture MGCP signaling messages
-		transiting the TOE to/from the local VVoIP endpoint and out to remote MGCP/PSTN endpoint. The
-		evaluator shall verify that the TOE successfully sets up, processes, and tears down the call between the
-		local VVoIP endpoint and external telephony device requiring MGC/PSTN signaling for connectivity. The
-		evaluator shall also verify that the TOE transmits and receives the MGCP signaling messages NTFY, CRCX,
-		and MDCX to set up a call and DLCX to tear down a call. The evaluator shall verify that MGCP call processing
-		is employed by verifying that a two-way conversation can occur over the connected call.</h:p><h:p>If the TSF supports both H.323 and SIP, the evaluator shall repeat this test for the VVoIP endpoint
-		registration method not chosen during the first iteration of the test.
+		<h:p><h:b>If the TSF supports MGCP:</h:b></h:p>
+		<h:p>Unlike H.323 &amp; SIP which are call-setup and teardown protocols primarily used to process calls between local VVoIP-clients that are registered to the ESC, the MGCP protocol focuses on the control of Media Gateways (MG) which set up voice calls between VVoIP networks and the PSTN. The TSF employs MGCP to control MGs that provision VVoIP calls for external connection to the PSTN and from the PSTN to the local VVoIP network. Therefore, when assessing the SS7 protocol, the evaluator will need to configure the TOE to make a call from a local VVoIP-client through its MGCP interface (i.e. MGC/Call Agent) to a remote endpoint.</h:p>
+		<h:p>The evaluator shall set up a test environment where a single VVoIP endpoint is registered to the TOE (through H.323 or SIP) and the TSF is configured to allow call signals through it. The evaluator shall use a packet sniffer to capture call-signaling packets traversing the TOE. The evaluator shall place a call from the locally registered VVoIP endpoint to a remote endpoint that requires the use of the TOE’s MGCP extension for PSTN connection. The evaluator shall observe and capture MGCP signaling messages transiting the TOE to/from the local VVoIP endpoint and out to remote MGCP/PSTN endpoint. The evaluator shall verify that the TOE successfully sets up, processes, and tears down the call between the local VVoIP endpoint and external telephony device requiring MGC/PSTN signaling for connectivity. The evaluator shall also verify that the TOE transmits and receives the MGCP signaling messages NTFY, CRCX, and MDCX to set up a call and DLCX to tear down a call. The evaluator shall verify that MGCP call processing is employed by verifying that a two-way conversation can occur over the connected call.</h:p>
+		<h:p>If the TSF supports both H.323 and SIP, the evaluator shall repeat this test for the VVoIP endpoint registration method not chosen during the first iteration of the test.
 		</h:p>
 		</Tests>
 		</aactivity>
 		</f-element>
-		<audit-event />
+		<audit-event/>
 		</f-component>
 
 
