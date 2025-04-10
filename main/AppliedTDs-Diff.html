@@ -529,7 +529,30 @@
         </div>
         <div class="comp" id="@id">
             <h4>FIA_X509_EXT.2: X.509 Certificate Authentication</h4>
-            <span class="description"></span>
+            <span class="description">
+                <div class="element">
+                    <div class="reqid" id=".1">
+                        <a href="#.1" class="abbr">.1</a>
+                    </div>
+                    <div class="reqdesc">
+                        The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall use X.509v3 certificates as defined by RFC 5280 to support authentication for <b>TLS,</b> [<b>selection</b>: <span class="selectable-content" id="_s_1">DTLS</span>, <span class="selectable-content" id="_s_2">HTTPS</span>, <span class="selectable-content" id="_s_3">IPsec</span>, <span class="selectable-content" id="_s_4">SSH</span>, <span class="selectable-content" id="_s_5">no other protocols</span>], <b><abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint registration,</b> and [<b>selection</b>: <span class="selectable-content" id="_s_6">code signing for system software updates</span>, <span class="selectable-content" id="_s_7">[<b>assignment</b>: <span class="assignable-content">other uses</span>]</span>, <span class="selectable-content" id="_s_8">no additional</span>] 
+                        <div class="appnote">
+                            <span class="note-header">Application Note: </span><span class="note"> <i>The <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> requires the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author to select the protocol(s) that certificate authentication is used for. This element has been modified from its definition in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> by mandating support for TLS because FCS_TLSC_EXT.1 and FCS_TLSS_EXT.2 are mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> for a <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that conforms to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>. Additional protocols may or may not be selected depending on the other functionality provided by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="element">
+                    <div class="reqid" id=".2">
+                        <a href="#.2" class="abbr">.2</a>
+                    </div>
+                    <div class="reqdesc">
+                        When the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> cannot establish a connection to determine the validity of a certificate, the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="_s_9">allow the administrator to choose whether to accept the certificate in these cases</span>, <span class="selectable-content" id="_s_10">accept the certificate</span>, <span class="selectable-content" id="_s_11">not accept the certificate</span>].
+                        <div class="appnote">
+                            <span class="note-header">Application Note: </span><span class="note"><i>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is selection-based in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> but is made mandatory when this PPModule is claimed because the <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> implements functionality that requires the use of certificate authentication.</i></span>
+                        </div>
+                    </div>
+                </div>
+            </span>
         </div>
         <div class="comp" id="@id">
             <h4>FIA_X509_EXT.3: X.509 Certificate Requests</h4>

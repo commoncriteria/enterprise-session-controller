@@ -1,7 +1,7 @@
-* Error: f-element FIA_X509_EXT.2.1  appears not to have an associated evaluation activity.:
-        /Module[1]""/sec:Security_Requirements[1]""/base-pp[1]""/modified-sfrs[1]""/section[3]""/base-sfr-spec[2]""/f-element[1]""
-* Error: f-element FIA_X509_EXT.2.2  appears not to have an associated evaluation activity.:
-        /Module[1]""/sec:Security_Requirements[1]""/base-pp[1]""/modified-sfrs[1]""/section[3]""/base-sfr-spec[2]""/f-element[2]""
+* Error: f-element .1  appears not to have an associated evaluation activity.:
+        /Module[1]""/sec:Security_Requirements[1]""/base-pp[1]""/modified-sfrs[1]""/section[3]""/base-sfr-spec[2]""/description[1]""/f-element[1]""
+* Error: f-element .2  appears not to have an associated evaluation activity.:
+        /Module[1]""/sec:Security_Requirements[1]""/base-pp[1]""/modified-sfrs[1]""/section[3]""/base-sfr-spec[2]""/description[1]""/f-element[2]""
 * Warning: This document still has at least one comment.
 * Error: Detected dangling id-reference to pizza from attribute
         on/Module[1]""/include-pkg[1]""/depends[1]""/on[1]""
