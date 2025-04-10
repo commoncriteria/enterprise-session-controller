@@ -1,4 +1,4 @@
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:438:154: error: text not allowed here; expected element "OSPs"
+/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:438:15: error: element "description" not allowed here; expected element "OSPs"
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:486:104: error: text not allowed here; expected the element end-tag
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:503:25: error: element "additional-sfrs" not allowed yet; missing required element "modified-sfrs"
 /home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:649:19: error: element "modified-sfrs" not allowed here; expected the element end-tag or element "con-mod"

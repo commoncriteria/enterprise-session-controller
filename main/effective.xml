@@ -435,7 +435,7 @@ baseline of capabilities that all conformant ESCs must provide.
 	<!-- OSPs refer to Objectives or OE Objectives in standard approach documents. -->
 	<!-- In direct rationale PPs, they should refer to OE Objectives -->
     <section title="Organizational Security Policies" id="sec-OSPs">
-	The following organizational security policy is applicable to the TOE if the TOE is deployed on an independent, commercially-available operating system:
+	<description>The following organizational security policy is applicable to the TOE if the TOE is deployed on an independent, commercially-available operating system:</description>
       <OSPs>
         <OSP name="P.SECURED_PLATFORM">
           <description>Administrators in the organization ensure that general purpose computers use secure operating
