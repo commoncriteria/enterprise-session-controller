@@ -657,12 +657,12 @@ the generation of media recordings such as unobservability of user actions.</con
 		<note role="application"><h:i><h:p>The Base-PP version of the SFR requires “all administrative actions” to be audited.
 		When the TOE includes this PP-Module, it is expected that this will also include the administrative actions that support the PP-Module defined in FMT_SMF.1/ESC.</h:p><h:p>FAU_VVR_EXT.2 is a selection-based requirement. Auditing for this requirement must be performed if and only if the TOE claims it</h:p>
 		</h:i></note>
-		<aactivity>The evaluator shall complete the EA for FAU_GEN.1 as described in the NDcPP SD for the auditable events defined above in addition to the applicable auditable events that are defined in the NDcPP. The evaluator shall also ensure that the administrative actions defined for this PP-Module are appropriately audited. </aactivity>
+		<aactivity><no-tests>The evaluator shall complete the EA for FAU_GEN.1 as described in the NDcPP SD for the auditable events defined above in addition to the applicable auditable events that are defined in the NDcPP. The evaluator shall also ensure that the administrative actions defined for this PP-Module are appropriately audited.</no-tests></aactivity>
 
 			</f-component>
 			<f-component name="Protected Audit Trail Storage" cc-id="fau_stg.2" id="fau-stg-2-esc">This SFR is optional in the NDcPP but is mandated by this PP-Module because the ESC is expected to maintain audit data internal to the TOE which must be protected from unauthorized access. 
 	<note role="application"><h:i>Both the “audit data” (FAU_GEN.1) and “system log” data (FAU_GEN.1/Log) are expected to be protected from unauthorized access. This SFR applies to all data related to the behavior of the TOE regardless of how it is categorized or where it is stored.</h:i> </note>
-	<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to make its inclusion mandatory rather than optional, but there is no change to how the SFR is to be implemented.</aactivity></f-component>
+	<aactivity><no-tests>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to make its inclusion mandatory rather than optional, but there is no change to how the SFR is to be implemented.</no-tests></aactivity></f-component>
 	</section>
 	<section title="Cryptographic Support (FCS)" id="m-fcs">
 			<f-component name="DTLS Server Support without Mutual Authentication" cc-id="fcs_dtlss_ext.1" id="fcs-dtlss-ext-1">
@@ -676,12 +676,12 @@ the generation of media recordings such as unobservability of user actions.</con
 				<h:p>This SFR is also refined from its definition in the Base-PP by requiring the use of DTLS 1.2 if this function is claimed.</h:p><h:p>When CPP_ND_V3.0E is the Base-PP, the element in Section 5.1.2.1 should be used, instead.</h:p>
 				</h:i>
 				</note>
-				<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD.</aactivity>
+				<aactivity><no-tests>There is no change to the EAs specified for this SFR in the NDcPP SD.</no-tests></aactivity>
 				
 				</f-element>
 			</f-component>
 			<f-component name="DTLS Server Support for Mutual Authentication" cc-id="fcs_dtlss_ext.2" id="fcs-dtlss-ext-2">This SFR is optional in the NDcPP but is selection-based in this PP-Module because any ESC use of DTLS requires mutually-authenticated DTLS to be implemented. Therefore, this SFR must be claimed if ‘DTLS’ is selected in FTP_ITC.1.1/ESC.
-			<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to make its inclusion selection-based rather than optional, but there is no change to how the SFR is to be implemented.
+			<aactivity><no-tests>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to make its inclusion selection-based rather than optional, but there is no change to how the SFR is to be implemented.</no-tests>
 			</aactivity>
 			</f-component>
 			<f-component name="NTP Protocol" cc-id="fcs_ntp_ext.1" id="fcs-ntp-ext-1">
@@ -689,7 +689,7 @@ the generation of media recordings such as unobservability of user actions.</con
 			<title>The TSF shall use only the following NTP version: NTP v4 (RFC 5905).</title>
 
 			<note role="application"><h:i><h:p>te: This SFR is selection-based in the Base-PP but is mandatory for a TOE that conforms to this PP-Module because the refinement to FPT_STM_EXT.1 requires this SFR to be claimed in all cases.</h:p><h:p/>This SFR has been refined from the NDcPP to permit the NTP v4 selection only. No other parts of the SFR are modified.</h:i></note>
-			<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to make its inclusion selection-based rather than optional, but there is no change to how the SFR is to be implemented.</aactivity>
+			<aactivity><no-tests>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to make its inclusion selection-based rather than optional, but there is no change to how the SFR is to be implemented.</no-tests></aactivity>
 			</f-element></f-component>
 			<f-component name="TLS Client Protocol without Mutual Authentication" cc-id="fcs_tlsc_ext.1" id="fcs-tlsc-ext-1">
 			<f-element id="fcs-tlsc-ext-1e1">
@@ -701,7 +701,7 @@ the generation of media recordings such as unobservability of user actions.</con
 				<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to make its inclusion mandatory rather than conditional, but there is no change to how the SFR is to be implemented.</aactivity>
 				</f-element></f-component>
 			<f-component name="TLS Client Protocol Mutual Authentication" cc-id="fcs_tlsc_ext.2" id="fcs-tlsc-ext-2">This SFR is optional in the NDcPP but is mandated by this PP-Module because SIP and H.323 communications require mutually-authenticated TLS.
-				<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to make its inclusion mandatory rather than optional, but there is no change to how the SFR is to be implemented.</aactivity>
+				<aactivity><no-tests>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to make its inclusion mandatory rather than optional, but there is no change to how the SFR is to be implemented.</no-tests></aactivity>
 				</f-component>
 
 
@@ -715,7 +715,7 @@ the generation of media recordings such as unobservability of user actions.</con
 
 			<f-component name="TLS Server Protocol  Mutual Authentication" cc-id="fcs_tlss_ext.2" id="fcs-tlss-ext-2">
  			This SFR is optional in the NDcPP but is mandated by this PP-Module because SIP and H.323 communications require mutually-authenticated TLS.
-			<aactivity>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to make its inclusion mandatory rather than optional, but there is no change to how the SFR is to be implemented.</aactivity>
+			<aactivity><no-tests>There is no change to the EAs specified for this SFR in the NDcPP SD. The PP-Module modifies this SFR to make its inclusion mandatory rather than optional, but there is no change to how the SFR is to be implemented.</no-tests></aactivity>
 			</f-component>
 			</section>
 			<section title="Identification and Authentication (FIA)" id="m-fia">
@@ -751,7 +751,7 @@ the generation of media recordings such as unobservability of user actions.</con
 			
 			<f-component name="X.509 Certificate Validation" cc-id="fia_x509_ext.1" id="fia-x509-ext-1" iteration="Rev">
 			This SFR is selection-based in the Base-PP. It is mandatory when the TOE claims conformance to this PPModule because X.509 certificate validation is needed when establishing TLS communications for SIP and H.323. There are no changes to the SFR otherwise.
-			<aactivity>No additional EAs are specified for this SFR beyond what is defined in the NDcPP SD.</aactivity>
+			<aactivity><no-tests>No additional EAs are specified for this SFR beyond what is defined in the NDcPP SD.</no-tests></aactivity>
 			</f-component>
 			<f-component name="X.509 Certificate Authentication" cc-id="fia_x509_ext.2" id="fia-x509-ext-2">
 			<f-element id="fia-x509-ext-2e1">
@@ -782,7 +782,8 @@ the generation of media recordings such as unobservability of user actions.</con
 			</f-component>
 			<f-component name="X.509 Certificate Requests" cc-id="fia_x509_ext.3" id="fia-x509-ext-3">
 			This SFR is selection-based in the NDcPP but is mandated by this PP-Module because an ESC must implement security functions that require it to be issued its own X.509 certificate.
-			<aactivity>No additional EAs are specified for this SFR beyond what is defined in the NDcPP SD.</aactivity>
+			<consistency-rationale/>
+			<aactivity><no-tests>No additional EAs are specified for this SFR beyond what is defined in the NDcPP SD.</no-tests></aactivity>
 			</f-component>
 			</section>
 		<section title="Protection of the TSF (FPT)" id="m-fpt">
@@ -790,12 +791,13 @@ the generation of media recordings such as unobservability of user actions.</con
 			<consistency-rationale/>
 		<f-element id="fpt-stm-ext-1e1">
 		<title>The TSF shall synchronize time with an NTP server. </title>
-		<note role="application"><h:i>This SFR has been refined from the NDcPP to permit the NTP server selection only. No other parts of the SFR are modified.</h:i></note>
+		<note role="application"><h:i>This SFR has been refined from the NDcPP to permit the NTP server selection only. No other parts of the SFR are modified.</h:i>
+			<comment> First half of TD0835 has been applied to this document, however the other half of this TD adds a "Further Modified SFRs"- Guidance is needed on how to implement this into the current document </comment></note>
 		<aactivity><no-tests>No additional EAs are specified for this SFR beyond what is defined in the NDcPP SD.</no-tests></aactivity>
-		<comment>First half of TD0835 has been applied to this document, however the other half of this TD adds a "Further Modified SFRs"- Guidance is needed on how to implement this into the current document </comment></f-element>
+		</f-element>
 		<audit-event/>
 		</f-component>
-			<comment>First half of TD0835 has been applied to this document, however the other half of this TD adds a "Further Modified SFRs"- Guidance is needed on how to implement this into the current document </comment>
+			
 			</section>
 
 			
