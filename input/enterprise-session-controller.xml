@@ -676,7 +676,8 @@ the generation of media recordings such as unobservability of user actions.</con
 				<consistency-rationale/>
 				<description>
 					<h:p>FAU_GEN.1.1 is refined to include the following auditable events in addition to what is defined in the Base-PP.</h:p>
-
+					<h:p><h:b>Application Note:</h:b><h:i>The Base-PP version of the SFR requires “all administrative actions” to be audited. When the TOE includes this PP-Module, it is expected that this will also include the administrative actions that support the PP-Module defined in FMT_SMF.1/ESC.</h:i></h:p>
+					<h:p><h:i>FAU_VVR_EXT.2 is a selection-based requirement. Auditing for this requirement must be performed if and only if the TOE claims it.</h:i></h:p>
 				</description>
 				
 		<no-change/>
@@ -849,6 +850,9 @@ the generation of media recordings such as unobservability of user actions.</con
 	  </modified-sfrs>
     </base-pp>
 	<man-sfrs>
+		<section id="sec-sel-audit-table" title="Auditable Events for Mandatory SFRs">
+			<audit-table id="at-Man" table="mandatory"/>
+	 </section>
     <section title='Security Audit (FAU)' id='man-fau'>
 		<f-component name="Audit Data Generation (Call Detail Record)" cc-id='fau_gen.1' id='fpt-gen-ext-1-cdr' iteration='CDR'>
 		<f-element id='fau-gen-1e1-cdr'>
