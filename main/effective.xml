@@ -647,7 +647,7 @@ the generation of media recordings such as unobservability of user actions.</con
 
 
 	  <modified-sfrs>
-		<section title="Audit Table" id="ms-fau">
+		<section title="Audit Table" id="audit-table">
 	  <audit-table table="mandatory" id="mandatory-audit-events">
 	      <h:br/><h:b><ctr ctr-type="Table" pre="Table " id="atref-mandatory">: Audit Log Events</ctr></h:b>
 	    </audit-table>
