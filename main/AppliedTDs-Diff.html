@@ -22,8 +22,6 @@
             <br>
             <a href="#Comment-2-">Comment: Comment-2-</a>
             <br>
-            <a href="#Comment-3-">Comment: Comment-3-</a>
-            <br>
         </div>
         <h1 class="title" style="page-break-before:auto;">PP-Module for Enterprise Session Controllers</h1>
         <h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1>
@@ -57,7 +55,7 @@
         </h3>
         <h2>Contents</h2>
         <div class="toc" id="toc">
-            <a href="#sec-intro" style="text-indent:0px">1<span>Introduction</span></a><a href="#sec-ppoverview" style="text-indent:10px">1.1<span>PP Overview</span></a><a href="#glossary" style="text-indent:10px">1.2<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.2.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.2.2<span>Technical Terms</span></a><a href="#sec-TOEdescription" style="text-indent:10px">1.3<span>Compliant Targets of Evaluation</span></a><a href="#TOE_Boundary" style="text-indent:10px">1.4<span>TOE Boundary</span></a><a href="#Use_Cases" style="text-indent:10px">1.5<span>Use Cases</span></a><a href="#sec-cclaims" style="text-indent:0px">2<span>Conformance Claims</span></a><a href="#sec-spd" style="text-indent:0px">3<span>Security Problem Definition</span></a><a href="#sec-threats" style="text-indent:10px">3.1<span>Threats</span></a><a href="#sec-assumptions" style="text-indent:10px">3.2<span>Assumptions</span></a><a href="#sec-OSPs" style="text-indent:10px">3.3<span>Organizational Security Policies</span></a><a href="#sec-objectives" style="text-indent:0px">4<span>Security Objectives</span></a><a href="#sec-OEObjectives" style="text-indent:10px">4.1<span>Security Objectives for the Operational Environment</span></a><a href="#sec-sor" style="text-indent:10px">4.2<span>Security Objectives Rationale</span></a><a href="#Security_Requirements" style="text-indent:0px">5<span>Security Requirements</span></a><a href="#secreq-ND" style="text-indent:10px">5.1<span>Collaborative Protection Profile for Network Devices Security Functional Requirements Direction </span></a><a href="#modsfr-ND" style="text-indent:20px">5.1.1<span> Modified SFRs </span></a><a href="#m-fau" style="text-indent:30px">5.1.1.1<span>Security Audit (FAU)</span></a><a href="#m-fcs" style="text-indent:30px">5.1.1.2<span>Cryptographic Support (FCS)</span></a><a href="#m-fia" style="text-indent:30px">5.1.1.3<span>Identification and Authentication (FIA)</span></a><a href="#m-fpt" style="text-indent:30px">5.1.1.4<span>Protection of the TSF (FPT)</span></a><a href="#man-sfrs" style="text-indent:10px">5.2<span>TOE Security Functional Requirements</span></a><a href="#man-fau" style="text-indent:20px">5.2.1<span>Security Audit (FAU)</span></a><a href="#man-fdp" style="text-indent:20px">5.2.2<span>User Data Protection (FDP)</span></a><a href="#man-fia" style="text-indent:20px">5.2.3<span>Identification and Authentication (FIA)</span></a><a href="#man-fmt" style="text-indent:20px">5.2.4<span>Security Management (FMT)</span></a><a href="#man-fpt" style="text-indent:20px">5.2.5<span>Protection of the TSF (FPT)</span></a><a href="#man-ftp" style="text-indent:20px">5.2.6<span>Trusted Path/Channels (FTP)</span></a><a href="#obj-req-map" style="text-indent:10px">5.3<span>TOE Security Functional Requirements Rationale</span></a><a href="#mod-conrat" style="text-indent:0px">6<span>Consistency Rationale</span></a><a href="#conrat-ND" style="text-indent:10px">6.1<span>Collaborative Protection Profile for Network Devices</span></a><a href="#contoe-ND" style="text-indent:20px">6.1.1<span> Consistency of TOE Type </span></a><a href="#consecprob-ND" style="text-indent:20px">6.1.2<span> Consistency of Security Problem Definition </span></a><a href="#conobj-ND" style="text-indent:20px">6.1.3<span> Consistency of OE Objectives </span></a><a href="#conreq-ND" style="text-indent:20px">6.1.4<span> Consistency of Requirements </span></a><a href="#opt-sfrs" style="text-indent:0px">Appendix A - <span>Optional SFRs</span></a><a href="#opt-sfrs" style="text-indent:10px">A.1<span>Strictly Optional Requirements </span></a><a href="#obj-sfrs" style="text-indent:10px">A.2<span>Objective Requirements </span></a><a href="#impl-dep-sfrs" style="text-indent:10px">A.3<span>Implementation-dependent Requirements </span></a><a href="#_sec_24" style="text-indent:20px">A.3.1<span>Auditable Events for Implementation-Dependent SFRs</span></a><a href="#imp-fpt" style="text-indent:20px">A.3.2<span>Protection of the TSF (FPT)</span></a><a href="#sel-sfrs" style="text-indent:0px">Appendix B - <span>Selection-based Requirements </span></a><a href="#sec-sel-audit-table" style="text-indent:10px">B.1<span>Auditable Events for Selection-based SFRs</span></a><a href="#sel-fau" style="text-indent:10px">B.2<span>Security Audit (FAU)</span></a><a href="#ext-comp-defs" style="text-indent:0px">Appendix C - <span>Extended Component Definitions</span></a><a href="#ext-comp-defs-bg" style="text-indent:10px">C.1<span>Extended Components Table</span></a><a href="#ext-comp-defs-bg" style="text-indent:10px">C.2<span>Extended Component Definitions</span></a><a href="#ext-comp-FAU" style="text-indent:20px">C.2.1<span>Security Audit (FAU)</span></a><a href="#ext-comp-FAU_VVR_EXT" style="text-indent:30px">C.2.1.1<span>FAU_VVR_EXT Voice and Video Recording</span></a><a href="#ext-comp-FMT" style="text-indent:20px">C.2.2<span>Security Management (FMT)</span></a><a href="#ext-comp-FMT_CFG_EXT" style="text-indent:30px">C.2.2.1<span>FMT_CFG_EXT Secure by Default Configuration</span></a><a href="#satisfiedreqs" style="text-indent:0px">Appendix D - <span>Inherently Satisfied Requirements</span></a><a href="#entropyappendix" style="text-indent:0px">Appendix E - <span>Entropy Documentation and Assessment</span></a><a href="#acronyms" style="text-indent:0px">Appendix F - <span>Acronyms</span></a><a href="#appendix-bibliography" style="text-indent:0px">Appendix G - <span>Bibliography</span></a>
+            <a href="#sec-intro" style="text-indent:0px">1<span>Introduction</span></a><a href="#sec-ppoverview" style="text-indent:10px">1.1<span>PP Overview</span></a><a href="#glossary" style="text-indent:10px">1.2<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.2.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.2.2<span>Technical Terms</span></a><a href="#sec-TOEdescription" style="text-indent:10px">1.3<span>Compliant Targets of Evaluation</span></a><a href="#TOE_Boundary" style="text-indent:10px">1.4<span>TOE Boundary</span></a><a href="#Use_Cases" style="text-indent:10px">1.5<span>Use Cases</span></a><a href="#sec-cclaims" style="text-indent:0px">2<span>Conformance Claims</span></a><a href="#sec-spd" style="text-indent:0px">3<span>Security Problem Definition</span></a><a href="#sec-threats" style="text-indent:10px">3.1<span>Threats</span></a><a href="#sec-assumptions" style="text-indent:10px">3.2<span>Assumptions</span></a><a href="#sec-OSPs" style="text-indent:10px">3.3<span>Organizational Security Policies</span></a><a href="#sec-objectives" style="text-indent:0px">4<span>Security Objectives</span></a><a href="#sec-OEObjectives" style="text-indent:10px">4.1<span>Security Objectives for the Operational Environment</span></a><a href="#sec-sor" style="text-indent:10px">4.2<span>Security Objectives Rationale</span></a><a href="#Security_Requirements" style="text-indent:0px">5<span>Security Requirements</span></a><a href="#secreq-ND" style="text-indent:10px">5.1<span>Collaborative Protection Profile for Network Devices Security Functional Requirements Direction </span></a><a href="#modsfr-ND" style="text-indent:20px">5.1.1<span> Modified SFRs </span></a><a href="#@id" style="text-indent:30px">5.1.1.1<span>Security Audit (FAU)</span></a><a href="#@id" style="text-indent:30px">5.1.1.2<span>Cryptographic Support (FCS)</span></a><a href="#@id" style="text-indent:30px">5.1.1.3<span>Identification and Authentication (FIA)</span></a><a href="#@id" style="text-indent:30px">5.1.1.4<span>Protection of the TSF (FPT)</span></a><a href="#man-sfrs" style="text-indent:10px">5.2<span>TOE Security Functional Requirements</span></a><a href="#man-fau" style="text-indent:20px">5.2.1<span>Security Audit (FAU)</span></a><a href="#man-fdp" style="text-indent:20px">5.2.2<span>User Data Protection (FDP)</span></a><a href="#man-fia" style="text-indent:20px">5.2.3<span>Identification and Authentication (FIA)</span></a><a href="#man-fmt" style="text-indent:20px">5.2.4<span>Security Management (FMT)</span></a><a href="#man-fpt" style="text-indent:20px">5.2.5<span>Protection of the TSF (FPT)</span></a><a href="#man-ftp" style="text-indent:20px">5.2.6<span>Trusted Path/Channels (FTP)</span></a><a href="#obj-req-map" style="text-indent:10px">5.3<span>TOE Security Functional Requirements Rationale</span></a><a href="#mod-conrat" style="text-indent:0px">6<span>Consistency Rationale</span></a><a href="#conrat-ND" style="text-indent:10px">6.1<span>Collaborative Protection Profile for Network Devices</span></a><a href="#contoe-ND" style="text-indent:20px">6.1.1<span> Consistency of TOE Type </span></a><a href="#consecprob-ND" style="text-indent:20px">6.1.2<span> Consistency of Security Problem Definition </span></a><a href="#conobj-ND" style="text-indent:20px">6.1.3<span> Consistency of OE Objectives </span></a><a href="#conreq-ND" style="text-indent:20px">6.1.4<span> Consistency of Requirements </span></a><a href="#opt-sfrs" style="text-indent:0px">Appendix A - <span>Optional SFRs</span></a><a href="#opt-sfrs" style="text-indent:10px">A.1<span>Strictly Optional Requirements </span></a><a href="#obj-sfrs" style="text-indent:10px">A.2<span>Objective Requirements </span></a><a href="#impl-dep-sfrs" style="text-indent:10px">A.3<span>Implementation-dependent Requirements </span></a><a href="#_sec_24" style="text-indent:20px">A.3.1<span>Auditable Events for Implementation-Dependent SFRs</span></a><a href="#imp-fpt" style="text-indent:20px">A.3.2<span>Protection of the TSF (FPT)</span></a><a href="#sel-sfrs" style="text-indent:0px">Appendix B - <span>Selection-based Requirements </span></a><a href="#sec-sel-audit-table" style="text-indent:10px">B.1<span>Auditable Events for Selection-based SFRs</span></a><a href="#sel-fau" style="text-indent:10px">B.2<span>Security Audit (FAU)</span></a><a href="#ext-comp-defs" style="text-indent:0px">Appendix C - <span>Extended Component Definitions</span></a><a href="#ext-comp-defs-bg" style="text-indent:10px">C.1<span>Extended Components Table</span></a><a href="#ext-comp-defs-bg" style="text-indent:10px">C.2<span>Extended Component Definitions</span></a><a href="#ext-comp-FAU" style="text-indent:20px">C.2.1<span>Security Audit (FAU)</span></a><a href="#ext-comp-FAU_VVR_EXT" style="text-indent:30px">C.2.1.1<span>FAU_VVR_EXT Voice and Video Recording</span></a><a href="#ext-comp-FMT" style="text-indent:20px">C.2.2<span>Security Management (FMT)</span></a><a href="#ext-comp-FMT_CFG_EXT" style="text-indent:30px">C.2.2.1<span>FMT_CFG_EXT Secure by Default Configuration</span></a><a href="#satisfiedreqs" style="text-indent:0px">Appendix D - <span>Inherently Satisfied Requirements</span></a><a href="#entropyappendix" style="text-indent:0px">Appendix E - <span>Entropy Documentation and Assessment</span></a><a href="#acronyms" style="text-indent:0px">Appendix F - <span>Acronyms</span></a><a href="#appendix-bibliography" style="text-indent:0px">Appendix G - <span>Bibliography</span></a>
         </div>
         <h1 class="indexable" data-level="1" id="sec-intro">1 Introduction</h1>
         <h2 class="indexable" data-level="2" id="sec-ppoverview">1.1 PP Overview</h2>
@@ -438,344 +436,63 @@
         </p>
         <h3 id="modsfr-ND" class="indexable" data-level="3">5.1.1 Modified SFRs </h3>
          The <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> listed in this section are defined in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> and relevant to the secure operation of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. 
-        <table class="sort_kids_" border="1">
-            <caption data-sortkey="#0">
-                <span class="ctr" data-myid="mandatory-audit-events" data-counter-type="ct-Table" id="mandatory-audit-events">Table <span class="counter">2</span></span>: Auditable Events for Mandatory Requirements
-            </caption>
-            <tr data-sortkey="#1">
-                <th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th>
-            </tr>
-            <tr data-sortkey="FAU_GEN.1/CDR">
-                <td rowspan="2"><a href="#FAU_GEN.1/CDR">FAU_GEN.1/CDR</a></td><td style="display:none"></td>
-            </tr>
-            <tr style="display:none;" data-sortkey="FAU_GEN.1/CDR#">
-                <td></td>
-            </tr>
-            <tr data-sortkey="FAU_GEN.1/CDR.1">
-                <td>No events specified</td><td>N/A</td>
-            </tr>
-            <tr data-sortkey="FAU_GEN.1/Log">
-                <td rowspan="2"><a href="#FAU_GEN.1/Log">FAU_GEN.1/Log</a></td><td style="display:none"></td>
-            </tr>
-            <tr style="display:none;" data-sortkey="FAU_GEN.1/Log#">
-                <td></td>
-            </tr>
-            <tr data-sortkey="FAU_GEN.1/Log.1">
-                <td>No events specified</td><td>N/A</td>
-            </tr>
-            <tr data-sortkey="FAU_SAR.1/Log">
-                <td rowspan="2"><a href="#FAU_SAR.1/Log">FAU_SAR.1/Log</a></td><td style="display:none"></td>
-            </tr>
-            <tr style="display:none;" data-sortkey="FAU_SAR.1/Log#">
-                <td></td>
-            </tr>
-            <tr data-sortkey="FAU_SAR.1/Log.1">
-                <td>No events specified</td><td>N/A</td>
-            </tr>
-            <tr data-sortkey="FAU_STG.2/CDR">
-                <td rowspan="2"><a href="#FAU_STG.2/CDR">FAU_STG.2/CDR</a></td><td style="display:none"></td>
-            </tr>
-            <tr style="display:none;" data-sortkey="FAU_STG.2/CDR#">
-                <td></td>
-            </tr>
-            <tr data-sortkey="FAU_STG.2/CDR.1">
-                <td>No events specified</td><td>N/A</td>
-            </tr>
-            <tr data-sortkey="FAU_VVR_EXT.1">
-                <td rowspan="2"><a href="#FAU_VVR_EXT.1">FAU_VVR_EXT.1</a></td><td style="display:none"></td>
-            </tr>
-            <tr style="display:none;" data-sortkey="FAU_VVR_EXT.1#">
-                <td></td>
-            </tr>
-            <tr data-sortkey="FAU_VVR_EXT.1.1">
-                <td>No events specified</td><td>N/A</td>
-            </tr>
-            <tr data-sortkey="FDP_IFC.1">
-                <td rowspan="2"><a href="#FDP_IFC.1">FDP_IFC.1</a></td><td style="display:none"></td>
-            </tr>
-            <tr style="display:none;" data-sortkey="FDP_IFC.1#">
-                <td></td>
-            </tr>
-            <tr data-sortkey="FDP_IFC.1.1">
-                <td>No events specified</td><td>N/A</td>
-            </tr>
-            <tr data-sortkey="FDP_IFF.1">
-                <td rowspan="2"><a href="#FDP_IFF.1">FDP_IFF.1</a></td><td style="display:none"></td>
-            </tr>
-            <tr style="display:none;" data-sortkey="FDP_IFF.1#">
-                <td></td>
-            </tr>
-            <tr data-sortkey="FDP_IFF.1.1">
-                <td>No events specified</td><td>N/A</td>
-            </tr>
-            <tr data-sortkey="FDP_RIP.1">
-                <td rowspan="2"><a href="#FDP_RIP.1">FDP_RIP.1</a></td><td style="display:none"></td>
-            </tr>
-            <tr style="display:none;" data-sortkey="FDP_RIP.1#">
-                <td></td>
-            </tr>
-            <tr data-sortkey="FDP_RIP.1.1">
-                <td>No events specified</td><td>N/A</td>
-            </tr>
-            <tr data-sortkey="FIA_UAU.2/TC">
-                <td rowspan="2"><a href="#FIA_UAU.2/TC">FIA_UAU.2/TC</a></td><td style="display:none"></td>
-            </tr>
-            <tr style="display:none;" data-sortkey="FIA_UAU.2/TC#">
-                <td></td>
-            </tr>
-            <tr data-sortkey="FIA_UAU.2/TC.1">
-                <td>Successful or failed authentication of trunk connected network component</td><td>
-                    <ul>
-                        <li>ID of Administrator that attempts to connect trunk to external device (if available);</li>
-                        <li>IP address of device where trunk request was initiated (if available);</li>
-                        <li>IP address of external device where trunk is to be connected (if available).</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr data-sortkey="FIA_UAU.2/VVoIP">
-                <td rowspan="3"><a href="#FIA_UAU.2/VVoIP">FIA_UAU.2/VVoIP</a></td><td style="display:none"></td>
-            </tr>
-            <tr style="display:none;" data-sortkey="FIA_UAU.2/VVoIP#">
-                <td></td>
-            </tr>
-            <tr data-sortkey="FIA_UAU.2/VVoIP.1">
-                <td>Authentication of external <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint/device</td><td>
-                    <ul>
-                        <li>ID of Administrator that attempts to connect trunk to external device (if available);</li>
-                        <li>IP address of device where trunk request was initiated (if available);</li>
-                        <li>IP address of external device where trunk is to be connected (if available).</li>
-                        <li>
-                            <a href="#FIA_UAU.2/VVoIP">FIA_UAU.2/VVoIP</a>. Authentication of external <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints must occur before registration. In short, no successful registration of <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint can happen until after the successful authentication of the <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint.
-                        </li>
-                    </ul>
-                </td>
-            </tr>
-            <tr data-sortkey="FIA_UAU.2/VVoIP.2">
-                <td>Successful or failed registration of <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint/device </td><td>
-                    <ul>
-                        <li>
-                            ID of Administrator that attempt to register <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint to <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> (if available);
-                        </li>
-                        <li>IP address of device where registration attempt was initiated (if available); </li>
-                        <li>
-                            IP address of <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint that attempt to register to <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> (if available).
-                        </li>
-                    </ul>
-                </td>
-            </tr>
-            <tr data-sortkey="FMT_SMF.1/ESC">
-                <td rowspan="3"><a href="#FMT_SMF.1/ESC">FMT_SMF.1/ESC</a></td><td style="display:none"></td>
-            </tr>
-            <tr style="display:none;" data-sortkey="FMT_SMF.1/ESC#">
-                <td></td>
-            </tr>
-            <tr data-sortkey="FMT_SMF.1/ESC.1">
-                <td>Enabling/disabling <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint/device features</td><td>
-                    <ul>
-                        <li>
-                            ID of Administrator attempting to enable/disable service or feature on <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> or on external registered device;
-                        </li>
-                        <li>IP address of device where enabling/disabling of services or features was initiated;</li>
-                        <li>The feature or service that was enabled/disabled.</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr data-sortkey="FMT_SMF.1/ESC.2">
-                <td>Modification of <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Call Detail Records (<abbr class="dyn-abbr"><a href="#abbr_CDR">CDR</a></abbr>)</td><td>
-                    <ul>
-                        <li>ID of Administrator attempting to query or modify database;</li>
-                        <li>IP address of device where database query was initiated;</li>
-                        <li>The exact SQL command/instruction that was executed.</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr data-sortkey="FPT_FLS.1/ESC">
-                <td rowspan="2"><a href="#FPT_FLS.1/ESC">FPT_FLS.1/ESC</a></td><td style="display:none"></td>
-            </tr>
-            <tr style="display:none;" data-sortkey="FPT_FLS.1/ESC#">
-                <td></td>
-            </tr>
-            <tr data-sortkey="FPT_FLS.1/ESC.1">
-                <td>No events specified</td><td>N/A</td>
-            </tr>
-            <tr data-sortkey="FTP_ITC.1/ESC">
-                <td rowspan="2"><a href="#FTP_ITC.1/ESC">FTP_ITC.1/ESC</a></td><td style="display:none"></td>
-            </tr>
-            <tr style="display:none;" data-sortkey="FTP_ITC.1/ESC#">
-                <td></td>
-            </tr>
-            <tr data-sortkey="FTP_ITC.1/ESC.1">
-                <td>No events specified</td><td>N/A</td>
-            </tr>
-        </table>
-        <h4 id="m-fau" class="indexable" data-level="4">5.1.1.1 Security Audit (FAU)</h4>
-        <div class="comp" id="FAU_GEN.1">
-            <h4>FAU_GEN.1 Audit Data Generation (Audit Log)</h4>
-            <a href="#FAU_GEN.1">FAU_GEN.1</a>.1 is refined to include the following auditable events in addition to what is defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>. 
-            <div class="appnote">
-                <span class="note-header">Application Note: </span><span class="note"><i>
-                        <p>
-                            The <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> version of the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> requires &ldquo;all administrative actions&rdquo; to be audited. When the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> includes this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>, it is expected that this will also include the administrative actions that support the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> defined in <a href="#FMT_SMF.1/ESC">FMT_SMF.1/ESC</a>.
-                        </p>
-                        <p>
-                            <a href="#FAU_VVR_EXT.2">FAU_VVR_EXT.2</a> is a selection-based requirement. Auditing for this requirement must be performed if and only if the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> claims it
-                        </p>
-                    </i></span>
-            </div>
-             The evaluator shall complete the EA for <a href="#FAU_GEN.1">FAU_GEN.1</a> as described in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> SD for the auditable events defined above in addition to the applicable auditable events that are defined in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr>. The evaluator shall also ensure that the administrative actions defined for this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> are appropriately audited.
-            <br>
-            <br>
+        <h4 id="@id" class="indexable" data-level="4">5.1.1.1 Security Audit (FAU)</h4>
+        <div class="comp" id="@id">
+            <h4>FAU_GEN.1: Audit Data Generation (Audit Log)</h4>
+            <span class="description">
+                <p>
+                    FAU_GEN.1.1 is refined to include the following auditable events in addition to what is defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>.
+                </p>
+            </span>
         </div>
-        <div class="comp" id="FAU_STG.2">
-            <h4>FAU_STG.2 Protected Audit Trail Storage</h4>
-            This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is optional in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is mandated by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because the <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> is expected to maintain audit data internal to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> which must be protected from unauthorized access. 
-            <div class="appnote">
-                <span class="note-header">Application Note: </span><span class="note"><i>Both the &ldquo;audit data&rdquo; (<a href="#FAU_GEN.1">FAU_GEN.1</a>) and &ldquo;system log&rdquo; data (<a href="#FAU_GEN.1/Log">FAU_GEN.1/Log</a>) are expected to be protected from unauthorized access. This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> applies to all data related to the behavior of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> regardless of how it is categorized or where it is stored.</i> </span>
-            </div>
-             There is no change to the EAs specified for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> SD. The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> modifies this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> to make its inclusion mandatory rather than optional, but there is no change to how the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is to be implemented.
-            <br>
-            <br>
+        <div class="comp" id="@id">
+            <h4>FAU_STG.2: Protected Audit Trail Storage</h4>
+            <span class="description"></span>
         </div>
-        <h4 id="m-fcs" class="indexable" data-level="4">5.1.1.2 Cryptographic Support (FCS)</h4>
-        <div class="comp" id="FCS_DTLSS_EXT.1">
-            <h4>FCS_DTLSS_EXT.1 DTLS Server Support without Mutual Authentication</h4>
-            <div class="element">
-                <div class="reqid" id="FCS_DTLSS_EXT.1.1">
-                    <a href="#FCS_DTLSS_EXT.1.1" class="abbr">FCS_DTLSS_EXT.1.1</a>
-                </div>
-                <div class="reqdesc">
-                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement DTLS 1.2 (RFC 6347) supporting the following ciphersuites: [<b>selection</b>: <span class="selectable-content" id="_s_1">select supported ciphersuites from List 1<b> in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr></b></span>]and no other ciphersuites. 
-                    <div class="appnote">
-                        <span class="note-header">Application Note: </span><span class="note"><i>
-                                <p>
-                                    This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is selection-based in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> and remains selection-based in this PPModule because DTLS may be used to secure transmitted media. In this case, it must be claimed if &lsquo;DTLS&rsquo; is selected in <a href="#FTP_ITC.1.1/ESC">FTP_ITC.1.1/ESC</a> in addition to the applicable selection triggers in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>.
-                                </p>
-                                <p>
-                                    This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is also refined from its definition in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> by requiring the use of DTLS 1.2 if this function is claimed.
-                                </p>
-                                <p>
-                                    When CPP_ND_V3.0E is the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>, the element in Section 5.1.2.1 should be used, instead.
-                                </p>
-                            </i> </span>
-                    </div>
-                </div>
-            </div>
+        <h4 id="@id" class="indexable" data-level="4">5.1.1.2 Cryptographic Support (FCS)</h4>
+        <div class="comp" id="@id">
+            <h4>FCS_DTLSS_EXT.1: DTLS Server Support without Mutual Authentication</h4>
+            <span class="description"></span>
         </div>
-        <div class="comp" id="FCS_DTLSS_EXT.2">
-            <h4>FCS_DTLSS_EXT.2 DTLS Server Support for Mutual Authentication</h4>
-            This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is optional in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is selection-based in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because any <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> use of DTLS requires mutually-authenticated DTLS to be implemented. Therefore, this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> must be claimed if &lsquo;DTLS&rsquo; is selected in <a href="#FTP_ITC.1.1/ESC">FTP_ITC.1.1/ESC</a>. There is no change to the EAs specified for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> SD. The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> modifies this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> to make its inclusion selection-based rather than optional, but there is no change to how the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is to be implemented.
-            <br>
-            <br>
+        <div class="comp" id="@id">
+            <h4>FCS_DTLSS_EXT.2: DTLS Server Support for Mutual Authentication</h4>
+            <span class="description"></span>
         </div>
-        <div class="comp" id="FCS_NTP_EXT.1">
-            <h4>FCS_NTP_EXT.1 NTP Protocol</h4>
-            <div class="element">
-                <div class="reqid" id="FCS_NTP_EXT.1.1">
-                    <a href="#FCS_NTP_EXT.1.1" class="abbr">FCS_NTP_EXT.1.1</a>
-                </div>
-                <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall use only the following NTP version: NTP v4 (RFC 5905).
-                    <div class="appnote">
-                        <span class="note-header">Application Note: </span><span class="note"><i>
-                                <p>
-                                    te: This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is selection-based in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> but is mandatory for a <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that conforms to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because the refinement to <a href="#FPT_STM_EXT.1">FPT_STM_EXT.1</a> requires this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> to be claimed in all cases.
-                                </p>
-                                <p></p>
-                                This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> has been refined from the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> to permit the NTP v4 selection only. No other parts of the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> are modified.</i></span>
-                    </div>
-                </div>
-            </div>
+        <div class="comp" id="@id">
+            <h4>FCS_NTP_EXT.1: NTP Protocol</h4>
+            <span class="description"></span>
         </div>
-        <div class="comp" id="FCS_TLSC_EXT.1">
-            <h4>FCS_TLSC_EXT.1 TLS Client Protocol without Mutual Authentication</h4>
-            <div class="element">
-                <div class="reqid" id="FCS_TLSC_EXT.1.1">
-                    <a href="#FCS_TLSC_EXT.1.1" class="abbr">FCS_TLSC_EXT.1.1</a>
-                </div>
-                <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement TLS 1.2 (RFC 5246) and reject all other TLS and SSL versions. The TLS implementation will support the following ciphersuites: [<b>selection</b>: <span class="selectable-content" id="_s_2">select supported ciphersuites from List 1 <b>in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr></b></span>] and no other ciphersuites. 
-                    <div class="appnote">
-                        <span class="note-header">Application Note: </span><span class="note"><i>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is selection-based in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is mandated by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because Transport Layer Security (TLS) is used to secure <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications. Additionally, this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> mandates the use of TLS 1.2. When CPP_ND_V3.0E is the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>, the element in Section 5.1.2.1 should be used, instead.</i></span>
-                    </div>
-                </div>
-            </div>
+        <div class="comp" id="@id">
+            <h4>FCS_TLSC_EXT.1: TLS Client Protocol without Mutual Authentication</h4>
+            <span class="description"></span>
         </div>
-        <div class="comp" id="FCS_TLSC_EXT.2">
-            <h4>FCS_TLSC_EXT.2 TLS Client Protocol Mutual Authentication</h4>
-            This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is optional in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is mandated by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications require mutually-authenticated TLS. There is no change to the EAs specified for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> SD. The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> modifies this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> to make its inclusion mandatory rather than optional, but there is no change to how the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is to be implemented.
-            <br>
-            <br>
+        <div class="comp" id="@id">
+            <h4>FCS_TLSC_EXT.2: TLS Client Protocol Mutual Authentication</h4>
         </div>
-        <div class="comp" id="FCS_TLSS_EXT.1">
-            <h4>FCS_TLSS_EXT.1 TLS Server Protocol without Mutual Authentication</h4>
-            <div class="element">
-                <div class="reqid" id="FCS_TLSS_EXT.1.1">
-                    <a href="#FCS_TLSS_EXT.1.1" class="abbr">FCS_TLSS_EXT.1.1</a>
-                </div>
-                <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement TLS 1.2 (RFC 5246) and reject all other TLS and SSL versions. The TLS implementation will support the following ciphersuites: [<b>selection</b>: <span class="selectable-content" id="_s_3">select supported ciphersuites from List 1 <b>in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr></b></span>] and no other ciphersuites.
-                    <div class="appnote">
-                        <span class="note-header">Application Note: </span><span class="note"><i>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is selection-based in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is mandated by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> mandates the use of TLS 1.2. When CPP_ND_V3.0E is the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>, the element in Section 5.1.2.1 should be used, instead.</i></span>
-                    </div>
-                </div>
-            </div>
+        <div class="comp" id="@id">
+            <h4>FCS_TLSS_EXT.1: TLS Server Protocol without Mutual Authentication</h4>
+            <span class="description"></span>
         </div>
-        <div class="comp" id="FCS_TLSS_EXT.2">
-            <h4>FCS_TLSS_EXT.2 TLS Server Protocol Mutual Authentication</h4>
-             This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is optional in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is mandated by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications require mutually-authenticated TLS. There is no change to the EAs specified for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> SD. The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> modifies this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> to make its inclusion mandatory rather than optional, but there is no change to how the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is to be implemented.
-            <br>
-            <br>
+        <div class="comp" id="@id">
+            <h4>FCS_TLSS_EXT.2: TLS Server Protocol Mutual Authentication</h4>
+            <span class="description"> This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is optional in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is mandated by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications require mutually-authenticated TLS.</span>
         </div>
-        <h4 id="m-fia" class="indexable" data-level="4">5.1.1.3 Identification and Authentication (FIA)</h4>
-        <div class="comp" id="FIA_X509_EXT.1/Rev">
-            <h4>FIA_X509_EXT.1/Rev </h4>
-             <span class="description">This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is selection-based in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>. It is mandatory when the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> claims conformance to this PPModule because X.509 certificate validation is needed when establishing TLS communications for <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323. There are no changes to the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> otherwise.</span> 
+        <h4 id="@id" class="indexable" data-level="4">5.1.1.3 Identification and Authentication (FIA)</h4>
+        <div class="comp" id="@id">
+            <h4>FIA_X509_EXT.1/REV: X.509 Certificate Validation</h4>
+            <span class="description">This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is selection-based in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>. It is mandatory when the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> claims conformance to this PPModule because X.509 certificate validation is needed when establishing TLS communications for <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323. There are no changes to the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> otherwise.</span>
         </div>
-        <div class="comp" id="FIA_X509_EXT.2">
-            <h4>FIA_X509_EXT.2 X.509 Certificate Authentication</h4>
-            <div class="element">
-                <div class="reqid" id="FIA_X509_EXT.2.1">
-                    <a href="#FIA_X509_EXT.2.1" class="abbr">FIA_X509_EXT.2.1</a>
-                </div>
-                <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall use X.509v3 certificates as defined by RFC 5280 to support authentication for <b>TLS,</b> [<b>selection</b>: <span class="selectable-content" id="_s_4">DTLS</span>, <span class="selectable-content" id="_s_5">HTTPS</span>, <span class="selectable-content" id="_s_6">IPsec</span>, <span class="selectable-content" id="_s_7">SSH</span>, <span class="selectable-content" id="_s_8">no other protocols</span>], <b><abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint registration,</b> and [<b>selection</b>: <span class="selectable-content" id="_s_9">code signing for system software updates</span>, <span class="selectable-content" id="_s_10">[<b>assignment</b>: <span class="assignable-content">other uses</span>]</span>, <span class="selectable-content" id="_s_11">no additional</span>] 
-                    <div class="appnote">
-                        <span class="note-header">Application Note: </span><span class="note"> <i>The <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> requires the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author to select the protocol(s) that certificate authentication is used for. This element has been modified from its definition in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> by mandating support for TLS because <a href="#FCS_TLSC_EXT.1">FCS_TLSC_EXT.1</a> and <a href="#FCS_TLSS_EXT.2">FCS_TLSS_EXT.2</a> are mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> for a <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that conforms to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>. Additional protocols may or may not be selected depending on the other functionality provided by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr></i></span>
-                    </div>
-                </div>
-            </div>
-            <div class="element">
-                <div class="reqid" id="FIA_X509_EXT.2.2">
-                    <a href="#FIA_X509_EXT.2.2" class="abbr">FIA_X509_EXT.2.2</a>
-                </div>
-                <div class="reqdesc">
-                    When the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> cannot establish a connection to determine the validity of a certificate, the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="_s_12">allow the administrator to choose whether to accept the certificate in these cases</span>, <span class="selectable-content" id="_s_13">accept the certificate</span>, <span class="selectable-content" id="_s_14">not accept the certificate</span>].
-                    <div class="appnote">
-                        <span class="note-header">Application Note: </span><span class="note"><i>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is selection-based in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> but is made mandatory when this PPModule is claimed because the <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> implements functionality that requires the use of certificate authentication.</i></span>
-                    </div>
-                </div>
-            </div>
+        <div class="comp" id="@id">
+            <h4>FIA_X509_EXT.2: X.509 Certificate Authentication</h4>
         </div>
-        <div class="comp" id="FIA_X509_EXT.3">
-            <h4>FIA_X509_EXT.3 X.509 Certificate Requests</h4>
-             <span class="description">This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is selection-based in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is mandated by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because an <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> must implement security functions that require it to be issued its own X.509 certificate.</span> No additional EAs are specified for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> beyond what is defined in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> SD.
-            <br>
-            <br>
+        <div class="comp" id="@id">
+            <h4>FIA_X509_EXT.3: X.509 Certificate Requests</h4>
+            <span class="description">This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is selection-based in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> but is mandated by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because an <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> must implement security functions that require it to be issued its own X.509 certificate.</span>
         </div>
-        <h4 id="m-fpt" class="indexable" data-level="4">5.1.1.4 Protection of the TSF (FPT)</h4>
-        <div class="comp" id="FPT_STM_EXT.1">
-            <h4>FPT_STM_EXT.1 Reliable Time Stamps</h4>
-            <div class="element">
-                <div class="reqid" id="FPT_STM_EXT.1.1">
-                    <a href="#FPT_STM_EXT.1.1" class="abbr">FPT_STM_EXT.1.1</a>
-                </div>
-                <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall synchronize time with an NTP server. 
-                    <div class="appnote">
-                        <span class="note-header">Application Note: </span><span class="note"><i>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> has been refined from the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> to permit the NTP server selection only. No other parts of the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> are modified.</i> <span style="" class="comment " id="Comment-3-"> First half of TD0835 has been applied to this document, however the other half of this TD adds a "Further Modified <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr>"- Guidance is needed on how to implement this into the current document </span></span>
-                    </div>
-                </div>
-            </div>
+        <h4 id="@id" class="indexable" data-level="4">5.1.1.4 Protection of the TSF (FPT)</h4>
+        <div class="comp" id="@id">
+            <h4>FPT_STM_EXT.1: Reliable Time Stamps</h4>
+            <span class="description"></span>
         </div>
         <h2 id="man-sfrs" class="indexable" data-level="2">5.2 TOE Security Functional Requirements</h2>
          The following section describes the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that must be satisfied by any <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that claims conformance to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>. These <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> must be claimed regardless of which <abbr class="dyn-abbr"><a href="#abbr_PP-Configuration">PP-Configuration</a></abbr> is used to define the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. 
@@ -861,7 +578,7 @@
                             All auditable events for the [<i>not specified</i>]
                         </li>
                         <li>
-                            [<b>current IP connections, NTP status, CPU usage, memory usage, disk and file storage capacity, audit storage capacity, [<b>selection</b>: <span class="selectable-content" id="_s_15">power Status</span>, <span class="selectable-content" id="_s_16">fan status</span>, <span class="selectable-content" id="_s_17">no other activities</span>]</b>
+                            [<b>current IP connections, NTP status, CPU usage, memory usage, disk and file storage capacity, audit storage capacity, [<b>selection</b>: <span class="selectable-content" id="_s_1">power Status</span>, <span class="selectable-content" id="_s_2">fan status</span>, <span class="selectable-content" id="_s_3">no other activities</span>]</b>
                         </li>
                     </ol>
                 </div>
@@ -878,7 +595,7 @@
                             For each auditable event type, based on the auditable event definitions of the functional components included in the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>, functional package or <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>, [<i>event details described in System Log Events table</i>].
                         </li>
                     </ol>
-                     <b><span class="ctr" data-myid="atref-mandatory" data-counter-type="ct-Table" id="atref-mandatory">Table <span class="counter">3</span>: System Log Events</span></b> 
+                     <b><span class="ctr" data-myid="atref-mandatory" data-counter-type="ct-Table" id="atref-mandatory">Table <span class="counter">2</span>: System Log Events</span></b> 
                     <table border="1">
                         <tr>
                             <th>Event</th><th>Additional System Log Record Contents</th>
@@ -905,7 +622,7 @@
                     <div class="appnote">
                         <span class="note-header">Application Note: </span><span class="note"><i>
                                 <p>
-                                    Unlike audit data (see <a href="#FAU_GEN.1">FAU_GEN.1</a>), system log data is used primarily for real-time analysis of system behavior. This data is expected to be treated as non-persistent data by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.
+                                    Unlike audit data (see FAU_GEN.1), system log data is used primarily for real-time analysis of system behavior. This data is expected to be treated as non-persistent data by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.
                                 </p>
                                 <p>
                                     The <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author is expected to identify the sampling interval for the information presented in the system log so that it is clear to the evaluator how often updates to that information will be presented to an administrator
@@ -963,7 +680,7 @@
                     <a href="#FAU_VVR_EXT.1.1" class="abbr">FAU_VVR_EXT.1.1</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="fau-vvr-ext-1-1-have">have</span>, <span class="selectable-content" id="_s_19">not have</span>] the capability to record voice and video call data.
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="fau-vvr-ext-1-1-have">have</span>, <span class="selectable-content" id="_s_5">not have</span>] the capability to record voice and video call data.
                     <div class="appnote">
                         <span class="note-header">Application Note: </span><span class="note"><i>If "have" is selected, both <a href="#FAU_STG.2/VVR">FAU_STG.2/VVR</a> and <a href="#FAU_VVR_EXT.2">FAU_VVR_EXT.2</a> must be claimed and &ldquo;Ability to enable/disable voice and video recordings for any registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint&rdquo; must be selected in <a href="#FMT_SMF.1.1/ESC">FMT_SMF.1.1/ESC</a>. </i></span>
                     </div>
@@ -989,7 +706,7 @@
                     <a href="#FDP_IFF.1.1" class="abbr">FDP_IFF.1.1</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall enforce the [<b><i>enterprise session controller SFP</i></b>] based on the following types of subject and information security attributes: <b>[<b>assignment</b>: <span class="assignable-content">method by which the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> identifies each endpoint for a call</span>] using the following call control protocols: [<b>selection</b>: <span class="selectable-content" id="_s_20"><abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr></span>, <span class="selectable-content" id="_s_21">H.323</span>] and [<b>selection</b>: <span class="selectable-content" id="_s_22">SS7</span>, <span class="selectable-content" id="_s_23"><abbr class="dyn-abbr"><a href="#abbr_MGCP">MGCP</a></abbr></span>, <span class="selectable-content" id="_s_24">no other call control protocols</span>]</b>. 
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall enforce the [<b><i>enterprise session controller SFP</i></b>] based on the following types of subject and information security attributes: <b>[<b>assignment</b>: <span class="assignable-content">method by which the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> identifies each endpoint for a call</span>] using the following call control protocols: [<b>selection</b>: <span class="selectable-content" id="_s_6"><abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr></span>, <span class="selectable-content" id="_s_7">H.323</span>] and [<b>selection</b>: <span class="selectable-content" id="_s_8">SS7</span>, <span class="selectable-content" id="_s_9"><abbr class="dyn-abbr"><a href="#abbr_MGCP">MGCP</a></abbr></span>, <span class="selectable-content" id="_s_10">no other call control protocols</span>]</b>. 
                 </div>
             </div>
             <div class="element">
@@ -1038,7 +755,7 @@
                     <a href="#FDP_RIP.1.1" class="abbr">FDP_RIP.1.1</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall ensure that any previous information content of a resource is made unavailable upon the [<b>selection</b>: <span class="selectable-content" id="_s_25">allocation of the resource to</span>, <span class="selectable-content" id="_s_26">deallocation of the resource from</span>] the following objects: [<b>assignment</b>: <span class="assignable-content">disk storage location(s) erased by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> during factory reset or other wipe operation</span>].
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall ensure that any previous information content of a resource is made unavailable upon the [<b>selection</b>: <span class="selectable-content" id="_s_11">allocation of the resource to</span>, <span class="selectable-content" id="_s_12">deallocation of the resource from</span>] the following objects: [<b>assignment</b>: <span class="assignable-content">disk storage location(s) erased by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> during factory reset or other wipe operation</span>].
                     <div class="appnote">
                         <span class="note-header">Application Note: </span><span class="note"><i>The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is expected to follow guidelines for [NIST SP 800-88], &lsquo;Disk Storage Sanitization&rsquo; as the method for ensuring that residual information is cleared from both volatile and nonvolatile memory. This involves overwriting the entire disk or disk partition with zeroes, followed by all ones, followed by all zeroes. Since it is not feasible to pause the wipe operation while in progress it is sufficient for the evaluator to observe during testing that the final result is all zeroes; however, the vendor-provided evidence is expected to provide a justification that [NIST SP 800- 88] guidelines are being followed.</i></span>
                     </div>
@@ -1110,22 +827,22 @@
                             [<b>selection</b>: 
                             <ul>
                                 <li style="">
-                                    <span class="selectable-content" id="_s_27">Ability to configure the password policy;</span>
+                                    <span class="selectable-content" id="_s_13">Ability to configure the password policy;</span>
                                 </li>
                                 <li style="">
                                     <span class="selectable-content" id="fmt-smf-1-1-esc-select2">Ability to specify the set of audited events;</span>
                                 </li>
                                 <li style="">
-                                    <span class="selectable-content" id="_s_29">Ability to configure the behavior of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> in response to a self-test failure;</span>
+                                    <span class="selectable-content" id="_s_15">Ability to configure the behavior of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> in response to a self-test failure;</span>
                                 </li>
                                 <li style="">
-                                    <span class="selectable-content" id="_s_30">Ability to enable/disable voice and video recordings for any registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint;</span>
+                                    <span class="selectable-content" id="_s_16">Ability to enable/disable voice and video recordings for any registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint;</span>
                                 </li>
                                 <li style="">
-                                    <span class="selectable-content" id="_s_31">Ability to specify criteria for retention of voice and video recordings;</span>
+                                    <span class="selectable-content" id="_s_17">Ability to specify criteria for retention of voice and video recordings;</span>
                                 </li>
                                 <li style="">
-                                    <span class="selectable-content" id="_s_32">No other capabilities</span>
+                                    <span class="selectable-content" id="_s_18">No other capabilities</span>
                                 </li>
                             </ul>
                             ]].
@@ -1140,7 +857,7 @@
                                     The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> developer is encouraged, but not required, to provide a more sophisticated password strength policy than what is prescribed by FIA_PMG_EXT.1 as defined in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr>. This may include the ability for an administrator to configure the metrics used to define an acceptable password. At minimum, the minimum password length must be configurable. If "have&rdquo; is selected in <a href="#FAU_VVR_EXT.1.1">FAU_VVR_EXT.1.1</a>, then "Ability to enable/disable voice and video recordings for any registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint" must be selected. 
                                 </p>
                                 <p>
-                                    The selection &ldquo;Ability to configure NTP&rdquo; must be included in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> if the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> uses NTP for timestamp configuration. If selected, <a href="#FCS_NTP_EXT.1">FCS_NTP_EXT.1</a> from the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> must be claimed as well.
+                                    The selection &ldquo;Ability to configure NTP&rdquo; must be included in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> if the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> uses NTP for timestamp configuration. If selected, FCS_NTP_EXT.1 from the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> must be claimed as well.
                                 </p>
                                 <p>
                                     If &ldquo;Ability to specify the set of audited events&rdquo; is selected, <a href="#FAU_SEL.1">FAU_SEL.1</a> must be claimed. 
@@ -1158,7 +875,7 @@
                     <a href="#FPT_FLS.1.1/ESC" class="abbr">FPT_FLS.1.1/ESC</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall preserve a secure state <b>through the following means: [<b>selection</b>: <span class="selectable-content" id="_s_33">audible alarm</span>, <span class="selectable-content" id="_s_34">visual indicator</span>, <span class="selectable-content" id="_s_35">reboot of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span>, <span class="selectable-content" id="_s_36">shutdown of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span>, <span class="selectable-content" id="_s_37">[<b>assignment</b>: <span class="assignable-content">other methods</span>]</span>]</b> when the following types of failures occur: [<i>failure of self-tests defined in FPT_TST_EXT.1, failure of </i>[<b>assignment</b>: <span class="assignable-content">hardware components that affect the proper functioning of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span>]]. 
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall preserve a secure state <b>through the following means: [<b>selection</b>: <span class="selectable-content" id="_s_19">audible alarm</span>, <span class="selectable-content" id="_s_20">visual indicator</span>, <span class="selectable-content" id="_s_21">reboot of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span>, <span class="selectable-content" id="_s_22">shutdown of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span>, <span class="selectable-content" id="_s_23">[<b>assignment</b>: <span class="assignable-content">other methods</span>]</span>]</b> when the following types of failures occur: [<i>failure of self-tests defined in FPT_TST_EXT.1, failure of </i>[<b>assignment</b>: <span class="assignable-content">hardware components that affect the proper functioning of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span>]]. 
                 </div>
             </div>
         </div>
@@ -1170,7 +887,7 @@
                     <a href="#FTP_ITC.1.1/ESC" class="abbr">FTP_ITC.1.1/ESC</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall <b>be capable of using TLS and [<b>selection</b>: <span class="selectable-content" id="_s_38">DTLS</span>, <span class="selectable-content" id="_s_39">IPsec</span>, <span class="selectable-content" id="_s_40">no other protocols</span>] to</b> provide a communication channel between itself and another trusted IT product <b>supporting the following capabilities: <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints (for protection of signaling protocols), <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints (for protection of voice/video/media content), other <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> devices (for <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> trunking), [<b>selection</b>: <span class="selectable-content" id="_s_41"><abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> conferencing system</span>, <span class="selectable-content" id="_s_42">no other capabilities</span>]</b> that is logically distinct from other communication channels and provides assured identification of its end points and protection of the channel data from modification or disclosure.
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall <b>be capable of using TLS and [<b>selection</b>: <span class="selectable-content" id="_s_24">DTLS</span>, <span class="selectable-content" id="_s_25">IPsec</span>, <span class="selectable-content" id="_s_26">no other protocols</span>] to</b> provide a communication channel between itself and another trusted IT product <b>supporting the following capabilities: <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints (for protection of signaling protocols), <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints (for protection of voice/video/media content), other <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> devices (for <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> trunking), [<b>selection</b>: <span class="selectable-content" id="_s_27"><abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> conferencing system</span>, <span class="selectable-content" id="_s_28">no other capabilities</span>]</b> that is logically distinct from other communication channels and provides assured identification of its end points and protection of the channel data from modification or disclosure.
                 </div>
             </div>
             <div class="element">
@@ -1196,16 +913,16 @@
             <br>
             <table>
                 <caption>
-                    <span class="ctr" data-myid="t-obj_map" data-counter-type="ct-Table" id="t-obj_map">Table <span class="counter">4</span></span>: <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> Rationale
+                    <span class="ctr" data-myid="t-obj_map" data-counter-type="ct-Table" id="t-obj_map">Table <span class="counter">3</span></span>: <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> Rationale
                 </caption>
                 <tr>
                     <th>Threat</th><th>Addressed by</th><th>Rationale</th>
                 </tr>
                 <tr class="major-row">
-                    <td rowspan="27"><a href="#T.MALICIOUS_TRAFFIC">T.MALICIOUS_​TRAFFIC</a></td><td><a href="#FCS_NTP_EXT.1">FCS_NTP_EXT.1</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to support NTP communications to obtain reliable time data that is used for accurate recording of call metadata.</td>
+                    <td rowspan="27"><a href="#T.MALICIOUS_TRAFFIC">T.MALICIOUS_​TRAFFIC</a></td><td>FCS_NTP_EXT.1 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to support NTP communications to obtain reliable time data that is used for accurate recording of call metadata.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FPT_STM_EXT.1">FPT_STM_EXT.1</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to synchronize with an NTP server for reliable time data that is used for accurate recording of call metadata.</td>
+                    <td>FPT_STM_EXT.1 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to synchronize with an NTP server for reliable time data that is used for accurate recording of call metadata.</td>
                 </tr>
                 <tr>
                     <td><a href="#FAU_GEN.1/CDR">FAU_GEN.1/CDR</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to generate call detail records of <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> communications.</td>
@@ -1223,37 +940,37 @@
                     <td><a href="#FAU_VVR_EXT.2">FAU_VVR_EXT.2</a> (selection-based)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by defining when voice and video recordings are generated by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>, how they are stored, and how they are uniquely identified for future access.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FCS_DTLSS_EXT.1">FCS_DTLSS_EXT.1</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring the use of DTLS to protect transmitted voice/video media if this is the chosen method for securing it.</td>
+                    <td>FCS_DTLSS_EXT.1 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring the use of DTLS to protect transmitted voice/video media if this is the chosen method for securing it.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FCS_DTLSS_EXT.2">FCS_DTLSS_EXT.2</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring any implementation of DTLS to use mutual authentication.</td>
+                    <td>FCS_DTLSS_EXT.2 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring any implementation of DTLS to use mutual authentication.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FCS_NTP_EXT.1">FCS_NTP_EXT.1</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to support NTP communications to obtain reliable time data that is used for establishment of valid cryptographic channels.</td>
+                    <td>FCS_NTP_EXT.1 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to support NTP communications to obtain reliable time data that is used for establishment of valid cryptographic channels.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FCS_TLSC_EXT.1">FCS_TLSC_EXT.1</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring TLS for <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications.</td>
+                    <td>FCS_TLSC_EXT.1 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring TLS for <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FCS_TLSC_EXT.2">FCS_TLSC_EXT.2</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring TLS for <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications.</td>
+                    <td>FCS_TLSC_EXT.2 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring TLS for <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FCS_TLSS_EXT.1">FCS_TLSS_EXT.1</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring TLS for <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications.</td>
+                    <td>FCS_TLSS_EXT.1 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring TLS for <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FCS_TLSS_EXT.2">FCS_TLSS_EXT.2</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring TLS for <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications.</td>
+                    <td>FCS_TLSS_EXT.2 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring TLS for <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FIA_X509_EXT.1/Rev">FIA_X509_EXT.1/Rev</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring X.509 validation in support of establishing TLS communications.</td>
+                    <td>FIA_X509_EXT.1/Rev (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring X.509 validation in support of establishing TLS communications.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FIA_X509_EXT.2">FIA_X509_EXT.2</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring X.509 authentication in support of establishing TLS communications.</td>
+                    <td>FIA_X509_EXT.2 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring X.509 authentication in support of establishing TLS communications.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FIA_X509_EXT.3">FIA_X509_EXT.3</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to be able to request an X.509 certificate that it can present to external entities when establishing cryptographic communications.</td>
+                    <td>FIA_X509_EXT.3 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to be able to request an X.509 certificate that it can present to external entities when establishing cryptographic communications.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FPT_STM_EXT.1">FPT_STM_EXT.1</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to synchronize with an NTP server for reliable time data that is used for establishment of valid cryptographic channels. <span style="" class="comment " id="Comment-1-"> this is a duplicate from O.SECURE_VVOIP and O.MEDIA_RECORDING</span></td>
+                    <td>FPT_STM_EXT.1 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to synchronize with an NTP server for reliable time data that is used for establishment of valid cryptographic channels. <span style="" class="comment " id="Comment-1-"> this is a duplicate from O.SECURE_VVOIP and O.MEDIA_RECORDING</span></td>
                 </tr>
                 <tr>
                     <td><a href="#FDP_IFC.1">FDP_IFC.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by defining an enterprise session controller policy to broker <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint communications.</td>
@@ -1283,37 +1000,37 @@
                     <td><a href="#FPT_FLS.1/ESC">FPT_FLS.1/ESC</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by ensuring that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> enters a secure failure state if specific hardware or software failures are detected.</td>
                 </tr>
                 <tr class="major-row">
-                    <td rowspan="17"><a href="#T.NETWORK_DISCLOSURE">T.NETWORK_​DISCLOSURE</a></td><td><a href="#FCS_DTLSS_EXT.1">FCS_DTLSS_EXT.1</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring the use of DTLS to protect transmitted voice/video media if this is the chosen method for securing it.</td>
+                    <td rowspan="17"><a href="#T.NETWORK_DISCLOSURE">T.NETWORK_​DISCLOSURE</a></td><td>FCS_DTLSS_EXT.1 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring the use of DTLS to protect transmitted voice/video media if this is the chosen method for securing it.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FCS_DTLSS_EXT.2">FCS_DTLSS_EXT.2</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring any implementation of DTLS to use mutual authentication.</td>
+                    <td>FCS_DTLSS_EXT.2 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring any implementation of DTLS to use mutual authentication.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FCS_NTP_EXT.1">FCS_NTP_EXT.1</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to support NTP communications to obtain reliable time data that is used for establishment of valid cryptographic channels.</td>
+                    <td>FCS_NTP_EXT.1 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to support NTP communications to obtain reliable time data that is used for establishment of valid cryptographic channels.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FCS_TLSC_EXT.1">FCS_TLSC_EXT.1</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring TLS for <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications.</td>
+                    <td>FCS_TLSC_EXT.1 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring TLS for <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FCS_TLSC_EXT.2">FCS_TLSC_EXT.2</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring TLS for <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications.</td>
+                    <td>FCS_TLSC_EXT.2 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring TLS for <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FCS_TLSS_EXT.1">FCS_TLSS_EXT.1</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring TLS for <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications.</td>
+                    <td>FCS_TLSS_EXT.1 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring TLS for <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FCS_TLSS_EXT.2">FCS_TLSS_EXT.2</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring TLS for <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications.</td>
+                    <td>FCS_TLSS_EXT.2 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring TLS for <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FIA_X509_EXT.1/Rev">FIA_X509_EXT.1/Rev</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring X.509 validation in support of establishing TLS communications.</td>
+                    <td>FIA_X509_EXT.1/Rev (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring X.509 validation in support of establishing TLS communications.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FIA_X509_EXT.2">FIA_X509_EXT.2</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring X.509 authentication in support of establishing TLS communications.</td>
+                    <td>FIA_X509_EXT.2 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring X.509 authentication in support of establishing TLS communications.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FIA_X509_EXT.3">FIA_X509_EXT.3</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to be able to request an X.509 certificate that it can present to external entities when establishing cryptographic communications.</td>
+                    <td>FIA_X509_EXT.3 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to be able to request an X.509 certificate that it can present to external entities when establishing cryptographic communications.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FPT_STM_EXT.1">FPT_STM_EXT.1</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to synchronize with an NTP server for reliable time data that is used for establishment of valid cryptographic channels.</td>
+                    <td>FPT_STM_EXT.1 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to synchronize with an NTP server for reliable time data that is used for establishment of valid cryptographic channels.</td>
                 </tr>
                 <tr>
                     <td><a href="#FDP_IFC.1">FDP_IFC.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by defining an enterprise session controller policy to broker <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint communications.</td>
@@ -1334,37 +1051,37 @@
                     <td><a href="#FPT_TUD_EXT.1/VVoIP">FPT_TUD_EXT.1/VVoIP</a> (implementation-dependent)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by optionally allowing the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to distribute software/firmware updates to connected <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints.</td>
                 </tr>
                 <tr class="major-row">
-                    <td rowspan="25"><a href="#T.UNAUTHORIZED_CLIENT">T.UNAUTHORIZED_​CLIENT</a></td><td><a href="#FCS_DTLSS_EXT.1">FCS_DTLSS_EXT.1</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring the use of DTLS to protect transmitted voice/video media if this is the chosen method for securing it.</td>
+                    <td rowspan="25"><a href="#T.UNAUTHORIZED_CLIENT">T.UNAUTHORIZED_​CLIENT</a></td><td>FCS_DTLSS_EXT.1 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring the use of DTLS to protect transmitted voice/video media if this is the chosen method for securing it.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FCS_DTLSS_EXT.2">FCS_DTLSS_EXT.2</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring any implementation of DTLS to use mutual authentication.</td>
+                    <td>FCS_DTLSS_EXT.2 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring any implementation of DTLS to use mutual authentication.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FCS_NTP_EXT.1">FCS_NTP_EXT.1</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to support NTP communications to obtain reliable time data that is used for establishment of valid cryptographic channels.</td>
+                    <td>FCS_NTP_EXT.1 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to support NTP communications to obtain reliable time data that is used for establishment of valid cryptographic channels.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FCS_TLSC_EXT.1">FCS_TLSC_EXT.1</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring TLS for <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications.</td>
+                    <td>FCS_TLSC_EXT.1 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring TLS for <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FCS_TLSC_EXT.2">FCS_TLSC_EXT.2</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring TLS for <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications.</td>
+                    <td>FCS_TLSC_EXT.2 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring TLS for <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FCS_TLSS_EXT.1">FCS_TLSS_EXT.1</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring TLS for <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications.</td>
+                    <td>FCS_TLSS_EXT.1 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring TLS for <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FCS_TLSS_EXT.2">FCS_TLSS_EXT.2</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring TLS for <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications.</td>
+                    <td>FCS_TLSS_EXT.2 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring TLS for <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> and H.323 communications.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FIA_X509_EXT.1/Rev">FIA_X509_EXT.1/Rev</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring X.509 validation in support of establishing TLS communications.</td>
+                    <td>FIA_X509_EXT.1/Rev (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring X.509 validation in support of establishing TLS communications.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FIA_X509_EXT.2">FIA_X509_EXT.2</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring X.509 authentication in support of establishing TLS communications.</td>
+                    <td>FIA_X509_EXT.2 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring X.509 authentication in support of establishing TLS communications.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FIA_X509_EXT.3">FIA_X509_EXT.3</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to be able to request an X.509 certificate that it can present to external entities when establishing cryptographic communications.</td>
+                    <td>FIA_X509_EXT.3 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to be able to request an X.509 certificate that it can present to external entities when establishing cryptographic communications.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FPT_STM_EXT.1">FPT_STM_EXT.1</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to synchronize with an NTP server for reliable time data that is used for establishment of valid cryptographic channels.</td>
+                    <td>FPT_STM_EXT.1 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to synchronize with an NTP server for reliable time data that is used for establishment of valid cryptographic channels.</td>
                 </tr>
                 <tr>
                     <td><a href="#FDP_IFC.1">FDP_IFC.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by defining an enterprise session controller policy to broker <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint communications.</td>
@@ -1385,16 +1102,16 @@
                     <td><a href="#FPT_TUD_EXT.1/VVoIP">FPT_TUD_EXT.1/VVoIP</a> (implementation-dependent)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by optionally allowing the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to distribute software/firmware updates to connected <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FAU_GEN.1">FAU_GEN.1</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by defining additional required auditable events that are specific to <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> functionality that extend the audit generation requirement defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>.</td>
+                    <td>FAU_GEN.1 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by defining additional required auditable events that are specific to <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> functionality that extend the audit generation requirement defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FAU_STG.2">FAU_STG.2</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring all stored audit data to be protected against unauthorized access.</td>
+                    <td>FAU_STG.2 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring all stored audit data to be protected against unauthorized access.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FCS_NTP_EXT.1">FCS_NTP_EXT.1</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to support NTP communications to obtain reliable time data that is used for accurate recording of log data.</td>
+                    <td>FCS_NTP_EXT.1 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to support NTP communications to obtain reliable time data that is used for accurate recording of log data.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FPT_STM_EXT.1">FPT_STM_EXT.1</a> (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to synchronize with an NTP server for reliable time data that is used for accurate log data.</td>
+                    <td>FPT_STM_EXT.1 (refined from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to synchronize with an NTP server for reliable time data that is used for accurate log data.</td>
                 </tr>
                 <tr>
                     <td><a href="#FAU_GEN.1/Log">FAU_GEN.1/Log</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to generate a real-time system log of its own diagnostic details.</td>
@@ -1418,7 +1135,7 @@
          The threats defined by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> (see section 3.1) supplement those defined in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> as follows: 
         <table>
             <caption>
-                <span class="ctr" data-myid="t-con-sec-prob-def" data-counter-type="ct-Table" id="t-con-sec-prob-def">Table <span class="counter">5</span></span>: Consistency of Security Problem Definition (<abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> base) 
+                <span class="ctr" data-myid="t-con-sec-prob-def" data-counter-type="ct-Table" id="t-con-sec-prob-def">Table <span class="counter">4</span></span>: Consistency of Security Problem Definition (<abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> base) 
             </caption>
             <tr>
                 <th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> Threat, Assumption, <abbr class="dyn-abbr"><a href="#abbr_OSP">OSP</a></abbr></th><th>Consistency Rationale</th>
@@ -1441,7 +1158,7 @@
             The objectives for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&rsquo;s operational environment are consistent with the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> based on the following rationale: 
             <table>
                 <caption>
-                    <span class="ctr" data-myid="t-con-oe-objs" data-counter-type="ct-Table" id="t-con-oe-objs">Table <span class="counter">6</span></span>: Consistency of <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> Objectives (<abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> base) 
+                    <span class="ctr" data-myid="t-con-oe-objs" data-counter-type="ct-Table" id="t-con-oe-objs">Table <span class="counter">5</span></span>: Consistency of <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> Objectives (<abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> base) 
                 </caption>
                 <tr>
                     <th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> Objective</th><th>Consistency Rationale</th>
@@ -1452,10 +1169,10 @@
             </table>
         </p>
         <h3 id="conreq-ND" class="indexable" data-level="3">6.1.4 Consistency of Requirements </h3>
-         This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> identifies several <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> from the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> that are needed to support Enterprise Session Controller functionality. This is considered to be consistent because the functionality provided by the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> is being used for its intended purpose. The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> also identifies a number of modified <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> from the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> that are used entirely to provide functionality for Enterprise Session Controllers. The rationale for why this does not conflict with the claims defined by the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> are as follows: 
+         This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> identifies several <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> from the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> that are needed to support Enterprise Session Controller functionality. This is considered to be consistent because the functionality provided by the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> is being used for its intended purpose. The rationale for why this does not conflict with the claims defined by the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> are as follows: 
         <table>
             <caption>
-                <span class="ctr" data-myid="t-con-reqs" data-counter-type="ct-Table" id="t-con-reqs">Table <span class="counter">7</span></span>: Consistency of Requirements (<abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> base) 
+                <span class="ctr" data-myid="t-con-reqs" data-counter-type="ct-Table" id="t-con-reqs">Table <span class="counter">6</span></span>: Consistency of Requirements (<abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> base) 
             </caption>
             <tr>
                 <th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> Requirement</th><th>Consistency Rationale</th>
@@ -1464,43 +1181,43 @@
                 <th colspan="2"> Modified <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th>
             </tr>
             <tr>
-                <td><a href="#FAU_GEN.1">FAU_GEN.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> modifies the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> to add specific auditable events that relate to <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> functionality.</td>
+                <td>FAU_GEN.1</td><td></td>
             </tr>
             <tr>
-                <td><a href="#FAU_STG.2">FAU_STG.2</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> mandates the inclusion of this optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> because it is required to implement functionality required by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.</td>
+                <td>FAU_STG.2</td><td></td>
             </tr>
             <tr>
-                <td><a href="#FCS_DTLSS_EXT.1">FCS_DTLSS_EXT.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> refines this selection-based <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> to a more restrictive selection if claimed. The available selection item is one of the items in the original version of the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>. This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> also specifies an additional trigger for when this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> must be claimed</td>
+                <td>FCS_DTLSS_EXT.1</td><td></td>
             </tr>
             <tr>
-                <td><a href="#FCS_DTLSS_EXT.2">FCS_DTLSS_EXT.2</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> conditionally mandates the inclusion of this optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> for any situation where DTLS is claimed, which makes this into a selection-based <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>.</td>
+                <td>FCS_DTLSS_EXT.2</td><td></td>
             </tr>
             <tr>
-                <td><a href="#FCS_NTP_EXT.1">FCS_NTP_EXT.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> requires NTP v4 to be selected, which is one of two selection options defined in the original <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>. This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> also mandates the inclusion of this selection-based <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> because it is required to implement the NTP functionality prompted by the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>&rsquo;s refinement to <a href="#FPT_STM_EXT.1">FPT_STM_EXT.1</a>.</td>
+                <td>FCS_NTP_EXT.1</td><td></td>
             </tr>
             <tr>
-                <td><a href="#FCS_TLSC_EXT.1">FCS_TLSC_EXT.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> mandates the inclusion of this selection-based <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> because it is required to implement the trusted communications required by the PPModule.</td>
+                <td>FCS_TLSC_EXT.1</td><td></td>
             </tr>
             <tr>
-                <td><a href="#FCS_TLSC_EXT.2">FCS_TLSC_EXT.2</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> mandates the inclusion of this optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> because it is required to implement the trusted communications required by the PPModule. </td>
+                <td>FCS_TLSC_EXT.2</td><td></td>
             </tr>
             <tr>
-                <td><a href="#FCS_TLSS_EXT.1">FCS_TLSS_EXT.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> mandates the inclusion of this selection-based <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> because it is required to implement the trusted communications required by the PPModule.</td>
+                <td>FCS_TLSS_EXT.1</td><td></td>
             </tr>
             <tr>
-                <td><a href="#FCS_TLSS_EXT.2">FCS_TLSS_EXT.2</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> mandates the inclusion of this optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> because it is required to implement the trusted communications required by the PPModule.</td>
+                <td>FCS_TLSS_EXT.2</td><td></td>
             </tr>
             <tr>
-                <td><a href="#FIA_X509_EXT.1/Rev">FIA_X509_EXT.1/Rev</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> mandates the inclusion of this selection-based <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> because all <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr> that conform to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> will perform functions that require certificate validation.</td>
+                <td>FIA_X509_EXT.1/REV</td><td></td>
             </tr>
             <tr>
-                <td><a href="#FIA_X509_EXT.2">FIA_X509_EXT.2</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> modifies the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> requirement by defining a mandatory usage of X.509 certificate authentication and to require the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to implement at least one trusted protocol that requires certificate validation.</td>
+                <td>FIA_X509_EXT.2</td><td></td>
             </tr>
             <tr>
-                <td><a href="#FIA_X509_EXT.3">FIA_X509_EXT.3</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> mandates the inclusion of this selection-based <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> because all <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr> that conform to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> will perform functions that require the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to have the ability to issue a certificate request to obtain its own X.509 certificate.</td>
+                <td>FIA_X509_EXT.3</td><td></td>
             </tr>
             <tr>
-                <td><a href="#FPT_STM_EXT.1">FPT_STM_EXT.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> modifies the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> by requiring one of this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>&rsquo;s two original selection items to be chosen.</td>
+                <td>FPT_STM_EXT.1</td><td></td>
             </tr>
             <tr>
                 <th colspan="2"> Additional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th>
@@ -1578,10 +1295,10 @@
                 <td><a href="#FAU_SEL.1">FAU_SEL.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> optionally allows a conformant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to claim the ability to suppress the generation of audit events based on certain factors. This does not conflict with the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> because if the administrators desires all required auditable events to be audited, they can choose to disable this function. </td>
             </tr>
             <tr>
-                <td><a href="#FAU_STG.2/VVR">FAU_STG.2/VVR</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> optionally allows a conformant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to claim the ability to securely store voice/video recordings. This does not conflict with the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> because the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> already has the ability to define secured storage (e.g. through <a href="#FAU_STG.2">FAU_STG.2</a>) so there is no expectation of availability that is being violated if this is claimed</td>
+                <td><a href="#FAU_STG.2/VVR">FAU_STG.2/VVR</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> optionally allows a conformant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to claim the ability to securely store voice/video recordings. This does not conflict with the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> because the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> already has the ability to define secured storage (e.g. through FAU_STG.2) so there is no expectation of availability that is being violated if this is claimed</td>
             </tr>
             <tr>
-                <td><a href="#FAU_VVR_EXT.2">FAU_VVR_EXT.2</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> optionally allows a conformant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to claim the ability to generate and retain voice/video recordings of calls. This does not conflict with the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> because the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> already defines an audit mechanism via <a href="#FAU_GEN.1">FAU_GEN.1</a> and also does not define any requirements that would prevent the generation of media recordings such as unobservability of user actions.</td>
+                <td><a href="#FAU_VVR_EXT.2">FAU_VVR_EXT.2</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> optionally allows a conformant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to claim the ability to generate and retain voice/video recordings of calls. This does not conflict with the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> because the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> already defines an audit mechanism via FAU_GEN.1 and also does not define any requirements that would prevent the generation of media recordings such as unobservability of user actions.</td>
             </tr>
         </table>
         <h1 id="opt-sfrs" class="indexable" data-level="A">Appendix A - Optional SFRs</h1>
@@ -1597,7 +1314,7 @@
         <h3 class="indexable" data-level="3" id="_sec_24">A.3.1 Auditable Events for Implementation-Dependent SFRs</h3>
         <table class="sort_kids_" border="1">
             <caption data-sortkey="#0">
-                <span class="ctr" data-myid="at-impl-dep" data-counter-type="ct-Table" id="at-impl-dep">Table <span class="counter">8</span></span>: Auditable Events for Requirements
+                <span class="ctr" data-myid="at-impl-dep" data-counter-type="ct-Table" id="at-impl-dep">Table <span class="counter">7</span></span>: Auditable Events for Requirements
             </caption>
             <tr data-sortkey="#1">
                 <th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th>
@@ -1636,7 +1353,7 @@
                     <a href="#FPT_TUD_EXT.1.3/VVoIP" class="abbr">FPT_TUD_EXT.1.3/VVoIP</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide means to authenticate firmware/software updates to the <b>registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint</b> using a [<b>selection</b>: <span class="selectable-content" id="_s_48">X.509 certificate</span>, <span class="selectable-content" id="_s_49">digital signature </span>, <span class="selectable-content" id="_s_50">published hash</span>] prior to installing those updates.
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide means to authenticate firmware/software updates to the <b>registered <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoint</b> using a [<b>selection</b>: <span class="selectable-content" id="_s_34">X.509 certificate</span>, <span class="selectable-content" id="_s_35">digital signature </span>, <span class="selectable-content" id="_s_36">published hash</span>] prior to installing those updates.
                     <div class="appnote">
                         <span class="note-header">Application Note: </span><span class="note"> <i>
                                 <p>
@@ -1654,7 +1371,7 @@
         <h2 class="indexable" data-level="2" id="sec-sel-audit-table">B.1 Auditable Events for Selection-based SFRs</h2>
         <table class="sort_kids_" border="1">
             <caption data-sortkey="#0">
-                <span class="ctr" data-myid="at-sel-based" data-counter-type="ct-Table" id="at-sel-based">Table <span class="counter">9</span></span>: Auditable Events for Selection-based Requirements
+                <span class="ctr" data-myid="at-sel-based" data-counter-type="ct-Table" id="at-sel-based">Table <span class="counter">8</span></span>: Auditable Events for Selection-based Requirements
             </caption>
             <tr data-sortkey="#1">
                 <th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th>
@@ -1701,7 +1418,7 @@
                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to select the set of events to be audited from the set of all auditable events based on the following attributes:
                     <ol type="a">
                         <li>
-                            [<b>selection</b>: <span class="selectable-content" id="_s_43">object identity</span>, <span class="selectable-content" id="_s_44">user identity</span>, <span class="selectable-content" id="_s_45">subject identity</span>, <span class="selectable-content" id="_s_46">host identity</span>, <span class="selectable-content" id="_s_47">event type</span>]
+                            [<b>selection</b>: <span class="selectable-content" id="_s_29">object identity</span>, <span class="selectable-content" id="_s_30">user identity</span>, <span class="selectable-content" id="_s_31">subject identity</span>, <span class="selectable-content" id="_s_32">host identity</span>, <span class="selectable-content" id="_s_33">event type</span>]
                         </li>
                         <li>
                             [<b>assignment</b>: <span class="assignable-content">list of additional attributes that audit selectivity is based upon</span>]
@@ -1777,7 +1494,7 @@
          All extended components specified in the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> are listed in this table: 
         <table class="sort_kids_">
             <caption data-sortkey="#0">
-                <b><span class="ctr" data-myid="" data-counter-type="ct-Table" id="">Table <span class="counter">10</span></span>: Extended Component Definitions</b>
+                <b><span class="ctr" data-myid="" data-counter-type="ct-Table" id="">Table <span class="counter">9</span></span>: Extended Component Definitions</b>
             </caption>
             <tr data-sortkey="#1">
                 <th>Functional Class</th><th>Functional Components</th>
@@ -1838,7 +1555,7 @@
                             </tr>
                         </table>
                         <h4 id="ext-comp-FAU_VVR_EXT.1.1">FAU_VVR_EXT.1.1</h4>
-                        The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="fau-vvr-ext-1-1-have">have</span>, <span class="selectable-content" id="_s_19">not have</span>] the capability to record voice and video call data.
+                        The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="fau-vvr-ext-1-1-have">have</span>, <span class="selectable-content" id="_s_5">not have</span>] the capability to record voice and video call data.
                     </div>
                     <h4>Management: FAU_VVR_EXT.2</h4>
                     <p>
@@ -1950,7 +1667,7 @@
         <h1 id="acronyms" class="indexable" data-level="A">Appendix F - Acronyms</h1>
         <table>
             <caption>
-                <span class="ctr" data-myid="t-acronyms" data-counter-type="ct-Table" id="t-acronyms">Table <span class="counter">11</span></span>: Acronyms 
+                <span class="ctr" data-myid="t-acronyms" data-counter-type="ct-Table" id="t-acronyms">Table <span class="counter">10</span></span>: Acronyms 
             </caption>
             <tr class="header">
                 <th>Acronym</th><th>Meaning</th>
@@ -2040,7 +1757,7 @@
         <h1 id="appendix-bibliography" class="indexable" data-level="A">Appendix G - Bibliography</h1>
         <table>
             <caption>
-                <span class="ctr" data-myid="t-biblio" data-counter-type="ct-Table" id="t-biblio">Table <span class="counter">12</span></span>: Bibliography
+                <span class="ctr" data-myid="t-biblio" data-counter-type="ct-Table" id="t-biblio">Table <span class="counter">11</span></span>: Bibliography
             </caption>
             <tr class="header">
                 <th>Identifier</th><th>Title</th>
