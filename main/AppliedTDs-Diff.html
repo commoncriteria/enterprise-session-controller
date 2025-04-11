@@ -837,29 +837,38 @@
                             For each auditable event type, based on the auditable event definitions of the functional components included in the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>, functional package or <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>, [<i>event details described in System Log Events table</i>].
                         </li>
                     </ol>
-                     <b><span class="ctr" data-myid="atref-mandatory" data-counter-type="ct-Table" id="atref-mandatory">Table <span class="counter">3</span>: System Log Events</span></b> 
-                    <table border="1">
-                        <tr>
-                            <th>Event</th><th>Additional System Log Record Contents</th>
+                    <table>
+                        <tr class="header">
+                            <td>Requirement</td><td>Rationale for Satisfaction</td>
                         </tr>
                         <tr>
-                            <th>Current IP connections</th><th>Network interface card (NIC); Status (up or down).</th>
+                            <td>FIA_UAU.1 &ndash; Timing of Authentication</td><td> <a href="#FMT_CFG_EXT.1">FMT_CFG_EXT.1</a> has a dependency on FIA_UAU.1 because it cannot exist unless the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> supports an authentication mechanism. </td>
                         </tr>
-                        <tr>
-                            <th>CPU usage </th><th>Utilization percentage of <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> CPU(s).</th>
-                        </tr>
-                        <tr>
-                            <th>Memory usage</th><th>Percentage and/or amount of free memory available for use.</th>
-                        </tr>
-                        <tr>
-                            <th>Disk and file storage capacity</th><th>Percentage and/or amount of available space remaining for each disk or disk partition on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.</th>
-                        </tr>
-                        <tr>
-                            <th>Fan status (conditional)</th><th>Fan identification; Status (on or off).</th>
-                        </tr>
-                        <tr>
-                            <th>Power status (conditional) </th><th>Status (on or off).</th>
-                        </tr>
+                        <table title="System Log Events" pre="Table " id="atref-mandatory">
+                            <tr class="header">
+                                <td>Event</td><td>Additional System Log Record Contents</td>
+                            </tr>
+                            <table border="1">
+                                <tr>
+                                    <th>Current IP connections</th><th>Network interface card (NIC); Status (up or down).</th>
+                                </tr>
+                                <tr>
+                                    <th>CPU usage </th><th>Utilization percentage of <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> CPU(s).</th>
+                                </tr>
+                                <tr>
+                                    <th>Memory usage</th><th>Percentage and/or amount of free memory available for use.</th>
+                                </tr>
+                                <tr>
+                                    <th>Disk and file storage capacity</th><th>Percentage and/or amount of available space remaining for each disk or disk partition on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.</th>
+                                </tr>
+                                <tr>
+                                    <th>Fan status (conditional)</th><th>Fan identification; Status (on or off).</th>
+                                </tr>
+                                <tr>
+                                    <th>Power status (conditional) </th><th>Status (on or off).</th>
+                                </tr>
+                            </table>
+                        </table>
                     </table>
                     <div class="appnote">
                         <span class="note-header">Application Note: </span><span class="note"><i>
@@ -1155,7 +1164,7 @@
             <br>
             <table>
                 <caption>
-                    <span class="ctr" data-myid="t-obj_map" data-counter-type="ct-Table" id="t-obj_map">Table <span class="counter">4</span></span>: <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> Rationale
+                    <span class="ctr" data-myid="t-obj_map" data-counter-type="ct-Table" id="t-obj_map">Table <span class="counter">3</span></span>: <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> Rationale
                 </caption>
                 <tr>
                     <th>Threat</th><th>Addressed by</th><th>Rationale</th>
@@ -1377,7 +1386,7 @@
          The threats defined by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> (see section 3.1) supplement those defined in the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> as follows: 
         <table>
             <caption>
-                <span class="ctr" data-myid="t-con-sec-prob-def" data-counter-type="ct-Table" id="t-con-sec-prob-def">Table <span class="counter">5</span></span>: Consistency of Security Problem Definition (<abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> base) 
+                <span class="ctr" data-myid="t-con-sec-prob-def" data-counter-type="ct-Table" id="t-con-sec-prob-def">Table <span class="counter">4</span></span>: Consistency of Security Problem Definition (<abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> base) 
             </caption>
             <tr>
                 <th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> Threat, Assumption, <abbr class="dyn-abbr"><a href="#abbr_OSP">OSP</a></abbr></th><th>Consistency Rationale</th>
@@ -1400,7 +1409,7 @@
             The objectives for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&rsquo;s operational environment are consistent with the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> based on the following rationale: 
             <table>
                 <caption>
-                    <span class="ctr" data-myid="t-con-oe-objs" data-counter-type="ct-Table" id="t-con-oe-objs">Table <span class="counter">6</span></span>: Consistency of <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> Objectives (<abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> base) 
+                    <span class="ctr" data-myid="t-con-oe-objs" data-counter-type="ct-Table" id="t-con-oe-objs">Table <span class="counter">5</span></span>: Consistency of <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> Objectives (<abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> base) 
                 </caption>
                 <tr>
                     <th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> Objective</th><th>Consistency Rationale</th>
@@ -1414,7 +1423,7 @@
          This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> identifies several <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> from the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> that are needed to support Enterprise Session Controller functionality. This is considered to be consistent because the functionality provided by the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> is being used for its intended purpose. The rationale for why this does not conflict with the claims defined by the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> are as follows: 
         <table>
             <caption>
-                <span class="ctr" data-myid="t-con-reqs" data-counter-type="ct-Table" id="t-con-reqs">Table <span class="counter">7</span></span>: Consistency of Requirements (<abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> base) 
+                <span class="ctr" data-myid="t-con-reqs" data-counter-type="ct-Table" id="t-con-reqs">Table <span class="counter">6</span></span>: Consistency of Requirements (<abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> base) 
             </caption>
             <tr>
                 <th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> Requirement</th><th>Consistency Rationale</th>
@@ -1556,7 +1565,7 @@
         <h3 class="indexable" data-level="3" id="_sec_25">A.3.1 Auditable Events for Implementation-Dependent SFRs</h3>
         <table class="sort_kids_" border="1">
             <caption data-sortkey="#0">
-                <span class="ctr" data-myid="at-impl-dep" data-counter-type="ct-Table" id="at-impl-dep">Table <span class="counter">8</span></span>: Auditable Events for Requirements
+                <span class="ctr" data-myid="at-impl-dep" data-counter-type="ct-Table" id="at-impl-dep">Table <span class="counter">7</span></span>: Auditable Events for Requirements
             </caption>
             <tr data-sortkey="#1">
                 <th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th>
@@ -1613,7 +1622,7 @@
         <h2 class="indexable" data-level="2" id="sec-sel-audit-table">B.1 Auditable Events for Selection-based SFRs</h2>
         <table class="sort_kids_" border="1">
             <caption data-sortkey="#0">
-                <span class="ctr" data-myid="at-sel-based" data-counter-type="ct-Table" id="at-sel-based">Table <span class="counter">9</span></span>: Auditable Events for Selection-based Requirements
+                <span class="ctr" data-myid="at-sel-based" data-counter-type="ct-Table" id="at-sel-based">Table <span class="counter">8</span></span>: Auditable Events for Selection-based Requirements
             </caption>
             <tr data-sortkey="#1">
                 <th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th>
@@ -1736,7 +1745,7 @@
          All extended components specified in the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> are listed in this table: 
         <table class="sort_kids_">
             <caption data-sortkey="#0">
-                <b><span class="ctr" data-myid="" data-counter-type="ct-Table" id="">Table <span class="counter">10</span></span>: Extended Component Definitions</b>
+                <b><span class="ctr" data-myid="" data-counter-type="ct-Table" id="">Table <span class="counter">9</span></span>: Extended Component Definitions</b>
             </caption>
             <tr data-sortkey="#1">
                 <th>Functional Class</th><th>Functional Components</th>
@@ -1909,7 +1918,7 @@
         <h1 id="acronyms" class="indexable" data-level="A">Appendix F - Acronyms</h1>
         <table>
             <caption>
-                <span class="ctr" data-myid="t-acronyms" data-counter-type="ct-Table" id="t-acronyms">Table <span class="counter">11</span></span>: Acronyms 
+                <span class="ctr" data-myid="t-acronyms" data-counter-type="ct-Table" id="t-acronyms">Table <span class="counter">10</span></span>: Acronyms 
             </caption>
             <tr class="header">
                 <th>Acronym</th><th>Meaning</th>
@@ -1999,7 +2008,7 @@
         <h1 id="appendix-bibliography" class="indexable" data-level="A">Appendix G - Bibliography</h1>
         <table>
             <caption>
-                <span class="ctr" data-myid="t-biblio" data-counter-type="ct-Table" id="t-biblio">Table <span class="counter">12</span></span>: Bibliography
+                <span class="ctr" data-myid="t-biblio" data-counter-type="ct-Table" id="t-biblio">Table <span class="counter">11</span></span>: Bibliography
             </caption>
             <tr class="header">
                 <th>Identifier</th><th>Title</th>
