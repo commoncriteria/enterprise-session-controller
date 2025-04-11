@@ -1,8 +1,5 @@
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:504:16: error: element "con-toe" not allowed yet; missing required element "modified-sfrs"
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:649:19: error: element "modified-sfrs" not allowed here; expected the element end-tag or element "con-mod"
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:651:63: error: element "audit-table" not allowed here; expected the element end-tag, element "section" or an element from another namespace
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:682:228: error: element "comment" not allowed here; expected the element end-tag or text
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:740:15: error: element "comment" not allowed here; expected the element end-tag or text
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:742:285: error: element "comment" not allowed here; expected the element end-tag or text
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:772:14: error: element "comment" not allowed here; expected the element end-tag or text
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:775:14: error: element "comment" not allowed here; expected the element end-tag or text
+/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:536:228: error: element "comment" not allowed here; expected the element end-tag or text
+/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:594:15: error: element "comment" not allowed here; expected the element end-tag or text
+/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:596:285: error: element "comment" not allowed here; expected the element end-tag or text
+/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:626:14: error: element "comment" not allowed here; expected the element end-tag or text
+/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:629:14: error: element "comment" not allowed here; expected the element end-tag or text

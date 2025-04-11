@@ -1,8 +1,5 @@
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/input/enterprise-session-controller.xml:522:16: error: element "con-toe" not allowed yet; missing required element "modified-sfrs"
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/input/enterprise-session-controller.xml:667:19: error: element "modified-sfrs" not allowed here; expected the element end-tag or element "con-mod"
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/input/enterprise-session-controller.xml:669:63: error: element "audit-table" not allowed here; expected the element end-tag, element "section" or an element from another namespace
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/input/enterprise-session-controller.xml:700:228: error: element "comment" not allowed here; expected the element end-tag or text
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/input/enterprise-session-controller.xml:758:15: error: element "comment" not allowed here; expected the element end-tag or text
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/input/enterprise-session-controller.xml:760:285: error: element "comment" not allowed here; expected the element end-tag or text
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/input/enterprise-session-controller.xml:790:14: error: element "comment" not allowed here; expected the element end-tag or text
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/input/enterprise-session-controller.xml:793:14: error: element "comment" not allowed here; expected the element end-tag or text
+/home/runner/work/enterprise-session-controller/enterprise-session-controller/input/enterprise-session-controller.xml:554:228: error: element "comment" not allowed here; expected the element end-tag or text
+/home/runner/work/enterprise-session-controller/enterprise-session-controller/input/enterprise-session-controller.xml:612:15: error: element "comment" not allowed here; expected the element end-tag or text
+/home/runner/work/enterprise-session-controller/enterprise-session-controller/input/enterprise-session-controller.xml:614:285: error: element "comment" not allowed here; expected the element end-tag or text
+/home/runner/work/enterprise-session-controller/enterprise-session-controller/input/enterprise-session-controller.xml:644:14: error: element "comment" not allowed here; expected the element end-tag or text
+/home/runner/work/enterprise-session-controller/enterprise-session-controller/input/enterprise-session-controller.xml:647:14: error: element "comment" not allowed here; expected the element end-tag or text
