@@ -1,5 +1,3 @@
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/input/enterprise-session-controller.xml:554:228: error: element "comment" not allowed here; expected the element end-tag or text
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/input/enterprise-session-controller.xml:612:15: error: element "comment" not allowed here; expected the element end-tag or text
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/input/enterprise-session-controller.xml:614:285: error: element "comment" not allowed here; expected the element end-tag or text
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/input/enterprise-session-controller.xml:644:14: error: element "comment" not allowed here; expected the element end-tag or text
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/input/enterprise-session-controller.xml:647:14: error: element "comment" not allowed here; expected the element end-tag or text
+/home/runner/work/enterprise-session-controller/enterprise-session-controller/input/enterprise-session-controller.xml:557:228: error: element "comment" not allowed here; expected the element end-tag or text
+/home/runner/work/enterprise-session-controller/enterprise-session-controller/input/enterprise-session-controller.xml:624:15: error: element "comment" not allowed here; expected the element end-tag or text
+/home/runner/work/enterprise-session-controller/enterprise-session-controller/input/enterprise-session-controller.xml:663:14: error: element "comment" not allowed here; expected the element end-tag or text

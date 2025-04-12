@@ -21,7 +21,6 @@ output/enterprise-session-controller-release-linkable.html: NTFY
 output/enterprise-session-controller-release-linkable.html: NTP
 output/enterprise-session-controller-release-linkable.html: OA
 output/enterprise-session-controller-release-linkable.html: PMG
-output/enterprise-session-controller-release-linkable.html: PPModule
 output/enterprise-session-controller-release-linkable.html: PSTN
 output/enterprise-session-controller-release-linkable.html: RLC
 output/enterprise-session-controller-release-linkable.html: SCIF
@@ -61,7 +60,6 @@ output/enterprise-session-controller-release.html: NIC
 output/enterprise-session-controller-release.html: NTP
 output/enterprise-session-controller-release.html: OA
 output/enterprise-session-controller-release.html: PMG
-output/enterprise-session-controller-release.html: PPModule
 output/enterprise-session-controller-release.html: SCIF
 output/enterprise-session-controller-release.html: SFP
 output/enterprise-session-controller-release.html: SMR
@@ -149,7 +147,6 @@ output/enterprise-session-controller.html: NTFY
 output/enterprise-session-controller.html: NTP
 output/enterprise-session-controller.html: OA
 output/enterprise-session-controller.html: PMG
-output/enterprise-session-controller.html: PPModule
 output/enterprise-session-controller.html: PSTN
 output/enterprise-session-controller.html: RLC
 output/enterprise-session-controller.html: SCIF
