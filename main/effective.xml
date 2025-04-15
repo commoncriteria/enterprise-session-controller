@@ -344,7 +344,7 @@ baseline of capabilities that all conformant ESCs must provide.
         	<addressed-by>FPT_STM_EXT.1 (refined from Base-PP)</addressed-by><rationale>This SFR mitigates the threat by requiring the TSF to synchronize with an NTP server for reliable time data that is used for establishment of valid cryptographic channels and accurate recording of call metadata.</rationale>
 			<addressed-by>FAU_GEN.1/CDR</addressed-by><rationale>This SFR mitigates the threat by requiring the TSF to generate call detail records of VVoIP communications.</rationale>
 			<addressed-by>FAU_GEN.1/Log</addressed-by><rationale>This SFR mitigates the threat by generating real-time diagnostic activity for the TOE’s behavior that can be used to determine if it is experiencing conditions that could lead to a failure state.</rationale>
-        	<addressed-by>FAU_STG.1/CDR</addressed-by><rationale>This SFR mitigates the threat by requiring the TSF to securely store call detail records.</rationale>
+        	<addressed-by>FAU_STG.2/CDR</addressed-by><rationale>This SFR mitigates the threat by requiring the TSF to securely store call detail records.</rationale>
 			<addressed-by>FAU_VVR_EXT.1</addressed-by><rationale>This SFR mitigates the threat by allowing the TOE to claim whether or not it performs voice/video recording of VVoIP communications.</rationale>
 			<addressed-by>FDP_IFC.1</addressed-by><rationale>This SFR mitigates the threat by defining an enterprise session controller policy to broker VVoIP endpoint communications.</rationale>
 			<addressed-by>FDP_IFF.1</addressed-by><rationale>This SFR mitigates the threat by defining the rules enforced by the enterprise session controller policy.</rationale>
@@ -1013,11 +1013,11 @@ This SFR is selection-based in the NDcPP but is mandated by this PP-Module becau
 		<audit-event/>
 		</f-component>
 
-		<f-component name="Protected Audit Trail Storage (Call Detail Record)" cc-id="fau_stg.1" id="fau-stg-1-cdr" iteration="CDR">
-		<f-element id="fau-stg-1e1-cdr">
+		<f-component name="Protected Audit Trail Storage (Call Detail Record)" cc-id="fau_stg.2" id="fau-stg-2-cdr" iteration="CDR">
+		<f-element id="fau-stg-2e1-cdr">
 		<title>The TSF shall protect the stored <h:b>call detail records</h:b> from unauthorized <h:b>disclosure and</h:b> deletion.</title>
 		</f-element>
-		<f-element id="fau-stg-1e2-cdr">
+		<f-element id="fau-stg-2e2-cdr">
 		<title>The TSF shall be able to [<h:i>prevent</h:i>] unauthorized modifications to the stored <h:b>call detail records</h:b>.</title>
 		<aactivity>
 		<TSS>The evaluator shall examine the TSS to ensure it describes how CDRs are protected against unauthorized modification or deletion. The evaluator shall also examine the TSS to ensure it describes any administrative access controls placed on CDR modification (e.g., Administrator Type 1 can modify/delete CDRs while Administrator Type 2 cannot modify/delete CDRs).</TSS>
