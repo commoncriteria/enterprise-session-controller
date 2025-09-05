@@ -1,3 +1,0 @@
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:529:10: error: element "comment" not allowed here; expected the element end-tag or text
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:598:31: error: element "comment" not allowed here; expected the element end-tag or text
-/home/runner/work/enterprise-session-controller/enterprise-session-controller/output/effective.xml:633:172: error: element "comment" not allowed here; expected the element end-tag or text
