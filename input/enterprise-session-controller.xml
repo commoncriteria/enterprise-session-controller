@@ -961,7 +961,7 @@ This SFR is selection-based in the NDcPP but is mandated by this PP-Module becau
 		</h:ol>			
     <h:head><h:b><ctr ctr-type="Table" pre="Table" id="atref-mandatory">: System Log Events</ctr></h:b></h:head>
        <h:table border='1'>			
-    	<h:th><h:td>Event</h:td><h:td>Additional System Log Record Contents</h:td></h:th>    	
+    	<h:tr><h:th>Event</h:th><h:th>Additional System Log Record Contents</h:th></h:tr>    	
 		<h:tr>
 			<h:td>Current IP connections</h:td>
 			<h:td>Network interface card (NIC); Status (up or down).</h:td>
