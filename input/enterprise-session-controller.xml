@@ -959,34 +959,34 @@ This SFR is selection-based in the NDcPP but is mandated by this PP-Module becau
 		<h:li>For each auditable event type, based on the auditable event definitions of the functional
 			components included in the PP, PP-Module, functional package, or ST, [<h:i>event details described in System Log Events table</h:i>].</h:li>
 		</h:ol>			
-    <h:head><h:b><ctr ctr-type="Table" pre="Table" id="atref-mandatory">: System Log Events</ctr></h:b></h:head>			
-    	<h:tr class="header"><h:td>Event</h:td><h:td>Additional System Log Record Contents</h:td></h:tr>    	
-<h:table border='1'>
+    <h:head><h:b><ctr ctr-type="Table" pre="Table" id="atref-mandatory">: System Log Events</ctr></h:b></h:head>
+       <h:table border='1'>			
+    	<h:th><h:td>Event</h:td><h:td>Additional System Log Record Contents</h:td></h:th>    	
 		<h:tr>
-			<h:th>Current IP connections</h:th>
-			<h:th>Network interface card (NIC); Status (up or down).</h:th>
+			<h:td>Current IP connections</h:td>
+			<h:td>Network interface card (NIC); Status (up or down).</h:td>
 		</h:tr>
 				<h:tr>
-			<h:th>CPU usage </h:th>
-			<h:th>Utilization percentage of TOE CPU(s).</h:th>
+			<h:td>CPU usage </h:td>
+			<h:td>Utilization percentage of TOE CPU(s).</h:td>
 		</h:tr>
 				<h:tr>
-			<h:th>Memory usage</h:th>
-			<h:th>Percentage and/or amount of free memory available for use.</h:th>
+			<h:td>Memory usage</h:td>
+			<h:td>Percentage and/or amount of free memory available for use.</h:td>
 		</h:tr>
 				<h:tr>
-			<h:th>Disk and file storage capacity</h:th>
-			<h:th>Percentage and/or amount of available space remaining for each disk or disk partition on the TOE.</h:th>
+			<h:td>Disk and file storage capacity</h:td>
+			<h:td>Percentage and/or amount of available space remaining for each disk or disk partition on the TOE.</h:td>
 		</h:tr>
 				<h:tr>
-			<h:th>Fan status (conditional)</h:th>
-			<h:th>Fan identification; Status (on or off).</h:th>
+			<h:td>Fan status (conditional)</h:td>
+			<h:td>Fan identification; Status (on or off).</h:td>
 		</h:tr>
 				<h:tr>
-			<h:th>Power status (conditional) </h:th>
-			<h:th>Status (on or off).</h:th>
+			<h:td>Power status (conditional) </h:td>
+			<h:td>Status (on or off).</h:td>
 		</h:tr>
-</h:table>
+			</h:table>
     
 </title>
 <note role='application'><h:i><h:p>Unlike audit data (see FAU_GEN.1), system log data is used primarily for real-time analysis of system behavior. This data is expected to be treated as non-persistent data by the TOE.</h:p>
