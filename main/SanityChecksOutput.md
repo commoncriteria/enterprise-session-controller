@@ -1,8 +1,25 @@
-* Warning: This document still has at least one comment.
-* Error: Detected dangling id-reference to pizza from attribute
-        on/Module[1]""/include-pkg[1]""/depends[1]""/on[1]""
 * Error: Detected multiple elements with an id of 'sec-sel-audit-table'.
 * Error: Detected multiple elements with an id of 'sec-sel-audit-table'.
+* Error: Detected dangling ref-id to 'dummy-ref-id'.
+	  /Module[1]""/section[1]""/section[3]""/package-usage-list[1]""/package-usage[1]""/usage[1]""/config[1]""/ref-id[1]"dummy-ref"
+* Error: Detected dangling ref-id to 'dummy-ref-id'.
+	  /Module[1]""/section[1]""/section[3]""/package-usage-list[1]""/package-usage[1]""/usage[2]""/config[1]""/ref-id[1]"dummy-ref"
+* Error: Detected dangling ref-id to 'dummy-ref-id'.
+	  /Module[1]""/section[1]""/section[3]""/package-usage-list[1]""/package-usage[2]""/usage[1]""/config[1]""/ref-id[1]"dummy-ref"
+* Error: Detected dangling ref-id to 'dummy-ref-id'.
+	  /Module[1]""/section[1]""/section[3]""/package-usage-list[1]""/package-usage[2]""/usage[2]""/config[1]""/ref-id[1]"dummy-ref"
+* Error: Detected dangling ref-id to 'dummy-ref-id'.
+	  /Module[1]""/section[1]""/section[3]""/package-usage-list[1]""/package-usage[2]""/usage[3]""/config[1]""/ref-id[1]"dummy-ref"
+* Error: Detected dangling ref-id to 'dummy-ref-id'.
+	  /Module[1]""/section[1]""/section[3]""/package-usage-list[1]""/package-usage[2]""/usage[4]""/config[1]""/ref-id[1]"dummy-ref"
+* Error: Detected dangling ref-id to 'dummy-ref-id'.
+	  /Module[1]""/section[1]""/section[3]""/package-usage-list[1]""/package-usage[2]""/usage[5]""/config[1]""/ref-id[1]"dummy-ref"
+* Error: Detected dangling ref-id to 'dummy-ref-id'.
+	  /Module[1]""/section[1]""/section[3]""/package-usage-list[1]""/package-usage[2]""/usage[6]""/config[1]""/ref-id[1]"dummy-ref"
+* Error: Detected dangling ref-id to 'dummy-ref-id'.
+	  /Module[1]""/section[1]""/section[3]""/package-usage-list[1]""/package-usage[2]""/usage[7]""/config[1]""/ref-id[1]"dummy-ref"
+* Error: Detected dangling ref-id to 'dummy-ref-id'.
+	  /Module[1]""/section[1]""/section[3]""/package-usage-list[1]""/package-usage[2]""/usage[8]""/config[1]""/ref-id[1]"dummy-ref"
 * Error: Detected dangling ref to 'fau-gen-1-esc'
         for a ref.
 	/Module[1]""/sec:Security_Requirements[1]""/base-pp[1]""/con-mod[6]"This PP-M"/ref[1]""
