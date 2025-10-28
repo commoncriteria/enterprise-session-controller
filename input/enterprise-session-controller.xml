@@ -50,10 +50,16 @@
     <include-pkg id="tls">
       <git>
 	    <url>https://github.com/commoncriteria/tls</url>  <!-- url of github repo -->
-	    <branch>release-1.1</branch>                      <!-- github branch of published version -->
+	    <branch>master</branch>                      <!-- github branch of published version -->
       </git>
-      <url>https://www.niap-ccevs.org/Profile/Info.cfm?PPID=439&amp;id=439</url>  <!-- url of published document on NIAP site -->
-      <depends on="pizza"/>     <!-- If package inclusion is dependent on something. Absent if package inclusion is mandatory -->
+      <url>https://www.niap-ccevs.org/protectionprofiles/465</url>  <!-- url of published document on NIAP site -->
+	</include-pkg>
+	<include-pkg id="X509">
+		<git>
+			<url>https://github.com/commoncriteria/X509</url>
+			<branch>master</branch>
+		</git>
+		<url>https://www.niap-ccevs.org/protectionprofiles/511</url>
 	</include-pkg>
 	
 
@@ -267,6 +273,97 @@ baseline of capabilities that all conformant ESCs must provide.
 	
 		</usecases>
 		</sec:Use_Cases>
+		<section title="Package Usage">
+			<package-usage-list>
+				<package-usage ref="tls">
+					<usage id="usage-tls-roles" title="DTLS or TLS Server and Client Functionality Required">
+						<description>
+							The ST author shall select the option to utilize TLS as both a server and client. The ST author shall additionally select the option to utilize DTLS as a server and client if support for DTLS is claimed in FTP_ITC.1/ESC.
+						</description>
+						<config>
+							<ref-id>dummy-ref-id</ref-id>
+						</config>
+					</usage>
+					<usage id="usage-tls-mutual-auth" title="DTLS or TLS Mutual Authentication Required">
+						<description>
+							The ST shall select the option to support mutual authentication in FCS_TLSC_EXT.1 and FCS_TLSS_EXT.1, or FCS_DTLSC_EXT.1 and FCS_DTLSS_EXT.1, according with the protocol support claimed in FTP_ITC.1/ESC.
+						</description>
+						<config>
+							<ref-id>dummy-ref-id</ref-id>
+						</config>
+					</usage>
+					
+				</package-usage>
+				<package-usage ref="X509">
+					<usage id="usage-x509-roles" title="Certificate Verification and Assertion Required in FIA_XCU_EXT.1.1">
+						<description>
+							The ST author shall select the options to verify and assert certificate identities in FIA_XCU_EXT.1.1.
+						</description>
+						<config>
+							<ref-id>dummy-ref-id</ref-id>
+						</config>
+          			</usage>
+					<usage id="usage-x509-revocation-sigalgs" title="Limitations on Signature Algorithms in FIA_X509_EXT.1.1">
+						<description>
+						The TOE must utilize appropriate cryptographic algorithms that conform to CNSA standards. Thus, the TOE shall utilize no other algorithms outside of those specified in RFC 8603 for certificate or CRL signatures. 
+						Additionally, the TOE shall not use ECDSA with SHA-512 signatures for OCSP responses, and shall utilize no other algorithms for OCSP responses.
+						</description>
+						<config>
+						<ref-id>dummy-ref-id</ref-id>
+					</config>
+					</usage>
+					<usage id="usage-x509-extensions" title="Required Extension Processing for FIA_X509_EXT.1.2">
+						<description>
+						The ST author shall select the options to process the basicConstraints and extendedKeyUsage extensions. Other extensions may be selected as appropriate without restriction.
+						</description>
+						<config>
+						<ref-id>dummy-ref-id</ref-id>
+						</config>
+					</usage>
+					<usage id="usage-x509-revocation-methods" title="CRL or OCSP-based Revocation Required for FIA_X509_EXT.1.3 ">
+						<description>
+						The TOE must support revocation that only involves CRL or OCSP. Accordingly, the TOE shall select only from options involving CRL or OCSP in FIA_X509_EXT.1.3 (e.g., the selection to treat all certificates older than a given short timeframe is not an acceptable substitute or alternative for supporting CRL or OCSP).
+						</description> 
+						<config>
+						<ref-id>dummy-ref-id</ref-id>
+						</config>
+					</usage>
+					<usage id="usage-x509-revocation-connections" title="Connections to CRL or OCSP Servers Required for FIA_X509_EXT.1.4">
+						<description>
+						Because the TOE is required to support CRL or OCSP, the TSF shall support an appropriate mechanism for obtaining revocation status information. In the case of CRL, the ST author shall claim that revocation status information is obtained via network connection to a CRL distribution point. In the case of OCSP, the ST author shall claim that revocation status information is obtained via network connection to an OCSP responder, via OCSP stapling, or via OCSP multi-stapling.
+						</description>
+						<config>
+						<ref-id>dummy-ref-id</ref-id>
+						</config>
+					</usage>
+					<usage id="usage-x509-eku-values" title="Restrictions on Acceptable Key Usage Values for FIA_X509_EXT.1.5">
+						<description>
+						The TOE will always support the use of extendedKeyUsage values to verify that X.509 certificates are used in accordance with their intended purpose. Accordingly, the ST author shall claim that the TOE supports the processing of extendedKeyUsage fields in the leaf certificate (as opposed to application of trust store context rules or passing the certification path or other supported context information to an external function) and shall select all values that are relevant to the claimed uses of X.509 in the ST. In particular, since the PP does not define any functions that require the use of S/MIME, the ST author shall not select this as an extendedKeyUsage value to be validated.
+						</description>
+						<config>
+						<ref-id>dummy-ref-id</ref-id>
+						</config>
+					</usage>
+					<usage id="usage-x509-functions" title="Restrictions on Acceptable Functions for FIA_X509_EXT.2.1">
+						<description>
+						The PP does not define S/MIME functionality, therefore the ST shall not select this as a function for which X.509 validation functionality is used. <h:br/>
+						The ST author shall additionally ensure that the selections and assignments in this requirement reflect the TOE's usage of X.509 certificate validation for TLS and VVoIP endpoint registration. Other assignments and selections may be made as applicable for other TOE functions.
+						</description>
+						<config>
+						<ref-id>dummy-ref-id</ref-id>
+						</config>
+					</usage>
+					<usage id="usage-x509-acquisition-purposes" title="Restrictions on Acceptable Purposes for Certificate Acquisition for FIA_XCU_EXT.2.1">
+						<description>
+						The PP does not define S/MIME functionality, therefore the ST shall not select this as a function for which X.509 validation functionality is used.
+						</description>
+						<config>
+						<ref-id>dummy-ref-id</ref-id>
+						</config>
+					</usage>
+				</package-usage>
+			</package-usage-list>
+		</section>
 		</section>
      <!-- Compliant TOEs -->
 <section title="Conformance Claims" id="sec-cclaims" >
@@ -533,53 +630,6 @@ included.</h:p>
   		</base-sfr-spec> 
 	</section>
 	<section title="Cryptographic Support (FCS)" id="m-fcs">
-			<base-sfr-spec title="DTLS Server Support without Mutual Authentication" cc-id="fcs_dtlss_ext.1"  id="fcs-dtlss-ext-1">
-			<!-- <f-element id='fcs-dtlss-ext-1e1'>-->
-				<consistency-rationale>
-					This PP-Module adds an additional condition in which the TSF may be required to implement this protocol.
-				</consistency-rationale>
-				
-				<description>
-					<h:p>
-					This SFR is selection-based in the NDcPP and remains selection-based in this PP-Module because DTLS may be used to secure transmitted media. In this case, it
-					must be claimed if ‘DTLS’ is selected in FTP_ITC.1.1/ESC in addition to the
-					applicable selection triggers in the Base-PP.
-<comment>Actual SFR not reproduced here because DTLS 1.3 has been added, so this will only need to be re-defined if the module mandates support for DTLS 1.2 and/or 1.3 rather than allowing both to be selectable.</comment>
-					</h:p>
-				</description>
-				
-				<!--
-				<f-element>
-				<title>
-				The TSF shall implement DTLS 1.2 (RFC 6347) supporting the following ciphersuites: <selectables> 	
-					<selectable>select supported ciphersuites from List 1<h:b> in the NDcPP</h:b></selectable>
-					</selectables>and no other ciphersuites.
-				</title>
-				<note role='application'><h:i><h:p>This SFR is selection-based in the NDcPP and remains selection-based in this PPModule because DTLS may be used to secure transmitted media. In this case, it must be claimed if ‘DTLS’ is selected in FTP_ITC.1.1/ESC in addition to the applicable selection triggers in the Base-PP.</h:p>
-				<h:p>This SFR is also refined from its definition in the Base-PP by requiring the use of DTLS 1.2 if this function is claimed.</h:p><h:p>When CPP_ND_V3.0E is the Base-PP, the element in Section 5.1.2.1 should be used, instead.</h:p>
-				</h:i>
-				</note>				
-				</f-element>
-			-->
-				<no-change/>
-				<set-status status="mandatory"/>
-			  </base-sfr-spec> 
-
-			<base-sfr-spec title="DTLS Server Support for Mutual Authentication" cc-id="fcs_dtlss_ext.2"  id="fcs-dtlss-ext-2">
-				
-				<consistency-rationale>
-					This PP-Module takes an optional requirement and makes it selection-based because it requires that any DTLS implementation used for ESC functions must implement mutual authentication.
-				</consistency-rationale>
-				
-				<description>This SFR is optional in the NDcPP but is selection-based in this PP-Module because any ESC use of DTLS
-					requires mutually-authenticated DTLS to be implemented. Therefore, this SFR must be claimed if ‘DTLS’ is
-					selected in FTP_ITC.1.1/ESC.</description>
-					<!--
-					<depends on-sel='ftp-itc-1e1-dtls'/>
-				-->
-			<no-change/>
-            <set-status status="sel-based"/>
-          </base-sfr-spec> 
 
 			<base-sfr-spec title="NTP Protocol" cc-id="fcs_ntp_ext.1" id="fcs-ntp-ext-1">
 				<consistency-rationale>This PP-Module refines the Base-PP SFR to only permit the selection of NTP v4 while leaving the rest of the requirement unchanged.
@@ -605,125 +655,6 @@ included.</h:p>
 			<no-change/>
             <set-status status="sel-based"/>
           </base-sfr-spec> 
-
-			<base-sfr-spec title="TLS Client Protocol without Mutual Authentication" cc-id="fcs_tlsc_ext.1" id="fcs-tlsc-ext-1">
-				<consistency-rationale>
-					This PP-Module takes a selection-based SFR used by the Base-PP and mandates its inclusion because ESC functions require the use of TLS as a client. 
-				</consistency-rationale>
-				
-				<description><h:p>This SFR is selection-based in the NDcPP but is mandated by this PP-Module
-					because Transport Layer Security (TLS) is used to secure SIP and H.323
-					communications. <comment>SFR not reproduced because the modification previously was to mandate the TLS 1.2 claim (when older versions were still allowed). Unless this module will mandate 1.2 and/or 1.3 it doesn't need to be reproduced as a Modified SFR - we only need to change the status of it (same as with FCS_DTLSS_EXT.1 and FCS_TLSS_EXT.1).</comment></h:p>
-				</description>
-				
-				<!-- 
-			<f-element id='fcs-tlsc-ext-1e1'>
-				<title>The TSF shall implement TLS 1.2 (RFC 5246) and reject all other TLS and SSL versions. The TLS implementation will support the following ciphersuites:
-				<selectables>
-					<selectable>select supported ciphersuites from List 1 <h:b>in the NDcPP</h:b></selectable>
-				</selectables> and no other ciphersuites.
-				<note role='application'><h:i>This SFR is selection-based in the NDcPP but is mandated by this PP-Module because Transport Layer Security (TLS) is used to secure SIP and H.323 communications. Additionally, this PP-Module mandates the use of TLS 1.2. When CPP_ND_V3.0E is the Base-PP, the element in Section 5.1.2.1 should be used, instead.</h:i></note></title>
-				</f-element>
-				-->
-				<no-change/>
-            <set-status status="mandatory"/>
-          </base-sfr-spec> 
-			<base-sfr-spec title="TLS Client Protocol Mutual Authentication" cc-id="fcs_tlsc_ext.2" id="fcs-tlsc-ext-2">
-				<consistency-rationale>
-					This PP-Module takes an optional requirement and makes it selection-based because it requires that any TLS implementation used for ESC functions must implement mutual authentication.
-				</consistency-rationale>
-				
-				<description>This SFR is optional in the NDcPP but is mandated by this PP-Module because SIP and H.323 communications require mutually-authenticated TLS.</description>
-				
-				<no-change/>
-            <set-status status="mandatory"/>
-          </base-sfr-spec> 
-
-
-		  		<base-sfr-spec title="TLS Server Protocol without Mutual Authentication" cc-id="fcs_tlss_ext.1" id="fcs-tlss-ext-1">
-					
-		  			<consistency-rationale>
-		  				This PP-Module takes a selection-based SFR used by the Base-PP and mandates its inclusion because ESC functions require the use of TLS as a server.
-		  			</consistency-rationale>
-		  			
-				<description>
-					<h:p>
-This SFR is selection-based in the NDcPP but is mandated by this PP-Module because Transport Layer Security (TLS) is used to secure SIP and H.323 communications. <comment>as with DTLSS and TLSC, modified SFR not shown here because previously the only modification was to prohibit pre-1.2 versions of TLS. Since those are no longer supported by the PP, the SFR can just be reused as-is unless we are mandating one or both of 1.2 and 1.3 (i.e. taking all or part of the selection away from the ST author).</comment></h:p>
-				
-				</description>
-				<!-- 
-				<f-element id='fcs-tlss-ext-1e1'>
-				<title>The TSF shall implement TLS 1.2 (RFC 5246) and reject all other TLS and SSL versions. The TLS implementation will support the following ciphersuites: <selectables>
-				<selectable>select supported ciphersuites from List 1 <h:b>in the NDcPP</h:b></selectable></selectables> and no other ciphersuites.</title>
-				<note role='application'><h:i>This SFR is selection-based in the NDcPP but is mandated by this PP-Module mandates the use of TLS 1.2. When CPP_ND_V3.0E is the Base-PP, the element in Section 5.1.2.1 should be used, instead.</h:i></note>
-				</f-element>-->
-
-				<no-change/>
-				<set-status status="mandatory"/>
-			  </base-sfr-spec> 
-
-			<base-sfr-spec title="TLS Server Protocol  Mutual Authentication" cc-id="fcs_tlss_ext.2" id="fcs-tlss-ext-2">
-				<consistency-rationale>
-					This PP-Module takes an optional requirement and makes it selection-based because it requires that any TLS implementation used for ESC functions must implement mutual authentication.
-				</consistency-rationale>
-				
-				<description>
- 			This SFR is optional in the NDcPP but is mandated by this PP-Module because SIP and H.323 communications require mutually-authenticated TLS.</description>			
-			<no-change/>
-            <set-status status="mandatory"/>
-          </base-sfr-spec> 
-			</section>
-
-
-			<section title='Identification and Authentication (FIA)' id='m-fia'>
-
-			
-			<base-sfr-spec title="X.509 Certificate Validation" cc-id='fia_x509_ext.1' id='fia-x509-ext-1' iteration='Rev'>
-				<consistency-rationale>This PP-Module mandates the inclusion of this selection-based SFR because it is a dependency of the TLS requirements that it also mandates.</consistency-rationale>
-				<description>This SFR is selection-based in the Base-PP. It is mandatory when the TOE claims
-					conformance to this PP-Module because X.509 certificate validation is needed when establishing TLS communications for SIP and H.323. There are no changes to the SFR otherwise.</description>
-			<no-change/>
-          </base-sfr-spec> 
-
-			<base-sfr-spec title="X.509 Certificate Authentication" cc-id='fia_x509_ext.2' id='fia-x509-ext-2' >
-				<consistency-rationale>
-					This PP-Module mandates the inclusion of this selection-based SFR because X.509 is required for
-					SIP and H.323.
-				</consistency-rationale>
-				<description> 
-					<h:p><h:b>FIA_X509_EXT.2.1</h:b>:
-					The TSF shall use X.509v3 certificates as defined by RFC 5280 to support authentication for <h:b>TLS,</h:b> [<h:b>selection</h:b>: <h:i>DTLS, HTTPS, IPsec, SSH, no other protocol</h:i>], <h:b>VVoIP endpoint registration,</h:b> and [<h:b>selection</h:b>: <h:i>code signing for system software updates, [<h:b>assignment</h:b>: other uses], no additional</h:i>].
-				</h:p>
-				<h:p><h:i><h:b>Application Note: </h:b>
-				The NDcPP requires the ST author to select the protocol(s) that certificate
-				authentication is used for. This element has been modified from its definition in
-				the Base-PP by mandating support for TLS because FCS_TLSC_EXT.1 and
-				FCS_TLSS_EXT.2 are mandatory SFRs for a TOE that conforms to this PP-Module.
-				Additional protocols may or may not be selected depending on the other
-				functionality provided by the TSF.
-			</h:i>	
-				</h:p>
-			
-			<h:p><h:b>FIA_X509_EXT.2.2</h:b>:
-			When the TSF cannot establish a connection to determine the validity of a certificate, the TSF shall [<h:b>selection</h:b>: <h:i>allow the administrator to choose whether to accept the certificate in these cases, accept the certificate, not accept the certificate</h:i>].
-			</h:p>
-			<h:p><h:i><h:b>Application Note: </h:b>This SFR is selection-based in the Base-PP but is made
-				mandatory when this PP-Module is claimed because the ESC implements functionality that requires the use
-				of certificate authentication</h:i></h:p>
-				</description>
-
-
-			
-            <set-status status="mandatory"/>
-          </base-sfr-spec> 
-			<base-sfr-spec title="X.509 Certificate Requests" cc-id='fia_x509_ext.3' id='fia-x509-ext-3'>
-				<consistency-rationale>This PP-Module mandates the inclusion of this selection-based SFR because
-					it is a dependency of the X.509 requirements that it also mandates.</consistency-rationale>
-				<description>This SFR is selection-based in the NDcPP but is mandated by this PP-Module because an ESC must implement security functions that require it to be issued its own X.509 certificate.</description>
-			<no-change/>
-			
-            <set-status status="mandatory"/>
-          </base-sfr-spec> 
 			</section>
 
 
@@ -731,7 +662,7 @@ This SFR is selection-based in the NDcPP but is mandated by this PP-Module becau
 
 		<base-sfr-spec title="Reliable Time Stamps" cc-id='fpt_stm_ext.1' id='fpt-stm-ext-1'>
 			<consistency-rationale>This PP-Module refines the Base-PP SFR to restrict the selection of a time source to be an external NTP server.</consistency-rationale>
-			<description><h:p><h:b>FPT_STM_EXT.1.2</h:b>: The TSF shall [<h:i>synchronize time with an NTP server</h:i>.</h:p>
+			<description><h:p><h:b>FPT_STM_EXT.1.2</h:b>: The TSF shall [<h:i>synchronize time with an NTP server</h:i>].</h:p>
 			<h:p><h:i><h:b>Application Note: </h:b>This SFR has been refined from the NDcPP to permit the NTP server selection only. No other parts of the SFR are modified.</h:i></h:p></description>
 		<no-change/>
     	<set-status status="mandatory"/>
