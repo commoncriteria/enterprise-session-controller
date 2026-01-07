@@ -1655,6 +1655,8 @@ require random data, in addition to any functionality required by the Base-PP.
 	<!-- Bibliography is auto generated here with CC and CEM docs. If you want other docs -->
 	<!-- included, add them here. -->
 	<bibliography>
+		<cc-entry/>
+		
       <entry id="bibCESG">
         <tag>CESG</tag>
         <description>CESG - <h:a
@@ -1667,6 +1669,13 @@ require random data, in addition to any functionality required by the Base-PP.
           <h:a href="http://csrc.nist.gov/groups/SMA/ispab/documents/csa_87.txt">Computer Security Act
             of 1987</h:a>, H.R. 145, June 11, 1987. </description>
       </entry>
+		<entry id="bibNDcPP">
+			<tag>NDcPP</tag>
+			<description>
+				<h:a href="https://www.niap-ccevs.org/protectionprofiles/524">
+					collaborative Protection Profile for Network Devices, Version 4.0, December 22, 2025</h:a>
+			</description>
+		</entry>
       <entry id="bibOMB">
         <tag>OMB</tag>
         <description>
