@@ -626,7 +626,10 @@ included.</h:p>
 				<consistency-rationale>This PP-Module refines the Base-PP SFR to only permit the selection of NTP v4 while leaving the rest of the requirement unchanged.
 					</consistency-rationale>
 				<description>
-					<h:p><h:b>FCS_NTP_EXT.1.2</h:b>: The TSF shall use only the following NTP version: [<h:i>NTP v4
+					<h:p>This SFR is modified from its definition in the Base-PP to mandate support exclusively for NTP v4.
+					</h:p>
+					<h:p>The text of FCS_NTP_EXT.1.2 is replaced with:</h:p>
+					<h:p><h:b>FCS_NTP_EXT.1.2</h:b> The TSF shall use only the following NTP version: [<h:i>NTP v4
 						(RFC 5905)</h:i>].</h:p>
 					<h:i><h:p><h:b>Application Note: </h:b>This SFR is selection-based in the Base-PP but is mandatory for a TOE that conforms to this PP-Module because the refinement to FPT_STM_EXT.1 requires this SFR to be claimed in all cases.</h:p>
 					<h:p>This SFR has been refined from the NDcPP to permit the NTP v4 selection only. No
@@ -653,7 +656,11 @@ included.</h:p>
 
 		<base-sfr-spec title="Reliable Time Stamps" cc-id='fpt_stm_ext.1' id='fpt-stm-ext-1'>
 			<consistency-rationale>This PP-Module refines the Base-PP SFR to restrict the selection of a time source to be an external NTP server.</consistency-rationale>
-			<description><h:p><h:b>FPT_STM_EXT.1.2</h:b>: The TSF shall [<h:i>synchronize time with an NTP server</h:i>].</h:p>
+			<description>
+				<h:p>This SFR is modified from its definition in the Base-PP to mandate the selection for using NTP as the TOE's time source. Any element not specified in this section is unchanged from its definition in the Base-PP.
+				</h:p>
+				<h:p>The text of FPT_STM_EXT.1.2 is replaced with:</h:p>
+				<h:p><h:b>FPT_STM_EXT.1.2</h:b> The TSF shall [<h:i>synchronize time with an NTP server</h:i>].</h:p>
 			<h:p><h:i><h:b>Application Note: </h:b>This SFR has been refined from the NDcPP to permit the NTP server selection only. No other parts of the SFR are modified.</h:i></h:p></description>
 		<no-change/>
     	<set-status status="mandatory"/>
