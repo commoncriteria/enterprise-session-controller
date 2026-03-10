@@ -21,7 +21,7 @@
     <ReferenceTable>
       <PPVersion>2.0</PPVersion>
       <PPAuthor>National Information Assurance Partnership</PPAuthor>
-      <PPPubDate>2025-03-28</PPPubDate>
+      <PPPubDate>2026-03-10</PPPubDate>
       <Keywords/>				<!-- This field is unused and optional -->
     </ReferenceTable>
   </PPReference>
@@ -29,19 +29,14 @@
 <!-- Revision History (all documents) -->
   <RevisionHistory>
     <entry>
-      <version>Round 1</version>
-      <date>2015-04-23</date>
-      <subject>First draft of version 1.0 for comment</subject>
-    </entry>
-    <entry>
       <version>1.0</version>
       <date>2015-08-14</date>
       <subject>Release - first version released</subject>
     </entry>
     <entry>
       <version>2.0</version>
-      <date>2024-03-28</date>
-      <subject>Updated for CC:2022, or whatever</subject>
+      <date>2026-03-17</date>
+      <subject>Updated for CC:2022</subject>
     </entry>
   </RevisionHistory>
 
