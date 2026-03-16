@@ -28,8 +28,20 @@
       <subject>Updated for CC:2022</subject>
     </entry>
   </RevisionHistory>
-  <include-pkg/>
-  <modules/>
+  <include-pkg id="tls">
+    <git>
+      <url>https://github.com/commoncriteria/tls</url>
+      <branch>master</branch>
+    </git>
+    <url>https://www.niap-ccevs.org/protectionprofiles/465</url>
+  </include-pkg>
+  <include-pkg id="X509">
+    <git>
+      <url>https://github.com/commoncriteria/X509</url>
+      <branch>master</branch>
+    </git>
+    <url>https://www.niap-ccevs.org/protectionprofiles/511</url>
+  </include-pkg>
   <pp-preferences>
     <!--   Indicate that audit events are defined with their SFRs   -->
     <!--   All new documents should do it this way. This will become the default, if it hasn't already.    -->
@@ -104,7 +116,7 @@ to be negatively impacted. The intention of this PP-Module is to provide a list 
 needed by an ESC for protection of its functionality and protection of the VVoIP communications it is
 responsible for facilitating.</h:p>
     </section>
-    <sec:TOE_Usage>
+    <sec:Use_Cases>
       <h:p>Requirements in this PP-Module are designed to address the security problem in the following use cases.
 		Use cases are not mutually exclusive; a TOE may implement more than one of these use cases. The
 		description of these use cases provide instructions for how the TOE and its OE should be made to support
@@ -143,7 +155,7 @@ responsible for facilitating.</h:p>
 			be connected to a service provider.</description>
         </usecase>
       </usecases>
-    </sec:TOE_Usage>
+    </sec:Use_Cases>
     <section title="PP Overview" id="sec-ppoverview">
       <h:p>The scope of this PP-Module is to describe the security functionality of an Enterprise Session Controller
 		(ESC) in terms of [CC] and to define functional and assurance requirements for such products. This
@@ -234,7 +246,7 @@ responsible for facilitating.</h:p>
       </package-usage-list>
     </section>
   </sec:Introduction>
-  <sec:Conformance_Claims>
+  <sec:Conformance_Claims boilerplate="yes">
     <CClaimsInfo cc-version="cc-2022r1" cc-approach="direct-rationale" display="yes">
       <cc-st-conf>exact</cc-st-conf>
       <cc-pt2-conf>extended</cc-pt2-conf>
@@ -245,84 +257,144 @@ responsible for facilitating.</h:p>
     </CClaimsInfo>
   </sec:Conformance_Claims>
   <!-- 3.0 Security Problem Definition-->
-  <sec:Security_Problem_Definition>
-    The security problem is described in terms
-    of the threats that the TOE is expected to address, assumptions about the
-    operational environment, and any organizational security policies that the TOE
-    is expected to enforce.
+  <section title="Security Problem Definition" id="sec-spd">
+    <h:p>The security problem is described in terms of the threats that the TOE is expected to address, assumptions
+	about its operational environment, and any organizational security policies that the TOE is expected to
+	enforce.</h:p>
+    <h:p>The ESC is a network appliance that incorporates multiple components and protocols, and is designed
+	with the purpose of connecting and managing calls that emanate from registered VVoIP endpoints. The
+	ESC is also designed to provide centralized control of an enterprise-wide VVoIP communication network.
+	As the central control system that manages and processes VVoIP calls from as many as 50,000 endpoints
+	per node, it is critically important for the ESC to be protected because it is a single point of failure for tens
+	of thousands of end-users.</h:p>
+    <h:p>As a centralized system the ESC is subject to attacks from the VVoIP endpoints that are registered to the
+	ESC. Any VVoIP endpoint could be a threat to launch a malicious attack against the ESC. Therefore the ESC
+	shall possess the security requirements needed for mitigating such a threat type.</h:p>
+    <h:p>Note that as PP-Module of the NDcPP, all threats, assumptions, and Organizational Security Policies (OSPs)
+	defined there will also apply to an ESC TOE unless otherwise specified.</h:p>
+    <h:p>The Security Functional Requirements (SFRs) defined in this PP-Module will mitigate the threats that are
+	defined in the PP-Module but will also mitigate some NDcPP threats in more comprehensive detail due to
+	the specific capabilities provided by an ESC.</h:p>
     <!-- 3.1 Threats -->
     <sec:Threats>
+      The following threats defined in this PP-Module extend the threats defined by the Base-PP.
       <threats>
-        <threat name="T.QQQQ">
-          <!-- Repeatable -->
-          <description>QQQQ</description>
-          <objective-refer ref="O.QQQQ">
-            <!-- Repeatable -->
-            <rationale>QQQQ</rationale>
-          </objective-refer>
+        <threat name="T.MALICIOUS_TRAFFIC">
+          <description>A malformed packet is a protocol packet containing modified data not recognizable by the receiving
+			device (e.g. TOE), or contains modified protocol packets intended to crash or cause the TOE to act in
+			ways unintended. An attacker may attempt to use a VVoIP endpoint to send these malformed packets
+			or malicious traffic towards the TOE in an attempt to control or crash the call control system and
+			connected network devices. To mitigate VVoIP endpoint devices from being used to successfully
+			launch malicious traffic, the TOE must provide encryption remedies to prevent modification of
+			protocol packets. The TOE must also provide authentication mechanisms to prevent unauthorized
+			VVoIP endpoints from improperly registering to the ESC for the purpose of launching malicious
+			attacks.</description>
+          <!-- New mapping to build updated threat mapping table. -->
+          <addressed-by>FAU_GEN.1/CDR</addressed-by>
+          <rationale>This SFR mitigates the threat by requiring the TSF to generate call detail records of VVoIP communications.</rationale>
+          <addressed-by>FAU_GEN.1/Log</addressed-by>
+          <rationale>This SFR mitigates the threat by generating real-time diagnostic activity for the TOE’s behavior that can be used to determine if it is experiencing conditions that could lead to a failure state.</rationale>
+          <addressed-by>FAU_STG.2/CDR</addressed-by>
+          <rationale>This SFR mitigates the threat by requiring the TSF to securely store call detail records.</rationale>
+          <addressed-by>FAU_STG.2/VVR (selection-based)</addressed-by>
+          <rationale>This SFR mitigates the threat by requiring the TSF to securely store call detail records, if generated by the TSF.</rationale>
+          <addressed-by>FAU_VVR_EXT.1</addressed-by>
+          <rationale>This SFR mitigates the threat by allowing the TOE to claim whether or not it performs voice/video recording of VVoIP communications.</rationale>
+          <addressed-by>FAU_VVR_EXT.2 (selection-based)</addressed-by>
+          <rationale>This SFR mitigates the threat by defining when voice and video recordings are generated by the TSF, how they are stored, and how they are uniquely identified for future access.</rationale>
+          <addressed-by>FDP_IFC.1</addressed-by>
+          <rationale>This SFR mitigates the threat by defining an enterprise session controller policy to broker VVoIP endpoint communications.</rationale>
+          <addressed-by>FDP_IFF.1</addressed-by>
+          <rationale>This SFR mitigates the threat by defining the rules enforced by the enterprise session controller policy.</rationale>
+          <addressed-by>FDP_RIP.1</addressed-by>
+          <rationale>This SFR mitigates the threat by ensuring the permanent erasure of residual data so that a decommissioned or refurbished device cannot be used to disclose TSF data without authorization.</rationale>
+          <addressed-by>FIA_UAU.2/TC</addressed-by>
+          <rationale>This SFR mitigates the threat by requiring authentication of telecommunications devices that are connected to the TOE before the TSF will interact with them.</rationale>
+          <addressed-by>FIA_UAU.2/VVoIP</addressed-by>
+          <rationale>This SFR mitigates the threat by requiring authentication of VVoIP endpoints that are connected to the TOE before the TSF will interact with them.</rationale>
+          <addressed-by>FPT_TUD_EXT.1/VVoIP (implementation-dependent)</addressed-by>
+          <rationale>This SFR mitigates the threat by optionally allowing the TOE to distribute software/firmware updates to connected VVoIP endpoints.</rationale>
+          <addressed-by>FTP_ITC.1/ESC</addressed-by>
+          <rationale>This SFR mitigates the threat by defining the trusted channels used for protection of signaling and media data used in VVoIP and SIP trunking communications.</rationale>
+        </threat>
+        <threat name="T.NETWORK_DISCLOSURE">
+          <description>An attacker may attempt to “map” IP addresses of VVoIP endpoint/devices and other
+			telecommunications equipment for the purpose of determining the organizational structure of the
+			enterprise, providing reconnaissance for future targeted attacks.</description>
+          <!-- New mapping to build updated threat mapping table. -->
+          <addressed-by>FDP_IFC.1</addressed-by>
+          <rationale>This SFR mitigates the threat by defining an enterprise session controller policy to broker VVoIP endpoint communications.</rationale>
+          <addressed-by>FDP_IFF.1</addressed-by>
+          <rationale>This SFR mitigates the threat by defining the rules enforced by the enterprise session controller policy.</rationale>
+          <addressed-by>FIA_UAU.2/TC</addressed-by>
+          <rationale>This SFR mitigates the threat by requiring authentication of telecommunications devices that are connected to the TOE before the TSF will interact with them.</rationale>
+          <addressed-by>FIA_UAU.2/VVoIP</addressed-by>
+          <rationale>This SFR mitigates the threat by requiring authentication of VVoIP endpoints that are connected to the TOE before the TSF will interact with them.</rationale>
+          <addressed-by>FPT_TUD_EXT.1/VVoIP (implementation-dependent)</addressed-by>
+          <rationale>This SFR mitigates the threat by optionally allowing the TOE to distribute software/firmware updates to connected VVoIP endpoints.</rationale>
+          <addressed-by>FTP_ITC.1/ESC</addressed-by>
+          <rationale>This SFR mitigates the threat by defining the trusted channels used for protection of signaling and media data used in VVoIP and SIP trunking communications.</rationale>
+        </threat>
+        <threat name="T.UNAUTHORIZED_CLIENT">
+          <description>An attacker may attempt to register an unauthorized VVoIP endpoint to the TOE for the purpose of
+			impersonating a legitimate end user device in order to gain unauthorized connectivity to other clients
+			or active calls.</description>
+          <!-- New mapping to build updated threat mapping table. -->
+          <addressed-by>FAU_GEN.1/Log</addressed-by>
+          <rationale>This SFR mitigates the threat by requiring the TSF to generate a real-time system log of its own diagnostic details.</rationale>
+          <addressed-by>FAU_SAR.1/Log</addressed-by>
+          <rationale>This SFR mitigates the threat by defining what users are able to review the real-time system log.</rationale>
+          <addressed-by>FAU_SEL.1 (selection-based)</addressed-by>
+          <rationale>This SFR mitigates the threat by optionally allowing an administrator to suppress the generation of certain audit records.</rationale>
+          <addressed-by>FDP_IFC.1</addressed-by>
+          <rationale>This SFR mitigates the threat by defining an enterprise session controller policy to broker VVoIP endpoint communications.</rationale>
+          <addressed-by>FDP_IFF.1</addressed-by>
+          <rationale>This SFR mitigates the threat by defining the rules enforced by the enterprise session controller policy.</rationale>
+          <addressed-by>FIA_UAU.2/TC</addressed-by>
+          <rationale>This SFR mitigates the threat by requiring authentication of telecommunications devices that are connected to the TOE before the TSF will interact with them.</rationale>
+          <addressed-by>FIA_UAU.2/VVoIP</addressed-by>
+          <rationale>This SFR mitigates the threat by requiring authentication of VVoIP endpoints that are connected to the TOE before the TSF will interact with them.</rationale>
+          <addressed-by>FMT_SMF.1/ESC</addressed-by>
+          <rationale>This SFR mitigates the threat by defining the authorized management functions supported by the TOE.</rationale>
+          <addressed-by>FPT_TUD_EXT.1/VVoIP (implementation-dependent)</addressed-by>
+          <rationale>This SFR mitigates the threat by optionally allowing the TOE to distribute software/firmware updates to connected VVoIP endpoints.</rationale>
+          <addressed-by>FTP_ITC.1/ESC</addressed-by>
+          <rationale>This SFR mitigates the threat by defining the trusted channels used for protection of signaling and media data used in VVoIP and SIP trunking communications.</rationale>
         </threat>
       </threats>
     </sec:Threats>
     <!-- 3.2 Assumptions -->
     <sec:Assumptions>
-      <assumptions>
-        <assumption name="A.QQQQ">
-          <!-- Repeatable -->
-          <description>QQQQ</description>
-          <objective-refer ref="OE.QQQQ">
-            <!-- Repeatable -->
-            <rationale>QQQQ</rationale>
-          </objective-refer>
-        </assumption>
-      </assumptions>
+      All assumptions for the operational environment of the Base-PP also apply to this PP-Module.
+	A.NO_THRU_TRAFFIC_PROTECTION is still operative, but only for the interfaces in the TOE that are
+	defined by the Base-PP and not the PP-Module.
+      <assumptions/>
     </sec:Assumptions>
     <!-- 3.3 Organizational Security Policies -->
     <sec:Organizational_Security_Policies>
       <OSPs/>
-      <!--     <OSP id="P.QQQQ"> 
-        <description>QQQQ</description>
-        <objective-refer ref="O.QQQQ">
-            <rationale>QQQQ</rationale>
-        </objective-refer>
-    </OSP>
-    </OSPs> -->
     </sec:Organizational_Security_Policies>
-  </sec:Security_Problem_Definition>
+  </section>
   <!-- 4.0 Security Objectives -->
   <sec:Security_Objectives>
     <!-- 4.1 Security Objectives for the TOE -->
-    <sec:Security_Objectives_for_the_TOE>
-      <SOs>
-        <SO name="O.QQQQ">
-          <!-- Repeatable -->
-          <description>QQQQ</description>
-          <addressed-by>QQQQ.#/QQQQ</addressed-by>
-          <rationale>QQQQ</rationale>
-          <!-- Repeatable -->
-        </SO>
-      </SOs>
-    </sec:Security_Objectives_for_the_TOE>
     <!-- 4.2 Security Objctives for the Operational Environment -->
-    <sec:Security_Objectives_for_the_Operational_Environment>
-      QQQQ
+    <section title="Security Objectives for the Operational Environment" id="sec-OEObjectives">
+      All objectives for the operational environment of the Base-PP also apply to this PP-Module. OE.NO_THRU_TRAFFIC_PROTECTION is still operative, but only for the interfaces in the TOE that are defined by the Base-PP and not the PP-Module.
       <SOEs>
-        <SOE name="OE.QQQQ">
-          <!-- Repeatable -->
-          <description>QQQQ</description>
+        <SOE name="OE.SECURED_PLATFORM">
+          <description>The operating system of the network device does not provide an interface or other capability that can
+be used to adversely affect the TOE or its own functionality.</description>
         </SOE>
       </SOEs>
-    </sec:Security_Objectives_for_the_Operational_Environment>
+    </section>
     <!-- 4.3 Security Objectives Rationale -->
     <sec:Security_Objectives_Rationale/>
   </sec:Security_Objectives>
   <!-- 5.0 Security Requirements -->
-  <appendix/>
-  <bibliography>
-    <entry/>
-  </bibliography>
   <sec:Security_Requirements title="Security Requirements">
     <!-- 5.1 ND PP Security Functional Requirements Direction -->
-    <base-pp id="ND" name="Network Device" product="Network Device" short="ND" version="3.0e" plural="Network Devices">
+    <base-pp id="ND" name="Network Device" product="Network Device" short="ND" version="3.0e">
       <url>https://www.niap-ccevs.org/protectionprofiles/482</url>
       <cPP/>
       <sec-func-req-dir>
@@ -575,10 +647,7 @@ included.</h:p>
                 </h:li>
               </h:ol>
               <h:table border="1">
-                <h:tr>
-                  <h:th>Event</h:th>
-                  <h:th>Additional System Log Record Contents</h:th>
-                </h:tr>
+                <h:tr></h:tr>
                 <h:tr>
                   <h:td>Current IP connections</h:td>
                   <h:td>Network interface card (NIC); Status (up or down).</h:td>
@@ -1336,4 +1405,112 @@ the PP/ST:
       </section>
     </impl-dep-sfrs>
   </sec:Security_Requirements>
+  <appendix title="Validation Guidelines" id="validation_guidelines"/>
+  <appendix title="Entropy Documentation and Assessment" id="entropyappendix">
+    <h:p>The TOE does not require any additional supplementary information to describe its entropy source(s)
+beyond the requirements outlined in the Base-PP. As with other Base-PP requirements, the only additional
+requirement is that the entropy documentation also applies to the specific ESC capabilities of the TOE that
+require random data, in addition to any functionality required by the Base-PP.</h:p>
+  </appendix>
+  <appendix title="Initialization Vector Requirements for NIST-Approved Cipher Modes" id="vector"/>
+  <appendix title="Inherently Satisfied Requirements" id="satisfiedreqs">
+    <h:p>
+      This appendix lists requirements that should be considered satisfied by products successfully evaluated
+		against this PP. However, these requirements are not featured explicitly as SFRs and should not be
+		included in the ST. They are not included as standalone SFRs because it would increase the time, cost, and
+		complexity of evaluation. This approach is permitted by
+      <xref g="CC"/>
+      Part 1, 8.2 Dependencies between
+		components.
+    </h:p>
+    <h:p/>
+    This information benefits systems engineering activities which call for inclusion of particular security
+		controls. Evaluation against the PP-Module provides evidence that these controls are present and have
+		been evaluated.
+    <h:table xmlns="http://www.w3.org/1999/xhtml">
+      <h:tr class="header">
+        <h:td>Requirement</h:td>
+        <h:td>Rationale for Satisfaction</h:td>
+      </h:tr>
+      <h:tr>
+        <h:td>
+          <h:b>FIA_UID.1 – Timing of Identification</h:b>
+        </h:td>
+        <h:td>FIA_UAU.2 (which is iterated in this PP-Module as
+					FIA_UAU.2/TC and FIA_UAU.2/VVoIP) has a dependency
+					on FIA_UID.1 because authentication of an external entity
+					requires that entity to first identify itself so that its identity
+					can be validated by the authentication process.
+					This SFR has not been defined in this PP-Module because
+					in both iterations of FIA_UAU.2, the entity being
+					authenticated is a trusted IT product in the TOE’s
+					operational environment that communicates with the TSF
+					over a channel specified in FTP_ITC.1/ESC. FTP_ITC.1/ESC
+					explicitly states that the channel itself provides ‘assured
+					identification of its end points’ which implies that these
+					entities are identified prior to the authentication behavior
+					required by the iterations of FIA_UAU.2.</h:td>
+      </h:tr>
+      <h:tr>
+        <h:td>
+          <h:b>FMT_MSA.3 – Static Attribute Initialization</h:b>
+        </h:td>
+        <h:td>
+          <h:p>
+            FDP_IFF.1 has a dependency on FMT_MSA.3 to define the
+				default security posture of security attributes for the
+				purpose of information flow control enforcement. This SFR
+				has not been defined by this PP-Module because the
+				enforcement of FDP_IFF.1 is not dependent on the initial
+				state of security attributes. For example, FDP_IFF.1.2
+				requires the TSF to determine if a communication attempt
+				is valid before authorizing it. This is true regardless of
+				whether the default value of security attributes associated
+				with the connection attempt are permissive or restrictive;
+				there is no difference in how the TSF determines “validity”
+				in this case.
+            <h:p/>
+            The default values of security attributes do not cause the
+				information flow control policy to behave differently for
+				those rules that must always be enforced by the TSF. The
+				ST author has the ability to define additional default-allow
+				or default-deny rules through the assignments in FDP_IFF.1.4 and 1.5. The ability to specify this behavior in
+				the policy itself implies a default security posture of the
+				relevant security attributes that does not need to be
+				explicitly re-stated in a separate SFR.
+          </h:p>
+        </h:td>
+      </h:tr>
+    </h:table>
+  </appendix>
+  <bibliography>
+    <entry id="bibCESG">
+      <tag>CESG</tag>
+      <description>CESG - <h:a href="https://www.gov.uk/government/collections/end-user-devices-security-guidance"> End
+            User Devices Security and Configuration Guidance</h:a></description>
+    </entry>
+    <entry id="bibCSA">
+      <tag>CSA</tag>
+      <description><h:a href="http://csrc.nist.gov/groups/SMA/ispab/documents/csa_87.txt">Computer Security Act
+            of 1987</h:a>, H.R. 145, June 11, 1987. </description>
+    </entry>
+    <entry id="bibNDcPP">
+      <tag>NDcPP</tag>
+      <description>
+        <h:a href="https://www.niap-ccevs.org/protectionprofiles/524">collaborative Protection Profile for Network Devices, Version 4.0, December 22, 2025</h:a>
+      </description>
+    </entry>
+    <entry id="bibOMB">
+      <tag>OMB</tag>
+      <description>
+        <h:a href="http://www.whitehouse.gov/sites/default/files/omb/memoranda/fy2006/m06-19.pdf">Reporting Incidents Involving Personally Identifiable Information and Incorporating the
+            Cost for Security in Agency Information Technology Investments</h:a>, OMB M-06-19, July
+          12, 2006.
+      </description>
+    </entry>
+    <entry id="NIST-SP-800-88">
+      <tag>NIST SP 800-88</tag>
+      <description>NIST-SP-800-88  - <h:a href="https://csrc.nist.gov/pubs/sp/800/88/r1/final">Guidelines for Media Sanitization, Revision 1, December 2014</h:a></description>
+    </entry>
+  </bibliography>
 </Module>
