@@ -103,7 +103,7 @@
 
     <!-- PP or TOE Overview -->
 
-    <section title="PP Overview" id="sec-ppoverview">
+    <section title="Overview" id="sec-ppoverview">
 		<h:p>The scope of this PP-Module is to describe the security functionality of an Enterprise Session Controller
 		(ESC) in terms of [CC] and to define functional and assurance requirements for such products. This
 		PP-Module is intended for use with the following Base-PPs:
@@ -196,7 +196,6 @@ manager, call-signaling protocols (e.g. H.323, Session Initiation Protocol (SIP)
 to be negatively impacted. The intention of this PP-Module is to provide a list of security requirements
 needed by an ESC for protection of its functionality and protection of the VVoIP communications it is
 responsible for facilitating.</h:p>
-		</section>
       <sec:TOE_Boundary>
 	  <h:p>An ESC is a logical component of a physical hardware appliance that is responsible for establishing
 connectivity between VVoIP endpoints. The ESC is an advanced version of a legacy IP-PBX system. As a
@@ -222,6 +221,7 @@ secure remote connections with trusted entities in the OE.</h:p><h:p>Figure 1 be
 		</h:ul>Different ESCs may implement these capabilities in different ways. This PP-Module defines a minimum
 baseline of capabilities that all conformant ESCs must provide.
       </sec:TOE_Boundary>
+		</section>
 
 	  <sec:Use_Cases>
 	  <h:p>Requirements in this PP-Module are designed to address the security problem in the following use cases.
@@ -1487,7 +1487,7 @@ the PP/ST:<h:ul><h:li>Voice/video recordings of completed calls</h:li></h:ul></a
 	</obj-sfrs>
 
     <impl-dep-sfrs>
-	<section title="Auditable Events for Implementation-Dependent SFRs">
+	<section title="Auditable Events for Implementation-Dependent SFRs" id="at-impl-dep">
     		<audit-table id="at-impl-dep" table="impl-dep"/>
     	</section>
 	
