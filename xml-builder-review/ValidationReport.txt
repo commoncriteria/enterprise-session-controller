@@ -1,0 +1,1 @@
+/home/runner/work/enterprise-session-controller/enterprise-session-controller/input/enterprise-session-controller.xml:275:45: error: value of attribute "boilerplate" is invalid; must be equal to "no"
