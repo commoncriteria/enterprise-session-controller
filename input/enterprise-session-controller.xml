@@ -1487,7 +1487,7 @@ the PP/ST:<h:ul><h:li>Voice/video recordings of completed calls</h:li></h:ul></a
 	</obj-sfrs>
 
     <impl-dep-sfrs>
-	<section title="Auditable Events for Implementation-Dependent SFRs" id="at-impl-dep">
+	<section title="Auditable Events for Implementation-Dependent SFRs" id="at-impl-dep-sfrs">
     		<audit-table id="at-impl-dep" table="impl-dep"/>
     	</section>
 	
