@@ -633,10 +633,10 @@ function showTarget(id){
       Version: 2.0<br/>2026-03-10<br/><b>National Information Assurance Partnership</b><br/></div><h2 style="page-break-before:always;">Revision History</h2><table><tr class="header"><th>Version</th><th>Date</th><th>Comment</th></tr><tr><td>1.0</td><td>2015-08-14</td><td>Release - first version released</td></tr>
 <tr><td>2.0</td><td>2026-03-17</td><td>Updated for <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022</td></tr>
 </table><h2>Contents</h2><div class="toc" id="toc"><a href="#Introduction" style="text-indent:0px">1<span>Introduction</span></a><a href="#sec-ppoverview" style="text-indent:10px">1.1<span>Overview</span></a><a href="#glossary" style="text-indent:10px">1.2<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.2.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.2.2<span>Technical Terms</span></a><a href="#sec-TOEdescription" style="text-indent:10px">1.3<span>Compliant Targets of Evaluation</span></a><a href="#TOE_Boundary" style="text-indent:20px">1.3.1<span>TOE Boundary</span></a><a href="#Use_Cases" style="text-indent:10px">1.4<span>Use Cases</span></a><a href="#_sec_3" style="text-indent:10px">1.5<span>Package Usage</span></a><a href="#Conformance_Claims" style="text-indent:0px">2<span>Conformance Claims</span></a><a href="#sec-spd" style="text-indent:0px">3<span>Security Problem Definition</span></a><a href="#Threats" style="text-indent:10px">3.1<span>Threats</span></a><a href="#Assumptions" style="text-indent:10px">3.2<span>Assumptions</span></a><a href="#Organizational_Security_Policies" style="text-indent:10px">3.3<span>Organizational Security Policies</span></a><a href="#Security_Objectives" style="text-indent:0px">4<span>Security Objectives</span></a><a href="#sec-OEObjectives" style="text-indent:10px">4.1<span>Security Objectives for the Operational Environment</span></a><a href="#" style="text-indent:10px">4.2<span>Security Objectives Rationale</span></a><a href="#Security_Requirements" style="text-indent:0px">5<span>Security Requirements</span></a><a href="#secreq-ND" style="text-indent:10px">5.1<span>Collaborative 
-    Protection Profile for Network Device
+    Protection Profile for Network Devices
        Security Functional Requirements Direction
     </span></a><a href="#modsfr-ND" style="text-indent:20px">5.1.1<span> Modified SFRs </span></a><a href="#@id" style="text-indent:30px">5.1.1.1<span>Security Audit (FAU)</span></a><a href="#@id" style="text-indent:30px">5.1.1.2<span>Cryptographic Support (FCS)</span></a><a href="#@id" style="text-indent:30px">5.1.1.3<span>Protection of the TSF (FPT)</span></a><a href="#man-sfrs" style="text-indent:10px">5.2<span>TOE Security Functional Requirements</span></a><a href="#sec-sel-audit-table" style="text-indent:20px">5.2.1<span>Auditable Events for Mandatory SFRs</span></a><a href="#man-fau" style="text-indent:20px">5.2.2<span>Security Audit (FAU)</span></a><a href="#man-fdp" style="text-indent:20px">5.2.3<span>User Data Protection (FDP)</span></a><a href="#man-fia" style="text-indent:20px">5.2.4<span>Identification and Authentication (FIA)</span></a><a href="#man-fmt" style="text-indent:20px">5.2.5<span>Security Management (FMT)</span></a><a href="#man-fpt" style="text-indent:20px">5.2.6<span>Protection of the TSF (FPT)</span></a><a href="#man-ftp" style="text-indent:20px">5.2.7<span>Trusted Path/Channels (FTP)</span></a><a href="#obj-req-map" style="text-indent:10px">5.3<span>TOE Security Functional Requirements Rationale</span></a><a href="#mod-conrat" style="text-indent:0px">6<span>Consistency Rationale</span></a><a href="#conrat-ND" style="text-indent:10px">6.1<span>Collaborative 
-    Protection Profile for Network Device</span></a><a href="#contoe-ND" style="text-indent:20px">6.1.1<span>
+    Protection Profile for Network Devices</span></a><a href="#contoe-ND" style="text-indent:20px">6.1.1<span>
 	Consistency of TOE Type
       </span></a><a href="#consecprob-ND" style="text-indent:20px">6.1.2<span>
 	Consistency of Security Problem Definition
@@ -873,8 +873,9 @@ baseline of capabilities that all conformant ESCs must provide.
       
     
     
-    <h2 class="indexable" data-level="2" id="Organizational_Security_Policies">3.3 Organizational Security Policies</h2><p>This <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> defines no Organizational Security Policies beyond those defined in the claimed <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>(s).</p>
-      
+    <h2 class="indexable" data-level="2" id="Organizational_Security_Policies">3.3 Organizational Security Policies</h2>
+      <dl><dt class="OSP defined" id="P.SECURED_PLATFORM">P.SECURED_PLATFORM</dt><dd><span class="description">Administrators in the organization ensure that general purpose computers use secure operating
+		systems and are configured in accordance with applicable security standards.</span></dd></dl>
     
   <h1 class="indexable" data-level="1" id="Security_Objectives">4 Security Objectives</h1>
     
@@ -883,7 +884,10 @@ baseline of capabilities that all conformant ESCs must provide.
 The security objectives for the <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> consist of a set of statements describing the goals that the <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> should achieve.
 This section defines the security objectives that are to be addressed by the IT domain or by non-technical or procedural means.
 The assumptions identified in Section 3 are incorporated as security objectives for the environment.</p>
-      All objectives for the operational environment of the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> also apply to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>. <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr>.NO_THRU_TRAFFIC_PROTECTION is still operative, but only for the interfaces in the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that are defined by the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> and not the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.
+      All objectives for the operational environment of the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> also apply to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.
+	<abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr>.NO_THRU_TRAFFIC_PROTECTION is still operative, but only for the interfaces in the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that are
+	defined by the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> and not the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.
+      <p>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> also defines the following additional environmental objective:</p>
       <dl><dt class="SOE defined" id="OE.SECURED_PLATFORM">OE.SECURED_PLATFORM</dt><dd><span class="description">The operating system of the network device does not provide an interface or other capability that can
 be used to adversely affect the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> or its own functionality.</span></dd></dl>
     
@@ -891,7 +895,13 @@ be used to adversely affect the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</
     <h2 id="" class="indexable,h2" data-level="2">4.2 Security Objectives Rationale</h2>   
 		This section describes how the assumptions and organizational 
 		security policies map to operational environment security objectives.
-	<table><caption><span class="ctr" data-myid="t-sec-obj-rat" data-counter-type="ct-Table" id="t-sec-obj-rat">Table <span class="counter">1</span></span>: Security Objectives Rationale</caption><tr class="header"><td>Assumption or <abbr class="dyn-abbr"><a href="#abbr_OSP">OSP</a></abbr></td><td>Security Objectives</td><td>Rationale</td></tr></table>
+	<table><caption><span class="ctr" data-myid="t-sec-obj-rat" data-counter-type="ct-Table" id="t-sec-obj-rat">Table <span class="counter">1</span></span>: Security Objectives Rationale</caption><tr class="header"><td>Assumption or <abbr class="dyn-abbr"><a href="#abbr_OSP">OSP</a></abbr></td><td>Security Objectives</td><td>Rationale</td></tr><tr class="major-row"><td rowspan="1"><a href="#P.SECURED_PLATFORM">P.SECURED_​PLATFORM</a></td><td><a href="#OE.SECURED_PLATFORM">OE.SECURED_​PLATFORM</a></td><td>In order to ensure that the <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> is not subject to compromise, it is important for the OS that it is installed on to be secure in terms of closing unnecessary interfaces and providing appropriate security functionality. However,
+			it is necessary for this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> to make this
+			an organizational policy in the scenario where the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> uses a commercial third-party OS
+			because the <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> vendor is not responsible for
+			providing the OS and therefore has no control
+			over its inherent functionality or
+			administrative configuration.</td></tr></table>
   <h1 id="Security_Requirements" class="indexable" data-level="1">5 Security Requirements</h1>
       This chapter describes the security requirements which have to be fulfilled by the product under evaluation.
      Those requirements comprise functional components from Part 2 and assurance components from Part 3 of 
@@ -917,7 +927,7 @@ be used to adversely affect the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</
        </li>
      </ul>
    <h2 id="secreq-ND" class="indexable" data-level="2">5.1 Collaborative 
-    Protection Profile for Network Device
+    Protection Profile for Network Devices
        Security Functional Requirements Direction
     </h2>
         <p>This section instructs the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author on what selections must be made to certain <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> contained in the
@@ -1039,7 +1049,10 @@ included.</p>
                 </li>
               </ol>
               <table border="1">
-                <tr></tr>
+                <tr>
+                  <th>Event</th>
+                  <th>Additional System Log Record Contents</th>
+                </tr>
                 <tr>
                   <td>Current IP connections</td>
                   <td>Network interface card (NIC); Status (up or down).</td>
@@ -1312,7 +1325,7 @@ of self-tests defined in FPT_TST_EXT.1, failure of</i>
 <tr><td><a href="#FPT_TUD_EXT.1/VVoIP">FPT_TUD_EXT.1/VVoIP</a> (implementation-dependent)</td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by optionally allowing the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to distribute software/firmware updates to connected <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> endpoints.</td></tr>
 <tr><td><a href="#FTP_ITC.1/ESC">FTP_ITC.1/ESC</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates the threat by defining the trusted channels used for protection of signaling and media data used in <abbr class="dyn-abbr"><a href="#abbr_VVoIP">VVoIP</a></abbr> and <abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr> trunking communications.</td></tr>
 </table></p><h1 id="mod-conrat" class="indexable" data-level="1">6 Consistency Rationale</h1><h2 id="conrat-ND" class="indexable" data-level="2">6.1 Collaborative 
-    Protection Profile for Network Device</h2><h3 id="contoe-ND" class="indexable" data-level="3">6.1.1 
+    Protection Profile for Network Devices</h2><h3 id="contoe-ND" class="indexable" data-level="3">6.1.1 
 	Consistency of TOE Type
       </h3>When this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is used to extend the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr>, the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> type for the overall <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is still a network device. The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> boundary is simply extended to include <abbr class="dyn-abbr"><a href="#abbr_ESC">ESC</a></abbr> functionality that is provided by the network device.<h3 id="consecprob-ND" class="indexable" data-level="3">6.1.2 
 	Consistency of Security Problem Definition
@@ -1335,7 +1348,9 @@ of self-tests defined in FPT_TST_EXT.1, failure of</i>
     		T.WEAK_AUTHENTICATION_ENDPOINTS threat defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>
     		because it refers to a scenario where an unauthorized client is able to
     		communicate successfully with the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> because the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> is incapable of
-    		authenticating clients to determine which are or are not authorized.</td></tr></table><h3 id="conobj-ND" class="indexable" data-level="3">6.1.3 
+    		authenticating clients to determine which are or are not authorized.</td></tr><tr><td><a href="#P.SECURED_PLATFORM">P.SECURED_PLATFORM</a></td><td>The <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> does not define any policies that expect that environmental
+    		systems are configured in any specific manner. Therefore, it is expected that requiring environmental systems to be configured in a secure manner will not
+    		prevent the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> from being fully implemented.</td></tr></table><h3 id="conobj-ND" class="indexable" data-level="3">6.1.3 
 			Consistency of OE Objectives
 		</h3><p>The objectives for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s operational environment are consistent with the <abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> based on the
     		following rationale:<table><caption><span class="ctr" data-myid="t-con-oe-objs" data-counter-type="ct-Table" id="t-con-oe-objs">Table <span class="counter">5</span></span>: Consistency of <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> Objectives (<abbr class="dyn-abbr"><a href="#abbr_NDcPP">NDcPP</a></abbr> base)
