@@ -862,7 +862,7 @@ included.</h:p>
 		<h:li>For each auditable event type, based on the auditable event definitions of the functional
 			components included in the PP, PP-Module, functional package, or ST, [<h:i>event details described in System Log Events table</h:i>].</h:li>
 		</h:ol>			
-    <h:head><h:b><ctr ctr-type="Table" pre="Table" id="atref-mandatory">: System Log Events</ctr></h:b></h:head>
+    <h:b><ctr ctr-type="Table" pre="Table" id="atref-mandatory">: System Log Events</ctr></h:b>
        <h:table border='1'>			
     	<h:tr><h:th>Event</h:th><h:th>Additional System Log Record Contents</h:th></h:tr>    	
 		<h:tr>
