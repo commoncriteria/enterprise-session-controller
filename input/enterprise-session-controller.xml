@@ -702,11 +702,9 @@ included.</h:p>
 			components included in the PP, PP-Module, functional package, or ST, [<h:i>event details described in System Log Events table</h:i>].
                 </h:li>
               </h:ol>
-              <head>
-                <h:b>
-                  <ctr ctr-type="Table" pre="Table" id="atref-mandatory">: System Log Events</ctr>
-                </h:b>
-              </head>
+              <h:b>
+                <ctr ctr-type="Table" pre="Table" id="atref-mandatory">: System Log Events</ctr>
+              </h:b>
               <h:table border="1">
                 <h:tr>
                   <h:th>Event</h:th>
