@@ -21,6 +21,7 @@ output/enterprise-session-controller-release-linkable.html: MTD
 output/enterprise-session-controller-release-linkable.html: NIC
 output/enterprise-session-controller-release-linkable.html: NTFY
 output/enterprise-session-controller-release-linkable.html: NTP
+output/enterprise-session-controller-release-linkable.html: NTPv4
 output/enterprise-session-controller-release-linkable.html: OA
 output/enterprise-session-controller-release-linkable.html: OCSP
 output/enterprise-session-controller-release-linkable.html: PMG
@@ -62,6 +63,7 @@ output/enterprise-session-controller-release.html: MSA
 output/enterprise-session-controller-release.html: MTD
 output/enterprise-session-controller-release.html: NIC
 output/enterprise-session-controller-release.html: NTP
+output/enterprise-session-controller-release.html: NTPv4
 output/enterprise-session-controller-release.html: OA
 output/enterprise-session-controller-release.html: OCSP
 output/enterprise-session-controller-release.html: PMG
@@ -152,6 +154,7 @@ output/enterprise-session-controller.html: MTD
 output/enterprise-session-controller.html: NIC
 output/enterprise-session-controller.html: NTFY
 output/enterprise-session-controller.html: NTP
+output/enterprise-session-controller.html: NTPv4
 output/enterprise-session-controller.html: OA
 output/enterprise-session-controller.html: OCSP
 output/enterprise-session-controller.html: PMG
