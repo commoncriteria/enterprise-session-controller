@@ -441,17 +441,8 @@ baseline of capabilities that all conformant ESCs must provide.
 			VVoIP endpoints from improperly registering to the ESC for the purpose of launching malicious
 			attacks.</description>
 			<!--O.MEDIA_RECORDING-->
-			<addressed-by>FCS_DTLSS_EXT.1 (refined from Base-PP)</addressed-by><rationale>This SFR mitigates the threat by requiring the use of DTLS to protect transmitted voice/video media if this is the chosen method for securing it.</rationale>
-			<addressed-by>FCS_DTLSS_EXT.2 (refined from Base-PP)</addressed-by><rationale>This SFR mitigates the threat by requiring any implementation of DTLS to use mutual authentication.</rationale>
-			<addressed-by>FCS_NTP_EXT.1 (refined from Base-PP)</addressed-by><rationale>This SFR mitigates the threat by requiring the TSF to support NTP communications to obtain reliable time data that is used for establishment of valid cryptographic channels and accurate recording of call metadata.</rationale>
-			<addressed-by>FCS_TLSC_EXT.1 (refined from Base-PP)</addressed-by><rationale>This SFR mitigates the threat by requiring TLS for SIP and H.323 communications.</rationale>
-			<addressed-by>FCS_TLSC_EXT.2 (refined from Base-PP)</addressed-by><rationale>This SFR mitigates the threat by requiring TLS for SIP and H.323 communications.</rationale>
-			<addressed-by>FCS_TLSS_EXT.1 (refined from Base-PP)</addressed-by><rationale>This SFR mitigates the threat by requiring TLS for SIP and H.323 communications.</rationale>
-			<addressed-by>FCS_TLSS_EXT.2 (refined from Base-PP)</addressed-by><rationale>This SFR mitigates the threat by requiring TLS for SIP and H.323 communications.</rationale>
-			<addressed-by>FIA_X509_EXT.1/Rev (refined from Base-PP)</addressed-by><rationale>This SFR mitigates the threat by requiring X.509 validation in support of establishing TLS communications.</rationale>
-			<addressed-by>FIA_X509_EXT.2 (refined from Base-PP)</addressed-by><rationale>This SFR mitigates the threat by requiring X.509 authentication in support of establishing TLS communications.</rationale>
-			<addressed-by>FIA_X509_EXT.3 (refined from Base-PP)</addressed-by><rationale>This SFR mitigates the threat by requiring the TSF to be able to request an X.509 certificate that it can present to external entities when establishing cryptographic communications.</rationale>
-        	<addressed-by>FPT_STM_EXT.1 (refined from Base-PP)</addressed-by><rationale>This SFR mitigates the threat by requiring the TSF to synchronize with an NTP server for reliable time data that is used for establishment of valid cryptographic channels and accurate recording of call metadata.</rationale>
+			<addressed-by>FCS_NTP_EXT.1 (modified from Base-PP)</addressed-by><rationale>This SFR mitigates the threat by requiring the TSF to support NTPv4 communications to obtain reliable time data that is used for establishment of valid cryptographic channels and accurate recording of call metadata.</rationale>
+        	<addressed-by>FPT_STM_EXT.1 (modified from Base-PP)</addressed-by><rationale>This SFR mitigates the threat by requiring the TSF to synchronize with an NTP server for reliable time data that is used for establishment of valid cryptographic channels.</rationale>
 			<addressed-by>FAU_GEN.1/CDR</addressed-by><rationale>This SFR mitigates the threat by requiring the TSF to generate call detail records of VVoIP communications.</rationale>
 			<addressed-by>FAU_GEN.1/Log</addressed-by><rationale>This SFR mitigates the threat by generating real-time diagnostic activity for the TOE’s behavior that can be used to determine if it is experiencing conditions that could lead to a failure state.</rationale>
         	<addressed-by>FAU_STG.2/CDR</addressed-by><rationale>This SFR mitigates the threat by requiring the TSF to securely store call detail records.</rationale>
@@ -473,17 +464,8 @@ baseline of capabilities that all conformant ESCs must provide.
 			telecommunications equipment for the purpose of determining the organizational structure of the
 			enterprise, providing reconnaissance for future targeted attacks.</description>
 			<!--O.SECURE_VVOIP,  -->
-			<addressed-by>FCS_DTLSS_EXT.1 (refined from Base-PP)</addressed-by><rationale>This SFR mitigates the threat by requiring the use of DTLS to protect transmitted voice/video media if this is the chosen method for securing it.</rationale>
-			<addressed-by>FCS_DTLSS_EXT.2 (refined from Base-PP)</addressed-by><rationale>This SFR mitigates the threat by requiring any implementation of DTLS to use mutual authentication.</rationale>
-			<addressed-by>FCS_NTP_EXT.1 (refined from Base-PP)</addressed-by><rationale>This SFR mitigates the threat by requiring the TSF to support NTP communications to obtain reliable time data that is used for establishment of valid cryptographic channels.</rationale>
-			<addressed-by>FCS_TLSC_EXT.1 (refined from Base-PP)</addressed-by><rationale>This SFR mitigates the threat by requiring TLS for SIP and H.323 communications.</rationale>
-			<addressed-by>FCS_TLSC_EXT.2 (refined from Base-PP)</addressed-by><rationale>This SFR mitigates the threat by requiring TLS for SIP and H.323 communications.</rationale>
-			<addressed-by>FCS_TLSS_EXT.1 (refined from Base-PP)</addressed-by><rationale>This SFR mitigates the threat by requiring TLS for SIP and H.323 communications.</rationale>
-			<addressed-by>FCS_TLSS_EXT.2 (refined from Base-PP)</addressed-by><rationale>This SFR mitigates the threat by requiring TLS for SIP and H.323 communications.</rationale>
-			<addressed-by>FIA_X509_EXT.1/Rev (refined from Base-PP)</addressed-by><rationale>This SFR mitigates the threat by requiring X.509 validation in support of establishing TLS communications.</rationale>
-			<addressed-by>FIA_X509_EXT.2 (refined from Base-PP)</addressed-by><rationale>This SFR mitigates the threat by requiring X.509 authentication in support of establishing TLS communications.</rationale>
-			<addressed-by>FIA_X509_EXT.3 (refined from Base-PP)</addressed-by><rationale>This SFR mitigates the threat by requiring the TSF to be able to request an X.509 certificate that it can present to external entities when establishing cryptographic communications.</rationale>
-			<addressed-by>FPT_STM_EXT.1 (refined from Base-PP)</addressed-by><rationale>This SFR mitigates the threat by requiring the TSF to synchronize with an NTP server for reliable time data that is used for establishment of valid cryptographic channels.</rationale>
+			<addressed-by>FCS_NTP_EXT.1 (modified from Base-PP)</addressed-by><rationale>This SFR mitigates the threat by requiring the TSF to support NTPv4 communications to obtain reliable time data that is used for establishment of valid cryptographic channels.</rationale>
+			<addressed-by>FPT_STM_EXT.1 (modified from Base-PP)</addressed-by><rationale>This SFR mitigates the threat by requiring the TSF to synchronize with an NTP server for reliable time data that is used for establishment of valid cryptographic channels.</rationale>
 			<addressed-by>FDP_IFC.1</addressed-by><rationale>This SFR mitigates the threat by defining an enterprise session controller policy to broker VVoIP endpoint communications.</rationale>
 			<addressed-by>FDP_IFF.1</addressed-by><rationale>This SFR mitigates the threat by defining the rules enforced by the enterprise session controller policy.</rationale>
 			<addressed-by>FIA_UAU.2/TC</addressed-by><rationale>This SFR mitigates the threat by requiring authentication of telecommunications devices that are connected to the TOE before the TSF will interact with them.</rationale>
@@ -499,8 +481,8 @@ baseline of capabilities that all conformant ESCs must provide.
 			<!-- O.SYSTEM_MONITORING-->
 
 			<addressed-by>FAU_STG.1 (from Base-PP)</addressed-by><rationale>This SFR mitigates the threat by requiring all stored audit data to be protected against unauthorized access.</rationale>
-			<addressed-by>FCS_NTP_EXT.1 (refined from Base-PP)</addressed-by><rationale>This SFR mitigates the threat by requiring the TSF to support NTP communications to obtain reliable time data that is used for establishment of valid cryptographic channels and accurate recording of log data.</rationale>
-			<addressed-by>FPT_STM_EXT.1 (refined from Base-PP)</addressed-by><rationale>This SFR mitigates the threat by requiring the TSF to synchronize with an NTP server for reliable time data that is 
+			<addressed-by>FCS_NTP_EXT.1 (modified from Base-PP)</addressed-by><rationale>This SFR mitigates the threat by requiring the TSF to support NTPv4 communications to obtain reliable time data that is used for establishment of valid cryptographic channels and accurate recording of log data.</rationale>
+			<addressed-by>FPT_STM_EXT.1 (modified from Base-PP)</addressed-by><rationale>This SFR mitigates the threat by requiring the TSF to synchronize with an NTP server for reliable time data that is 
 				used for establishment of valid cryptographic channels and accurate log data.</rationale>
 			<addressed-by>FAU_GEN.1/Log</addressed-by><rationale>This SFR mitigates the threat by requiring the TSF to generate a real-time system log of its own diagnostic details.</rationale>
 			<addressed-by>FAU_SAR.1/Log</addressed-by><rationale>This SFR mitigates the threat by defining what users are able to review the real-time system log.</rationale>
