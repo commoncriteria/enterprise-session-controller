@@ -380,6 +380,8 @@ baseline of capabilities that all conformant ESCs must provide.
           <rationale>This SFR mitigates the threat by defining what users are able to review the real-time system log.</rationale>
           <addressed-by>FAU_SEL.1 (selection-based)</addressed-by>
           <rationale>This SFR mitigates the threat by optionally allowing an administrator to suppress the generation of certain audit records.</rationale>
+          <addressed-by>FAU_STG.2 (modified from Base-PP)</addressed-by>
+          <rationale>This SFR mitigates the threat by requiring all stored audit data to be protected against unauthorized access.</rationale>
           <addressed-by>FCS_NTP_EXT.1 (modified from Base-PP)</addressed-by>
           <rationale>This SFR mitigates the threat by requiring the TSF to support NTPv4 communications to obtain reliable time data that is used for establishment of valid cryptographic channels and accurate recording of log data.</rationale>
           <addressed-by>FDP_IFC.1</addressed-by>
