@@ -427,28 +427,18 @@ of time if at all.</td></tr>
               
             <div class="eacategory">TSS</div><div class="ea"><div class="ea">The evaluator shall examine the TSS to ensure that and ensure that it mentions the system log and describes how the log is presented. Each type of entry in the system log shall be listed along with a brief description of each content field and what the sampling interval for the data is. The evaluator shall also check to make sure that every log type mandated by the PP-Module is described and that the description of the content fields contains the information required in FAU_GEN.1.2/Log.</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">The evaluator shall check the guidance documentation and ensure any configuration necessary to ensure the TOE generates the required system log is included. The evaluator shall also check that each required system log item is described in the guidance documentation along with each required content field.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
                 The evaluator shall perform the following tests:
-                <span class="testlist-"><ul>
-                  <li class="test-"><a id="fau-log-current-ip-connection" class="defined" href="#fau-log-current-ip-connection">Test FAU_GEN.1/Log:1</a>:
-      (current IP connections): First, confirm TOE is connected via IP by pinging it from a remote device. Once IP is confirmed connected, take down IP connection either by physically disconnecting network cable from the TOE’s NIC; or as TOE Administrator, issue command to logically take down IP connection. Peruse system logs to confirm IP connection is down. After confirming IP connection as down, reconnect IP or logically bring up IP connection and confirm IP status as up. Repeat for each physical network interface of the TOE.</li>
-                  <li class="test-"><a id="fau-log-cpu-usage" class="defined" href="#fau-log-cpu-usage">Test FAU_GEN.1/Log:2</a>:
-      (CPU usage): The evaluator shall use the TOE and monitor the CPU usage status over a period of 10 minutes and observe that fluctuations in CPU usage are reported. It is not necessary to verify that this information is accurate at a low level but the evaluator is expected to justify at a high level why these fluctuations are occurring (e.g. CPU usage spikes while the TOE is establishing a call).</li>
-                  <li class="test-"><a id="fau-log-memory-usage" class="defined" href="#fau-log-memory-usage">Test FAU_GEN.1/Log:3</a>:
-      (memory usage): The evaluator shall use the TOE and monitor the memory usage status over a period of 10 minutes and observe that fluctuations in memory usage are reported. It is not necessary to verify that this information is accurate at a low level but the evaluator is expected to justify at a high level why these fluctuations are occurring (e.g. memory usage spikes while the TOE is establishing a call or downloading an update).</li>
-                  <li class="test-"><a id="fau-log-disk-and-file-storage-capacity" class="defined" href="#fau-log-disk-and-file-storage-capacity">Test FAU_GEN.1/Log:4</a>:
-      (disk and file storage capacity): The evaluator shall use the TOE and monitor the disk capacity status over a period of 10 minutes and observe that fluctuations in storage capacity are reported. It is not necessary to verify that this information is accurate at a low level but the evaluator is expected to justify at a high level why these changes are occurring (e.g. the evaluator transfers a file with a known file size to a disk partition and observes that the available space decreased by a corresponding amount).</li>
-                  <li class="test-"><a id="fau-log-fan-status" class="defined" href="#fau-log-fan-status">Test FAU_GEN.1/Log:5</a>:
-      (fan status) (conditional): First, confirm fan is working as designed. Once fan is confirmed functioning properly, disconnect fan to shut it down. Peruse system logs to confirm fan has been reported as down. After confirming fan as down, reconnect fan and confirm fan as up. Repeat this process for each fan that is monitored by the TSF.</li>
-                  <li class="test-"><a id="fau-log-power-status" class="defined" href="#fau-log-power-status">Test FAU_GEN.1/Log:6</a>:
+                <span class="testlist-"><ul><li class="test-"><a id="fau-log-current-ip-connection" class="defined" href="#fau-log-current-ip-connection">Test FAU_GEN.1/Log:1</a>:
+      (current IP connections): First, confirm TOE is connected via IP by pinging it from a remote device. Once IP is confirmed connected, take down IP connection either by physically disconnecting network cable from the TOE’s NIC; or as TOE Administrator, issue command to logically take down IP connection. Peruse system logs to confirm IP connection is down. After confirming IP connection as down, reconnect IP or logically bring up IP connection and confirm IP status as up. Repeat for each physical network interface of the TOE.</li><li class="test-"><a id="fau-log-cpu-usage" class="defined" href="#fau-log-cpu-usage">Test FAU_GEN.1/Log:2</a>:
+      (CPU usage): The evaluator shall use the TOE and monitor the CPU usage status over a period of 10 minutes and observe that fluctuations in CPU usage are reported. It is not necessary to verify that this information is accurate at a low level but the evaluator is expected to justify at a high level why these fluctuations are occurring (e.g. CPU usage spikes while the TOE is establishing a call).</li><li class="test-"><a id="fau-log-memory-usage" class="defined" href="#fau-log-memory-usage">Test FAU_GEN.1/Log:3</a>:
+      (memory usage): The evaluator shall use the TOE and monitor the memory usage status over a period of 10 minutes and observe that fluctuations in memory usage are reported. It is not necessary to verify that this information is accurate at a low level but the evaluator is expected to justify at a high level why these fluctuations are occurring (e.g. memory usage spikes while the TOE is establishing a call or downloading an update).</li><li class="test-"><a id="fau-log-disk-and-file-storage-capacity" class="defined" href="#fau-log-disk-and-file-storage-capacity">Test FAU_GEN.1/Log:4</a>:
+      (disk and file storage capacity): The evaluator shall use the TOE and monitor the disk capacity status over a period of 10 minutes and observe that fluctuations in storage capacity are reported. It is not necessary to verify that this information is accurate at a low level but the evaluator is expected to justify at a high level why these changes are occurring (e.g. the evaluator transfers a file with a known file size to a disk partition and observes that the available space decreased by a corresponding amount).</li><li class="test-"><a id="fau-log-fan-status" class="defined" href="#fau-log-fan-status">Test FAU_GEN.1/Log:5</a>:
+      (fan status) (conditional): First, confirm fan is working as designed. Once fan is confirmed functioning properly, disconnect fan to shut it down. Peruse system logs to confirm fan has been reported as down. After confirming fan as down, reconnect fan and confirm fan as up. Repeat this process for each fan that is monitored by the TSF.</li><li class="test-"><a id="fau-log-power-status" class="defined" href="#fau-log-power-status">Test FAU_GEN.1/Log:6</a>:
       
                     (power status):
-                    <span class="testlist-"><ul>
-                      <li class="test-"><a id="fau-log-power-status-redundant" class="defined" href="#fau-log-power-status-redundant">Test FAU_GEN.1/Log:6.1</a>:
-      (conditional): If TOE employs redundant power supplies (PS), then test may be a simple matter of cycling one PS while leaving other power units untouched. Reset one PS while allowing the other(s) to remain up. Peruse system log and verify message indicating PS cycled (went down &amp; up).</li>
-                      <li class="test-"><a id="fau-log-power-status-single" class="defined" href="#fau-log-power-status-single">Test FAU_GEN.1/Log:6.2</a>:
-      (conditional): If TOE is supported by a single PS, than test has to be verified by waiting for system log to provide power status on periodic intervals. If system log does not report power status, then PS test failed.</li>
-                    </ul></span>
-                  </li>
-                </ul></span>
+                    <span class="testlist-"><ul><li class="test-"><a id="fau-log-power-status-redundant" class="defined" href="#fau-log-power-status-redundant">Test FAU_GEN.1/Log:6.1</a>:
+      (conditional): If TOE employs redundant power supplies (PS), then test may be a simple matter of cycling one PS while leaving other power units untouched. Reset one PS while allowing the other(s) to remain up. Peruse system log and verify message indicating PS cycled (went down &amp; up).</li><li class="test-"><a id="fau-log-power-status-single" class="defined" href="#fau-log-power-status-single">Test FAU_GEN.1/Log:6.2</a>:
+      (conditional): If TOE is supported by a single PS, than test has to be verified by waiting for system log to provide power status on periodic intervals. If system log does not report power status, then PS test failed.</li></ul></span>
+                  </li></ul></span>
               </div></div></span></div><div class="comp" id="FAU-SAR-1-LOG"><h4>FAU_SAR.1/Log Audit Review (System Log)</h4><span class="activity_pane_body"><div class="component-activity-header">FAU_SAR.1/Log</div>
               
               
@@ -530,14 +520,10 @@ of time if at all.</td></tr>
 	support an encrypted trunk to one another, where the trunk is encrypted using a security protocol
 	selected in FTP_ITC.1 from the Base-PP. The evaluator shall also deploy a packet sniffer on the encrypted
 	trunk channel. The evaluator shall perform the following tests:</p>
-                <span class="testlist-"><ul>
-                  <li class="test-"><a id="_t_9" class="defined" href="#_t_9">Test FIA_UAU.2/TC:1</a>:
-      The evaluator shall configure the TOE to accept encrypted trunk communications from the remote ESC using authentication credentials and IP address. The evaluator shall then use the remote ESC to connect to the TOE and verify that the encrypted trunk is successfully established. The evaluator shall use packet captures to verify that encrypted traffic is transmitted between the TOE and the remote ESC.</li>
-                  <li class="test-"><a id="_t_10" class="defined" href="#_t_10">Test FIA_UAU.2/TC:2</a>:
-      The evaluator shall repeat test 1 but enter invalid credentials when attempting to authenticate. The evaluator shall observe that the encrypted trunk is not successfully established due to invalid credentials.</li>
-                  <li class="test-"><a id="_t_11" class="defined" href="#_t_11">Test FIA_UAU.2/TC:3</a>:
-      The evaluator shall repeat test 1 but configure the TOE to accept encrypted trunk communications from a different IP address than what is assigned to the remote ESC. The evaluator shall then attempt to connect to the TOE using the remote ESC with valid credentials and observe that the encrypted trunk is not successfully established due to invalid IP address.</li>
-                </ul></span>
+                <span class="testlist-"><ul><li class="test-"><a id="_t_9" class="defined" href="#_t_9">Test FIA_UAU.2/TC:1</a>:
+      The evaluator shall configure the TOE to accept encrypted trunk communications from the remote ESC using authentication credentials and IP address. The evaluator shall then use the remote ESC to connect to the TOE and verify that the encrypted trunk is successfully established. The evaluator shall use packet captures to verify that encrypted traffic is transmitted between the TOE and the remote ESC.</li><li class="test-"><a id="_t_10" class="defined" href="#_t_10">Test FIA_UAU.2/TC:2</a>:
+      The evaluator shall repeat test 1 but enter invalid credentials when attempting to authenticate. The evaluator shall observe that the encrypted trunk is not successfully established due to invalid credentials.</li><li class="test-"><a id="_t_11" class="defined" href="#_t_11">Test FIA_UAU.2/TC:3</a>:
+      The evaluator shall repeat test 1 but configure the TOE to accept encrypted trunk communications from a different IP address than what is assigned to the remote ESC. The evaluator shall then attempt to connect to the TOE using the remote ESC with valid credentials and observe that the encrypted trunk is not successfully established due to invalid IP address.</li></ul></span>
               </div></div></span></div><div class="comp" id="FIA-UAU-2-VVOIP"><h4>FIA_UAU.2/VVoIP User Authentication before Any Action (VVoIP Endpoints)</h4><span class="activity_pane_body"><div class="component-activity-header">FIA_UAU.2/VVoIP</div>
               
               
@@ -552,16 +538,11 @@ of time if at all.</td></tr>
 		connections and that any VVoIP endpoint devices used for this testing can use the protocol that the TSF
 		is configured to support.</p>
                 <p>The evaluator shall perform the following tests:</p>
-                <span class="testlist-"><ul>
-                  <li class="test-"><a id="_t_12" class="defined" href="#_t_12">Test FIA_UAU.2/VVoIP:1</a>:
-      The evaluator shall attempt to place a call with a VVoIP endpoint device without registering to the TOE. The attempt should fail. The evaluator shall also attempt to download an update from the TOE and observe failure.</li>
-                  <li class="test-"><a id="_t_13" class="defined" href="#_t_13">Test FIA_UAU.2/VVoIP:2</a>:
-      [Conditional on TOE requiring certificate authentication to establish the connection used for registration]: The evaluator shall load an invalid certificate onto a VVoIP endpoint device and initiate the registration process. The registration process should fail due to an invalid certificate.</li>
-                  <li class="test-"><a id="_t_14" class="defined" href="#_t_14">Test FIA_UAU.2/VVoIP:3</a>:
-      The evaluator shall connect to the TOE and initiate the registration process. When prompted for credentials, the evaluator shall supply invalid credentials and observe that the registration process fails for that reason.</li>
-                  <li class="test-"><a id="_t_15" class="defined" href="#_t_15">Test FIA_UAU.2/VVoIP:4</a>:
-      The evaluator shall connect to the TOE and initiate the registration process. When prompted for credentials, the evaluator shall supply valid credentials and observe that the registration process succeeds and that the registered device can be used to place calls.</li>
-                </ul></span>
+                <span class="testlist-"><ul><li class="test-"><a id="_t_12" class="defined" href="#_t_12">Test FIA_UAU.2/VVoIP:1</a>:
+      The evaluator shall attempt to place a call with a VVoIP endpoint device without registering to the TOE. The attempt should fail. The evaluator shall also attempt to download an update from the TOE and observe failure.</li><li class="test-"><a id="_t_13" class="defined" href="#_t_13">Test FIA_UAU.2/VVoIP:2</a>:
+      [Conditional on TOE requiring certificate authentication to establish the connection used for registration]: The evaluator shall load an invalid certificate onto a VVoIP endpoint device and initiate the registration process. The registration process should fail due to an invalid certificate.</li><li class="test-"><a id="_t_14" class="defined" href="#_t_14">Test FIA_UAU.2/VVoIP:3</a>:
+      The evaluator shall connect to the TOE and initiate the registration process. When prompted for credentials, the evaluator shall supply invalid credentials and observe that the registration process fails for that reason.</li><li class="test-"><a id="_t_15" class="defined" href="#_t_15">Test FIA_UAU.2/VVoIP:4</a>:
+      The evaluator shall connect to the TOE and initiate the registration process. When prompted for credentials, the evaluator shall supply valid credentials and observe that the registration process succeeds and that the registered device can be used to place calls.</li></ul></span>
               </div></div></span></div><h2 class="indexable" data-level="2" id="man-fmt">2.2.4 Class FMT: Security Management</h2><div class="comp" id="FMT-CFG-EXT-1"><h4>FMT_CFG_EXT.1 Secure by Default Configuration</h4><span class="activity_pane_body"><div class="component-activity-header">FMT_CFG_EXT.1</div>
               
               
@@ -592,14 +573,10 @@ of time if at all.</td></tr>
 		each supported management interface, which specific functions are available at that interface.</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">If "Ability to enable/disable voice and video recordings for any registered VVoIP endpoint" is selected, the
 		evaluator shall examine the guidance document to verify it describes how to enable or disable recordings
 		of voice and video calls.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
-                <span class="testlist-"><ul>
-                  <li class="test-"><a id="_t_16" class="defined" href="#_t_16">Test FMT_SMF.1/ESC:1</a>:
-      (Conditional): If “Ability to enable/disable voice and video recordings for any registered VVoIP endpoint” is selected, the evaluator shall deploy a test environment with two or more registered VVoIP endpoints. The evaluator shall choose two endpoints and configure the TOE to disable enable voice/video recording between them. The evaluator shall place a call between the two selected endpoints, verify that the call is successfully established, then terminate the call and verify that a recording is generated. The evaluator shall then configure the TOE to disable voice/video recording between the same two endpoints, repeat the call, verify that the call is established, then terminate the call. The evaluator shall examine the location where the first recording was generated and verify that no new recording is generated.</li>
-                  <li class="test-"><a id="_t_17" class="defined" href="#_t_17">Test FMT_SMF.1/ESC:2</a>:
-      The evaluator shall deploy a test environment with two or more registered VVoIP endpoints. The evaluator shall choose two endpoints, place a call between them, and verify that the call is successfully established. While the call is active, the evaluator shall use the TSF to review active connections and verify that the VVoIP endpoints’ connections to the TOE are active. The evaluator shall discontinue the call and verify that the TSF no longer shows the VVoIP endpoints’ connections to the TOE as active.</li>
-                  <li class="test-"><a id="_t_18" class="defined" href="#_t_18">Test FMT_SMF.1/ESC:3</a>:
-      (Conditional): If “ability to configure the password policy” is selected, the evaluator shall observe what the password strength policy is configured to by default on the TOE and shall verify that it is enforced by defining several weak administrative passwords for a given administrator account that are appropriately rejected by the TSF. The evaluator shall then modify the TOE’s password policy in such a manner that at least one of these weak passwords would now be accepted by the policy. The evaluator shall repeat the attempted password changes and observe that the TSF correctly accepts or rejects the passwords based on the new policy.</li>
-                </ul></span>
+                <span class="testlist-"><ul><li class="test-"><a id="_t_16" class="defined" href="#_t_16">Test FMT_SMF.1/ESC:1</a>:
+      (Conditional): If “Ability to enable/disable voice and video recordings for any registered VVoIP endpoint” is selected, the evaluator shall deploy a test environment with two or more registered VVoIP endpoints. The evaluator shall choose two endpoints and configure the TOE to disable enable voice/video recording between them. The evaluator shall place a call between the two selected endpoints, verify that the call is successfully established, then terminate the call and verify that a recording is generated. The evaluator shall then configure the TOE to disable voice/video recording between the same two endpoints, repeat the call, verify that the call is established, then terminate the call. The evaluator shall examine the location where the first recording was generated and verify that no new recording is generated.</li><li class="test-"><a id="_t_17" class="defined" href="#_t_17">Test FMT_SMF.1/ESC:2</a>:
+      The evaluator shall deploy a test environment with two or more registered VVoIP endpoints. The evaluator shall choose two endpoints, place a call between them, and verify that the call is successfully established. While the call is active, the evaluator shall use the TSF to review active connections and verify that the VVoIP endpoints’ connections to the TOE are active. The evaluator shall discontinue the call and verify that the TSF no longer shows the VVoIP endpoints’ connections to the TOE as active.</li><li class="test-"><a id="_t_18" class="defined" href="#_t_18">Test FMT_SMF.1/ESC:3</a>:
+      (Conditional): If “ability to configure the password policy” is selected, the evaluator shall observe what the password strength policy is configured to by default on the TOE and shall verify that it is enforced by defining several weak administrative passwords for a given administrator account that are appropriately rejected by the TSF. The evaluator shall then modify the TOE’s password policy in such a manner that at least one of these weak passwords would now be accepted by the policy. The evaluator shall repeat the attempted password changes and observe that the TSF correctly accepts or rejects the passwords based on the new policy.</li></ul></span>
               </div></div></span></div><h2 class="indexable" data-level="2" id="man-fpt">2.2.5 Class FPT: Protection of the TSF</h2><div class="comp" id="FPT-FLS-1"><h4>FPT_FLS.1/ESC Failure with Preservation of a Secure State</h4><span class="activity_pane_body"><div class="component-activity-header">FPT_FLS.1/ESC</div>
               
               
@@ -622,17 +599,14 @@ of time if at all.</td></tr>
 		communications interfaces and protocols specified in this iteration of the requirement.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
                 In addition to the assurance activities specified in the NDcPP SD for FTP_ITC.1, the evaluator shall perform
 		the following tests:
-                <span class="testlist-"><ul>
-                  <li class="test-"><a id="_t_19" class="defined" href="#_t_19">Test FTP_ITC.1/ESC:1</a>:
+                <span class="testlist-"><ul><li class="test-"><a id="_t_19" class="defined" href="#_t_19">Test FTP_ITC.1/ESC:1</a>:
       For each combination of signaling protocol (SIP, H.323), method of securing that protocol (IPsec, TLS), and method of securing transmitted media (SRTP, DTLS), the evaluator shall configure the TOE to use the selected protocols through a trunk to a remote ESC. The evaluator shall register a VVoIP endpoint to the TOE and a second VVoIP endpoint to the remote ESC. The evaluator shall place a packet sniffer on the network and capture traffic from the TOE to the local VVoIP endpoint and the remote ESC. The evaluator shall then place a call from one VVoIP endpoint to the other. The evaluator shall verify that the TOE’s audit trail shows that the local VVoIP endpoint was configured as a client using the configured protocol, that the traffic between the local VVoIP endpoint and the TOE is unintelligible, and that the traffic between the TOE and the remote ESC is protected for both signaling and media communications using the configured methods of securing them. <p>The evaluator shall repeat this test as many times as is necessary to demonstrate that each combination
 		of securing the signaling protocol communications, securing the media protocol communications, and
 		securing the SIP trunk from the TOE to the remote ESC can be used as claimed. Note that in any case
 		where this results in double encryption of the traffic (e.g. SRTP-protected media tunneled through IPsec
 		over a SIP trunk), the evaluator shall conduct the test with the outer layer enabled and then disabled in
-		order to verify that both methods of protection are being used.</p></li>
-                  <li class="test-"><a id="_t_20" class="defined" href="#_t_20">Test FTP_ITC.1/ESC:2</a>:
-      (conditional): If ‘VVoIP conferencing system’ is selected, the evaluator shall repeat test 1 (depending on the protocols the TOE claims to support) in an environment where the TOE is being used to establish a conference call between three or more registered VVoIP endpoints. In both cases, the evaluator shall verify that all SIP and SRTP traffic is encrypted.</li>
-                </ul></span>
+		order to verify that both methods of protection are being used.</p></li><li class="test-"><a id="_t_20" class="defined" href="#_t_20">Test FTP_ITC.1/ESC:2</a>:
+      (conditional): If ‘VVoIP conferencing system’ is selected, the evaluator shall repeat test 1 (depending on the protocols the TOE claims to support) in an environment where the TOE is being used to establish a conference call between three or more registered VVoIP endpoints. In both cases, the evaluator shall verify that all SIP and SRTP traffic is encrypted.</li></ul></span>
               </div></div></span></div><h2 class="indexable" data-level="1" id="opt-sfrs">2.3 Evaluation Activities for Optional SFRs</h2>The PP-Module does not define any optional requirements.<h2 class="indexable" data-level="1" id="sel-sfrs">2.4 Evaluation Activities for Selection-Based SFRs</h2><h2 class="indexable" data-level="2" id="sel-fau">2.4.1 Class FAU: Security Audit</h2><div class="comp" id="FAU-SEL-1"><h4>FAU_SEL.1 Selective Audit</h4><span class="activity_pane_body"><div class="component-activity-header">FAU_SEL.1</div>
               
               
@@ -657,12 +631,9 @@ of time if at all.</td></tr>
 		the evaluator shall verify that the operational guidance provides instructions on how to enable encryption
 		and directs the reader to ensure that this is enabled in the TOE’s evaluated configuration.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
                 The evaluator shall perform the following tests:
-                <span class="testlist-"><ul>
-                  <li class="test-"><a id="_t_21" class="defined" href="#_t_21">Test FAU_STG.2/VVR:1</a>:
-      The evaluator shall verify that the TSF provides no interface to access voice/video recording data stored on the TOE except for legitimate access from an authorized administrator through the Operations, Administration, and Management (OA&amp;M) interface.</li>
-                  <li class="test-"><a id="_t_22" class="defined" href="#_t_22">Test FAU_STG.2/VVR:2</a>:
-      Both B2B subscriber calls and voice/video conferencing calls may be stored on the TOE based on safeguards (i.e. secured or unsecured) for which they were recorded. The evaluator shall identify the location of stored voice and video records and verify that this data is stored in an encrypted format for all types of voice and video calls that can be processed by the TOE. If this functionality is configurable, the evaluator shall follow the operational guidance to enable encryption prior to generating any voice/video recordings.</li>
-                </ul></span>
+                <span class="testlist-"><ul><li class="test-"><a id="_t_21" class="defined" href="#_t_21">Test FAU_STG.2/VVR:1</a>:
+      The evaluator shall verify that the TSF provides no interface to access voice/video recording data stored on the TOE except for legitimate access from an authorized administrator through the Operations, Administration, and Management (OA&amp;M) interface.</li><li class="test-"><a id="_t_22" class="defined" href="#_t_22">Test FAU_STG.2/VVR:2</a>:
+      Both B2B subscriber calls and voice/video conferencing calls may be stored on the TOE based on safeguards (i.e. secured or unsecured) for which they were recorded. The evaluator shall identify the location of stored voice and video records and verify that this data is stored in an encrypted format for all types of voice and video calls that can be processed by the TOE. If this functionality is configurable, the evaluator shall follow the operational guidance to enable encryption prior to generating any voice/video recordings.</li></ul></span>
               </div></div></span></div><div class="comp" id="FAU-VVR-EXT-2"><h4>FAU_VVR_EXT.2 Generation of Voice and Video Recordings</h4><span class="activity_pane_body"><div class="component-activity-header">FAU_VVR_EXT.2</div>
               
               
@@ -698,14 +669,10 @@ of time if at all.</td></tr>
 			shall also verify that the guidance includes instructions on how an ESC administrator can use the TOE to
 			apply software/firmware updates to registered VVoIP endpoints.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
                 The evaluator shall perform the following test:
-                <span class="testlist-"><ul>
-                  <li class="test-"><a id="_t_23" class="defined" href="#_t_23">Test FPT_TUD_EXT.1/VVoIP:1</a>:
-      Prior to downloading software update from TOE to registered VVoIP-client, the evaluator shall check to ensure the current version of the registered client device can be appropriately obtained by means of the operation methods specified by the administrator guidance.</li>
-                  <li class="test-"><a id="_t_24" class="defined" href="#_t_24">Test FPT_TUD_EXT.1/VVoIP:2</a>:
-      The evaluator shall check to ensure that VVoIP endpoint software/firmware updates are signed and/or hashed by the manufacturer based on what is specified in the ST.</li>
-                  <li class="test-"><a id="_t_25" class="defined" href="#_t_25">Test FPT_TUD_EXT.1/VVoIP:3</a>:
-      The evaluator shall check to ensure that only administrators of the TOE are permitted to initiate an update to a registered VVoIP endpoint.</li>
-                  <li class="test-"><a id="_t_26" class="defined" href="#_t_26">Test FPT_TUD_EXT.1/VVoIP:4</a>:
+                <span class="testlist-"><ul><li class="test-"><a id="_t_23" class="defined" href="#_t_23">Test FPT_TUD_EXT.1/VVoIP:1</a>:
+      Prior to downloading software update from TOE to registered VVoIP-client, the evaluator shall check to ensure the current version of the registered client device can be appropriately obtained by means of the operation methods specified by the administrator guidance.</li><li class="test-"><a id="_t_24" class="defined" href="#_t_24">Test FPT_TUD_EXT.1/VVoIP:2</a>:
+      The evaluator shall check to ensure that VVoIP endpoint software/firmware updates are signed and/or hashed by the manufacturer based on what is specified in the ST.</li><li class="test-"><a id="_t_25" class="defined" href="#_t_25">Test FPT_TUD_EXT.1/VVoIP:3</a>:
+      The evaluator shall check to ensure that only administrators of the TOE are permitted to initiate an update to a registered VVoIP endpoint.</li><li class="test-"><a id="_t_26" class="defined" href="#_t_26">Test FPT_TUD_EXT.1/VVoIP:4</a>:
       The evaluator shall check to ensure that software updates are correctly performed by verifying that the VVoIP endpoint is running the newly-obtained software version obtaining the newly updated software version of the VVoIP-client device once update has complete. <p>Note: In some cases the ESC will not receive an explicit message from the VVoIP endpoint stating that the
 			software update executed successfully. In addition, some software updates will not take effect until a
 			reboot of the VVoIP endpoint is initiated remotely by the ESC or manually/physically at the VVoIP endpoint
@@ -719,12 +686,10 @@ of time if at all.</td></tr>
 			software downloads an therefore no ‘successful download’ report should be expected to be forwarded to the ESC. If the VVoIP endpoint does report a ‘software download complete’ or just ‘complete’, then the
 			TOE should receive a message indicating that the download was completed. When the VVoIP endpoint
 			reboots, it is expected to report the new software/firmware version to the TOE so that the new version
-			will be displayed in the OA&amp;M application.</p></li>
-                  <li class="test-"><a id="_t_27" class="defined" href="#_t_27">Test FPT_TUD_EXT.1/VVoIP:5</a>:
+			will be displayed in the OA&amp;M application.</p></li><li class="test-"><a id="_t_27" class="defined" href="#_t_27">Test FPT_TUD_EXT.1/VVoIP:5</a>:
       The evaluator shall check to ensure that the verification of software/firmware updates from the TOE to the VVoIP endpoint fails using unauthorized data or improperly signed updates. The evaluator shall also check those cases where hash verification mechanism and digital signature verification mechanism fail. <p>Note: this may require the evaluator to obtain a deliberately invalid software update from the device
 			manufacturer or developer access to the TOE so that a stored update can be manipulated directly in a
-			manner that will cause signature and/or hash verification to fail.</p></li>
-                </ul></span>
+			manner that will cause signature and/or hash verification to fail.</p></li></ul></span>
               </div></div></span></div><h1 id="sar_aas" class="indexable" data-level="0">3 Evaluation Activities for SARs</h1><p>The PP-Module does not define any SARs beyond those defined within the
     
 	base NDcPP to which it must claim conformance.
