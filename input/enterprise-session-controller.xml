@@ -10,6 +10,7 @@
 <Module name="Enterprise Session Controller" boilerplate="yes" target-product="Enterprise Session Controller" xmlns="https://niap-ccevs.org/cc/v1" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:sec="https://niap-ccevs.org/cc/v1/section">
   <PPReference>
     <ReferenceTable>
+	  <PPTitle>PP-Module for Enterprise Session Controller</PPTitle>
       <PPVersion>2.0</PPVersion>
       <PPAuthor>National Information Assurance Partnership</PPAuthor>
       <PPPubDate>2026-03-10</PPPubDate>
