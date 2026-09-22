@@ -472,8 +472,7 @@ be used to adversely affect the TOE or its own functionality.</description>
   <!-- 5.0 Security Requirements -->
   <sec:Security_Requirements title="Security Requirements">
     <!-- 5.1 ND PP Security Functional Requirements Direction -->
-    <base-pp id="ND" name="Network Device" product="Network Device" short="ND" version="3.0e" plural="Network Devices">
-      <url>https://www.niap-ccevs.org/protectionprofiles/482</url>
+    <base-pp ref="ndcpp">
       <cPP/>
       <sec-func-req-dir>
         <h:p>This section instructs the ST author on what selections must be made to certain SFRs contained in the
