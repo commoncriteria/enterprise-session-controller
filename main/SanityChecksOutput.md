@@ -1,3 +1,12 @@
+transforms/xsl/module2html.xsl:449: namespace error : Failed to parse QName 'xsl:'
+                 --><xsl::apply-templates select="cc:cc-doc-ref[@id=cc:from-doc/
+                         ^
+compilation error: file transforms/xsl/module-commons.xsl line 70 element apply-template
+xsltStylePreCompute: unknown xsl:apply-template
+* Error: Detected dangling id-reference to sel-itc-tls from attribute
+        on-sel/Module[1]""/sec:Conformance_Claims[1]""/CClaimsInfo[1]""/cc-pkg-claim[1]""/FP-cc-ref[1]""/cc-doc-ref[1]""/depends[1]""/on-sel[1]""
+* Error: Detected dangling id-reference to sel-itc-https from attribute
+        on-sel/Module[1]""/sec:Conformance_Claims[1]""/CClaimsInfo[1]""/cc-pkg-claim[1]""/FP-cc-ref[1]""/cc-doc-ref[1]""/depends[2]""/on-sel[1]""
 * Error: Detected multiple elements with an id of 'sec-sel-audit-table'.
 * Error: Detected multiple elements with an id of 'sec-sel-audit-table'.
 * Error: Detected dangling ref-id to 'dummy-ref-id'.
