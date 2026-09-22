@@ -29,20 +29,6 @@
       <subject>Updated for CC:2022</subject>
     </entry>
   </RevisionHistory>
-  <include-pkg id="tls">
-    <git>
-      <url>https://github.com/commoncriteria/tls</url>
-      <branch>master</branch>
-    </git>
-    <url>https://www.niap-ccevs.org/protectionprofiles/465</url>
-  </include-pkg>
-  <include-pkg id="X509">
-    <git>
-      <url>https://github.com/commoncriteria/X509</url>
-      <branch>master</branch>
-    </git>
-    <url>https://www.niap-ccevs.org/protectionprofiles/511</url>
-  </include-pkg>
   <pp-preferences>
     <!--   Indicate that audit events are defined with their SFRs   -->
     <!--   All new documents should do it this way. This will become the default, if it hasn't already.    -->
@@ -279,8 +265,41 @@ baseline of capabilities that all conformant ESCs must provide.
       <cc-pt2-conf>extended</cc-pt2-conf>
       <cc-pt3-conf>conformant</cc-pt3-conf>
       <cc-pp-conf/>
-      <cc-pp-config-with/>
-      <cc-pkg-claim/>
+      <cc-pp-config-with>
+		<PP-cc-ref>
+			<cc-doc-ref id="ndcpp" 
+				name="Network Device collaborative Protection Profile"      
+				version="4.0"                            
+				short="NDcPP"                             
+				product="network device"     
+				plural="network devices"
+                                doctype="cPP">     
+				<url>https://www.niap-ccevs.org/protectionprofiles/524</url>
+			</cc-doc-ref>
+		</PP-cc-ref>	  
+	  </cc-pp-config-with>
+      <cc-pkg-claim>
+        <FP-cc-ref conf="conformant">
+			<cc-doc-ref id="tls">
+				<git>
+					<url>https://github.com/commoncriteria/tls</url>
+					<branch>release-2.1</branch>
+				</git>
+				<url>https://www.niap-ccevs.org/protectionprofiles/519</url>
+				<depends on-sel="sel-itc-tls"/>
+				<depends on-sel="sel-itc-https"/>
+			</cc-doc-ref>
+		</FP-cc-ref>
+        <FP-cc-ref conf="conformant">
+			<cc-doc-ref id="X509">
+				<git>
+					<url>https://github.com/commoncriteria/X509</url>
+					<branch>release-1.0</branch>
+				</git>
+				<url>https://www.niap-ccevs.org/protectionprofiles/511</url>
+			</cc-doc-ref>
+		</FP-cc-ref>
+	</cc-pkg-claim>
     </CClaimsInfo>
   </sec:Conformance_Claims>
   <!-- 3.0 Security Problem Definition-->
